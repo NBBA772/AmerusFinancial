@@ -1,0 +1,42 @@
+# Node / Nuxt core
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.cache/
+.nuxt/
+.output/
+.vercel/
+.netlify/
+.next/
+*.log
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Editor junk
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# OS / system files
+Thumbs.db
+Desktop.ini
+
+# Optional caches
+.eslintcache
+.stylelintcache
+coverage/
+.nyc_output/
+tmp/
+temp/
+
+# Local dependency folders
+.bun/
