@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Button Links -->
-    <div class="flex flex-wrap justify-center gap-2 my-3">
+    <!-- <div class="flex flex-wrap justify-center gap-2 my-3">
       <NuxtLink
         to="/services/retirement/iras"
         class="px-3 py-2 rounded-md font-medium bg-sky-500 text-white hover:bg-sky-600 transition-colors"
@@ -20,7 +20,7 @@
       >
         For Seniors
       </NuxtLink>
-    </div>
+    </div> -->
 
     <!-- Address & Phone -->
     <p class="text-white text-center m-0">
