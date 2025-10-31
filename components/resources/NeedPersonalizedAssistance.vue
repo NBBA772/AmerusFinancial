@@ -24,12 +24,12 @@
             Contact An Advisor
           </NuxtLink>
 
-          <NuxtLink
+          <!-- <NuxtLink
             to="/resources"
             class="router-link-active router-link-exact-active px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors"
           >
             Contact an Agent
-          </NuxtLink>
+          </NuxtLink> -->
         </div>
       </div>
     </div>
