@@ -3,13 +3,13 @@
     <!-- Button Links -->
     <div class="flex flex-wrap justify-center gap-2 my-3">
       <NuxtLink
-        to="#employers"
+        to="/services/retirement/iras"
         class="px-3 py-2 rounded-md font-medium bg-sky-500 text-white hover:bg-sky-600 transition-colors"
       >
         For Employers
       </NuxtLink>
       <NuxtLink
-        to="#families"
+        to="/services/health/individual-health"
         class="px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors"
       >
         For Individuals & Families

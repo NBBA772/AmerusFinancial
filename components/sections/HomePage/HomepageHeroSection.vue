@@ -25,7 +25,7 @@
         <ParagraphDescriptionHero class="text-white">
           {{ IntroText.Description }}
         </ParagraphDescriptionHero>
-        <ContactButtons />
+        <!-- <ContactButtons /> -->
         </div>
 
         <div>
