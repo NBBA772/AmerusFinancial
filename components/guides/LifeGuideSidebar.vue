@@ -44,11 +44,13 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  title: 'Important Medicare Dates for 2025',
+  title: 'Eligibility Requirements',
   items: () => [
-    { text: 'January 1 - March 31 Medicare Advantage Open Enrollment Period' },
-    { text: 'April 1 Coverage begins for those who enrolled during General Enrollment Period' },
-    { text: 'October 15 - December 7 Annual Medicare Open Enrollment Period' }
+    { text: 'U.S. citizen or permanent resident' },
+    { text: 'Age requirements (typically 18-85, varies by policy)' },
+    { text: 'Ability to show insurable interest' },
+    { text: 'Health status (varies by policy type)' },
+    { text: 'Financial justification for coverage amount' }
   ]
 })
 </script>

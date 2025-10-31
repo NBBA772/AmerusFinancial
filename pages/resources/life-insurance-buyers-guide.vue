@@ -91,10 +91,7 @@
           </template>
         </LifeGuideContent>
         
-        <GuideSidebar 
-          title="Required Coverage By State"
-          :items="sidebarItems"
-        />
+        <LifeGuideSidebar title="Eligibility Requirements" />
       </div>
     </div>
   </main>

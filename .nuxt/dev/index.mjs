@@ -10640,13 +10640,13 @@ const sources$1 = [
                 "loc": "/resources/health-insurance-glossary"
             },
             {
+                "loc": "/resources"
+            },
+            {
                 "loc": "/resources/life-insurance-buyers-guide"
             },
             {
                 "loc": "/resources/medicare-guide"
-            },
-            {
-                "loc": "/resources/resources"
             },
             {
                 "loc": "/resources/retirement-planning-checklist"

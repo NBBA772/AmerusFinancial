@@ -140,22 +140,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Business Assessment',
     text: 'Provide details about your business vehicles, usage, and current commercial auto insurance needs.',
-    image: 'https://www.amerusfinancial.com/images/business-assessment.jpg'
+    image: 'https://www.amerusfinancial.com/images/row-of-vans-needing-commercial-auto-insurance.jpg'
   },
   {
     name: 'Fleet Analysis',
     text: 'Review your vehicle fleet including types, values, and commercial usage patterns for accurate coverage.',
-    image: 'https://www.amerusfinancial.com/images/fleet-analysis.jpg'
+    image: 'https://www.amerusfinancial.com/images/row-of-vans-needing-commercial-auto-insurance.jpg'
   },
   {
     name: 'Coverage Design',
     text: 'Design commercial auto insurance coverage including liability, collision, and comprehensive protection.',
-    image: 'https://www.amerusfinancial.com/images/coverage-design.jpg'
+    image: 'https://www.amerusfinancial.com/images/row-of-vans-needing-commercial-auto-insurance.jpg'
   },
   {
     name: 'Policy Activation',
     text: 'Finalize your commercial auto insurance policy and activate coverage for your business vehicles.',
-    image: 'https://www.amerusfinancial.com/images/policy-activation.jpg'
+    image: 'https://www.amerusfinancial.com/images/row-of-vans-needing-commercial-auto-insurance.jpg'
   }
 ], 'How to Get Commercial Auto Insurance', 'Step-by-step guide to getting commercial auto insurance for your business vehicles.', 'PT25M', '200.00')
 

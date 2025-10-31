@@ -44,11 +44,13 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  title: 'Important Medicare Dates for 2025',
+  title: 'Required Coverage By State',
   items: () => [
-    { text: 'January 1 - March 31 Medicare Advantage Open Enrollment Period' },
-    { text: 'April 1 Coverage begins for those who enrolled during General Enrollment Period' },
-    { text: 'October 15 - December 7 Annual Medicare Open Enrollment Period' }
+    { text: 'Liability insurance is required in almost all states' },
+    { text: 'No-fault states require Personal Injury Protection (PIP)' },
+    { text: 'Some states require uninsured motorist coverage' },
+    { text: 'Minimum requirements vary significantly by state' },
+    { text: 'State minimums are often insufficient for adequate protection' }
   ]
 })
 </script>

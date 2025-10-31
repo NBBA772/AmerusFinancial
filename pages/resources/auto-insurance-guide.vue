@@ -83,10 +83,7 @@
           </template>
         </AutoInsuranceGuideContent>
         
-        <GuideSidebar 
-          title="Required Coverage By State"
-          :items="sidebarItems"
-        />
+        <AutoGuideSidebar title="Required Coverage By State" />
       </div>
     </div>
   </main>
