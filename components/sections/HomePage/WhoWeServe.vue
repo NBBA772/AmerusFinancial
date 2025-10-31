@@ -103,7 +103,11 @@ const toggleFlip = (i: number) => (flipped.value[i] = !flipped.value[i]);
             <div
               class="absolute inset-0 rounded-lg shadow-md overflow-hidden backface-hidden"
             >
-              <img
+              <NuxtImg
+                format="webp"
+                sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px"
+                quality="80"
+                loading="lazy"
                 :src="card.image"
                 :alt="card.alt"
                 class="w-full h-full object-cover"
@@ -144,12 +148,13 @@ const toggleFlip = (i: number) => (flipped.value[i] = !flipped.value[i]);
                   <span
                     class="w-2 h-2 bg-white rounded-full mr-2 flex-shrink-0"
                   ></span>
-                  <NuxtLink
+                  <!-- <NuxtLink
                     :to="card.backLinks[j]"
                     class="underline hover:text-gray-200"
                   >
                     {{ item }}
-                  </NuxtLink>
+                  </NuxtLink> -->
+                  {{ item }}
                 </li>
               </ul>
             </div>
