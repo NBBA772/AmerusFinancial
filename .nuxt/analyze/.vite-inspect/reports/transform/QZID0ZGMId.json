@@ -1,0 +1,233 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/dashboard/PipelineHeader.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"p-2 m-2\" }\nconst _hoisted_2 = { class: \"text-3xl\" }\nconst _hoisted_3 = { class: \"text-2xl\" }\nconst _hoisted_4 = { class: \"p-2 m-2\" }\nconst _hoisted_5 = { class: \"text-3xl\" }\nconst _hoisted_6 = { class: \"text-2xl\" }\n\nimport {\n  getGHLPipelines,\n  getGHLOpportunities,\n} from \"~/server/database/repositories/crmServices\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'PipelineHeader',\n  async setup(__props) {\n\nlet __temp: any, __restore: any\n\nconst pipelines = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLPipelines())),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\nconsole.log(pipelines.pipelines[1].stages[0].id);\nconst newClientOpportunities = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLOpportunities(\n  pipelines.pipelines[1].id,\n  pipelines.pipelines[1].stages[0].id\n))),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\n\nconst newFrequentlyAskedQuestionsOpportunities = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLOpportunities(\n  pipelines.pipelines[0].id,\n  pipelines.pipelines[0].stages[0].id\n))),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"h3\", _hoisted_2, _toDisplayString(_unref(pipelines).pipelines[1].name), 1),\n      _createElementVNode(\"p\", _hoisted_3, _toDisplayString(_unref(newClientOpportunities).meta.total), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.name), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.phone), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.email), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].status), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.tags[0]), 1)\n    ]),\n    _createElementVNode(\"div\", _hoisted_4, [\n      _createElementVNode(\"h3\", _hoisted_5, _toDisplayString(_unref(pipelines).pipelines[0].name), 1),\n      _createElementVNode(\"p\", _hoisted_6, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).meta.total), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.name), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.phone), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.email), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].status), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact\n          .tags[0]), 1)\n    ])\n  ], 64))\n}\n}\n\n})",
+      "start": 1761251027622,
+      "end": 1761251027622
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251027622,
+      "end": 1761251027622,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251027622,
+      "end": 1761251027622,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251027622,
+      "end": 1761251027622,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251027622,
+      "end": 1761251027622,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251027622,
+      "end": 1761251027622,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"p-2 m-2\" };\nconst _hoisted_2 = { class: \"text-3xl\" };\nconst _hoisted_3 = { class: \"text-2xl\" };\nconst _hoisted_4 = { class: \"p-2 m-2\" };\nconst _hoisted_5 = { class: \"text-3xl\" };\nconst _hoisted_6 = { class: \"text-2xl\" };\nimport {\n  getGHLPipelines,\n  getGHLOpportunities\n} from \"~/server/database/repositories/crmServices\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"PipelineHeader\",\n  async setup(__props) {\n    let __temp, __restore;\n    const pipelines = ([__temp, __restore] = _withAsyncContext(() => getGHLPipelines()), __temp = await __temp, __restore(), __temp);\n    console.log(pipelines.pipelines[1].stages[0].id);\n    const newClientOpportunities = ([__temp, __restore] = _withAsyncContext(() => getGHLOpportunities(\n      pipelines.pipelines[1].id,\n      pipelines.pipelines[1].stages[0].id\n    )), __temp = await __temp, __restore(), __temp);\n    const newFrequentlyAskedQuestionsOpportunities = ([__temp, __restore] = _withAsyncContext(() => getGHLOpportunities(\n      pipelines.pipelines[0].id,\n      pipelines.pipelines[0].stages[0].id\n    )), __temp = await __temp, __restore(), __temp);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(_Fragment, null, [\n        _createElementVNode(\"div\", _hoisted_1, [\n          _createElementVNode(\"h3\", _hoisted_2, _toDisplayString(_unref(pipelines).pipelines[1].name), 1),\n          _createElementVNode(\"p\", _hoisted_3, _toDisplayString(_unref(newClientOpportunities).meta.total), 1),\n          _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.name), 1),\n          _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.phone), 1),\n          _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.email), 1),\n          _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].status), 1),\n          _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.tags[0]), 1)\n        ]),\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createElementVNode(\"h3\", _hoisted_5, _toDisplayString(_unref(pipelines).pipelines[0].name), 1),\n          _createElementVNode(\"p\", _hoisted_6, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).meta.total), 1),\n          _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.name), 1),\n          _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.phone), 1),\n          _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.email), 1),\n          _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].status), 1),\n          _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.tags[0]), 1)\n        ])\n      ], 64);\n    };\n  }\n});\n",
+      "start": 1761251027622,
+      "end": 1761251029051,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/dashboard/PipelineHeader.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"p-2 m-2\" }\nconst _hoisted_2 = { class: \"text-3xl\" }\nconst _hoisted_3 = { class: \"text-2xl\" }\nconst _hoisted_4 = { class: \"p-2 m-2\" }\nconst _hoisted_5 = { class: \"text-3xl\" }\nconst _hoisted_6 = { class: \"text-2xl\" }\n\nimport {\n  getGHLPipelines,\n  getGHLOpportunities,\n} from \"~/server/database/repositories/crmServices\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'PipelineHeader',\n  async setup(__props) {\n\nlet __temp: any, __restore: any\n\nconst pipelines = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLPipelines())),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\nconsole.log(pipelines.pipelines[1].stages[0].id);\nconst newClientOpportunities = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLOpportunities(\n  pipelines.pipelines[1].id,\n  pipelines.pipelines[1].stages[0].id\n))),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\n\nconst newFrequentlyAskedQuestionsOpportunities = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLOpportunities(\n  pipelines.pipelines[0].id,\n  pipelines.pipelines[0].stages[0].id\n))),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"h3\", _hoisted_2, _toDisplayString(_unref(pipelines).pipelines[1].name), 1),\n      _createElementVNode(\"p\", _hoisted_3, _toDisplayString(_unref(newClientOpportunities).meta.total), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.name), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.phone), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.email), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].status), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newClientOpportunities).opportunities[0].contact.tags[0]), 1)\n    ]),\n    _createElementVNode(\"div\", _hoisted_4, [\n      _createElementVNode(\"h3\", _hoisted_5, _toDisplayString(_unref(pipelines).pipelines[0].name), 1),\n      _createElementVNode(\"p\", _hoisted_6, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).meta.total), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.name), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.phone), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.email), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].status), 1),\n      _createElementVNode(\"p\", null, _toDisplayString(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact\n          .tags[0]), 1)\n    ])\n  ], 64))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,oBAAoB,mBAAmB,mBAAmB,wBAAwB;AAC3F,SAAS,SAAS,QAAQ,mBAAmB,kBAAkB,sBAAsB,qBAAqB,YAAY,WAAW,aAAa,YAAY,sBAAsB,2BAA2B;AAE3M,MAAM,aAAa,EAAE,OAAO,UAAU;AACtC,MAAM,aAAa,EAAE,OAAO,WAAW;AACvC,MAAM,aAAa,EAAE,OAAO,WAAW;AACvC,MAAM,aAAa,EAAE,OAAO,UAAU;AACtC,MAAM,aAAa,EAAE,OAAO,WAAW;AACvC,MAAM,aAAa,EAAE,OAAO,WAAW;AAEvC;AAAA,EACE;AAAA,EACA;AAAA,OACK;AAGP,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,MAAM,SAAS;AAEvB,QAAI,QAAa;AAEjB,UAAM,aACH,CAAC,QAAO,SAAS,IAAI,kBAAkB,MAAM,gBAAgB,CAAC,GAC/D,SAAS,MAAM,QACf,UAAU,GACV;AAEF,YAAQ,IAAI,UAAU,UAAU,CAAC,EAAE,OAAO,CAAC,EAAE,EAAE;AAC/C,UAAM,0BACH,CAAC,QAAO,SAAS,IAAI,kBAAkB,MAAM;AAAA,MAC9C,UAAU,UAAU,CAAC,EAAE;AAAA,MACvB,UAAU,UAAU,CAAC,EAAE,OAAO,CAAC,EAAE;AAAA,IACnC,CAAC,GACC,SAAS,MAAM,QACf,UAAU,GACV;AAGF,UAAM,4CACH,CAAC,QAAO,SAAS,IAAI,kBAAkB,MAAM;AAAA,MAC9C,UAAU,UAAU,CAAC,EAAE;AAAA,MACvB,UAAU,UAAU,CAAC,EAAE,OAAO,CAAC,EAAE;AAAA,IACnC,CAAC,GACC,SAAS,MAAM,QACf,UAAU,GACV;AAGF,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,WAAW,GAAG,oBAAoB,WAAW,MAAM;AAAA,QACzD,oBAAoB,OAAO,YAAY;AAAA,UACrC,oBAAoB,MAAM,YAAY,iBAAiB,OAAO,SAAS,EAAE,UAAU,CAAC,EAAE,IAAI,GAAG,CAAC;AAAA,UAC9F,oBAAoB,KAAK,YAAY,iBAAiB,OAAO,sBAAsB,EAAE,KAAK,KAAK,GAAG,CAAC;AAAA,UACnG,oBAAoB,KAAK,MAAM,iBAAiB,OAAO,sBAAsB,EAAE,cAAc,CAAC,EAAE,QAAQ,IAAI,GAAG,CAAC;AAAA,UAChH,oBAAoB,KAAK,MAAM,iBAAiB,OAAO,sBAAsB,EAAE,cAAc,CAAC,EAAE,QAAQ,KAAK,GAAG,CAAC;AAAA,UACjH,oBAAoB,KAAK,MAAM,iBAAiB,OAAO,sBAAsB,EAAE,cAAc,CAAC,EAAE,QAAQ,KAAK,GAAG,CAAC;AAAA,UACjH,oBAAoB,KAAK,MAAM,iBAAiB,OAAO,sBAAsB,EAAE,cAAc,CAAC,EAAE,MAAM,GAAG,CAAC;AAAA,UAC1G,oBAAoB,KAAK,MAAM,iBAAiB,OAAO,sBAAsB,EAAE,cAAc,CAAC,EAAE,QAAQ,KAAK,CAAC,CAAC,GAAG,CAAC;AAAA,QACrH,CAAC;AAAA,QACD,oBAAoB,OAAO,YAAY;AAAA,UACrC,oBAAoB,MAAM,YAAY,iBAAiB,OAAO,SAAS,EAAE,UAAU,CAAC,EAAE,IAAI,GAAG,CAAC;AAAA,UAC9F,oBAAoB,KAAK,YAAY,iBAAiB,OAAO,wCAAwC,EAAE,KAAK,KAAK,GAAG,CAAC;AAAA,UACrH,oBAAoB,KAAK,MAAM,iBAAiB,OAAO,wCAAwC,EAAE,cAAc,CAAC,EAAE,QAAQ,IAAI,GAAG,CAAC;AAAA,UAClI,oBAAoB,KAAK,MAAM,iBAAiB,OAAO,wCAAwC,EAAE,cAAc,CAAC,EAAE,QAAQ,KAAK,GAAG,CAAC;AAAA,UACnI,oBAAoB,KAAK,MAAM,iBAAiB,OAAO,wCAAwC,EAAE,cAAc,CAAC,EAAE,QAAQ,KAAK,GAAG,CAAC;AAAA,UACnI,oBAAoB,KAAK,MAAM,iBAAiB,OAAO,wCAAwC,EAAE,cAAc,CAAC,EAAE,MAAM,GAAG,CAAC;AAAA,UAC5H,oBAAoB,KAAK,MAAM,iBAAiB,OAAO,wCAAwC,EAAE,cAAc,CAAC,EAAE,QAC7G,KAAK,CAAC,CAAC,GAAG,CAAC;AAAA,QAClB,CAAC;AAAA,MACH,GAAG,EAAE;AAAA,IACP;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029052,
+      "end": 1761251029052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029052,
+      "end": 1761251029052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029052,
+      "end": 1761251029052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029052,
+      "end": 1761251029052,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029052,
+      "end": 1761251029053,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029053,
+      "end": 1761251029053,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029053,
+      "end": 1761251029053,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029053,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029056,
+      "end": 1761251029063,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029063,
+      "end": 1761251029063,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029063,
+      "end": 1761251029109,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029111,
+      "end": 1761251029111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029111,
+      "end": 1761251029111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029111,
+      "end": 1761251029111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029111,
+      "end": 1761251029111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251029111,
+      "end": 1761251029111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029111,
+      "end": 1761251029112,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029112,
+      "end": 1761251029112,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029112,
+      "end": 1761251029112,
+      "order": "normal"
+    }
+  ]
+}

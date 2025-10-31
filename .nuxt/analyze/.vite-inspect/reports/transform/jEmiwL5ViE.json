@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/WhatIsSeniorLifeInsuranceSection.vue?nuxt_component=async&nuxt_component_name=WhatIsSeniorLifeInsuranceSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo> Medicare Supplement </HeadlineTwo>\n\n        <BasicList>\n          <ListItems>Medical Bills</ListItems>\n          <ListItems>Credit Card Debt</ListItems>\n          <ListItems>Funeral Costs</ListItems>\n          <ListItems>Mortgage & Bills</ListItems>\n        </BasicList>\n        <ParagraphDescription\n          >By purchasing a Senior Life Insurance policy you can save your family\n          from the financial burden of providing for these expenses. This\n          provides a helping hand to your loved ones during a difficult and\n          stressful time.</ParagraphDescription\n        >\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo>Benefits of Senior Whole Life Insurance</HeadlineTwo>\n        <BasicList>\n          <ListItems>NO Medical Exam</ListItems>\n          <ListItems\n            >Rates are Locked in and Guaranteed to never increase.</ListItems\n          >\n          <ListItems>Coverage within 48 Hours</ListItems>\n          <ListItems>Coverage up to $50,0005</ListItems>\n          <ListItems>Guaranteed Issue Policies Available</ListItems>\n          <ListItems>Affordable Rates</ListItems>\n        </BasicList>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"TwoColumnSection\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>",
+      "start": 1761251023753,
+      "end": 1761251023864,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023864,
+      "end": 1761251023864,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023864,
+      "end": 1761251023864,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023864,
+      "end": 1761251023864,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023864,
+      "end": 1761251023864,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023864,
+      "end": 1761251023864,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023864,
+      "end": 1761251023864,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023864,
+      "end": 1761251023864,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023864,
+      "end": 1761251023864,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"TwoColumnSection\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"px-4 sm:px-8\" }\nconst _hoisted_2 = { class: \"px-4 sm:px-8\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ListItems = _resolveComponent(\"ListItems\")\n  const _component_BasicList = _resolveComponent(\"BasicList\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n    default: _withCtx(() => [\n      _createVNode(_component_GridTwoColumns, null, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createVNode(_component_HeadlineTwo, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\" Medicare Supplement \")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_BasicList, null, {\n              default: _withCtx(() => [\n                _createVNode(_component_ListItems, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Medical Bills\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ListItems, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Credit Card Debt\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ListItems, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Funeral Costs\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ListItems, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Mortgage & Bills\")\n                  ]),\n                  _: 1\n                })\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescription, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"By purchasing a Senior Life Insurance policy you can save your family from the financial burden of providing for these expenses. This provides a helping hand to your loved ones during a difficult and stressful time.\")\n              ]),\n              _: 1\n            })\n          ]),\n          _createElementVNode(\"div\", _hoisted_2, [\n            _createVNode(_component_HeadlineTwo, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Benefits of Senior Whole Life Insurance\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_BasicList, null, {\n              default: _withCtx(() => [\n                _createVNode(_component_ListItems, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"NO Medical Exam\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ListItems, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Rates are Locked in and Guaranteed to never increase.\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ListItems, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Coverage within 48 Hours\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ListItems, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Coverage up to $50,0005\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ListItems, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Guaranteed Issue Policies Available\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ListItems, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Affordable Rates\")\n                  ]),\n                  _: 1\n                })\n              ]),\n              _: 1\n            })\n          ])\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251023864,
+      "end": 1761251023865,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/WhatIsSeniorLifeInsuranceSection.vue\").then(r => r.default))",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/WhatIsSeniorLifeInsuranceSection.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023865,
+      "end": 1761251023865,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/subscribe/index.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\n// import TestingPhaseDialog from \"~~/components/elements/TestingPhaseDialog.vue\";\n\nconst router = useRouter();\nconst user = await useUser();\n\nfunction goToRegister() {\n  router.push(\"/register\");\n}\n</script>\n\n<template>\n  <PatternSection>\n    <!-- <TestingPhaseDialog class=\"z-30\" /> -->\n    <div class=\"min-h-screen\">\n      <div class=\"container m-auto px-6 py-20 md:px-12 lg:px-20\">\n        <div class=\"m-auto text-center lg:w-8/12 xl:w-7/12\">\n          <h2\n            class=\"text-2xl text-gray-800 dark:text-gray-200 font-bold md:text-4xl\"\n          >\n            Contractor Marketing That Generates Leads\n          </h2>\n        </div>\n        <div class=\"flex gap-8\">\n          <!-- <div class=\"flex-auto\">\n            <div\n              class=\"mt-12 m-auto -space-y-4 items-center justify-center md:space-y-0 md:-space-x-4 xl:w-10/12\"\n            >\n              <div class=\"relative -mx-4 group md:w-100 md:mx-0 lg:w-100 z-20\">\n                <div\n                  aria-hidden=\"true\"\n                  class=\"absolute top-0 w-full h-full dark:bg-gray-800 border-2 border-indigo-500/50 rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110\"\n                ></div>\n                <div class=\"relative p-6 space-y-6 lg:p-8\">\n                  <h3\n                    class=\"text-3xl text-gray-900 dark:text-gray-100 font-semibold text-center\"\n                  >\n                    Monthly Membership\n                  </h3>\n                  <div>\n                    <div class=\"relative flex justify-around\">\n                      <div class=\"flex items-end\">\n                        <span\n                          class=\"text-8xl text-gray-900 dark:text-gray-100 font-bold leading-0\"\n                          >$249.00</span\n                        >\n                      </div>\n                    </div>\n                  </div>\n                  <ul\n                    role=\"list\"\n                    class=\"w-max space-y-4 py-6 m-auto text-gray-900 dark:text-gray-100\"\n                  >\n                    <li class=\"space-x-2\">\n                      <span\n                        class=\"text-gray-900 dark:text-gray-100 font-semibold\"\n                        >&check;</span\n                      >\n                      <span>Professional Website Design</span>\n                    </li>\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Search Engine Optimization</span>\n                    </li>\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Local Optimization Management</span>\n                    </li>\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Online Review Management System</span>\n                    </li>\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Website Updates &amp; Improvements</span>\n                    </li>\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Automated Marketing Campaigns</span>\n                    </li>\n                    <p class=\"text-gray-900 dark:text-gray-100\">\n                      Cancel anytime.\n                    </p>\n                  </ul>\n                  <button\n                    v-if=\"user == null\"\n                    @click=\"goToRegister\"\n                    class=\"block w-full py-3 px-6 text-center rounded-xl transition duration-500 hover:scale-110 hover:text-slate-300 dark:hover:text-slate-100 dark:text-slate-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-amber-800 bg-blue-400 hover:bg-blue-800 dark:bg-amber-500 dark:hover:bg-amber-600\"\n                  >\n                    <span class=\"text-white font-semibold\">\n                      Sign Up and Subscribe\n                    </span>\n                  </button>\n                  <form v-else action=\"/api/subscribe\" method=\"POST\">\n                    <input\n                      type=\"hidden\"\n                      name=\"lookup_key\"\n                      value=\"price_1OGc15Dwc3XMpCoMsZdE2vfS\"\n                    />\n                    <input type=\"hidden\" name=\"user_id\" :value=\"user.id\" />\n                    <button\n                      type=\"submit\"\n                      title=\"Submit\"\n                      class=\"block w-full py-3 px-6 text-center rounded-xl transition duration-500 hover:scale-110 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 focus:bg-indigo-600\"\n                    >\n                      <span class=\"text-white font-semibold\">\n                        Subscribe Now\n                      </span>\n                    </button>\n                  </form>\n                </div>\n              </div>\n            </div>\n          </div> -->\n\n          <div class=\"flex-auto\">\n            <div\n              class=\"mt-12 m-auto -space-y-4 items-center justify-center md:space-y-0 md:-space-x-4 xl:w-10/12\"\n            >\n              <div class=\"relative -mx-4 group md:w-100 md:mx-0 lg:w-100 z-20\">\n                <div\n                  aria-hidden=\"true\"\n                  class=\"absolute top-0 w-full h-full dark:bg-gray-800 border-2 border-indigo-500/50 rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110\"\n                ></div>\n                <div class=\"relative p-6 space-y-6 lg:p-8\">\n                  <h3\n                    class=\"text-3xl dark:text-gray-100 font-semibold text-center\"\n                  >\n                    Monthly Membership\n                  </h3>\n                  <div>\n                    <div class=\"relative flex justify-around\">\n                      <div class=\"flex items-end\">\n                        <span\n                          class=\"text-8xl text-gray-900 dark:text-gray-100 font-bold leading-0\"\n                          >$499.00</span\n                        >\n                      </div>\n                    </div>\n                  </div>\n                  <ul\n                    role=\"list\"\n                    class=\"w-max space-y-4 py-6 m-auto text-gray-900 dark:text-gray-100\"\n                  >\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Professional Website Design</span>\n                    </li>\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Search Engine Optimization</span>\n                    </li>\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Local Optimization Management</span>\n                    </li>\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Online Review Management System</span>\n                    </li>\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Website Updates &amp; Improvements</span>\n                    </li>\n                    <li class=\"space-x-2\">\n                      <span class=\"font-semibold\">&check;</span>\n                      <span>Automated Marketing Campaigns</span>\n                    </li>\n                    <p class=\"text-gray-900 dark:text-gray-100\">\n                      Cancel anytime.\n                    </p>\n                  </ul>\n                  <button\n                    v-if=\"user == null\"\n                    @click=\"goToRegister\"\n                    class=\"block w-full py-3 px-6 text-center rounded-xl transition duration-500 hover:scale-110 hover:text-slate-300 dark:hover:text-slate-100 dark:text-slate-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-amber-800 bg-blue-400 hover:bg-blue-800 dark:bg-amber-500 dark:hover:bg-amber-600\"\n                  >\n                    <span class=\"text-white font-semibold\">\n                      Sign Up and Subscribe\n                    </span>\n                  </button>\n                  <form v-else action=\"/api/subscribe\" method=\"POST\">\n                    <input\n                      type=\"hidden\"\n                      name=\"lookup_key\"\n                      value=\"price_1OPS3qDwc3XMpCoMJHhmxOM1\"\n                    />\n                    <input type=\"hidden\" name=\"user_id\" :value=\"user.id\" />\n                    <button\n                      type=\"submit\"\n                      title=\"Submit\"\n                      class=\"block w-full py-3 px-6 text-center rounded-xl transition duration-500 hover:scale-110 bg-purple-600 hover:bg-purple-700 active:bg-purple-800 focus:bg-indigo-600\"\n                    >\n                      <span class=\"text-white font-semibold\">\n                        Subscribe Now\n                      </span>\n                    </button>\n                  </form>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <CustomerReviewSection />\n  </PatternSection>\n</template>\n",
+      "start": 1761251152083,
+      "end": 1761251162749,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251162749,
+      "end": 1761251162749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/subscribe/index.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/subscribe/index.vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"pages/subscribe/index.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
+      "start": 1761251162749,
+      "end": 1761251164637,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251164638,
+      "end": 1761251164638,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164638,
+      "end": 1761251164638,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164638,
+      "end": 1761251164638,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164708,
+      "end": 1761251164708,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164708,
+      "end": 1761251164708,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251164708,
+      "end": 1761251164709,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164709,
+      "end": 1761251164709,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251164709,
+      "end": 1761251164710,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251164710,
+      "end": 1761251164710,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251164711,
+      "end": 1761251164711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164712,
+      "end": 1761251164713,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164712,
+      "end": 1761251164713,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164713,
+      "end": 1761251164713,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164713,
+      "end": 1761251164713,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251164716,
+      "end": 1761251164717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251164717,
+      "end": 1761251164717,
+      "order": "normal"
+    }
+  ]
+}

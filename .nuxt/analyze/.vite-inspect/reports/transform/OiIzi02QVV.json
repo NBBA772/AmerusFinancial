@@ -1,0 +1,243 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/composables/getParam.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import {H3Error, createError} from \"h3\";\n\nexport default (param: string) => {\n  const route = useRoute()\n  const value = route.params[param]\n\n  if (value == null) {\n    const paramNotFound = new H3Error()\n    paramNotFound.statusCode = 501\n    paramNotFound.message = param + ' not found on this route. Are you sure you spelled it correctly? '\n      + 'params for this route are ' + JSON.stringify(route.params)\n    throw createError(paramNotFound)\n  }\n\n  return value\n}\n\n",
+      "start": 1761251035723,
+      "end": 1761251037790,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251037792,
+      "end": 1761251037792,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251037792,
+      "end": 1761251037792,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251037792,
+      "end": 1761251037792,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251037792,
+      "end": 1761251037792,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251037792,
+      "end": 1761251037798,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { H3Error, createError } from \"h3\";\nexport default (param) => {\n  const route = useRoute();\n  const value = route.params[param];\n  if (value == null) {\n    const paramNotFound = new H3Error();\n    paramNotFound.statusCode = 501;\n    paramNotFound.message = param + \" not found on this route. Are you sure you spelled it correctly? params for this route are \" + JSON.stringify(route.params);\n    throw createError(paramNotFound);\n  }\n  return value;\n};\n",
+      "start": 1761251037798,
+      "end": 1761251038809,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/composables/getParam.ts"
+        ],
+        "sourcesContent": [
+          "import {H3Error, createError} from \"h3\";\n\nexport default (param: string) => {\n  const route = useRoute()\n  const value = route.params[param]\n\n  if (value == null) {\n    const paramNotFound = new H3Error()\n    paramNotFound.statusCode = 501\n    paramNotFound.message = param + ' not found on this route. Are you sure you spelled it correctly? '\n      + 'params for this route are ' + JSON.stringify(route.params)\n    throw createError(paramNotFound)\n  }\n\n  return value\n}\n\n"
+        ],
+        "mappings": "AAAA,SAAQ,SAAS,mBAAkB;AAEnC,eAAe,CAAC,UAAkB;AAChC,QAAM,QAAQ,SAAS;AACvB,QAAM,QAAQ,MAAM,OAAO,KAAK;AAEhC,MAAI,SAAS,MAAM;AACjB,UAAM,gBAAgB,IAAI,QAAQ;AAClC,kBAAc,aAAa;AAC3B,kBAAc,UAAU,QAAQ,gGACG,KAAK,UAAU,MAAM,MAAM;AAC9D,UAAM,YAAY,aAAa;AAAA,EACjC;AAEA,SAAO;AACT;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251038809,
+      "end": 1761251038809,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251038810,
+      "end": 1761251038810,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251038810,
+      "end": 1761251038810,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251038810,
+      "end": 1761251038810,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251038812,
+      "end": 1761251038812,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251038813,
+      "end": 1761251038813,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251038813,
+      "end": 1761251038813,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251038813,
+      "end": 1761251038815,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251038815,
+      "end": 1761251038815,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251038817,
+      "end": 1761251038824,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251038827,
+      "end": 1761251038828,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251038834,
+      "end": 1761251038834,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251038835,
+      "end": 1761251038835,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251038835,
+      "end": 1761251038835,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251038835,
+      "end": 1761251038835,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251038835,
+      "end": 1761251038835,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251038835,
+      "end": 1761251038835,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251038835,
+      "end": 1761251038835,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251038837,
+      "end": 1761251038837,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251038837,
+      "end": 1761251038838,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "result": "import { useRoute } from '#app/composables/router';\nimport { H3Error, createError } from \"h3\";\nexport default (param) => {\n  const route = useRoute();\n  const value = route.params[param];\n  if (value == null) {\n    const paramNotFound = new H3Error();\n    paramNotFound.statusCode = 501;\n    paramNotFound.message = param + \" not found on this route. Are you sure you spelled it correctly? params for this route are \" + JSON.stringify(route.params);\n    throw createError(paramNotFound);\n  }\n  return value;\n};\n",
+      "start": 1761251038844,
+      "end": 1761251038848,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";AAAA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrC,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACf,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251038848,
+      "end": 1761251038848,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251038849,
+      "end": 1761251038850,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251038850,
+      "end": 1761251038850,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251038851,
+      "end": 1761251038851,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251038851,
+      "end": 1761251038851,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251038851,
+      "end": 1761251038851,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251038852,
+      "end": 1761251038853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251038853,
+      "end": 1761251038853,
+      "order": "normal"
+    }
+  ]
+}

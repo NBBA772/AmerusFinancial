@@ -1,0 +1,233 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/ResourceTabs.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, renderSlot as _renderSlot, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"mx-auto max-w-5xl\" }\nconst _hoisted_2 = {\n  role: \"tablist\",\n  class: \"h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground bg-gray-300 grid w-full grid-cols-2 mb-8\"\n}\nconst _hoisted_3 = {\n  key: 0,\n  class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\"\n}\nconst _hoisted_4 = {\n  key: 1,\n  class: \"mt-2 space-y-6\"\n}\n\nimport { ref } from 'vue'\nconst activeClass = 'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-white text-foreground shadow-sm'\nconst inactiveClass = 'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2'\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ResourceTabs',\n  setup(__props) {\n\nconst tab = ref<'guides' | 'blog'>('guides')\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"button\", {\n        type: \"button\",\n        class: _normalizeClass(tab.value === 'guides' ? activeClass : inactiveClass),\n        onClick: _cache[0] || (_cache[0] = ($event: any) => (tab.value = 'guides'))\n      }, \" Guides & Forms \", 2),\n      _createElementVNode(\"button\", {\n        type: \"button\",\n        class: _normalizeClass(tab.value === 'blog' ? activeClass : inactiveClass),\n        onClick: _cache[1] || (_cache[1] = ($event: any) => (tab.value = 'blog'))\n      }, \" Blog \", 2)\n    ]),\n    (tab.value === 'guides')\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n          _renderSlot(_ctx.$slots, \"guides\")\n        ]))\n      : (_openBlock(), _createElementBlock(\"div\", _hoisted_4, [\n          _renderSlot(_ctx.$slots, \"blog\")\n        ]))\n  ]))\n}\n}\n\n})",
+      "start": 1761251028049,
+      "end": 1761251028049
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251028051,
+      "end": 1761251028051,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251028051,
+      "end": 1761251028051,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251028051,
+      "end": 1761251028051,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251028051,
+      "end": 1761251028051,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251028051,
+      "end": 1761251028051,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, renderSlot as _renderSlot, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"mx-auto max-w-5xl\" };\nconst _hoisted_2 = {\n  role: \"tablist\",\n  class: \"h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground bg-gray-300 grid w-full grid-cols-2 mb-8\"\n};\nconst _hoisted_3 = {\n  key: 0,\n  class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\"\n};\nconst _hoisted_4 = {\n  key: 1,\n  class: \"mt-2 space-y-6\"\n};\nimport { ref } from \"vue\";\nconst activeClass = \"inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-white text-foreground shadow-sm\";\nconst inactiveClass = \"inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ResourceTabs\",\n  setup(__props) {\n    const tab = ref(\"guides\");\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"button\", {\n            type: \"button\",\n            class: _normalizeClass(tab.value === \"guides\" ? activeClass : inactiveClass),\n            onClick: _cache[0] || (_cache[0] = ($event) => tab.value = \"guides\")\n          }, \" Guides & Forms \", 2),\n          _createElementVNode(\"button\", {\n            type: \"button\",\n            class: _normalizeClass(tab.value === \"blog\" ? activeClass : inactiveClass),\n            onClick: _cache[1] || (_cache[1] = ($event) => tab.value = \"blog\")\n          }, \" Blog \", 2)\n        ]),\n        tab.value === \"guides\" ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n          _renderSlot(_ctx.$slots, \"guides\")\n        ])) : (_openBlock(), _createElementBlock(\"div\", _hoisted_4, [\n          _renderSlot(_ctx.$slots, \"blog\")\n        ]))\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251028051,
+      "end": 1761251029162,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/ResourceTabs.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, renderSlot as _renderSlot, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"mx-auto max-w-5xl\" }\nconst _hoisted_2 = {\n  role: \"tablist\",\n  class: \"h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground bg-gray-300 grid w-full grid-cols-2 mb-8\"\n}\nconst _hoisted_3 = {\n  key: 0,\n  class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\"\n}\nconst _hoisted_4 = {\n  key: 1,\n  class: \"mt-2 space-y-6\"\n}\n\nimport { ref } from 'vue'\nconst activeClass = 'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-white text-foreground shadow-sm'\nconst inactiveClass = 'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2'\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ResourceTabs',\n  setup(__props) {\n\nconst tab = ref<'guides' | 'blog'>('guides')\n\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"button\", {\n        type: \"button\",\n        class: _normalizeClass(tab.value === 'guides' ? activeClass : inactiveClass),\n        onClick: _cache[0] || (_cache[0] = ($event: any) => (tab.value = 'guides'))\n      }, \" Guides & Forms \", 2),\n      _createElementVNode(\"button\", {\n        type: \"button\",\n        class: _normalizeClass(tab.value === 'blog' ? activeClass : inactiveClass),\n        onClick: _cache[1] || (_cache[1] = ($event: any) => (tab.value = 'blog'))\n      }, \" Blog \", 2)\n    ]),\n    (tab.value === 'guides')\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n          _renderSlot(_ctx.$slots, \"guides\")\n        ]))\n      : (_openBlock(), _createElementBlock(\"div\", _hoisted_4, [\n          _renderSlot(_ctx.$slots, \"blog\")\n        ]))\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,kBAAkB,iBAAiB,sBAAsB,qBAAqB,cAAc,aAAa,aAAa,YAAY,sBAAsB,2BAAsE;AAEvO,MAAM,aAAa,EAAE,OAAO,oBAAoB;AAChD,MAAM,aAAa;AAAA,EACjB,MAAM;AAAA,EACN,OAAO;AACT;AACA,MAAM,aAAa;AAAA,EACjB,KAAK;AAAA,EACL,OAAO;AACT;AACA,MAAM,aAAa;AAAA,EACjB,KAAK;AAAA,EACL,OAAO;AACT;AAEA,SAAS,WAAW;AACpB,MAAM,cAAc;AACpB,MAAM,gBAAgB;AAEtB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAEjB,UAAM,MAAM,IAAuB,QAAQ;AAG3C,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,WAAW,GAAG,oBAAoB,OAAO,YAAY;AAAA,QAC3D,oBAAoB,OAAO,YAAY;AAAA,UACrC,oBAAoB,UAAU;AAAA,YAC5B,MAAM;AAAA,YACN,OAAO,gBAAgB,IAAI,UAAU,WAAW,cAAc,aAAa;AAAA,YAC3E,SAAS,OAAO,CAAC,MAAM,OAAO,CAAC,IAAI,CAAC,WAAiB,IAAI,QAAQ;AAAA,UACnE,GAAG,oBAAoB,CAAC;AAAA,UACxB,oBAAoB,UAAU;AAAA,YAC5B,MAAM;AAAA,YACN,OAAO,gBAAgB,IAAI,UAAU,SAAS,cAAc,aAAa;AAAA,YACzE,SAAS,OAAO,CAAC,MAAM,OAAO,CAAC,IAAI,CAAC,WAAiB,IAAI,QAAQ;AAAA,UACnE,GAAG,UAAU,CAAC;AAAA,QAChB,CAAC;AAAA,QACA,IAAI,UAAU,YACV,WAAW,GAAG,oBAAoB,OAAO,YAAY;AAAA,UACpD,YAAY,KAAK,QAAQ,QAAQ;AAAA,QACnC,CAAC,MACA,WAAW,GAAG,oBAAoB,OAAO,YAAY;AAAA,UACpD,YAAY,KAAK,QAAQ,MAAM;AAAA,QACjC,CAAC;AAAA,MACP,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029162,
+      "end": 1761251029162,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029162,
+      "end": 1761251029162,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029164,
+      "end": 1761251029164,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029164,
+      "end": 1761251029164,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029164,
+      "end": 1761251029164,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029173,
+      "end": 1761251029173,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029173,
+      "end": 1761251029173,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029173,
+      "end": 1761251029183,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029185,
+      "end": 1761251029185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029186,
+      "end": 1761251029186,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029186,
+      "end": 1761251029186,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029186,
+      "end": 1761251029186,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251029188,
+      "end": 1761251029188,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029188,
+      "end": 1761251029188,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029188,
+      "end": 1761251029188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029189,
+      "end": 1761251029189,
+      "order": "normal"
+    }
+  ]
+}

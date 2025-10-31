@@ -1,0 +1,226 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport { useUser } from \"~/composables/useAuth\";\n\nconst nuxtApp = useNuxtApp();\n\nnuxtApp.hook(\"page:finish\", () => {\n  window.scrollTo(0, 0);\n});\n\nuseHead({\n  link: [{ rel: \"icon\", type: \"image/x-icon\", href: \"/img/favicon.ico\" }],\n});\n\nawait useUser();\nuseSchemaOrg([\n  defineLocalBusiness({\n    name: 'Amerus Financial',\n    logo: \"/logo.png\",\n    description: 'Insurance and financial services',\n    url: 'https://www.amerusfinancial.com',\n    telephone: '+1-888-441-7891',\n    email: 'info@amerusfinancial.com',\n    priceRange: '$$',\n    serviceArea: 'United States',\n        address: {\n      addressCountry: \"US\",\n      postalCode: \"33813\",\n      address: \"5115 S Lakeland Dr STE 1\",\n      addressLocality: \"Lakeland\",\n      addressRegion: \"Florida\",\n      streetAddress: \"5115 S Lakeland Dr STE 1\",\n    },\n    openingHoursSpecification: [\n      {\n        dayOfWeek: [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\"],\n        opens: \"09:00\",\n        closes: \"17:00\",\n      },\n    ],\n    hasOfferCatalog: {\n      name: 'Insurance Services',\n      itemListElement: [\n        { \n          '@type': 'Service',\n          name: 'Health Insurance',\n          url: 'https://www.amerusfinancial.com/services/health'\n        },\n        { \n          '@type': 'Service',\n          name: 'Individual Health Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/individual'\n        },\n        { \n          '@type': 'Service',\n          name: 'Family Health Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/family'\n        },\n        { \n          '@type': 'Service',\n          name: 'Group Health Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/group'\n        },\n        { \n          '@type': 'Service',\n          name: 'Medicare Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/medicare'\n        },\n        { \n          '@type': 'Service',\n          name: 'Dental Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/dental'\n        },\n        { \n          '@type': 'Service',\n          name: 'Vision Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/vision'\n        },\n        { \n          '@type': 'Service',\n          name: 'Life Insurance',\n          url: 'https://www.amerusfinancial.com/services/life'\n        },\n        { \n          '@type': 'Service',\n          name: 'Term Life Insurance',\n          url: 'https://www.amerusfinancial.com/services/life/term-life'\n        },\n        { \n          '@type': 'Service',\n          name: 'Whole Life Insurance',\n          url: 'https://www.amerusfinancial.com/services/life/whole-life'\n        },\n        { \n          '@type': 'Service',\n          name: 'Universal Life Insurance',\n          url: 'https://www.amerusfinancial.com/services/life/universal-life'\n        },\n        { \n          '@type': 'Service',\n          name: 'Auto Insurance',\n          url: 'https://www.amerusfinancial.com/services/auto'\n        },\n        { \n          '@type': 'Service',\n          name: 'Personal Auto Insurance',\n          url: 'https://www.amerusfinancial.com/services/auto/personal-auto'\n        },\n        { \n          '@type': 'Service',\n          name: 'Commercial Auto Insurance',\n          url: 'https://www.amerusfinancial.com/services/auto/commercial-auto'\n        },\n        { \n          '@type': 'Service',\n          name: 'Home Insurance',\n          url: 'https://www.amerusfinancial.com/services/home'\n        },\n        { \n          '@type': 'Service',\n          name: 'Homeowners Insurance',\n          url: 'https://www.amerusfinancial.com/services/home/homeowners'\n        },\n        { \n          '@type': 'Service',\n          name: 'Flood Insurance',\n          url: 'https://www.amerusfinancial.com/services/home/flood'\n        },\n        { \n          '@type': 'Service',\n          name: 'Business Insurance',\n          url: 'https://www.amerusfinancial.com/services/business'\n        },\n        { \n          '@type': 'Service',\n          name: 'General Liability Insurance',\n          url: 'https://www.amerusfinancial.com/services/business/general-liability'\n        },\n        { \n          '@type': 'Service',\n          name: 'Professional Liability Insurance',\n          url: 'https://www.amerusfinancial.com/services/business/professional-liability'\n        },\n        { \n          '@type': 'Service',\n          name: 'Workers Compensation',\n          url: 'https://www.amerusfinancial.com/services/business/workers-comp'\n        },\n        { \n          '@type': 'Service',\n          name: 'Retirement Planning',\n          url: 'https://www.amerusfinancial.com/services/retirement'\n        },\n        { \n          '@type': 'Service',\n          name: 'IRA Services',\n          url: 'https://www.amerusfinancial.com/services/retirement/iras'\n        },\n        { \n          '@type': 'Service',\n          name: '401(k) Planning',\n          url: 'https://www.amerusfinancial.com/services/retirement/401k'\n        },\n        { \n          '@type': 'Service',\n          name: 'Annuities',\n          url: 'https://www.amerusfinancial.com/services/retirement/annuity'\n        }\n      ]\n    }\n  })\n])\n</script>\n<template>\n  <NuxtLayout>\n    <div class=\"dark:bg-indigo-950 dark:text-slate-300\">\n      <NuxtPage />\n    </div>\n  </NuxtLayout>\n</template>\n\n<style>\n.iframe-container {\n  position: relative;\n  width: 100%;\n  padding-top: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625) */\n}\n\n.iframe-container iframe {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n.rotate-enter-active,\n.rotate-leave-active {\n  transition: all 0.4s;\n}\n\n.rotate-enter-from,\n.rotate-leave-to {\n  opacity: 0;\n  transform: rotate3d(1, 1, 1, 15deg);\n}\n\n.page-enter-active,\n.page-leave-active {\n  transition: all 0.2s;\n}\n.page-enter-from,\n.page-leave-to {\n  opacity: 0;\n  filter: blur(1rem);\n}\n</style>",
+      "start": 1761251024983,
+      "end": 1761251025071,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251025071,
+      "end": 1761251025071,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251025071,
+      "end": 1761251025071,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251025071,
+      "end": 1761251025071,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251025071,
+      "end": 1761251025071,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251025071,
+      "end": 1761251025071,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251025071,
+      "end": 1761251025071,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251025071,
+      "end": 1761251025071,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251025071,
+      "end": 1761251025071,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue?vue&type=style&index=0&lang.css\";\nexport default _sfc_main;\n",
+      "start": 1761251025071,
+      "end": 1761251025091,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251025091,
+      "end": 1761251025091,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251025092,
+      "end": 1761251025092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251025092,
+      "end": 1761251025093,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251025093,
+      "end": 1761251025093,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251025093,
+      "end": 1761251025093,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251025093,
+      "end": 1761251025093,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251025093,
+      "end": 1761251025093,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251025094,
+      "end": 1761251025094,
+      "order": "normal"
+    }
+  ]
+}

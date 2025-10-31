@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/GlossaryTermCard.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"font-semibold mb-1\" }\nconst _hoisted_2 = { class: \"text-sm text-gray-600\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'GlossaryTermCard',\n  props: {\n    title: {},\n    description: {},\n    icon: {},\n    bgClass: {},\n    borderClass: {},\n    iconColor: {}\n  },\n  setup(__props: any) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass(['p-4 rounded-lg border', _ctx.borderClass, _ctx.bgClass])\n  }, [\n    _createElementVNode(\"div\", {\n      class: _normalizeClass(['p-3 rounded-full mb-2', _ctx.iconColor])\n    }, [\n      _createVNode(_component_Icon, {\n        name: _ctx.icon,\n        class: \"h-6 w-6\"\n      }, null, 8, [\"name\"])\n    ], 2),\n    _createElementVNode(\"h4\", _hoisted_1, _toDisplayString(_ctx.title), 1),\n    _createElementVNode(\"p\", _hoisted_2, _toDisplayString(_ctx.description), 1)\n  ], 2))\n}\n}\n\n})",
+      "start": 1761251027830,
+      "end": 1761251027830
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251027831,
+      "end": 1761251027831,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251027831,
+      "end": 1761251027831,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251027831,
+      "end": 1761251027831,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251027831,
+      "end": 1761251027831,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251027831,
+      "end": 1761251027831,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"font-semibold mb-1\" };\nconst _hoisted_2 = { class: \"text-sm text-gray-600\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"GlossaryTermCard\",\n  props: {\n    title: {},\n    description: {},\n    icon: {},\n    bgClass: {},\n    borderClass: {},\n    iconColor: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([\"p-4 rounded-lg border\", _ctx.borderClass, _ctx.bgClass])\n      }, [\n        _createElementVNode(\"div\", {\n          class: _normalizeClass([\"p-3 rounded-full mb-2\", _ctx.iconColor])\n        }, [\n          _createVNode(_component_Icon, {\n            name: _ctx.icon,\n            class: \"h-6 w-6\"\n          }, null, 8, [\"name\"])\n        ], 2),\n        _createElementVNode(\"h4\", _hoisted_1, _toDisplayString(_ctx.title), 1),\n        _createElementVNode(\"p\", _hoisted_2, _toDisplayString(_ctx.description), 1)\n      ], 2);\n    };\n  }\n});\n",
+      "start": 1761251027831,
+      "end": 1761251029117,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/GlossaryTermCard.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"font-semibold mb-1\" }\nconst _hoisted_2 = { class: \"text-sm text-gray-600\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'GlossaryTermCard',\n  props: {\n    title: {},\n    description: {},\n    icon: {},\n    bgClass: {},\n    borderClass: {},\n    iconColor: {}\n  },\n  setup(__props: any) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass(['p-4 rounded-lg border', _ctx.borderClass, _ctx.bgClass])\n  }, [\n    _createElementVNode(\"div\", {\n      class: _normalizeClass(['p-3 rounded-full mb-2', _ctx.iconColor])\n    }, [\n      _createVNode(_component_Icon, {\n        name: _ctx.icon,\n        class: \"h-6 w-6\"\n      }, null, 8, [\"name\"])\n    ], 2),\n    _createElementVNode(\"h4\", _hoisted_1, _toDisplayString(_ctx.title), 1),\n    _createElementVNode(\"p\", _hoisted_2, _toDisplayString(_ctx.description), 1)\n  ], 2))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,oBAAoB,mBAAmB,eAAe,cAAc,kBAAkB,iBAAiB,sBAAsB,qBAAqB,mBAAmB,kBAAkB,aAAa,YAAY,sBAAsB,2BAA2B;AAE1Q,MAAM,aAAa,EAAE,OAAO,qBAAqB;AACjD,MAAM,aAAa,EAAE,OAAO,wBAAwB;AAGpD,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,OAAO;AAAA,IACL,OAAO,CAAC;AAAA,IACR,aAAa,CAAC;AAAA,IACd,MAAM,CAAC;AAAA,IACP,SAAS,CAAC;AAAA,IACV,aAAa,CAAC;AAAA,IACd,WAAW,CAAC;AAAA,EACd;AAAA,EACA,MAAM,SAAc;AAItB,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,kBAAkB,kBAAkB,MAAM;AAEhD,aAAQ,WAAW,GAAG,oBAAoB,OAAO;AAAA,QAC/C,OAAO,gBAAgB,CAAC,yBAAyB,KAAK,aAAa,KAAK,OAAO,CAAC;AAAA,MAClF,GAAG;AAAA,QACD,oBAAoB,OAAO;AAAA,UACzB,OAAO,gBAAgB,CAAC,yBAAyB,KAAK,SAAS,CAAC;AAAA,QAClE,GAAG;AAAA,UACD,aAAa,iBAAiB;AAAA,YAC5B,MAAM,KAAK;AAAA,YACX,OAAO;AAAA,UACT,GAAG,MAAM,GAAG,CAAC,MAAM,CAAC;AAAA,QACtB,GAAG,CAAC;AAAA,QACJ,oBAAoB,MAAM,YAAY,iBAAiB,KAAK,KAAK,GAAG,CAAC;AAAA,QACrE,oBAAoB,KAAK,YAAY,iBAAiB,KAAK,WAAW,GAAG,CAAC;AAAA,MAC5E,GAAG,CAAC;AAAA,IACN;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029118,
+      "end": 1761251029119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029119,
+      "end": 1761251029119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029119,
+      "end": 1761251029119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029121,
+      "end": 1761251029121,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029122,
+      "end": 1761251029122,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029122,
+      "end": 1761251029122,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029122,
+      "end": 1761251029122,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029123,
+      "end": 1761251029123,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029123,
+      "end": 1761251029123,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029123,
+      "end": 1761251029123,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029131,
+      "end": 1761251029131,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029132,
+      "end": 1761251029132,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029132,
+      "end": 1761251029136,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029136,
+      "end": 1761251029136,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029136,
+      "end": 1761251029136,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029136,
+      "end": 1761251029136,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029137,
+      "end": 1761251029137,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = { class: \"font-semibold mb-1\" };\nconst _hoisted_2 = { class: \"text-sm text-gray-600\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"GlossaryTermCard\",\n  props: {\n    title: {},\n    description: {},\n    icon: {},\n    bgClass: {},\n    borderClass: {},\n    iconColor: {}\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"div\", {\n        class: _normalizeClass([\"p-4 rounded-lg border\", _ctx.borderClass, _ctx.bgClass])\n      }, [\n        _createElementVNode(\"div\", {\n          class: _normalizeClass([\"p-3 rounded-full mb-2\", _ctx.iconColor])\n        }, [\n          _createVNode(_component_Icon, {\n            name: _ctx.icon,\n            class: \"h-6 w-6\"\n          }, null, 8, [\"name\"])\n        ], 2),\n        _createElementVNode(\"h4\", _hoisted_1, _toDisplayString(_ctx.title), 1),\n        _createElementVNode(\"p\", _hoisted_2, _toDisplayString(_ctx.description), 1)\n      ], 2);\n    };\n  }\n});\n",
+      "start": 1761251029137,
+      "end": 1761251029137,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029137,
+      "end": 1761251029137,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029137,
+      "end": 1761251029142,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029142,
+      "end": 1761251029142,
+      "order": "normal"
+    }
+  ]
+}

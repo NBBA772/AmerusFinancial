@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ServiceGrid.vue?nuxt_component=async&nuxt_component_name=ServiceGrid",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<!-- File: components/sections/HomePage/ServiceGrid.vue -->\n<script setup lang=\"ts\">\nconst services = [\n  {\n    title: \"Health Insurance\",\n    icon: \"lucide:heart\",\n    items: [\"Individual\", \"Family\", \"Group\", \"Senior/Medicare\"],\n    link: \"/services\",\n  },\n  {\n    title: \"Life Insurance\",\n    icon: \"lucide:shield\",\n    items: [\"Term Life\", \"Whole Life\", \"Universal Life\", \"Senior Life\"],\n    link: \"/services\",\n  },\n  {\n    title: \"Retirement Planning\",\n    icon: \"lucide:dollar-sign\",\n    items: [\"Annuities\", \"401(k) Rollovers\", \"IRAs\", \"Pension Planning\"],\n    link: \"/services\",\n  },\n  {\n    title: \"Property Insurance\",\n    icon: \"lucide:house\",\n    items: [\"Auto Insurance\", \"Homeowners\", \"Commercial\", \"Liability\"],\n    link: \"/services\",\n  },\n];\n</script>\n\n<template>\n  <div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 m-8\">\n    <div\n      v-for=\"(service, index) in services\"\n      :key=\"index\"\n      class=\"service-card bg-white rounded-lg shadow-md p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg flex items-start gap-4\"\n    >\n      <!-- Icon Column -->\n      <div\n        class=\"w-12 h-12 rounded-full bg-[#e3e3e3] p-2 flex items-center justify-center text-primary flex-shrink-0\"\n      >\n        <Icon :name=\"service.icon\" class=\"h-12 w-12\" />\n      </div>\n\n      <!-- Content Column -->\n      <div class=\"flex-1\">\n        <h3 class=\"text-xl font-bold mb-3\">{{ service.title }}</h3>\n\n        <ul class=\"space-y-2 text-gray-600\">\n          <li\n            v-for=\"(item, i) in service.items\"\n            :key=\"i\"\n            class=\"flex items-center\"\n          >\n            <span class=\"w-1.5 h-1.5 bg-primary rounded-full mr-2\"></span>\n            {{ item }}\n          </li>\n        </ul>\n\n        <NuxtLink\n          :to=\"service.link\"\n          class=\"inline-block mt-4 text-primary font-medium hover:text-primary-dark\"\n        >\n          Learn more →\n        </NuxtLink>\n      </div>\n    </div>\n  </div>\n</template>\n",
+      "start": 1761251023655,
+      "end": 1761251023750,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ServiceGrid.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ServiceGrid.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761251023750,
+      "end": 1761251023762,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ServiceGrid.vue\").then(r => r.default))",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023762,
+      "end": 1761251023762,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023762,
+      "end": 1761251023763,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ServiceGrid.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023763,
+      "end": 1761251023763,
+      "order": "normal"
+    }
+  ]
+}

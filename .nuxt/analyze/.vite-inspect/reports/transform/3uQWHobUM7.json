@@ -1,0 +1,222 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/@tiptap/extension-floating-menu/dist/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { posToDOMRect, Extension } from '@tiptap/core';\nimport { Plugin, PluginKey } from '@tiptap/pm/state';\nimport tippy from 'tippy.js';\n\nclass FloatingMenuView {\r\n    constructor({ editor, element, view, tippyOptions = {}, shouldShow, }) {\r\n        this.preventHide = false;\r\n        this.shouldShow = ({ view, state }) => {\r\n            const { selection } = state;\r\n            const { $anchor, empty } = selection;\r\n            const isRootDepth = $anchor.depth === 1;\r\n            const isEmptyTextBlock = $anchor.parent.isTextblock && !$anchor.parent.type.spec.code && !$anchor.parent.textContent;\r\n            if (!view.hasFocus()\r\n                || !empty\r\n                || !isRootDepth\r\n                || !isEmptyTextBlock\r\n                || !this.editor.isEditable) {\r\n                return false;\r\n            }\r\n            return true;\r\n        };\r\n        this.mousedownHandler = () => {\r\n            this.preventHide = true;\r\n        };\r\n        this.focusHandler = () => {\r\n            // we use `setTimeout` to make sure `selection` is already updated\r\n            setTimeout(() => this.update(this.editor.view));\r\n        };\r\n        this.blurHandler = ({ event }) => {\r\n            var _a;\r\n            if (this.preventHide) {\r\n                this.preventHide = false;\r\n                return;\r\n            }\r\n            if ((event === null || event === void 0 ? void 0 : event.relatedTarget) && ((_a = this.element.parentNode) === null || _a === void 0 ? void 0 : _a.contains(event.relatedTarget))) {\r\n                return;\r\n            }\r\n            this.hide();\r\n        };\r\n        this.tippyBlurHandler = (event) => {\r\n            this.blurHandler({ event });\r\n        };\r\n        this.editor = editor;\r\n        this.element = element;\r\n        this.view = view;\r\n        if (shouldShow) {\r\n            this.shouldShow = shouldShow;\r\n        }\r\n        this.element.addEventListener('mousedown', this.mousedownHandler, { capture: true });\r\n        this.editor.on('focus', this.focusHandler);\r\n        this.editor.on('blur', this.blurHandler);\r\n        this.tippyOptions = tippyOptions;\r\n        // Detaches menu content from its current parent\r\n        this.element.remove();\r\n        this.element.style.visibility = 'visible';\r\n    }\r\n    createTooltip() {\r\n        const { element: editorElement } = this.editor.options;\r\n        const editorIsAttached = !!editorElement.parentElement;\r\n        if (this.tippy || !editorIsAttached) {\r\n            return;\r\n        }\r\n        this.tippy = tippy(editorElement, {\r\n            duration: 0,\r\n            getReferenceClientRect: null,\r\n            content: this.element,\r\n            interactive: true,\r\n            trigger: 'manual',\r\n            placement: 'right',\r\n            hideOnClick: 'toggle',\r\n            ...this.tippyOptions,\r\n        });\r\n        // maybe we have to hide tippy on its own blur event as well\r\n        if (this.tippy.popper.firstChild) {\r\n            this.tippy.popper.firstChild.addEventListener('blur', this.tippyBlurHandler);\r\n        }\r\n    }\r\n    update(view, oldState) {\r\n        var _a, _b, _c;\r\n        const { state } = view;\r\n        const { doc, selection } = state;\r\n        const { from, to } = selection;\r\n        const isSame = oldState && oldState.doc.eq(doc) && oldState.selection.eq(selection);\r\n        if (isSame) {\r\n            return;\r\n        }\r\n        this.createTooltip();\r\n        const shouldShow = (_a = this.shouldShow) === null || _a === void 0 ? void 0 : _a.call(this, {\r\n            editor: this.editor,\r\n            view,\r\n            state,\r\n            oldState,\r\n        });\r\n        if (!shouldShow) {\r\n            this.hide();\r\n            return;\r\n        }\r\n        (_b = this.tippy) === null || _b === void 0 ? void 0 : _b.setProps({\r\n            getReferenceClientRect: ((_c = this.tippyOptions) === null || _c === void 0 ? void 0 : _c.getReferenceClientRect) || (() => posToDOMRect(view, from, to)),\r\n        });\r\n        this.show();\r\n    }\r\n    show() {\r\n        var _a;\r\n        (_a = this.tippy) === null || _a === void 0 ? void 0 : _a.show();\r\n    }\r\n    hide() {\r\n        var _a;\r\n        (_a = this.tippy) === null || _a === void 0 ? void 0 : _a.hide();\r\n    }\r\n    destroy() {\r\n        var _a, _b;\r\n        if ((_a = this.tippy) === null || _a === void 0 ? void 0 : _a.popper.firstChild) {\r\n            this.tippy.popper.firstChild.removeEventListener('blur', this.tippyBlurHandler);\r\n        }\r\n        (_b = this.tippy) === null || _b === void 0 ? void 0 : _b.destroy();\r\n        this.element.removeEventListener('mousedown', this.mousedownHandler, { capture: true });\r\n        this.editor.off('focus', this.focusHandler);\r\n        this.editor.off('blur', this.blurHandler);\r\n    }\r\n}\r\nconst FloatingMenuPlugin = (options) => {\r\n    return new Plugin({\r\n        key: typeof options.pluginKey === 'string' ? new PluginKey(options.pluginKey) : options.pluginKey,\r\n        view: view => new FloatingMenuView({ view, ...options }),\r\n    });\r\n};\n\nconst FloatingMenu = Extension.create({\r\n    name: 'floatingMenu',\r\n    addOptions() {\r\n        return {\r\n            element: null,\r\n            tippyOptions: {},\r\n            pluginKey: 'floatingMenu',\r\n            shouldShow: null,\r\n        };\r\n    },\r\n    addProseMirrorPlugins() {\r\n        if (!this.options.element) {\r\n            return [];\r\n        }\r\n        return [\r\n            FloatingMenuPlugin({\r\n                pluginKey: this.options.pluginKey,\r\n                editor: this.editor,\r\n                element: this.options.element,\r\n                tippyOptions: this.options.tippyOptions,\r\n                shouldShow: this.options.shouldShow,\r\n            }),\r\n        ];\r\n    },\r\n});\n\nexport { FloatingMenu, FloatingMenuPlugin, FloatingMenuView, FloatingMenu as default };\n//# sourceMappingURL=index.js.map\n",
+      "start": 1761251039063,
+      "end": 1761251039306,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251039307,
+      "end": 1761251039307,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251039308,
+      "end": 1761251039308,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251039308,
+      "end": 1761251039308,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251039308,
+      "end": 1761251039308,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251039308,
+      "end": 1761251039308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251039308,
+      "end": 1761251039308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251039308,
+      "end": 1761251039308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251039308,
+      "end": 1761251039308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251039308,
+      "end": 1761251039308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251039308,
+      "end": 1761251039308,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251039308,
+      "end": 1761251039309,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251039309,
+      "end": 1761251039309,
+      "order": "normal"
+    }
+  ]
+}

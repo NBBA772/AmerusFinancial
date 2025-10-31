@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/AboutAmerusFinancialGroupSolutionsSection.vue?nuxt_component=async&nuxt_component_name=AboutAmerusFinancialGroupSolutionsSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/about.jpg\"\n          sizes=\"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\"\n          alt=\"Bus Driver\"\n          quality=\"80\"\n          loading=\"lazy\"\n        />\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <!-- <ParagraphSubHeading>\n          {{ IntroText.SubHeading }}\n        </ParagraphSubHeading> -->\n        <HeadlineTwo>\n          {{ IntroText.Heading }}\n        </HeadlineTwo>\n        <ParagraphDescription>\n          {{ IntroText.description }}\n        </ParagraphDescription>\n        <!-- <div\n          class=\"flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4\"\n        >\n          <NuxtLink\n            to=\"/service-area-business-marketing-program\"\n            class=\"text-slate-100 hover:text-slate-300 dark:hover:text-slate-100 dark:text-slate-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-amber-800 bg-blue-400 hover:bg-blue-800 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mr-2 mb-2\"\n          >\n            Learn More About Our Program\n          </NuxtLink>\n        </div> -->\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"TwoColumnSection\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n      IntroText: {\n        SubHeading:\n          \"Empower your business to new heights with our marketing blueprint. Let us make it effortless for your customers to find you!\",\n        Heading: \"About Amerus Financial Group\",\n        description:\n          \"At Amerus Financial we are serious about putting the needs and desires of our clients before anything else. We take the time to carefully conside your individual circumstances before making any reccomendations. Our experienced planners take pride in searching out solutions to complex needs and making sure that we offer sound financial advise. With over 4,000 satisfied clients at Amerus Financial Group we strive to go above and beyond your expectations.\",\n      },\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>",
+      "start": 1761251023673,
+      "end": 1761251023729,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023729,
+      "end": 1761251023729,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023729,
+      "end": 1761251023729,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023729,
+      "end": 1761251023729,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023729,
+      "end": 1761251023729,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023729,
+      "end": 1761251023729,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023729,
+      "end": 1761251023729,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023729,
+      "end": 1761251023729,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023729,
+      "end": 1761251023729,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"TwoColumnSection\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n      IntroText: {\n        SubHeading:\n          \"Empower your business to new heights with our marketing blueprint. Let us make it effortless for your customers to find you!\",\n        Heading: \"About Amerus Financial Group\",\n        description:\n          \"At Amerus Financial we are serious about putting the needs and desires of our clients before anything else. We take the time to carefully conside your individual circumstances before making any reccomendations. Our experienced planners take pride in searching out solutions to complex needs and making sure that we offer sound financial advise. With over 4,000 satisfied clients at Amerus Financial Group we strive to go above and beyond your expectations.\",\n      },\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"px-4 sm:px-8\" }\nconst _hoisted_2 = { class: \"px-4 sm:px-8\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n    default: _withCtx(() => [\n      _createVNode(_component_GridTwoColumns, null, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createVNode(_component_NuxtImg, {\n              format: \"webp\",\n              src: \"/images/about.jpg\",\n              sizes: \"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\",\n              alt: \"Bus Driver\",\n              quality: \"80\",\n              loading: \"lazy\"\n            })\n          ]),\n          _createElementVNode(\"div\", _hoisted_2, [\n            _createVNode(_component_HeadlineTwo, null, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescription, null, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n              ]),\n              _: 1\n            })\n          ])\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251023729,
+      "end": 1761251023731,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/AboutAmerusFinancialGroupSolutionsSection.vue\").then(r => r.default))",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023731,
+      "end": 1761251023731,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023731,
+      "end": 1761251023732,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023732,
+      "end": 1761251023732,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023732,
+      "end": 1761251023732,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023732,
+      "end": 1761251023732,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023732,
+      "end": 1761251023732,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023732,
+      "end": 1761251023732,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023732,
+      "end": 1761251023732,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023732,
+      "end": 1761251023732,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023732,
+      "end": 1761251023732,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/AboutAmerusFinancialGroupSolutionsSection.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023732,
+      "end": 1761251023732,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023732,
+      "end": 1761251023732,
+      "order": "normal"
+    }
+  ]
+}

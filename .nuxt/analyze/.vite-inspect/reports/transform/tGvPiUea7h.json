@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/CustomerReviewSection.vue?nuxt_component=async&nuxt_component_name=CustomerReviewSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"dark:bg-gray-800 dark:text-gray-100 my-16\">\n    <!-- Heading -->\n    <div class=\"container flex flex-col items-center mx-auto mb-12 p-4 sm:p-8 md:p-10 md:px-12\">\n      <HeadlineTwo>\n        {{ IntroText.Heading }}\n      </HeadlineTwo>\n    </div>\n\n    <!-- Responsive wrapper for cards -->\n    <div class=\"container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6\">\n      <CustomerReviewCard\n        v-for=\"review in reviews\"\n        :key=\"review.id\"\n        :review=\"review\"\n      />\n    </div>\n  </BasicSection>\n</template>\n\n<script>\n\nexport default {\n  name: \"CustomerReviewSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Read trusted reviews from our customers\",\n      },\n      reviews: [\n        {\n          id: 1,\n          name: \"Person 1\",\n          company: \"Company 1\",\n          testimonial:\n            \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.\",\n        },\n        {\n          id: 2,\n          name: \"Person 2\",\n          company: \"Company 2\",\n          testimonial:\n            \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\",\n        },\n        {\n          id: 3,\n          name: \"Person 3\",\n          company: \"Company 3\",\n          testimonial:\n            \"Nunc eget lorem dolor sed. Id aliquet lectus proin nibh nisl condimentum id. Amet massa vitae tortor condimentum lacinia quis .\",\n        },\n      ],\n    };\n  },\n};\n</script>\n",
+      "start": 1761251023518,
+      "end": 1761251023616,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023616,
+      "end": 1761251023616,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023616,
+      "end": 1761251023616,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023616,
+      "end": 1761251023616,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023616,
+      "end": 1761251023616,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023616,
+      "end": 1761251023616,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023616,
+      "end": 1761251023616,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023616,
+      "end": 1761251023616,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023616,
+      "end": 1761251023616,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n\nconst _sfc_main = {\n  name: \"CustomerReviewSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Read trusted reviews from our customers\",\n      },\n      reviews: [\n        {\n          id: 1,\n          name: \"Person 1\",\n          company: \"Company 1\",\n          testimonial:\n            \"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.\",\n        },\n        {\n          id: 2,\n          name: \"Person 2\",\n          company: \"Company 2\",\n          testimonial:\n            \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\",\n        },\n        {\n          id: 3,\n          name: \"Person 3\",\n          company: \"Company 3\",\n          testimonial:\n            \"Nunc eget lorem dolor sed. Id aliquet lectus proin nibh nisl condimentum id. Amet massa vitae tortor condimentum lacinia quis .\",\n        },\n      ],\n    };\n  },\n};\n\nimport { toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"container flex flex-col items-center mx-auto mb-12 p-4 sm:p-8 md:p-10 md:px-12\" }\nconst _hoisted_2 = { class: \"container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_CustomerReviewCard = _resolveComponent(\"CustomerReviewCard\")\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"dark:bg-gray-800 dark:text-gray-100 my-16\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _createVNode(_component_HeadlineTwo, null, {\n          default: _withCtx(() => [\n            _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n          ]),\n          _: 1\n        })\n      ]),\n      _createElementVNode(\"div\", _hoisted_2, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.reviews, (review) => {\n          return (_openBlock(), _createBlock(_component_CustomerReviewCard, {\n            key: review.id,\n            review: review\n          }, null, 8, [\"review\"]))\n        }), 128))\n      ])\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251023616,
+      "end": 1761251023617,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/CustomerReviewSection.vue\").then(r => r.default))",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023617,
+      "end": 1761251023617,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023617,
+      "end": 1761251023618,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/CustomerReviewSection.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/MedicarePage/MedicareInsuranceServicesHeroSection.vue?nuxt_component=async&nuxt_component_name=MedicareInsuranceServicesHeroSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/MedicareInsuranceServices.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n        />\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          {{ IntroText.Heading }}\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero>\n          {{ IntroText.Description }}\n        </ParagraphDescriptionHero>\n        <SeniorMedicareQuoteForm tag=\"SeniorMedicareInsuranceQuote\" />\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Compare Medicare Plans from up to 21 different companies\",\n        Description: \"$0 monthly premium Medicare plans may be available.\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n</style>\n",
+      "start": 1761251141694,
+      "end": 1761251141946,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141946,
+      "end": 1761251141946,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141946,
+      "end": 1761251141946,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141946,
+      "end": 1761251141946,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141946,
+      "end": 1761251141946,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141946,
+      "end": 1761251141946,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141946,
+      "end": 1761251141946,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141946,
+      "end": 1761251141946,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141947,
+      "end": 1761251141947,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141947,
+      "end": 1761251141947,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141947,
+      "end": 1761251141947,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141947,
+      "end": 1761251141947,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141947,
+      "end": 1761251141947,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Compare Medicare Plans from up to 21 different companies\",\n        Description: \"$0 monthly premium Medicare plans may be available.\",\n      },\n    };\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_SectionContainer = _resolveComponent(\"SectionContainer\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n  const _component_HeadlineOneHero = _resolveComponent(\"HeadlineOneHero\")\n  const _component_ParagraphDescriptionHero = _resolveComponent(\"ParagraphDescriptionHero\")\n  const _component_SeniorMedicareQuoteForm = _resolveComponent(\"SeniorMedicareQuoteForm\")\n\n  _push(_ssrRenderComponent(_component_SectionContainer, _mergeProps({ class: \"text-center\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div data-v-d969b5e3${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_NuxtImg, {\n                format: \"webp\",\n                src: \"/images/MedicareInsuranceServices.jpg\",\n                alt: \"Happy Kids\",\n                quality: \"80\",\n                sizes: \"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n              }, null, _parent, _scopeId))\n              _push(`</div><div class=\"p-4\" data-v-d969b5e3${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_HeadlineOneHero, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.Heading)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescriptionHero, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.Description)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.Description), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_SeniorMedicareQuoteForm, { tag: \"SeniorMedicareInsuranceQuote\" }, null, _parent, _scopeId))\n              _push(`</div>`)\n            } else {\n              return [\n                _createVNode(\"div\", null, [\n                  _createVNode(_component_NuxtImg, {\n                    format: \"webp\",\n                    src: \"/images/MedicareInsuranceServices.jpg\",\n                    alt: \"Happy Kids\",\n                    quality: \"80\",\n                    sizes: \"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n                  })\n                ]),\n                _createVNode(\"div\", { class: \"p-4\" }, [\n                  _createVNode(_component_HeadlineOneHero, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescriptionHero, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.Description), 1)\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_SeniorMedicareQuoteForm, { tag: \"SeniorMedicareInsuranceQuote\" })\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n      } else {\n        return [\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", null, [\n                _createVNode(_component_NuxtImg, {\n                  format: \"webp\",\n                  src: \"/images/MedicareInsuranceServices.jpg\",\n                  alt: \"Happy Kids\",\n                  quality: \"80\",\n                  sizes: \"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n                })\n              ]),\n              _createVNode(\"div\", { class: \"p-4\" }, [\n                _createVNode(_component_HeadlineOneHero, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescriptionHero, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.Description), 1)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_SeniorMedicareQuoteForm, { tag: \"SeniorMedicareInsuranceQuote\" })\n              ])\n            ]),\n            _: 1\n          })\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/MedicarePage/MedicareInsuranceServicesHeroSection.vue?vue&type=style&index=0&scoped=d969b5e3&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/MedicarePage/MedicareInsuranceServicesHeroSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-d969b5e3\"]])",
+      "start": 1761251141947,
+      "end": 1761251141966,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/MedicarePage/MedicareInsuranceServicesHeroSection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/MedicarePage/MedicareInsuranceServicesHeroSection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/MedicareInsuranceServices.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n        />\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          {{ IntroText.Heading }}\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero>\n          {{ IntroText.Description }}\n        </ParagraphDescriptionHero>\n        <SeniorMedicareQuoteForm tag=\"SeniorMedicareInsuranceQuote\" />\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Compare Medicare Plans from up to 21 different companies\",\n        Description: \"$0 monthly premium Medicare plans may be available.\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n</style>\n"
+        ],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141966,
+      "end": 1761251141966,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141966,
+      "end": 1761251141966,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141966,
+      "end": 1761251141966,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141966,
+      "end": 1761251141966,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141966,
+      "end": 1761251141966,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/MedicarePage/MedicareInsuranceServicesHeroSection.vue\").then(r => r.default))",
+      "start": 1761251141966,
+      "end": 1761251141966,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141966,
+      "end": 1761251141966,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141967,
+      "end": 1761251141967,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141967,
+      "end": 1761251141968,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141968,
+      "end": 1761251141968,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141968,
+      "end": 1761251141968,
+      "order": "normal"
+    }
+  ]
+}

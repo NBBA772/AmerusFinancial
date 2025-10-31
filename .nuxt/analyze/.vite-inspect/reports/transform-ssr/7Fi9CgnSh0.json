@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/GroupInsuranceSolutionHeroSection.vue?nuxt_component=async&nuxt_component_name=GroupInsuranceSolutionHeroSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <div class=\"video-container\">\n          <iframe\n            class=\"full-width-height\"\n            src=\"https://www.youtube.com/embed/pJLJhErFHqs\"\n            frameborder=\"0\"\n            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n            allowfullscreen\n          ></iframe>\n        </div>\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          {{ IntroText.Heading }}\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero>\n          {{ IntroText.Description }}\n        </ParagraphDescriptionHero>\n        <NuxtLink\n          to=\"https://portal.benefitalign.com/brokerengage/amerusfinancial/small-business-health-insurance/health?clearSession=True&isAnonymousQuote=True\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n          class=\"inline-block py-2.5 px-8 text-sm text-white bg-indigo-600 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800\"\n        >\n          Get A Quote\n        </NuxtLink>\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Business Health Insurance-No Obligation Quote!\",\n        Description:\n          \"For 20 years, Amerus Financial delivers tailored insurance solutions, staying updated on trends. Streamlined process, tailored plans, top-rated carriers, trusted nationwide.\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.video-container {\n  position: relative;\n  width: 100%;\n  padding-top: 56.25%; /* 16:9 aspect ratio */\n}\n\n.full-width-height {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n</style>\n",
+      "start": 1761251141207,
+      "end": 1761251141394,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141394,
+      "end": 1761251141394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Business Health Insurance-No Obligation Quote!\",\n        Description:\n          \"For 20 years, Amerus Financial delivers tailored insurance solutions, staying updated on trends. Streamlined process, tailored plans, top-rated carriers, trusted nationwide.\",\n      },\n    };\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_SectionContainer = _resolveComponent(\"SectionContainer\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_HeadlineOneHero = _resolveComponent(\"HeadlineOneHero\")\n  const _component_ParagraphDescriptionHero = _resolveComponent(\"ParagraphDescriptionHero\")\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n\n  _push(_ssrRenderComponent(_component_SectionContainer, _mergeProps({ class: \"text-center\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div data-v-0340f737${\n                _scopeId\n              }><div class=\"video-container\" data-v-0340f737${\n                _scopeId\n              }><iframe class=\"full-width-height\" src=\"https://www.youtube.com/embed/pJLJhErFHqs\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen data-v-0340f737${\n                _scopeId\n              }></iframe></div></div><div class=\"p-4\" data-v-0340f737${\n                _scopeId\n              }>`)\n              _push(_ssrRenderComponent(_component_HeadlineOneHero, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.Heading)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescriptionHero, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.Description)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.Description), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_NuxtLink, {\n                to: \"https://portal.benefitalign.com/brokerengage/amerusfinancial/small-business-health-insurance/health?clearSession=True&isAnonymousQuote=True\",\n                target: \"_blank\",\n                rel: \"noopener noreferrer\",\n                class: \"inline-block py-2.5 px-8 text-sm text-white bg-indigo-600 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800\"\n              }, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(` Get A Quote `)\n                  } else {\n                    return [\n                      _createTextVNode(\" Get A Quote \")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div>`)\n            } else {\n              return [\n                _createVNode(\"div\", null, [\n                  _createVNode(\"div\", { class: \"video-container\" }, [\n                    _createVNode(\"iframe\", {\n                      class: \"full-width-height\",\n                      src: \"https://www.youtube.com/embed/pJLJhErFHqs\",\n                      frameborder: \"0\",\n                      allow: \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\",\n                      allowfullscreen: \"\"\n                    })\n                  ])\n                ]),\n                _createVNode(\"div\", { class: \"p-4\" }, [\n                  _createVNode(_component_HeadlineOneHero, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescriptionHero, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.Description), 1)\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_NuxtLink, {\n                    to: \"https://portal.benefitalign.com/brokerengage/amerusfinancial/small-business-health-insurance/health?clearSession=True&isAnonymousQuote=True\",\n                    target: \"_blank\",\n                    rel: \"noopener noreferrer\",\n                    class: \"inline-block py-2.5 px-8 text-sm text-white bg-indigo-600 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800\"\n                  }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\" Get A Quote \")\n                    ]),\n                    _: 1\n                  })\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n      } else {\n        return [\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", null, [\n                _createVNode(\"div\", { class: \"video-container\" }, [\n                  _createVNode(\"iframe\", {\n                    class: \"full-width-height\",\n                    src: \"https://www.youtube.com/embed/pJLJhErFHqs\",\n                    frameborder: \"0\",\n                    allow: \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\",\n                    allowfullscreen: \"\"\n                  })\n                ])\n              ]),\n              _createVNode(\"div\", { class: \"p-4\" }, [\n                _createVNode(_component_HeadlineOneHero, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescriptionHero, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.Description), 1)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_NuxtLink, {\n                  to: \"https://portal.benefitalign.com/brokerengage/amerusfinancial/small-business-health-insurance/health?clearSession=True&isAnonymousQuote=True\",\n                  target: \"_blank\",\n                  rel: \"noopener noreferrer\",\n                  class: \"inline-block py-2.5 px-8 text-sm text-white bg-indigo-600 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800\"\n                }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" Get A Quote \")\n                  ]),\n                  _: 1\n                })\n              ])\n            ]),\n            _: 1\n          })\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/GroupInsuranceSolutionHeroSection.vue?vue&type=style&index=0&scoped=0340f737&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/GroupHealthPage/GroupInsuranceSolutionHeroSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-0340f737\"]])",
+      "start": 1761251141394,
+      "end": 1761251141399,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/GroupInsuranceSolutionHeroSection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/GroupInsuranceSolutionHeroSection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <div class=\"video-container\">\n          <iframe\n            class=\"full-width-height\"\n            src=\"https://www.youtube.com/embed/pJLJhErFHqs\"\n            frameborder=\"0\"\n            allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n            allowfullscreen\n          ></iframe>\n        </div>\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          {{ IntroText.Heading }}\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero>\n          {{ IntroText.Description }}\n        </ParagraphDescriptionHero>\n        <NuxtLink\n          to=\"https://portal.benefitalign.com/brokerengage/amerusfinancial/small-business-health-insurance/health?clearSession=True&isAnonymousQuote=True\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n          class=\"inline-block py-2.5 px-8 text-sm text-white bg-indigo-600 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800\"\n        >\n          Get A Quote\n        </NuxtLink>\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Business Health Insurance-No Obligation Quote!\",\n        Description:\n          \"For 20 years, Amerus Financial delivers tailored insurance solutions, staying updated on trends. Streamlined process, tailored plans, top-rated carriers, trusted nationwide.\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.video-container {\n  position: relative;\n  width: 100%;\n  padding-top: 56.25%; /* 16:9 aspect ratio */\n}\n\n.full-width-height {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n</style>\n"
+        ],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141399,
+      "end": 1761251141399,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141399,
+      "end": 1761251141399,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141399,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/GroupInsuranceSolutionHeroSection.vue\").then(r => r.default))",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141400,
+      "end": 1761251141400,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HealthInsurancePage/HealthcareQuoteSection.vue?nuxt_component=async&nuxt_component_name=HealthcareQuoteSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <CardDeckThreeColumns class=\"hidden sm:block\">\n      <QuoteCard>\n        <div\n          class=\"block overflow-hidden rounded-t-lg rounded-b-lg h-full shadow-lg bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-100\"\n        >\n          <div class=\"p-4 bg-blue-400 dark:bg-amber-400\">\n            <h2\n              class=\"mt-2 mb-2 font-bold text-2xl font-Heading text-center text-white\"\n            >\n              A.C.A Quote\n            </h2>\n          </div>\n          <IndividualFamilyHealthcareInsuranceQuoteForm\n            tag=\"HealthInsuranceACAQuote\"\n          />\n          <div class=\"text-md p-3 mb-4\">\n            <BasicList>\n              <ListItems>40 yr Male, 40 yr female, 2 children</ListItems>\n              <ListItems>Deductible: $0</ListItems>\n              <ListItems>PCP Copay: $8</ListItems>\n              <ListItems>Specialist Copay: $15</ListItems>\n              <ListItems>RX copay: $8</ListItems>\n            </BasicList>\n            <ParagraphDescription\n              >Plan Premium with tax credit = $145.77</ParagraphDescription\n            >\n          </div>\n          <div>\n            <!-- <img :src=\"image\" /> -->\n          </div>\n        </div>\n\n        <div\n          class=\"block overflow-hidden rounded-t-lg rounded-b-lg h-full shadow-lg bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-100\"\n        >\n          <div class=\"p-4 bg-blue-400 dark:bg-amber-400\">\n            <h2\n              class=\"mt-2 mb-2 font-bold text-2xl font-Heading text-center text-white\"\n            >\n              Short Term Medical\n            </h2>\n          </div>\n          <IndividualFamilyHealthcareInsuranceQuoteForm\n            tag=\"HealthInsuranceShortTermMedical\"\n          />\n          <div class=\"text-md p-3 mb-4\">\n            <BasicList>\n              <ListItems>40 yr Male, 40 yr female, 2 children</ListItems>\n              <ListItems>Deductible: $2000</ListItems>\n              <ListItems>Doctor Co-pays $30/$60</ListItems>\n              <ListItems>RX: $10 Co-pay</ListItems>\n              <ListItems>Up to 36 months of Coverage</ListItems>\n              <ListItems>Teledoc Included</ListItems>\n            </BasicList>\n            <ParagraphDescription\n              >Short Term Silver Plan $369.80</ParagraphDescription\n            >\n          </div>\n          <div>\n            <!-- <img :src=\"image\" /> -->\n          </div>\n        </div>\n\n        <div\n          class=\"block overflow-hidden rounded-t-lg rounded-b-lg h-full shadow-lg bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-100\"\n        >\n          <div class=\"p-4 bg-blue-400 dark:bg-amber-400\">\n            <h2\n              class=\"mt-2 mb-2 font-bold text-2xl font-Heading text-center text-white\"\n            >\n              Indemnity\n            </h2>\n          </div>\n          <IndividualFamilyHealthcareInsuranceQuoteForm\n            tag=\"HealthInsuranceIndemnity\"\n          />\n          <div class=\"text-md p-3 mb-4\">\n            <BasicList>\n              <ListItems>40 yr Male, 40 yr female, 2 children</ListItems>\n              <ListItems>Hospitalization = $3000 per day</ListItems>\n              <ListItems>Surgery 100% *restrictions apply</ListItems>\n              <ListItems>Emergency Room = $125 per/day</ListItems>\n              <ListItems>Doctors Office Visit = $ 100 per visit</ListItems>\n              <ListItems>Teledoc Included</ListItems>\n            </BasicList>\n            <ParagraphDescription>Plan Premium $268.00</ParagraphDescription>\n          </div>\n          <div>\n            <!-- <img :src=\"image\" /> -->\n          </div>\n        </div>\n      </QuoteCard>\n    </CardDeckThreeColumns>\n  </BasicSection>\n</template>\n\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      Featured: [\n        {\n          id: 1,\n          title: \"Individual & Family\",\n          description:\n            \"Ensure your family's future with our personalized insurance plans. From life to health coverage, we tailor solutions to meet your needs, providing security and peace of mind.\",\n          to: \"/get-started\",\n          text: \"Get Started Now!\",\n        },\n        {\n          id: 2,\n          title: \"Senior\",\n          description:\n            \"Navigate retirement confidently with our senior insurance plans. From Medicare to long-term care coverage, we offer personalized support for your golden years.\",\n          to: \"/get-started\",\n          text: \"Get Started Now!\",\n        },\n        {\n          id: 3,\n          title: \"Business\",\n          description:\n            \"Protect your business with our tailored insurance solutions. From liability coverage to employee benefits, we safeguard your interests and promote growth.\",\n          to: \"/get-started\",\n          text: \"Get Started Now!\",\n        },\n      ],\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>",
+      "start": 1761251023612,
+      "end": 1761251023682,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023682,
+      "end": 1761251023682,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023682,
+      "end": 1761251023682,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023682,
+      "end": 1761251023682,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023682,
+      "end": 1761251023682,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023682,
+      "end": 1761251023682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023682,
+      "end": 1761251023683,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023683,
+      "end": 1761251023683,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023683,
+      "end": 1761251023683,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      Featured: [\n        {\n          id: 1,\n          title: \"Individual & Family\",\n          description:\n            \"Ensure your family's future with our personalized insurance plans. From life to health coverage, we tailor solutions to meet your needs, providing security and peace of mind.\",\n          to: \"/get-started\",\n          text: \"Get Started Now!\",\n        },\n        {\n          id: 2,\n          title: \"Senior\",\n          description:\n            \"Navigate retirement confidently with our senior insurance plans. From Medicare to long-term care coverage, we offer personalized support for your golden years.\",\n          to: \"/get-started\",\n          text: \"Get Started Now!\",\n        },\n        {\n          id: 3,\n          title: \"Business\",\n          description:\n            \"Protect your business with our tailored insurance solutions. From liability coverage to employee benefits, we safeguard your interests and promote growth.\",\n          to: \"/get-started\",\n          text: \"Get Started Now!\",\n        },\n      ],\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"block overflow-hidden rounded-t-lg rounded-b-lg h-full shadow-lg bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-100\" }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"p-4 bg-blue-400 dark:bg-amber-400\" }, [\n  /*#__PURE__*/_createElementVNode(\"h2\", { class: \"mt-2 mb-2 font-bold text-2xl font-Heading text-center text-white\" }, \" A.C.A Quote \")\n], -1)\nconst _hoisted_3 = { class: \"text-md p-3 mb-4\" }\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"div\", null, null, -1)\nconst _hoisted_5 = { class: \"block overflow-hidden rounded-t-lg rounded-b-lg h-full shadow-lg bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-100\" }\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"p-4 bg-blue-400 dark:bg-amber-400\" }, [\n  /*#__PURE__*/_createElementVNode(\"h2\", { class: \"mt-2 mb-2 font-bold text-2xl font-Heading text-center text-white\" }, \" Short Term Medical \")\n], -1)\nconst _hoisted_7 = { class: \"text-md p-3 mb-4\" }\nconst _hoisted_8 = /*#__PURE__*/_createElementVNode(\"div\", null, null, -1)\nconst _hoisted_9 = { class: \"block overflow-hidden rounded-t-lg rounded-b-lg h-full shadow-lg bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-100\" }\nconst _hoisted_10 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"p-4 bg-blue-400 dark:bg-amber-400\" }, [\n  /*#__PURE__*/_createElementVNode(\"h2\", { class: \"mt-2 mb-2 font-bold text-2xl font-Heading text-center text-white\" }, \" Indemnity \")\n], -1)\nconst _hoisted_11 = { class: \"text-md p-3 mb-4\" }\nconst _hoisted_12 = /*#__PURE__*/_createElementVNode(\"div\", null, null, -1)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_IndividualFamilyHealthcareInsuranceQuoteForm = _resolveComponent(\"IndividualFamilyHealthcareInsuranceQuoteForm\")\n  const _component_ListItems = _resolveComponent(\"ListItems\")\n  const _component_BasicList = _resolveComponent(\"BasicList\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n  const _component_QuoteCard = _resolveComponent(\"QuoteCard\")\n  const _component_CardDeckThreeColumns = _resolveComponent(\"CardDeckThreeColumns\")\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n    default: _withCtx(() => [\n      _createVNode(_component_CardDeckThreeColumns, { class: \"hidden sm:block\" }, {\n        default: _withCtx(() => [\n          _createVNode(_component_QuoteCard, null, {\n            default: _withCtx(() => [\n              _createElementVNode(\"div\", _hoisted_1, [\n                _hoisted_2,\n                _createVNode(_component_IndividualFamilyHealthcareInsuranceQuoteForm, { tag: \"HealthInsuranceACAQuote\" }),\n                _createElementVNode(\"div\", _hoisted_3, [\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"40 yr Male, 40 yr female, 2 children\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Deductible: $0\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"PCP Copay: $8\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Specialist Copay: $15\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"RX copay: $8\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Plan Premium with tax credit = $145.77\")\n                    ]),\n                    _: 1\n                  })\n                ]),\n                _hoisted_4\n              ]),\n              _createElementVNode(\"div\", _hoisted_5, [\n                _hoisted_6,\n                _createVNode(_component_IndividualFamilyHealthcareInsuranceQuoteForm, { tag: \"HealthInsuranceShortTermMedical\" }),\n                _createElementVNode(\"div\", _hoisted_7, [\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"40 yr Male, 40 yr female, 2 children\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Deductible: $2000\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Doctor Co-pays $30/$60\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"RX: $10 Co-pay\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Up to 36 months of Coverage\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Teledoc Included\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Short Term Silver Plan $369.80\")\n                    ]),\n                    _: 1\n                  })\n                ]),\n                _hoisted_8\n              ]),\n              _createElementVNode(\"div\", _hoisted_9, [\n                _hoisted_10,\n                _createVNode(_component_IndividualFamilyHealthcareInsuranceQuoteForm, { tag: \"HealthInsuranceIndemnity\" }),\n                _createElementVNode(\"div\", _hoisted_11, [\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"40 yr Male, 40 yr female, 2 children\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Hospitalization = $3000 per day\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Surgery 100% *restrictions apply\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Emergency Room = $125 per/day\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Doctors Office Visit = $ 100 per visit\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Teledoc Included\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Plan Premium $268.00\")\n                    ]),\n                    _: 1\n                  })\n                ]),\n                _hoisted_12\n              ])\n            ]),\n            _: 1\n          })\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251023683,
+      "end": 1761251023684,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HealthInsurancePage/HealthcareQuoteSection.vue\").then(r => r.default))",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023684,
+      "end": 1761251023684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023684,
+      "end": 1761251023685,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023685,
+      "end": 1761251023685,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023685,
+      "end": 1761251023685,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023685,
+      "end": 1761251023685,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HealthInsurancePage/HealthcareQuoteSection.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023685,
+      "end": 1761251023685,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023685,
+      "end": 1761251023685,
+      "order": "normal"
+    }
+  ]
+}

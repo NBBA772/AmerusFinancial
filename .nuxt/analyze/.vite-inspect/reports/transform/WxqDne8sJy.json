@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/WhyAmerusFinancialGroupSection.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"px-4 sm:px-8\">\n      <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n      <ParagraphDescription\n        >Amerus Financial Group is an independent insurance brokerage firm\n        specializing in Health Insurance, Annuities, Life Insurance and Employee\n        Benefits products and services for successful businesses, individuals\n        and their families. AFG strives to build long-term relationships with\n        clients by providing high levels of customer service and by representing\n        the industry’s top carriers whose business philosophies complement our\n        own.</ParagraphDescription\n      >\n\n      <ParagraphDescription\n        >Amerus Financial Group is an Insurance Agency that has been serving our\n        4000 clients for more than 20 years. Amerus specializes in Innovative\n        Health Insurance Solutions for Individuals and Business. We are based in\n        Lakeland, Fl with agents in 13 states. Our agents are highly trained\n        proffesionals that understand the dynamics of the ever changing. Health\n        Insurance Marketplace. Give us a call today at +1-800-596-1474 you will\n        be you did.</ParagraphDescription\n      >\n      <BasicList>\n        <ListItems\n          >Our agency has the knowledge and experience to provide innovative\n          solutions for your company.</ListItems\n        >\n        <ListItems\n          >Our commitment to customer service affords you peace of mind knowing\n          that if any problems arise we will deal directly with your employees\n          and take the burden from your shoulders.</ListItems\n        >\n        <ListItems\n          >We offer a state of the Art Enrollment system as well as professional\n          agent to guide your employees through the enrollment\n          process.</ListItems\n        >\n        <ListItems\n          >We are committed to providing you the support and guidence you need\n          to navigate through the world of employee benefits.</ListItems\n        >\n      </BasicList>\n    </div>\n    <GridThreeColumns>\n      <div\n        class=\"mx-auto my-4 bg-indigo-300 dark:bg-indigo-900 shadow-lg rounded-lg\"\n        v-for=\"Service in Services\"\n        :key=\"Service.title\"\n      >\n        <div class=\"px-6 py-5\">\n          <div class=\"flex items-start\">\n            <!-- Card content -->\n            <div class=\"flex-grow truncate\">\n              <!-- Card header -->\n              <div class=\"w-full sm:flex justify-between items-center mb-3\">\n                <!-- Title -->\n                <h2\n                  class=\"text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0\"\n                >\n                  {{ Service.title }}\n                </h2>\n              </div>\n              <!-- Card body -->\n              <div class=\"flex items-end justify-between whitespace-normal\">\n                <!-- Paragraph -->\n                <div class=\"max-w-md text-indigo-100\">\n                  <p class=\"mb-2\">\n                    {{ Service.excerpt }}\n                  </p>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </GridThreeColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline: \"Why Amerus Financial Group ?\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n      Services: [\n        {\n          title: \"Fully Insured Health Insurance\",\n          excerpt:\n            \"This is simply an insurance program that all of the health claims risk is assumed by the Insurance Company and typically is utilized by groups that have health concerns or have an older workforce. Over the past several years companies have trended away from these plans opting instead to go with self funded or level funded plans.\",\n          image: \"/images/FamilyAndIndividual.jpg\",\n        },\n        {\n          title: \"Self Funded Health Insurance Plans\",\n          excerpt:\n            \"A Self Funded, or Self-Insured plan, is one in which the employer assumes the financial risk for providing health care benefits to its employees. In practical terms, Self-Insured employers pay for claims out-of-pocket as they are presented instead of paying a pre-determined premium to an insurance carrier for a Fully Insured plan. Typically, a self-insured employer will set up a special trust fund to earmark money (corporate and employee contributions) to pay incurred claims. These plans are usually sold to large organizations that benefit from having enough insured to mitigate the financial risks associated with the plan.\",\n          image: \"/images/Senior-Solutions.jpg\",\n        },\n        {\n          title: \"Level Funded Health Insurance Plans\",\n          excerpt:\n            \"A level funded health plan (also known as a partially self-funded plan) is a type of health insurance plan that combines the cost savings and customization of self-funding with the financial safety and predictability of fully funded plans. These plans have become increasingly popular in recent years for small business owners who want the benefits of a self funded program without any of the risk. Small business owners have experienced huge savings compared to traditional fully insured plans.\",\n          image: \"/images/Business-Solutions.jpg\",\n        },\n      ],\n    };\n  },\n};\n</script>",
+      "start": 1761251024664,
+      "end": 1761251024734,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024734,
+      "end": 1761251024734,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024734,
+      "end": 1761251024734,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024734,
+      "end": 1761251024734,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024734,
+      "end": 1761251024734,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024734,
+      "end": 1761251024734,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024734,
+      "end": 1761251024734,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024734,
+      "end": 1761251024734,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024734,
+      "end": 1761251024734,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline: \"Why Amerus Financial Group ?\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n      Services: [\n        {\n          title: \"Fully Insured Health Insurance\",\n          excerpt:\n            \"This is simply an insurance program that all of the health claims risk is assumed by the Insurance Company and typically is utilized by groups that have health concerns or have an older workforce. Over the past several years companies have trended away from these plans opting instead to go with self funded or level funded plans.\",\n          image: \"/images/FamilyAndIndividual.jpg\",\n        },\n        {\n          title: \"Self Funded Health Insurance Plans\",\n          excerpt:\n            \"A Self Funded, or Self-Insured plan, is one in which the employer assumes the financial risk for providing health care benefits to its employees. In practical terms, Self-Insured employers pay for claims out-of-pocket as they are presented instead of paying a pre-determined premium to an insurance carrier for a Fully Insured plan. Typically, a self-insured employer will set up a special trust fund to earmark money (corporate and employee contributions) to pay incurred claims. These plans are usually sold to large organizations that benefit from having enough insured to mitigate the financial risks associated with the plan.\",\n          image: \"/images/Senior-Solutions.jpg\",\n        },\n        {\n          title: \"Level Funded Health Insurance Plans\",\n          excerpt:\n            \"A level funded health plan (also known as a partially self-funded plan) is a type of health insurance plan that combines the cost savings and customization of self-funding with the financial safety and predictability of fully funded plans. These plans have become increasingly popular in recent years for small business owners who want the benefits of a self funded program without any of the risk. Small business owners have experienced huge savings compared to traditional fully insured plans.\",\n          image: \"/images/Business-Solutions.jpg\",\n        },\n      ],\n    };\n  },\n};\n\nimport { toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"px-4 sm:px-8\" }\nconst _hoisted_2 = { class: \"px-6 py-5\" }\nconst _hoisted_3 = { class: \"flex items-start\" }\nconst _hoisted_4 = { class: \"flex-grow truncate\" }\nconst _hoisted_5 = { class: \"w-full sm:flex justify-between items-center mb-3\" }\nconst _hoisted_6 = { class: \"text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0\" }\nconst _hoisted_7 = { class: \"flex items-end justify-between whitespace-normal\" }\nconst _hoisted_8 = { class: \"max-w-md text-indigo-100\" }\nconst _hoisted_9 = { class: \"mb-2\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n  const _component_ListItems = _resolveComponent(\"ListItems\")\n  const _component_BasicList = _resolveComponent(\"BasicList\")\n  const _component_GridThreeColumns = _resolveComponent(\"GridThreeColumns\")\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _createVNode(_component_HeadlineTwo, null, {\n          default: _withCtx(() => [\n            _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n          ]),\n          _: 1\n        }),\n        _createVNode(_component_ParagraphDescription, null, {\n          default: _withCtx(() => [\n            _createTextVNode(\"Amerus Financial Group is an independent insurance brokerage firm specializing in Health Insurance, Annuities, Life Insurance and Employee Benefits products and services for successful businesses, individuals and their families. AFG strives to build long-term relationships with clients by providing high levels of customer service and by representing the industry’s top carriers whose business philosophies complement our own.\")\n          ]),\n          _: 1\n        }),\n        _createVNode(_component_ParagraphDescription, null, {\n          default: _withCtx(() => [\n            _createTextVNode(\"Amerus Financial Group is an Insurance Agency that has been serving our 4000 clients for more than 20 years. Amerus specializes in Innovative Health Insurance Solutions for Individuals and Business. We are based in Lakeland, Fl with agents in 13 states. Our agents are highly trained proffesionals that understand the dynamics of the ever changing. Health Insurance Marketplace. Give us a call today at +1-800-596-1474 you will be you did.\")\n          ]),\n          _: 1\n        }),\n        _createVNode(_component_BasicList, null, {\n          default: _withCtx(() => [\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Our agency has the knowledge and experience to provide innovative solutions for your company.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Our commitment to customer service affords you peace of mind knowing that if any problems arise we will deal directly with your employees and take the burden from your shoulders.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"We offer a state of the Art Enrollment system as well as professional agent to guide your employees through the enrollment process.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"We are committed to providing you the support and guidence you need to navigate through the world of employee benefits.\")\n              ]),\n              _: 1\n            })\n          ]),\n          _: 1\n        })\n      ]),\n      _createVNode(_component_GridThreeColumns, null, {\n        default: _withCtx(() => [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.Services, (Service) => {\n            return (_openBlock(), _createElementBlock(\"div\", {\n              class: \"mx-auto my-4 bg-indigo-300 dark:bg-indigo-900 shadow-lg rounded-lg\",\n              key: Service.title\n            }, [\n              _createElementVNode(\"div\", _hoisted_2, [\n                _createElementVNode(\"div\", _hoisted_3, [\n                  _createElementVNode(\"div\", _hoisted_4, [\n                    _createElementVNode(\"div\", _hoisted_5, [\n                      _createElementVNode(\"h2\", _hoisted_6, _toDisplayString(Service.title), 1)\n                    ]),\n                    _createElementVNode(\"div\", _hoisted_7, [\n                      _createElementVNode(\"div\", _hoisted_8, [\n                        _createElementVNode(\"p\", _hoisted_9, _toDisplayString(Service.excerpt), 1)\n                      ])\n                    ])\n                  ])\n                ])\n              ])\n            ]))\n          }), 128))\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251024734,
+      "end": 1761251024735,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024735,
+      "end": 1761251024735,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024735,
+      "end": 1761251024736,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024736,
+      "end": 1761251024736,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024736,
+      "end": 1761251024736,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024736,
+      "end": 1761251024736,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024736,
+      "end": 1761251024736,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/HeadlineTwo.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/ParagraphDescription.vue\";\nimport { default as __nuxt_component_2 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/ListItems.vue\";\nimport { default as __nuxt_component_3 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/BasicList.vue\";\nimport { default as __nuxt_component_4 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/grid/GridThreeColumns.vue\";\nimport { default as __nuxt_component_5 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/containers/BasicSection.vue\";\n\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline: \"Why Amerus Financial Group ?\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n      Services: [\n        {\n          title: \"Fully Insured Health Insurance\",\n          excerpt:\n            \"This is simply an insurance program that all of the health claims risk is assumed by the Insurance Company and typically is utilized by groups that have health concerns or have an older workforce. Over the past several years companies have trended away from these plans opting instead to go with self funded or level funded plans.\",\n          image: \"/images/FamilyAndIndividual.jpg\",\n        },\n        {\n          title: \"Self Funded Health Insurance Plans\",\n          excerpt:\n            \"A Self Funded, or Self-Insured plan, is one in which the employer assumes the financial risk for providing health care benefits to its employees. In practical terms, Self-Insured employers pay for claims out-of-pocket as they are presented instead of paying a pre-determined premium to an insurance carrier for a Fully Insured plan. Typically, a self-insured employer will set up a special trust fund to earmark money (corporate and employee contributions) to pay incurred claims. These plans are usually sold to large organizations that benefit from having enough insured to mitigate the financial risks associated with the plan.\",\n          image: \"/images/Senior-Solutions.jpg\",\n        },\n        {\n          title: \"Level Funded Health Insurance Plans\",\n          excerpt:\n            \"A level funded health plan (also known as a partially self-funded plan) is a type of health insurance plan that combines the cost savings and customization of self-funding with the financial safety and predictability of fully funded plans. These plans have become increasingly popular in recent years for small business owners who want the benefits of a self funded program without any of the risk. Small business owners have experienced huge savings compared to traditional fully insured plans.\",\n          image: \"/images/Business-Solutions.jpg\",\n        },\n      ],\n    };\n  },\n};\n\nimport { toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"px-4 sm:px-8\" }\nconst _hoisted_2 = { class: \"px-6 py-5\" }\nconst _hoisted_3 = { class: \"flex items-start\" }\nconst _hoisted_4 = { class: \"flex-grow truncate\" }\nconst _hoisted_5 = { class: \"w-full sm:flex justify-between items-center mb-3\" }\nconst _hoisted_6 = { class: \"text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0\" }\nconst _hoisted_7 = { class: \"flex items-end justify-between whitespace-normal\" }\nconst _hoisted_8 = { class: \"max-w-md text-indigo-100\" }\nconst _hoisted_9 = { class: \"mb-2\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_HeadlineTwo = __nuxt_component_0\n  const _component_ParagraphDescription = __nuxt_component_1\n  const _component_ListItems = __nuxt_component_2\n  const _component_BasicList = __nuxt_component_3\n  const _component_GridThreeColumns = __nuxt_component_4\n  const _component_BasicSection = __nuxt_component_5\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _createVNode(_component_HeadlineTwo, null, {\n          default: _withCtx(() => [\n            _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n          ]),\n          _: 1\n        }),\n        _createVNode(_component_ParagraphDescription, null, {\n          default: _withCtx(() => [\n            _createTextVNode(\"Amerus Financial Group is an independent insurance brokerage firm specializing in Health Insurance, Annuities, Life Insurance and Employee Benefits products and services for successful businesses, individuals and their families. AFG strives to build long-term relationships with clients by providing high levels of customer service and by representing the industry’s top carriers whose business philosophies complement our own.\")\n          ]),\n          _: 1\n        }),\n        _createVNode(_component_ParagraphDescription, null, {\n          default: _withCtx(() => [\n            _createTextVNode(\"Amerus Financial Group is an Insurance Agency that has been serving our 4000 clients for more than 20 years. Amerus specializes in Innovative Health Insurance Solutions for Individuals and Business. We are based in Lakeland, Fl with agents in 13 states. Our agents are highly trained proffesionals that understand the dynamics of the ever changing. Health Insurance Marketplace. Give us a call today at +1-800-596-1474 you will be you did.\")\n          ]),\n          _: 1\n        }),\n        _createVNode(_component_BasicList, null, {\n          default: _withCtx(() => [\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Our agency has the knowledge and experience to provide innovative solutions for your company.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Our commitment to customer service affords you peace of mind knowing that if any problems arise we will deal directly with your employees and take the burden from your shoulders.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"We offer a state of the Art Enrollment system as well as professional agent to guide your employees through the enrollment process.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"We are committed to providing you the support and guidence you need to navigate through the world of employee benefits.\")\n              ]),\n              _: 1\n            })\n          ]),\n          _: 1\n        })\n      ]),\n      _createVNode(_component_GridThreeColumns, null, {\n        default: _withCtx(() => [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($data.Services, (Service) => {\n            return (_openBlock(), _createElementBlock(\"div\", {\n              class: \"mx-auto my-4 bg-indigo-300 dark:bg-indigo-900 shadow-lg rounded-lg\",\n              key: Service.title\n            }, [\n              _createElementVNode(\"div\", _hoisted_2, [\n                _createElementVNode(\"div\", _hoisted_3, [\n                  _createElementVNode(\"div\", _hoisted_4, [\n                    _createElementVNode(\"div\", _hoisted_5, [\n                      _createElementVNode(\"h2\", _hoisted_6, _toDisplayString(Service.title), 1)\n                    ]),\n                    _createElementVNode(\"div\", _hoisted_7, [\n                      _createElementVNode(\"div\", _hoisted_8, [\n                        _createElementVNode(\"p\", _hoisted_9, _toDisplayString(Service.excerpt), 1)\n                      ])\n                    ])\n                  ])\n                ])\n              ])\n            ]))\n          }), 128))\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251024736,
+      "end": 1761251024736,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024736,
+      "end": 1761251024736,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024736,
+      "end": 1761251024736,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024736,
+      "end": 1761251024736,
+      "order": "normal"
+    }
+  ]
+}

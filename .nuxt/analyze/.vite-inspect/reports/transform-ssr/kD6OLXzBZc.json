@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue?vue&type=style&index=0&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.iframe-container {\n  position: relative;\n  width: 100%;\n  padding-top: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625) */\n}\n\n.iframe-container iframe {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n.rotate-enter-active,\n.rotate-leave-active {\n  transition: all 0.4s;\n}\n\n.rotate-enter-from,\n.rotate-leave-to {\n  opacity: 0;\n  transform: rotate3d(1, 1, 1, 15deg);\n}\n\n.page-enter-active,\n.page-leave-active {\n  transition: all 0.2s;\n}\n.page-enter-from,\n.page-leave-to {\n  opacity: 0;\n  filter: blur(1rem);\n}\n",
+      "start": 1761251170447,
+      "end": 1761251170448,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<script setup lang=\"ts\">\nimport { useUser } from \"~/composables/useAuth\";\n\nconst nuxtApp = useNuxtApp();\n\nnuxtApp.hook(\"page:finish\", () => {\n  window.scrollTo(0, 0);\n});\n\nuseHead({\n  link: [{ rel: \"icon\", type: \"image/x-icon\", href: \"/img/favicon.ico\" }],\n});\n\nawait useUser();\nuseSchemaOrg([\n  defineLocalBusiness({\n    name: 'Amerus Financial',\n    logo: \"/logo.png\",\n    description: 'Insurance and financial services',\n    url: 'https://www.amerusfinancial.com',\n    telephone: '+1-888-441-7891',\n    email: 'info@amerusfinancial.com',\n    priceRange: '$$',\n    serviceArea: 'United States',\n        address: {\n      addressCountry: \"US\",\n      postalCode: \"33813\",\n      address: \"5115 S Lakeland Dr STE 1\",\n      addressLocality: \"Lakeland\",\n      addressRegion: \"Florida\",\n      streetAddress: \"5115 S Lakeland Dr STE 1\",\n    },\n    openingHoursSpecification: [\n      {\n        dayOfWeek: [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\"],\n        opens: \"09:00\",\n        closes: \"17:00\",\n      },\n    ],\n    hasOfferCatalog: {\n      name: 'Insurance Services',\n      itemListElement: [\n        { \n          '@type': 'Service',\n          name: 'Health Insurance',\n          url: 'https://www.amerusfinancial.com/services/health'\n        },\n        { \n          '@type': 'Service',\n          name: 'Individual Health Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/individual'\n        },\n        { \n          '@type': 'Service',\n          name: 'Family Health Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/family'\n        },\n        { \n          '@type': 'Service',\n          name: 'Group Health Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/group'\n        },\n        { \n          '@type': 'Service',\n          name: 'Medicare Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/medicare'\n        },\n        { \n          '@type': 'Service',\n          name: 'Dental Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/dental'\n        },\n        { \n          '@type': 'Service',\n          name: 'Vision Insurance',\n          url: 'https://www.amerusfinancial.com/services/health/vision'\n        },\n        { \n          '@type': 'Service',\n          name: 'Life Insurance',\n          url: 'https://www.amerusfinancial.com/services/life'\n        },\n        { \n          '@type': 'Service',\n          name: 'Term Life Insurance',\n          url: 'https://www.amerusfinancial.com/services/life/term-life'\n        },\n        { \n          '@type': 'Service',\n          name: 'Whole Life Insurance',\n          url: 'https://www.amerusfinancial.com/services/life/whole-life'\n        },\n        { \n          '@type': 'Service',\n          name: 'Universal Life Insurance',\n          url: 'https://www.amerusfinancial.com/services/life/universal-life'\n        },\n        { \n          '@type': 'Service',\n          name: 'Auto Insurance',\n          url: 'https://www.amerusfinancial.com/services/auto'\n        },\n        { \n          '@type': 'Service',\n          name: 'Personal Auto Insurance',\n          url: 'https://www.amerusfinancial.com/services/auto/personal-auto'\n        },\n        { \n          '@type': 'Service',\n          name: 'Commercial Auto Insurance',\n          url: 'https://www.amerusfinancial.com/services/auto/commercial-auto'\n        },\n        { \n          '@type': 'Service',\n          name: 'Home Insurance',\n          url: 'https://www.amerusfinancial.com/services/home'\n        },\n        { \n          '@type': 'Service',\n          name: 'Homeowners Insurance',\n          url: 'https://www.amerusfinancial.com/services/home/homeowners'\n        },\n        { \n          '@type': 'Service',\n          name: 'Flood Insurance',\n          url: 'https://www.amerusfinancial.com/services/home/flood'\n        },\n        { \n          '@type': 'Service',\n          name: 'Business Insurance',\n          url: 'https://www.amerusfinancial.com/services/business'\n        },\n        { \n          '@type': 'Service',\n          name: 'General Liability Insurance',\n          url: 'https://www.amerusfinancial.com/services/business/general-liability'\n        },\n        { \n          '@type': 'Service',\n          name: 'Professional Liability Insurance',\n          url: 'https://www.amerusfinancial.com/services/business/professional-liability'\n        },\n        { \n          '@type': 'Service',\n          name: 'Workers Compensation',\n          url: 'https://www.amerusfinancial.com/services/business/workers-comp'\n        },\n        { \n          '@type': 'Service',\n          name: 'Retirement Planning',\n          url: 'https://www.amerusfinancial.com/services/retirement'\n        },\n        { \n          '@type': 'Service',\n          name: 'IRA Services',\n          url: 'https://www.amerusfinancial.com/services/retirement/iras'\n        },\n        { \n          '@type': 'Service',\n          name: '401(k) Planning',\n          url: 'https://www.amerusfinancial.com/services/retirement/401k'\n        },\n        { \n          '@type': 'Service',\n          name: 'Annuities',\n          url: 'https://www.amerusfinancial.com/services/retirement/annuity'\n        }\n      ]\n    }\n  })\n])\n</script>\n<template>\n  <NuxtLayout>\n    <div class=\"dark:bg-indigo-950 dark:text-slate-300\">\n      <NuxtPage />\n    </div>\n  </NuxtLayout>\n</template>\n\n<style>\n.iframe-container {\n  position: relative;\n  width: 100%;\n  padding-top: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625) */\n}\n\n.iframe-container iframe {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n.rotate-enter-active,\n.rotate-leave-active {\n  transition: all 0.4s;\n}\n\n.rotate-enter-from,\n.rotate-leave-to {\n  opacity: 0;\n  transform: rotate3d(1, 1, 1, 15deg);\n}\n\n.page-enter-active,\n.page-leave-active {\n  transition: all 0.2s;\n}\n.page-enter-from,\n.page-leave-to {\n  opacity: 0;\n  filter: blur(1rem);\n}\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251170452,
+      "end": 1761251170452,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251170452,
+      "end": 1761251170452,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251170452,
+      "end": 1761251170452,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251170452,
+      "end": 1761251170452,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251170452,
+      "end": 1761251170452,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251170452,
+      "end": 1761251170452,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251170452,
+      "end": 1761251170452,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251170452,
+      "end": 1761251170452,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".iframe-container{padding-top:56.25%;position:relative;width:100%}.iframe-container iframe{height:100%;left:0;position:absolute;top:0;width:100%}.rotate-enter-active,.rotate-leave-active{transition:all .4s}.rotate-enter-from,.rotate-leave-to{opacity:0;transform:rotate3d(1,1,1,15deg)}.page-enter-active,.page-leave-active{transition:all .2s}.page-enter-from,.page-leave-to{filter:blur(1rem);opacity:0}",
+      "start": 1761251170452,
+      "end": 1761251170771,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue",
+        "mappings": "AACA,kBAGE,kBAAmB,CAFnB,iBAAkB,CAClB,UAEF,CAEA,yBAKE,WAAY,CAFZ,MAAO,CAFP,iBAAkB,CAClB,KAAM,CAEN,UAEF,CACA,0CAEE,kBACF,CAEA,oCAEE,SAAU,CACV,+BACF,CAEA,sCAEE,kBACF,CACA,gCAGE,iBAAkB,CADlB,SAEF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue"
+        ],
+        "sourcesContent": [
+          "\n.iframe-container {\n  position: relative;\n  width: 100%;\n  padding-top: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625) */\n}\n\n.iframe-container iframe {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n.rotate-enter-active,\n.rotate-leave-active {\n  transition: all 0.4s;\n}\n\n.rotate-enter-from,\n.rotate-leave-to {\n  opacity: 0;\n  transform: rotate3d(1, 1, 1, 15deg);\n}\n\n.page-enter-active,\n.page-leave-active {\n  transition: all 0.2s;\n}\n.page-enter-from,\n.page-leave-to {\n  opacity: 0;\n  filter: blur(1rem);\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251170772,
+      "end": 1761251170772,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251170773,
+      "end": 1761251170773,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251170773,
+      "end": 1761251170773,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".iframe-container{padding-top:56.25%;position:relative;width:100%}.iframe-container iframe{height:100%;left:0;position:absolute;top:0;width:100%}.rotate-enter-active,.rotate-leave-active{transition:all .4s}.rotate-enter-from,.rotate-leave-to{opacity:0;transform:rotate3d(1,1,1,15deg)}.page-enter-active,.page-leave-active{transition:all .2s}.page-enter-from,.page-leave-to{filter:blur(1rem);opacity:0}",
+      "start": 1761251170773,
+      "end": 1761251170779,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue",
+        "mappings": "AAAA,kBAAkB,kBAAkB,CAAC,iBAAiB,CAAC,UAAU,CAAC,yBAAyB,WAAW,CAAC,MAAM,CAAC,iBAAiB,CAAC,KAAK,CAAC,UAAU,CAAC,0CAA0C,kBAAkB,CAAC,oCAAoC,SAAS,CAAC,+BAA+B,CAAC,sCAAsC,kBAAkB,CAAC,gCAAgC,iBAAiB,CAAC,SAAS",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/app.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251170779,
+      "end": 1761251170779,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251170779,
+      "end": 1761251170780,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251170779,
+      "end": 1761251170780,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251170780,
+      "end": 1761251170780,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251170780,
+      "end": 1761251170780,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251170780,
+      "end": 1761251170782,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251170782,
+      "end": 1761251170782,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251170782,
+      "end": 1761251170790,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251170790,
+      "end": 1761251170790,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1761251170790,
+      "end": 1761251170790,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251170790,
+      "end": 1761251170790,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251170790,
+      "end": 1761251170790,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251170790,
+      "end": 1761251170790,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251170790,
+      "end": 1761251170790,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251170790,
+      "end": 1761251170791,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251170791,
+      "end": 1761251170791,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251170792,
+      "end": 1761251170792,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251170792,
+      "end": 1761251170792,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251170792,
+      "end": 1761251170792,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251170793,
+      "end": 1761251170793,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251170794,
+      "end": 1761251170795,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251170795,
+      "end": 1761251170795,
+      "order": "normal"
+    }
+  ]
+}

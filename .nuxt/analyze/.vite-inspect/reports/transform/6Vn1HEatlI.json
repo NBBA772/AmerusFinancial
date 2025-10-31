@@ -1,0 +1,235 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/subscribe/success.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nconst route = useRoute();\nconst sessionId = ref(route.query.session_id ? route.query.session_id : \"\");\n</script>\n\n<template>\n  <div>\n    <div\n      v-if=\"sessionId\"\n      class=\"flex py-60 flex-col h-screen my-auto items-center bgimg bg-cover\"\n    >\n      <button\n        class=\"mt-2 bg-white font-bold py-1 px-8 rounded m-2 dark:bg-black dark:text-white\"\n      >\n        You are subscribed!\n      </button>\n      <form action=\"/api/stripe/createPortalSession\" method=\"POST\">\n        <input\n          type=\"hidden\"\n          id=\"session-id\"\n          name=\"session_id\"\n          :value=\"sessionId\"\n        />\n        <button\n          class=\"w-full px-6 py-3.5 text-white bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\"\n          id=\"checkout-and-portal-button\"\n          type=\"submit\"\n        >\n          Manage your subscription\n        </button>\n      </form>\n    </div>\n    <div v-else>loading. . .</div>\n  </div>\n</template>",
+      "start": 1761251025588,
+      "end": 1761251025782,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251025782,
+      "end": 1761251025782,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251025782,
+      "end": 1761251025782,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251025782,
+      "end": 1761251025782,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251025782,
+      "end": 1761251025782,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251025782,
+      "end": 1761251025782,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251025782,
+      "end": 1761251025782,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251025782,
+      "end": 1761251025782,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251025782,
+      "end": 1761251025782,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/subscribe/success.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/subscribe/success.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761251025782,
+      "end": 1761251025806,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251025806,
+      "end": 1761251025806,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251025806,
+      "end": 1761251025807,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251025807,
+      "end": 1761251025807,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "export { default } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/subscribe/success.vue?macro=true&vue&type=script&setup=true&lang.ts\"",
+      "start": 1761251025807,
+      "end": 1761251025807,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251025807,
+      "end": 1761251025807,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251025807,
+      "end": 1761251025807,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251025807,
+      "end": 1761251025807,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251025807,
+      "end": 1761251025807,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251025807,
+      "end": 1761251025807,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251025807,
+      "end": 1761251025807,
+      "order": "normal"
+    }
+  ]
+}

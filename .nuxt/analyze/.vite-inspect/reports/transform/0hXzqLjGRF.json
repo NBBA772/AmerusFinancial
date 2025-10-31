@@ -1,0 +1,233 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, vShow as _vShow, withDirectives as _withDirectives, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-6e3794c4\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"border rounded-lg overflow-hidden\" }\n\nimport { ref } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AccordionItem',\n  props: {\n    term: {},\n    definition: {}\n  },\n  setup(__props: any) {\n\nconst props = __props\n\nconst isOpen = ref(false)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"button\", {\n      class: \"w-full flex justify-between items-center p-4 font-semibold text-left bg-gray-100 hover:bg-gray-200\",\n      onClick: _cache[0] || (_cache[0] = ($event: any) => (isOpen.value = !isOpen.value))\n    }, [\n      _createTextVNode(_toDisplayString(_ctx.term) + \" \", 1),\n      _createElementVNode(\"span\", {\n        class: _normalizeClass(['transform transition-transform duration-300', isOpen.value ? 'rotate-180' : ''])\n      }, \" ▼ \", 2)\n    ]),\n    _createVNode(_Transition, {\n      name: \"accordion\",\n      \"enter-active-class\": \"transition-all duration-300 ease-out\",\n      \"leave-active-class\": \"transition-all duration-200 ease-in\"\n    }, {\n      default: _withCtx(() => [\n        _withDirectives(_createElementVNode(\"div\", { class: \"p-4 bg-white text-gray-700\" }, _toDisplayString(_ctx.definition), 513), [\n          [_vShow, isOpen.value]\n        ])\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})",
+      "start": 1761251027845,
+      "end": 1761251027845
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251027845,
+      "end": 1761251027845,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251027845,
+      "end": 1761251027845,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251027845,
+      "end": 1761251027845,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251027845,
+      "end": 1761251027845,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251027845,
+      "end": 1761251027845,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, vShow as _vShow, withDirectives as _withDirectives, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-6e3794c4\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"border rounded-lg overflow-hidden\" };\nimport { ref } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AccordionItem\",\n  props: {\n    term: {},\n    definition: {}\n  },\n  setup(__props) {\n    const props = __props;\n    const isOpen = ref(false);\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"button\", {\n          class: \"w-full flex justify-between items-center p-4 font-semibold text-left bg-gray-100 hover:bg-gray-200\",\n          onClick: _cache[0] || (_cache[0] = ($event) => isOpen.value = !isOpen.value)\n        }, [\n          _createTextVNode(_toDisplayString(_ctx.term) + \" \", 1),\n          _createElementVNode(\"span\", {\n            class: _normalizeClass([\"transform transition-transform duration-300\", isOpen.value ? \"rotate-180\" : \"\"])\n          }, \" ▼ \", 2)\n        ]),\n        _createVNode(_Transition, {\n          name: \"accordion\",\n          \"enter-active-class\": \"transition-all duration-300 ease-out\",\n          \"leave-active-class\": \"transition-all duration-200 ease-in\"\n        }, {\n          default: _withCtx(() => [\n            _withDirectives(_createElementVNode(\"div\", { class: \"p-4 bg-white text-gray-700\" }, _toDisplayString(_ctx.definition), 513), [\n              [_vShow, isOpen.value]\n            ])\n          ]),\n          _: 1\n        })\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251027845,
+      "end": 1761251029157,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, vShow as _vShow, withDirectives as _withDirectives, Transition as _Transition, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-6e3794c4\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"border rounded-lg overflow-hidden\" }\n\nimport { ref } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AccordionItem',\n  props: {\n    term: {},\n    definition: {}\n  },\n  setup(__props: any) {\n\nconst props = __props\n\nconst isOpen = ref(false)\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"button\", {\n      class: \"w-full flex justify-between items-center p-4 font-semibold text-left bg-gray-100 hover:bg-gray-200\",\n      onClick: _cache[0] || (_cache[0] = ($event: any) => (isOpen.value = !isOpen.value))\n    }, [\n      _createTextVNode(_toDisplayString(_ctx.term) + \" \", 1),\n      _createElementVNode(\"span\", {\n        class: _normalizeClass(['transform transition-transform duration-300', isOpen.value ? 'rotate-180' : ''])\n      }, \" ▼ \", 2)\n    ]),\n    _createVNode(_Transition, {\n      name: \"accordion\",\n      \"enter-active-class\": \"transition-all duration-300 ease-out\",\n      \"leave-active-class\": \"transition-all duration-200 ease-in\"\n    }, {\n      default: _withCtx(() => [\n        _withDirectives(_createElementVNode(\"div\", { class: \"p-4 bg-white text-gray-700\" }, _toDisplayString(_ctx.definition), 513), [\n          [_vShow, isOpen.value]\n        ])\n      ]),\n      _: 1\n    })\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,mBAAmB,kBAAkB,kBAAkB,iBAAiB,sBAAsB,qBAAqB,mBAAmB,kBAAkB,SAAS,QAAQ,kBAAkB,iBAAiB,cAAc,aAAa,WAAW,UAAU,eAAe,cAAc,aAAa,YAAY,sBAAsB,qBAAqB,eAAe,cAAc,cAAc,mBAAmB;AAEpa,MAAM,eAAe,QAAM,aAAa,iBAAiB,GAAE,IAAE,EAAE,GAAE,YAAY,GAAE;AAC/E,MAAM,aAAa,EAAE,OAAO,oCAAoC;AAEhE,SAAS,WAAW;AAGpB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,OAAO;AAAA,IACL,MAAM,CAAC;AAAA,IACP,YAAY,CAAC;AAAA,EACf;AAAA,EACA,MAAM,SAAc;AAEtB,UAAM,QAAQ;AAEd,UAAM,SAAS,IAAI,KAAK;AAExB,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,WAAW,GAAG,oBAAoB,OAAO,YAAY;AAAA,QAC3D,oBAAoB,UAAU;AAAA,UAC5B,OAAO;AAAA,UACP,SAAS,OAAO,CAAC,MAAM,OAAO,CAAC,IAAI,CAAC,WAAiB,OAAO,QAAQ,CAAC,OAAO;AAAA,QAC9E,GAAG;AAAA,UACD,iBAAiB,iBAAiB,KAAK,IAAI,IAAI,KAAK,CAAC;AAAA,UACrD,oBAAoB,QAAQ;AAAA,YAC1B,OAAO,gBAAgB,CAAC,+CAA+C,OAAO,QAAQ,eAAe,EAAE,CAAC;AAAA,UAC1G,GAAG,OAAO,CAAC;AAAA,QACb,CAAC;AAAA,QACD,aAAa,aAAa;AAAA,UACxB,MAAM;AAAA,UACN,sBAAsB;AAAA,UACtB,sBAAsB;AAAA,QACxB,GAAG;AAAA,UACD,SAAS,SAAS,MAAM;AAAA,YACtB,gBAAgB,oBAAoB,OAAO,EAAE,OAAO,6BAA6B,GAAG,iBAAiB,KAAK,UAAU,GAAG,GAAG,GAAG;AAAA,cAC3H,CAAC,QAAQ,OAAO,KAAK;AAAA,YACvB,CAAC;AAAA,UACH,CAAC;AAAA,UACD,GAAG;AAAA,QACL,CAAC;AAAA,MACH,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029157,
+      "end": 1761251029157,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029157,
+      "end": 1761251029157,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029157,
+      "end": 1761251029157,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029158,
+      "end": 1761251029158,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029158,
+      "end": 1761251029158,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029158,
+      "end": 1761251029158,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029158,
+      "end": 1761251029158,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029158,
+      "end": 1761251029158,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029158,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029159,
+      "end": 1761251029160,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029160,
+      "end": 1761251029160,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029160,
+      "end": 1761251029160,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029160,
+      "end": 1761251029160,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029160,
+      "end": 1761251029160,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251029161,
+      "end": 1761251029161,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029161,
+      "end": 1761251029161,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029161,
+      "end": 1761251029161,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029161,
+      "end": 1761251029161,
+      "order": "normal"
+    }
+  ]
+}

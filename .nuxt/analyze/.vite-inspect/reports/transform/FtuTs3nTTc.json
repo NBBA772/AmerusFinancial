@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactSection.vue?nuxt_component=async&nuxt_component_name=ContactSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<!-- components/ContactSection.vue -->\n<template>\n  <SectionContainer class=\"relative py-16 text-center overflow-hidden\">\n    <!-- Background image -->\n    <div class=\"absolute inset-0\">\n      <img\n        src=\"/images/Group-Health-Insurance-Excerpt.jpg\"\n        alt=\"Background\"\n        class=\"w-full h-full object-cover\"\n      />\n      <!-- Dark overlay -->\n      <div class=\"absolute inset-0 bg-black opacity-70\"></div>\n    </div>\n\n    <!-- Foreground content -->\n    <div class=\"relative container mx-auto px-4\">\n      <GridTwoColumns>\n        <!-- Left Side -->\n        <div class=\"text-left\">\n          <h2 id=\"contact-h2\" class=\"text-3xl md:text-4xl font-bold text-white mb-4\">\n            Contact Amerus Financial Group\n          </h2>\n          <p class=\"text-gray-200 mb-6 text-lg\">\n            Call, visit, or send a message—our team is here to help.\n          </p>\n          <ul class=\"space-y-4 text-gray-100\" aria-label=\"Contact info\">\n            <li class=\"flex items-center gap-2\">\n              <Icon name=\"mdi:phone\" class=\"w-7 h-7 text-[#30BCFE]\" />\n              <span>\n                <strong>Phone:</strong>\n                <a href=\"tel:+18884417891\" class=\"text-[#30BCFE] hover:underline\">(888) 441-7891</a>\n              </span>\n            </li>\n            <li class=\"flex items-start gap-2\">\n              <Icon name=\"mdi:map-marker\" class=\"w-7 h-7 text-[#30BCFE] mt-1\" />\n              <span>\n                <strong>Address:</strong>\n                3308 Cleveland Heights Blvd STE 102, Lakeland, FL 33803\n              </span>\n            </li>\n            <li class=\"flex items-center gap-2\">\n              <Icon name=\"mdi:clock-outline\" class=\"w-7 h-7 text-[#30BCFE]\" />\n              <span>\n                <strong>Hours:</strong>\n                Mon–Fri 9:00am–5:00pm (ET)\n              </span>\n            </li>\n            <li class=\"flex items-center gap-2\">\n              <Icon name=\"mdi:email\" class=\"w-7 h-7 text-[#30BCFE]\" />\n              <span>\n                <strong>Email:</strong>\n                <a href=\"mailto:info@amerusfinancial.com\" class=\"text-[#30BCFE] hover:underline\">\n                  info@amerusfinancial.com\n                </a>\n              </span>\n            </li>\n          </ul>\n        </div>\n\n        <!-- Right Side (Form) -->\n        <div class=\"bg-white shadow-lg rounded-xl p-8 relative z-10\">\n          <h3 class=\"text-xl font-semibold mb-6 text-gray-900\">Send a Message</h3>\n          <form action=\"/contact\" method=\"post\" class=\"space-y-4\">\n            <div>\n              <label for=\"name\" class=\"block text-sm font-medium text-gray-700\">Name</label>\n              <input\n                id=\"name\"\n                name=\"name\"\n                required\n                class=\"w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#30BCFE] focus:border-[#30BCFE] focus:outline-none\"\n              />\n            </div>\n            <div>\n              <label for=\"email\" class=\"block text-sm font-medium text-gray-700\">Email</label>\n              <input\n                id=\"email\"\n                type=\"email\"\n                name=\"email\"\n                required\n                class=\"w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#30BCFE] focus:border-[#30BCFE] focus:outline-none\"\n              />\n            </div>\n            <div>\n              <label for=\"aud\" class=\"block text-sm font-medium text-gray-700\">I’m a(n)</label>\n              <select\n                id=\"aud\"\n                name=\"aud\"\n                class=\"w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#30BCFE] focus:border-[#30BCFE] focus:outline-none\"\n              >\n                <option value=\"employer\">Employer</option>\n                <option value=\"family\">Individual / Family</option>\n                <option value=\"senior\">Senior / Medicare</option>\n              </select>\n            </div>\n            <div>\n              <label for=\"msg\" class=\"block text-sm font-medium text-gray-700\">How can we help?</label>\n              <textarea\n                id=\"msg\"\n                name=\"message\"\n                rows=\"4\"\n                class=\"w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#30BCFE] focus:border-[#30BCFE] focus:outline-none\"\n              ></textarea>\n            </div>\n            <button\n              type=\"submit\"\n              class=\"w-full bg-[#30BCFE] hover:bg-[#30BCFE]/90 text-white font-semibold py-3 px-4 rounded-lg transition duration-200\"\n            >\n              Send\n            </button>\n          </form>\n        </div>\n      </GridTwoColumns>\n    </div>\n  </SectionContainer>\n</template>\n",
+      "start": 1761251023619,
+      "end": 1761251023686,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023686,
+      "end": 1761251023686,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023686,
+      "end": 1761251023686,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023686,
+      "end": 1761251023686,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023686,
+      "end": 1761251023686,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023686,
+      "end": 1761251023686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023686,
+      "end": 1761251023686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023686,
+      "end": 1761251023686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023686,
+      "end": 1761251023686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\nimport _imports_0 from '/images/Group-Health-Insurance-Excerpt.jpg'\n\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"absolute inset-0\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"Background\",\n    class: \"w-full h-full object-cover\"\n  }),\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"absolute inset-0 bg-black opacity-70\" })\n], -1)\nconst _hoisted_2 = { class: \"relative container mx-auto px-4\" }\nconst _hoisted_3 = { class: \"text-left\" }\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"h2\", {\n  id: \"contact-h2\",\n  class: \"text-3xl md:text-4xl font-bold text-white mb-4\"\n}, \" Contact Amerus Financial Group \", -1)\nconst _hoisted_5 = /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-gray-200 mb-6 text-lg\" }, \" Call, visit, or send a message—our team is here to help. \", -1)\nconst _hoisted_6 = {\n  class: \"space-y-4 text-gray-100\",\n  \"aria-label\": \"Contact info\"\n}\nconst _hoisted_7 = { class: \"flex items-center gap-2\" }\nconst _hoisted_8 = /*#__PURE__*/_createElementVNode(\"span\", null, [\n  /*#__PURE__*/_createElementVNode(\"strong\", null, \"Phone:\"),\n  /*#__PURE__*/_createElementVNode(\"a\", {\n    href: \"tel:+18884417891\",\n    class: \"text-[#30BCFE] hover:underline\"\n  }, \"(888) 441-7891\")\n], -1)\nconst _hoisted_9 = { class: \"flex items-start gap-2\" }\nconst _hoisted_10 = /*#__PURE__*/_createElementVNode(\"span\", null, [\n  /*#__PURE__*/_createElementVNode(\"strong\", null, \"Address:\"),\n  /*#__PURE__*/_createTextVNode(\" 3308 Cleveland Heights Blvd STE 102, Lakeland, FL 33803 \")\n], -1)\nconst _hoisted_11 = { class: \"flex items-center gap-2\" }\nconst _hoisted_12 = /*#__PURE__*/_createElementVNode(\"span\", null, [\n  /*#__PURE__*/_createElementVNode(\"strong\", null, \"Hours:\"),\n  /*#__PURE__*/_createTextVNode(\" Mon–Fri 9:00am–5:00pm (ET) \")\n], -1)\nconst _hoisted_13 = { class: \"flex items-center gap-2\" }\nconst _hoisted_14 = /*#__PURE__*/_createElementVNode(\"span\", null, [\n  /*#__PURE__*/_createElementVNode(\"strong\", null, \"Email:\"),\n  /*#__PURE__*/_createElementVNode(\"a\", {\n    href: \"mailto:info@amerusfinancial.com\",\n    class: \"text-[#30BCFE] hover:underline\"\n  }, \" info@amerusfinancial.com \")\n], -1)\nconst _hoisted_15 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"bg-white shadow-lg rounded-xl p-8 relative z-10\" }, [\n  /*#__PURE__*/_createElementVNode(\"h3\", { class: \"text-xl font-semibold mb-6 text-gray-900\" }, \"Send a Message\"),\n  /*#__PURE__*/_createElementVNode(\"form\", {\n    action: \"/contact\",\n    method: \"post\",\n    class: \"space-y-4\"\n  }, [\n    /*#__PURE__*/_createElementVNode(\"div\", null, [\n      /*#__PURE__*/_createElementVNode(\"label\", {\n        for: \"name\",\n        class: \"block text-sm font-medium text-gray-700\"\n      }, \"Name\"),\n      /*#__PURE__*/_createElementVNode(\"input\", {\n        id: \"name\",\n        name: \"name\",\n        required: \"\",\n        class: \"w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#30BCFE] focus:border-[#30BCFE] focus:outline-none\"\n      })\n    ]),\n    /*#__PURE__*/_createElementVNode(\"div\", null, [\n      /*#__PURE__*/_createElementVNode(\"label\", {\n        for: \"email\",\n        class: \"block text-sm font-medium text-gray-700\"\n      }, \"Email\"),\n      /*#__PURE__*/_createElementVNode(\"input\", {\n        id: \"email\",\n        type: \"email\",\n        name: \"email\",\n        required: \"\",\n        class: \"w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#30BCFE] focus:border-[#30BCFE] focus:outline-none\"\n      })\n    ]),\n    /*#__PURE__*/_createElementVNode(\"div\", null, [\n      /*#__PURE__*/_createElementVNode(\"label\", {\n        for: \"aud\",\n        class: \"block text-sm font-medium text-gray-700\"\n      }, \"I’m a(n)\"),\n      /*#__PURE__*/_createElementVNode(\"select\", {\n        id: \"aud\",\n        name: \"aud\",\n        class: \"w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#30BCFE] focus:border-[#30BCFE] focus:outline-none\"\n      }, [\n        /*#__PURE__*/_createElementVNode(\"option\", { value: \"employer\" }, \"Employer\"),\n        /*#__PURE__*/_createElementVNode(\"option\", { value: \"family\" }, \"Individual / Family\"),\n        /*#__PURE__*/_createElementVNode(\"option\", { value: \"senior\" }, \"Senior / Medicare\")\n      ])\n    ]),\n    /*#__PURE__*/_createElementVNode(\"div\", null, [\n      /*#__PURE__*/_createElementVNode(\"label\", {\n        for: \"msg\",\n        class: \"block text-sm font-medium text-gray-700\"\n      }, \"How can we help?\"),\n      /*#__PURE__*/_createElementVNode(\"textarea\", {\n        id: \"msg\",\n        name: \"message\",\n        rows: \"4\",\n        class: \"w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-[#30BCFE] focus:border-[#30BCFE] focus:outline-none\"\n      })\n    ]),\n    /*#__PURE__*/_createElementVNode(\"button\", {\n      type: \"submit\",\n      class: \"w-full bg-[#30BCFE] hover:bg-[#30BCFE]/90 text-white font-semibold py-3 px-4 rounded-lg transition duration-200\"\n    }, \" Send \")\n  ])\n], -1)\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_Icon = _resolveComponent(\"Icon\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_SectionContainer = _resolveComponent(\"SectionContainer\")\n\n  return (_openBlock(), _createBlock(_component_SectionContainer, { class: \"relative py-16 text-center overflow-hidden\" }, {\n    default: _withCtx(() => [\n      _hoisted_1,\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createVNode(_component_GridTwoColumns, null, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_3, [\n              _hoisted_4,\n              _hoisted_5,\n              _createElementVNode(\"ul\", _hoisted_6, [\n                _createElementVNode(\"li\", _hoisted_7, [\n                  _createVNode(_component_Icon, {\n                    name: \"mdi:phone\",\n                    class: \"w-7 h-7 text-[#30BCFE]\"\n                  }),\n                  _hoisted_8\n                ]),\n                _createElementVNode(\"li\", _hoisted_9, [\n                  _createVNode(_component_Icon, {\n                    name: \"mdi:map-marker\",\n                    class: \"w-7 h-7 text-[#30BCFE] mt-1\"\n                  }),\n                  _hoisted_10\n                ]),\n                _createElementVNode(\"li\", _hoisted_11, [\n                  _createVNode(_component_Icon, {\n                    name: \"mdi:clock-outline\",\n                    class: \"w-7 h-7 text-[#30BCFE]\"\n                  }),\n                  _hoisted_12\n                ]),\n                _createElementVNode(\"li\", _hoisted_13, [\n                  _createVNode(_component_Icon, {\n                    name: \"mdi:email\",\n                    class: \"w-7 h-7 text-[#30BCFE]\"\n                  }),\n                  _hoisted_14\n                ])\n              ])\n            ]),\n            _hoisted_15\n          ]),\n          _: 1\n        })\n      ])\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251023686,
+      "end": 1761251023688,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactSection.vue\").then(r => r.default))",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactSection.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023688,
+      "end": 1761251023688,
+      "order": "normal"
+    }
+  ]
+}

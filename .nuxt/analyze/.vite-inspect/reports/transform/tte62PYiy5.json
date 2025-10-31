@@ -1,0 +1,243 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/middleware/guest.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import {defineNuxtRouteMiddleware, useNuxtApp} from \"#app\";\nimport {useUser} from \"~/composables/useAuth\";\n\nexport default defineNuxtRouteMiddleware(async(to) => {\n  const user = await useUser()\n  \n  if (user !== null && user !== undefined) {\n    return '/'\n  }\n})\n",
+      "start": 1761251025069,
+      "end": 1761251025142,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251025142,
+      "end": 1761251025142,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251025142,
+      "end": 1761251025142,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251025142,
+      "end": 1761251025142,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251025142,
+      "end": 1761251025142,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251025142,
+      "end": 1761251025142,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineNuxtRouteMiddleware } from \"#app\";\nimport { useUser } from \"~/composables/useAuth\";\nexport default defineNuxtRouteMiddleware(async (to) => {\n  const user = await useUser();\n  if (user !== null && user !== void 0) {\n    return \"/\";\n  }\n});\n",
+      "start": 1761251025142,
+      "end": 1761251025171,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/middleware/guest.ts"
+        ],
+        "sourcesContent": [
+          "import {defineNuxtRouteMiddleware, useNuxtApp} from \"#app\";\nimport {useUser} from \"~/composables/useAuth\";\n\nexport default defineNuxtRouteMiddleware(async(to) => {\n  const user = await useUser()\n  \n  if (user !== null && user !== undefined) {\n    return '/'\n  }\n})\n"
+        ],
+        "mappings": "AAAA,SAAQ,iCAA4C;AACpD,SAAQ,eAAc;AAEtB,eAAe,0BAA0B,OAAM,OAAO;AACpD,QAAM,OAAO,MAAM,QAAQ;AAE3B,MAAI,SAAS,QAAQ,SAAS,QAAW;AACvC,WAAO;AAAA,EACT;AACF,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251025171,
+      "end": 1761251025171,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251025171,
+      "end": 1761251025171,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251025171,
+      "end": 1761251025171,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251025171,
+      "end": 1761251025171,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025171,
+      "end": 1761251025171,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251025171,
+      "end": 1761251025171,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251025171,
+      "end": 1761251025171,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251025171,
+      "end": 1761251025171,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025171,
+      "end": 1761251025171,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251025171,
+      "end": 1761251025171,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251025171,
+      "end": 1761251025172,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251025172,
+      "end": 1761251025172,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251025172,
+      "end": 1761251025172,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251025172,
+      "end": 1761251025172,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251025172,
+      "end": 1761251025172,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251025172,
+      "end": 1761251025172,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251025172,
+      "end": 1761251025172,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251025172,
+      "end": 1761251025172,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251025172,
+      "end": 1761251025172,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251025172,
+      "end": 1761251025172,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251025172,
+      "end": 1761251025172,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "result": "/* _processed_nuxt_unctx_transform */\nimport { executeAsync as __executeAsync } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/unctx/dist/index.mjs\";import { defineNuxtRouteMiddleware } from \"#app\";\nimport { useUser } from \"~/composables/useAuth\";\nexport default defineNuxtRouteMiddleware(async (to) => {let __temp, __restore;\n  const user = (([__temp,__restore]=__executeAsync(()=>useUser())),__temp=await __temp,__restore(),__temp);\n  if (user !== null && user !== void 0) {\n    return \"/\";\n  }\n},1);\n",
+      "start": 1761251025172,
+      "end": 1761251025174,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "sIAAA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,uBAAC;AACxD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,yCAAO,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,2CAAC,CAAC;AAC/B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACf,CAAC,CAAC,CAAC;AACH,GAAC,CAAC,CAAC;"
+      }
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251025174,
+      "end": 1761251025174,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251025174,
+      "end": 1761251025174,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251025174,
+      "end": 1761251025174,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251025174,
+      "end": 1761251025174,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251025174,
+      "end": 1761251025174,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251025174,
+      "end": 1761251025174,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251025174,
+      "end": 1761251025174,
+      "order": "normal"
+    }
+  ]
+}

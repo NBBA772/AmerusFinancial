@@ -1,0 +1,235 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/resources.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n    <PatternSection>\n       <HomepageHeroSection />\n        <div class=\"container mx-auto py-12 px-4\">\n            <div class=\"text-center mb-10\">\n            <h1 class=\"text-3xl md:text-4xl font-bold mb-4\">Client Resources & Tools</h1>\n            <p class=\"text-lg text-gray-600 max-w-3xl mx-auto\">Access our collection of calculators, guides, and tools to help you make informed insurance and financial decisions.</p>\n            </div>\n\n            <ResourceTabs>\n            <template #guides>\n                <ResourceCard\n                title=\"Medicare Guide\"\n                description=\"A comprehensive guide to understanding Medicare and its different parts.\"\n                link=\"/guides/medicare-guide\"\n                icon=\"lucide:file-text\"\n                />\n                <ResourceCard\n                title=\"Life Insurance Buyer's Guide\"\n                description=\"Learn about different types of life insurance and how to choose the right policy.\"\n                link=\"/guides/life-insurance-buyers-guide\"\n                icon=\"lucide:book\"\n                />\n                <ResourceCard\n                title=\"Health Insurance Glossary\"\n                description=\"A complete glossary of health insurance terms and definitions.\"\n                link=\"/guides/health-insurance-glossary\"\n                icon=\"lucide:book\"\n                />\n                <ResourceCard\n                title=\"Business Insurance Tax Guide\"\n                description=\"Learn how businesses can save thousands on taxes with strategic insurance planning.\"\n                link=\"/guides/business-insurance-guide\"\n                icon=\"lucide:briefcase\"\n                :features=\"['Tax Strategies','Group Benefits','Save Thousands','Implementation Guide']\"\n                isNew\n                />\n                <ResourceCard\n                title=\"Auto Insurance Guide\"\n                description=\"A comprehensive guide to auto insurance coverage, rates, claims, and money-saving tips.\"\n                link=\"/guides/auto-insurance-guide\"\n                icon=\"lucide:car\"\n                :features=\"['Coverage Options','Premium Factors','Claims Process','Money-Saving Tips']\"\n                isNew\n                />\n                <ResourceCard\n                title=\"Retirement Planning Checklist\"\n                description=\"An interactive checklist to track your retirement planning progress through every life stage.\"\n                link=\"/guides/retirement-planning-checklist\"\n                icon=\"lucide:calendar\"\n                :features=\"['Interactive Tracking','Age-Based Guidance','Expert Tips','Progress Tracking']\"\n                isNew\n                />\n            </template>\n\n            <template #blog>\n                <p class=\"text-gray-500 text-center\">No blog posts yet.</p>\n            </template>\n            </ResourceTabs>\n\n\n            <NeedPersonalizedAssistance />\n        </div>\n             <CallToAction />\n  </PatternSection>\n</template>\n\n\n",
+      "start": 1761251025145,
+      "end": 1761251025270,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251025270,
+      "end": 1761251025270,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251025270,
+      "end": 1761251025270,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251025270,
+      "end": 1761251025270,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251025270,
+      "end": 1761251025270,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251025270,
+      "end": 1761251025270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251025270,
+      "end": 1761251025270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251025270,
+      "end": 1761251025270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251025270,
+      "end": 1761251025270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"container mx-auto py-12 px-4\" }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"text-center mb-10\" }, [\n  /*#__PURE__*/_createElementVNode(\"h1\", { class: \"text-3xl md:text-4xl font-bold mb-4\" }, \"Client Resources & Tools\"),\n  /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-lg text-gray-600 max-w-3xl mx-auto\" }, \"Access our collection of calculators, guides, and tools to help you make informed insurance and financial decisions.\")\n], -1)\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-gray-500 text-center\" }, \"No blog posts yet.\", -1)\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_HomepageHeroSection = _resolveComponent(\"HomepageHeroSection\")\n  const _component_ResourceCard = _resolveComponent(\"ResourceCard\")\n  const _component_ResourceTabs = _resolveComponent(\"ResourceTabs\")\n  const _component_NeedPersonalizedAssistance = _resolveComponent(\"NeedPersonalizedAssistance\")\n  const _component_CallToAction = _resolveComponent(\"CallToAction\")\n  const _component_PatternSection = _resolveComponent(\"PatternSection\")\n\n  return (_openBlock(), _createBlock(_component_PatternSection, null, {\n    default: _withCtx(() => [\n      _createVNode(_component_HomepageHeroSection),\n      _createElementVNode(\"div\", _hoisted_1, [\n        _hoisted_2,\n        _createVNode(_component_ResourceTabs, null, {\n          guides: _withCtx(() => [\n            _createVNode(_component_ResourceCard, {\n              title: \"Medicare Guide\",\n              description: \"A comprehensive guide to understanding Medicare and its different parts.\",\n              link: \"/guides/medicare-guide\",\n              icon: \"lucide:file-text\"\n            }),\n            _createVNode(_component_ResourceCard, {\n              title: \"Life Insurance Buyer's Guide\",\n              description: \"Learn about different types of life insurance and how to choose the right policy.\",\n              link: \"/guides/life-insurance-buyers-guide\",\n              icon: \"lucide:book\"\n            }),\n            _createVNode(_component_ResourceCard, {\n              title: \"Health Insurance Glossary\",\n              description: \"A complete glossary of health insurance terms and definitions.\",\n              link: \"/guides/health-insurance-glossary\",\n              icon: \"lucide:book\"\n            }),\n            _createVNode(_component_ResourceCard, {\n              title: \"Business Insurance Tax Guide\",\n              description: \"Learn how businesses can save thousands on taxes with strategic insurance planning.\",\n              link: \"/guides/business-insurance-guide\",\n              icon: \"lucide:briefcase\",\n              features: ['Tax Strategies','Group Benefits','Save Thousands','Implementation Guide'],\n              isNew: \"\"\n            }),\n            _createVNode(_component_ResourceCard, {\n              title: \"Auto Insurance Guide\",\n              description: \"A comprehensive guide to auto insurance coverage, rates, claims, and money-saving tips.\",\n              link: \"/guides/auto-insurance-guide\",\n              icon: \"lucide:car\",\n              features: ['Coverage Options','Premium Factors','Claims Process','Money-Saving Tips'],\n              isNew: \"\"\n            }),\n            _createVNode(_component_ResourceCard, {\n              title: \"Retirement Planning Checklist\",\n              description: \"An interactive checklist to track your retirement planning progress through every life stage.\",\n              link: \"/guides/retirement-planning-checklist\",\n              icon: \"lucide:calendar\",\n              features: ['Interactive Tracking','Age-Based Guidance','Expert Tips','Progress Tracking'],\n              isNew: \"\"\n            })\n          ]),\n          blog: _withCtx(() => [\n            _hoisted_3\n          ]),\n          _: 1\n        }),\n        _createVNode(_component_NeedPersonalizedAssistance)\n      ]),\n      _createVNode(_component_CallToAction)\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251025270,
+      "end": 1761251025273,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251025273,
+      "end": 1761251025273,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251025273,
+      "end": 1761251025274,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251025274,
+      "end": 1761251025274,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1761251025274,
+      "end": 1761251025274,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251025274,
+      "end": 1761251025274,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251025274,
+      "end": 1761251025274,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251025274,
+      "end": 1761251025274,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251025274,
+      "end": 1761251025274,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251025274,
+      "end": 1761251025274,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251025274,
+      "end": 1761251025274,
+      "order": "normal"
+    }
+  ]
+}

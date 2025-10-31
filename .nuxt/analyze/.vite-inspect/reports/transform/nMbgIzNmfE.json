@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactButtons.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-1e62c9df\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"flex flex-wrap justify-center gap-2 my-3\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-white text-center m-0\" }, [\n  /*#__PURE__*/_createTextVNode(\" 3308 Cleveland Heights Blvd STE 102, Lakeland, FL • \"),\n  /*#__PURE__*/_createElementVNode(\"a\", {\n    href: \"tel:+18884417891\",\n    class: \"underline hover:text-sky-200\"\n  }, \"(888) 441‑7891\")\n], -1))\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ContactButtons',\n  setup(__props) {\n\n// No script needed for static links\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createVNode(_component_NuxtLink, {\n        to: \"#employers\",\n        class: \"px-3 py-2 rounded-md font-medium bg-sky-500 text-white hover:bg-sky-600 transition-colors\"\n      }, {\n        default: _withCtx(() => [\n          _createTextVNode(\" For Employers \")\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_NuxtLink, {\n        to: \"#families\",\n        class: \"px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n      }, {\n        default: _withCtx(() => [\n          _createTextVNode(\" For Individuals & Families \")\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_NuxtLink, {\n        to: \"#seniors\",\n        class: \"px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n      }, {\n        default: _withCtx(() => [\n          _createTextVNode(\" For Seniors \")\n        ]),\n        _: 1\n      })\n    ]),\n    _hoisted_2\n  ]))\n}\n}\n\n})",
+      "start": 1761251028203,
+      "end": 1761251028203
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251028203,
+      "end": 1761251028203,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251028204,
+      "end": 1761251028204,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251028204,
+      "end": 1761251028204,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251028204,
+      "end": 1761251028204,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251028204,
+      "end": 1761251028204,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-1e62c9df\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"flex flex-wrap justify-center gap-2 my-3\" };\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"p\", { class: \"text-white text-center m-0\" }, [\n  /* @__PURE__ */ _createTextVNode(\" 3308 Cleveland Heights Blvd STE 102, Lakeland, FL • \"),\n  /* @__PURE__ */ _createElementVNode(\"a\", {\n    href: \"tel:+18884417891\",\n    class: \"underline hover:text-sky-200\"\n  }, \"(888) 441‑7891\")\n], -1));\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ContactButtons\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createElementBlock(\"div\", null, [\n        _createElementVNode(\"div\", _hoisted_1, [\n          _createVNode(_component_NuxtLink, {\n            to: \"#employers\",\n            class: \"px-3 py-2 rounded-md font-medium bg-sky-500 text-white hover:bg-sky-600 transition-colors\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" For Employers \")\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_NuxtLink, {\n            to: \"#families\",\n            class: \"px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" For Individuals & Families \")\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_NuxtLink, {\n            to: \"#seniors\",\n            class: \"px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" For Seniors \")\n            ]),\n            _: 1\n          })\n        ]),\n        _hoisted_2\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251028204,
+      "end": 1761251029162,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactButtons.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-1e62c9df\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"flex flex-wrap justify-center gap-2 my-3\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-white text-center m-0\" }, [\n  /*#__PURE__*/_createTextVNode(\" 3308 Cleveland Heights Blvd STE 102, Lakeland, FL • \"),\n  /*#__PURE__*/_createElementVNode(\"a\", {\n    href: \"tel:+18884417891\",\n    class: \"underline hover:text-sky-200\"\n  }, \"(888) 441‑7891\")\n], -1))\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ContactButtons',\n  setup(__props) {\n\n// No script needed for static links\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createVNode(_component_NuxtLink, {\n        to: \"#employers\",\n        class: \"px-3 py-2 rounded-md font-medium bg-sky-500 text-white hover:bg-sky-600 transition-colors\"\n      }, {\n        default: _withCtx(() => [\n          _createTextVNode(\" For Employers \")\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_NuxtLink, {\n        to: \"#families\",\n        class: \"px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n      }, {\n        default: _withCtx(() => [\n          _createTextVNode(\" For Individuals & Families \")\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_NuxtLink, {\n        to: \"#seniors\",\n        class: \"px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n      }, {\n        default: _withCtx(() => [\n          _createTextVNode(\" For Seniors \")\n        ]),\n        _: 1\n      })\n    ]),\n    _hoisted_2\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,mBAAmB,kBAAkB,oBAAoB,mBAAmB,WAAW,UAAU,eAAe,cAAc,sBAAsB,qBAAqB,aAAa,YAAY,sBAAsB,qBAAqB,eAAe,cAAc,cAAc,mBAAmB;AAEpT,MAAM,eAAe,QAAM,aAAa,iBAAiB,GAAE,IAAE,EAAE,GAAE,YAAY,GAAE;AAC/E,MAAM,aAAa,EAAE,OAAO,2CAA2C;AACvE,MAAM,aAA2B,6BAAa,MAAmB,oCAAoB,KAAK,EAAE,OAAO,6BAA6B,GAAG;AAAA,EACpH,iCAAiB,uDAAuD;AAAA,EACxE,oCAAoB,KAAK;AAAA,IACpC,MAAM;AAAA,IACN,OAAO;AAAA,EACT,GAAG,gBAAgB;AACrB,GAAG,EAAE,CAAC;AAGN,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAIjB,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,sBAAsB,kBAAkB,UAAU;AAExD,aAAQ,WAAW,GAAG,oBAAoB,OAAO,MAAM;AAAA,QACrD,oBAAoB,OAAO,YAAY;AAAA,UACrC,aAAa,qBAAqB;AAAA,YAChC,IAAI;AAAA,YACJ,OAAO;AAAA,UACT,GAAG;AAAA,YACD,SAAS,SAAS,MAAM;AAAA,cACtB,iBAAiB,iBAAiB;AAAA,YACpC,CAAC;AAAA,YACD,GAAG;AAAA,UACL,CAAC;AAAA,UACD,aAAa,qBAAqB;AAAA,YAChC,IAAI;AAAA,YACJ,OAAO;AAAA,UACT,GAAG;AAAA,YACD,SAAS,SAAS,MAAM;AAAA,cACtB,iBAAiB,8BAA8B;AAAA,YACjD,CAAC;AAAA,YACD,GAAG;AAAA,UACL,CAAC;AAAA,UACD,aAAa,qBAAqB;AAAA,YAChC,IAAI;AAAA,YACJ,OAAO;AAAA,UACT,GAAG;AAAA,YACD,SAAS,SAAS,MAAM;AAAA,cACtB,iBAAiB,eAAe;AAAA,YAClC,CAAC;AAAA,YACD,GAAG;AAAA,UACL,CAAC;AAAA,QACH,CAAC;AAAA,QACD;AAAA,MACF,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029162,
+      "end": 1761251029162,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029162,
+      "end": 1761251029162,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029164,
+      "end": 1761251029164,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029164,
+      "end": 1761251029164,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029164,
+      "end": 1761251029164,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029173,
+      "end": 1761251029173,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029173,
+      "end": 1761251029173,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029173,
+      "end": 1761251029183,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029185,
+      "end": 1761251029185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029185,
+      "end": 1761251029186,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029186,
+      "end": 1761251029186,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029186,
+      "end": 1761251029186,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-1e62c9df\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"flex flex-wrap justify-center gap-2 my-3\" };\nconst _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"p\", { class: \"text-white text-center m-0\" }, [\n  /* @__PURE__ */ _createTextVNode(\" 3308 Cleveland Heights Blvd STE 102, Lakeland, FL • \"),\n  /* @__PURE__ */ _createElementVNode(\"a\", {\n    href: \"tel:+18884417891\",\n    class: \"underline hover:text-sky-200\"\n  }, \"(888) 441‑7891\")\n], -1));\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ContactButtons\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_NuxtLink = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"div\", null, [\n        _createElementVNode(\"div\", _hoisted_1, [\n          _createVNode(_component_NuxtLink, {\n            to: \"#employers\",\n            class: \"px-3 py-2 rounded-md font-medium bg-sky-500 text-white hover:bg-sky-600 transition-colors\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" For Employers \")\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_NuxtLink, {\n            to: \"#families\",\n            class: \"px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" For Individuals & Families \")\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_NuxtLink, {\n            to: \"#seniors\",\n            class: \"px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" For Seniors \")\n            ]),\n            _: 1\n          })\n        ]),\n        _hoisted_2\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251029186,
+      "end": 1761251029187,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029188,
+      "end": 1761251029188,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029188,
+      "end": 1761251029188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029189,
+      "end": 1761251029189,
+      "order": "normal"
+    }
+  ]
+}

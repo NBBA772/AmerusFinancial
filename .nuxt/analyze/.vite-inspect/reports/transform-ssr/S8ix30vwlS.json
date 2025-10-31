@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhoWeServe.vue?vue&type=style&index=0&scoped=12e571cd&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.perspective {\n  perspective: 1000px;\n}\n.transform-style-preserve-3d {\n  transform-style: preserve-3d;\n}\n.backface-hidden {\n  backface-visibility: hidden;\n}\n.rotate-y-180 {\n  transform: rotateY(180deg);\n}\n.material-icons {\n  font-family: \"Material Icons\";\n}\n",
+      "start": 1761251161598,
+      "end": 1761251161598,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhoWeServe.vue"
+        ],
+        "names": [],
+        "mappings": ";AAmKA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC9B;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC5B;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/B",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhoWeServe.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<script setup lang=\"ts\">\nimport { ref } from \"vue\";\n\nconst cards = ref([\n  {\n    title: \"Employers & Group Plans\",\n    description: \"Design competitive benefits, control costs, and protect your business.\",\n    image:\n      \"https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n    alt: \"Businesses\",\n    backTitle: \"Popular Employer Resources\",\n    backItems: [\n      \"Benefits Enrollment Guide\",\n      \"Compliance Checklist (ACA, ERISA)\",\n      \"Workers’ Comp Basics\",\n    ],\n    backLinks: [\n      \"/employers/benefits-enrollment\",\n      \"/employers/compliance-checklist\",\n      \"/employers/workers-comp\",\n    ],\n    learnMoreLink: \"/businesses\",\n    getQuoteLink: \"/info\",\n  },\n  {\n    title: \"Individuals & Families\",\n    description:\n      \"Protect what matters with clear, affordable coverage.\",\n    image:\n      \"https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n    alt: \"Families\",\n    backTitle: \"Helpful Guides\",\n    backItems: [\n      \"Home & Auto Bundling Savings\",\n      \"How Much Life Insurance Do I Need?\",\n      \"Health Plan Basics\",\n    ],\n    backLinks: [\n      \"/families/life-health\",\n      \"/families/property-coverage\",\n      \"/families/college-savings\",\n      \"/families/emergency-support\",\n    ],\n    learnMoreLink: \"/families\",\n    getQuoteLink: \"/info\",\n  },\n  {\n    title: \"Seniors & Medicare\",\n    description:\n      \"Navigate Medicare with confidence and complete your retirement plan.\",\n    image:\n      \"https://images.unsplash.com/photo-1628891892235-5d834f9c64c1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n    alt: \"Seniors\",\n    backTitle: \"Medicare Resources\",\n    backItems: [\n      \"Medicare 101\",\n      \"Medigap vs. Advantage\",\n      \"Enrollment Dates & Deadlines\",\n    ],\n    backLinks: [\n      \"/seniors/medicare-advantage\",\n      \"/seniors/retirement-planning\",\n      \"/seniors/prescriptions\",\n      \"/seniors/long-term-care\",\n    ],\n    learnMoreLink: \"/seniors\",\n    getQuoteLink: \"/info\",\n  },\n]);\n\nconst flipped = ref<boolean[]>(cards.value.map(() => false));\nconst toggleFlip = (i: number) => (flipped.value[i] = !flipped.value[i]);\n</script>\n\n<template>\n  <section class=\"py-16 bg-white\">\n    <div class=\"container mx-auto px-4\">\n      <h2 class=\"text-3xl md:text-4xl font-bold text-center mb-12\">\n        Who We Serve\n      </h2>\n\n      <div class=\"grid grid-cols-1 md:grid-cols-3 gap-6 perspective\">\n        <div\n          v-for=\"(card, i) in cards\"\n          :key=\"i\"\n          class=\"relative h-80 w-full group\"\n        >\n        <!-- Flip button -->\n        <button\n        class=\"absolute top-2 right-2 z-30 bg-black/50 text-white text-xs px-2 py-1 rounded-md flex items-center gap-1 hover:bg-black/60\"\n        @click.stop=\"toggleFlip(i)\"\n        >\n        <Icon name=\"mdi:swap-horizontal\" class=\"w-6 h-6\" />\n        </button>\n\n\n          <!-- Card Inner -->\n          <div\n            class=\"relative w-full h-full transition-transform duration-700 transform-style-preserve-3d\"\n            :class=\"{ 'rotate-y-180': flipped[i] }\"\n          >\n            <!-- Front Side -->\n            <div\n              class=\"absolute inset-0 rounded-lg shadow-md overflow-hidden backface-hidden\"\n            >\n              <img\n                :src=\"card.image\"\n                :alt=\"card.alt\"\n                class=\"w-full h-full object-cover\"\n              />\n              <div\n                class=\"absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white\"\n              >\n                <h3 class=\"text-xl font-bold mb-2\">{{ card.title }}</h3>\n                <p class=\"text-sm text-white/90 mb-4\">{{ card.description }}</p>\n                <div class=\"flex gap-2\">\n                  <NuxtLink\n                    :to=\"card.learnMoreLink\"\n                    class=\"bg-primary px-3 py-1 text-sm rounded-md hover:bg-primary/80 transition\"\n                  >\n                    Learn More\n                  </NuxtLink>\n                  <NuxtLink\n                    :to=\"card.getQuoteLink\"\n                    class=\"bg-white text-black px-3 py-1 text-sm rounded-md hover:bg-gray-200 transition\"\n                  >\n                    Get Quote\n                  </NuxtLink>\n                </div>\n              </div>\n            </div>\n\n            <!-- Back Side -->\n            <div\n              class=\"absolute inset-0 rounded-lg shadow-md bg-[#30BCFE] text-white p-6 flex flex-col justify-center transform rotate-y-180 backface-hidden\"\n            >\n              <h3 class=\"text-lg font-bold mb-4\">{{ card.backTitle }}</h3>\n              <ul class=\"space-y-2 text-left mx-auto max-w-xs\">\n                <li\n                  v-for=\"(item, j) in card.backItems\"\n                  :key=\"j\"\n                  class=\"flex items-center text-sm\"\n                >\n                  <span\n                    class=\"w-2 h-2 bg-white rounded-full mr-2 flex-shrink-0\"\n                  ></span>\n                  <NuxtLink\n                    :to=\"card.backLinks[j]\"\n                    class=\"underline hover:text-gray-200\"\n                  >\n                    {{ item }}\n                  </NuxtLink>\n                </li>\n              </ul>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>\n</template>\n\n<style scoped>\n.perspective {\n  perspective: 1000px;\n}\n.transform-style-preserve-3d {\n  transform-style: preserve-3d;\n}\n.backface-hidden {\n  backface-visibility: hidden;\n}\n.rotate-y-180 {\n  transform: rotateY(180deg);\n}\n.material-icons {\n  font-family: \"Material Icons\";\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251161600,
+      "end": 1761251161600,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251161600,
+      "end": 1761251161601,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251161601,
+      "end": 1761251161601,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251161601,
+      "end": 1761251161601,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251161601,
+      "end": 1761251161601,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251161601,
+      "end": 1761251161601,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251161602,
+      "end": 1761251161602,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251161602,
+      "end": 1761251161602,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".perspective{perspective:1000px}.transform-style-preserve-3d{transform-style:preserve-3d}.backface-hidden{backface-visibility:hidden}.rotate-y-180{transform:rotateY(180deg)}.material-icons{font-family:Material Icons}",
+      "start": 1761251161602,
+      "end": 1761251161641,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhoWeServe.vue",
+        "mappings": "AACA,aACE,kBACF,CACA,6BACE,2BACF,CACA,iBACE,0BACF,CACA,cACE,yBACF,CACA,gBACE,0BACF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhoWeServe.vue"
+        ],
+        "sourcesContent": [
+          "\n.perspective {\n  perspective: 1000px;\n}\n.transform-style-preserve-3d {\n  transform-style: preserve-3d;\n}\n.backface-hidden {\n  backface-visibility: hidden;\n}\n.rotate-y-180 {\n  transform: rotateY(180deg);\n}\n.material-icons {\n  font-family: \"Material Icons\";\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251161641,
+      "end": 1761251161641,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251161641,
+      "end": 1761251161641,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251161688,
+      "end": 1761251161688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".perspective[data-v-12e571cd]{perspective:1000px}.transform-style-preserve-3d[data-v-12e571cd]{transform-style:preserve-3d}.backface-hidden[data-v-12e571cd]{backface-visibility:hidden}.rotate-y-180[data-v-12e571cd]{transform:rotateY(180deg)}.material-icons[data-v-12e571cd]{font-family:Material Icons}",
+      "start": 1761251161689,
+      "end": 1761251161689,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhoWeServe.vue",
+        "mappings": "AAAA,8BAAa,kBAAkB,CAAC,8CAA6B,2BAA2B,CAAC,kCAAiB,0BAA0B,CAAC,+BAAc,yBAAyB,CAAC,iCAAgB,0BAA0B",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhoWeServe.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251161689,
+      "end": 1761251161689,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161690,
+      "end": 1761251161690,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161690,
+      "end": 1761251161690,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251161690,
+      "end": 1761251161690,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251161690,
+      "end": 1761251161690,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251161690,
+      "end": 1761251161690,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161722,
+      "end": 1761251161723,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251161723,
+      "end": 1761251161802,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251161803,
+      "end": 1761251161806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1761251161806,
+      "end": 1761251161807,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251161810,
+      "end": 1761251161810,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251161810,
+      "end": 1761251161810,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251161810,
+      "end": 1761251161810,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251161810,
+      "end": 1761251161810,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251161855,
+      "end": 1761251161855,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251161855,
+      "end": 1761251161855,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251161862,
+      "end": 1761251161862,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251161862,
+      "end": 1761251161862,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251161862,
+      "end": 1761251161862,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251161862,
+      "end": 1761251161862,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251161862,
+      "end": 1761251161862,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251161862,
+      "end": 1761251161862,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251161862,
+      "end": 1761251161863,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251161863,
+      "end": 1761251161863,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251161863,
+      "end": 1761251161863,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251161901,
+      "end": 1761251161901,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251161901,
+      "end": 1761251161901,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251161902,
+      "end": 1761251161902,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251161902,
+      "end": 1761251161902,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251161903,
+      "end": 1761251161903,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251161903,
+      "end": 1761251161903,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251161903,
+      "end": 1761251161903,
+      "order": "normal"
+    }
+  ]
+}

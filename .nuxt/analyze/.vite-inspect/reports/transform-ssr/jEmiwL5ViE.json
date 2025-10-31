@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/WhatIsSeniorLifeInsuranceSection.vue?nuxt_component=async&nuxt_component_name=WhatIsSeniorLifeInsuranceSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo> Medicare Supplement </HeadlineTwo>\n\n        <BasicList>\n          <ListItems>Medical Bills</ListItems>\n          <ListItems>Credit Card Debt</ListItems>\n          <ListItems>Funeral Costs</ListItems>\n          <ListItems>Mortgage & Bills</ListItems>\n        </BasicList>\n        <ParagraphDescription\n          >By purchasing a Senior Life Insurance policy you can save your family\n          from the financial burden of providing for these expenses. This\n          provides a helping hand to your loved ones during a difficult and\n          stressful time.</ParagraphDescription\n        >\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo>Benefits of Senior Whole Life Insurance</HeadlineTwo>\n        <BasicList>\n          <ListItems>NO Medical Exam</ListItems>\n          <ListItems\n            >Rates are Locked in and Guaranteed to never increase.</ListItems\n          >\n          <ListItems>Coverage within 48 Hours</ListItems>\n          <ListItems>Coverage up to $50,0005</ListItems>\n          <ListItems>Guaranteed Issue Policies Available</ListItems>\n          <ListItems>Affordable Rates</ListItems>\n        </BasicList>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"TwoColumnSection\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>",
+      "start": 1761251141833,
+      "end": 1761251142004,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251142004,
+      "end": 1761251142004,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"TwoColumnSection\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_BasicList = _resolveComponent(\"BasicList\")\n  const _component_ListItems = _resolveComponent(\"ListItems\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n\n  _push(_ssrRenderComponent(_component_BasicSection, _mergeProps({ class: \"container mx-auto mt-20\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div class=\"px-4 sm:px-8\"${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_HeadlineTwo, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(` Medicare Supplement `)\n                  } else {\n                    return [\n                      _createTextVNode(\" Medicare Supplement \")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_BasicList, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Medical Bills`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Medical Bills\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Credit Card Debt`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Credit Card Debt\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Funeral Costs`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Funeral Costs\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Mortgage &amp; Bills`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Mortgage & Bills\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                  } else {\n                    return [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Medical Bills\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Credit Card Debt\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Funeral Costs\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Mortgage & Bills\")\n                        ]),\n                        _: 1\n                      })\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`By purchasing a Senior Life Insurance policy you can save your family from the financial burden of providing for these expenses. This provides a helping hand to your loved ones during a difficult and stressful time.`)\n                  } else {\n                    return [\n                      _createTextVNode(\"By purchasing a Senior Life Insurance policy you can save your family from the financial burden of providing for these expenses. This provides a helping hand to your loved ones during a difficult and stressful time.\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div><div class=\"px-4 sm:px-8\"${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_HeadlineTwo, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Benefits of Senior Whole Life Insurance`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Benefits of Senior Whole Life Insurance\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_BasicList, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`NO Medical Exam`)\n                        } else {\n                          return [\n                            _createTextVNode(\"NO Medical Exam\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Rates are Locked in and Guaranteed to never increase.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Rates are Locked in and Guaranteed to never increase.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Coverage within 48 Hours`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Coverage within 48 Hours\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Coverage up to \\$50,0005`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Coverage up to $50,0005\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Guaranteed Issue Policies Available`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Guaranteed Issue Policies Available\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Affordable Rates`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Affordable Rates\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                  } else {\n                    return [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"NO Medical Exam\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Rates are Locked in and Guaranteed to never increase.\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Coverage within 48 Hours\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Coverage up to $50,0005\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Guaranteed Issue Policies Available\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Affordable Rates\")\n                        ]),\n                        _: 1\n                      })\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div>`)\n            } else {\n              return [\n                _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                  _createVNode(_component_HeadlineTwo, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\" Medicare Supplement \")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Medical Bills\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Credit Card Debt\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Funeral Costs\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Mortgage & Bills\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"By purchasing a Senior Life Insurance policy you can save your family from the financial burden of providing for these expenses. This provides a helping hand to your loved ones during a difficult and stressful time.\")\n                    ]),\n                    _: 1\n                  })\n                ]),\n                _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                  _createVNode(_component_HeadlineTwo, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Benefits of Senior Whole Life Insurance\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"NO Medical Exam\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Rates are Locked in and Guaranteed to never increase.\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Coverage within 48 Hours\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Coverage up to $50,0005\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Guaranteed Issue Policies Available\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Affordable Rates\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  })\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n      } else {\n        return [\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                _createVNode(_component_HeadlineTwo, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" Medicare Supplement \")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_BasicList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Medical Bills\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Credit Card Debt\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Funeral Costs\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Mortgage & Bills\")\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"By purchasing a Senior Life Insurance policy you can save your family from the financial burden of providing for these expenses. This provides a helping hand to your loved ones during a difficult and stressful time.\")\n                  ]),\n                  _: 1\n                })\n              ]),\n              _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                _createVNode(_component_HeadlineTwo, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Benefits of Senior Whole Life Insurance\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_BasicList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"NO Medical Exam\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Rates are Locked in and Guaranteed to never increase.\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Coverage within 48 Hours\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Coverage up to $50,0005\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Guaranteed Issue Policies Available\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Affordable Rates\")\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                })\n              ])\n            ]),\n            _: 1\n          })\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/SeniorSolutionPage/WhatIsSeniorLifeInsuranceSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251142004,
+      "end": 1761251142008,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/WhatIsSeniorLifeInsuranceSection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/WhatIsSeniorLifeInsuranceSection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo> Medicare Supplement </HeadlineTwo>\n\n        <BasicList>\n          <ListItems>Medical Bills</ListItems>\n          <ListItems>Credit Card Debt</ListItems>\n          <ListItems>Funeral Costs</ListItems>\n          <ListItems>Mortgage & Bills</ListItems>\n        </BasicList>\n        <ParagraphDescription\n          >By purchasing a Senior Life Insurance policy you can save your family\n          from the financial burden of providing for these expenses. This\n          provides a helping hand to your loved ones during a difficult and\n          stressful time.</ParagraphDescription\n        >\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo>Benefits of Senior Whole Life Insurance</HeadlineTwo>\n        <BasicList>\n          <ListItems>NO Medical Exam</ListItems>\n          <ListItems\n            >Rates are Locked in and Guaranteed to never increase.</ListItems\n          >\n          <ListItems>Coverage within 48 Hours</ListItems>\n          <ListItems>Coverage up to $50,0005</ListItems>\n          <ListItems>Guaranteed Issue Policies Available</ListItems>\n          <ListItems>Affordable Rates</ListItems>\n        </BasicList>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"TwoColumnSection\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>"
+        ],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/WhatIsSeniorLifeInsuranceSection.vue\").then(r => r.default))",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251142008,
+      "end": 1761251142008,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251142008,
+      "end": 1761251142009,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251142008,
+      "end": 1761251142009,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251142009,
+      "end": 1761251142009,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251142009,
+      "end": 1761251142009,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251142009,
+      "end": 1761251142009,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251142009,
+      "end": 1761251142009,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251142009,
+      "end": 1761251142009,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251142009,
+      "end": 1761251142009,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251142009,
+      "end": 1761251142009,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251142009,
+      "end": 1761251142009,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251142009,
+      "end": 1761251142009,
+      "order": "normal"
+    }
+  ]
+}

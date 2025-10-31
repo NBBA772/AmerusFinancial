@@ -1,0 +1,296 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/RetirementCalculator.vue?nuxt_component=async&nuxt_component_name=RetirementCalculator",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<!-- components/RetirementCalculator.vue -->\n<template>\n  <section class=\"py-16 bg-gray-50\">\n    <div class=\"container mx-auto px-4 max-w-5xl\">\n      <h2 class=\"text-3xl font-bold text-gray-900 mb-4\">\n        Retirement Calculator\n      </h2>\n      <p class=\"text-gray-600 mb-8\">\n        Plan for your future by calculating how much you need to save for a comfortable retirement.\n      </p>\n\n      <div class=\"lg:flex lg:gap-8\">\n        <!-- Calculator Form -->\n        <form @submit.prevent=\"calculate\" class=\"bg-white shadow-lg rounded-xl p-8 space-y-4 lg:flex-1\">\n          <div>\n            <label for=\"currentAge\" class=\"block text-sm font-medium text-gray-700\">Current Age</label>\n            <input type=\"number\" id=\"currentAge\" v-model.number=\"currentAge\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" />\n          </div>\n\n          <div>\n            <label for=\"retirementAge\" class=\"block text-sm font-medium text-gray-700\">Retirement Age</label>\n            <input type=\"number\" id=\"retirementAge\" v-model.number=\"retirementAge\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" />\n          </div>\n\n          <div>\n            <label for=\"currentSavings\" class=\"block text-sm font-medium text-gray-700\">Current Savings ($)</label>\n            <input type=\"number\" id=\"currentSavings\" v-model.number=\"currentSavings\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" />\n          </div>\n\n          <div>\n            <label for=\"monthlyContribution\" class=\"block text-sm font-medium text-gray-700\">Monthly Contribution ($)</label>\n            <input type=\"number\" id=\"monthlyContribution\" v-model.number=\"monthlyContribution\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" />\n          </div>\n\n          <div>\n            <label for=\"annualReturn\" class=\"block text-sm font-medium text-gray-700\">Expected Annual Return (%)</label>\n            <input type=\"number\" id=\"annualReturn\" v-model.number=\"annualReturn\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" step=\"0.1\" />\n          </div>\n\n          <div>\n            <label for=\"targetAmount\" class=\"block text-sm font-medium text-gray-700\">Target Retirement Savings ($)</label>\n            <input type=\"number\" id=\"targetAmount\" v-model.number=\"targetAmount\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" />\n          </div>\n\n          <button type=\"submit\" class=\"w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition\">\n            Calculate\n          </button>\n        </form>\n\n        <!-- Breakdown Panel -->\n        <div v-if=\"result\" class=\"lg:flex-1 mt-8 lg:mt-0 bg-white shadow-lg rounded-xl p-6\">\n          <div class=\"mb-4 text-center font-medium text-gray-600\">Retirement Savings at Age {{ retirementAge }}</div>\n          <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\">\n            <div class=\"bg-gray-100 p-4 rounded-lg text-center\">\n              <div class=\"text-gray-600 mb-1\">What you'll have</div>\n              <p class=\"text-2xl font-bold text-gray-900\">${{ formattedHave }}</p>\n            </div>\n            <div class=\"bg-gray-100 p-4 rounded-lg text-center\">\n              <div class=\"text-gray-600 mb-1\">What you'll need</div>\n              <p class=\"text-2xl font-bold text-gray-900\">${{ formattedNeed }}</p>\n            </div>\n          </div>\n\n          <div v-if=\"gap !== null\" class=\"mt-4 text-center\">\n            <p class=\"text-lg font-medium\" :class=\"gap >= 0 ? 'text-green-600' : 'text-red-600'\">\n              {{ gap >= 0 ? 'You are on track!' : `You need $${Math.abs(gap).toLocaleString()} more to reach your goal.` }}\n            </p>\n          </div>\n\n          <!-- <a href=\"#how-this-works\" class=\"text-blue-600 hover:underline mt-2 inline-block\">\n            How did we calculate your results?\n          </a> -->\n          <RetirementBreakdown\n            v-if=\"result\"\n            :result=\"result\"\n            :formattedHave=\"formattedHave\"\n            :formattedNeed=\"formattedNeed\"\n            :monthlyContribution=\"monthlyContribution\"\n            :suggestedContribution=\"suggestedContribution\"\n            :ageSavingsRunsOutCurrent=\"80\"\n            :ageSavingsRunsOutTarget=\"95\"\n          />\n\n        </div>\n      </div>\n    </div>\n  </section>\n</template>\n\n<script setup>\nimport { ref, computed } from 'vue'\n\nconst currentAge = ref(30)\nconst retirementAge = ref(67)\nconst currentSavings = ref(10000)\nconst monthlyContribution = ref(500)\nconst annualReturn = ref(6)\nconst targetAmount = ref(1500000)\n\nconst result = ref(false)\nconst haveAmount = ref(0)\nconst needAmount = ref(0)\nconst gap = ref(null)\nconst suggestedContribution = ref(0)\n\nconst calculate = () => {\n  const years = retirementAge.value - currentAge.value\n  if (years <= 0) {\n    haveAmount.value = 0\n    needAmount.value = targetAmount.value\n    gap.value = -targetAmount.value\n    suggestedContribution.value = 0\n    result.value = true\n    return\n  }\n\n  const months = years * 12\n  const r = annualReturn.value / 100 / 12\n\n  // Current plan future value\n  const fvCurrent = currentSavings.value * Math.pow(1 + r, months)\n  const fvContributions = monthlyContribution.value * ((Math.pow(1 + r, months) - 1) / r)\n  haveAmount.value = fvCurrent + fvContributions\n\n  // Target plan\n  needAmount.value = targetAmount.value\n  gap.value = haveAmount.value - needAmount.value\n\n  // Calculate suggested monthly contribution to reach target\n  const fvTargetContrib = targetAmount.value - fvCurrent\n  suggestedContribution.value = fvTargetContrib / ((Math.pow(1 + r, months) - 1) / r)\n\n  result.value = true\n}\n\nconst formattedHave = computed(() =>\n  haveAmount.value.toLocaleString(undefined, { maximumFractionDigits: 0 })\n)\nconst formattedNeed = computed(() =>\n  needAmount.value.toLocaleString(undefined, { maximumFractionDigits: 0 })\n)\n</script>\n\n",
+      "start": 1761251137334,
+      "end": 1761251138087,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251138088,
+      "end": 1761251138088,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport { ref, computed } from 'vue'\n\n\nconst _sfc_main = {\n  __name: 'RetirementCalculator',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst currentAge = ref(30)\nconst retirementAge = ref(67)\nconst currentSavings = ref(10000)\nconst monthlyContribution = ref(500)\nconst annualReturn = ref(6)\nconst targetAmount = ref(1500000)\n\nconst result = ref(false)\nconst haveAmount = ref(0)\nconst needAmount = ref(0)\nconst gap = ref(null)\nconst suggestedContribution = ref(0)\n\nconst calculate = () => {\n  const years = retirementAge.value - currentAge.value\n  if (years <= 0) {\n    haveAmount.value = 0\n    needAmount.value = targetAmount.value\n    gap.value = -targetAmount.value\n    suggestedContribution.value = 0\n    result.value = true\n    return\n  }\n\n  const months = years * 12\n  const r = annualReturn.value / 100 / 12\n\n  // Current plan future value\n  const fvCurrent = currentSavings.value * Math.pow(1 + r, months)\n  const fvContributions = monthlyContribution.value * ((Math.pow(1 + r, months) - 1) / r)\n  haveAmount.value = fvCurrent + fvContributions\n\n  // Target plan\n  needAmount.value = targetAmount.value\n  gap.value = haveAmount.value - needAmount.value\n\n  // Calculate suggested monthly contribution to reach target\n  const fvTargetContrib = targetAmount.value - fvCurrent\n  suggestedContribution.value = fvTargetContrib / ((Math.pow(1 + r, months) - 1) / r)\n\n  result.value = true\n}\n\nconst formattedHave = computed(() =>\n  haveAmount.value.toLocaleString(undefined, { maximumFractionDigits: 0 })\n)\nconst formattedNeed = computed(() =>\n  needAmount.value.toLocaleString(undefined, { maximumFractionDigits: 0 })\n)\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  const _component_RetirementBreakdown = _resolveComponent(\"RetirementBreakdown\")\n\n  _push(`<section${\n    _ssrRenderAttrs(_mergeProps({ class: \"py-16 bg-gray-50\" }, _attrs))\n  }><div class=\"container mx-auto px-4 max-w-5xl\"><h2 class=\"text-3xl font-bold text-gray-900 mb-4\"> Retirement Calculator </h2><p class=\"text-gray-600 mb-8\"> Plan for your future by calculating how much you need to save for a comfortable retirement. </p><div class=\"lg:flex lg:gap-8\"><form class=\"bg-white shadow-lg rounded-xl p-8 space-y-4 lg:flex-1\"><div><label for=\"currentAge\" class=\"block text-sm font-medium text-gray-700\">Current Age</label><input type=\"number\" id=\"currentAge\"${\n    _ssrRenderAttr(\"value\", currentAge.value)\n  } class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\"></div><div><label for=\"retirementAge\" class=\"block text-sm font-medium text-gray-700\">Retirement Age</label><input type=\"number\" id=\"retirementAge\"${\n    _ssrRenderAttr(\"value\", retirementAge.value)\n  } class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\"></div><div><label for=\"currentSavings\" class=\"block text-sm font-medium text-gray-700\">Current Savings (\\$)</label><input type=\"number\" id=\"currentSavings\"${\n    _ssrRenderAttr(\"value\", currentSavings.value)\n  } class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\"></div><div><label for=\"monthlyContribution\" class=\"block text-sm font-medium text-gray-700\">Monthly Contribution (\\$)</label><input type=\"number\" id=\"monthlyContribution\"${\n    _ssrRenderAttr(\"value\", monthlyContribution.value)\n  } class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\"></div><div><label for=\"annualReturn\" class=\"block text-sm font-medium text-gray-700\">Expected Annual Return (%)</label><input type=\"number\" id=\"annualReturn\"${\n    _ssrRenderAttr(\"value\", annualReturn.value)\n  } class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" step=\"0.1\"></div><div><label for=\"targetAmount\" class=\"block text-sm font-medium text-gray-700\">Target Retirement Savings (\\$)</label><input type=\"number\" id=\"targetAmount\"${\n    _ssrRenderAttr(\"value\", targetAmount.value)\n  } class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\"></div><button type=\"submit\" class=\"w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition\"> Calculate </button></form>`)\n  if (result.value) {\n    _push(`<div class=\"lg:flex-1 mt-8 lg:mt-0 bg-white shadow-lg rounded-xl p-6\"><div class=\"mb-4 text-center font-medium text-gray-600\">Retirement Savings at Age ${\n      _ssrInterpolate(retirementAge.value)\n    }</div><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\"><div class=\"bg-gray-100 p-4 rounded-lg text-center\"><div class=\"text-gray-600 mb-1\">What you&#39;ll have</div><p class=\"text-2xl font-bold text-gray-900\">\\$${\n      _ssrInterpolate(formattedHave.value)\n    }</p></div><div class=\"bg-gray-100 p-4 rounded-lg text-center\"><div class=\"text-gray-600 mb-1\">What you&#39;ll need</div><p class=\"text-2xl font-bold text-gray-900\">\\$${\n      _ssrInterpolate(formattedNeed.value)\n    }</p></div></div>`)\n    if (gap.value !== null) {\n      _push(`<div class=\"mt-4 text-center\"><p class=\"${\n        _ssrRenderClass([gap.value >= 0 ? 'text-green-600' : 'text-red-600', \"text-lg font-medium\"])\n      }\">${\n        _ssrInterpolate(gap.value >= 0 ? 'You are on track!' : `You need $${Math.abs(gap.value).toLocaleString()} more to reach your goal.`)\n      }</p></div>`)\n    } else {\n      _push(`<!---->`)\n    }\n    if (result.value) {\n      _push(_ssrRenderComponent(_component_RetirementBreakdown, {\n        result: result.value,\n        formattedHave: formattedHave.value,\n        formattedNeed: formattedNeed.value,\n        monthlyContribution: monthlyContribution.value,\n        suggestedContribution: suggestedContribution.value,\n        ageSavingsRunsOutCurrent: 80,\n        ageSavingsRunsOutTarget: 95\n      }, null, _parent))\n    } else {\n      _push(`<!---->`)\n    }\n    _push(`</div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`</div></div></section>`)\n}\n}\n\n}\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/RetirementCalculator.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
+      "start": 1761251138088,
+      "end": 1761251138096,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/RetirementCalculator.vue"
+        ],
+        "sourcesContent": [
+          "<!-- components/RetirementCalculator.vue -->\n<template>\n  <section class=\"py-16 bg-gray-50\">\n    <div class=\"container mx-auto px-4 max-w-5xl\">\n      <h2 class=\"text-3xl font-bold text-gray-900 mb-4\">\n        Retirement Calculator\n      </h2>\n      <p class=\"text-gray-600 mb-8\">\n        Plan for your future by calculating how much you need to save for a comfortable retirement.\n      </p>\n\n      <div class=\"lg:flex lg:gap-8\">\n        <!-- Calculator Form -->\n        <form @submit.prevent=\"calculate\" class=\"bg-white shadow-lg rounded-xl p-8 space-y-4 lg:flex-1\">\n          <div>\n            <label for=\"currentAge\" class=\"block text-sm font-medium text-gray-700\">Current Age</label>\n            <input type=\"number\" id=\"currentAge\" v-model.number=\"currentAge\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" />\n          </div>\n\n          <div>\n            <label for=\"retirementAge\" class=\"block text-sm font-medium text-gray-700\">Retirement Age</label>\n            <input type=\"number\" id=\"retirementAge\" v-model.number=\"retirementAge\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" />\n          </div>\n\n          <div>\n            <label for=\"currentSavings\" class=\"block text-sm font-medium text-gray-700\">Current Savings ($)</label>\n            <input type=\"number\" id=\"currentSavings\" v-model.number=\"currentSavings\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" />\n          </div>\n\n          <div>\n            <label for=\"monthlyContribution\" class=\"block text-sm font-medium text-gray-700\">Monthly Contribution ($)</label>\n            <input type=\"number\" id=\"monthlyContribution\" v-model.number=\"monthlyContribution\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" />\n          </div>\n\n          <div>\n            <label for=\"annualReturn\" class=\"block text-sm font-medium text-gray-700\">Expected Annual Return (%)</label>\n            <input type=\"number\" id=\"annualReturn\" v-model.number=\"annualReturn\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" step=\"0.1\" />\n          </div>\n\n          <div>\n            <label for=\"targetAmount\" class=\"block text-sm font-medium text-gray-700\">Target Retirement Savings ($)</label>\n            <input type=\"number\" id=\"targetAmount\" v-model.number=\"targetAmount\" class=\"w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none\" min=\"0\" />\n          </div>\n\n          <button type=\"submit\" class=\"w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition\">\n            Calculate\n          </button>\n        </form>\n\n        <!-- Breakdown Panel -->\n        <div v-if=\"result\" class=\"lg:flex-1 mt-8 lg:mt-0 bg-white shadow-lg rounded-xl p-6\">\n          <div class=\"mb-4 text-center font-medium text-gray-600\">Retirement Savings at Age {{ retirementAge }}</div>\n          <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\">\n            <div class=\"bg-gray-100 p-4 rounded-lg text-center\">\n              <div class=\"text-gray-600 mb-1\">What you'll have</div>\n              <p class=\"text-2xl font-bold text-gray-900\">${{ formattedHave }}</p>\n            </div>\n            <div class=\"bg-gray-100 p-4 rounded-lg text-center\">\n              <div class=\"text-gray-600 mb-1\">What you'll need</div>\n              <p class=\"text-2xl font-bold text-gray-900\">${{ formattedNeed }}</p>\n            </div>\n          </div>\n\n          <div v-if=\"gap !== null\" class=\"mt-4 text-center\">\n            <p class=\"text-lg font-medium\" :class=\"gap >= 0 ? 'text-green-600' : 'text-red-600'\">\n              {{ gap >= 0 ? 'You are on track!' : `You need $${Math.abs(gap).toLocaleString()} more to reach your goal.` }}\n            </p>\n          </div>\n\n          <!-- <a href=\"#how-this-works\" class=\"text-blue-600 hover:underline mt-2 inline-block\">\n            How did we calculate your results?\n          </a> -->\n          <RetirementBreakdown\n            v-if=\"result\"\n            :result=\"result\"\n            :formattedHave=\"formattedHave\"\n            :formattedNeed=\"formattedNeed\"\n            :monthlyContribution=\"monthlyContribution\"\n            :suggestedContribution=\"suggestedContribution\"\n            :ageSavingsRunsOutCurrent=\"80\"\n            :ageSavingsRunsOutTarget=\"95\"\n          />\n\n        </div>\n      </div>\n    </div>\n  </section>\n</template>\n\n<script setup>\nimport { ref, computed } from 'vue'\n\nconst currentAge = ref(30)\nconst retirementAge = ref(67)\nconst currentSavings = ref(10000)\nconst monthlyContribution = ref(500)\nconst annualReturn = ref(6)\nconst targetAmount = ref(1500000)\n\nconst result = ref(false)\nconst haveAmount = ref(0)\nconst needAmount = ref(0)\nconst gap = ref(null)\nconst suggestedContribution = ref(0)\n\nconst calculate = () => {\n  const years = retirementAge.value - currentAge.value\n  if (years <= 0) {\n    haveAmount.value = 0\n    needAmount.value = targetAmount.value\n    gap.value = -targetAmount.value\n    suggestedContribution.value = 0\n    result.value = true\n    return\n  }\n\n  const months = years * 12\n  const r = annualReturn.value / 100 / 12\n\n  // Current plan future value\n  const fvCurrent = currentSavings.value * Math.pow(1 + r, months)\n  const fvContributions = monthlyContribution.value * ((Math.pow(1 + r, months) - 1) / r)\n  haveAmount.value = fvCurrent + fvContributions\n\n  // Target plan\n  needAmount.value = targetAmount.value\n  gap.value = haveAmount.value - needAmount.value\n\n  // Calculate suggested monthly contribution to reach target\n  const fvTargetContrib = targetAmount.value - fvCurrent\n  suggestedContribution.value = fvTargetContrib / ((Math.pow(1 + r, months) - 1) / r)\n\n  result.value = true\n}\n\nconst formattedHave = computed(() =>\n  haveAmount.value.toLocaleString(undefined, { maximumFractionDigits: 0 })\n)\nconst formattedNeed = computed(() =>\n  needAmount.value.toLocaleString(undefined, { maximumFractionDigits: 0 })\n)\n</script>\n\n"
+        ],
+        "names": [],
+        "mappings": ";;;AA0FA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnC;;;;;;AAFc;AAGd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpC;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACV,CAAC,CAAC,CAAC;AACH;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzC;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC9B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChD;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrF;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB,CAAC;AACD;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1E,CAAC;AACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1E,CAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/RetirementCalculator.vue\").then(r => r.default))",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251138097,
+      "end": 1761251138097,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251138097,
+      "end": 1761251138098,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251138098,
+      "end": 1761251138098,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251138098,
+      "end": 1761251138098,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251138098,
+      "end": 1761251138098,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251138098,
+      "end": 1761251138098,
+      "order": "normal"
+    }
+  ]
+}

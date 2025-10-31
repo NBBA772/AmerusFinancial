@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/CategoryCard.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, renderList as _renderList, Fragment as _Fragment, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"flex items-center border-b border-gray-200 dark:border-gray-700 pb-12 mr-5\" }\nconst _hoisted_2 = [\"src\"]\nconst _hoisted_3 = { class: \"flex items-start justify-between w-full\" }\nconst _hoisted_4 = { class: \"pl-3 w-full\" }\nconst _hoisted_5 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-xl font-medium leading-5 text-gray-800 dark:text-white\"\n}\nconst _hoisted_6 = { class: \"mt-5\" }\nconst _hoisted_7 = /*#__PURE__*/_createElementVNode(\"p\", {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-sm leading-normal pt-2 text-gray-500 dark:text-gray-200\"\n}, null, -1)\nconst _hoisted_8 = /*#__PURE__*/_createElementVNode(\"div\", {\n  role: \"img\",\n  \"aria-label\": \"bookmark\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"svg\", {\n    class: \"focus:outline-none dark:text-white text-gray-800\",\n    width: \"28\",\n    height: \"28\",\n    viewBox: \"0 0 28 28\",\n    fill: \"none\",\n    xmlns: \"http://www.w3.org/2000/svg\"\n  }, [\n    /*#__PURE__*/_createElementVNode(\"path\", {\n      d: \"M10.5001 4.66667H17.5001C18.1189 4.66667 18.7124 4.9125 19.15 5.35009C19.5876 5.78767 19.8334 6.38117 19.8334 7V23.3333L14.0001 19.8333L8.16675 23.3333V7C8.16675 6.38117 8.41258 5.78767 8.85017 5.35009C9.28775 4.9125 9.88124 4.66667 10.5001 4.66667Z\",\n      stroke: \"currentColor\",\n      \"stroke-width\": \"1.25\",\n      \"stroke-linecap\": \"round\",\n      \"stroke-linejoin\": \"round\"\n    })\n  ])\n], -1)\nconst _hoisted_9 = { class: \"px-2\" }\nconst _hoisted_10 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-sm leading-5 py-4 dark:text-white\"\n}\nconst _hoisted_11 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none flex\"\n}\n\nimport { defineProps, PropType } from \"@vue/runtime-core\";\nimport { ICategory } from \"~/types/ICategory\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CategoryCard',\n  props: {\n  category: Object as PropType<ICategory>,\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_nuxt_link = _resolveComponent(\"nuxt-link\")!\n\n  return (__props.category)\n    ? (_openBlock(), _createBlock(_component_nuxt_link, {\n        key: 0,\n        to: __props.category.link\n      }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createElementVNode(\"img\", {\n              class: \"h-16\",\n              src: __props.category.image,\n              alt: \"nuxt 3 logo\"\n            }, null, 8, _hoisted_2),\n            _createElementVNode(\"div\", _hoisted_3, [\n              _createElementVNode(\"div\", _hoisted_4, [\n                _createElementVNode(\"div\", _hoisted_5, [\n                  _createElementVNode(\"div\", _hoisted_6, _toDisplayString(__props.category.title), 1)\n                ]),\n                _hoisted_7\n              ]),\n              _hoisted_8\n            ])\n          ]),\n          _createElementVNode(\"div\", _hoisted_9, [\n            _createElementVNode(\"p\", _hoisted_10, _toDisplayString(__props.category.message), 1),\n            _createElementVNode(\"div\", _hoisted_11, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.category.tags, (tag, index) => {\n                return (_openBlock(), _createBlock(_component_nuxt_link, {\n                  to: tag.link,\n                  key: index,\n                  class: \"py-2 px-4 text-xs leading-3 text-indigo-700 rounded-full bg-indigo-100\"\n                }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" #\" + _toDisplayString(tag.title), 1)\n                  ]),\n                  _: 2\n                }, 1032, [\"to\"]))\n              }), 128))\n            ])\n          ])\n        ]),\n        _: 1\n      }, 8, [\"to\"]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})",
+      "start": 1761251027606,
+      "end": 1761251027606
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251027622,
+      "end": 1761251027622,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251027622,
+      "end": 1761251027622,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251027622,
+      "end": 1761251027622,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251027622,
+      "end": 1761251027622,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251027622,
+      "end": 1761251027622,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, renderList as _renderList, Fragment as _Fragment, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nconst _hoisted_1 = { class: \"flex items-center border-b border-gray-200 dark:border-gray-700 pb-12 mr-5\" };\nconst _hoisted_2 = [\"src\"];\nconst _hoisted_3 = { class: \"flex items-start justify-between w-full\" };\nconst _hoisted_4 = { class: \"pl-3 w-full\" };\nconst _hoisted_5 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-xl font-medium leading-5 text-gray-800 dark:text-white\"\n};\nconst _hoisted_6 = { class: \"mt-5\" };\nconst _hoisted_7 = /* @__PURE__ */ _createElementVNode(\"p\", {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-sm leading-normal pt-2 text-gray-500 dark:text-gray-200\"\n}, null, -1);\nconst _hoisted_8 = /* @__PURE__ */ _createElementVNode(\"div\", {\n  role: \"img\",\n  \"aria-label\": \"bookmark\"\n}, [\n  /* @__PURE__ */ _createElementVNode(\"svg\", {\n    class: \"focus:outline-none dark:text-white text-gray-800\",\n    width: \"28\",\n    height: \"28\",\n    viewBox: \"0 0 28 28\",\n    fill: \"none\",\n    xmlns: \"http://www.w3.org/2000/svg\"\n  }, [\n    /* @__PURE__ */ _createElementVNode(\"path\", {\n      d: \"M10.5001 4.66667H17.5001C18.1189 4.66667 18.7124 4.9125 19.15 5.35009C19.5876 5.78767 19.8334 6.38117 19.8334 7V23.3333L14.0001 19.8333L8.16675 23.3333V7C8.16675 6.38117 8.41258 5.78767 8.85017 5.35009C9.28775 4.9125 9.88124 4.66667 10.5001 4.66667Z\",\n      stroke: \"currentColor\",\n      \"stroke-width\": \"1.25\",\n      \"stroke-linecap\": \"round\",\n      \"stroke-linejoin\": \"round\"\n    })\n  ])\n], -1);\nconst _hoisted_9 = { class: \"px-2\" };\nconst _hoisted_10 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-sm leading-5 py-4 dark:text-white\"\n};\nconst _hoisted_11 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none flex\"\n};\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CategoryCard\",\n  props: {\n    category: Object\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_nuxt_link = _resolveComponent(\"nuxt-link\");\n      return __props.category ? (_openBlock(), _createBlock(_component_nuxt_link, {\n        key: 0,\n        to: __props.category.link\n      }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createElementVNode(\"img\", {\n              class: \"h-16\",\n              src: __props.category.image,\n              alt: \"nuxt 3 logo\"\n            }, null, 8, _hoisted_2),\n            _createElementVNode(\"div\", _hoisted_3, [\n              _createElementVNode(\"div\", _hoisted_4, [\n                _createElementVNode(\"div\", _hoisted_5, [\n                  _createElementVNode(\"div\", _hoisted_6, _toDisplayString(__props.category.title), 1)\n                ]),\n                _hoisted_7\n              ]),\n              _hoisted_8\n            ])\n          ]),\n          _createElementVNode(\"div\", _hoisted_9, [\n            _createElementVNode(\"p\", _hoisted_10, _toDisplayString(__props.category.message), 1),\n            _createElementVNode(\"div\", _hoisted_11, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.category.tags, (tag, index) => {\n                return _openBlock(), _createBlock(_component_nuxt_link, {\n                  to: tag.link,\n                  key: index,\n                  class: \"py-2 px-4 text-xs leading-3 text-indigo-700 rounded-full bg-indigo-100\"\n                }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" #\" + _toDisplayString(tag.title), 1)\n                  ]),\n                  _: 2\n                }, 1032, [\"to\"]);\n              }), 128))\n            ])\n          ])\n        ]),\n        _: 1\n      }, 8, [\"to\"])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
+      "start": 1761251027622,
+      "end": 1761251029051,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/CategoryCard.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, renderList as _renderList, Fragment as _Fragment, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"flex items-center border-b border-gray-200 dark:border-gray-700 pb-12 mr-5\" }\nconst _hoisted_2 = [\"src\"]\nconst _hoisted_3 = { class: \"flex items-start justify-between w-full\" }\nconst _hoisted_4 = { class: \"pl-3 w-full\" }\nconst _hoisted_5 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-xl font-medium leading-5 text-gray-800 dark:text-white\"\n}\nconst _hoisted_6 = { class: \"mt-5\" }\nconst _hoisted_7 = /*#__PURE__*/_createElementVNode(\"p\", {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-sm leading-normal pt-2 text-gray-500 dark:text-gray-200\"\n}, null, -1)\nconst _hoisted_8 = /*#__PURE__*/_createElementVNode(\"div\", {\n  role: \"img\",\n  \"aria-label\": \"bookmark\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"svg\", {\n    class: \"focus:outline-none dark:text-white text-gray-800\",\n    width: \"28\",\n    height: \"28\",\n    viewBox: \"0 0 28 28\",\n    fill: \"none\",\n    xmlns: \"http://www.w3.org/2000/svg\"\n  }, [\n    /*#__PURE__*/_createElementVNode(\"path\", {\n      d: \"M10.5001 4.66667H17.5001C18.1189 4.66667 18.7124 4.9125 19.15 5.35009C19.5876 5.78767 19.8334 6.38117 19.8334 7V23.3333L14.0001 19.8333L8.16675 23.3333V7C8.16675 6.38117 8.41258 5.78767 8.85017 5.35009C9.28775 4.9125 9.88124 4.66667 10.5001 4.66667Z\",\n      stroke: \"currentColor\",\n      \"stroke-width\": \"1.25\",\n      \"stroke-linecap\": \"round\",\n      \"stroke-linejoin\": \"round\"\n    })\n  ])\n], -1)\nconst _hoisted_9 = { class: \"px-2\" }\nconst _hoisted_10 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-sm leading-5 py-4 dark:text-white\"\n}\nconst _hoisted_11 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none flex\"\n}\n\nimport { defineProps, PropType } from \"@vue/runtime-core\";\nimport { ICategory } from \"~/types/ICategory\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'CategoryCard',\n  props: {\n  category: Object as PropType<ICategory>,\n},\n  setup(__props) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_nuxt_link = _resolveComponent(\"nuxt-link\")!\n\n  return (__props.category)\n    ? (_openBlock(), _createBlock(_component_nuxt_link, {\n        key: 0,\n        to: __props.category.link\n      }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createElementVNode(\"img\", {\n              class: \"h-16\",\n              src: __props.category.image,\n              alt: \"nuxt 3 logo\"\n            }, null, 8, _hoisted_2),\n            _createElementVNode(\"div\", _hoisted_3, [\n              _createElementVNode(\"div\", _hoisted_4, [\n                _createElementVNode(\"div\", _hoisted_5, [\n                  _createElementVNode(\"div\", _hoisted_6, _toDisplayString(__props.category.title), 1)\n                ]),\n                _hoisted_7\n              ]),\n              _hoisted_8\n            ])\n          ]),\n          _createElementVNode(\"div\", _hoisted_9, [\n            _createElementVNode(\"p\", _hoisted_10, _toDisplayString(__props.category.message), 1),\n            _createElementVNode(\"div\", _hoisted_11, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.category.tags, (tag, index) => {\n                return (_openBlock(), _createBlock(_component_nuxt_link, {\n                  to: tag.link,\n                  key: index,\n                  class: \"py-2 px-4 text-xs leading-3 text-indigo-700 rounded-full bg-indigo-100\"\n                }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" #\" + _toDisplayString(tag.title), 1)\n                  ]),\n                  _: 2\n                }, 1032, [\"to\"]))\n              }), 128))\n            ])\n          ])\n        ]),\n        _: 1\n      }, 8, [\"to\"]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n})"
+        ],
+        "mappings": "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",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029052,
+      "end": 1761251029052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029052,
+      "end": 1761251029052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029052,
+      "end": 1761251029052,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029052,
+      "end": 1761251029052,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029052,
+      "end": 1761251029053,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029053,
+      "end": 1761251029053,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029053,
+      "end": 1761251029053,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029053,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029055,
+      "end": 1761251029055,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029056,
+      "end": 1761251029063,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029063,
+      "end": 1761251029063,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029063,
+      "end": 1761251029109,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029111,
+      "end": 1761251029111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029111,
+      "end": 1761251029111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029111,
+      "end": 1761251029111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029111,
+      "end": 1761251029111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, renderList as _renderList, Fragment as _Fragment, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\";\nconst _hoisted_1 = { class: \"flex items-center border-b border-gray-200 dark:border-gray-700 pb-12 mr-5\" };\nconst _hoisted_2 = [\"src\"];\nconst _hoisted_3 = { class: \"flex items-start justify-between w-full\" };\nconst _hoisted_4 = { class: \"pl-3 w-full\" };\nconst _hoisted_5 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-xl font-medium leading-5 text-gray-800 dark:text-white\"\n};\nconst _hoisted_6 = { class: \"mt-5\" };\nconst _hoisted_7 = /* @__PURE__ */ _createElementVNode(\"p\", {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-sm leading-normal pt-2 text-gray-500 dark:text-gray-200\"\n}, null, -1);\nconst _hoisted_8 = /* @__PURE__ */ _createElementVNode(\"div\", {\n  role: \"img\",\n  \"aria-label\": \"bookmark\"\n}, [\n  /* @__PURE__ */ _createElementVNode(\"svg\", {\n    class: \"focus:outline-none dark:text-white text-gray-800\",\n    width: \"28\",\n    height: \"28\",\n    viewBox: \"0 0 28 28\",\n    fill: \"none\",\n    xmlns: \"http://www.w3.org/2000/svg\"\n  }, [\n    /* @__PURE__ */ _createElementVNode(\"path\", {\n      d: \"M10.5001 4.66667H17.5001C18.1189 4.66667 18.7124 4.9125 19.15 5.35009C19.5876 5.78767 19.8334 6.38117 19.8334 7V23.3333L14.0001 19.8333L8.16675 23.3333V7C8.16675 6.38117 8.41258 5.78767 8.85017 5.35009C9.28775 4.9125 9.88124 4.66667 10.5001 4.66667Z\",\n      stroke: \"currentColor\",\n      \"stroke-width\": \"1.25\",\n      \"stroke-linecap\": \"round\",\n      \"stroke-linejoin\": \"round\"\n    })\n  ])\n], -1);\nconst _hoisted_9 = { class: \"px-2\" };\nconst _hoisted_10 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none text-sm leading-5 py-4 dark:text-white\"\n};\nconst _hoisted_11 = {\n  tabindex: \"0\",\n  class: \"focus:outline-none flex\"\n};\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"CategoryCard\",\n  props: {\n    category: Object\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_nuxt_link = __nuxt_component_0;\n      return __props.category ? (_openBlock(), _createBlock(_component_nuxt_link, {\n        key: 0,\n        to: __props.category.link\n      }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createElementVNode(\"img\", {\n              class: \"h-16\",\n              src: __props.category.image,\n              alt: \"nuxt 3 logo\"\n            }, null, 8, _hoisted_2),\n            _createElementVNode(\"div\", _hoisted_3, [\n              _createElementVNode(\"div\", _hoisted_4, [\n                _createElementVNode(\"div\", _hoisted_5, [\n                  _createElementVNode(\"div\", _hoisted_6, _toDisplayString(__props.category.title), 1)\n                ]),\n                _hoisted_7\n              ]),\n              _hoisted_8\n            ])\n          ]),\n          _createElementVNode(\"div\", _hoisted_9, [\n            _createElementVNode(\"p\", _hoisted_10, _toDisplayString(__props.category.message), 1),\n            _createElementVNode(\"div\", _hoisted_11, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.category.tags, (tag, index) => {\n                return _openBlock(), _createBlock(_component_nuxt_link, {\n                  to: tag.link,\n                  key: index,\n                  class: \"py-2 px-4 text-xs leading-3 text-indigo-700 rounded-full bg-indigo-100\"\n                }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" #\" + _toDisplayString(tag.title), 1)\n                  ]),\n                  _: 2\n                }, 1032, [\"to\"]);\n              }), 128))\n            ])\n          ])\n        ]),\n        _: 1\n      }, 8, [\"to\"])) : _createCommentVNode(\"\", true);\n    };\n  }\n});\n",
+      "start": 1761251029111,
+      "end": 1761251029111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029111,
+      "end": 1761251029112,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029112,
+      "end": 1761251029112,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029112,
+      "end": 1761251029112,
+      "order": "normal"
+    }
+  ]
+}

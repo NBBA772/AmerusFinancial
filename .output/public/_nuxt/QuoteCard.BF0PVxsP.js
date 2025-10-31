@@ -1,0 +1,1 @@
+import r from"./ParagraphDescription.CXbzhsBM.js";import{_ as n}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{_ as o}from"./entry.Cl9EbFL9.js";const e={components:{ParagraphDescription:r},name:"IndustryCard",props:{title:String,image:String,description:String}};function s(t,p,_,a,i,c){return o(t.$slots,"default")}const u=n(e,[["render",s]]);export{u as default};

@@ -1,0 +1,304 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/cards/RegisterForm.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport { ref } from \"@vue/reactivity\";\nimport { registerWithEmail } from \"~/composables/useAuth\";\nimport type { Ref } from \"vue\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'RegisterForm',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst email: Ref<string> = ref(\"\");\nconst password: Ref<string> = ref(\"\");\nconst firstName: Ref<string> = ref(\"\");\nconst lastName: Ref<string> = ref(\"\");\nconst username: Ref<string> = ref(\"\");\nconst phone: Ref<string> = ref(\"\");\n\nconst errors: Ref<Map<string, { message: InputValidation }> | undefined> = ref(\n  new Map<string, { message: InputValidation }>()\n);\nlet response: FormValidation;\n\nasync function postRegisterForm() {\n  response = await registerWithEmail(\n    username.value,\n    firstName.value,\n    lastName.value,\n    phone.value,\n    email.value,\n    password.value\n  );\n  errors.value = response.errors;\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"flex items-center justify-center px-4 sm:px-6 lg:px-8\" }, _attrs))}><div class=\"max-w-md w-full\"><div><h2 class=\"text-center text-3xl font-extrabold mt-5 text-gray-900 dark:text-white\"> Sign Up </h2></div>`)\n  if (_unref(response)?.hasErrors && _unref(errors)) {\n    _push(`<div class=\"bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-3\" role=\"alert\"><ul class=\"block sm:inline\"><!--[-->`)\n    _ssrRenderList(_unref(errors), ([key, value]) => {\n      _push(`<li>${_ssrInterpolate(value.message)}</li>`)\n    })\n    _push(`<!--]--></ul></div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`<form class=\"mt-8 space-y-6\" action=\"#\" method=\"POST\"><input type=\"hidden\" name=\"remember\" value=\"true\"><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"firstName\" class=\"sr-only\">First Name</label><input${\n    _ssrRenderAttr(\"value\", _unref(firstName))\n  } id=\"firstName\" name=\"firstName\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('firstName') ? ' border-red-500' : '', \"appearance-none dark:bg-slate-500 dark:text-white dark:placeholder-white rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"First Name\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"lastName\" class=\"sr-only\">Last Name</label><input${\n    _ssrRenderAttr(\"value\", _unref(lastName))\n  } id=\"lastName\" name=\"lastName\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('lastName') ? ' border-red-500' : '', \"appearance-none dark:bg-slate-500 dark:text-white dark:placeholder-white rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"Last Name\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"phone\" class=\"sr-only\">Phone</label><input type=\"phone\"${\n    _ssrRenderAttr(\"value\", _unref(phone))\n  } id=\"phone\" name=\"phone\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('phone') ? ' border-red-500' : '', \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"phone\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"email-address\" class=\"sr-only\">Username</label><input type=\"email\"${\n    _ssrRenderAttr(\"value\", _unref(username))\n  } id=\"username\" name=\"username\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('username') ? ' border-red-500' : '', \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"username\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"email-address\" class=\"sr-only\">Email address</label><input${\n    _ssrRenderAttr(\"value\", _unref(email))\n  } id=\"email-address\" name=\"email\" type=\"email\" autocomplete=\"email\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('email') ? ' border-red-500' : '', \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"Email address\"></div></div><div><label for=\"password\" class=\"sr-only\">Password</label><input${\n    _ssrRenderAttr(\"value\", _unref(password))\n  } id=\"password\" name=\"password\" type=\"password\" autocomplete=\"current-password\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('password') ? ' border-red-500' : '', \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"Password\"></div><div></div></form><button class=\"mt-5 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\"><span class=\"absolute left-0 inset-y-0 flex items-center pl-3\"><svg class=\"h-5 w-5 text-indigo-500 group-hover:text-indigo-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" d=\"M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z\" clip-rule=\"evenodd\"></path></svg></span> Register </button></div></div>`)\n}\n}\n\n})",
+      "start": 1761251159910,
+      "end": 1761251159910,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/cards/RegisterForm.vue"
+        ],
+        "sourcesContent": [
+          "<script setup lang=\"ts\">\nimport { ref } from \"@vue/reactivity\";\nimport { registerWithEmail } from \"~/composables/useAuth\";\nimport type { Ref } from \"vue\";\n\nconst email: Ref<string> = ref(\"\");\nconst password: Ref<string> = ref(\"\");\nconst firstName: Ref<string> = ref(\"\");\nconst lastName: Ref<string> = ref(\"\");\nconst username: Ref<string> = ref(\"\");\nconst phone: Ref<string> = ref(\"\");\n\nconst errors: Ref<Map<string, { message: InputValidation }> | undefined> = ref(\n  new Map<string, { message: InputValidation }>()\n);\nlet response: FormValidation;\n\nasync function postRegisterForm() {\n  response = await registerWithEmail(\n    username.value,\n    firstName.value,\n    lastName.value,\n    phone.value,\n    email.value,\n    password.value\n  );\n  errors.value = response.errors;\n}\n</script>\n<template>\n  <div class=\"flex items-center justify-center px-4 sm:px-6 lg:px-8\">\n    <div class=\"max-w-md w-full\">\n      <div>\n        <h2\n          class=\"text-center text-3xl font-extrabold mt-5 text-gray-900 dark:text-white\"\n        >\n          Sign Up\n        </h2>\n      </div>\n      <div\n        v-if=\"response?.hasErrors && errors\"\n        class=\"bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-3\"\n        role=\"alert\"\n      >\n        <ul class=\"block sm:inline\">\n          <li v-for=\"[key, value] in errors\" :key=\"key\">\n            {{ value.message }}\n          </li>\n        </ul>\n      </div>\n      <form v-on:submit.prevent class=\"mt-8 space-y-6\" action=\"#\" method=\"POST\">\n        <input type=\"hidden\" name=\"remember\" value=\"true\" />\n        <div class=\"rounded-md shadow-sm -space-y-px mb-1\">\n          <div>\n            <label for=\"firstName\" class=\"sr-only\">First Name</label>\n            <input\n              v-model=\"firstName\"\n              id=\"firstName\"\n              name=\"firstName\"\n              required\n              class=\"appearance-none dark:bg-slate-500 dark:text-white dark:placeholder-white rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"\n              :class=\"errors?.has('firstName') ? ' border-red-500' : ''\"\n              placeholder=\"First Name\"\n            />\n          </div>\n        </div>\n        <div class=\"rounded-md shadow-sm -space-y-px mb-1\">\n          <div>\n            <label for=\"lastName\" class=\"sr-only\">Last Name</label>\n            <input\n              v-model=\"lastName\"\n              id=\"lastName\"\n              name=\"lastName\"\n              required\n              class=\"appearance-none dark:bg-slate-500 dark:text-white dark:placeholder-white rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"\n              :class=\"errors?.has('lastName') ? ' border-red-500' : ''\"\n              placeholder=\"Last Name\"\n            />\n          </div>\n        </div>\n        <div class=\"rounded-md shadow-sm -space-y-px mb-1\">\n          <div>\n            <label for=\"phone\" class=\"sr-only\">Phone</label>\n            <input\n              type=\"phone\"\n              v-model=\"phone\"\n              id=\"phone\"\n              name=\"phone\"\n              required\n              class=\"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"\n              :class=\"errors?.has('phone') ? ' border-red-500' : ''\"\n              placeholder=\"phone\"\n            />\n          </div>\n        </div>\n        <div class=\"rounded-md shadow-sm -space-y-px mb-1\">\n          <div>\n            <label for=\"email-address\" class=\"sr-only\">Username</label>\n            <input\n              type=\"email\"\n              v-model=\"username\"\n              id=\"username\"\n              name=\"username\"\n              required\n              class=\"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"\n              :class=\"errors?.has('username') ? ' border-red-500' : ''\"\n              placeholder=\"username\"\n            />\n          </div>\n        </div>\n\n        <div class=\"rounded-md shadow-sm -space-y-px mb-1\">\n          <div>\n            <label for=\"email-address\" class=\"sr-only\">Email address</label>\n            <input\n              v-model=\"email\"\n              id=\"email-address\"\n              name=\"email\"\n              type=\"email\"\n              autocomplete=\"email\"\n              required\n              class=\"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"\n              :class=\"errors?.has('email') ? ' border-red-500' : ''\"\n              placeholder=\"Email address\"\n            />\n          </div>\n        </div>\n        <div>\n          <label for=\"password\" class=\"sr-only\">Password</label>\n          <input\n            v-model=\"password\"\n            id=\"password\"\n            name=\"password\"\n            type=\"password\"\n            autocomplete=\"current-password\"\n            required\n            class=\"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"\n            :class=\"errors?.has('password') ? ' border-red-500' : ''\"\n            placeholder=\"Password\"\n          />\n        </div>\n\n        <!-- <div class=\"flex items-center justify-between\">\n          <div class=\"text-sm\">\n            <a\n              href=\"#\"\n              class=\"font-medium text-indigo-600 hover:text-indigo-500\"\n            >\n              Forgot your password?\n            </a>\n          </div>\n        </div> -->\n\n        <div></div>\n      </form>\n      <button\n        @click.prevent=\"postRegisterForm\"\n        class=\"mt-5 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\"\n      >\n        <span class=\"absolute left-0 inset-y-0 flex items-center pl-3\">\n          <!-- Heroicon name: solid/lock-closed -->\n          <svg\n            class=\"h-5 w-5 text-indigo-500 group-hover:text-indigo-400\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n            viewBox=\"0 0 20 20\"\n            fill=\"currentColor\"\n            aria-hidden=\"true\"\n          >\n            <path\n              fill-rule=\"evenodd\"\n              d=\"M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z\"\n              clip-rule=\"evenodd\"\n            />\n          </svg>\n        </span>\n        Register\n      </button>\n    </div>\n  </div>\n</template>"
+        ],
+        "names": [],
+        "mappings": ";;;;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/B;;;;;;AAJwB;AAKxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnC;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/E,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC;AACF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159911,
+      "end": 1761251159911,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159911,
+      "end": 1761251159911,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159911,
+      "end": 1761251159911,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159911,
+      "end": 1761251159911,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159911,
+      "end": 1761251159911,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159911,
+      "end": 1761251159911,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251159911,
+      "end": 1761251159911,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251159911,
+      "end": 1761251159911,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251159911,
+      "end": 1761251159911,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nimport { ref } from \"@vue/reactivity\";\nimport { registerWithEmail } from \"~/composables/useAuth\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"RegisterForm\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const email = ref(\"\");\n    const password = ref(\"\");\n    const firstName = ref(\"\");\n    const lastName = ref(\"\");\n    const username = ref(\"\");\n    const phone = ref(\"\");\n    const errors = ref(\n      /* @__PURE__ */ new Map()\n    );\n    let response;\n    async function postRegisterForm() {\n      response = await registerWithEmail(\n        username.value,\n        firstName.value,\n        lastName.value,\n        phone.value,\n        email.value,\n        password.value\n      );\n      errors.value = response.errors;\n    }\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"flex items-center justify-center px-4 sm:px-6 lg:px-8\" }, _attrs))}><div class=\"max-w-md w-full\"><div><h2 class=\"text-center text-3xl font-extrabold mt-5 text-gray-900 dark:text-white\"> Sign Up </h2></div>`);\n      if (_unref(response)?.hasErrors && _unref(errors)) {\n        _push(`<div class=\"bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-3\" role=\"alert\"><ul class=\"block sm:inline\"><!--[-->`);\n        _ssrRenderList(_unref(errors), ([key, value]) => {\n          _push(`<li>${_ssrInterpolate(value.message)}</li>`);\n        });\n        _push(`<!--]--></ul></div>`);\n      } else {\n        _push(`<!---->`);\n      }\n      _push(`<form class=\"mt-8 space-y-6\" action=\"#\" method=\"POST\"><input type=\"hidden\" name=\"remember\" value=\"true\"><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"firstName\" class=\"sr-only\">First Name</label><input${_ssrRenderAttr(\"value\", _unref(firstName))} id=\"firstName\" name=\"firstName\" required class=\"${_ssrRenderClass([_unref(errors)?.has(\"firstName\") ? \" border-red-500\" : \"\", \"appearance-none dark:bg-slate-500 dark:text-white dark:placeholder-white rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])}\" placeholder=\"First Name\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"lastName\" class=\"sr-only\">Last Name</label><input${_ssrRenderAttr(\"value\", _unref(lastName))} id=\"lastName\" name=\"lastName\" required class=\"${_ssrRenderClass([_unref(errors)?.has(\"lastName\") ? \" border-red-500\" : \"\", \"appearance-none dark:bg-slate-500 dark:text-white dark:placeholder-white rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])}\" placeholder=\"Last Name\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"phone\" class=\"sr-only\">Phone</label><input type=\"phone\"${_ssrRenderAttr(\"value\", _unref(phone))} id=\"phone\" name=\"phone\" required class=\"${_ssrRenderClass([_unref(errors)?.has(\"phone\") ? \" border-red-500\" : \"\", \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])}\" placeholder=\"phone\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"email-address\" class=\"sr-only\">Username</label><input type=\"email\"${_ssrRenderAttr(\"value\", _unref(username))} id=\"username\" name=\"username\" required class=\"${_ssrRenderClass([_unref(errors)?.has(\"username\") ? \" border-red-500\" : \"\", \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])}\" placeholder=\"username\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"email-address\" class=\"sr-only\">Email address</label><input${_ssrRenderAttr(\"value\", _unref(email))} id=\"email-address\" name=\"email\" type=\"email\" autocomplete=\"email\" required class=\"${_ssrRenderClass([_unref(errors)?.has(\"email\") ? \" border-red-500\" : \"\", \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])}\" placeholder=\"Email address\"></div></div><div><label for=\"password\" class=\"sr-only\">Password</label><input${_ssrRenderAttr(\"value\", _unref(password))} id=\"password\" name=\"password\" type=\"password\" autocomplete=\"current-password\" required class=\"${_ssrRenderClass([_unref(errors)?.has(\"password\") ? \" border-red-500\" : \"\", \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])}\" placeholder=\"Password\"></div><div></div></form><button class=\"mt-5 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\"><span class=\"absolute left-0 inset-y-0 flex items-center pl-3\"><svg class=\"h-5 w-5 text-indigo-500 group-hover:text-indigo-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" d=\"M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z\" clip-rule=\"evenodd\"></path></svg></span> Register </button></div></div>`);\n    };\n  }\n});\n",
+      "start": 1761251159912,
+      "end": 1761251164050,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/cards/RegisterForm.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport { ref } from \"@vue/reactivity\";\nimport { registerWithEmail } from \"~/composables/useAuth\";\nimport type { Ref } from \"vue\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'RegisterForm',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst email: Ref<string> = ref(\"\");\nconst password: Ref<string> = ref(\"\");\nconst firstName: Ref<string> = ref(\"\");\nconst lastName: Ref<string> = ref(\"\");\nconst username: Ref<string> = ref(\"\");\nconst phone: Ref<string> = ref(\"\");\n\nconst errors: Ref<Map<string, { message: InputValidation }> | undefined> = ref(\n  new Map<string, { message: InputValidation }>()\n);\nlet response: FormValidation;\n\nasync function postRegisterForm() {\n  response = await registerWithEmail(\n    username.value,\n    firstName.value,\n    lastName.value,\n    phone.value,\n    email.value,\n    password.value\n  );\n  errors.value = response.errors;\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"flex items-center justify-center px-4 sm:px-6 lg:px-8\" }, _attrs))}><div class=\"max-w-md w-full\"><div><h2 class=\"text-center text-3xl font-extrabold mt-5 text-gray-900 dark:text-white\"> Sign Up </h2></div>`)\n  if (_unref(response)?.hasErrors && _unref(errors)) {\n    _push(`<div class=\"bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-3\" role=\"alert\"><ul class=\"block sm:inline\"><!--[-->`)\n    _ssrRenderList(_unref(errors), ([key, value]) => {\n      _push(`<li>${_ssrInterpolate(value.message)}</li>`)\n    })\n    _push(`<!--]--></ul></div>`)\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`<form class=\"mt-8 space-y-6\" action=\"#\" method=\"POST\"><input type=\"hidden\" name=\"remember\" value=\"true\"><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"firstName\" class=\"sr-only\">First Name</label><input${\n    _ssrRenderAttr(\"value\", _unref(firstName))\n  } id=\"firstName\" name=\"firstName\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('firstName') ? ' border-red-500' : '', \"appearance-none dark:bg-slate-500 dark:text-white dark:placeholder-white rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"First Name\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"lastName\" class=\"sr-only\">Last Name</label><input${\n    _ssrRenderAttr(\"value\", _unref(lastName))\n  } id=\"lastName\" name=\"lastName\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('lastName') ? ' border-red-500' : '', \"appearance-none dark:bg-slate-500 dark:text-white dark:placeholder-white rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"Last Name\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"phone\" class=\"sr-only\">Phone</label><input type=\"phone\"${\n    _ssrRenderAttr(\"value\", _unref(phone))\n  } id=\"phone\" name=\"phone\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('phone') ? ' border-red-500' : '', \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"phone\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"email-address\" class=\"sr-only\">Username</label><input type=\"email\"${\n    _ssrRenderAttr(\"value\", _unref(username))\n  } id=\"username\" name=\"username\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('username') ? ' border-red-500' : '', \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"username\"></div></div><div class=\"rounded-md shadow-sm -space-y-px mb-1\"><div><label for=\"email-address\" class=\"sr-only\">Email address</label><input${\n    _ssrRenderAttr(\"value\", _unref(email))\n  } id=\"email-address\" name=\"email\" type=\"email\" autocomplete=\"email\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('email') ? ' border-red-500' : '', \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"Email address\"></div></div><div><label for=\"password\" class=\"sr-only\">Password</label><input${\n    _ssrRenderAttr(\"value\", _unref(password))\n  } id=\"password\" name=\"password\" type=\"password\" autocomplete=\"current-password\" required class=\"${\n    _ssrRenderClass([_unref(errors)?.has('password') ? ' border-red-500' : '', \"dark:bg-slate-500 dark:text-white dark:placeholder-white appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm\"])\n  }\" placeholder=\"Password\"></div><div></div></form><button class=\"mt-5 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\"><span class=\"absolute left-0 inset-y-0 flex items-center pl-3\"><svg class=\"h-5 w-5 text-indigo-500 group-hover:text-indigo-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" d=\"M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z\" clip-rule=\"evenodd\"></path></svg></span> Register </button></div></div>`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,cAAc,mBAAmB;AAC3D,SAAS,iBAAiB,gBAAgB,kBAAkB,iBAAiB,kBAAkB,iBAAiB,kBAAkB,iBAAiB,iBAAiB,sBAAsB;AAE1L,SAAS,WAAW;AACpB,SAAS,yBAAyB;AAIlC,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,MAAM,SAAS;AAEjB,UAAM,QAAqB,IAAI,EAAE;AACjC,UAAM,WAAwB,IAAI,EAAE;AACpC,UAAM,YAAyB,IAAI,EAAE;AACrC,UAAM,WAAwB,IAAI,EAAE;AACpC,UAAM,WAAwB,IAAI,EAAE;AACpC,UAAM,QAAqB,IAAI,EAAE;AAEjC,UAAM,SAAqE;AAAA,MACzE,oBAAI,IAA0C;AAAA,IAChD;AACA,QAAI;AAEJ,mBAAe,mBAAmB;AAChC,iBAAW,MAAM;AAAA,QACf,SAAS;AAAA,QACT,UAAU;AAAA,QACV,SAAS;AAAA,QACT,MAAM;AAAA,QACN,MAAM;AAAA,QACN,SAAS;AAAA,MACX;AACA,aAAO,QAAQ,SAAS;AAAA,IAC1B;AAEA,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,OAAO,gBAAgB,YAAY,EAAE,OAAO,wDAAwD,GAAG,MAAM,CAAC,CAAC,4IAA4I;AACjQ,UAAI,OAAO,QAAQ,GAAG,aAAa,OAAO,MAAM,GAAG;AACjD,cAAM,8IAA8I;AACpJ,uBAAe,OAAO,MAAM,GAAG,CAAC,CAAC,KAAK,KAAK,MAAM;AAC/C,gBAAM,OAAO,gBAAgB,MAAM,OAAO,CAAC,OAAO;AAAA,QACpD,CAAC;AACD,cAAM,qBAAqB;AAAA,MAC7B,OAAO;AACL,cAAM,SAAS;AAAA,MACjB;AACA,YAAM,kOACJ,eAAe,SAAS,OAAO,SAAS,CAAC,CAC3C,oDACE,gBAAgB,CAAC,OAAO,MAAM,GAAG,IAAI,WAAW,IAAI,oBAAoB,IAAI,qRAAqR,CAAC,CACpW,+JACE,eAAe,SAAS,OAAO,QAAQ,CAAC,CAC1C,kDACE,gBAAgB,CAAC,OAAO,MAAM,GAAG,IAAI,UAAU,IAAI,oBAAoB,IAAI,qRAAqR,CAAC,CACnW,oKACE,eAAe,SAAS,OAAO,KAAK,CAAC,CACvC,4CACE,gBAAgB,CAAC,OAAO,MAAM,GAAG,IAAI,OAAO,IAAI,oBAAoB,IAAI,qRAAqR,CAAC,CAChW,2KACE,eAAe,SAAS,OAAO,QAAQ,CAAC,CAC1C,kDACE,gBAAgB,CAAC,OAAO,MAAM,GAAG,IAAI,UAAU,IAAI,oBAAoB,IAAI,qRAAqR,CAAC,CACnW,sKACE,eAAe,SAAS,OAAO,KAAK,CAAC,CACvC,sFACE,gBAAgB,CAAC,OAAO,MAAM,GAAG,IAAI,OAAO,IAAI,oBAAoB,IAAI,qRAAqR,CAAC,CAChW,8GACE,eAAe,SAAS,OAAO,QAAQ,CAAC,CAC1C,kGACE,gBAAgB,CAAC,OAAO,MAAM,GAAG,IAAI,UAAU,IAAI,oBAAoB,IAAI,qRAAqR,CAAC,CACnW,stBAAstB;AAAA,IACxtB;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251164053,
+      "end": 1761251164053,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251164053,
+      "end": 1761251164053,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251164056,
+      "end": 1761251164056,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251164056,
+      "end": 1761251164056,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164056,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164056,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251164058,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251164060,
+      "end": 1761251164060,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251164060,
+      "end": 1761251164060,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251164060,
+      "end": 1761251164060,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251164061,
+      "end": 1761251164061,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251164061,
+      "end": 1761251164061,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164061,
+      "end": 1761251164063,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164061,
+      "end": 1761251164063,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251164063,
+      "end": 1761251164063,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164063,
+      "end": 1761251164064,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164063,
+      "end": 1761251164064,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164064,
+      "end": 1761251164076,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164064,
+      "end": 1761251164076,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164077,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164077,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164077,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164077,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251164078,
+      "end": 1761251164078,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251164078,
+      "end": 1761251164078,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251164079,
+      "end": 1761251164079,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251164079,
+      "end": 1761251164079,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251164080,
+      "end": 1761251164080,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o,c as s,_ as a}from"./entry.Cl9EbFL9.js";const n={},r={class:"mx-auto text-slate-800 dark:bg-slate-700"};function c(t,_,l,p,d,f){return o(),s("section",r,[a(t.$slots,"default")])}const u=e(n,[["render",c]]);export{u as default};

@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/menu/MobileMenuDrawer.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h5\", {\n  id: \"drawer-navigation-label\",\n  class: \"text-base font-semibold text-gray-500 dark:text-gray-200 uppercase hover:dark:text-green-400 hover:text-green-400\"\n}, \" Menu \", -1)\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"svg\", {\n  \"aria-hidden\": \"true\",\n  class: \"w-5 h-5\",\n  fill: \"currentColor\",\n  viewBox: \"0 0 20 20\",\n  xmlns: \"http://www.w3.org/2000/svg\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"path\", {\n    \"fill-rule\": \"evenodd\",\n    d: \"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\",\n    \"clip-rule\": \"evenodd\"\n  })\n], -1)\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"sr-only\" }, \"Close menu\", -1)\nconst _hoisted_4 = [\n  _hoisted_2,\n  _hoisted_3\n]\n\nimport { ref } from \"vue\";\n\n// defineProps({\n//   isLoggedIn: Boolean,\n// });\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'MobileMenuDrawer',\n  props: [\"showSideDrawer\"],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props;\nconst emits = __emit;\n\nfunction emitCloseEvent() {\n  emits(\"closeDrawer\");\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_MobileMenuList = _resolveComponent(\"MobileMenuList\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    id: \"drawer-navigation my-12\",\n    class: _normalizeClass([{ hidden: !props.showSideDrawer }, \"fixed z-40 top-0 left-0 h-screen w-screen transition-all duration-700 p-0 overflow-y-auto bg-white w-100 dark:bg-black\"]),\n    tabindex: \"-1\",\n    \"aria-labelledby\": \"drawer-navigation-label\"\n  }, [\n    _hoisted_1,\n    _createElementVNode(\"button\", {\n      onClick: emitCloseEvent,\n      type: \"button\",\n      \"data-drawer-dismiss\": \"drawer-navigation\",\n      \"aria-controls\": \"drawer-navigation\",\n      class: \"text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-500 dark:text-gray-200 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-black dark:hover:text-white\"\n    }, _hoisted_4),\n    _createVNode(_component_MobileMenuList)\n  ], 2))\n}\n}\n\n})",
+      "start": 1761251027688,
+      "end": 1761251027688
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251027690,
+      "end": 1761251027691,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251027691,
+      "end": 1761251027691,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251027691,
+      "end": 1761251027691,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251027691,
+      "end": 1761251027691,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251027691,
+      "end": 1761251027691,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = /* @__PURE__ */ _createElementVNode(\"h5\", {\n  id: \"drawer-navigation-label\",\n  class: \"text-base font-semibold text-gray-500 dark:text-gray-200 uppercase hover:dark:text-green-400 hover:text-green-400\"\n}, \" Menu \", -1);\nconst _hoisted_2 = /* @__PURE__ */ _createElementVNode(\"svg\", {\n  \"aria-hidden\": \"true\",\n  class: \"w-5 h-5\",\n  fill: \"currentColor\",\n  viewBox: \"0 0 20 20\",\n  xmlns: \"http://www.w3.org/2000/svg\"\n}, [\n  /* @__PURE__ */ _createElementVNode(\"path\", {\n    \"fill-rule\": \"evenodd\",\n    d: \"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\",\n    \"clip-rule\": \"evenodd\"\n  })\n], -1);\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"span\", { class: \"sr-only\" }, \"Close menu\", -1);\nconst _hoisted_4 = [\n  _hoisted_2,\n  _hoisted_3\n];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MobileMenuDrawer\",\n  props: [\"showSideDrawer\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    function emitCloseEvent() {\n      emits(\"closeDrawer\");\n    }\n    return (_ctx, _cache) => {\n      const _component_MobileMenuList = _resolveComponent(\"MobileMenuList\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        id: \"drawer-navigation my-12\",\n        class: _normalizeClass([{ hidden: !props.showSideDrawer }, \"fixed z-40 top-0 left-0 h-screen w-screen transition-all duration-700 p-0 overflow-y-auto bg-white w-100 dark:bg-black\"]),\n        tabindex: \"-1\",\n        \"aria-labelledby\": \"drawer-navigation-label\"\n      }, [\n        _hoisted_1,\n        _createElementVNode(\"button\", {\n          onClick: emitCloseEvent,\n          type: \"button\",\n          \"data-drawer-dismiss\": \"drawer-navigation\",\n          \"aria-controls\": \"drawer-navigation\",\n          class: \"text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-500 dark:text-gray-200 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-black dark:hover:text-white\"\n        }, _hoisted_4),\n        _createVNode(_component_MobileMenuList)\n      ], 2);\n    };\n  }\n});\n",
+      "start": 1761251027691,
+      "end": 1761251029115,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/menu/MobileMenuDrawer.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h5\", {\n  id: \"drawer-navigation-label\",\n  class: \"text-base font-semibold text-gray-500 dark:text-gray-200 uppercase hover:dark:text-green-400 hover:text-green-400\"\n}, \" Menu \", -1)\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"svg\", {\n  \"aria-hidden\": \"true\",\n  class: \"w-5 h-5\",\n  fill: \"currentColor\",\n  viewBox: \"0 0 20 20\",\n  xmlns: \"http://www.w3.org/2000/svg\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"path\", {\n    \"fill-rule\": \"evenodd\",\n    d: \"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\",\n    \"clip-rule\": \"evenodd\"\n  })\n], -1)\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"sr-only\" }, \"Close menu\", -1)\nconst _hoisted_4 = [\n  _hoisted_2,\n  _hoisted_3\n]\n\nimport { ref } from \"vue\";\n\n// defineProps({\n//   isLoggedIn: Boolean,\n// });\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'MobileMenuDrawer',\n  props: [\"showSideDrawer\"],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props;\nconst emits = __emit;\n\nfunction emitCloseEvent() {\n  emits(\"closeDrawer\");\n}\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_MobileMenuList = _resolveComponent(\"MobileMenuList\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    id: \"drawer-navigation my-12\",\n    class: _normalizeClass([{ hidden: !props.showSideDrawer }, \"fixed z-40 top-0 left-0 h-screen w-screen transition-all duration-700 p-0 overflow-y-auto bg-white w-100 dark:bg-black\"]),\n    tabindex: \"-1\",\n    \"aria-labelledby\": \"drawer-navigation-label\"\n  }, [\n    _hoisted_1,\n    _createElementVNode(\"button\", {\n      onClick: emitCloseEvent,\n      type: \"button\",\n      \"data-drawer-dismiss\": \"drawer-navigation\",\n      \"aria-controls\": \"drawer-navigation\",\n      class: \"text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-500 dark:text-gray-200 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-black dark:hover:text-white\"\n    }, _hoisted_4),\n    _createVNode(_component_MobileMenuList)\n  ], 2))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,sBAAsB,qBAAqB,oBAAoB,mBAAmB,eAAe,cAAc,kBAAkB,iBAAiB,aAAa,YAAY,sBAAsB,2BAA2B;AAErO,MAAM,aAA0B,oCAAoB,MAAM;AAAA,EACxD,IAAI;AAAA,EACJ,OAAO;AACT,GAAG,UAAU,EAAE;AACf,MAAM,aAA0B,oCAAoB,OAAO;AAAA,EACzD,eAAe;AAAA,EACf,OAAO;AAAA,EACP,MAAM;AAAA,EACN,SAAS;AAAA,EACT,OAAO;AACT,GAAG;AAAA,EACY,oCAAoB,QAAQ;AAAA,IACvC,aAAa;AAAA,IACb,GAAG;AAAA,IACH,aAAa;AAAA,EACf,CAAC;AACH,GAAG,EAAE;AACL,MAAM,aAA0B,oCAAoB,QAAQ,EAAE,OAAO,UAAU,GAAG,cAAc,EAAE;AAClG,MAAM,aAAa;AAAA,EACjB;AAAA,EACA;AACF;AASA,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,OAAO,CAAC,gBAAgB;AAAA,EACxB,MAAM,SAAS,EAAE,MAAM,OAAO,GAAG;AAEnC,UAAM,QAAQ;AACd,UAAM,QAAQ;AAEd,aAAS,iBAAiB;AACxB,YAAM,aAAa;AAAA,IACrB;AAEA,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,4BAA4B,kBAAkB,gBAAgB;AAEpE,aAAQ,WAAW,GAAG,oBAAoB,OAAO;AAAA,QAC/C,IAAI;AAAA,QACJ,OAAO,gBAAgB,CAAC,EAAE,QAAQ,CAAC,MAAM,eAAe,GAAG,wHAAwH,CAAC;AAAA,QACpL,UAAU;AAAA,QACV,mBAAmB;AAAA,MACrB,GAAG;AAAA,QACD;AAAA,QACA,oBAAoB,UAAU;AAAA,UAC5B,SAAS;AAAA,UACT,MAAM;AAAA,UACN,uBAAuB;AAAA,UACvB,iBAAiB;AAAA,UACjB,OAAO;AAAA,QACT,GAAG,UAAU;AAAA,QACb,aAAa,yBAAyB;AAAA,MACxC,GAAG,CAAC;AAAA,IACN;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029118,
+      "end": 1761251029119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029119,
+      "end": 1761251029119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029119,
+      "end": 1761251029119,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029121,
+      "end": 1761251029121,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029121,
+      "end": 1761251029122,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029122,
+      "end": 1761251029122,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029122,
+      "end": 1761251029122,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029122,
+      "end": 1761251029123,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029123,
+      "end": 1761251029123,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029123,
+      "end": 1761251029123,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029124,
+      "end": 1761251029124,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029126,
+      "end": 1761251029131,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029132,
+      "end": 1761251029132,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029132,
+      "end": 1761251029135,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029136,
+      "end": 1761251029136,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029136,
+      "end": 1761251029136,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029136,
+      "end": 1761251029136,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029136,
+      "end": 1761251029136,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/menu/MobileMenuList.vue\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\";\nconst _hoisted_1 = /* @__PURE__ */ _createElementVNode(\"h5\", {\n  id: \"drawer-navigation-label\",\n  class: \"text-base font-semibold text-gray-500 dark:text-gray-200 uppercase hover:dark:text-green-400 hover:text-green-400\"\n}, \" Menu \", -1);\nconst _hoisted_2 = /* @__PURE__ */ _createElementVNode(\"svg\", {\n  \"aria-hidden\": \"true\",\n  class: \"w-5 h-5\",\n  fill: \"currentColor\",\n  viewBox: \"0 0 20 20\",\n  xmlns: \"http://www.w3.org/2000/svg\"\n}, [\n  /* @__PURE__ */ _createElementVNode(\"path\", {\n    \"fill-rule\": \"evenodd\",\n    d: \"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\",\n    \"clip-rule\": \"evenodd\"\n  })\n], -1);\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"span\", { class: \"sr-only\" }, \"Close menu\", -1);\nconst _hoisted_4 = [\n  _hoisted_2,\n  _hoisted_3\n];\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MobileMenuDrawer\",\n  props: [\"showSideDrawer\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emits = __emit;\n    function emitCloseEvent() {\n      emits(\"closeDrawer\");\n    }\n    return (_ctx, _cache) => {\n      const _component_MobileMenuList = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"div\", {\n        id: \"drawer-navigation my-12\",\n        class: _normalizeClass([{ hidden: !props.showSideDrawer }, \"fixed z-40 top-0 left-0 h-screen w-screen transition-all duration-700 p-0 overflow-y-auto bg-white w-100 dark:bg-black\"]),\n        tabindex: \"-1\",\n        \"aria-labelledby\": \"drawer-navigation-label\"\n      }, [\n        _hoisted_1,\n        _createElementVNode(\"button\", {\n          onClick: emitCloseEvent,\n          type: \"button\",\n          \"data-drawer-dismiss\": \"drawer-navigation\",\n          \"aria-controls\": \"drawer-navigation\",\n          class: \"text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-500 dark:text-gray-200 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-black dark:hover:text-white\"\n        }, _hoisted_4),\n        _createVNode(_component_MobileMenuList)\n      ], 2);\n    };\n  }\n});\n",
+      "start": 1761251029137,
+      "end": 1761251029137,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029137,
+      "end": 1761251029137,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029137,
+      "end": 1761251029137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029142,
+      "end": 1761251029142,
+      "order": "normal"
+    }
+  ]
+}

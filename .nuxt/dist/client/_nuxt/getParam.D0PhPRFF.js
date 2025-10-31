@@ -1,0 +1,1 @@
+import{h as s,I as a,J as u}from"./entry.Cl9EbFL9.js";const c=o=>{const t=s(),e=t.params[o];if(e==null){const r=new a;throw r.statusCode=501,r.message=o+" not found on this route. Are you sure you spelled it correctly? params for this route are "+JSON.stringify(t.params),u(r)}return e};export{c as g};

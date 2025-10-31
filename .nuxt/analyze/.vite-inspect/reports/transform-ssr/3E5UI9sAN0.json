@@ -1,0 +1,296 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/CTA.vue?nuxt_component=async&nuxt_component_name=CTA",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"bg-blue-50 rounded-lg p-6 border border-blue-100\">\n    <div class=\"flex flex-col md:flex-row items-start md:items-center\">\n      <!-- Icon -->\n      <div class=\"mb-4 md:mb-0 md:mr-6\">\n        <div class=\"bg-white rounded-full p-3 inline-block\">\n          <Icon name=\"lucide-info\" class=\"h-8 w-8 text-[#30BCFE]\" />\n        </div>\n      </div>\n\n      <!-- Content -->\n      <div>\n        <h3 class=\"text-xl font-semibold mb-2\">{{ cta.title }}</h3>\n        <p class=\"text-gray-700 mb-4\">\n          {{ cta.description }}\n        </p>\n\n        <!-- Buttons -->\n        <div class=\"flex flex-wrap gap-3\">\n          <NuxtLink\n            :to=\"cta.primary.href\"\n            class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-white h-10 px-4 py-2 bg-[#30BCFE] hover:bg-primary/90\"\n          >\n            {{ cta.primary.label }}\n          </NuxtLink>\n<!-- \n          <NuxtLink\n            to=\"/resources\"\n            class=\"router-link-active router-link-exact-active px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n          >\n            Back to Resources\n          </NuxtLink> -->\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n\n\n<script setup>\nconst props = defineProps({\n  /** Required CTA object: { title, description, primary: { href, label } } */\n  cta: {\n    type: Object,\n    required: true,\n  },\n})\n</script>\n\n\n",
+      "start": 1761251141888,
+      "end": 1761251142033,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251142033,
+      "end": 1761251142033,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251142033,
+      "end": 1761251142033,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251142033,
+      "end": 1761251142034,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251142033,
+      "end": 1761251142034,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251142034,
+      "end": 1761251142034,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251142034,
+      "end": 1761251142034,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251142034,
+      "end": 1761251142034,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251142034,
+      "end": 1761251142034,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251142034,
+      "end": 1761251142034,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251142034,
+      "end": 1761251142034,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251142034,
+      "end": 1761251142034,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251142034,
+      "end": 1761251142034,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nconst _sfc_main = {\n  __name: 'CTA',\n  __ssrInlineRender: true,\n  props: {\n  /** Required CTA object: { title, description, primary: { href, label } } */\n  cta: {\n    type: Object,\n    required: true,\n  },\n},\n  setup(__props) {\n\nconst props = __props\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  const _component_Icon = _resolveComponent(\"Icon\")\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"bg-blue-50 rounded-lg p-6 border border-blue-100\" }, _attrs))}><div class=\"flex flex-col md:flex-row items-start md:items-center\"><div class=\"mb-4 md:mb-0 md:mr-6\"><div class=\"bg-white rounded-full p-3 inline-block\">`)\n  _push(_ssrRenderComponent(_component_Icon, {\n    name: \"lucide-info\",\n    class: \"h-8 w-8 text-[#30BCFE]\"\n  }, null, _parent))\n  _push(`</div></div><div><h3 class=\"text-xl font-semibold mb-2\">${\n    _ssrInterpolate(__props.cta.title)\n  }</h3><p class=\"text-gray-700 mb-4\">${\n    _ssrInterpolate(__props.cta.description)\n  }</p><div class=\"flex flex-wrap gap-3\">`)\n  _push(_ssrRenderComponent(_component_NuxtLink, {\n    to: __props.cta.primary.href,\n    class: \"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-white h-10 px-4 py-2 bg-[#30BCFE] hover:bg-primary/90\"\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`${_ssrInterpolate(__props.cta.primary.label)}`)\n      } else {\n        return [\n          _createTextVNode(_toDisplayString(__props.cta.primary.label), 1)\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</div></div></div></div>`)\n}\n}\n\n}\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/services/CTA.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
+      "start": 1761251142034,
+      "end": 1761251142039,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/CTA.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <div class=\"bg-blue-50 rounded-lg p-6 border border-blue-100\">\n    <div class=\"flex flex-col md:flex-row items-start md:items-center\">\n      <!-- Icon -->\n      <div class=\"mb-4 md:mb-0 md:mr-6\">\n        <div class=\"bg-white rounded-full p-3 inline-block\">\n          <Icon name=\"lucide-info\" class=\"h-8 w-8 text-[#30BCFE]\" />\n        </div>\n      </div>\n\n      <!-- Content -->\n      <div>\n        <h3 class=\"text-xl font-semibold mb-2\">{{ cta.title }}</h3>\n        <p class=\"text-gray-700 mb-4\">\n          {{ cta.description }}\n        </p>\n\n        <!-- Buttons -->\n        <div class=\"flex flex-wrap gap-3\">\n          <NuxtLink\n            :to=\"cta.primary.href\"\n            class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-white h-10 px-4 py-2 bg-[#30BCFE] hover:bg-primary/90\"\n          >\n            {{ cta.primary.label }}\n          </NuxtLink>\n<!-- \n          <NuxtLink\n            to=\"/resources\"\n            class=\"router-link-active router-link-exact-active px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n          >\n            Back to Resources\n          </NuxtLink> -->\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n\n\n<script setup>\nconst props = defineProps({\n  /** Required CTA object: { title, description, primary: { href, label } } */\n  cta: {\n    type: Object,\n    required: true,\n  },\n})\n</script>\n\n\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;;;;;;;AAwCc;AACd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,OAMZ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/CTA.vue\").then(r => r.default))",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251142039,
+      "end": 1761251142039,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251142039,
+      "end": 1761251142040,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251142040,
+      "end": 1761251142040,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251142040,
+      "end": 1761251142040,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251142040,
+      "end": 1761251142040,
+      "order": "normal"
+    }
+  ]
+}

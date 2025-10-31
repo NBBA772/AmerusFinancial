@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AboutUs/MeetTheTeamSection.vue?nuxt_component=async&nuxt_component_name=MeetTheTeamSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <HeadlineTwo class=\"text-center\">Meet The Team</HeadlineTwo>\n    <GridTwoColumns>\n      <div class=\"p-4 sm:p-8 mx-auto\">\n        <img src=\"/images/Tim.jpg\" class=\"rounded-full\" />\n        <!-- Added rounded-full class -->\n        <HeadlineFour class=\"text-center\">Timothy Baggett</HeadlineFour>\n      </div>\n      <div class=\"p-4 sm:p-8 mx-auto\">\n        <img src=\"/images/abigail.jpg\" class=\"rounded-full\" />\n        <!-- Added rounded-full class -->\n        <HeadlineFour class=\"text-center\">Abigail Baggett</HeadlineFour>\n      </div>\n    </GridTwoColumns>\n    <GridTwoColumns>\n      <div class=\"p-4 sm:p-8 mx-auto\">\n        <img src=\"/images/leah.jpg\" class=\"rounded-full\" />\n        <!-- Added rounded-full class -->\n        <HeadlineFour class=\"text-center\">Leah Dugger</HeadlineFour>\n      </div>\n      <div class=\"p-4 sm:p-8 mx-auto\">\n        <img src=\"/images/curtis.jpg\" class=\"rounded-full\" />\n        <!-- Added rounded-full class -->\n        <HeadlineFour class=\"text-center\">Curtis Dugger</HeadlineFour>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n      IntroText: {\n        SubHeading:\n          \"Continuous Development for Lead Generation and Local Authority\",\n        Headline:\n          \"Beyond the Launch: Elevating Contractors' Online Presence with Expert Marketing Strategies\",\n        description:\n          \"Launching your website is just the starting point in your marketing strategy. Since our establishment, we've been assisting contractors in cultivating their own leads and solidifying their presence as local authorities. Through continuous development of online marketing strategies, we specialize in optimizing SEO, local search, review management, and website enhancements to elevate contractors' visibility in Google search results.\",\n      },\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>",
+      "start": 1761251140919,
+      "end": 1761251141174,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141174,
+      "end": 1761251141174,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n      IntroText: {\n        SubHeading:\n          \"Continuous Development for Lead Generation and Local Authority\",\n        Headline:\n          \"Beyond the Launch: Elevating Contractors' Online Presence with Expert Marketing Strategies\",\n        description:\n          \"Launching your website is just the starting point in your marketing strategy. Since our establishment, we've been assisting contractors in cultivating their own leads and solidifying their presence as local authorities. Through continuous development of online marketing strategies, we specialize in optimizing SEO, local search, review management, and website enhancements to elevate contractors' visibility in Google search results.\",\n      },\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr } from \"vue/server-renderer\"\nimport _imports_0 from '/images/Tim.jpg'\nimport _imports_1 from '/images/abigail.jpg'\nimport _imports_2 from '/images/leah.jpg'\nimport _imports_3 from '/images/curtis.jpg'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_HeadlineFour = _resolveComponent(\"HeadlineFour\")\n\n  _push(_ssrRenderComponent(_component_BasicSection, _mergeProps({ class: \"container mx-auto mt-20\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(_ssrRenderComponent(_component_HeadlineTwo, { class: \"text-center\" }, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`Meet The Team`)\n            } else {\n              return [\n                _createTextVNode(\"Meet The Team\")\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div class=\"p-4 sm:p-8 mx-auto\"${\n                _scopeId\n              }><img${\n                _ssrRenderAttr(\"src\", _imports_0)\n              } class=\"rounded-full\"${\n                _scopeId\n              }>`)\n              _push(_ssrRenderComponent(_component_HeadlineFour, { class: \"text-center\" }, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Timothy Baggett`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Timothy Baggett\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div><div class=\"p-4 sm:p-8 mx-auto\"${\n                _scopeId\n              }><img${\n                _ssrRenderAttr(\"src\", _imports_1)\n              } class=\"rounded-full\"${\n                _scopeId\n              }>`)\n              _push(_ssrRenderComponent(_component_HeadlineFour, { class: \"text-center\" }, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Abigail Baggett`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Abigail Baggett\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div>`)\n            } else {\n              return [\n                _createVNode(\"div\", { class: \"p-4 sm:p-8 mx-auto\" }, [\n                  _createVNode(\"img\", {\n                    src: _imports_0,\n                    class: \"rounded-full\"\n                  }),\n                  _createVNode(_component_HeadlineFour, { class: \"text-center\" }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Timothy Baggett\")\n                    ]),\n                    _: 1\n                  })\n                ]),\n                _createVNode(\"div\", { class: \"p-4 sm:p-8 mx-auto\" }, [\n                  _createVNode(\"img\", {\n                    src: _imports_1,\n                    class: \"rounded-full\"\n                  }),\n                  _createVNode(_component_HeadlineFour, { class: \"text-center\" }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Abigail Baggett\")\n                    ]),\n                    _: 1\n                  })\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div class=\"p-4 sm:p-8 mx-auto\"${\n                _scopeId\n              }><img${\n                _ssrRenderAttr(\"src\", _imports_2)\n              } class=\"rounded-full\"${\n                _scopeId\n              }>`)\n              _push(_ssrRenderComponent(_component_HeadlineFour, { class: \"text-center\" }, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Leah Dugger`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Leah Dugger\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div><div class=\"p-4 sm:p-8 mx-auto\"${\n                _scopeId\n              }><img${\n                _ssrRenderAttr(\"src\", _imports_3)\n              } class=\"rounded-full\"${\n                _scopeId\n              }>`)\n              _push(_ssrRenderComponent(_component_HeadlineFour, { class: \"text-center\" }, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Curtis Dugger`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Curtis Dugger\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div>`)\n            } else {\n              return [\n                _createVNode(\"div\", { class: \"p-4 sm:p-8 mx-auto\" }, [\n                  _createVNode(\"img\", {\n                    src: _imports_2,\n                    class: \"rounded-full\"\n                  }),\n                  _createVNode(_component_HeadlineFour, { class: \"text-center\" }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Leah Dugger\")\n                    ]),\n                    _: 1\n                  })\n                ]),\n                _createVNode(\"div\", { class: \"p-4 sm:p-8 mx-auto\" }, [\n                  _createVNode(\"img\", {\n                    src: _imports_3,\n                    class: \"rounded-full\"\n                  }),\n                  _createVNode(_component_HeadlineFour, { class: \"text-center\" }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Curtis Dugger\")\n                    ]),\n                    _: 1\n                  })\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n      } else {\n        return [\n          _createVNode(_component_HeadlineTwo, { class: \"text-center\" }, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Meet The Team\")\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", { class: \"p-4 sm:p-8 mx-auto\" }, [\n                _createVNode(\"img\", {\n                  src: _imports_0,\n                  class: \"rounded-full\"\n                }),\n                _createVNode(_component_HeadlineFour, { class: \"text-center\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Timothy Baggett\")\n                  ]),\n                  _: 1\n                })\n              ]),\n              _createVNode(\"div\", { class: \"p-4 sm:p-8 mx-auto\" }, [\n                _createVNode(\"img\", {\n                  src: _imports_1,\n                  class: \"rounded-full\"\n                }),\n                _createVNode(_component_HeadlineFour, { class: \"text-center\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Abigail Baggett\")\n                  ]),\n                  _: 1\n                })\n              ])\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", { class: \"p-4 sm:p-8 mx-auto\" }, [\n                _createVNode(\"img\", {\n                  src: _imports_2,\n                  class: \"rounded-full\"\n                }),\n                _createVNode(_component_HeadlineFour, { class: \"text-center\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Leah Dugger\")\n                  ]),\n                  _: 1\n                })\n              ]),\n              _createVNode(\"div\", { class: \"p-4 sm:p-8 mx-auto\" }, [\n                _createVNode(\"img\", {\n                  src: _imports_3,\n                  class: \"rounded-full\"\n                }),\n                _createVNode(_component_HeadlineFour, { class: \"text-center\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Curtis Dugger\")\n                  ]),\n                  _: 1\n                })\n              ])\n            ]),\n            _: 1\n          })\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/AboutUs/MeetTheTeamSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251141174,
+      "end": 1761251141181,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AboutUs/MeetTheTeamSection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AboutUs/MeetTheTeamSection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <HeadlineTwo class=\"text-center\">Meet The Team</HeadlineTwo>\n    <GridTwoColumns>\n      <div class=\"p-4 sm:p-8 mx-auto\">\n        <img src=\"/images/Tim.jpg\" class=\"rounded-full\" />\n        <!-- Added rounded-full class -->\n        <HeadlineFour class=\"text-center\">Timothy Baggett</HeadlineFour>\n      </div>\n      <div class=\"p-4 sm:p-8 mx-auto\">\n        <img src=\"/images/abigail.jpg\" class=\"rounded-full\" />\n        <!-- Added rounded-full class -->\n        <HeadlineFour class=\"text-center\">Abigail Baggett</HeadlineFour>\n      </div>\n    </GridTwoColumns>\n    <GridTwoColumns>\n      <div class=\"p-4 sm:p-8 mx-auto\">\n        <img src=\"/images/leah.jpg\" class=\"rounded-full\" />\n        <!-- Added rounded-full class -->\n        <HeadlineFour class=\"text-center\">Leah Dugger</HeadlineFour>\n      </div>\n      <div class=\"p-4 sm:p-8 mx-auto\">\n        <img src=\"/images/curtis.jpg\" class=\"rounded-full\" />\n        <!-- Added rounded-full class -->\n        <HeadlineFour class=\"text-center\">Curtis Dugger</HeadlineFour>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n      IntroText: {\n        SubHeading:\n          \"Continuous Development for Lead Generation and Local Authority\",\n        Headline:\n          \"Beyond the Launch: Elevating Contractors' Online Presence with Expert Marketing Strategies\",\n        description:\n          \"Launching your website is just the starting point in your marketing strategy. Since our establishment, we've been assisting contractors in cultivating their own leads and solidifying their presence as local authorities. Through continuous development of online marketing strategies, we specialize in optimizing SEO, local search, review management, and website enhancements to elevate contractors' visibility in Google search results.\",\n      },\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>"
+        ],
+        "mappings": ";AAiCA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC/B,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAClB,CAAC;EACD,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;MACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAClE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACN,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAC9F,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;MACxb,CAAC;IACH,CAAC;EACH,CAAC;EACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACR,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAClD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACP,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACxC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;MACb,EAAE,CAAC,CAAC,CAAC,EAAE;QACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;MACd;IACF,CAAC;EACH,CAAC;AACH,CAAC;;;;OA3DY,UAAqB;OAKrB,UAAyB;OAOzB,UAAsB;OAKtB,UAAwB;;;;;;;;;EAtBrC,MAAA,6CAAA,cACgB,KAAK,EAAC,yBAAyB,IAD/C;IAAA,kBACE,CA0Be;UA3BjB;QAAA,MAAA,8CAEiB,KAAK,EAAC,aAAa;UAFpC,kBAEI,CAA4D;gBAFhE;cAAA;;;gBAAA,iBAEqC,eAAa;;;;UAFlD,GAAA;;QAAA,MAAA;UAAA,kBAGI,CAWiB;gBAdrB;cAAA;gBAAA;;gBAAA,eAKa,KAAqB,EAArB,UAAqB;;gBALlC;;cAAA,MAAA,+CAOsB,KAAK,EAAC,aAAa;gBAPzC,kBAOQ,CAAgE;sBAPxE;oBAAA;;;sBAAA,iBAO0C,iBAAe;;;;gBAPzD,GAAA;;cAAA;gBAAA;;gBAAA,eAUa,KAAyB,EAAzB,UAAyB;;gBAVtC;;cAAA,MAAA,+CAYsB,KAAK,EAAC,aAAa;gBAZzC,kBAYQ,CAAgE;sBAZxE;oBAAA;;;sBAAA,iBAY0C,iBAAe;;;;gBAZzD,GAAA;;cAAA;;;gBAIM,aAIM,SAJD,KAAK,EAAC,oBAAoB;kBAC7B,aAAkD;oBAA7C,GAAqB,EAArB,UAAqB;oBAAC,KAAK,EAAC,cAAc;;kBAE/C,aAAgE,2BAAlD,KAAK,EAAC,aAAa;oBAPzC,kBAO0C,CAAe;sBAPzD,iBAO0C,iBAAe;;oBAPzD,GAAA;;;gBASM,aAIM,SAJD,KAAK,EAAC,oBAAoB;kBAC7B,aAAsD;oBAAjD,GAAyB,EAAzB,UAAyB;oBAAC,KAAK,EAAC,cAAc;;kBAEnD,aAAgE,2BAAlD,KAAK,EAAC,aAAa;oBAZzC,kBAY0C,CAAe;sBAZzD,iBAY0C,iBAAe;;oBAZzD,GAAA;;;;;;UAAA,GAAA;;QAAA,MAAA;UAAA,kBAeI,CAWiB;gBA1BrB;cAAA;gBAAA;;gBAAA,eAiBa,KAAsB,EAAtB,UAAsB;;gBAjBnC;;cAAA,MAAA,+CAmBsB,KAAK,EAAC,aAAa;gBAnBzC,kBAmBQ,CAA4D;sBAnBpE;oBAAA;;;sBAAA,iBAmB0C,aAAW;;;;gBAnBrD,GAAA;;cAAA;gBAAA;;gBAAA,eAsBa,KAAwB,EAAxB,UAAwB;;gBAtBrC;;cAAA,MAAA,+CAwBsB,KAAK,EAAC,aAAa;gBAxBzC,kBAwBQ,CAA8D;sBAxBtE;oBAAA;;;sBAAA,iBAwB0C,eAAa;;;;gBAxBvD,GAAA;;cAAA;;;gBAgBM,aAIM,SAJD,KAAK,EAAC,oBAAoB;kBAC7B,aAAmD;oBAA9C,GAAsB,EAAtB,UAAsB;oBAAC,KAAK,EAAC,cAAc;;kBAEhD,aAA4D,2BAA9C,KAAK,EAAC,aAAa;oBAnBzC,kBAmB0C,CAAW;sBAnBrD,iBAmB0C,aAAW;;oBAnBrD,GAAA;;;gBAqBM,aAIM,SAJD,KAAK,EAAC,oBAAoB;kBAC7B,aAAqD;oBAAhD,GAAwB,EAAxB,UAAwB;oBAAC,KAAK,EAAC,cAAc;;kBAElD,aAA8D,2BAAhD,KAAK,EAAC,aAAa;oBAxBzC,kBAwB0C,CAAa;sBAxBvD,iBAwB0C,eAAa;;oBAxBvD,GAAA;;;;;;UAAA,GAAA;;;;UAEI,aAA4D,0BAA/C,KAAK,EAAC,aAAa;YAFpC,kBAEqC,CAAa;cAFlD,iBAEqC,eAAa;;YAFlD,GAAA;;UAGI,aAWiB;YAdrB,kBAIM,CAIM;cAJN,aAIM,SAJD,KAAK,EAAC,oBAAoB;gBAC7B,aAAkD;kBAA7C,GAAqB,EAArB,UAAqB;kBAAC,KAAK,EAAC,cAAc;;gBAE/C,aAAgE,2BAAlD,KAAK,EAAC,aAAa;kBAPzC,kBAO0C,CAAe;oBAPzD,iBAO0C,iBAAe;;kBAPzD,GAAA;;;cASM,aAIM,SAJD,KAAK,EAAC,oBAAoB;gBAC7B,aAAsD;kBAAjD,GAAyB,EAAzB,UAAyB;kBAAC,KAAK,EAAC,cAAc;;gBAEnD,aAAgE,2BAAlD,KAAK,EAAC,aAAa;kBAZzC,kBAY0C,CAAe;oBAZzD,iBAY0C,iBAAe;;kBAZzD,GAAA;;;;YAAA,GAAA;;UAeI,aAWiB;YA1BrB,kBAgBM,CAIM;cAJN,aAIM,SAJD,KAAK,EAAC,oBAAoB;gBAC7B,aAAmD;kBAA9C,GAAsB,EAAtB,UAAsB;kBAAC,KAAK,EAAC,cAAc;;gBAEhD,aAA4D,2BAA9C,KAAK,EAAC,aAAa;kBAnBzC,kBAmB0C,CAAW;oBAnBrD,iBAmB0C,aAAW;;kBAnBrD,GAAA;;;cAqBM,aAIM,SAJD,KAAK,EAAC,oBAAoB;gBAC7B,aAAqD;kBAAhD,GAAwB,EAAxB,UAAwB;kBAAC,KAAK,EAAC,cAAc;;gBAElD,aAA8D,2BAAhD,KAAK,EAAC,aAAa;kBAxBzC,kBAwB0C,CAAa;oBAxBvD,iBAwB0C,eAAa;;kBAxBvD,GAAA;;;;YAAA,GAAA;;;;;IAAA,GAAA"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141181,
+      "end": 1761251141181,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141181,
+      "end": 1761251141181,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141181,
+      "end": 1761251141181,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141181,
+      "end": 1761251141181,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141181,
+      "end": 1761251141181,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AboutUs/MeetTheTeamSection.vue\").then(r => r.default))",
+      "start": 1761251141181,
+      "end": 1761251141181,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141181,
+      "end": 1761251141181,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141181,
+      "end": 1761251141181,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141181,
+      "end": 1761251141182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141182,
+      "end": 1761251141182,
+      "order": "normal"
+    }
+  ]
+}

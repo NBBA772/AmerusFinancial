@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/layout/TheFooter.vue?nuxt_component=async&nuxt_component_name=TheFooter",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <footer class=\"bg-gray-900 text-white pt-12 pb-6\">\n    <div class=\"container mx-auto px-4\">\n      <!-- Top Grid -->\n      <div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8\">\n        <!-- About -->\n        <div>\n          <h3 class=\"text-xl font-bold mb-4\">About Amerus</h3>\n          <p class=\"text-white/70 mb-4\">\n            Amerus Financial Group is dedicated to providing comprehensive insurance\n            solutions that protect what matters most to you.\n          </p>\n          <div class=\"flex space-x-4\">\n            <a href=\"#\" class=\"text-white/70 hover:text-white transition duration-300\" aria-label=\"Facebook\">\n              <i class=\"lucide lucide-facebook h-5 w-5\"></i>\n            </a>\n            <a href=\"#\" class=\"text-white/70 hover:text-white transition duration-300\" aria-label=\"Twitter\">\n              <i class=\"lucide lucide-twitter h-5 w-5\"></i>\n            </a>\n            <a href=\"#\" class=\"text-white/70 hover:text-white transition duration-300\" aria-label=\"LinkedIn\">\n              <i class=\"lucide lucide-linkedin h-5 w-5\"></i>\n            </a>\n          </div>\n        </div>\n\n        <!-- Quick Links -->\n        <div>\n          <h3 class=\"text-xl font-bold mb-4\">Quick Links</h3>\n          <ul class=\"space-y-2\">\n            <li><NuxtLink to=\"/\" class=\"text-white/70 hover:text-white transition duration-300\">Home</NuxtLink></li>\n            <li><NuxtLink to=\"/about\" class=\"text-white/70 hover:text-white transition duration-300\">About Us</NuxtLink></li>\n            <li><NuxtLink to=\"/services\" class=\"text-white/70 hover:text-white transition duration-300\">Services</NuxtLink></li>\n            <li><NuxtLink to=\"/resources\" class=\"text-white/70 hover:text-white transition duration-300\">Resources</NuxtLink></li>\n            <li><NuxtLink to=\"/contact\" class=\"text-white/70 hover:text-white transition duration-300\">Contact</NuxtLink></li>\n          </ul>\n        </div>\n\n        <!-- Services -->\n        <div>\n          <h3 class=\"text-xl font-bold mb-4\">Services</h3>\n          <ul class=\"space-y-2\">\n            <li><NuxtLink to=\"/services\" class=\"text-white/70 hover:text-white transition duration-300\">Health Insurance</NuxtLink></li>\n            <li><NuxtLink to=\"/services\" class=\"text-white/70 hover:text-white transition duration-300\">Life Insurance</NuxtLink></li>\n            <li><NuxtLink to=\"/services\" class=\"text-white/70 hover:text-white transition duration-300\">Retirement Planning</NuxtLink></li>\n            <li><NuxtLink to=\"/services\" class=\"text-white/70 hover:text-white transition duration-300\">Auto Insurance</NuxtLink></li>\n            <li><NuxtLink to=\"/services\" class=\"text-white/70 hover:text-white transition duration-300\">Home Insurance</NuxtLink></li>\n          </ul>\n        </div>\n\n        <!-- Contact -->\n        <div>\n          <h3 class=\"text-xl font-bold mb-4\">Contact Us</h3>\n          <ul class=\"space-y-3\">\n            <li class=\"flex items-start\">\n              <i class=\"lucide lucide-map-pin h-5 w-5 mr-3 mt-0.5 text-[#ff7733]\"></i>\n              <span class=\"text-white/70\">\n                5115 S Lakeland Dr, Suite 1<br />Lakeland, FL 33813\n              </span>\n            </li>\n            <li class=\"flex items-center\">\n              <i class=\"lucide lucide-phone h-5 w-5 mr-3 text-[#ff7733]\"></i>\n              <a href=\"tel:+18884417891\" class=\"text-white/70 hover:text-white transition duration-300\">\n                (888) 441-7891\n              </a>\n            </li>\n            <li class=\"flex items-center\">\n              <i class=\"lucide lucide-mail h-5 w-5 mr-3 text-[#ff7733]\"></i>\n              <a href=\"mailto:support@amerusfinancial.com\" class=\"text-white/70 hover:text-white transition duration-300\">\n                support@amerusfinancial.com\n              </a>\n            </li>\n          </ul>\n        </div>\n      </div>\n\n      <!-- Bottom -->\n      <div class=\"border-t border-white/20 pt-6 mt-8\">\n        <div class=\"flex flex-col md:flex-row justify-between items-center\">\n          <p class=\"text-white/50 text-sm mb-4 md:mb-0\">\n            © 2025 Amerus Financial Group. All Rights Reserved.\n          </p>\n          <div class=\"flex space-x-4 text-sm text-white/50\">\n            <NuxtLink to=\"/policies/privacy-policy\" class=\"hover:text-white transition duration-300\">Privacy Policy</NuxtLink>\n            <NuxtLink to=\"/policies/terms-of-service\" class=\"hover:text-white transition duration-300\">Terms of Service</NuxtLink>\n            <NuxtLink to=\"/policies/sitemap\" class=\"hover:text-white transition duration-300\">Sitemap</NuxtLink>\n          </div>\n        </div>\n      </div>\n    </div>\n  </footer>\n</template>\n\n<script setup>\n// using NuxtLink instead of <a> for internal navigation\n</script>\n",
+      "start": 1761251023437,
+      "end": 1761251023513,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023513,
+      "end": 1761251023513,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023513,
+      "end": 1761251023513,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023513,
+      "end": 1761251023513,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023513,
+      "end": 1761251023513,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023513,
+      "end": 1761251023513,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023513,
+      "end": 1761251023513,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023513,
+      "end": 1761251023513,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023513,
+      "end": 1761251023513,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"bg-gray-900 text-white pt-12 pb-6\" }\nconst _hoisted_2 = { class: \"container mx-auto px-4\" }\nconst _hoisted_3 = { class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8\" }\nconst _hoisted_4 = /*#__PURE__*/_createStaticVNode(\"<div><h3 class=\\\"text-xl font-bold mb-4\\\">About Amerus</h3><p class=\\\"text-white/70 mb-4\\\"> Amerus Financial Group is dedicated to providing comprehensive insurance solutions that protect what matters most to you. </p><div class=\\\"flex space-x-4\\\"><a href=\\\"#\\\" class=\\\"text-white/70 hover:text-white transition duration-300\\\" aria-label=\\\"Facebook\\\"><i class=\\\"lucide lucide-facebook h-5 w-5\\\"></i></a><a href=\\\"#\\\" class=\\\"text-white/70 hover:text-white transition duration-300\\\" aria-label=\\\"Twitter\\\"><i class=\\\"lucide lucide-twitter h-5 w-5\\\"></i></a><a href=\\\"#\\\" class=\\\"text-white/70 hover:text-white transition duration-300\\\" aria-label=\\\"LinkedIn\\\"><i class=\\\"lucide lucide-linkedin h-5 w-5\\\"></i></a></div></div>\", 1)\nconst _hoisted_5 = /*#__PURE__*/_createElementVNode(\"h3\", { class: \"text-xl font-bold mb-4\" }, \"Quick Links\", -1)\nconst _hoisted_6 = { class: \"space-y-2\" }\nconst _hoisted_7 = /*#__PURE__*/_createElementVNode(\"h3\", { class: \"text-xl font-bold mb-4\" }, \"Services\", -1)\nconst _hoisted_8 = { class: \"space-y-2\" }\nconst _hoisted_9 = /*#__PURE__*/_createStaticVNode(\"<div><h3 class=\\\"text-xl font-bold mb-4\\\">Contact Us</h3><ul class=\\\"space-y-3\\\"><li class=\\\"flex items-start\\\"><i class=\\\"lucide lucide-map-pin h-5 w-5 mr-3 mt-0.5 text-[#ff7733]\\\"></i><span class=\\\"text-white/70\\\"> 5115 S Lakeland Dr, Suite 1<br>Lakeland, FL 33813 </span></li><li class=\\\"flex items-center\\\"><i class=\\\"lucide lucide-phone h-5 w-5 mr-3 text-[#ff7733]\\\"></i><a href=\\\"tel:+18884417891\\\" class=\\\"text-white/70 hover:text-white transition duration-300\\\"> (888) 441-7891 </a></li><li class=\\\"flex items-center\\\"><i class=\\\"lucide lucide-mail h-5 w-5 mr-3 text-[#ff7733]\\\"></i><a href=\\\"mailto:support@amerusfinancial.com\\\" class=\\\"text-white/70 hover:text-white transition duration-300\\\"> support@amerusfinancial.com </a></li></ul></div>\", 1)\nconst _hoisted_10 = { class: \"border-t border-white/20 pt-6 mt-8\" }\nconst _hoisted_11 = { class: \"flex flex-col md:flex-row justify-between items-center\" }\nconst _hoisted_12 = /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-white/50 text-sm mb-4 md:mb-0\" }, \" © 2025 Amerus Financial Group. All Rights Reserved. \", -1)\nconst _hoisted_13 = { class: \"flex space-x-4 text-sm text-white/50\" }\n\n\nconst _sfc_main = {\n  __name: 'TheFooter',\n  setup(__props) {\n\n// using NuxtLink instead of <a> for internal navigation\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n\n  return (_openBlock(), _createElementBlock(\"footer\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _hoisted_4,\n        _createElementVNode(\"div\", null, [\n          _hoisted_5,\n          _createElementVNode(\"ul\", _hoisted_6, [\n            _createElementVNode(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to: \"/\",\n                class: \"text-white/70 hover:text-white transition duration-300\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"Home\")\n                ]),\n                _: 1\n              })\n            ]),\n            _createElementVNode(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to: \"/about\",\n                class: \"text-white/70 hover:text-white transition duration-300\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"About Us\")\n                ]),\n                _: 1\n              })\n            ]),\n            _createElementVNode(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to: \"/services\",\n                class: \"text-white/70 hover:text-white transition duration-300\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"Services\")\n                ]),\n                _: 1\n              })\n            ]),\n            _createElementVNode(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to: \"/resources\",\n                class: \"text-white/70 hover:text-white transition duration-300\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"Resources\")\n                ]),\n                _: 1\n              })\n            ]),\n            _createElementVNode(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to: \"/contact\",\n                class: \"text-white/70 hover:text-white transition duration-300\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"Contact\")\n                ]),\n                _: 1\n              })\n            ])\n          ])\n        ]),\n        _createElementVNode(\"div\", null, [\n          _hoisted_7,\n          _createElementVNode(\"ul\", _hoisted_8, [\n            _createElementVNode(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to: \"/services\",\n                class: \"text-white/70 hover:text-white transition duration-300\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"Health Insurance\")\n                ]),\n                _: 1\n              })\n            ]),\n            _createElementVNode(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to: \"/services\",\n                class: \"text-white/70 hover:text-white transition duration-300\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"Life Insurance\")\n                ]),\n                _: 1\n              })\n            ]),\n            _createElementVNode(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to: \"/services\",\n                class: \"text-white/70 hover:text-white transition duration-300\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"Retirement Planning\")\n                ]),\n                _: 1\n              })\n            ]),\n            _createElementVNode(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to: \"/services\",\n                class: \"text-white/70 hover:text-white transition duration-300\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"Auto Insurance\")\n                ]),\n                _: 1\n              })\n            ]),\n            _createElementVNode(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to: \"/services\",\n                class: \"text-white/70 hover:text-white transition duration-300\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\"Home Insurance\")\n                ]),\n                _: 1\n              })\n            ])\n          ])\n        ]),\n        _hoisted_9\n      ]),\n      _createElementVNode(\"div\", _hoisted_10, [\n        _createElementVNode(\"div\", _hoisted_11, [\n          _hoisted_12,\n          _createElementVNode(\"div\", _hoisted_13, [\n            _createVNode(_component_NuxtLink, {\n              to: \"/policies/privacy-policy\",\n              class: \"hover:text-white transition duration-300\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Privacy Policy\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_NuxtLink, {\n              to: \"/policies/terms-of-service\",\n              class: \"hover:text-white transition duration-300\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Terms of Service\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_NuxtLink, {\n              to: \"/policies/sitemap\",\n              class: \"hover:text-white transition duration-300\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Sitemap\")\n              ]),\n              _: 1\n            })\n          ])\n        ])\n      ])\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1761251023513,
+      "end": 1761251023514,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/layout/TheFooter.vue\").then(r => r.default))",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/layout/TheFooter.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023514,
+      "end": 1761251023514,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ServiceGrid.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, withCtx as _withCtx } from \"vue\"\n\nconst _hoisted_1 = { class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 m-8\" }\nconst _hoisted_2 = { class: \"w-12 h-12 rounded-full bg-[#e3e3e3] p-2 flex items-center justify-center text-primary flex-shrink-0\" }\nconst _hoisted_3 = { class: \"flex-1\" }\nconst _hoisted_4 = { class: \"text-xl font-bold mb-3\" }\nconst _hoisted_5 = { class: \"space-y-2 text-gray-600\" }\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"w-1.5 h-1.5 bg-primary rounded-full mr-2\" }, null, -1)\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ServiceGrid',\n  setup(__props) {\n\nconst services = [\n  {\n    title: \"Health Insurance\",\n    icon: \"lucide:heart\",\n    items: [\"Individual\", \"Family\", \"Group\", \"Senior/Medicare\"],\n    link: \"/services\",\n  },\n  {\n    title: \"Life Insurance\",\n    icon: \"lucide:shield\",\n    items: [\"Term Life\", \"Whole Life\", \"Universal Life\", \"Senior Life\"],\n    link: \"/services\",\n  },\n  {\n    title: \"Retirement Planning\",\n    icon: \"lucide:dollar-sign\",\n    items: [\"Annuities\", \"401(k) Rollovers\", \"IRAs\", \"Pension Planning\"],\n    link: \"/services\",\n  },\n  {\n    title: \"Property Insurance\",\n    icon: \"lucide:house\",\n    items: [\"Auto Insurance\", \"Homeowners\", \"Commercial\", \"Liability\"],\n    link: \"/services\",\n  },\n];\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_openBlock(), _createElementBlock(_Fragment, null, _renderList(services, (service, index) => {\n      return _createElementVNode(\"div\", {\n        key: index,\n        class: \"service-card bg-white rounded-lg shadow-md p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg flex items-start gap-4\"\n      }, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createVNode(_component_Icon, {\n            name: service.icon,\n            class: \"h-12 w-12\"\n          }, null, 8, [\"name\"])\n        ]),\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createElementVNode(\"h3\", _hoisted_4, _toDisplayString(service.title), 1),\n          _createElementVNode(\"ul\", _hoisted_5, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(service.items, (item, i) => {\n              return (_openBlock(), _createElementBlock(\"li\", {\n                key: i,\n                class: \"flex items-center\"\n              }, [\n                _hoisted_6,\n                _createTextVNode(\" \" + _toDisplayString(item), 1)\n              ]))\n            }), 128))\n          ]),\n          _createVNode(_component_NuxtLink, {\n            to: service.link,\n            class: \"inline-block mt-4 text-primary font-medium hover:text-primary-dark\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" Learn more → \")\n            ]),\n            _: 2\n          }, 1032, [\"to\"])\n        ])\n      ])\n    }), 64))\n  ]))\n}\n}\n\n})",
+      "start": 1761251028263,
+      "end": 1761251028263
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251028267,
+      "end": 1761251028267,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251028267,
+      "end": 1761251028267,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251028267,
+      "end": 1761251028267,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251028267,
+      "end": 1761251028267,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251028267,
+      "end": 1761251028267,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, withCtx as _withCtx } from \"vue\";\nconst _hoisted_1 = { class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 m-8\" };\nconst _hoisted_2 = { class: \"w-12 h-12 rounded-full bg-[#e3e3e3] p-2 flex items-center justify-center text-primary flex-shrink-0\" };\nconst _hoisted_3 = { class: \"flex-1\" };\nconst _hoisted_4 = { class: \"text-xl font-bold mb-3\" };\nconst _hoisted_5 = { class: \"space-y-2 text-gray-600\" };\nconst _hoisted_6 = /* @__PURE__ */ _createElementVNode(\"span\", { class: \"w-1.5 h-1.5 bg-primary rounded-full mr-2\" }, null, -1);\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ServiceGrid\",\n  setup(__props) {\n    const services = [\n      {\n        title: \"Health Insurance\",\n        icon: \"lucide:heart\",\n        items: [\"Individual\", \"Family\", \"Group\", \"Senior/Medicare\"],\n        link: \"/services\"\n      },\n      {\n        title: \"Life Insurance\",\n        icon: \"lucide:shield\",\n        items: [\"Term Life\", \"Whole Life\", \"Universal Life\", \"Senior Life\"],\n        link: \"/services\"\n      },\n      {\n        title: \"Retirement Planning\",\n        icon: \"lucide:dollar-sign\",\n        items: [\"Annuities\", \"401(k) Rollovers\", \"IRAs\", \"Pension Planning\"],\n        link: \"/services\"\n      },\n      {\n        title: \"Property Insurance\",\n        icon: \"lucide:house\",\n        items: [\"Auto Insurance\", \"Homeowners\", \"Commercial\", \"Liability\"],\n        link: \"/services\"\n      }\n    ];\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_openBlock(), _createElementBlock(_Fragment, null, _renderList(services, (service, index) => {\n          return _createElementVNode(\"div\", {\n            key: index,\n            class: \"service-card bg-white rounded-lg shadow-md p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg flex items-start gap-4\"\n          }, [\n            _createElementVNode(\"div\", _hoisted_2, [\n              _createVNode(_component_Icon, {\n                name: service.icon,\n                class: \"h-12 w-12\"\n              }, null, 8, [\"name\"])\n            ]),\n            _createElementVNode(\"div\", _hoisted_3, [\n              _createElementVNode(\"h3\", _hoisted_4, _toDisplayString(service.title), 1),\n              _createElementVNode(\"ul\", _hoisted_5, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(service.items, (item, i) => {\n                  return _openBlock(), _createElementBlock(\"li\", {\n                    key: i,\n                    class: \"flex items-center\"\n                  }, [\n                    _hoisted_6,\n                    _createTextVNode(\" \" + _toDisplayString(item), 1)\n                  ]);\n                }), 128))\n              ]),\n              _createVNode(_component_NuxtLink, {\n                to: service.link,\n                class: \"inline-block mt-4 text-primary font-medium hover:text-primary-dark\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\" Learn more → \")\n                ]),\n                _: 2\n              }, 1032, [\"to\"])\n            ])\n          ]);\n        }), 64))\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251028267,
+      "end": 1761251029194,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ServiceGrid.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, withCtx as _withCtx } from \"vue\"\n\nconst _hoisted_1 = { class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 m-8\" }\nconst _hoisted_2 = { class: \"w-12 h-12 rounded-full bg-[#e3e3e3] p-2 flex items-center justify-center text-primary flex-shrink-0\" }\nconst _hoisted_3 = { class: \"flex-1\" }\nconst _hoisted_4 = { class: \"text-xl font-bold mb-3\" }\nconst _hoisted_5 = { class: \"space-y-2 text-gray-600\" }\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"w-1.5 h-1.5 bg-primary rounded-full mr-2\" }, null, -1)\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ServiceGrid',\n  setup(__props) {\n\nconst services = [\n  {\n    title: \"Health Insurance\",\n    icon: \"lucide:heart\",\n    items: [\"Individual\", \"Family\", \"Group\", \"Senior/Medicare\"],\n    link: \"/services\",\n  },\n  {\n    title: \"Life Insurance\",\n    icon: \"lucide:shield\",\n    items: [\"Term Life\", \"Whole Life\", \"Universal Life\", \"Senior Life\"],\n    link: \"/services\",\n  },\n  {\n    title: \"Retirement Planning\",\n    icon: \"lucide:dollar-sign\",\n    items: [\"Annuities\", \"401(k) Rollovers\", \"IRAs\", \"Pension Planning\"],\n    link: \"/services\",\n  },\n  {\n    title: \"Property Insurance\",\n    icon: \"lucide:house\",\n    items: [\"Auto Insurance\", \"Homeowners\", \"Commercial\", \"Liability\"],\n    link: \"/services\",\n  },\n];\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_openBlock(), _createElementBlock(_Fragment, null, _renderList(services, (service, index) => {\n      return _createElementVNode(\"div\", {\n        key: index,\n        class: \"service-card bg-white rounded-lg shadow-md p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg flex items-start gap-4\"\n      }, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createVNode(_component_Icon, {\n            name: service.icon,\n            class: \"h-12 w-12\"\n          }, null, 8, [\"name\"])\n        ]),\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createElementVNode(\"h3\", _hoisted_4, _toDisplayString(service.title), 1),\n          _createElementVNode(\"ul\", _hoisted_5, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(service.items, (item, i) => {\n              return (_openBlock(), _createElementBlock(\"li\", {\n                key: i,\n                class: \"flex items-center\"\n              }, [\n                _hoisted_6,\n                _createTextVNode(\" \" + _toDisplayString(item), 1)\n              ]))\n            }), 128))\n          ]),\n          _createVNode(_component_NuxtLink, {\n            to: service.link,\n            class: \"inline-block mt-4 text-primary font-medium hover:text-primary-dark\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" Learn more → \")\n            ]),\n            _: 2\n          }, 1032, [\"to\"])\n        ])\n      ])\n    }), 64))\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,cAAc,aAAa,YAAY,WAAW,aAAa,YAAY,sBAAsB,qBAAqB,oBAAoB,mBAAmB,eAAe,cAAc,sBAAsB,qBAAqB,mBAAmB,kBAAkB,mBAAmB,kBAAkB,WAAW,gBAAgB;AAEnV,MAAM,aAAa,EAAE,OAAO,iEAAiE;AAC7F,MAAM,aAAa,EAAE,OAAO,sGAAsG;AAClI,MAAM,aAAa,EAAE,OAAO,SAAS;AACrC,MAAM,aAAa,EAAE,OAAO,yBAAyB;AACrD,MAAM,aAAa,EAAE,OAAO,0BAA0B;AACtD,MAAM,aAA0B,oCAAoB,QAAQ,EAAE,OAAO,2CAA2C,GAAG,MAAM,EAAE;AAG3H,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAEjB,UAAM,WAAW;AAAA,MACf;AAAA,QACE,OAAO;AAAA,QACP,MAAM;AAAA,QACN,OAAO,CAAC,cAAc,UAAU,SAAS,iBAAiB;AAAA,QAC1D,MAAM;AAAA,MACR;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,MAAM;AAAA,QACN,OAAO,CAAC,aAAa,cAAc,kBAAkB,aAAa;AAAA,QAClE,MAAM;AAAA,MACR;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,MAAM;AAAA,QACN,OAAO,CAAC,aAAa,oBAAoB,QAAQ,kBAAkB;AAAA,QACnE,MAAM;AAAA,MACR;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,MAAM;AAAA,QACN,OAAO,CAAC,kBAAkB,cAAc,cAAc,WAAW;AAAA,QACjE,MAAM;AAAA,MACR;AAAA,IACF;AAEA,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,kBAAkB,kBAAkB,MAAM;AAChD,YAAM,sBAAsB,kBAAkB,UAAU;AAExD,aAAQ,WAAW,GAAG,oBAAoB,OAAO,YAAY;AAAA,SAC1D,WAAW,GAAG,oBAAoB,WAAW,MAAM,YAAY,UAAU,CAAC,SAAS,UAAU;AAC5F,iBAAO,oBAAoB,OAAO;AAAA,YAChC,KAAK;AAAA,YACL,OAAO;AAAA,UACT,GAAG;AAAA,YACD,oBAAoB,OAAO,YAAY;AAAA,cACrC,aAAa,iBAAiB;AAAA,gBAC5B,MAAM,QAAQ;AAAA,gBACd,OAAO;AAAA,cACT,GAAG,MAAM,GAAG,CAAC,MAAM,CAAC;AAAA,YACtB,CAAC;AAAA,YACD,oBAAoB,OAAO,YAAY;AAAA,cACrC,oBAAoB,MAAM,YAAY,iBAAiB,QAAQ,KAAK,GAAG,CAAC;AAAA,cACxE,oBAAoB,MAAM,YAAY;AAAA,iBACnC,WAAW,IAAI,GAAG,oBAAoB,WAAW,MAAM,YAAY,QAAQ,OAAO,CAAC,MAAM,MAAM;AAC9F,yBAAQ,WAAW,GAAG,oBAAoB,MAAM;AAAA,oBAC9C,KAAK;AAAA,oBACL,OAAO;AAAA,kBACT,GAAG;AAAA,oBACD;AAAA,oBACA,iBAAiB,MAAM,iBAAiB,IAAI,GAAG,CAAC;AAAA,kBAClD,CAAC;AAAA,gBACH,CAAC,GAAG,GAAG;AAAA,cACT,CAAC;AAAA,cACD,aAAa,qBAAqB;AAAA,gBAChC,IAAI,QAAQ;AAAA,gBACZ,OAAO;AAAA,cACT,GAAG;AAAA,gBACD,SAAS,SAAS,MAAM;AAAA,kBACtB,iBAAiB,gBAAgB;AAAA,gBACnC,CAAC;AAAA,gBACD,GAAG;AAAA,cACL,GAAG,MAAM,CAAC,IAAI,CAAC;AAAA,YACjB,CAAC;AAAA,UACH,CAAC;AAAA,QACH,CAAC,GAAG,EAAE;AAAA,MACR,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029194,
+      "end": 1761251029194,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029194,
+      "end": 1761251029194,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029195,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029198,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029199,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, withCtx as _withCtx } from \"vue\";\nconst _hoisted_1 = { class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 m-8\" };\nconst _hoisted_2 = { class: \"w-12 h-12 rounded-full bg-[#e3e3e3] p-2 flex items-center justify-center text-primary flex-shrink-0\" };\nconst _hoisted_3 = { class: \"flex-1\" };\nconst _hoisted_4 = { class: \"text-xl font-bold mb-3\" };\nconst _hoisted_5 = { class: \"space-y-2 text-gray-600\" };\nconst _hoisted_6 = /* @__PURE__ */ _createElementVNode(\"span\", { class: \"w-1.5 h-1.5 bg-primary rounded-full mr-2\" }, null, -1);\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ServiceGrid\",\n  setup(__props) {\n    const services = [\n      {\n        title: \"Health Insurance\",\n        icon: \"lucide:heart\",\n        items: [\"Individual\", \"Family\", \"Group\", \"Senior/Medicare\"],\n        link: \"/services\"\n      },\n      {\n        title: \"Life Insurance\",\n        icon: \"lucide:shield\",\n        items: [\"Term Life\", \"Whole Life\", \"Universal Life\", \"Senior Life\"],\n        link: \"/services\"\n      },\n      {\n        title: \"Retirement Planning\",\n        icon: \"lucide:dollar-sign\",\n        items: [\"Annuities\", \"401(k) Rollovers\", \"IRAs\", \"Pension Planning\"],\n        link: \"/services\"\n      },\n      {\n        title: \"Property Insurance\",\n        icon: \"lucide:house\",\n        items: [\"Auto Insurance\", \"Homeowners\", \"Commercial\", \"Liability\"],\n        link: \"/services\"\n      }\n    ];\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_openBlock(), _createElementBlock(_Fragment, null, _renderList(services, (service, index) => {\n          return _createElementVNode(\"div\", {\n            key: index,\n            class: \"service-card bg-white rounded-lg shadow-md p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lg flex items-start gap-4\"\n          }, [\n            _createElementVNode(\"div\", _hoisted_2, [\n              _createVNode(_component_Icon, {\n                name: service.icon,\n                class: \"h-12 w-12\"\n              }, null, 8, [\"name\"])\n            ]),\n            _createElementVNode(\"div\", _hoisted_3, [\n              _createElementVNode(\"h3\", _hoisted_4, _toDisplayString(service.title), 1),\n              _createElementVNode(\"ul\", _hoisted_5, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(service.items, (item, i) => {\n                  return _openBlock(), _createElementBlock(\"li\", {\n                    key: i,\n                    class: \"flex items-center\"\n                  }, [\n                    _hoisted_6,\n                    _createTextVNode(\" \" + _toDisplayString(item), 1)\n                  ]);\n                }), 128))\n              ]),\n              _createVNode(_component_NuxtLink, {\n                to: service.link,\n                class: \"inline-block mt-4 text-primary font-medium hover:text-primary-dark\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(\" Learn more → \")\n                ]),\n                _: 2\n              }, 1032, [\"to\"])\n            ])\n          ]);\n        }), 64))\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251029203,
+      "end": 1761251029203,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029203,
+      "end": 1761251029203,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029203,
+      "end": 1761251029203,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029203,
+      "end": 1761251029203,
+      "order": "normal"
+    }
+  ]
+}

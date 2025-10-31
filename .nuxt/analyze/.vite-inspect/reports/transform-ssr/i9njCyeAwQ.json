@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/AnswerForm.vue?nuxt_component=async&nuxt_component_name=AnswerForm",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nconst props = defineProps([\"questionId\"]);\nconst emit = defineEmits<{ (e: \"addAnswer\", answer: IAnswer) }>();\n\nconst questionId = props.questionId;\n\nconst data: IAnswerPost = reactive({\n  text: \"\",\n  questionId: parseInt(questionId),\n});\n\nconst showAnswerForm = useState(\"showAnswerForm\" + questionId);\n\nasync function postAnswer() {\n  const answer = await useFetch(() => `/api/dashboard/answer`, {\n    method: \"post\",\n    body: { data },\n  });\n\n  const newAnswer = useState(\"newAnswer\");\n  newAnswer.value = answer.data.value;\n\n  emit(\"addAnswer\", newAnswer.value as IAnswer);\n}\n</script>\n\n\n<template>\n  <form @submit.prevent=\"postAnswer\">\n    <label\n      for=\"message\"\n      class=\"block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400\"\n      >Answer</label\n    >\n    <textarea\n      v-model=\"data.text\"\n      id=\"message\"\n      rows=\"4\"\n      class=\"block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500\"\n      placeholder=\"Be specific and kind\"\n    >\n    </textarea>\n    <div></div>\n    <div class=\"flex justify-end\">\n      <button\n        type=\"submit\"\n        class=\"mt-5 px-6 py-3.5 text-white bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\"\n      >\n        Submit\n      </button>\n      <button\n        @click=\"showAnswerForm = !showAnswerForm\"\n        type=\"button\"\n        class=\"mt-5 px-6 py-3.5 text-white bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2\"\n      >\n        Cancel\n      </button>\n    </div>\n  </form>\n</template>",
+      "start": 1761251137399,
+      "end": 1761251138099,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251138099,
+      "end": 1761251138099,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/AnswerForm.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/AnswerForm.vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"components/elements/AnswerForm.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
+      "start": 1761251138099,
+      "end": 1761251140534,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251140537,
+      "end": 1761251140538,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251140538,
+      "end": 1761251140539,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251140538,
+      "end": 1761251140539,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251140539,
+      "end": 1761251140539,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251140539,
+      "end": 1761251140539,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/AnswerForm.vue\").then(r => r.default))",
+      "start": 1761251140541,
+      "end": 1761251140543,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251140543,
+      "end": 1761251140543,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251140543,
+      "end": 1761251140543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251140543,
+      "end": 1761251140543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251140561,
+      "end": 1761251140561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251140561,
+      "end": 1761251140562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251140562,
+      "end": 1761251140562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251140562,
+      "end": 1761251140562,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251140562,
+      "end": 1761251140562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251140562,
+      "end": 1761251140563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251140563,
+      "end": 1761251140564,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251140564,
+      "end": 1761251140564,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251140564,
+      "end": 1761251140564,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251140565,
+      "end": 1761251140565,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251140565,
+      "end": 1761251140565,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251140565,
+      "end": 1761251140565,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251140566,
+      "end": 1761251140566,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251140566,
+      "end": 1761251140566,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251140566,
+      "end": 1761251140566,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251140566,
+      "end": 1761251140566,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251140566,
+      "end": 1761251140566,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251140566,
+      "end": 1761251140566,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251140567,
+      "end": 1761251140567,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251140568,
+      "end": 1761251140568,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251140568,
+      "end": 1761251140568,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251140568,
+      "end": 1761251140568,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251140568,
+      "end": 1761251140568,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/QuestionForm.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\ndefinePageMeta({\n  middleware: \"auth\",\n});\n\ninterface Props {\n  data: IQuestionPost;\n  endpoint?: String;\n}\n\nconst props = defineProps<Props>();\nconst data = props.data;\nconst router = useRouter();\n\nasync function postQuestion() {\n  const { data: question } = await useFetch<IQuestion>(\n    () => `${props.endpoint}`,\n    { method: \"post\", body: { data }, pick: [\"id\"] }\n  );\n\n  router.push(`/dashboard/question/${question.value.id}`);\n}\n</script>\n  \n<template>\n  <form @submit.prevent=\"postQuestion\" class=\"p-4\">\n    <div class=\"mb-6\">\n      <label\n        for=\"title\"\n        class=\"block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300\"\n      >\n        Short Description\n      </label>\n      <input\n        v-model=\"data.title\"\n        type=\"title\"\n        id=\"title\"\n        class=\"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500\"\n        placeholder=\"Short description\"\n      />\n    </div>\n\n    <label\n      for=\"message\"\n      class=\"block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400\"\n      >Question</label\n    >\n    <textarea\n      v-model=\"data.description\"\n      id=\"message\"\n      rows=\"4\"\n      class=\"block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500\"\n      placeholder=\"Be specific and kind\"\n    ></textarea>\n\n    <div class=\"flex justify-center sm:justify-end\">\n      <!-- Center the button on small screens -->\n      <button\n        @click=\"postQuestion\"\n        type=\"button\"\n        class=\"mt-5 dark:focus:ring-amber-800 bg-blue-400 hover:bg-blue-800 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mr-2 mb-2\"\n      >\n        Ask Question\n      </button>\n      <!-- todo: make button text dynamic -->\n    </div>\n  </form>\n</template>\n",
+      "start": 1761251143109,
+      "end": 1761251143238,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251143238,
+      "end": 1761251143238,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/QuestionForm.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/QuestionForm.vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"components/elements/QuestionForm.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
+      "start": 1761251143238,
+      "end": 1761251143244,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251143244,
+      "end": 1761251143244,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143244,
+      "end": 1761251143244,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143244,
+      "end": 1761251143244,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143244,
+      "end": 1761251143244,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143244,
+      "end": 1761251143244,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251143244,
+      "end": 1761251143244,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143244,
+      "end": 1761251143244,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251143244,
+      "end": 1761251143245,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143245,
+      "end": 1761251143245,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143245,
+      "end": 1761251143246,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143245,
+      "end": 1761251143246,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "normal"
+    }
+  ]
+}

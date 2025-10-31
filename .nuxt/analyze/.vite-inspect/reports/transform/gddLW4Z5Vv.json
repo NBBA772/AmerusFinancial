@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/cards/IndustryCard.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div>\n    <div class=\"container mx-auto\">\n      <div class=\"flex items-stretch -mx-4\">\n        <div class=\"flex-1 p-4\">\n          <div\n            class=\"block overflow-hidden rounded-t-lg rounded-b-lg h-full shadow-lg\"\n          >\n            <div class=\"p-4 bg-blue-400 dark:bg-amber-400 min-h-24\">\n              <h2\n                class=\"mt-2 mb-2 font-bold text-2xl font-Heading text-center text-white\"\n              >\n                {{ title }}\n              </h2>\n            </div>\n            <!-- <p class=\"text-md text-justify\">{{ description }}</p> -->\n            <div>\n              <NuxtImg\n                class=\"min-w-64\"\n                format=\"webp\"\n                :src=\"image\"\n                sizes=\"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\"\n                alt=\"Bus Driver\"\n                quality=\"80\"\n                loading=\"lazy\"\n              />\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: \"IndustryCard\",\n  props: {\n    title: String,\n    image: String,\n    description: String,\n    url: String,\n  },\n};\n</script>\n\n<style>\n</style>\n",
+      "start": 1761251024275,
+      "end": 1761251024447,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"IndustryCard\",\n  props: {\n    title: String,\n    image: String,\n    description: String,\n    url: String,\n  },\n};\n\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"container mx-auto\" }\nconst _hoisted_2 = { class: \"flex items-stretch -mx-4\" }\nconst _hoisted_3 = { class: \"flex-1 p-4\" }\nconst _hoisted_4 = { class: \"block overflow-hidden rounded-t-lg rounded-b-lg h-full shadow-lg\" }\nconst _hoisted_5 = { class: \"p-4 bg-blue-400 dark:bg-amber-400 min-h-24\" }\nconst _hoisted_6 = { class: \"mt-2 mb-2 font-bold text-2xl font-Heading text-center text-white\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createElementVNode(\"div\", _hoisted_4, [\n            _createElementVNode(\"div\", _hoisted_5, [\n              _createElementVNode(\"h2\", _hoisted_6, _toDisplayString($props.title), 1)\n            ]),\n            _createElementVNode(\"div\", null, [\n              _createVNode(_component_NuxtImg, {\n                class: \"min-w-64\",\n                format: \"webp\",\n                src: $props.image,\n                sizes: \"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\",\n                alt: \"Bus Driver\",\n                quality: \"80\",\n                loading: \"lazy\"\n              }, null, 8, [\"src\"])\n            ])\n          ])\n        ])\n      ])\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024447,
+      "end": 1761251024447,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024447,
+      "end": 1761251024448,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024448,
+      "end": 1761251024448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024448,
+      "end": 1761251024448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024448,
+      "end": 1761251024448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024448,
+      "end": 1761251024448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/@nuxt/image/dist/runtime/components/nuxt-img\";\n\nconst _sfc_main = {\n  name: \"IndustryCard\",\n  props: {\n    title: String,\n    image: String,\n    description: String,\n    url: String,\n  },\n};\n\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"container mx-auto\" }\nconst _hoisted_2 = { class: \"flex items-stretch -mx-4\" }\nconst _hoisted_3 = { class: \"flex-1 p-4\" }\nconst _hoisted_4 = { class: \"block overflow-hidden rounded-t-lg rounded-b-lg h-full shadow-lg\" }\nconst _hoisted_5 = { class: \"p-4 bg-blue-400 dark:bg-amber-400 min-h-24\" }\nconst _hoisted_6 = { class: \"mt-2 mb-2 font-bold text-2xl font-Heading text-center text-white\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtImg = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createElementVNode(\"div\", _hoisted_4, [\n            _createElementVNode(\"div\", _hoisted_5, [\n              _createElementVNode(\"h2\", _hoisted_6, _toDisplayString($props.title), 1)\n            ]),\n            _createElementVNode(\"div\", null, [\n              _createVNode(_component_NuxtImg, {\n                class: \"min-w-64\",\n                format: \"webp\",\n                src: $props.image,\n                sizes: \"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\",\n                alt: \"Bus Driver\",\n                quality: \"80\",\n                loading: \"lazy\"\n              }, null, 8, [\"src\"])\n            ])\n          ])\n        ])\n      ])\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251024448,
+      "end": 1761251024448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024448,
+      "end": 1761251024448,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024448,
+      "end": 1761251024448,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024448,
+      "end": 1761251024448,
+      "order": "normal"
+    }
+  ]
+}

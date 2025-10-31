@@ -1,0 +1,286 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/question/[id].vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport DashboardSidebar from \"~~/components/elements/DashboardSidebar.vue\";\nimport AnswerForm from \"~/components/elements/AnswerForm.vue\";\nimport QuestionForm from \"~~/components/elements/QuestionForm.vue\";\nimport Tiptap from \"~~/components/elements/Tiptap.vue\";\n\nconst questionId = getParam(\"id\");\nconst me = await useUser();\nconst router = useRouter();\nconst route = useRoute();\nconst showEditForm = ref(false);\nconst showDeleted = ref(false);\nconst showAnswerButton = ref(false);\nlet isAdmin: boolean = true;\n\nconst isLoggedIn = await useLoggedIn();\n\nconst { data: question } = await useFetch<IQuestion>(\n  `/api/dashboard/question?id=${questionId}`,\n  { key: route.fullPath }\n);\n\nconst showAnswerForm = useState(\"showAnswerForm\" + questionId, () => false);\n\nconst isMine = question?.value?.authorId == me?.id;\n\nif (me?.id === 1) {\n  isAdmin = true;\n} else {\n  isAdmin = false;\n}\n\nasync function deleteQuestion() {\n  const { data: deleted } = await useFetch(\"/api/dashboard/delete-question\", {\n    method: \"POST\",\n    body: { questionId },\n  });\n\n  showDeleted.value = true;\n  setTimeout(() => {\n    router.push(\"/dashboard/search\");\n  });\n}\n\nconst editEndpoint = \"/api/dashboard/edit-question\";\n\nfunction addAnswer(answer: IAnswer) {\n  console.log(\"&&&&&&&&& add answer\");\n  question.value?.answers.push(answer);\n  showAnswerForm.value = false;\n}\n</script>\n \n <template>\n  <PatternSection>\n    <div class=\"h-32 flex justify-center\">\n      <div class=\"flex m-5\">\n        <!-- <img\n          class=\"mx-auto h-24 w-auto\"\n          src=\"/img/logo_clear_fsj.png\"\n          alt=\"full stack jack logo\"\n        /> -->\n        <h1\n          class=\"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\"\n        >\n          Questions\n        </h1>\n      </div>\n    </div>\n    <div class=\"md:flex min-h-full\">\n      <DashboardSidebar />\n      <div class=\"w-full z-1 justify-right relative\">\n        <div\n          class=\"p-8 text-white bg-lime-600 dark:bg-black rounded shadow-md\"\n          v-if=\"showDeleted\"\n        >\n          question deleted\n        </div>\n        <div\n          v-if=\"question\"\n          class=\"flex w-full flex-column justify-center transition duration-500\"\n        >\n          <div class=\"w-full p-4\">\n            <div class=\"p-8 bg-white dark:bg-gray-800 rounded shadow-md\">\n              <div class=\"flex justify-end dark:text-gray-300\">\n                {{ question.authName }}\n              </div>\n\n              <h2 class=\"text-2xl font-bold text-gray-800 dark:text-gray-300\">\n                {{ question.title }}\n              </h2>\n              <!-- <p class=\"dark:text-gray-300\">{{ question.description }}</p> -->\n\n              <Tiptap\n                v-if=\"!showEditForm\"\n                v-model=\"question.description\"\n                label=\"\"\n                :editable=\"false\"\n              />\n\n              <div class=\"mt-5\" v-if=\"isMine && showEditForm == false\">\n                <button\n                  @click=\"showEditForm = true\"\n                  class=\"bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded\"\n                >\n                  Edit\n                </button>\n                <button\n                  @click=\"deleteQuestion\"\n                  class=\"bg-red-500 ml-3 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded\"\n                >\n                  delete\n                </button>\n              </div>\n\n              <QuestionForm\n                :endpoint=\"editEndpoint\"\n                :data=\"question\"\n                v-if=\"showEditForm\"\n              />\n            </div>\n          </div>\n        </div>\n        <div\n          v-for=\"answer in question?.answers\"\n          :key=\"answer.id\"\n          class=\"flex flex-column justify-center hover:scale-110 transition duration-500\"\n        >\n          <div class=\"max-w-xxl w-full p-4\">\n            <div class=\"p-8 bg-white dark:bg-slate-900 rounded shadow-md\">\n              <div class=\"flex justify-end dark:text-gray-300\">\n                {{ answer.authorName }}\n              </div>\n              <p class=\"dark:text-gray-300\">{{ answer.text }}</p>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"flex justify-end\">\n          <button\n            v-if=\"!showAnswerForm && isLoggedIn && isAdmin\"\n            @click=\"showAnswerForm = !showAnswerForm\"\n            type=\"button\"\n            class=\"dark:focus:ring-amber-800 bg-blue-400 hover:bg-blue-800 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mr-2 mb-2\"\n          >\n            Answer\n          </button>\n        </div>\n        <div v-if=\"showAnswerForm\">\n          <AnswerForm :questionId=\"questionId\" @addAnswer=\"addAnswer\" />\n        </div>\n      </div>\n    </div>\n  </PatternSection>\n</template>",
+      "start": 1761251150979,
+      "end": 1761251151233,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251151233,
+      "end": 1761251151233,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/question/[id].vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/question/[id].vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"pages/dashboard/question/[id].vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
+      "start": 1761251151233,
+      "end": 1761251151262,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251151262,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251151263,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251151263,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251151264,
+      "end": 1761251151265,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251151265,
+      "end": 1761251151265,
+      "order": "normal"
+    }
+  ]
+}

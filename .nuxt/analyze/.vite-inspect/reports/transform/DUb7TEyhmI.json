@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/InfoCards.vue?nuxt_component=async&nuxt_component_name=InfoCards",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"grid grid-cols-1 md:grid-cols-3 gap-6 mt-8\">\n    <div\n      v-for=\"card in info\"\n      :key=\"card.title\"\n      class=\"rounded-lg border bg-white text-card-foreground shadow-sm overflow-hidden\"\n    >\n      <!-- Card Header -->\n      <div\n        class=\"flex items-center gap-3 bg-[#30BCFE] text-white py-4 px-5 rounded-t-lg\"\n      >\n        <Icon :name=\"card.icon\" class=\"text-white\" size=\"50\" />\n        <h3 class=\"text-xl font-semibold leading-none tracking-tight\">\n          {{ card.title }}\n        </h3>\n      </div>\n\n      <!-- Card Body -->\n      <div class=\"bg-white p-6 text-center\">\n        <p class=\"text-gray-700\">{{ card.text }}</p>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script setup>\nimport { toRef } from 'vue'\n\nconst props = defineProps({\n  /** Required: array of card objects { title, text, icon } */\n  info: {\n    type: Array,\n    required: true,\n  },\n})\n\nconst info = toRef(props, 'info')\n</script>\n",
+      "start": 1761251023794,
+      "end": 1761251023878,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023878,
+      "end": 1761251023878,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023878,
+      "end": 1761251023878,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023878,
+      "end": 1761251023878,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023878,
+      "end": 1761251023878,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023878,
+      "end": 1761251023878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023878,
+      "end": 1761251023878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023878,
+      "end": 1761251023878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023878,
+      "end": 1761251023878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"grid grid-cols-1 md:grid-cols-3 gap-6 mt-8\" }\nconst _hoisted_2 = { class: \"flex items-center gap-3 bg-[#30BCFE] text-white py-4 px-5 rounded-t-lg\" }\nconst _hoisted_3 = { class: \"text-xl font-semibold leading-none tracking-tight\" }\nconst _hoisted_4 = { class: \"bg-white p-6 text-center\" }\nconst _hoisted_5 = { class: \"text-gray-700\" }\n\nimport { toRef } from 'vue'\n\n\nconst _sfc_main = {\n  __name: 'InfoCards',\n  props: {\n  /** Required: array of card objects { title, text, icon } */\n  info: {\n    type: Array,\n    required: true,\n  },\n},\n  setup(__props) {\n\nconst props = __props\n\nconst info = toRef(props, 'info')\n\nreturn (_ctx, _cache) => {\n  const _component_Icon = _resolveComponent(\"Icon\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(info.value, (card) => {\n      return (_openBlock(), _createElementBlock(\"div\", {\n        key: card.title,\n        class: \"rounded-lg border bg-white text-card-foreground shadow-sm overflow-hidden\"\n      }, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createVNode(_component_Icon, {\n            name: card.icon,\n            class: \"text-white\",\n            size: \"50\"\n          }, null, 8, [\"name\"]),\n          _createElementVNode(\"h3\", _hoisted_3, _toDisplayString(card.title), 1)\n        ]),\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createElementVNode(\"p\", _hoisted_5, _toDisplayString(card.text), 1)\n        ])\n      ]))\n    }), 128))\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1761251023878,
+      "end": 1761251023879,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/InfoCards.vue\").then(r => r.default))",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/InfoCards.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023879,
+      "end": 1761251023879,
+      "order": "normal"
+    }
+  ]
+}

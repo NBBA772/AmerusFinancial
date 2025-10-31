@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/QuestionBoard.vue?nuxt_component=async&nuxt_component_name=QuestionBoard",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport Tiptap from \"~~/components/elements/Tiptap.vue\";\n\nconst searchInput = ref(\"\");\n\nconst {\n  data: questions,\n  pending,\n  refresh,\n  error,\n} = await useFetch<IQuestion[]>(\n  () => `/api/dashboard/search?search=${searchInput.value}`,\n  { server: false }\n);\n\nrefresh();\n\nfunction search() {\n  if (searchInput.value.length >= 3) {\n    refresh();\n  }\n}\n</script>\n \n <template>\n  <div class=\"w-full\">\n    <div>\n      <div class=\"flex m-5\">\n        <label\n          for=\"search-dropdown\"\n          class=\"mb-2 text-sm font-medium text-slate-900 sr-only dark:text-gray-300\"\n          >Search Questions</label\n        >\n        <div class=\"relative w-full\">\n          <input\n            v-model=\"searchInput\"\n            @input=\"search\"\n            type=\"search\"\n            id=\"search-dropdown\"\n            class=\"block p-2.5 w-full z-20 text-sm text-slate-900 bg-slate-50 rounded-lg border-solid border-2 border-indigo-600 dark:bg-gray-900 dark:text-gray-300\"\n            placeholder=\"Search Questions...\"\n          />\n          <button\n            type=\"submit\"\n            class=\"absolute top-0 right-0 p-2.5 text-sm font-medium dark:text-white\"\n          >\n            <svg\n              class=\"w-5 h-5\"\n              fill=\"none\"\n              stroke=\"currentColor\"\n              viewBox=\"0 0 24 24\"\n              xmlns=\"http://www.w3.org/2000/svg\"\n            >\n              <path\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n                stroke-width=\"2\"\n                d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z\"\n              ></path>\n            </svg>\n          </button>\n        </div>\n      </div>\n    </div>\n\n    <Transition name=\"fade\" v-if=\"!pending\" v-for=\"question in questions\">\n      <NuxtLink\n        v-if=\"question\"\n        class=\"flex flex-column justify-cente tranition duration-500\"\n        :to=\"`/dashboard/question/${question.id}`\"\n      >\n        <div class=\"w-full p-4\">\n          <div class=\"p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md\">\n            <div class=\"flex justify-end dark:text-gray-300\">\n              {{ question.authName }}\n            </div>\n            <Tiptap v-model=\"question.description\" label=\"\" :editable=\"false\" />\n          </div>\n        </div>\n      </NuxtLink>\n    </Transition>\n  </div>\n</template>\n \n",
+      "start": 1761251137971,
+      "end": 1761251140595,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251140595,
+      "end": 1761251140595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/QuestionBoard.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/QuestionBoard.vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"components/elements/QuestionBoard.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
+      "start": 1761251140595,
+      "end": 1761251140676,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/QuestionBoard.vue\").then(r => r.default))",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251140676,
+      "end": 1761251140676,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251140677,
+      "end": 1761251140677,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251140677,
+      "end": 1761251140678,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251140678,
+      "end": 1761251140678,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251140678,
+      "end": 1761251140678,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251140678,
+      "end": 1761251140678,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251140678,
+      "end": 1761251140678,
+      "order": "normal"
+    }
+  ]
+}

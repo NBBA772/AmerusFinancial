@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/HowDoesBusinessHealthInsuranceWorkSection.vue?nuxt_component=async&nuxt_component_name=HowDoesBusinessHealthInsuranceWorkSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/Group-Health-Insurance-Excerpt.jpg\"\n          sizes=\"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          loading=\"lazy\"\n        />\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n        <ParagraphDescription>\n          Here are few things that you should know about Business Health\n          Insurance.\n        </ParagraphDescription>\n        <BasicList>\n          <ListItems>Business Health Insurance is guaranteed issue.</ListItems>\n          <ListItems\n            >You have to have at least one emplyee to Qualify for\n            coverage.</ListItems\n          >\n          <ListItems\n            >You are required to contribute to your employees\n            premiums.</ListItems\n          >\n          <ListItems\n            >You do not have to want until your anniversary date to change your\n            coverage.</ListItems\n          >\n        </BasicList>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline: \"How Does Business Health Insurance Work?\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n    };\n  },\n};\n</script>",
+      "start": 1761251141237,
+      "end": 1761251141430,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141430,
+      "end": 1761251141430,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141430,
+      "end": 1761251141430,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141430,
+      "end": 1761251141431,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141430,
+      "end": 1761251141431,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141431,
+      "end": 1761251141431,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141431,
+      "end": 1761251141431,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141431,
+      "end": 1761251141431,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141431,
+      "end": 1761251141431,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141431,
+      "end": 1761251141431,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141431,
+      "end": 1761251141431,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141431,
+      "end": 1761251141431,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141431,
+      "end": 1761251141431,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline: \"How Does Business Health Insurance Work?\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n    };\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n  const _component_BasicList = _resolveComponent(\"BasicList\")\n  const _component_ListItems = _resolveComponent(\"ListItems\")\n\n  _push(_ssrRenderComponent(_component_BasicSection, _mergeProps({ class: \"container mx-auto mt-20\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div class=\"px-4 sm:px-8\"${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_NuxtImg, {\n                format: \"webp\",\n                src: \"/images/Group-Health-Insurance-Excerpt.jpg\",\n                sizes: \"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\",\n                alt: \"Happy Kids\",\n                quality: \"80\",\n                loading: \"lazy\"\n              }, null, _parent, _scopeId))\n              _push(`</div><div class=\"px-4 sm:px-8\"${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_HeadlineTwo, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.Headline)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(` Here are few things that you should know about Business Health Insurance. `)\n                  } else {\n                    return [\n                      _createTextVNode(\" Here are few things that you should know about Business Health Insurance. \")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_BasicList, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Business Health Insurance is guaranteed issue.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Business Health Insurance is guaranteed issue.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`You have to have at least one emplyee to Qualify for coverage.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"You have to have at least one emplyee to Qualify for coverage.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`You are required to contribute to your employees premiums.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"You are required to contribute to your employees premiums.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`You do not have to want until your anniversary date to change your coverage.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"You do not have to want until your anniversary date to change your coverage.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                  } else {\n                    return [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Business Health Insurance is guaranteed issue.\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"You have to have at least one emplyee to Qualify for coverage.\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"You are required to contribute to your employees premiums.\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"You do not have to want until your anniversary date to change your coverage.\")\n                        ]),\n                        _: 1\n                      })\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div>`)\n            } else {\n              return [\n                _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                  _createVNode(_component_NuxtImg, {\n                    format: \"webp\",\n                    src: \"/images/Group-Health-Insurance-Excerpt.jpg\",\n                    sizes: \"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\",\n                    alt: \"Happy Kids\",\n                    quality: \"80\",\n                    loading: \"lazy\"\n                  })\n                ]),\n                _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                  _createVNode(_component_HeadlineTwo, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\" Here are few things that you should know about Business Health Insurance. \")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Business Health Insurance is guaranteed issue.\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"You have to have at least one emplyee to Qualify for coverage.\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"You are required to contribute to your employees premiums.\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"You do not have to want until your anniversary date to change your coverage.\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  })\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n      } else {\n        return [\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                _createVNode(_component_NuxtImg, {\n                  format: \"webp\",\n                  src: \"/images/Group-Health-Insurance-Excerpt.jpg\",\n                  sizes: \"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\",\n                  alt: \"Happy Kids\",\n                  quality: \"80\",\n                  loading: \"lazy\"\n                })\n              ]),\n              _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                _createVNode(_component_HeadlineTwo, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" Here are few things that you should know about Business Health Insurance. \")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_BasicList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Business Health Insurance is guaranteed issue.\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"You have to have at least one emplyee to Qualify for coverage.\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"You are required to contribute to your employees premiums.\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"You do not have to want until your anniversary date to change your coverage.\")\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                })\n              ])\n            ]),\n            _: 1\n          })\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/GroupHealthPage/HowDoesBusinessHealthInsuranceWorkSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251141431,
+      "end": 1761251141435,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/HowDoesBusinessHealthInsuranceWorkSection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/HowDoesBusinessHealthInsuranceWorkSection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/Group-Health-Insurance-Excerpt.jpg\"\n          sizes=\"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          loading=\"lazy\"\n        />\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n        <ParagraphDescription>\n          Here are few things that you should know about Business Health\n          Insurance.\n        </ParagraphDescription>\n        <BasicList>\n          <ListItems>Business Health Insurance is guaranteed issue.</ListItems>\n          <ListItems\n            >You have to have at least one emplyee to Qualify for\n            coverage.</ListItems\n          >\n          <ListItems\n            >You are required to contribute to your employees\n            premiums.</ListItems\n          >\n          <ListItems\n            >You do not have to want until your anniversary date to change your\n            coverage.</ListItems\n          >\n        </BasicList>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline: \"How Does Business Health Insurance Work?\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n    };\n  },\n};\n</script>"
+        ],
+        "mappings": ";AAwCA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC/B,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAClB,CAAC;EACD,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACrI,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACpD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CA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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/HowDoesBusinessHealthInsuranceWorkSection.vue\").then(r => r.default))",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141435,
+      "end": 1761251141435,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141435,
+      "end": 1761251141436,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141435,
+      "end": 1761251141436,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141436,
+      "end": 1761251141436,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141436,
+      "end": 1761251141436,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141436,
+      "end": 1761251141436,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141436,
+      "end": 1761251141436,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141436,
+      "end": 1761251141436,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141436,
+      "end": 1761251141436,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141436,
+      "end": 1761251141436,
+      "order": "normal"
+    }
+  ]
+}

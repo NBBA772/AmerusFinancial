@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/AnnuitiesInsuranceFrequentlyAskedQuestions.vue?vue&type=style&index=0&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.slide-enter-active,\n.slide-leave-active {\n  transition: height 0.5s ease;\n}\n.slide-enter,\n.slide-leave-to {\n  height: 0;\n  overflow: hidden;\n}\n.accordion {\n  border: 1px solid #ccc;\n  margin-bottom: 1rem;\n}\n\n.accordion-item {\n  border-bottom: 1px solid #ccc;\n}\n\n.accordion-header {\n  cursor: pointer;\n  padding: 1rem;\n}\n\n.accordion-body {\n  padding: 1rem;\n}\n",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/AnnuitiesInsuranceFrequentlyAskedQuestions.vue"
+        ],
+        "names": [],
+        "mappings": ";AAgEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AAC9B;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACrB;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AAC/B;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACf;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACf",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/AnnuitiesInsuranceFrequentlyAskedQuestions.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"text-center\">\n      <HeadlineTwo>Frequently Asked Questions</HeadlineTwo>\n    </div>\n    <div class=\"accordion\">\n      <div>\n        <div class=\"accordion-item\" v-for=\"(item, index) in items\" :key=\"index\">\n          <ParagraphDescription\n            class=\"accordion-header font-extrabold\"\n            @click=\"toggleItem(index)\"\n          >\n            {{ item.title }}\n          </ParagraphDescription>\n          <Transition name=\"slide\">\n            <div\n              class=\"accordion-body bg-blue-100\"\n              :class=\"{ hidden: !isActive(index) }\"\n            >\n              {{ item.content }}\n            </div>\n          </Transition>\n        </div>\n      </div>\n    </div>\n  </BasicSection>\n</template>\n\n\n<script>\nexport default {\n  name: \"HealthcareFrequentlyAskedQuestions\",\n  props: {\n    items: {\n      type: Array,\n      required: true,\n    },\n    active: {\n      type: Number,\n      default: null,\n    },\n  },\n  data() {\n    return {\n      activeItem: this.active,\n    };\n  },\n  methods: {\n    toggleItem(index) {\n      if (this.activeItem === index) {\n        this.activeItem = null; // Close the currently open item\n      } else {\n        this.activeItem = index; // Open the clicked item\n      }\n    },\n    isActive(index) {\n      return this.activeItem === index;\n    },\n  },\n};\n</script>\n\n\n<style>\n.slide-enter-active,\n.slide-leave-active {\n  transition: height 0.5s ease;\n}\n.slide-enter,\n.slide-leave-to {\n  height: 0;\n  overflow: hidden;\n}\n.accordion {\n  border: 1px solid #ccc;\n  margin-bottom: 1rem;\n}\n\n.accordion-item {\n  border-bottom: 1px solid #ccc;\n}\n\n.accordion-header {\n  cursor: pointer;\n  padding: 1rem;\n}\n\n.accordion-body {\n  padding: 1rem;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160519,
+      "end": 1761251160519,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160519,
+      "end": 1761251160519,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251160519,
+      "end": 1761251160519,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251160519,
+      "end": 1761251160519,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".slide-enter-active,.slide-leave-active{transition:height .5s ease}.slide-enter,.slide-leave-to{height:0;overflow:hidden}.accordion{border:1px solid #ccc;margin-bottom:1rem}.accordion-item{border-bottom:1px solid #ccc}.accordion-header{cursor:pointer;padding:1rem}.accordion-body{padding:1rem}",
+      "start": 1761251160519,
+      "end": 1761251160558,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/AnnuitiesInsuranceFrequentlyAskedQuestions.vue",
+        "mappings": "AACA,wCAEE,0BACF,CACA,6BAEE,QAAS,CACT,eACF,CACA,WACE,qBAAsB,CACtB,kBACF,CAEA,gBACE,4BACF,CAEA,kBACE,cAAe,CACf,YACF,CAEA,gBACE,YACF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/AnnuitiesInsuranceFrequentlyAskedQuestions.vue"
+        ],
+        "sourcesContent": [
+          "\n.slide-enter-active,\n.slide-leave-active {\n  transition: height 0.5s ease;\n}\n.slide-enter,\n.slide-leave-to {\n  height: 0;\n  overflow: hidden;\n}\n.accordion {\n  border: 1px solid #ccc;\n  margin-bottom: 1rem;\n}\n\n.accordion-item {\n  border-bottom: 1px solid #ccc;\n}\n\n.accordion-header {\n  cursor: pointer;\n  padding: 1rem;\n}\n\n.accordion-body {\n  padding: 1rem;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251160558,
+      "end": 1761251160558,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251160559,
+      "end": 1761251160559,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251160584,
+      "end": 1761251160584,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".slide-enter-active,.slide-leave-active{transition:height .5s ease}.slide-enter,.slide-leave-to{height:0;overflow:hidden}.accordion{border:1px solid #ccc;margin-bottom:1rem}.accordion-item{border-bottom:1px solid #ccc}.accordion-header{cursor:pointer;padding:1rem}.accordion-body{padding:1rem}",
+      "start": 1761251160587,
+      "end": 1761251160590,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/AnnuitiesInsuranceFrequentlyAskedQuestions.vue",
+        "mappings": "AAAA,wCAAwC,0BAA0B,CAAC,6BAA6B,QAAQ,CAAC,eAAe,CAAC,WAAW,qBAAqB,CAAC,kBAAkB,CAAC,gBAAgB,4BAA4B,CAAC,kBAAkB,cAAc,CAAC,YAAY,CAAC,gBAAgB,YAAY",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/AnnuitiesInsuranceFrequentlyAskedQuestions.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251160590,
+      "end": 1761251160590,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160590,
+      "end": 1761251160590,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160590,
+      "end": 1761251160590,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251160591,
+      "end": 1761251160591,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251160591,
+      "end": 1761251160591,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251160591,
+      "end": 1761251160591,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160591,
+      "end": 1761251160591,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251160592,
+      "end": 1761251160619,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251160653,
+      "end": 1761251160653,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251160655,
+      "end": 1761251160655,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251160656,
+      "end": 1761251160656,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251160656,
+      "end": 1761251160656,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251160657,
+      "end": 1761251160657,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251160657,
+      "end": 1761251160657,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251160657,
+      "end": 1761251160657,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251160657,
+      "end": 1761251160657,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251160657,
+      "end": 1761251160657,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251160658,
+      "end": 1761251160658,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251160658,
+      "end": 1761251160658,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251160690,
+      "end": 1761251160691,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251160690,
+      "end": 1761251160691,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251160693,
+      "end": 1761251160693,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251160694,
+      "end": 1761251160694,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251160695,
+      "end": 1761251160695,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251160695,
+      "end": 1761251160695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251160695,
+      "end": 1761251160695,
+      "order": "normal"
+    }
+  ]
+}

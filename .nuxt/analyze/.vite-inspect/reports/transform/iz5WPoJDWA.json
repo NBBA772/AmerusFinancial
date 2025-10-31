@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/Benefits.vue?nuxt_component=async&nuxt_component_name=Benefits",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"space-y-6\">\n\n\n    <!-- Benefits Grid -->\n    <div\n      class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4\"\n    >\n      <div\n        v-for=\"benefit in benefits\"\n        :key=\"benefit\"\n        class=\"flex items-center gap-3 p-4 rounded-xl border bg-white backdrop-blur-sm shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300\"\n      >\n        <div\n          class=\"flex items-center justify-center w-10 h-10 rounded-full bg-[#30BCFE]/10 text-[#30BCFE]\"\n        >\n          <Icon name=\"lucide:check\" size=\"22\" />\n        </div>\n        <p class=\"leading-snug text-foreground font-medium\">\n          {{ benefit }}\n        </p>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script setup>\nimport { toRef } from 'vue'\n\nconst props = defineProps({\n  /** Required: array of benefit strings to render */\n  benefits: {\n    type: Array,\n    required: true,\n  },\n})\n\nconst benefits = toRef(props, 'benefits')\n</script>\n",
+      "start": 1761251023761,
+      "end": 1761251023836,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023836,
+      "end": 1761251023836,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023836,
+      "end": 1761251023836,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023836,
+      "end": 1761251023836,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023836,
+      "end": 1761251023836,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023836,
+      "end": 1761251023836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023836,
+      "end": 1761251023836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023836,
+      "end": 1761251023836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023837,
+      "end": 1761251023837,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString } from \"vue\"\n\nconst _hoisted_1 = { class: \"space-y-6\" }\nconst _hoisted_2 = { class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4\" }\nconst _hoisted_3 = { class: \"flex items-center justify-center w-10 h-10 rounded-full bg-[#30BCFE]/10 text-[#30BCFE]\" }\nconst _hoisted_4 = { class: \"leading-snug text-foreground font-medium\" }\n\nimport { toRef } from 'vue'\n\n\nconst _sfc_main = {\n  __name: 'Benefits',\n  props: {\n  /** Required: array of benefit strings to render */\n  benefits: {\n    type: Array,\n    required: true,\n  },\n},\n  setup(__props) {\n\nconst props = __props\n\nconst benefits = toRef(props, 'benefits')\n\nreturn (_ctx, _cache) => {\n  const _component_Icon = _resolveComponent(\"Icon\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(benefits.value, (benefit) => {\n        return (_openBlock(), _createElementBlock(\"div\", {\n          key: benefit,\n          class: \"flex items-center gap-3 p-4 rounded-xl border bg-white backdrop-blur-sm shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300\"\n        }, [\n          _createElementVNode(\"div\", _hoisted_3, [\n            _createVNode(_component_Icon, {\n              name: \"lucide:check\",\n              size: \"22\"\n            })\n          ]),\n          _createElementVNode(\"p\", _hoisted_4, _toDisplayString(benefit), 1)\n        ]))\n      }), 128))\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1761251023837,
+      "end": 1761251023838,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023838,
+      "end": 1761251023838,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/Benefits.vue\").then(r => r.default))",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/Benefits.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023839,
+      "end": 1761251023839,
+      "order": "normal"
+    }
+  ]
+}

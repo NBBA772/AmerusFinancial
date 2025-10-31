@@ -1,0 +1,233 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhyAmerus.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString } from \"vue\"\n\nconst _hoisted_1 = {\n  class: \"py-16 bg-white\",\n  \"aria-labelledby\": \"value-props\"\n}\nconst _hoisted_2 = { class: \"container mx-auto px-4\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"text-center mb-12\" }, [\n  /*#__PURE__*/_createElementVNode(\"h2\", {\n    id: \"value-props\",\n    class: \"text-3xl md:text-4xl font-bold\"\n  }, \" Why Amerus \")\n], -1)\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-3 gap-8\" }\nconst _hoisted_5 = { class: \"text-xl font-semibold mb-3\" }\nconst _hoisted_6 = { class: \"text-gray-600\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'WhyAmerus',\n  setup(__props) {\n\nconst values = [\n  {\n    title: \"Expert Guidance\",\n    description:\n      \"Licensed advisors who tailor coverage by audience and risk profile—so you get what you need, not what you don’t.\",\n  },\n  {\n    title: \"Whole-Portfolio Coverage\",\n    description:\n      \"From group benefits & commercial lines to personal insurance and Medicare, we coordinate it all.\",\n  },\n  {\n    title: \"Local & Responsive\",\n    description:\n      \"Based in Lakeland, FL with fast quotes, proactive reviews, and clear communication.\",\n  },\n];\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        (_openBlock(), _createElementBlock(_Fragment, null, _renderList(values, (item, i) => {\n          return _createElementVNode(\"div\", {\n            key: i,\n            class: \"rounded-lg border bg-white shadow-sm p-6 text-center transition-all duration-300 hover:shadow-lg\"\n          }, [\n            _createElementVNode(\"h3\", _hoisted_5, _toDisplayString(item.title), 1),\n            _createElementVNode(\"p\", _hoisted_6, _toDisplayString(item.description), 1)\n          ])\n        }), 64))\n      ])\n    ])\n  ]))\n}\n}\n\n})",
+      "start": 1761251028370,
+      "end": 1761251028370
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251028371,
+      "end": 1761251028371,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251028372,
+      "end": 1761251028372,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251028372,
+      "end": 1761251028372,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251028372,
+      "end": 1761251028372,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251028372,
+      "end": 1761251028372,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString } from \"vue\";\nconst _hoisted_1 = {\n  class: \"py-16 bg-white\",\n  \"aria-labelledby\": \"value-props\"\n};\nconst _hoisted_2 = { class: \"container mx-auto px-4\" };\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"div\", { class: \"text-center mb-12\" }, [\n  /* @__PURE__ */ _createElementVNode(\"h2\", {\n    id: \"value-props\",\n    class: \"text-3xl md:text-4xl font-bold\"\n  }, \" Why Amerus \")\n], -1);\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-3 gap-8\" };\nconst _hoisted_5 = { class: \"text-xl font-semibold mb-3\" };\nconst _hoisted_6 = { class: \"text-gray-600\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"WhyAmerus\",\n  setup(__props) {\n    const values = [\n      {\n        title: \"Expert Guidance\",\n        description: \"Licensed advisors who tailor coverage by audience and risk profile—so you get what you need, not what you don’t.\"\n      },\n      {\n        title: \"Whole-Portfolio Coverage\",\n        description: \"From group benefits & commercial lines to personal insurance and Medicare, we coordinate it all.\"\n      },\n      {\n        title: \"Local & Responsive\",\n        description: \"Based in Lakeland, FL with fast quotes, proactive reviews, and clear communication.\"\n      }\n    ];\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _hoisted_3,\n          _createElementVNode(\"div\", _hoisted_4, [\n            (_openBlock(), _createElementBlock(_Fragment, null, _renderList(values, (item, i) => {\n              return _createElementVNode(\"div\", {\n                key: i,\n                class: \"rounded-lg border bg-white shadow-sm p-6 text-center transition-all duration-300 hover:shadow-lg\"\n              }, [\n                _createElementVNode(\"h3\", _hoisted_5, _toDisplayString(item.title), 1),\n                _createElementVNode(\"p\", _hoisted_6, _toDisplayString(item.description), 1)\n              ]);\n            }), 64))\n          ])\n        ])\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251028372,
+      "end": 1761251029204,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhyAmerus.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString } from \"vue\"\n\nconst _hoisted_1 = {\n  class: \"py-16 bg-white\",\n  \"aria-labelledby\": \"value-props\"\n}\nconst _hoisted_2 = { class: \"container mx-auto px-4\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"text-center mb-12\" }, [\n  /*#__PURE__*/_createElementVNode(\"h2\", {\n    id: \"value-props\",\n    class: \"text-3xl md:text-4xl font-bold\"\n  }, \" Why Amerus \")\n], -1)\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-3 gap-8\" }\nconst _hoisted_5 = { class: \"text-xl font-semibold mb-3\" }\nconst _hoisted_6 = { class: \"text-gray-600\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'WhyAmerus',\n  setup(__props) {\n\nconst values = [\n  {\n    title: \"Expert Guidance\",\n    description:\n      \"Licensed advisors who tailor coverage by audience and risk profile—so you get what you need, not what you don’t.\",\n  },\n  {\n    title: \"Whole-Portfolio Coverage\",\n    description:\n      \"From group benefits & commercial lines to personal insurance and Medicare, we coordinate it all.\",\n  },\n  {\n    title: \"Local & Responsive\",\n    description:\n      \"Based in Lakeland, FL with fast quotes, proactive reviews, and clear communication.\",\n  },\n];\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        (_openBlock(), _createElementBlock(_Fragment, null, _renderList(values, (item, i) => {\n          return _createElementVNode(\"div\", {\n            key: i,\n            class: \"rounded-lg border bg-white shadow-sm p-6 text-center transition-all duration-300 hover:shadow-lg\"\n          }, [\n            _createElementVNode(\"h3\", _hoisted_5, _toDisplayString(item.title), 1),\n            _createElementVNode(\"p\", _hoisted_6, _toDisplayString(item.description), 1)\n          ])\n        }), 64))\n      ])\n    ])\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,sBAAsB,qBAAqB,cAAc,aAAa,YAAY,WAAW,aAAa,YAAY,sBAAsB,qBAAqB,mBAAmB,wBAAwB;AAErN,MAAM,aAAa;AAAA,EACjB,OAAO;AAAA,EACP,mBAAmB;AACrB;AACA,MAAM,aAAa,EAAE,OAAO,yBAAyB;AACrD,MAAM,aAA0B,oCAAoB,OAAO,EAAE,OAAO,oBAAoB,GAAG;AAAA,EAC5E,oCAAoB,MAAM;AAAA,IACrC,IAAI;AAAA,IACJ,OAAO;AAAA,EACT,GAAG,cAAc;AACnB,GAAG,EAAE;AACL,MAAM,aAAa,EAAE,OAAO,wCAAwC;AACpE,MAAM,aAAa,EAAE,OAAO,6BAA6B;AACzD,MAAM,aAAa,EAAE,OAAO,gBAAgB;AAG5C,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAEjB,UAAM,SAAS;AAAA,MACb;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,MACJ;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,MACJ;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,MACJ;AAAA,IACF;AAEA,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,WAAW,GAAG,oBAAoB,WAAW,YAAY;AAAA,QAC/D,oBAAoB,OAAO,YAAY;AAAA,UACrC;AAAA,UACA,oBAAoB,OAAO,YAAY;AAAA,aACpC,WAAW,GAAG,oBAAoB,WAAW,MAAM,YAAY,QAAQ,CAAC,MAAM,MAAM;AACnF,qBAAO,oBAAoB,OAAO;AAAA,gBAChC,KAAK;AAAA,gBACL,OAAO;AAAA,cACT,GAAG;AAAA,gBACD,oBAAoB,MAAM,YAAY,iBAAiB,KAAK,KAAK,GAAG,CAAC;AAAA,gBACrE,oBAAoB,KAAK,YAAY,iBAAiB,KAAK,WAAW,GAAG,CAAC;AAAA,cAC5E,CAAC;AAAA,YACH,CAAC,GAAG,EAAE;AAAA,UACR,CAAC;AAAA,QACH,CAAC;AAAA,MACH,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029204,
+      "end": 1761251029204,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029204,
+      "end": 1761251029204,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029204,
+      "end": 1761251029204,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029204,
+      "end": 1761251029204,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029204,
+      "end": 1761251029204,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029204,
+      "end": 1761251029204,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029204,
+      "end": 1761251029204,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029204,
+      "end": 1761251029205,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029205,
+      "end": 1761251029205,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029205,
+      "end": 1761251029205,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029205,
+      "end": 1761251029205,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029205,
+      "end": 1761251029205,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029205,
+      "end": 1761251029205,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029205,
+      "end": 1761251029205,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029205,
+      "end": 1761251029205,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029205,
+      "end": 1761251029205,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029205,
+      "end": 1761251029205,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029205,
+      "end": 1761251029206,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029206,
+      "end": 1761251029206,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029206,
+      "end": 1761251029206,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029206,
+      "end": 1761251029207,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029207,
+      "end": 1761251029207,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029207,
+      "end": 1761251029207,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029207,
+      "end": 1761251029207,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029207,
+      "end": 1761251029207,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251029207,
+      "end": 1761251029207,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029207,
+      "end": 1761251029207,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029207,
+      "end": 1761251029207,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029207,
+      "end": 1761251029207,
+      "order": "normal"
+    }
+  ]
+}

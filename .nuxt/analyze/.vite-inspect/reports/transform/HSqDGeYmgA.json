@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/VariableAnnuitySection.vue?nuxt_component=async&nuxt_component_name=VariableAnnuitySection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"p-4 sm:p-8\">\n      <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n      <ParagraphDescription>\n        {{ IntroText.description }}\n      </ParagraphDescription>\n    </div>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n      IntroText: {\n        Headline: \"Variable Annuity\",\n        description:\n          \"This type of annuity’s interest rate is tied to another fund, such as the S&P 500. It’s a lot riskier, but you can end up with more returns and still get some protecting regarding your principal. Your income is still tax-deferred, and you still have a minimum monthly guarantee. In some cases, you can also take some cash, and you can assign a death benefit to your relatives.\",\n      },\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>",
+      "start": 1761251023511,
+      "end": 1761251023611,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023611,
+      "end": 1761251023611,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023611,
+      "end": 1761251023611,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023611,
+      "end": 1761251023611,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023611,
+      "end": 1761251023611,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023611,
+      "end": 1761251023611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023611,
+      "end": 1761251023611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023611,
+      "end": 1761251023611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023611,
+      "end": 1761251023611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n      IntroText: {\n        Headline: \"Variable Annuity\",\n        description:\n          \"This type of annuity’s interest rate is tied to another fund, such as the S&P 500. It’s a lot riskier, but you can end up with more returns and still get some protecting regarding your principal. Your income is still tax-deferred, and you still have a minimum monthly guarantee. In some cases, you can also take some cash, and you can assign a death benefit to your relatives.\",\n      },\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n\nimport { toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"p-4 sm:p-8\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _createVNode(_component_HeadlineTwo, null, {\n          default: _withCtx(() => [\n            _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n          ]),\n          _: 1\n        }),\n        _createVNode(_component_ParagraphDescription, null, {\n          default: _withCtx(() => [\n            _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n          ]),\n          _: 1\n        })\n      ])\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251023611,
+      "end": 1761251023612,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023612,
+      "end": 1761251023612,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023612,
+      "end": 1761251023612,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023612,
+      "end": 1761251023612,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023612,
+      "end": 1761251023612,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/VariableAnnuitySection.vue\").then(r => r.default))",
+      "start": 1761251023612,
+      "end": 1761251023613,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/VariableAnnuitySection.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023613,
+      "end": 1761251023613,
+      "order": "normal"
+    }
+  ]
+}

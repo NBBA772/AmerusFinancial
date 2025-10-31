@@ -1,0 +1,1 @@
+import{_ as s}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o as n,c,a as e,_ as o}from"./entry.Cl9EbFL9.js";const r={},a={class:"text-4xl font-bold dark:text-white"},_={class:"dark:text-white"};function l(t,d){return n(),c("section",null,[e("h1",a,[o(t.$slots,"default")]),e("div",_,[o(t.$slots,"description")])])}const m=s(r,[["render",l]]);export{m as default};

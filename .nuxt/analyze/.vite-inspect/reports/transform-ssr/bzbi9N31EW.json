@@ -1,0 +1,304 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/layouts/default.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport Navbar from \"~/components/layout/navbar.vue\";\nimport TheFooter from \"~~/components/layout/TheFooter.vue\";\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'default',\n  __ssrInlineRender: true,\n  setup(__props) {\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"\" }, _attrs))}>`)\n  _push(_ssrRenderComponent(Navbar, null, null, _parent))\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(_ssrRenderComponent(TheFooter, null, null, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
+      "start": 1761251179074,
+      "end": 1761251179074,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/layouts/default.vue"
+        ],
+        "sourcesContent": [
+          "<script setup lang=\"ts\">\nimport Navbar from \"~/components/layout/navbar.vue\";\nimport TheFooter from \"~~/components/layout/TheFooter.vue\";\n</script>\n\n<template>\n  <div class=\"\">\n    <!-- <HeaderCTA /> -->\n    <Navbar />\n    <slot />\n    <TheFooter />\n  </div>\n</template>"
+        ],
+        "names": [],
+        "mappings": ";;;;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;;;;;AAFnC;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251179074,
+      "end": 1761251179074,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251179074,
+      "end": 1761251179074,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251179074,
+      "end": 1761251179074,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251179074,
+      "end": 1761251179074,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251179074,
+      "end": 1761251179074,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251179074,
+      "end": 1761251179074,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251179074,
+      "end": 1761251179074,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251179074,
+      "end": 1761251179074,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251179074,
+      "end": 1761251179074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport Navbar from \"~/components/layout/navbar.vue\";\nimport TheFooter from \"~~/components/layout/TheFooter.vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"default\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"\" }, _attrs))}>`);\n      _push(_ssrRenderComponent(Navbar, null, null, _parent));\n      _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent);\n      _push(_ssrRenderComponent(TheFooter, null, null, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
+      "start": 1761251179074,
+      "end": 1761251179141,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/layouts/default.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport Navbar from \"~/components/layout/navbar.vue\";\nimport TheFooter from \"~~/components/layout/TheFooter.vue\";\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'default',\n  __ssrInlineRender: true,\n  setup(__props) {\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"\" }, _attrs))}>`)\n  _push(_ssrRenderComponent(Navbar, null, null, _parent))\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(_ssrRenderComponent(TheFooter, null, null, _parent))\n  _push(`</div>`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,cAAc,mBAAmB;AAC1C,SAAS,sBAAsB,qBAAqB,iBAAiB,gBAAgB,kBAAkB,uBAAuB;AAE9H,OAAO,YAAY;AACnB,OAAO,eAAe;AAEtB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,MAAM,SAAS;AAGjB,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,OAAO,gBAAgB,YAAY,EAAE,OAAO,GAAG,GAAG,MAAM,CAAC,CAAC,GAAG;AACnE,YAAM,oBAAoB,QAAQ,MAAM,MAAM,OAAO,CAAC;AACtD,qBAAe,KAAK,QAAQ,WAAW,CAAC,GAAG,MAAM,OAAO,OAAO;AAC/D,YAAM,oBAAoB,WAAW,MAAM,MAAM,OAAO,CAAC;AACzD,YAAM,QAAQ;AAAA,IAChB;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251179141,
+      "end": 1761251179141,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251179141,
+      "end": 1761251179141,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251179141,
+      "end": 1761251179141,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251179141,
+      "end": 1761251179141,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251179141,
+      "end": 1761251179141,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251179141,
+      "end": 1761251179141,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251179141,
+      "end": 1761251179141,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251179141,
+      "end": 1761251179141,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251179141,
+      "end": 1761251179141,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251179141,
+      "end": 1761251179141,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251179141,
+      "end": 1761251179146,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251179146,
+      "end": 1761251179146,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251179146,
+      "end": 1761251179146,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251179146,
+      "end": 1761251179146,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251179146,
+      "end": 1761251179146,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251179146,
+      "end": 1761251179146,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251179146,
+      "end": 1761251179146,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251179146,
+      "end": 1761251179146,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251179146,
+      "end": 1761251179146,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251179146,
+      "end": 1761251179146,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251179146,
+      "end": 1761251179146,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251179147,
+      "end": 1761251179147,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251179157,
+      "end": 1761251179157,
+      "order": "normal"
+    }
+  ]
+}

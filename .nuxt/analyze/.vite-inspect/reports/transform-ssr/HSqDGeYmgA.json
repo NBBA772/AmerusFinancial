@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/VariableAnnuitySection.vue?nuxt_component=async&nuxt_component_name=VariableAnnuitySection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"p-4 sm:p-8\">\n      <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n      <ParagraphDescription>\n        {{ IntroText.description }}\n      </ParagraphDescription>\n    </div>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n      IntroText: {\n        Headline: \"Variable Annuity\",\n        description:\n          \"This type of annuity’s interest rate is tied to another fund, such as the S&P 500. It’s a lot riskier, but you can end up with more returns and still get some protecting regarding your principal. Your income is still tax-deferred, and you still have a minimum monthly guarantee. In some cases, you can also take some cash, and you can assign a death benefit to your relatives.\",\n      },\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>",
+      "start": 1761251141030,
+      "end": 1761251141257,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141257,
+      "end": 1761251141257,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n      IntroText: {\n        Headline: \"Variable Annuity\",\n        description:\n          \"This type of annuity’s interest rate is tied to another fund, such as the S&P 500. It’s a lot riskier, but you can end up with more returns and still get some protecting regarding your principal. Your income is still tax-deferred, and you still have a minimum monthly guarantee. In some cases, you can also take some cash, and you can assign a death benefit to your relatives.\",\n      },\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n\n  _push(_ssrRenderComponent(_component_BasicSection, _mergeProps({ class: \"container mx-auto mt-20\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<div class=\"p-4 sm:p-8\"${_scopeId}>`)\n        _push(_ssrRenderComponent(_component_HeadlineTwo, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`${_ssrInterpolate($data.IntroText.Headline)}`)\n            } else {\n              return [\n                _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n        _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`${_ssrInterpolate($data.IntroText.description)}`)\n            } else {\n              return [\n                _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n        _push(`</div>`)\n      } else {\n        return [\n          _createVNode(\"div\", { class: \"p-4 sm:p-8\" }, [\n            _createVNode(_component_HeadlineTwo, null, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescription, null, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n              ]),\n              _: 1\n            })\n          ])\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/AnnuitiesPage/VariableAnnuitySection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251141257,
+      "end": 1761251141259,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/VariableAnnuitySection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/VariableAnnuitySection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"p-4 sm:p-8\">\n      <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n      <ParagraphDescription>\n        {{ IntroText.description }}\n      </ParagraphDescription>\n    </div>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n      IntroText: {\n        Headline: \"Variable Annuity\",\n        description:\n          \"This type of annuity’s interest rate is tied to another fund, such as the S&P 500. It’s a lot riskier, but you can end up with more returns and still get some protecting regarding your principal. Your income is still tax-deferred, and you still have a minimum monthly guarantee. In some cases, you can also take some cash, and you can assign a death benefit to your relatives.\",\n      },\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>"
+        ],
+        "mappings": ";AAYA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC/B,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAClB,CAAC;EACD,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;MACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACT,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;MAC9X,CAAC;IACH,CAAC;EACH,CAAC;EACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACR,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAClD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACP,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACxC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;MACb,EAAE,CAAC,CAAC,CAAC,EAAE;QACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;MACd;IACF,CAAC;EACH,CAAC;AACH,CAAC;;;;;;;;;;EAxCD,MAAA,6CAAA,cACgB,KAAK,EAAC,yBAAyB,IAD/C;IAAA,kBACE,CAOe;UARjB;QAAA,gCAAA;QAAA,MAAA;UAAA,kBAGM,CAAmD;gBAHzD;cAAA,SAAA,gBAGsB,eAAS,CAAC,QAAQ;;;gBAHxC,kCAGsB,eAAS,CAAC,QAAQ;;;;UAHxC,GAAA;;QAAA,MAAA;UAAA,kBAIM,CAEuB;gBAN7B;cAAA,SAAA,gBAKW,eAAS,CAAC,WAAW;;;gBALhC,kCAKW,eAAS,CAAC,WAAW;;;;UALhC,GAAA;;QAAA;;;UAEI,aAKM,SALD,KAAK,EAAC,YAAY;YACrB,aAAmD;cAHzD,kBAGmB,CAAwB;gBAH3C,kCAGsB,eAAS,CAAC,QAAQ;;cAHxC,GAAA;;YAIM,aAEuB;cAN7B,kBAKQ,CAA2B;gBALnC,kCAKW,eAAS,CAAC,WAAW;;cALhC,GAAA;;;;;;IAAA,GAAA"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/AnnuitiesPage/VariableAnnuitySection.vue\").then(r => r.default))",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141259,
+      "end": 1761251141259,
+      "order": "normal"
+    }
+  ]
+}

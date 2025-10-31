@@ -1,0 +1,294 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/Alert.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div\n    class=\"p-4 mt-4 mb-4 rounded-lg alert text-sm leading-relaxed\"\n    :class=\"[type]\"\n  >\n    <div class=\"flex items-start\">\n      <div\n        v-if=\"icon\"\n        :component=\"icon\"\n        class=\"inline-flex mr-2 w-5 h-5 justify-center items-center text-1.2rem\"\n      >\n        <!-- {{ icon }}  -->\n        <!-- <Icon class=\"w-5 h-5 text-yellow-400\" aria-hidden=\"true\" :name=\"icon\" /> -->\n        <Icon\n          class=\"w-5 h-5 text-yellow-400\"\n          aria-hidden=\"true\"\n          name=\"carbon:ai-status-complete\"\n        />\n      </div>\n      <slot />\n      <div class=\"flex-grow alert-content\">\n        <ContentSlot unwrap=\"p\">\n          <template>\n            <br />\n            <slot />\n          </template>\n        </ContentSlot>\n      </div>\n    </div>\n  </div>\n</template>\n<script setup lang=\"ts\">\ndefineProps({\n  icon: {\n    type: String,\n    default: \"heroicons-outline:exclamation\",\n  },\n  type: {\n    type: String,\n    default: \"info\",\n    validator(value: string) {\n      return [\"info\", \"success\", \"warning\", \"danger\"].includes(value);\n    },\n  },\n});\n</script>\n\n<style lang=\"postcss\" scoped>\n.alert {\n  &.success {\n    @apply bg-green-50 dark:bg-green-800 dark:bg-opacity-25 text-green-600 dark:text-green-200;\n    :deep(code) {\n      @apply bg-green-100 dark:bg-green-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-green-400 dark:border-green-700;\n      }\n    }\n  }\n  &.info {\n    @apply bg-blue-50 dark:bg-blue-800 dark:bg-opacity-25 text-blue-600 dark:text-blue-200;\n    :deep(code) {\n      @apply bg-blue-100 dark:bg-blue-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-blue-400 dark:border-blue-700;\n      }\n    }\n  }\n  &.warning {\n    @apply bg-yellow-50 dark:bg-yellow-800 dark:bg-opacity-25 text-yellow-600 dark:text-yellow-100;\n    :deep(code) {\n      @apply bg-yellow-100 dark:bg-yellow-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-yellow-400 dark:border-yellow-700;\n      }\n    }\n  }\n  &.danger {\n    @apply bg-red-50 dark:bg-red-800 dark:bg-opacity-25 text-red-600 dark:text-red-100;\n    :deep(code) {\n      @apply bg-red-100 dark:bg-red-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-red-400 dark:border-red-700;\n      }\n    }\n  }\n\n  :deep(strong) {\n    @apply font-semibold text-current;\n  }\n  a {\n    @apply underline border-none font-semibold text-current;\n    code {\n      @apply border border-transparent border-dashed;\n    }\n  }\n}\n\n.alert :deep(p) {\n  @apply m-0 !important;\n}\n\n.dark .alert {\n  :deep(a) {\n    @apply text-current;\n  }\n}\n</style>",
+      "start": 1761251142748,
+      "end": 1761251143013,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "result": "<template>\n  <div\n    class=\"p-4 mt-4 mb-4 rounded-lg alert text-sm leading-relaxed\"\n    :class=\"[type]\"\n  >\n    <div class=\"flex items-start\">\n      <div\n        v-if=\"icon\"\n        :component=\"icon\"\n        class=\"inline-flex mr-2 w-5 h-5 justify-center items-center text-1.2rem\"\n      >\n        <!-- {{ icon }}  -->\n        <!-- <Icon class=\"w-5 h-5 text-yellow-400\" aria-hidden=\"true\" :name=\"icon\" /> -->\n        <Icon\n          class=\"w-5 h-5 text-yellow-400\"\n          aria-hidden=\"true\"\n          name=\"carbon:ai-status-complete\"\n        />\n      </div>\n      <slot />\n      <div class=\"flex-grow alert-content\">\n        <MDCSlot unwrap=\"p\">\n          <template>\n            <br />\n            <slot />\n          </template>\n        </MDCSlot>\n      </div>\n    </div>\n  </div>\n</template>\n<script setup lang=\"ts\">\ndefineProps({\n  icon: {\n    type: String,\n    default: \"heroicons-outline:exclamation\",\n  },\n  type: {\n    type: String,\n    default: \"info\",\n    validator(value: string) {\n      return [\"info\", \"success\", \"warning\", \"danger\"].includes(value);\n    },\n  },\n});\n</script>\n\n<style lang=\"postcss\" scoped>\n.alert {\n  &.success {\n    @apply bg-green-50 dark:bg-green-800 dark:bg-opacity-25 text-green-600 dark:text-green-200;\n    :deep(code) {\n      @apply bg-green-100 dark:bg-green-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-green-400 dark:border-green-700;\n      }\n    }\n  }\n  &.info {\n    @apply bg-blue-50 dark:bg-blue-800 dark:bg-opacity-25 text-blue-600 dark:text-blue-200;\n    :deep(code) {\n      @apply bg-blue-100 dark:bg-blue-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-blue-400 dark:border-blue-700;\n      }\n    }\n  }\n  &.warning {\n    @apply bg-yellow-50 dark:bg-yellow-800 dark:bg-opacity-25 text-yellow-600 dark:text-yellow-100;\n    :deep(code) {\n      @apply bg-yellow-100 dark:bg-yellow-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-yellow-400 dark:border-yellow-700;\n      }\n    }\n  }\n  &.danger {\n    @apply bg-red-50 dark:bg-red-800 dark:bg-opacity-25 text-red-600 dark:text-red-100;\n    :deep(code) {\n      @apply bg-red-100 dark:bg-red-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-red-400 dark:border-red-700;\n      }\n    }\n  }\n\n  :deep(strong) {\n    @apply font-semibold text-current;\n  }\n  a {\n    @apply underline border-none font-semibold text-current;\n    code {\n      @apply border border-transparent border-dashed;\n    }\n  }\n}\n\n.alert :deep(p) {\n  @apply m-0 !important;\n}\n\n.dark .alert {\n  :deep(a) {\n    @apply text-current;\n  }\n}\n</style>",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "pre",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "content-slot",
+      "result": "<template>\n  <div\n    class=\"p-4 mt-4 mb-4 rounded-lg alert text-sm leading-relaxed\"\n    :class=\"[type]\"\n  >\n    <div class=\"flex items-start\">\n      <div\n        v-if=\"icon\"\n        :component=\"icon\"\n        class=\"inline-flex mr-2 w-5 h-5 justify-center items-center text-1.2rem\"\n      >\n        <!-- {{ icon }}  -->\n        <!-- <Icon class=\"w-5 h-5 text-yellow-400\" aria-hidden=\"true\" :name=\"icon\" /> -->\n        <Icon\n          class=\"w-5 h-5 text-yellow-400\"\n          aria-hidden=\"true\"\n          name=\"carbon:ai-status-complete\"\n        />\n      </div>\n      <slot />\n      <div class=\"flex-grow alert-content\">\n        <MDCSlot unwrap=\"p\">\n          <template>\n            <br />\n            <slot />\n          </template>\n        </MDCSlot>\n      </div>\n    </div>\n  </div>\n</template>\n<script setup lang=\"ts\">\ndefineProps({\n  icon: {\n    type: String,\n    default: \"heroicons-outline:exclamation\",\n  },\n  type: {\n    type: String,\n    default: \"info\",\n    validator(value: string) {\n      return [\"info\", \"success\", \"warning\", \"danger\"].includes(value);\n    },\n  },\n});\n</script>\n\n<style lang=\"postcss\" scoped>\n.alert {\n  &.success {\n    @apply bg-green-50 dark:bg-green-800 dark:bg-opacity-25 text-green-600 dark:text-green-200;\n    :deep(code) {\n      @apply bg-green-100 dark:bg-green-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-green-400 dark:border-green-700;\n      }\n    }\n  }\n  &.info {\n    @apply bg-blue-50 dark:bg-blue-800 dark:bg-opacity-25 text-blue-600 dark:text-blue-200;\n    :deep(code) {\n      @apply bg-blue-100 dark:bg-blue-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-blue-400 dark:border-blue-700;\n      }\n    }\n  }\n  &.warning {\n    @apply bg-yellow-50 dark:bg-yellow-800 dark:bg-opacity-25 text-yellow-600 dark:text-yellow-100;\n    :deep(code) {\n      @apply bg-yellow-100 dark:bg-yellow-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-yellow-400 dark:border-yellow-700;\n      }\n    }\n  }\n  &.danger {\n    @apply bg-red-50 dark:bg-red-800 dark:bg-opacity-25 text-red-600 dark:text-red-100;\n    :deep(code) {\n      @apply bg-red-100 dark:bg-red-900 dark:bg-opacity-50 shadow-none text-current;\n    }\n    a:hover {\n      code {\n        @apply border-red-400 dark:border-red-700;\n      }\n    }\n  }\n\n  :deep(strong) {\n    @apply font-semibold text-current;\n  }\n  a {\n    @apply underline border-none font-semibold text-current;\n    code {\n      @apply border border-transparent border-dashed;\n    }\n  }\n}\n\n.alert :deep(p) {\n  @apply m-0 !important;\n}\n\n.dark .alert {\n  :deep(a) {\n    @apply text-current;\n  }\n}\n</style>",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "pre",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251143014,
+      "end": 1761251143014,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/Alert.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/Alert.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/Alert.vue?vue&type=style&index=0&scoped=f9a37643&lang.postcss\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"components/content/Alert.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-f9a37643\"]]);\n",
+      "start": 1761251143014,
+      "end": 1761251143119,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251143119,
+      "end": 1761251143119,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143119,
+      "end": 1761251143119,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143119,
+      "end": 1761251143119,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143119,
+      "end": 1761251143119,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143119,
+      "end": 1761251143119,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251143119,
+      "end": 1761251143120,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143120,
+      "end": 1761251143120,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251143120,
+      "end": 1761251143125,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "normal"
+    }
+  ]
+}

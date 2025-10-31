@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/ResourceCard.vue?nuxt_component=async&nuxt_component_name=ResourceCard",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\ndefineProps<{\n  title: string\n  description: string\n  link: string\n  icon: string\n  features?: string[]\n  isNew?: boolean\n}>()\n</script>\n\n<template>\n  <div class=\"rounded-lg bg-card text-card-foreground flex flex-col h-full border-2 border-primary/50 shadow-lg\">\n    <div class=\"flex flex-col space-y-1.5 p-6 pb-2\">\n      <div class=\"flex items-center gap-2 mb-2\">\n        <div class=\"p-2 rounded-full bg-primary/10\">\n          <Icon :name=\"icon\" class=\"h-16 w-16\" />\n        </div>\n        <h3 class=\"font-semibold tracking-tight text-lg\">\n          {{ title }}\n          <span v-if=\"isNew\" class=\"ml-2 text-xs font-normal text-white bg-primary px-2 py-0.5 rounded-full\">New</span>\n        </h3>\n      </div>\n      <p class=\"text-muted-foreground text-sm mb-1\">{{ description }}</p>\n      <div v-if=\"features?.length\" class=\"grid grid-cols-2 gap-2 mt-3 text-xs\">\n        <div v-for=\"feature in features\" :key=\"feature\" class=\"flex items-center gap-1\">\n          <Icon name=\"lucide:circle-check\" class=\"h-5 w-5 text-green-500\" />\n          <span>{{ feature }}</span>\n        </div>\n      </div>\n    </div>\n    <div class=\"flex items-center p-6 pt-0 mt-auto\">\n      <a :href=\"link\" class=\"justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#30BCFE] text-white hover:bg-[#30BCFE]/80 h-10 px-4 py-2 w-full flex items-center gap-2\">\n        <Icon :name=\"icon\" class=\"h-4 w-4 mr-2\" />\n        <span>View Guide</span>\n      </a>\n    </div>\n  </div>\n</template>\n",
+      "start": 1761251023478,
+      "end": 1761251023599,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023599,
+      "end": 1761251023599,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023599,
+      "end": 1761251023599,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023599,
+      "end": 1761251023599,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023599,
+      "end": 1761251023599,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023599,
+      "end": 1761251023599,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023599,
+      "end": 1761251023599,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023599,
+      "end": 1761251023599,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023599,
+      "end": 1761251023599,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/ResourceCard.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/ResourceCard.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761251023599,
+      "end": 1761251023638,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023638,
+      "end": 1761251023638,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023638,
+      "end": 1761251023638,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023638,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/ResourceCard.vue\").then(r => r.default))",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023639,
+      "end": 1761251023639,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023639,
+      "end": 1761251023640,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023640,
+      "end": 1761251023640,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/ResourceCard.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023640,
+      "end": 1761251023640,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023640,
+      "end": 1761251023640,
+      "order": "normal"
+    }
+  ]
+}

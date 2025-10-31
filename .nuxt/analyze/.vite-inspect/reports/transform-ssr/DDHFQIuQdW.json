@@ -1,0 +1,304 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/search.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport QuestionBoard from \"~/components/elements/QuestionBoard.vue\";\nimport DashboardSidebar from \"~~/components/elements/DashboardSidebar.vue\";\nimport Tiptap from \"~~/components/elements/Tiptap.vue\";\n</script>\n \n <template>\n  <PatternSection>\n    <div class=\"h-32 flex justify-center\">\n      <div class=\"flex m-5\">\n        <!-- <img\n          class=\"mx-auto h-24 w-auto\"\n          src=\"/img/logo.png\"\n          alt=\"full stack jack logo\"\n        /> -->\n        <h1\n          class=\"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\"\n        >\n          Search Questions\n        </h1>\n      </div>\n    </div>\n    <div class=\"md:flex min-h-full\">\n      <DashboardSidebar />\n      <QuestionBoard />\n    </div>\n  </PatternSection>\n</template>",
+      "start": 1761251148808,
+      "end": 1761251148974,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251148974,
+      "end": 1761251148975,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251148974,
+      "end": 1761251148975,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251148975,
+      "end": 1761251148975,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251148975,
+      "end": 1761251148975,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251148975,
+      "end": 1761251148975,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251148975,
+      "end": 1761251148975,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251148975,
+      "end": 1761251148975,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251148975,
+      "end": 1761251148975,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251148975,
+      "end": 1761251148975,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251148975,
+      "end": 1761251148975,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251148975,
+      "end": 1761251148975,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251148975,
+      "end": 1761251148975,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/search.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/search.vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"pages/dashboard/search.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
+      "start": 1761251148975,
+      "end": 1761251149496,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251149500,
+      "end": 1761251149500,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251149500,
+      "end": 1761251149501,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251149500,
+      "end": 1761251149501,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251149501,
+      "end": 1761251149501,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251149501,
+      "end": 1761251149501,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251149501,
+      "end": 1761251149504,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251149504,
+      "end": 1761251149507,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251149508,
+      "end": 1761251149511,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251149511,
+      "end": 1761251149511,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251149511,
+      "end": 1761251149512,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251149512,
+      "end": 1761251149512,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251149512,
+      "end": 1761251149512,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251149512,
+      "end": 1761251149513,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251149513,
+      "end": 1761251149514,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251149514,
+      "end": 1761251149514,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251149514,
+      "end": 1761251149514,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251149514,
+      "end": 1761251149518,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251149514,
+      "end": 1761251149518,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251149518,
+      "end": 1761251149519,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251149519,
+      "end": 1761251149519,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251149519,
+      "end": 1761251149519,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251149519,
+      "end": 1761251149525,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251149519,
+      "end": 1761251149525,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251149525,
+      "end": 1761251149525,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251149525,
+      "end": 1761251149525,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "export { default } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/search.vue?macro=true&vue&type=script&setup=true&lang.ts\"",
+      "start": 1761251149525,
+      "end": 1761251149526,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA"
+      }
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "export { default } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/search.vue?macro=true&vue&type=script&setup=true&lang.ts\"",
+      "start": 1761251149525,
+      "end": 1761251149526,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA"
+      }
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251149526,
+      "end": 1761251149526,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251149526,
+      "end": 1761251149527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251149527,
+      "end": 1761251149527,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251149527,
+      "end": 1761251149531,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251149531,
+      "end": 1761251149531,
+      "order": "normal"
+    }
+  ]
+}

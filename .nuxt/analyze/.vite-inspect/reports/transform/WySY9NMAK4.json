@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GroupHealthPage/DeterminingTheCostOfYourGroupHealthInsuranceCoverageSection.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"px-4 sm:px-8\">\n      <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n      <BasicList>\n        <ListItems\n          ><strong>The size of your group:</strong> Insurance works by the law\n          of the large numbers. The larger your group the better chance you will\n          receive lower rates. That is why some small groups may be better off\n          to join an organization like NBBA to take advantage of group buynig\n          power.</ListItems\n        >\n        <ListItems\n          ><strong>The health of your group:</strong> Even though your business\n          cannot be turned down for pre-existing conditiong there is a chance\n          that you may qualify for better rates if your employees are relatively\n          healthy.</ListItems\n        >\n        <ListItems\n          ><strong>The location of your group:</strong> Each state and region\n          may have different ratings based on a of community rating\n          factors.</ListItems\n        >\n        <ListItems\n          ><strong>The age of your group:</strong> The average age of your group\n          will have a major roll to play inn determing the overall cost of your\n          insurance coverage.</ListItems\n        >\n      </BasicList>\n    </div>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline:\n          \"There are some important factors in determining the cost of your group health insurance coverage.\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n    };\n  },\n};\n</script>",
+      "start": 1761251024639,
+      "end": 1761251024714,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024714,
+      "end": 1761251024714,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024714,
+      "end": 1761251024714,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024714,
+      "end": 1761251024714,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024714,
+      "end": 1761251024714,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024714,
+      "end": 1761251024714,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024714,
+      "end": 1761251024714,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024714,
+      "end": 1761251024714,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024714,
+      "end": 1761251024714,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline:\n          \"There are some important factors in determining the cost of your group health insurance coverage.\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n    };\n  },\n};\n\nimport { toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"px-4 sm:px-8\" }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"strong\", null, \"The size of your group:\", -1)\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"strong\", null, \"The health of your group:\", -1)\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"strong\", null, \"The location of your group:\", -1)\nconst _hoisted_5 = /*#__PURE__*/_createElementVNode(\"strong\", null, \"The age of your group:\", -1)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ListItems = _resolveComponent(\"ListItems\")\n  const _component_BasicList = _resolveComponent(\"BasicList\")\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _createVNode(_component_HeadlineTwo, null, {\n          default: _withCtx(() => [\n            _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n          ]),\n          _: 1\n        }),\n        _createVNode(_component_BasicList, null, {\n          default: _withCtx(() => [\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _hoisted_2,\n                _createTextVNode(\" Insurance works by the law of the large numbers. The larger your group the better chance you will receive lower rates. That is why some small groups may be better off to join an organization like NBBA to take advantage of group buynig power.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _hoisted_3,\n                _createTextVNode(\" Even though your business cannot be turned down for pre-existing conditiong there is a chance that you may qualify for better rates if your employees are relatively healthy.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _hoisted_4,\n                _createTextVNode(\" Each state and region may have different ratings based on a of community rating factors.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _hoisted_5,\n                _createTextVNode(\" The average age of your group will have a major roll to play inn determing the overall cost of your insurance coverage.\")\n              ]),\n              _: 1\n            })\n          ]),\n          _: 1\n        })\n      ])\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251024714,
+      "end": 1761251024715,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024715,
+      "end": 1761251024715,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024715,
+      "end": 1761251024716,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024716,
+      "end": 1761251024716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024716,
+      "end": 1761251024716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024716,
+      "end": 1761251024716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024716,
+      "end": 1761251024716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/HeadlineTwo.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/ListItems.vue\";\nimport { default as __nuxt_component_2 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/BasicList.vue\";\nimport { default as __nuxt_component_3 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/containers/BasicSection.vue\";\n\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline:\n          \"There are some important factors in determining the cost of your group health insurance coverage.\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n    };\n  },\n};\n\nimport { toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"px-4 sm:px-8\" }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"strong\", null, \"The size of your group:\", -1)\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"strong\", null, \"The health of your group:\", -1)\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"strong\", null, \"The location of your group:\", -1)\nconst _hoisted_5 = /*#__PURE__*/_createElementVNode(\"strong\", null, \"The age of your group:\", -1)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_HeadlineTwo = __nuxt_component_0\n  const _component_ListItems = __nuxt_component_1\n  const _component_BasicList = __nuxt_component_2\n  const _component_BasicSection = __nuxt_component_3\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _createVNode(_component_HeadlineTwo, null, {\n          default: _withCtx(() => [\n            _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n          ]),\n          _: 1\n        }),\n        _createVNode(_component_BasicList, null, {\n          default: _withCtx(() => [\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _hoisted_2,\n                _createTextVNode(\" Insurance works by the law of the large numbers. The larger your group the better chance you will receive lower rates. That is why some small groups may be better off to join an organization like NBBA to take advantage of group buynig power.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _hoisted_3,\n                _createTextVNode(\" Even though your business cannot be turned down for pre-existing conditiong there is a chance that you may qualify for better rates if your employees are relatively healthy.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _hoisted_4,\n                _createTextVNode(\" Each state and region may have different ratings based on a of community rating factors.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ListItems, null, {\n              default: _withCtx(() => [\n                _hoisted_5,\n                _createTextVNode(\" The average age of your group will have a major roll to play inn determing the overall cost of your insurance coverage.\")\n              ]),\n              _: 1\n            })\n          ]),\n          _: 1\n        })\n      ])\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251024716,
+      "end": 1761251024716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024716,
+      "end": 1761251024716,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024716,
+      "end": 1761251024716,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024716,
+      "end": 1761251024716,
+      "order": "normal"
+    }
+  ]
+}

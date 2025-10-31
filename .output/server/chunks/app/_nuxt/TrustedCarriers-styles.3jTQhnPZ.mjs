@@ -1,0 +1,6 @@
+const TrustedCarriers_vue_vue_type_style_index_0_scoped_a37e67f6_lang = ".logos[data-v-a37e67f6]{overflow:hidden;position:relative}.fade-overlay[data-v-a37e67f6]{height:100%;pointer-events:none;position:absolute;top:0;width:80px;z-index:10}.fade-overlay.left[data-v-a37e67f6]{background:linear-gradient(90deg,hsla(0,0%,100%,.8),transparent);left:0}.fade-overlay.right[data-v-a37e67f6]{background:linear-gradient(270deg,hsla(0,0%,100%,.8),transparent);right:0}.dark .fade-overlay.left[data-v-a37e67f6]{background:linear-gradient(90deg,rgba(3,7,18,.8),transparent)}.dark .fade-overlay.right[data-v-a37e67f6]{background:linear-gradient(270deg,rgba(3,7,18,.8),transparent)}.logo-list[data-v-a37e67f6]{display:flex;transition:transform .5s linear;white-space:nowrap;will-change:transform}.logo-item[data-v-a37e67f6],.logo-list[data-v-a37e67f6]{flex:0 0 auto}";
+
+const TrustedCarriersStyles_3jTQhnPZ = [TrustedCarriers_vue_vue_type_style_index_0_scoped_a37e67f6_lang];
+
+export { TrustedCarriersStyles_3jTQhnPZ as default };
+//# sourceMappingURL=TrustedCarriers-styles.3jTQhnPZ.mjs.map

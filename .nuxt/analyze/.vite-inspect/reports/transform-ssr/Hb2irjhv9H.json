@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HealthInsurancePage/HealthInsuranceServicesHeroSection.vue?vue&type=style&index=0&scoped=2f484637&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n",
+      "start": 1761251160965,
+      "end": 1761251160965,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HealthInsurancePage/HealthInsuranceServicesHeroSection.vue"
+        ],
+        "names": [],
+        "mappings": ";AAmDA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACf,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACtE",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HealthInsurancePage/HealthInsuranceServicesHeroSection.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <!-- <NuxtImg\n          format=\"webp\"\n          src=\"/images/charter-bus.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n        /> -->\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/healthcare-bg.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\"\n          class=\"full-width-height\"\n        />\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          {{ IntroText.Heading }}\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero>\n          {{ IntroText.Description }}\n        </ParagraphDescriptionHero>\n        <IndividualFamilyHealthInsuranceQuoteForm\n          tag=\"IndividualFamilyHealthInsuranceQuote\"\n        />\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Affordable Health Insurance Made Simple\",\n        Description:\n          \"Guaranteed lowes rates, Comprenhensive plans. Multiple carriers to choose from.\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160974,
+      "end": 1761251160974,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160974,
+      "end": 1761251160974,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160974,
+      "end": 1761251160974,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160974,
+      "end": 1761251160974,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160975,
+      "end": 1761251160975,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160975,
+      "end": 1761251160975,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251160975,
+      "end": 1761251160975,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251160976,
+      "end": 1761251160976,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".image-container{height:100%;overflow:hidden;width:100%}.full-width-height{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}",
+      "start": 1761251160977,
+      "end": 1761251161008,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HealthInsurancePage/HealthInsuranceServicesHeroSection.vue",
+        "mappings": "AACA,iBAEE,WAAY,CACZ,eAAgB,CAFhB,UAGF,CAEA,mBAEE,WAAY,CACZ,mBAAiB,CAAjB,gBAAiB,CAFjB,UAGF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HealthInsurancePage/HealthInsuranceServicesHeroSection.vue"
+        ],
+        "sourcesContent": [
+          "\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251161008,
+      "end": 1761251161008,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251161008,
+      "end": 1761251161008,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251161008,
+      "end": 1761251161008,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".image-container[data-v-2f484637]{height:100%;overflow:hidden;width:100%}.full-width-height[data-v-2f484637]{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}",
+      "start": 1761251161009,
+      "end": 1761251161032,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HealthInsurancePage/HealthInsuranceServicesHeroSection.vue",
+        "mappings": "AAAA,kCAAiB,WAAW,CAAC,eAAe,CAAC,UAAU,CAAC,oCAAmB,WAAW,CAAC,mBAAmB,CAAC,gBAAgB,CAAC,UAAU",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HealthInsurancePage/HealthInsuranceServicesHeroSection.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251161032,
+      "end": 1761251161033,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161033,
+      "end": 1761251161033,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161033,
+      "end": 1761251161033,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251161033,
+      "end": 1761251161033,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251161033,
+      "end": 1761251161033,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251161033,
+      "end": 1761251161042,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161042,
+      "end": 1761251161042,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251161042,
+      "end": 1761251161042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251161042,
+      "end": 1761251161047,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".image-container[data-v-2f484637]{height:100%;overflow:hidden;width:100%}.full-width-height[data-v-2f484637]{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}\"",
+      "start": 1761251161048,
+      "end": 1761251161048,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251161048,
+      "end": 1761251161048,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251161048,
+      "end": 1761251161048,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251161048,
+      "end": 1761251161048,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251161071,
+      "end": 1761251161071,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251161082,
+      "end": 1761251161082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251161082,
+      "end": 1761251161082,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251161082,
+      "end": 1761251161082,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251161082,
+      "end": 1761251161082,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251161083,
+      "end": 1761251161083,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251161083,
+      "end": 1761251161083,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251161083,
+      "end": 1761251161083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251161083,
+      "end": 1761251161083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251161083,
+      "end": 1761251161123,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251161143,
+      "end": 1761251161143,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251161143,
+      "end": 1761251161143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251161143,
+      "end": 1761251161143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251161143,
+      "end": 1761251161143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251161143,
+      "end": 1761251161143,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251161144,
+      "end": 1761251161144,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251161144,
+      "end": 1761251161144,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251161144,
+      "end": 1761251161144,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251161149,
+      "end": 1761251161164,
+      "order": "normal"
+    }
+  ]
+}

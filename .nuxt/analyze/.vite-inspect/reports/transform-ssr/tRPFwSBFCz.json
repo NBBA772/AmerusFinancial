@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/SeniorSolutionsSection.vue?nuxt_component=async&nuxt_component_name=SeniorSolutionsSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/Senior-Solutions.jpg\"\n          sizes=\"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          loading=\"lazy\"\n        />\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n        <ParagraphDescription>\n          {{ IntroText.description }}\n        </ParagraphDescription>\n        <div\n          class=\"flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4\"\n        >\n          <NuxtLink\n            to=\"/senior-solutions/\"\n            class=\"text-slate-100 hover:text-slate-300 dark:hover:text-slate-100 dark:text-slate-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-amber-800 bg-blue-400 hover:bg-blue-800 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mr-2 mb-2\"\n          >\n            Learn More\n          </NuxtLink>\n        </div>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline:\n          \"Empowering Your Retirement Journey: Personalized Support and Guidance for Seniors\",\n        description:\n          \"Embark on your retirement journey with confidence with our dedicated Senior Solutions. At Amerus Financial, we understand the importance of ensuring your golden years are worry-free and fulfilling. From navigating the complexities of Medicare to securing long-term care coverage, our personalized support is tailored to meet your specific needs and goals. Let us be your partner in planning for a secure and prosperous retirement, providing expert guidance and support every step of the way.\",\n      },\n    };\n  },\n};\n</script>",
+      "start": 1761251141354,
+      "end": 1761251141653,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141653,
+      "end": 1761251141653,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141653,
+      "end": 1761251141653,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141653,
+      "end": 1761251141653,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141653,
+      "end": 1761251141653,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141654,
+      "end": 1761251141654,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141654,
+      "end": 1761251141654,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141654,
+      "end": 1761251141654,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141654,
+      "end": 1761251141654,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141654,
+      "end": 1761251141654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141654,
+      "end": 1761251141654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141654,
+      "end": 1761251141654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141654,
+      "end": 1761251141654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline:\n          \"Empowering Your Retirement Journey: Personalized Support and Guidance for Seniors\",\n        description:\n          \"Embark on your retirement journey with confidence with our dedicated Senior Solutions. At Amerus Financial, we understand the importance of ensuring your golden years are worry-free and fulfilling. From navigating the complexities of Medicare to securing long-term care coverage, our personalized support is tailored to meet your specific needs and goals. Let us be your partner in planning for a secure and prosperous retirement, providing expert guidance and support every step of the way.\",\n      },\n    };\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n\n  _push(_ssrRenderComponent(_component_BasicSection, _mergeProps({ class: \"container mx-auto mt-20\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div class=\"px-4 sm:px-8\"${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_NuxtImg, {\n                format: \"webp\",\n                src: \"/images/Senior-Solutions.jpg\",\n                sizes: \"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\",\n                alt: \"Happy Kids\",\n                quality: \"80\",\n                loading: \"lazy\"\n              }, null, _parent, _scopeId))\n              _push(`</div><div class=\"px-4 sm:px-8\"${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_HeadlineTwo, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.Headline)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.description)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`<div class=\"flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4\"${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_NuxtLink, {\n                to: \"/senior-solutions/\",\n                class: \"text-slate-100 hover:text-slate-300 dark:hover:text-slate-100 dark:text-slate-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-amber-800 bg-blue-400 hover:bg-blue-800 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mr-2 mb-2\"\n              }, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(` Learn More `)\n                  } else {\n                    return [\n                      _createTextVNode(\" Learn More \")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div></div>`)\n            } else {\n              return [\n                _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                  _createVNode(_component_NuxtImg, {\n                    format: \"webp\",\n                    src: \"/images/Senior-Solutions.jpg\",\n                    sizes: \"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\",\n                    alt: \"Happy Kids\",\n                    quality: \"80\",\n                    loading: \"lazy\"\n                  })\n                ]),\n                _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                  _createVNode(_component_HeadlineTwo, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(\"div\", { class: \"flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4\" }, [\n                    _createVNode(_component_NuxtLink, {\n                      to: \"/senior-solutions/\",\n                      class: \"text-slate-100 hover:text-slate-300 dark:hover:text-slate-100 dark:text-slate-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-amber-800 bg-blue-400 hover:bg-blue-800 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mr-2 mb-2\"\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\" Learn More \")\n                      ]),\n                      _: 1\n                    })\n                  ])\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n      } else {\n        return [\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                _createVNode(_component_NuxtImg, {\n                  format: \"webp\",\n                  src: \"/images/Senior-Solutions.jpg\",\n                  sizes: \"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\",\n                  alt: \"Happy Kids\",\n                  quality: \"80\",\n                  loading: \"lazy\"\n                })\n              ]),\n              _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                _createVNode(_component_HeadlineTwo, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(\"div\", { class: \"flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4\" }, [\n                  _createVNode(_component_NuxtLink, {\n                    to: \"/senior-solutions/\",\n                    class: \"text-slate-100 hover:text-slate-300 dark:hover:text-slate-100 dark:text-slate-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-amber-800 bg-blue-400 hover:bg-blue-800 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mr-2 mb-2\"\n                  }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\" Learn More \")\n                    ]),\n                    _: 1\n                  })\n                ])\n              ])\n            ]),\n            _: 1\n          })\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/HomePage/SeniorSolutionsSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251141654,
+      "end": 1761251141660,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/SeniorSolutionsSection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/SeniorSolutionsSection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/Senior-Solutions.jpg\"\n          sizes=\"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          loading=\"lazy\"\n        />\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n        <ParagraphDescription>\n          {{ IntroText.description }}\n        </ParagraphDescription>\n        <div\n          class=\"flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4\"\n        >\n          <NuxtLink\n            to=\"/senior-solutions/\"\n            class=\"text-slate-100 hover:text-slate-300 dark:hover:text-slate-100 dark:text-slate-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-amber-800 bg-blue-400 hover:bg-blue-800 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mr-2 mb-2\"\n          >\n            Learn More\n          </NuxtLink>\n        </div>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline:\n          \"Empowering Your Retirement Journey: Personalized Support and Guidance for Seniors\",\n        description:\n          \"Embark on your retirement journey with confidence with our dedicated Senior Solutions. At Amerus Financial, we understand the importance of ensuring your golden years are worry-free and fulfilling. From navigating the complexities of Medicare to securing long-term care coverage, our personalized support is tailored to meet your specific needs and goals. Let us be your partner in planning for a secure and prosperous retirement, providing expert guidance and support every step of the way.\",\n      },\n    };\n  },\n};\n</script>"
+        ],
+        "mappings": ";AAkCA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC/B,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAClB,CAAC;EACD,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACrI,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACN,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACrF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CA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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141660,
+      "end": 1761251141660,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141660,
+      "end": 1761251141660,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141660,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/SeniorSolutionsSection.vue\").then(r => r.default))",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141661,
+      "end": 1761251141661,
+      "order": "normal"
+    }
+  ]
+}

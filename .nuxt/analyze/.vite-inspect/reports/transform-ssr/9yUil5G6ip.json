@@ -1,0 +1,304 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/MultiStepForm.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderClass as _ssrRenderClass, ssrIncludeBooleanAttr as _ssrIncludeBooleanAttr, ssrLooseContain as _ssrLooseContain, ssrLooseEqual as _ssrLooseEqual, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport { ref } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'MultiStepForm',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst currentStep = ref(1)\n\nconst formData = ref({\n  insuranceType: '',\n  fullName: '',\n  email: '',\n  phone: '',\n})\n\nconst nextStep = () => {\n  if (currentStep.value < 3) currentStep.value++\n}\nconst prevStep = () => {\n  if (currentStep.value > 1) currentStep.value--\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"bg-white rounded-xl shadow-lg max-w-3xl mx-auto\" }, _attrs))}><div class=\"bg-[#30BCFE] py-3 px-4 rounded-t-xl\"><h2 class=\"text-lg font-medium text-white text-center\"> Start Your Quote </h2></div><div class=\"p-6 bg-card text-card-foreground rounded-b-xl shadow-inner\"><div class=\"flex items-center justify-between mb-8\"><div class=\"flex space-x-2\"><!--[-->`)\n  _ssrRenderList(3, (step) => {\n    _push(`<div class=\"${\n      _ssrRenderClass([\n              'flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium',\n              currentStep.value === step\n                ? 'bg-[#30BCFE] text-white'\n                : 'bg-gray-200 text-gray-600'\n            ])\n    }\">${\n      _ssrInterpolate(step)\n    }</div>`)\n  })\n  _push(`<!--]--></div><div class=\"text-sm text-gray-500\">Step ${\n    _ssrInterpolate(currentStep.value)\n  } of 3</div></div><form action=\"https://formsubmit.co/rudolfgiessen@amerusfinancial.com\" method=\"POST\"><input type=\"hidden\" name=\"_subject\" value=\"New Insurance Quote Request\"><input type=\"hidden\" name=\"_template\" value=\"table\"><input type=\"hidden\" name=\"_captcha\" value=\"false\"><input type=\"hidden\" name=\"_autoresponse\" value=\"Thank you for requesting a quote from Amerus Financial. One of our insurance professionals will contact you shortly to discuss your options.\"><input type=\"hidden\" name=\"_next\" value=\"/thank-you\"><input type=\"hidden\" name=\"form_type\" value=\"quote\"><div style=\"${\n    _ssrRenderStyle((currentStep.value === 1) ? null : { display: \"none\" })\n  }\" class=\"space-y-6\"><h2 class=\"text-xl font-semibold\">I am seeking coverage for</h2><div class=\"space-y-2\"><label for=\"insuranceType\" class=\"text-sm font-medium\">Insurance Type</label><select name=\"insuranceType\" class=\"flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2\"><option value=\"\" disabled${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"\"))) ? \" selected\" : \"\"\n  }>Select insurance type</option><option value=\"Health\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Health\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Health\"))) ? \" selected\" : \"\"\n  }>Health Insurance</option><option value=\"Life\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Life\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Life\"))) ? \" selected\" : \"\"\n  }>Life Insurance</option><option value=\"Auto\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Auto\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Auto\"))) ? \" selected\" : \"\"\n  }>Auto Insurance</option><option value=\"Home\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Home\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Home\"))) ? \" selected\" : \"\"\n  }>Home Insurance</option><option value=\"Business\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Business\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Business\"))) ? \" selected\" : \"\"\n  }>Business Insurance</option><option value=\"Medicare\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Medicare\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Medicare\"))) ? \" selected\" : \"\"\n  }>Medicare Solutions</option><option value=\"RetirementPlanning\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"RetirementPlanning\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"RetirementPlanning\"))) ? \" selected\" : \"\"\n  }>Retirement Planning</option></select></div><div class=\"pt-4 flex justify-end\"><button type=\"button\" class=\"inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium bg-[#30BCFE] text-white px-4 py-2 hover:bg-[#30BCFE]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\"> Get Started <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 12h14m-7-7l7 7-7 7\"></path></svg></button></div><p class=\"text-muted\" style=\"${\n    _ssrRenderStyle({\"margin\":\".5rem 0 0\",\"font-size\":\".9rem\"})\n  }\">No obligation • Fast response • Licensed agents</p></div><div style=\"${\n    _ssrRenderStyle((currentStep.value === 2) ? null : { display: \"none\" })\n  }\" class=\"space-y-6\"><h2 class=\"text-xl font-semibold\">Your Contact Information</h2><div class=\"space-y-2\"><label class=\"text-sm font-medium\">Full Name</label><input type=\"text\"${\n    _ssrRenderAttr(\"value\", formData.value.fullName)\n  } name=\"fullName\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\"></div><div class=\"space-y-2\"><label class=\"text-sm font-medium\">Email</label><input type=\"email\"${\n    _ssrRenderAttr(\"value\", formData.value.email)\n  } name=\"email\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\"></div><div class=\"space-y-2\"><label class=\"text-sm font-medium\">Phone</label><input type=\"tel\"${\n    _ssrRenderAttr(\"value\", formData.value.phone)\n  } name=\"phone\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\"></div><div class=\"pt-4 flex justify-between\"><button type=\"button\" class=\"px-4 py-2 rounded-md border bg-gray-100 text-gray-600\">Back</button><button type=\"button\" class=\"bg-[#30BCFE] text-white px-4 py-2 rounded-md\">Continue</button></div></div><div style=\"${\n    _ssrRenderStyle((currentStep.value === 3) ? null : { display: \"none\" })\n  }\" class=\"space-y-6\"><h2 class=\"text-xl font-semibold\">Review &amp; Submit</h2><p><strong>Insurance Type:</strong> ${\n    _ssrInterpolate(formData.value.insuranceType)\n  }</p><p><strong>Full Name:</strong> ${\n    _ssrInterpolate(formData.value.fullName)\n  }</p><p><strong>Email:</strong> ${\n    _ssrInterpolate(formData.value.email)\n  }</p><p><strong>Phone:</strong> ${\n    _ssrInterpolate(formData.value.phone)\n  }</p><div class=\"pt-4 flex justify-between\"><button type=\"button\" class=\"px-4 py-2 rounded-md border bg-gray-100 text-gray-600\">Back</button><button type=\"submit\" class=\"bg-[#30BCFE] text-white px-4 py-2 rounded-md\">Submit</button></div></div></form></div></div>`)\n}\n}\n\n})",
+      "start": 1761251161532,
+      "end": 1761251161532,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/MultiStepForm.vue"
+        ],
+        "sourcesContent": [
+          "<!-- File: components/MultiStepForm.vue -->\n<script setup lang=\"ts\">\nimport { ref } from 'vue'\n\nconst currentStep = ref(1)\n\nconst formData = ref({\n  insuranceType: '',\n  fullName: '',\n  email: '',\n  phone: '',\n})\n\nconst nextStep = () => {\n  if (currentStep.value < 3) currentStep.value++\n}\nconst prevStep = () => {\n  if (currentStep.value > 1) currentStep.value--\n}\n</script>\n\n<template>\n  <div class=\"bg-white rounded-xl shadow-lg max-w-3xl mx-auto\">\n    <!-- Header -->\n    <div class=\"bg-[#30BCFE] py-3 px-4 rounded-t-xl\">\n      <h2 class=\"text-lg font-medium text-white text-center\">\n        Start Your Quote\n      </h2>\n    </div>\n\n    <div class=\"p-6 bg-card text-card-foreground rounded-b-xl shadow-inner\">\n      <!-- Step indicators -->\n      <div class=\"flex items-center justify-between mb-8\">\n        <div class=\"flex space-x-2\">\n          <div\n            v-for=\"step in 3\"\n            :key=\"step\"\n            :class=\"[\n              'flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium',\n              currentStep === step\n                ? 'bg-[#30BCFE] text-white'\n                : 'bg-gray-200 text-gray-600'\n            ]\"\n          >\n            {{ step }}\n          </div>\n        </div>\n        <div class=\"text-sm text-gray-500\">Step {{ currentStep }} of 3</div>\n      </div>\n    \n      <!--Need to make the form functional-->\n      <form\n        action=\"https://formsubmit.co/rudolfgiessen@amerusfinancial.com\"\n        method=\"POST\"\n      >\n        <!-- Hidden fields for FormSubmit -->\n        <input type=\"hidden\" name=\"_subject\" value=\"New Insurance Quote Request\" />\n        <input type=\"hidden\" name=\"_template\" value=\"table\" />\n        <input type=\"hidden\" name=\"_captcha\" value=\"false\" />\n        <input\n          type=\"hidden\"\n          name=\"_autoresponse\"\n          value=\"Thank you for requesting a quote from Amerus Financial. One of our insurance professionals will contact you shortly to discuss your options.\"\n        />\n        <input type=\"hidden\" name=\"_next\" value=\"/thank-you\" />\n        <input type=\"hidden\" name=\"form_type\" value=\"quote\" />\n\n        <!-- Step 1 -->\n        <div v-show=\"currentStep === 1\" class=\"space-y-6\">\n          <h2 class=\"text-xl font-semibold\">I am seeking coverage for</h2>\n\n          <div class=\"space-y-2\">\n            <label for=\"insuranceType\" class=\"text-sm font-medium\">Insurance Type</label>\n            <select\n              name=\"insuranceType\"\n              v-model=\"formData.insuranceType\"\n              class=\"flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2\"\n            >\n              <option value=\"\" disabled>Select insurance type</option>\n              <option value=\"Health\">Health Insurance</option>\n              <option value=\"Life\">Life Insurance</option>\n              <option value=\"Auto\">Auto Insurance</option>\n              <option value=\"Home\">Home Insurance</option>\n              <option value=\"Business\">Business Insurance</option>\n              <option value=\"Medicare\">Medicare Solutions</option>\n              <option value=\"RetirementPlanning\">Retirement Planning</option>\n            </select>\n          </div>\n\n          <div class=\"pt-4 flex justify-end\">\n            <button\n              type=\"button\"\n              @click=\"nextStep\"\n              class=\"inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium bg-[#30BCFE] text-white px-4 py-2 hover:bg-[#30BCFE]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\"\n            >\n              Get Started\n              <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 12h14m-7-7l7 7-7 7\"/>\n              </svg>\n            </button>\n          </div>\n          <p class=\"text-muted\" style=\"margin:.5rem 0 0; font-size:.9rem;\">No obligation • Fast response • Licensed agents</p>\n        </div>\n\n        <!-- Step 2 -->\n        <div v-show=\"currentStep === 2\" class=\"space-y-6\">\n          <h2 class=\"text-xl font-semibold\">Your Contact Information</h2>\n\n          <div class=\"space-y-2\">\n            <label class=\"text-sm font-medium\">Full Name</label>\n            <input type=\"text\" v-model=\"formData.fullName\" name=\"fullName\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\" />\n          </div>\n\n          <div class=\"space-y-2\">\n            <label class=\"text-sm font-medium\">Email</label>\n            <input type=\"email\" v-model=\"formData.email\" name=\"email\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\" />\n          </div>\n\n          <div class=\"space-y-2\">\n            <label class=\"text-sm font-medium\">Phone</label>\n            <input type=\"tel\" v-model=\"formData.phone\" name=\"phone\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\" />\n          </div>\n\n          <div class=\"pt-4 flex justify-between\">\n            <button type=\"button\" @click=\"prevStep\" class=\"px-4 py-2 rounded-md border bg-gray-100 text-gray-600\">Back</button>\n            <button type=\"button\" @click=\"nextStep\" class=\"bg-[#30BCFE] text-white px-4 py-2 rounded-md\">Continue</button>\n          </div>\n        </div>\n\n        <!-- Step 3 -->\n        <div v-show=\"currentStep === 3\" class=\"space-y-6\">\n          <h2 class=\"text-xl font-semibold\">Review & Submit</h2>\n          <p><strong>Insurance Type:</strong> {{ formData.insuranceType }}</p>\n          <p><strong>Full Name:</strong> {{ formData.fullName }}</p>\n          <p><strong>Email:</strong> {{ formData.email }}</p>\n          <p><strong>Phone:</strong> {{ formData.phone }}</p>\n\n          <div class=\"pt-4 flex justify-between\">\n            <button type=\"button\" @click=\"prevStep\" class=\"px-4 py-2 rounded-md border bg-gray-100 text-gray-600\">Back</button>\n            <button type=\"submit\" class=\"bg-[#30BCFE] text-white px-4 py-2 rounded-md\">Submit</button>\n          </div>\n        </div>\n      </form>\n    </div>\n  </div>\n</template>\n"
+        ],
+        "names": [],
+        "mappings": ";;;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzB;;;;;;AAFwB;AAGxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACZ,CAAC,CAAC;AACF;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChD,CAAC;AACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChD,CAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251161538,
+      "end": 1761251161538,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251161538,
+      "end": 1761251161538,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251161539,
+      "end": 1761251161539,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251161539,
+      "end": 1761251161539,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251161539,
+      "end": 1761251161539,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251161539,
+      "end": 1761251161539,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251161539,
+      "end": 1761251161539,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251161539,
+      "end": 1761251161539,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251161540,
+      "end": 1761251161540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderClass as _ssrRenderClass, ssrIncludeBooleanAttr as _ssrIncludeBooleanAttr, ssrLooseContain as _ssrLooseContain, ssrLooseEqual as _ssrLooseEqual, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nimport { ref } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MultiStepForm\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const currentStep = ref(1);\n    const formData = ref({\n      insuranceType: \"\",\n      fullName: \"\",\n      email: \"\",\n      phone: \"\"\n    });\n    const nextStep = () => {\n      if (currentStep.value < 3)\n        currentStep.value++;\n    };\n    const prevStep = () => {\n      if (currentStep.value > 1)\n        currentStep.value--;\n    };\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"bg-white rounded-xl shadow-lg max-w-3xl mx-auto\" }, _attrs))}><div class=\"bg-[#30BCFE] py-3 px-4 rounded-t-xl\"><h2 class=\"text-lg font-medium text-white text-center\"> Start Your Quote </h2></div><div class=\"p-6 bg-card text-card-foreground rounded-b-xl shadow-inner\"><div class=\"flex items-center justify-between mb-8\"><div class=\"flex space-x-2\"><!--[-->`);\n      _ssrRenderList(3, (step) => {\n        _push(`<div class=\"${_ssrRenderClass([\n          \"flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium\",\n          currentStep.value === step ? \"bg-[#30BCFE] text-white\" : \"bg-gray-200 text-gray-600\"\n        ])}\">${_ssrInterpolate(step)}</div>`);\n      });\n      _push(`<!--]--></div><div class=\"text-sm text-gray-500\">Step ${_ssrInterpolate(currentStep.value)} of 3</div></div><form action=\"https://formsubmit.co/rudolfgiessen@amerusfinancial.com\" method=\"POST\"><input type=\"hidden\" name=\"_subject\" value=\"New Insurance Quote Request\"><input type=\"hidden\" name=\"_template\" value=\"table\"><input type=\"hidden\" name=\"_captcha\" value=\"false\"><input type=\"hidden\" name=\"_autoresponse\" value=\"Thank you for requesting a quote from Amerus Financial. One of our insurance professionals will contact you shortly to discuss your options.\"><input type=\"hidden\" name=\"_next\" value=\"/thank-you\"><input type=\"hidden\" name=\"form_type\" value=\"quote\"><div style=\"${_ssrRenderStyle(currentStep.value === 1 ? null : { display: \"none\" })}\" class=\"space-y-6\"><h2 class=\"text-xl font-semibold\">I am seeking coverage for</h2><div class=\"space-y-2\"><label for=\"insuranceType\" class=\"text-sm font-medium\">Insurance Type</label><select name=\"insuranceType\" class=\"flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2\"><option value=\"\" disabled${_ssrIncludeBooleanAttr(Array.isArray(formData.value.insuranceType) ? _ssrLooseContain(formData.value.insuranceType, \"\") : _ssrLooseEqual(formData.value.insuranceType, \"\")) ? \" selected\" : \"\"}>Select insurance type</option><option value=\"Health\"${_ssrIncludeBooleanAttr(Array.isArray(formData.value.insuranceType) ? _ssrLooseContain(formData.value.insuranceType, \"Health\") : _ssrLooseEqual(formData.value.insuranceType, \"Health\")) ? \" selected\" : \"\"}>Health Insurance</option><option value=\"Life\"${_ssrIncludeBooleanAttr(Array.isArray(formData.value.insuranceType) ? _ssrLooseContain(formData.value.insuranceType, \"Life\") : _ssrLooseEqual(formData.value.insuranceType, \"Life\")) ? \" selected\" : \"\"}>Life Insurance</option><option value=\"Auto\"${_ssrIncludeBooleanAttr(Array.isArray(formData.value.insuranceType) ? _ssrLooseContain(formData.value.insuranceType, \"Auto\") : _ssrLooseEqual(formData.value.insuranceType, \"Auto\")) ? \" selected\" : \"\"}>Auto Insurance</option><option value=\"Home\"${_ssrIncludeBooleanAttr(Array.isArray(formData.value.insuranceType) ? _ssrLooseContain(formData.value.insuranceType, \"Home\") : _ssrLooseEqual(formData.value.insuranceType, \"Home\")) ? \" selected\" : \"\"}>Home Insurance</option><option value=\"Business\"${_ssrIncludeBooleanAttr(Array.isArray(formData.value.insuranceType) ? _ssrLooseContain(formData.value.insuranceType, \"Business\") : _ssrLooseEqual(formData.value.insuranceType, \"Business\")) ? \" selected\" : \"\"}>Business Insurance</option><option value=\"Medicare\"${_ssrIncludeBooleanAttr(Array.isArray(formData.value.insuranceType) ? _ssrLooseContain(formData.value.insuranceType, \"Medicare\") : _ssrLooseEqual(formData.value.insuranceType, \"Medicare\")) ? \" selected\" : \"\"}>Medicare Solutions</option><option value=\"RetirementPlanning\"${_ssrIncludeBooleanAttr(Array.isArray(formData.value.insuranceType) ? _ssrLooseContain(formData.value.insuranceType, \"RetirementPlanning\") : _ssrLooseEqual(formData.value.insuranceType, \"RetirementPlanning\")) ? \" selected\" : \"\"}>Retirement Planning</option></select></div><div class=\"pt-4 flex justify-end\"><button type=\"button\" class=\"inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium bg-[#30BCFE] text-white px-4 py-2 hover:bg-[#30BCFE]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\"> Get Started <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 12h14m-7-7l7 7-7 7\"></path></svg></button></div><p class=\"text-muted\" style=\"${_ssrRenderStyle({ \"margin\": \".5rem 0 0\", \"font-size\": \".9rem\" })}\">No obligation • Fast response • Licensed agents</p></div><div style=\"${_ssrRenderStyle(currentStep.value === 2 ? null : { display: \"none\" })}\" class=\"space-y-6\"><h2 class=\"text-xl font-semibold\">Your Contact Information</h2><div class=\"space-y-2\"><label class=\"text-sm font-medium\">Full Name</label><input type=\"text\"${_ssrRenderAttr(\"value\", formData.value.fullName)} name=\"fullName\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\"></div><div class=\"space-y-2\"><label class=\"text-sm font-medium\">Email</label><input type=\"email\"${_ssrRenderAttr(\"value\", formData.value.email)} name=\"email\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\"></div><div class=\"space-y-2\"><label class=\"text-sm font-medium\">Phone</label><input type=\"tel\"${_ssrRenderAttr(\"value\", formData.value.phone)} name=\"phone\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\"></div><div class=\"pt-4 flex justify-between\"><button type=\"button\" class=\"px-4 py-2 rounded-md border bg-gray-100 text-gray-600\">Back</button><button type=\"button\" class=\"bg-[#30BCFE] text-white px-4 py-2 rounded-md\">Continue</button></div></div><div style=\"${_ssrRenderStyle(currentStep.value === 3 ? null : { display: \"none\" })}\" class=\"space-y-6\"><h2 class=\"text-xl font-semibold\">Review &amp; Submit</h2><p><strong>Insurance Type:</strong> ${_ssrInterpolate(formData.value.insuranceType)}</p><p><strong>Full Name:</strong> ${_ssrInterpolate(formData.value.fullName)}</p><p><strong>Email:</strong> ${_ssrInterpolate(formData.value.email)}</p><p><strong>Phone:</strong> ${_ssrInterpolate(formData.value.phone)}</p><div class=\"pt-4 flex justify-between\"><button type=\"button\" class=\"px-4 py-2 rounded-md border bg-gray-100 text-gray-600\">Back</button><button type=\"submit\" class=\"bg-[#30BCFE] text-white px-4 py-2 rounded-md\">Submit</button></div></div></form></div></div>`);\n    };\n  }\n});\n",
+      "start": 1761251161540,
+      "end": 1761251164637,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/MultiStepForm.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderClass as _ssrRenderClass, ssrIncludeBooleanAttr as _ssrIncludeBooleanAttr, ssrLooseContain as _ssrLooseContain, ssrLooseEqual as _ssrLooseEqual, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport { ref } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'MultiStepForm',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst currentStep = ref(1)\n\nconst formData = ref({\n  insuranceType: '',\n  fullName: '',\n  email: '',\n  phone: '',\n})\n\nconst nextStep = () => {\n  if (currentStep.value < 3) currentStep.value++\n}\nconst prevStep = () => {\n  if (currentStep.value > 1) currentStep.value--\n}\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"bg-white rounded-xl shadow-lg max-w-3xl mx-auto\" }, _attrs))}><div class=\"bg-[#30BCFE] py-3 px-4 rounded-t-xl\"><h2 class=\"text-lg font-medium text-white text-center\"> Start Your Quote </h2></div><div class=\"p-6 bg-card text-card-foreground rounded-b-xl shadow-inner\"><div class=\"flex items-center justify-between mb-8\"><div class=\"flex space-x-2\"><!--[-->`)\n  _ssrRenderList(3, (step) => {\n    _push(`<div class=\"${\n      _ssrRenderClass([\n              'flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium',\n              currentStep.value === step\n                ? 'bg-[#30BCFE] text-white'\n                : 'bg-gray-200 text-gray-600'\n            ])\n    }\">${\n      _ssrInterpolate(step)\n    }</div>`)\n  })\n  _push(`<!--]--></div><div class=\"text-sm text-gray-500\">Step ${\n    _ssrInterpolate(currentStep.value)\n  } of 3</div></div><form action=\"https://formsubmit.co/rudolfgiessen@amerusfinancial.com\" method=\"POST\"><input type=\"hidden\" name=\"_subject\" value=\"New Insurance Quote Request\"><input type=\"hidden\" name=\"_template\" value=\"table\"><input type=\"hidden\" name=\"_captcha\" value=\"false\"><input type=\"hidden\" name=\"_autoresponse\" value=\"Thank you for requesting a quote from Amerus Financial. One of our insurance professionals will contact you shortly to discuss your options.\"><input type=\"hidden\" name=\"_next\" value=\"/thank-you\"><input type=\"hidden\" name=\"form_type\" value=\"quote\"><div style=\"${\n    _ssrRenderStyle((currentStep.value === 1) ? null : { display: \"none\" })\n  }\" class=\"space-y-6\"><h2 class=\"text-xl font-semibold\">I am seeking coverage for</h2><div class=\"space-y-2\"><label for=\"insuranceType\" class=\"text-sm font-medium\">Insurance Type</label><select name=\"insuranceType\" class=\"flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2\"><option value=\"\" disabled${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"\"))) ? \" selected\" : \"\"\n  }>Select insurance type</option><option value=\"Health\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Health\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Health\"))) ? \" selected\" : \"\"\n  }>Health Insurance</option><option value=\"Life\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Life\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Life\"))) ? \" selected\" : \"\"\n  }>Life Insurance</option><option value=\"Auto\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Auto\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Auto\"))) ? \" selected\" : \"\"\n  }>Auto Insurance</option><option value=\"Home\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Home\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Home\"))) ? \" selected\" : \"\"\n  }>Home Insurance</option><option value=\"Business\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Business\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Business\"))) ? \" selected\" : \"\"\n  }>Business Insurance</option><option value=\"Medicare\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"Medicare\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"Medicare\"))) ? \" selected\" : \"\"\n  }>Medicare Solutions</option><option value=\"RetirementPlanning\"${\n    (_ssrIncludeBooleanAttr((Array.isArray(formData.value.insuranceType))\n      ? _ssrLooseContain(formData.value.insuranceType, \"RetirementPlanning\")\n      : _ssrLooseEqual(formData.value.insuranceType, \"RetirementPlanning\"))) ? \" selected\" : \"\"\n  }>Retirement Planning</option></select></div><div class=\"pt-4 flex justify-end\"><button type=\"button\" class=\"inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium bg-[#30BCFE] text-white px-4 py-2 hover:bg-[#30BCFE]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\"> Get Started <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 12h14m-7-7l7 7-7 7\"></path></svg></button></div><p class=\"text-muted\" style=\"${\n    _ssrRenderStyle({\"margin\":\".5rem 0 0\",\"font-size\":\".9rem\"})\n  }\">No obligation • Fast response • Licensed agents</p></div><div style=\"${\n    _ssrRenderStyle((currentStep.value === 2) ? null : { display: \"none\" })\n  }\" class=\"space-y-6\"><h2 class=\"text-xl font-semibold\">Your Contact Information</h2><div class=\"space-y-2\"><label class=\"text-sm font-medium\">Full Name</label><input type=\"text\"${\n    _ssrRenderAttr(\"value\", formData.value.fullName)\n  } name=\"fullName\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\"></div><div class=\"space-y-2\"><label class=\"text-sm font-medium\">Email</label><input type=\"email\"${\n    _ssrRenderAttr(\"value\", formData.value.email)\n  } name=\"email\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\"></div><div class=\"space-y-2\"><label class=\"text-sm font-medium\">Phone</label><input type=\"tel\"${\n    _ssrRenderAttr(\"value\", formData.value.phone)\n  } name=\"phone\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\"></div><div class=\"pt-4 flex justify-between\"><button type=\"button\" class=\"px-4 py-2 rounded-md border bg-gray-100 text-gray-600\">Back</button><button type=\"button\" class=\"bg-[#30BCFE] text-white px-4 py-2 rounded-md\">Continue</button></div></div><div style=\"${\n    _ssrRenderStyle((currentStep.value === 3) ? null : { display: \"none\" })\n  }\" class=\"space-y-6\"><h2 class=\"text-xl font-semibold\">Review &amp; Submit</h2><p><strong>Insurance Type:</strong> ${\n    _ssrInterpolate(formData.value.insuranceType)\n  }</p><p><strong>Full Name:</strong> ${\n    _ssrInterpolate(formData.value.fullName)\n  }</p><p><strong>Email:</strong> ${\n    _ssrInterpolate(formData.value.email)\n  }</p><p><strong>Phone:</strong> ${\n    _ssrInterpolate(formData.value.phone)\n  }</p><div class=\"pt-4 flex justify-between\"><button type=\"button\" class=\"px-4 py-2 rounded-md border bg-gray-100 text-gray-600\">Back</button><button type=\"submit\" class=\"bg-[#30BCFE] text-white px-4 py-2 rounded-md\">Submit</button></div></div></form></div></div>`)\n}\n}\n\n})"
+        ],
+        "mappings": "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",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251164638,
+      "end": 1761251164638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251164638,
+      "end": 1761251164638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251164708,
+      "end": 1761251164708,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251164708,
+      "end": 1761251164708,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164709,
+      "end": 1761251164709,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164709,
+      "end": 1761251164709,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164709,
+      "end": 1761251164709,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164709,
+      "end": 1761251164710,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251164710,
+      "end": 1761251164710,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164710,
+      "end": 1761251164711,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251164711,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251164713,
+      "end": 1761251164713,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164713,
+      "end": 1761251164713,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164713,
+      "end": 1761251164713,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164713,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164713,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251164717,
+      "end": 1761251164717,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251164717,
+      "end": 1761251164717,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251164718,
+      "end": 1761251164718,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251164718,
+      "end": 1761251164718,
+      "order": "normal"
+    }
+  ]
+}

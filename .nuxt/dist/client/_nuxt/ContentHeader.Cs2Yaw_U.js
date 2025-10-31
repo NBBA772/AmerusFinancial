@@ -1,0 +1,1 @@
+import{_ as s}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o as t,c,a as e,_ as n}from"./entry.Cl9EbFL9.js";const _={},a=e("div",{class:"py-10"},null,-1),r={class:"ml-2"};function l(o,d){return t(),c("section",null,[a,e("div",r,[n(o.$slots,"default")])])}const m=s(_,[["render",l]]);export{m as default};

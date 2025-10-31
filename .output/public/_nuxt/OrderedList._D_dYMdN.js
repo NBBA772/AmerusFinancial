@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o as t,c as r,_ as s}from"./entry.Cl9EbFL9.js";const a={},c={class:"relative left-2 dark:border-gray-700 list-decimal"};function n(e,_,l,d,p,f){return t(),r("ol",c,[s(e.$slots,"default")])}const u=o(a,[["render",n]]);export{u as default};

@@ -1,0 +1,17 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/types.js",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "",
+      "start": 1761251038803,
+      "end": 1761251038803
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251038803,
+      "end": 1761251038803,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/WeProvideThePlanCTA.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <section\n    class=\"mx-auto p-8 mt-20 bg-blue-400 text-gray-300 dark:bg-amber-400 dark:text-gray-300 text-center\"\n  >\n    <p class=\"mb-4 font-extrabold tracking-tight leading-none text-white\">\n      All From A Company That Exclusively Provides Marketing For Contractors\n    </p>\n    <h3\n      class=\"mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white\"\n    >\n      We Provide The Plan / To Get You The Leads /\n      <strong>That Keeps Your Schedule Full</strong>\n    </h3>\n  </section>\n</template>",
+      "start": 1761251142942,
+      "end": 1761251143188,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"mx-auto p-8 mt-20 bg-blue-400 text-gray-300 dark:bg-amber-400 dark:text-gray-300 text-center\" }, _attrs))}><p class=\"mb-4 font-extrabold tracking-tight leading-none text-white\"> All From A Company That Exclusively Provides Marketing For Contractors </p><h3 class=\"mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white\"> We Provide The Plan / To Get You The Leads / <strong>That Keeps Your Schedule Full</strong></h3></section>`)\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/elements/WeProvideThePlanCTA.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/WeProvideThePlanCTA.vue"
+        ],
+        "names": [],
+        "mappings": ";;;;EAAA,iBAAA,gBAAA,cAEI,KAAK,EAAC,8FAA8F,IAFxG",
+        "sourcesContent": [
+          "<template>\n  <section\n    class=\"mx-auto p-8 mt-20 bg-blue-400 text-gray-300 dark:bg-amber-400 dark:text-gray-300 text-center\"\n  >\n    <p class=\"mb-4 font-extrabold tracking-tight leading-none text-white\">\n      All From A Company That Exclusively Provides Marketing For Contractors\n    </p>\n    <h3\n      class=\"mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white\"\n    >\n      We Provide The Plan / To Get You The Leads /\n      <strong>That Keeps Your Schedule Full</strong>\n    </h3>\n  </section>\n</template>"
+        ]
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143188,
+      "end": 1761251143188,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143188,
+      "end": 1761251143189,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143188,
+      "end": 1761251143189,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143189,
+      "end": 1761251143189,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143189,
+      "end": 1761251143189,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143189,
+      "end": 1761251143189,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143189,
+      "end": 1761251143189,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251143189,
+      "end": 1761251143189,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251143189,
+      "end": 1761251143189,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251143189,
+      "end": 1761251143189,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251143189,
+      "end": 1761251143189,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251143189,
+      "end": 1761251143189,
+      "order": "normal"
+    }
+  ]
+}

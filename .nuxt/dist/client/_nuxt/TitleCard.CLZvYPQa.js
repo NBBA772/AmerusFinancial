@@ -1,0 +1,1 @@
+import{_ as r}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o,c as t,_ as s}from"./entry.Cl9EbFL9.js";const a={},c={class:"p-6 border bg-black dark:bg-slate-70 rounded",style:{"background-image":"url('/img/green-dotted-bg.svg')"}};function d(e,n){return o(),t("div",c,[s(e.$slots,"default")])}const i=r(a,[["render",d]]);export{i as default};

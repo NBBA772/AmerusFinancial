@@ -1,0 +1,222 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/@tiptap/extension-code-block/dist/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { Node, mergeAttributes, textblockTypeInputRule } from '@tiptap/core';\nimport { Plugin, PluginKey, TextSelection } from '@tiptap/pm/state';\n\nconst backtickInputRegex = /^```([a-z]+)?[\\s\\n]$/;\r\nconst tildeInputRegex = /^~~~([a-z]+)?[\\s\\n]$/;\r\nconst CodeBlock = Node.create({\r\n    name: 'codeBlock',\r\n    addOptions() {\r\n        return {\r\n            languageClassPrefix: 'language-',\r\n            exitOnTripleEnter: true,\r\n            exitOnArrowDown: true,\r\n            HTMLAttributes: {},\r\n        };\r\n    },\r\n    content: 'text*',\r\n    marks: '',\r\n    group: 'block',\r\n    code: true,\r\n    defining: true,\r\n    addAttributes() {\r\n        return {\r\n            language: {\r\n                default: null,\r\n                parseHTML: element => {\r\n                    var _a;\r\n                    const { languageClassPrefix } = this.options;\r\n                    const classNames = [...(((_a = element.firstElementChild) === null || _a === void 0 ? void 0 : _a.classList) || [])];\r\n                    const languages = classNames\r\n                        .filter(className => className.startsWith(languageClassPrefix))\r\n                        .map(className => className.replace(languageClassPrefix, ''));\r\n                    const language = languages[0];\r\n                    if (!language) {\r\n                        return null;\r\n                    }\r\n                    return language;\r\n                },\r\n                rendered: false,\r\n            },\r\n        };\r\n    },\r\n    parseHTML() {\r\n        return [\r\n            {\r\n                tag: 'pre',\r\n                preserveWhitespace: 'full',\r\n            },\r\n        ];\r\n    },\r\n    renderHTML({ node, HTMLAttributes }) {\r\n        return [\r\n            'pre',\r\n            mergeAttributes(this.options.HTMLAttributes, HTMLAttributes),\r\n            [\r\n                'code',\r\n                {\r\n                    class: node.attrs.language\r\n                        ? this.options.languageClassPrefix + node.attrs.language\r\n                        : null,\r\n                },\r\n                0,\r\n            ],\r\n        ];\r\n    },\r\n    addCommands() {\r\n        return {\r\n            setCodeBlock: attributes => ({ commands }) => {\r\n                return commands.setNode(this.name, attributes);\r\n            },\r\n            toggleCodeBlock: attributes => ({ commands }) => {\r\n                return commands.toggleNode(this.name, 'paragraph', attributes);\r\n            },\r\n        };\r\n    },\r\n    addKeyboardShortcuts() {\r\n        return {\r\n            'Mod-Alt-c': () => this.editor.commands.toggleCodeBlock(),\r\n            // remove code block when at start of document or code block is empty\r\n            Backspace: () => {\r\n                const { empty, $anchor } = this.editor.state.selection;\r\n                const isAtStart = $anchor.pos === 1;\r\n                if (!empty || $anchor.parent.type.name !== this.name) {\r\n                    return false;\r\n                }\r\n                if (isAtStart || !$anchor.parent.textContent.length) {\r\n                    return this.editor.commands.clearNodes();\r\n                }\r\n                return false;\r\n            },\r\n            // exit node on triple enter\r\n            Enter: ({ editor }) => {\r\n                if (!this.options.exitOnTripleEnter) {\r\n                    return false;\r\n                }\r\n                const { state } = editor;\r\n                const { selection } = state;\r\n                const { $from, empty } = selection;\r\n                if (!empty || $from.parent.type !== this.type) {\r\n                    return false;\r\n                }\r\n                const isAtEnd = $from.parentOffset === $from.parent.nodeSize - 2;\r\n                const endsWithDoubleNewline = $from.parent.textContent.endsWith('\\n\\n');\r\n                if (!isAtEnd || !endsWithDoubleNewline) {\r\n                    return false;\r\n                }\r\n                return editor\r\n                    .chain()\r\n                    .command(({ tr }) => {\r\n                    tr.delete($from.pos - 2, $from.pos);\r\n                    return true;\r\n                })\r\n                    .exitCode()\r\n                    .run();\r\n            },\r\n            // exit node on arrow down\r\n            ArrowDown: ({ editor }) => {\r\n                if (!this.options.exitOnArrowDown) {\r\n                    return false;\r\n                }\r\n                const { state } = editor;\r\n                const { selection, doc } = state;\r\n                const { $from, empty } = selection;\r\n                if (!empty || $from.parent.type !== this.type) {\r\n                    return false;\r\n                }\r\n                const isAtEnd = $from.parentOffset === $from.parent.nodeSize - 2;\r\n                if (!isAtEnd) {\r\n                    return false;\r\n                }\r\n                const after = $from.after();\r\n                if (after === undefined) {\r\n                    return false;\r\n                }\r\n                const nodeAfter = doc.nodeAt(after);\r\n                if (nodeAfter) {\r\n                    return false;\r\n                }\r\n                return editor.commands.exitCode();\r\n            },\r\n        };\r\n    },\r\n    addInputRules() {\r\n        return [\r\n            textblockTypeInputRule({\r\n                find: backtickInputRegex,\r\n                type: this.type,\r\n                getAttributes: match => ({\r\n                    language: match[1],\r\n                }),\r\n            }),\r\n            textblockTypeInputRule({\r\n                find: tildeInputRegex,\r\n                type: this.type,\r\n                getAttributes: match => ({\r\n                    language: match[1],\r\n                }),\r\n            }),\r\n        ];\r\n    },\r\n    addProseMirrorPlugins() {\r\n        return [\r\n            // this plugin creates a code block for pasted content from VS Code\r\n            // we can also detect the copied code language\r\n            new Plugin({\r\n                key: new PluginKey('codeBlockVSCodeHandler'),\r\n                props: {\r\n                    handlePaste: (view, event) => {\r\n                        if (!event.clipboardData) {\r\n                            return false;\r\n                        }\r\n                        // don’t create a new code block within code blocks\r\n                        if (this.editor.isActive(this.type.name)) {\r\n                            return false;\r\n                        }\r\n                        const text = event.clipboardData.getData('text/plain');\r\n                        const vscode = event.clipboardData.getData('vscode-editor-data');\r\n                        const vscodeData = vscode ? JSON.parse(vscode) : undefined;\r\n                        const language = vscodeData === null || vscodeData === void 0 ? void 0 : vscodeData.mode;\r\n                        if (!text || !language) {\r\n                            return false;\r\n                        }\r\n                        const { tr } = view.state;\r\n                        // create an empty code block\r\n                        tr.replaceSelectionWith(this.type.create({ language }));\r\n                        // put cursor inside the newly created code block\r\n                        tr.setSelection(TextSelection.near(tr.doc.resolve(Math.max(0, tr.selection.from - 2))));\r\n                        // add text to code block\r\n                        // strip carriage return chars from text pasted as code\r\n                        // see: https://github.com/ProseMirror/prosemirror-view/commit/a50a6bcceb4ce52ac8fcc6162488d8875613aacd\r\n                        tr.insertText(text.replace(/\\r\\n?/g, '\\n'));\r\n                        // store meta information\r\n                        // this is useful for other plugins that depends on the paste event\r\n                        // like the paste rule plugin\r\n                        tr.setMeta('paste', true);\r\n                        view.dispatch(tr);\r\n                        return true;\r\n                    },\r\n                },\r\n            }),\r\n        ];\r\n    },\r\n});\n\nexport { CodeBlock, backtickInputRegex, CodeBlock as default, tildeInputRegex };\n//# sourceMappingURL=index.js.map\n",
+      "start": 1761251039086,
+      "end": 1761251039319,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251039319,
+      "end": 1761251039319,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251039319,
+      "end": 1761251039319,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251039319,
+      "end": 1761251039319,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251039319,
+      "end": 1761251039320,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251039320,
+      "end": 1761251039320,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251039320,
+      "end": 1761251039321,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251039321,
+      "end": 1761251039321,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251039321,
+      "end": 1761251039321,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251039321,
+      "end": 1761251039321,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251039321,
+      "end": 1761251039321,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251039321,
+      "end": 1761251039321,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251039321,
+      "end": 1761251039321,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251039321,
+      "end": 1761251039321,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251039321,
+      "end": 1761251039321,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251039321,
+      "end": 1761251039321,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251039321,
+      "end": 1761251039321,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251039321,
+      "end": 1761251039322,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251039322,
+      "end": 1761251039322,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251039322,
+      "end": 1761251039322,
+      "order": "normal"
+    }
+  ]
+}

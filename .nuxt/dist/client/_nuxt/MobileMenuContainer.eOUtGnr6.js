@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o,c as n,_ as s}from"./entry.Cl9EbFL9.js";const c={},r={class:"flex justify-between min-w-full md:min-w-0"};function _(e,a){return o(),n("div",r,[s(e.$slots,"default")])}const m=t(c,[["render",_]]);export{m as default};

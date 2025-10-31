@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/SeniorMedicareQuoteForm.vue?vue&type=style&index=0&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.checkbox-container {\n  text-align: left;\n  margin-top: 20px;\n}\n\n.checkbox-item {\n  margin-bottom: 10px;\n}\n.pagination-button {\n  transition: all 0.3s ease; /* Apply transition to all properties with 0.3s duration and ease timing function */\n}\n\n.pagination-button:hover {\n  transform: scale(1.05); /* Increase button size on hover */\n}\n",
+      "start": 1761251159962,
+      "end": 1761251159964,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/SeniorMedicareQuoteForm.vue"
+        ],
+        "names": [],
+        "mappings": ";AAidA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AAClB;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACrB;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AAChH;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AAC5D",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/SeniorMedicareQuoteForm.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div>\n    <form @submit.prevent=\"handleSubmit\">\n      <!-- Step 1 form fields -->\n      <div v-if=\"currentStep === 1\" key=\"step1\">\n        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\">\n          <div class=\"relative mb-6 group\">\n            <label\n              for=\"floating_first_name\"\n              class=\"block mb-1 text-sm font-medium text-gray-700 text-left\"\n              >First Name:</label\n            >\n            <input\n              type=\"text\"\n              v-model=\"firstName\"\n              id=\"floating_first_name\"\n              name=\"floating_first_name\"\n              class=\"block w-full py-2.5 px-4 text-sm text-gray-800 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500\"\n              placeholder=\" \"\n              required\n            />\n          </div>\n          <div class=\"relative mb-6 group\">\n            <label\n              for=\"floating_last_name\"\n              class=\"block mb-1 text-sm font-medium text-gray-700 text-left\"\n              >Last Name:</label\n            >\n            <input\n              type=\"text\"\n              v-model=\"lastName\"\n              id=\"floating_last_name\"\n              name=\"floating_last_name\"\n              class=\"block w-full py-2.5 px-4 text-sm text-gray-800 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500\"\n              placeholder=\" \"\n              required\n            />\n          </div>\n        </div>\n\n        <div class=\"relative mb-6 group\">\n          <label\n            for=\"email\"\n            class=\"block mb-1 text-sm font-medium text-gray-700 text-left\"\n            >Email:</label\n          >\n          <input\n            type=\"email\"\n            v-model=\"email\"\n            id=\"email\"\n            name=\"email\"\n            class=\"block w-full py-2.5 px-4 text-sm text-gray-800 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500\"\n            placeholder=\" \"\n            required\n          />\n        </div>\n\n        <div class=\"relative mb-6 group\">\n          <label\n            for=\"phoneNumber\"\n            class=\"block mb-1 text-sm font-medium text-gray-700 text-left\"\n            >Phone Number:</label\n          >\n          <input\n            type=\"tel\"\n            v-model=\"phoneNumber\"\n            id=\"phoneNumber\"\n            name=\"phoneNumber\"\n            class=\"block w-full py-2.5 px-4 text-sm text-gray-800 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500\"\n            placeholder=\" \"\n            required\n          />\n        </div>\n\n        <div class=\"relative mb-6 group\">\n          <label\n            for=\"birthday\"\n            class=\"block mb-1 text-sm font-medium text-gray-700 text-left\"\n            >Birthday:</label\n          >\n          <input\n            type=\"date\"\n            v-model=\"birthday\"\n            id=\"birthday\"\n            name=\"birthday\"\n            class=\"block w-full py-2.5 px-4 text-sm text-gray-800 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500\"\n            placeholder=\" \"\n            required\n          />\n        </div>\n\n        <div class=\"relative mb-6 group\">\n          <label\n            for=\"address\"\n            class=\"block mb-1 text-sm font-medium text-gray-700 text-left\"\n            >Address:</label\n          >\n          <input\n            type=\"text\"\n            v-model=\"address\"\n            id=\"address\"\n            name=\"address\"\n            class=\"block w-full py-2.5 px-4 text-sm text-gray-800 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500\"\n            placeholder=\" \"\n            required\n          />\n        </div>\n\n        <div class=\"relative mb-6 group\">\n          <label\n            for=\"city\"\n            class=\"block mb-1 text-sm font-medium text-gray-700 text-left\"\n            >City:</label\n          >\n          <input\n            type=\"text\"\n            v-model=\"city\"\n            id=\"city\"\n            name=\"city\"\n            class=\"block w-full py-2.5 px-4 text-sm text-gray-800 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500\"\n            placeholder=\" \"\n            required\n          />\n        </div>\n\n        <div class=\"relative mb-6 group\">\n          <label\n            for=\"state\"\n            class=\"block mb-1 text-sm font-medium text-gray-700 text-left\"\n            >State:</label\n          >\n          <input\n            type=\"text\"\n            v-model=\"state\"\n            id=\"state\"\n            name=\"state\"\n            class=\"block w-full py-2.5 px-4 text-sm text-gray-800 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500\"\n            placeholder=\" \"\n            required\n          />\n        </div>\n\n        <div class=\"relative mb-6 group\">\n          <label\n            for=\"zipCode\"\n            class=\"block mb-1 text-sm font-medium text-gray-700 text-left\"\n            >Zip Code:</label\n          >\n          <input\n            type=\"text\"\n            v-model=\"zipCode\"\n            id=\"zipCode\"\n            name=\"zipCode\"\n            class=\"block w-full py-2.5 px-4 text-sm text-gray-800 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500\"\n            placeholder=\" \"\n            required\n          />\n        </div>\n        <button\n          @click=\"nextStep\"\n          class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded pagination-button\"\n          :disabled=\"currentStep === 4\"\n        >\n          Next\n        </button>\n      </div>\n\n      <!-- Step 2 form fields -->\n      <div v-if=\"currentStep === 2\" key=\"step2\">\n        <!-- Select dropdown for Medicare enrollment -->\n        <div class=\"relative mb-6 group\">\n          <label\n            for=\"medicareEnrollment\"\n            class=\"block mb-1 text-sm font-medium text-gray-700 text-left\"\n          >\n            Are you currently enrolled in Part A and Part B of Medicare?\n          </label>\n          <select\n            v-model=\"enrolledInMedicare\"\n            id=\"medicareEnrollment\"\n            name=\"medicareEnrollment\"\n            class=\"block w-full py-2.5 px-4 text-sm text-gray-800 bg-gray-100 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500\"\n            required\n          >\n            <option value=\"yes\">Yes</option>\n            <option value=\"no\">No</option>\n          </select>\n        </div>\n\n        <!-- Checkbox options for product interest -->\n        <div class=\"checkbox-container\">\n          <p>What Products are you interested in?</p>\n          <div\n            v-for=\"(product, index) in products\"\n            :key=\"index\"\n            class=\"checkbox-item\"\n          >\n            <input\n              class=\"form-checkbox h-5 w-5 text-indigo-600 transition duration-150 ease-in-out mr-2\"\n              type=\"checkbox\"\n              :id=\"'product_' + index\"\n              :value=\"product\"\n              v-model=\"selectedProducts\"\n            />\n            <label :for=\"'product_' + index\">{{ product }}</label>\n          </div>\n        </div>\n        <!-- Previous and Submit buttons -->\n        <div>\n          <button\n            @click=\"prevStep\"\n            class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2 pagination-button\"\n            :disabled=\"currentStep === 1\"\n          >\n            Previous\n          </button>\n          <button\n            type=\"submit\"\n            class=\"bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline pagination-button\"\n          >\n            Submit\n          </button>\n        </div>\n      </div>\n    </form>\n\n    <LegalText>\n      By clicking the button and submitting this form, I agree that I am 18+\n      years old and I provide my signature expressly consenting to receive\n      emails, calls, postal mail, text messages and other forms of communication\n      regarding Health Insurance, or other offers from these companies and\n      agents to the number(s) I provided, including a mobile phone, even if I am\n      on a state or federal Do Not Call and/or Do Not Email registry. The list\n      of companies participating are subject to change. You will receive calls\n      from a maximum of eight providers. Such calls and text messages may use\n      automated telephone dialing systems, artificial or pre-recorded voices. I\n      understand my wireless carrier may impose charges for calls or texts. I\n      understand that my consent to receive communications is not a condition of\n      purchase and I may revoke my consent at any time.By using this site, you\n      acknowledge that you have read and agree to the Privacy Policy.\n    </LegalText>\n  </div>\n</template>\n\n<script>\nexport default {\n  props: {\n    tag: {\n      type: String,\n      default: \"newClient\", // Default tag if not provided\n    },\n  },\n  data() {\n    return {\n      currentStep: 1,\n      // Step 1 form fields\n      firstName: \"\",\n      lastName: \"\",\n      email: \"\",\n      phoneNumber: \"\",\n      birthday: \"\",\n      address: \"\",\n      city: \"\",\n      state: \"\",\n      zipCode: \"\",\n      tags: [],\n      // Step 2 form fields\n      enrolledInMedicare: false, // New property for Medicare enrollment\n      selectedProducts: [], // Array to store selected products\n      products: [\n        \"Medicare Supplement Insurance\",\n        \"Medicare Advantage Insurance\",\n        \"Senior Dental Insurance\",\n        \"Senior Life Insurance\",\n        \"Part D Plan\",\n        \"Other\",\n      ], // List of products\n    };\n  },\n  methods: {\n    async handleSubmit() {\n      try {\n        // Create contact\n        const contact = await this.createContact();\n\n        // Lookup contact to get contactId\n        const contactId = await this.lookupContact();\n\n        // Make a note for the newly created contact\n        const noteData = {\n          contactId: contactId,\n          body: `\\nBirthday: ${this.birthday}\n          \\nAre you currently enrolled in Part A and Part B of Medicare?: ${\n            this.enrolledInMedicare\n          }\\nProducts Interested In: ${this.selectedProducts.join(\", \")}`,\n        };\n\n        const noteResponse = await this.createNote(noteData);\n\n        if (!noteResponse.ok) {\n          throw new Error(\"Failed to create note\");\n        }\n\n        // Reset form fields or show success message\n        this.resetForm();\n\n        console.log(\"Form submitted successfully\");\n      } catch (error) {\n        console.error(\"Error submitting form:\", error);\n      }\n    },\n\n    async createContact() {\n      try {\n        const config = useRuntimeConfig();\n        const myHeaders = new Headers();\n        myHeaders.append(\"Content-Type\", \"application/json\");\n        myHeaders.append(\"Authorization\", `${config.public.GHL_API_KEY}`);\n\n        const data = {\n          firstName: this.firstName,\n          lastName: this.lastName,\n          email: this.email,\n          phone: this.phoneNumber,\n          address: this.address,\n          city: this.city,\n          state: this.state,\n          zipCode: this.zipCode,\n          birthday: this.birthday,\n          gender: this.gender,\n          tobaccoUse: this.tobaccoUse,\n          anySeriousHealthConditions: this.anySeriousHealthConditions,\n          anyChronicHealthConditions: this.anyChronicHealthConditions,\n          tags: [this.tag], // Assuming this is a tag field\n        };\n\n        const raw = JSON.stringify(data);\n\n        const response = await fetch(\n          \"https://rest.gohighlevel.com/v1/contacts/\",\n          {\n            method: \"POST\",\n            headers: myHeaders,\n            body: raw,\n            redirect: \"follow\",\n          }\n        );\n\n        if (!response.ok) {\n          throw new Error(\"Failed to create contact\");\n        }\n\n        const contact = await response.json();\n        console.log(\"Created contact:\", contact); // Log the contact object\n\n        return contact; // Return the contact object\n      } catch (error) {\n        console.error(\"Error creating contact:\", error);\n        throw error;\n      }\n    },\n    async createNote(data) {\n      try {\n        const config = useRuntimeConfig();\n        const myHeaders = new Headers();\n        myHeaders.append(\"Content-Type\", \"application/json\");\n        myHeaders.append(\"Authorization\", `${config.public.GHL_API_KEY}`);\n\n        const raw = JSON.stringify(data);\n        console.log(\"data \", data);\n        return await fetch(\n          `https://rest.gohighlevel.com/v1/contacts/${data.contactId}/notes/`,\n          {\n            method: \"POST\",\n            headers: myHeaders,\n            body: raw,\n            redirect: \"follow\",\n          }\n        );\n      } catch (error) {\n        console.error(\"Error creating note:\", error);\n        throw error;\n      }\n    },\n    async lookupContact() {\n      const config = useRuntimeConfig();\n      try {\n        const myHeaders = new Headers();\n        myHeaders.append(\"Authorization\", `${config.public.GHL_API_KEY}`);\n\n        const requestOptions = {\n          method: \"GET\",\n          headers: myHeaders,\n          redirect: \"follow\",\n        };\n\n        const response = await fetch(\n          `https://rest.gohighlevel.com/v1/contacts/lookup?email=${this.email}&phone=${this.phoneNumber}`,\n          requestOptions\n        );\n\n        if (!response.ok) {\n          throw new Error(\"Failed to fetch contact data\");\n        }\n\n        const data = await response.json();\n        console.log(\"Lookup contact response:\", data); // Log the response\n\n        // Assuming contacts array contains multiple contacts, get the first one\n        const contacted = data.contacts[0];\n\n        if (!contacted) {\n          throw new Error(\"No contact found\");\n        }\n\n        return contacted.id; // Return the id of the contacted contact\n      } catch (error) {\n        console.error(\"Error looking up contact:\", error);\n        throw error;\n      }\n    },\n    resetForm() {\n      // Reset all form fields to their initial state or show a success message\n      this.firstName = \"\";\n      this.lastName = \"\";\n      this.email = \"\";\n      this.phoneNumber = \"\";\n      this.address = \"\";\n      this.city = \"\";\n      this.state = \"\";\n      this.zipCode = \"\";\n      this.birthday = \"\";\n      this.gender = \"\";\n      this.tobaccoUse = \"\";\n      this.anySeriousHealthConditions = \"\";\n      this.anyChronicHealthConditions = \"\";\n      this.coverageType = \"\";\n      this.finalExpenses = \"\";\n      this.mortgage = \"\";\n      this.otherDebts = \"\";\n      this.emergencyFund = \"\";\n      this.educationFund = \"\";\n      this.currentAnnualIncome = \"\";\n      this.yearsIncomeNeeded = \"\";\n      this.savingsAndInvestments = \"\";\n      this.retirementSavings = \"\";\n      this.otherAssets = \"\";\n      this.currentLifeInsurance = \"\";\n      this.needsSummary = \"\";\n\n      // Reset any other state variables or show success message logic\n    },\n    nextStep() {\n      this.currentStep++;\n    },\n    prevStep() {\n      this.currentStep--;\n    },\n  },\n};\n</script>\n\n\n\n<style>\n.checkbox-container {\n  text-align: left;\n  margin-top: 20px;\n}\n\n.checkbox-item {\n  margin-bottom: 10px;\n}\n.pagination-button {\n  transition: all 0.3s ease; /* Apply transition to all properties with 0.3s duration and ease timing function */\n}\n\n.pagination-button:hover {\n  transform: scale(1.05); /* Increase button size on hover */\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159973,
+      "end": 1761251159973,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159973,
+      "end": 1761251159973,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159973,
+      "end": 1761251159973,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159973,
+      "end": 1761251159973,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159974,
+      "end": 1761251159974,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159974,
+      "end": 1761251159974,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251159974,
+      "end": 1761251159974,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251159974,
+      "end": 1761251159974,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".checkbox-container{margin-top:20px;text-align:left}.checkbox-item{margin-bottom:10px}.pagination-button{transition:all .3s ease}.pagination-button:hover{transform:scale(1.05)}",
+      "start": 1761251159974,
+      "end": 1761251160035,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/SeniorMedicareQuoteForm.vue",
+        "mappings": "AACA,oBAEE,eAAgB,CADhB,eAEF,CAEA,eACE,kBACF,CACA,mBACE,uBACF,CAEA,yBACE,qBACF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/SeniorMedicareQuoteForm.vue"
+        ],
+        "sourcesContent": [
+          "\n.checkbox-container {\n  text-align: left;\n  margin-top: 20px;\n}\n\n.checkbox-item {\n  margin-bottom: 10px;\n}\n.pagination-button {\n  transition: all 0.3s ease; /* Apply transition to all properties with 0.3s duration and ease timing function */\n}\n\n.pagination-button:hover {\n  transform: scale(1.05); /* Increase button size on hover */\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251160035,
+      "end": 1761251160036,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251160037,
+      "end": 1761251160037,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251160067,
+      "end": 1761251160067,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".checkbox-container{margin-top:20px;text-align:left}.checkbox-item{margin-bottom:10px}.pagination-button{transition:all .3s ease}.pagination-button:hover{transform:scale(1.05)}",
+      "start": 1761251160068,
+      "end": 1761251160068,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/SeniorMedicareQuoteForm.vue",
+        "mappings": "AAAA,oBAAoB,eAAe,CAAC,eAAe,CAAC,eAAe,kBAAkB,CAAC,mBAAmB,uBAAuB,CAAC,yBAAyB,qBAAqB",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/SeniorMedicareQuoteForm.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251160068,
+      "end": 1761251160068,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160070,
+      "end": 1761251160070,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160070,
+      "end": 1761251160070,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251160070,
+      "end": 1761251160070,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251160070,
+      "end": 1761251160070,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251160070,
+      "end": 1761251160074,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160107,
+      "end": 1761251160107,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251160111,
+      "end": 1761251160111,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251160111,
+      "end": 1761251160111,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".checkbox-container{margin-top:20px;text-align:left}.checkbox-item{margin-bottom:10px}.pagination-button{transition:all .3s ease}.pagination-button:hover{transform:scale(1.05)}\"",
+      "start": 1761251160111,
+      "end": 1761251160111,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251160111,
+      "end": 1761251160112,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251160112,
+      "end": 1761251160112,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251160112,
+      "end": 1761251160112,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251160112,
+      "end": 1761251160118,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251160147,
+      "end": 1761251160147,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251160147,
+      "end": 1761251160148,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251160148,
+      "end": 1761251160148,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251160148,
+      "end": 1761251160148,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251160148,
+      "end": 1761251160148,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251160149,
+      "end": 1761251160149,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251160149,
+      "end": 1761251160149,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251160149,
+      "end": 1761251160149,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251160149,
+      "end": 1761251160150,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251160150,
+      "end": 1761251160156,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251160150,
+      "end": 1761251160156,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251160157,
+      "end": 1761251160157,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251160157,
+      "end": 1761251160157,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251160168,
+      "end": 1761251160168,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251160168,
+      "end": 1761251160168,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251160168,
+      "end": 1761251160168,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251160168,
+      "end": 1761251160169,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251160169,
+      "end": 1761251160169,
+      "order": "normal"
+    }
+  ]
+}

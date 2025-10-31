@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue?vue&type=style&index=0&scoped=ab1489d0&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.background {\n  background-image: url(\"/img/charter-bus.jpg\");\n}\n",
+      "start": 1761251160939,
+      "end": 1761251160939,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue"
+        ],
+        "names": [],
+        "mappings": ";AA+DA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC/C",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <SectionContainer class=\"bg-cover bg-center background text-center\">\n    <GridTwoColumns>\n      <div>\n        <ParagraphSubHeadingHero>\n          {{ IntroText.SubHeading }}\n        </ParagraphSubHeadingHero>\n        <HeadlineOneHero>\n          {{ IntroText.Heading }}\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero>\n          {{ IntroText.Description }}\n        </ParagraphDescriptionHero>\n      </div>\n      <div>\n        <RegisterForm />\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"Homepage Hero Section\",\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Join our community and start planning your next adventure.\",\n        Heading: \"Get Started with Good Time Travel Today!\",\n        Description:\n          \"Ready to embark on your next journey? Sign up with Good Time Travel today and gain access to exclusive deals, personalized trip recommendations, and hassle-free booking options. Our user-friendly sign-up form makes it easy to create an account and start exploring our wide range of transportation services. Whether you're planning a group outing, corporate event, or school trip, we've got you covered. Join now and experience the convenience and reliability of Good Time Travel for all your transportation needs.\",\n      },\n      Featured: [\n        {\n          id: 1,\n          title: \"Unmatched Comfort\",\n          description:\n            \"Travel in style and relaxation with our luxurious reclining seats and spacious interiors, ensuring a smooth and enjoyable ride for all passengers.\",\n        },\n        {\n          id: 2,\n          title: \"Convenient Amenities\",\n          description:\n            \"Stay connected and entertained throughout your journey with onboard flat screen monitors and charging ports, providing entertainment and power at your fingertips.\",\n        },\n        {\n          id: 3,\n          title: \"Expert Service\",\n          description:\n            \"Our dedicated and friendly staff are committed to providing top-notch service, from assistance with loading luggage to ensuring a safe and pleasant travel experience for all.\",\n        },\n      ],\n      CTA: {\n        to: \"/get-started\",\n        text: \"Get Started Now!\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.background {\n  background-image: url(\"/img/charter-bus.jpg\");\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160939,
+      "end": 1761251160939,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160939,
+      "end": 1761251160940,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160943,
+      "end": 1761251160943,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160943,
+      "end": 1761251160943,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160944,
+      "end": 1761251160944,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160944,
+      "end": 1761251160944,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251160944,
+      "end": 1761251160944,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251160944,
+      "end": 1761251160945,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".background{background-image:url(__VITE_PUBLIC_ASSET__ca800f9a__)}",
+      "start": 1761251160945,
+      "end": 1761251160976,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue",
+        "mappings": "AACA,YACE,qDACF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue"
+        ],
+        "sourcesContent": [
+          "\n.background {\n  background-image: url(\"/img/charter-bus.jpg\");\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251160977,
+      "end": 1761251160977,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251161004,
+      "end": 1761251161004,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251161007,
+      "end": 1761251161007,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".background[data-v-ab1489d0]{background-image:url(__VITE_PUBLIC_ASSET__ca800f9a__)}",
+      "start": 1761251161007,
+      "end": 1761251161008,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue",
+        "mappings": "AAAA,6BAAY,qDAAqD",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251161008,
+      "end": 1761251161008,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161008,
+      "end": 1761251161008,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161008,
+      "end": 1761251161008,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251161008,
+      "end": 1761251161008,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251161008,
+      "end": 1761251161008,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251161008,
+      "end": 1761251161008,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161008,
+      "end": 1761251161008,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251161032,
+      "end": 1761251161082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251161082,
+      "end": 1761251161082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1761251161083,
+      "end": 1761251161083,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251161083,
+      "end": 1761251161083,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251161083,
+      "end": 1761251161083,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251161123,
+      "end": 1761251161140,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251161143,
+      "end": 1761251161143,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251161143,
+      "end": 1761251161143,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251161143,
+      "end": 1761251161143,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251161143,
+      "end": 1761251161144,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251161143,
+      "end": 1761251161144,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251161144,
+      "end": 1761251161144,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251161144,
+      "end": 1761251161144,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251161144,
+      "end": 1761251161144,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251161149,
+      "end": 1761251161164,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251161149,
+      "end": 1761251161164,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251161170,
+      "end": 1761251161170,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251161170,
+      "end": 1761251161170,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251161172,
+      "end": 1761251161173,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251161194,
+      "end": 1761251161194,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderClass as _ssrRenderClass, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport { ref } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AccordionItem',\n  __ssrInlineRender: true,\n  props: {\n    term: {},\n    definition: {}\n  },\n  setup(__props: any) {\n\nconst props = __props\n\nconst isOpen = ref(false)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ class: \"border rounded-lg overflow-hidden\" }, _attrs))\n  } data-v-6e3794c4><button class=\"w-full flex justify-between items-center p-4 font-semibold text-left bg-gray-100 hover:bg-gray-200\" data-v-6e3794c4>${\n    _ssrInterpolate(_ctx.term)\n  } <span class=\"${\n    _ssrRenderClass(['transform transition-transform duration-300', isOpen.value ? 'rotate-180' : ''])\n  }\" data-v-6e3794c4> ▼ </span></button><div style=\"${\n    _ssrRenderStyle((isOpen.value) ? null : { display: \"none\" })\n  }\" class=\"p-4 bg-white text-gray-700\" data-v-6e3794c4>${\n    _ssrInterpolate(_ctx.definition)\n  }</div></div>`)\n}\n}\n\n})",
+      "start": 1761251160180,
+      "end": 1761251160180,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <div class=\"border rounded-lg overflow-hidden\">\n    <button\n      class=\"w-full flex justify-between items-center p-4 font-semibold text-left bg-gray-100 hover:bg-gray-200\"\n      @click=\"isOpen = !isOpen\"\n    >\n      {{ term }}\n      <span :class=\"['transform transition-transform duration-300', isOpen ? 'rotate-180' : '']\">\n        ▼\n      </span>\n    </button>\n\n    <Transition\n      name=\"accordion\"\n      enter-active-class=\"transition-all duration-300 ease-out\"\n      leave-active-class=\"transition-all duration-200 ease-in\"\n    >\n      <div v-show=\"isOpen\" class=\"p-4 bg-white text-gray-700\">\n        {{ definition }}\n      </div>\n    </Transition>\n  </div>\n</template>\n\n<script setup lang=\"ts\">\nimport { ref } from 'vue'\n\nconst props = defineProps<{\n  term: string\n  definition: string\n}>()\n\nconst isOpen = ref(false)\n</script>\n\n<style scoped>\n/* Optional: smooth height animation */\n.accordion-enter-from,\n.accordion-leave-to {\n  max-height: 0;\n  opacity: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n}\n\n.accordion-enter-to,\n.accordion-leave-from {\n  max-height: 500px; /* large enough for your content */\n  opacity: 1;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n</style>\n"
+        ],
+        "names": [],
+        "mappings": ";;;;AAyBA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzB;;;;;;;;;;AAFwB;AAGxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,OAGV;AACJ;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160181,
+      "end": 1761251160181,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160181,
+      "end": 1761251160181,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160181,
+      "end": 1761251160181,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160181,
+      "end": 1761251160181,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160182,
+      "end": 1761251160182,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160182,
+      "end": 1761251160182,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251160182,
+      "end": 1761251160182,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251160182,
+      "end": 1761251160182,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251160182,
+      "end": 1761251160182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderClass as _ssrRenderClass, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport { ref } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"AccordionItem\",\n  __ssrInlineRender: true,\n  props: {\n    term: {},\n    definition: {}\n  },\n  setup(__props) {\n    const props = __props;\n    const isOpen = ref(false);\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"border rounded-lg overflow-hidden\" }, _attrs))} data-v-6e3794c4><button class=\"w-full flex justify-between items-center p-4 font-semibold text-left bg-gray-100 hover:bg-gray-200\" data-v-6e3794c4>${_ssrInterpolate(_ctx.term)} <span class=\"${_ssrRenderClass([\"transform transition-transform duration-300\", isOpen.value ? \"rotate-180\" : \"\"])}\" data-v-6e3794c4> ▼ </span></button><div style=\"${_ssrRenderStyle(isOpen.value ? null : { display: \"none\" })}\" class=\"p-4 bg-white text-gray-700\" data-v-6e3794c4>${_ssrInterpolate(_ctx.definition)}</div></div>`);\n    };\n  }\n});\n",
+      "start": 1761251160182,
+      "end": 1761251164053,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderClass as _ssrRenderClass, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport { ref } from 'vue'\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'AccordionItem',\n  __ssrInlineRender: true,\n  props: {\n    term: {},\n    definition: {}\n  },\n  setup(__props: any) {\n\nconst props = __props\n\nconst isOpen = ref(false)\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ class: \"border rounded-lg overflow-hidden\" }, _attrs))\n  } data-v-6e3794c4><button class=\"w-full flex justify-between items-center p-4 font-semibold text-left bg-gray-100 hover:bg-gray-200\" data-v-6e3794c4>${\n    _ssrInterpolate(_ctx.term)\n  } <span class=\"${\n    _ssrRenderClass(['transform transition-transform duration-300', isOpen.value ? 'rotate-180' : ''])\n  }\" data-v-6e3794c4> ▼ </span></button><div style=\"${\n    _ssrRenderStyle((isOpen.value) ? null : { display: \"none\" })\n  }\" class=\"p-4 bg-white text-gray-700\" data-v-6e3794c4>${\n    _ssrInterpolate(_ctx.definition)\n  }</div></div>`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,cAAc,mBAAmB;AAC1C,SAAS,kBAAkB,iBAAiB,kBAAkB,iBAAiB,kBAAkB,iBAAiB,kBAAkB,uBAAuB;AAE3J,SAAS,WAAW;AAGpB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,OAAO;AAAA,IACL,MAAM,CAAC;AAAA,IACP,YAAY,CAAC;AAAA,EACf;AAAA,EACA,MAAM,SAAc;AAEtB,UAAM,QAAQ;AAEd,UAAM,SAAS,IAAI,KAAK;AAExB,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,OACJ,gBAAgB,YAAY,EAAE,OAAO,oCAAoC,GAAG,MAAM,CAAC,CACrF,uJACE,gBAAgB,KAAK,IAAI,CAC3B,iBACE,gBAAgB,CAAC,+CAA+C,OAAO,QAAQ,eAAe,EAAE,CAAC,CACnG,oDACE,gBAAiB,OAAO,QAAS,OAAO,EAAE,SAAS,OAAO,CAAC,CAC7D,wDACE,gBAAgB,KAAK,UAAU,CACjC,cAAc;AAAA,IAChB;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251164053,
+      "end": 1761251164053,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251164053,
+      "end": 1761251164053,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251164056,
+      "end": 1761251164056,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251164056,
+      "end": 1761251164056,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164056,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164056,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251164060,
+      "end": 1761251164060,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251164060,
+      "end": 1761251164060,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251164060,
+      "end": 1761251164060,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251164061,
+      "end": 1761251164061,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251164061,
+      "end": 1761251164061,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164063,
+      "end": 1761251164063,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164063,
+      "end": 1761251164063,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251164063,
+      "end": 1761251164063,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164064,
+      "end": 1761251164064,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164064,
+      "end": 1761251164064,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164064,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164064,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164077,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164077,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164077,
+      "end": 1761251164078,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164077,
+      "end": 1761251164078,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251164078,
+      "end": 1761251164078,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251164078,
+      "end": 1761251164079,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251164079,
+      "end": 1761251164079,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251164079,
+      "end": 1761251164080,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251164080,
+      "end": 1761251164080,
+      "order": "normal"
+    }
+  ]
+}

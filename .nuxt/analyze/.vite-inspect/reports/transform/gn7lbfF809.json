@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/SeniorInsuranceSolutionHeroSection.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <!-- <NuxtImg\n          format=\"webp\"\n          src=\"/images/charter-bus.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n        /> -->\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/Senior-Solutions.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\"\n          class=\"full-width-height\"\n        />\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          Senior Solutions for Your Unique Needs\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero\n          >The senior market is often inundated with a deluge of advertising and\n          promotional materials, making it challenging to sift through the\n          information overload to make well-informed choices. Amidst this\n          cacophony, it’s easy to feel overwhelmed and unsure of which route to\n          take for your financial and insurance needs.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >Here at Amerus Financial, we adopt a client-centered approach that\n          starts with truly listening to you. We take the time to understand\n          your unique needs, lifestyle, and financial situation. Armed with this\n          understanding, we then tailor a customized solution that aligns\n          specifically with your requirements and goals. Rest assured, we\n          operate on a foundation of integrity; our advisors will never pressure\n          you into selecting a product that doesn’t serve your best\n          interests.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >Choosing to work with us means choosing a partner committed to\n          treating you with the respect and dignity you rightfully deserve. We\n          aim to build a long-lasting relationship founded on trust, honesty,\n          and superior customer service.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >Take the first step in securing a financial and insurance plan that\n          genuinely suits your needs. Contact us today for a personalized quote\n          at 1-888-441-7891</ParagraphDescriptionHero\n        >\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {};\n  },\n};\n</script>\n\n<style scoped>\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n</style>\n",
+      "start": 1761251024842,
+      "end": 1761251024942,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024942,
+      "end": 1761251024942,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024942,
+      "end": 1761251024942,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024942,
+      "end": 1761251024943,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {};\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-8de7dac6\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"p-4\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n  const _component_HeadlineOneHero = _resolveComponent(\"HeadlineOneHero\")\n  const _component_ParagraphDescriptionHero = _resolveComponent(\"ParagraphDescriptionHero\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_SectionContainer = _resolveComponent(\"SectionContainer\")\n\n  return (_openBlock(), _createBlock(_component_SectionContainer, { class: \"text-center\" }, {\n    default: _withCtx(() => [\n      _createVNode(_component_GridTwoColumns, null, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", null, [\n            _createVNode(_component_NuxtImg, {\n              format: \"webp\",\n              src: \"/images/Senior-Solutions.jpg\",\n              alt: \"Happy Kids\",\n              quality: \"80\",\n              sizes: \"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\",\n              class: \"full-width-height\"\n            })\n          ]),\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createVNode(_component_HeadlineOneHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\" Senior Solutions for Your Unique Needs \")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"The senior market is often inundated with a deluge of advertising and promotional materials, making it challenging to sift through the information overload to make well-informed choices. Amidst this cacophony, it’s easy to feel overwhelmed and unsure of which route to take for your financial and insurance needs.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Here at Amerus Financial, we adopt a client-centered approach that starts with truly listening to you. We take the time to understand your unique needs, lifestyle, and financial situation. Armed with this understanding, we then tailor a customized solution that aligns specifically with your requirements and goals. Rest assured, we operate on a foundation of integrity; our advisors will never pressure you into selecting a product that doesn’t serve your best interests.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Choosing to work with us means choosing a partner committed to treating you with the respect and dignity you rightfully deserve. We aim to build a long-lasting relationship founded on trust, honesty, and superior customer service.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Take the first step in securing a financial and insurance plan that genuinely suits your needs. Contact us today for a personalized quote at 1-888-441-7891\")\n              ]),\n              _: 1\n            })\n          ])\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/SeniorInsuranceSolutionHeroSection.vue?vue&type=style&index=0&scoped=8de7dac6&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-8de7dac6\"]])",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024943,
+      "end": 1761251024943,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024943,
+      "end": 1761251024944,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024944,
+      "end": 1761251024944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024944,
+      "end": 1761251024944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024944,
+      "end": 1761251024944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024944,
+      "end": 1761251024944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/@nuxt/image/dist/runtime/components/nuxt-img\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/HeadlineOneHero.vue\";\nimport { default as __nuxt_component_2 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/ParagraphDescriptionHero.vue\";\nimport { default as __nuxt_component_3 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/grid/GridTwoColumns.vue\";\nimport { default as __nuxt_component_4 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/containers/SectionContainer.vue\";\n\nconst _sfc_main = {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {};\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-8de7dac6\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"p-4\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtImg = __nuxt_component_0\n  const _component_HeadlineOneHero = __nuxt_component_1\n  const _component_ParagraphDescriptionHero = __nuxt_component_2\n  const _component_GridTwoColumns = __nuxt_component_3\n  const _component_SectionContainer = __nuxt_component_4\n\n  return (_openBlock(), _createBlock(_component_SectionContainer, { class: \"text-center\" }, {\n    default: _withCtx(() => [\n      _createVNode(_component_GridTwoColumns, null, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", null, [\n            _createVNode(_component_NuxtImg, {\n              format: \"webp\",\n              src: \"/images/Senior-Solutions.jpg\",\n              alt: \"Happy Kids\",\n              quality: \"80\",\n              sizes: \"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\",\n              class: \"full-width-height\"\n            })\n          ]),\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createVNode(_component_HeadlineOneHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\" Senior Solutions for Your Unique Needs \")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"The senior market is often inundated with a deluge of advertising and promotional materials, making it challenging to sift through the information overload to make well-informed choices. Amidst this cacophony, it’s easy to feel overwhelmed and unsure of which route to take for your financial and insurance needs.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Here at Amerus Financial, we adopt a client-centered approach that starts with truly listening to you. We take the time to understand your unique needs, lifestyle, and financial situation. Armed with this understanding, we then tailor a customized solution that aligns specifically with your requirements and goals. Rest assured, we operate on a foundation of integrity; our advisors will never pressure you into selecting a product that doesn’t serve your best interests.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Choosing to work with us means choosing a partner committed to treating you with the respect and dignity you rightfully deserve. We aim to build a long-lasting relationship founded on trust, honesty, and superior customer service.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Take the first step in securing a financial and insurance plan that genuinely suits your needs. Contact us today for a personalized quote at 1-888-441-7891\")\n              ]),\n              _: 1\n            })\n          ])\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/SeniorInsuranceSolutionHeroSection.vue?vue&type=style&index=0&scoped=8de7dac6&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-8de7dac6\"]])",
+      "start": 1761251024944,
+      "end": 1761251024944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024944,
+      "end": 1761251024944,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024944,
+      "end": 1761251024944,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024944,
+      "end": 1761251024944,
+      "order": "normal"
+    }
+  ]
+}

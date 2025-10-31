@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/SeniorLifeInsuranceSolutionHeroSection.vue?nuxt_component=async&nuxt_component_name=SeniorLifeInsuranceSolutionHeroSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <!-- <NuxtImg\n          format=\"webp\"\n          src=\"/images/charter-bus.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n        /> -->\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/senior-life-banner.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\"\n          class=\"full-width-height\"\n        />\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          It Takes Just a Minute to Request a Senior Life Insurance Quote\n        </HeadlineOneHero>\n        <SeniorLifeQuoteForm tag=\"SeniorLifeInsuranceQuote\" />\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {};\n  },\n};\n</script>\n\n<style scoped>\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n</style>\n",
+      "start": 1761251141813,
+      "end": 1761251141997,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141997,
+      "end": 1761251141997,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {};\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_SectionContainer = _resolveComponent(\"SectionContainer\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n  const _component_HeadlineOneHero = _resolveComponent(\"HeadlineOneHero\")\n  const _component_SeniorLifeQuoteForm = _resolveComponent(\"SeniorLifeQuoteForm\")\n\n  _push(_ssrRenderComponent(_component_SectionContainer, _mergeProps({ class: \"text-center\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div data-v-adb71c12${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_NuxtImg, {\n                format: \"webp\",\n                src: \"/images/senior-life-banner.jpg\",\n                alt: \"Happy Kids\",\n                quality: \"80\",\n                sizes: \"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\",\n                class: \"full-width-height\"\n              }, null, _parent, _scopeId))\n              _push(`</div><div class=\"p-4\" data-v-adb71c12${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_HeadlineOneHero, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(` It Takes Just a Minute to Request a Senior Life Insurance Quote `)\n                  } else {\n                    return [\n                      _createTextVNode(\" It Takes Just a Minute to Request a Senior Life Insurance Quote \")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_SeniorLifeQuoteForm, { tag: \"SeniorLifeInsuranceQuote\" }, null, _parent, _scopeId))\n              _push(`</div>`)\n            } else {\n              return [\n                _createVNode(\"div\", null, [\n                  _createVNode(_component_NuxtImg, {\n                    format: \"webp\",\n                    src: \"/images/senior-life-banner.jpg\",\n                    alt: \"Happy Kids\",\n                    quality: \"80\",\n                    sizes: \"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\",\n                    class: \"full-width-height\"\n                  })\n                ]),\n                _createVNode(\"div\", { class: \"p-4\" }, [\n                  _createVNode(_component_HeadlineOneHero, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\" It Takes Just a Minute to Request a Senior Life Insurance Quote \")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_SeniorLifeQuoteForm, { tag: \"SeniorLifeInsuranceQuote\" })\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n      } else {\n        return [\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", null, [\n                _createVNode(_component_NuxtImg, {\n                  format: \"webp\",\n                  src: \"/images/senior-life-banner.jpg\",\n                  alt: \"Happy Kids\",\n                  quality: \"80\",\n                  sizes: \"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\",\n                  class: \"full-width-height\"\n                })\n              ]),\n              _createVNode(\"div\", { class: \"p-4\" }, [\n                _createVNode(_component_HeadlineOneHero, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\" It Takes Just a Minute to Request a Senior Life Insurance Quote \")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_SeniorLifeQuoteForm, { tag: \"SeniorLifeInsuranceQuote\" })\n              ])\n            ]),\n            _: 1\n          })\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/SeniorLifeInsuranceSolutionHeroSection.vue?vue&type=style&index=0&scoped=adb71c12&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/SeniorSolutionPage/SeniorLifeInsuranceSolutionHeroSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-adb71c12\"]])",
+      "start": 1761251141997,
+      "end": 1761251141999,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/SeniorLifeInsuranceSolutionHeroSection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/SeniorLifeInsuranceSolutionHeroSection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <!-- <NuxtImg\n          format=\"webp\"\n          src=\"/images/charter-bus.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n        /> -->\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/senior-life-banner.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\"\n          class=\"full-width-height\"\n        />\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          It Takes Just a Minute to Request a Senior Life Insurance Quote\n        </HeadlineOneHero>\n        <SeniorLifeQuoteForm tag=\"SeniorLifeInsuranceQuote\" />\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {};\n  },\n};\n</script>\n\n<style scoped>\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n</style>\n"
+        ],
+        "mappings": ";AA+BA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC;EACX,CAAC;AACH,CAAC;;;;;;;;;;;;EApCD,MAAA,iDAAA,cACoB,KAAK,EAAC,aAAa,IADvC;IAAA,kBACE,CA0BmB;UA3BrB;QAAA,MAAA;UAAA,kBAEI,CAwBiB;gBA1BrB;cAAA,6BAAA;cAAA,MAAA;gBAYU,MAAM,EAAC,MAAM;gBACb,GAAG,EAAC,gCAAgC;gBACpC,GAAG,EAAC,YAAY;gBAChB,OAAO,EAAC,IAAI;gBACZ,KAAK,EAAC,4DAA4D;gBAClE,KAAK,EAAC,mBAAmB;;cAjBnC,+CAAA;cAAA,MAAA;gBAAA,kBAqBQ,CAEkB;sBAvB1B;oBAAA;;;sBAAA,iBAqByB,mEAEjB;;;;gBAvBR,GAAA;;cAAA,MAAA,sDAwB6B,GAAG,EAAC,0BAA0B;cAxB3D;;;gBAGM,aAgBM;kBARJ,aAOE;oBANA,MAAM,EAAC,MAAM;oBACb,GAAG,EAAC,gCAAgC;oBACpC,GAAG,EAAC,YAAY;oBAChB,OAAO,EAAC,IAAI;oBACZ,KAAK,EAAC,4DAA4D;oBAClE,KAAK,EAAC,mBAAmB;;;gBAG7B,aAKM,SALD,KAAK,EAAC,KAAK;kBACd,aAEkB;oBAvB1B,kBAqByB,CAEjB;sBAvBR,iBAqByB,mEAEjB;;oBAvBR,GAAA;;kBAwBQ,aAAsD,kCAAjC,GAAG,EAAC,0BAA0B;;;;;UAxB3D,GAAA;;;;UAEI,aAwBiB;YA1BrB,kBAGM,CAgBM;cAhBN,aAgBM;gBARJ,aAOE;kBANA,MAAM,EAAC,MAAM;kBACb,GAAG,EAAC,gCAAgC;kBACpC,GAAG,EAAC,YAAY;kBAChB,OAAO,EAAC,IAAI;kBACZ,KAAK,EAAC,4DAA4D;kBAClE,KAAK,EAAC,mBAAmB;;;cAG7B,aAKM,SALD,KAAK,EAAC,KAAK;gBACd,aAEkB;kBAvB1B,kBAqByB,CAEjB;oBAvBR,iBAqByB,mEAEjB;;kBAvBR,GAAA;;gBAwBQ,aAAsD,kCAAjC,GAAG,EAAC,0BAA0B;;;YAxB3D,GAAA;;;;;IAAA,GAAA"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141999,
+      "end": 1761251142002,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251142002,
+      "end": 1761251142002,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251142002,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/SeniorSolutionPage/SeniorLifeInsuranceSolutionHeroSection.vue\").then(r => r.default))",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251142003,
+      "end": 1761251142003,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/Tiptap.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport { useEditor, EditorContent } from \"@tiptap/vue-3\";\nimport StarterKit from \"@tiptap/starter-kit\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Tiptap',\n  __ssrInlineRender: true,\n  props: {\n  modelValue: {\n    type: String,\n    default: \"\",\n  },\n  label: {\n    type: String,\n    default: \"\",\n  },\n  editable: {\n    type: Boolean,\n    default: false,\n  },\n},\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props;\n\nconst emit = __emit;\n\nconst editor = useEditor({\n  editable: props.editable,\n  content: props.modelValue,\n  editorProps: {\n    attributes: {\n      class:\n        \"prose prose-sm sm:prose lg:prose-lg xl:prose-2xl m-5 focus:outline-none rounded-lg p-5  dark:text-white\",\n    },\n  },\n  extensions: [StarterKit],\n  onUpdate: ({ editor }) => {\n    let content = editor.getHTML();\n    emit(\"update:modelValue\", content);\n  },\n});\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${\n    _ssrRenderAttrs(_attrs)\n  }><label for=\"message\" class=\"block mb-2 ml-5 text-sm font-medium text-gray-900 dark:text-gray-400\">${\n    _ssrInterpolate(__props.label)\n  }</label>`)\n  _push(_ssrRenderComponent(_unref(EditorContent), { editor: _unref(editor) }, null, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
+      "start": 1761251159911,
+      "end": 1761251159912,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/Tiptap.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <div>\n    <label\n      for=\"message\"\n      class=\"block mb-2 ml-5 text-sm font-medium text-gray-900 dark:text-gray-400\"\n      >{{ label }}</label\n    >\n    <editor-content :editor=\"editor\" />\n  </div>\n</template>\n\n<script lang=\"ts\" setup>\nimport { useEditor, EditorContent } from \"@tiptap/vue-3\";\nimport StarterKit from \"@tiptap/starter-kit\";\n\nconst props = defineProps({\n  modelValue: {\n    type: String,\n    default: \"\",\n  },\n  label: {\n    type: String,\n    default: \"\",\n  },\n  editable: {\n    type: Boolean,\n    default: false,\n  },\n});\n\nconst emit = defineEmits([\"update:modelValue\"]);\n\nconst editor = useEditor({\n  editable: props.editable,\n  content: props.modelValue,\n  editorProps: {\n    attributes: {\n      class:\n        \"prose prose-sm sm:prose lg:prose-lg xl:prose-2xl m-5 focus:outline-none rounded-lg p-5  dark:text-white\",\n    },\n  },\n  extensions: [StarterKit],\n  onUpdate: ({ editor }) => {\n    let content = editor.getHTML();\n    emit(\"update:modelValue\", content);\n  },\n});\n</script>"
+        ],
+        "names": [],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159914,
+      "end": 1761251159914,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159914,
+      "end": 1761251159914,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159914,
+      "end": 1761251159914,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159914,
+      "end": 1761251159914,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159914,
+      "end": 1761251159914,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159914,
+      "end": 1761251159914,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251159914,
+      "end": 1761251159914,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251159914,
+      "end": 1761251159914,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251159914,
+      "end": 1761251159914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport { useEditor, EditorContent } from \"@tiptap/vue-3\";\nimport StarterKit from \"@tiptap/starter-kit\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Tiptap\",\n  __ssrInlineRender: true,\n  props: {\n    modelValue: {\n      type: String,\n      default: \"\"\n    },\n    label: {\n      type: String,\n      default: \"\"\n    },\n    editable: {\n      type: Boolean,\n      default: false\n    }\n  },\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n    const props = __props;\n    const emit = __emit;\n    const editor = useEditor({\n      editable: props.editable,\n      content: props.modelValue,\n      editorProps: {\n        attributes: {\n          class: \"prose prose-sm sm:prose lg:prose-lg xl:prose-2xl m-5 focus:outline-none rounded-lg p-5  dark:text-white\"\n        }\n      },\n      extensions: [StarterKit],\n      onUpdate: ({ editor: editor2 }) => {\n        let content = editor2.getHTML();\n        emit(\"update:modelValue\", content);\n      }\n    });\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_attrs)}><label for=\"message\" class=\"block mb-2 ml-5 text-sm font-medium text-gray-900 dark:text-gray-400\">${_ssrInterpolate(__props.label)}</label>`);\n      _push(_ssrRenderComponent(_unref(EditorContent), { editor: _unref(editor) }, null, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
+      "start": 1761251159915,
+      "end": 1761251164050,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/Tiptap.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport { useEditor, EditorContent } from \"@tiptap/vue-3\";\nimport StarterKit from \"@tiptap/starter-kit\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Tiptap',\n  __ssrInlineRender: true,\n  props: {\n  modelValue: {\n    type: String,\n    default: \"\",\n  },\n  label: {\n    type: String,\n    default: \"\",\n  },\n  editable: {\n    type: Boolean,\n    default: false,\n  },\n},\n  emits: [\"update:modelValue\"],\n  setup(__props, { emit: __emit }) {\n\nconst props = __props;\n\nconst emit = __emit;\n\nconst editor = useEditor({\n  editable: props.editable,\n  content: props.modelValue,\n  editorProps: {\n    attributes: {\n      class:\n        \"prose prose-sm sm:prose lg:prose-lg xl:prose-2xl m-5 focus:outline-none rounded-lg p-5  dark:text-white\",\n    },\n  },\n  extensions: [StarterKit],\n  onUpdate: ({ editor }) => {\n    let content = editor.getHTML();\n    emit(\"update:modelValue\", content);\n  },\n});\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${\n    _ssrRenderAttrs(_attrs)\n  }><label for=\"message\" class=\"block mb-2 ml-5 text-sm font-medium text-gray-900 dark:text-gray-400\">${\n    _ssrInterpolate(__props.label)\n  }</label>`)\n  _push(_ssrRenderComponent(_unref(EditorContent), { editor: _unref(editor) }, null, _parent))\n  _push(`</div>`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,cAAc;AAChC,SAAS,sBAAsB,qBAAqB,kBAAkB,iBAAiB,kBAAkB,uBAAuB;AAEhI,SAAS,WAAW,qBAAqB;AACzC,OAAO,gBAAgB;AAGvB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,OAAO;AAAA,IACP,YAAY;AAAA,MACV,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,IACA,OAAO;AAAA,MACL,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,IACA,UAAU;AAAA,MACR,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,EACF;AAAA,EACE,OAAO,CAAC,mBAAmB;AAAA,EAC3B,MAAM,SAAS,EAAE,MAAM,OAAO,GAAG;AAEnC,UAAM,QAAQ;AAEd,UAAM,OAAO;AAEb,UAAM,SAAS,UAAU;AAAA,MACvB,UAAU,MAAM;AAAA,MAChB,SAAS,MAAM;AAAA,MACf,aAAa;AAAA,QACX,YAAY;AAAA,UACV,OACE;AAAA,QACJ;AAAA,MACF;AAAA,MACA,YAAY,CAAC,UAAU;AAAA,MACvB,UAAU,CAAC,EAAE,QAAAA,QAAO,MAAM;AACxB,YAAI,UAAUA,QAAO,QAAQ;AAC7B,aAAK,qBAAqB,OAAO;AAAA,MACnC;AAAA,IACF,CAAC;AAED,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,OACJ,gBAAgB,MAAM,CACxB,sGACE,gBAAgB,QAAQ,KAAK,CAC/B,UAAU;AACV,YAAM,oBAAoB,OAAO,aAAa,GAAG,EAAE,QAAQ,OAAO,MAAM,EAAE,GAAG,MAAM,OAAO,CAAC;AAC3F,YAAM,QAAQ;AAAA,IAChB;AAAA,EACA;AAEA,CAAC;",
+        "names": [
+          "editor"
+        ]
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251164053,
+      "end": 1761251164053,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251164053,
+      "end": 1761251164053,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251164056,
+      "end": 1761251164056,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251164056,
+      "end": 1761251164056,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164056,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164056,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164058,
+      "end": 1761251164058,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251164059,
+      "end": 1761251164059,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251164060,
+      "end": 1761251164060,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251164060,
+      "end": 1761251164060,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251164060,
+      "end": 1761251164060,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251164061,
+      "end": 1761251164061,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251164061,
+      "end": 1761251164061,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164061,
+      "end": 1761251164063,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164061,
+      "end": 1761251164063,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251164063,
+      "end": 1761251164063,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164063,
+      "end": 1761251164064,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164063,
+      "end": 1761251164064,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164064,
+      "end": 1761251164076,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164064,
+      "end": 1761251164076,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164077,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164077,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164077,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164077,
+      "end": 1761251164077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251164078,
+      "end": 1761251164078,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251164078,
+      "end": 1761251164078,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251164079,
+      "end": 1761251164079,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251164079,
+      "end": 1761251164079,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251164080,
+      "end": 1761251164080,
+      "order": "normal"
+    }
+  ]
+}

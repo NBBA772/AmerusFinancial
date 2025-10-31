@@ -1,0 +1,222 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/@tiptap/vue-3/dist/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { BubbleMenuPlugin } from '@tiptap/extension-bubble-menu';\nimport { defineComponent, ref, onMounted, onBeforeUnmount, h, reactive, markRaw, customRef, getCurrentInstance, watchEffect, nextTick, unref, Teleport, shallowRef, provide } from 'vue';\nimport { Editor as Editor$1, NodeView } from '@tiptap/core';\nexport * from '@tiptap/core';\nimport { FloatingMenuPlugin } from '@tiptap/extension-floating-menu';\n\nconst BubbleMenu = defineComponent({\r\n    name: 'BubbleMenu',\r\n    props: {\r\n        pluginKey: {\r\n            type: [String, Object],\r\n            default: 'bubbleMenu',\r\n        },\r\n        editor: {\r\n            type: Object,\r\n            required: true,\r\n        },\r\n        updateDelay: {\r\n            type: Number,\r\n            default: undefined,\r\n        },\r\n        tippyOptions: {\r\n            type: Object,\r\n            default: () => ({}),\r\n        },\r\n        shouldShow: {\r\n            type: Function,\r\n            default: null,\r\n        },\r\n    },\r\n    setup(props, { slots }) {\r\n        const root = ref(null);\r\n        onMounted(() => {\r\n            const { updateDelay, editor, pluginKey, shouldShow, tippyOptions, } = props;\r\n            editor.registerPlugin(BubbleMenuPlugin({\r\n                updateDelay,\r\n                editor,\r\n                element: root.value,\r\n                pluginKey,\r\n                shouldShow,\r\n                tippyOptions,\r\n            }));\r\n        });\r\n        onBeforeUnmount(() => {\r\n            const { pluginKey, editor } = props;\r\n            editor.unregisterPlugin(pluginKey);\r\n        });\r\n        return () => { var _a; return h('div', { ref: root }, (_a = slots.default) === null || _a === void 0 ? void 0 : _a.call(slots)); };\r\n    },\r\n});\n\nfunction useDebouncedRef(value) {\r\n    return customRef((track, trigger) => {\r\n        return {\r\n            get() {\r\n                track();\r\n                return value;\r\n            },\r\n            set(newValue) {\r\n                // update state\r\n                value = newValue;\r\n                // update view as soon as possible\r\n                requestAnimationFrame(() => {\r\n                    requestAnimationFrame(() => {\r\n                        trigger();\r\n                    });\r\n                });\r\n            },\r\n        };\r\n    });\r\n}\r\nclass Editor extends Editor$1 {\r\n    constructor(options = {}) {\r\n        super(options);\r\n        this.vueRenderers = reactive(new Map());\r\n        this.contentComponent = null;\r\n        this.reactiveState = useDebouncedRef(this.view.state);\r\n        this.reactiveExtensionStorage = useDebouncedRef(this.extensionStorage);\r\n        this.on('transaction', () => {\r\n            this.reactiveState.value = this.view.state;\r\n            this.reactiveExtensionStorage.value = this.extensionStorage;\r\n        });\r\n        return markRaw(this); // eslint-disable-line\r\n    }\r\n    get state() {\r\n        return this.reactiveState ? this.reactiveState.value : this.view.state;\r\n    }\r\n    get storage() {\r\n        return this.reactiveExtensionStorage ? this.reactiveExtensionStorage.value : super.storage;\r\n    }\r\n    /**\r\n     * Register a ProseMirror plugin.\r\n     */\r\n    registerPlugin(plugin, handlePlugins) {\r\n        super.registerPlugin(plugin, handlePlugins);\r\n        this.reactiveState.value = this.view.state;\r\n    }\r\n    /**\r\n     * Unregister a ProseMirror plugin.\r\n     */\r\n    unregisterPlugin(nameOrPluginKey) {\r\n        super.unregisterPlugin(nameOrPluginKey);\r\n        this.reactiveState.value = this.view.state;\r\n    }\r\n}\n\nconst EditorContent = defineComponent({\r\n    name: 'EditorContent',\r\n    props: {\r\n        editor: {\r\n            default: null,\r\n            type: Object,\r\n        },\r\n    },\r\n    setup(props) {\r\n        const rootEl = ref();\r\n        const instance = getCurrentInstance();\r\n        watchEffect(() => {\r\n            const editor = props.editor;\r\n            if (editor && editor.options.element && rootEl.value) {\r\n                nextTick(() => {\r\n                    if (!rootEl.value || !editor.options.element.firstChild) {\r\n                        return;\r\n                    }\r\n                    const element = unref(rootEl.value);\r\n                    rootEl.value.append(...editor.options.element.childNodes);\r\n                    // @ts-ignore\r\n                    editor.contentComponent = instance.ctx._;\r\n                    editor.setOptions({\r\n                        element,\r\n                    });\r\n                    editor.createNodeViews();\r\n                });\r\n            }\r\n        });\r\n        onBeforeUnmount(() => {\r\n            const editor = props.editor;\r\n            if (!editor) {\r\n                return;\r\n            }\r\n            // destroy nodeviews before vue removes dom element\r\n            if (!editor.isDestroyed) {\r\n                editor.view.setProps({\r\n                    nodeViews: {},\r\n                });\r\n            }\r\n            editor.contentComponent = null;\r\n            if (!editor.options.element.firstChild) {\r\n                return;\r\n            }\r\n            const newElement = document.createElement('div');\r\n            newElement.append(...editor.options.element.childNodes);\r\n            editor.setOptions({\r\n                element: newElement,\r\n            });\r\n        });\r\n        return { rootEl };\r\n    },\r\n    render() {\r\n        const vueRenderers = [];\r\n        if (this.editor) {\r\n            this.editor.vueRenderers.forEach(vueRenderer => {\r\n                const node = h(Teleport, {\r\n                    to: vueRenderer.teleportElement,\r\n                    key: vueRenderer.id,\r\n                }, h(vueRenderer.component, {\r\n                    ref: vueRenderer.id,\r\n                    ...vueRenderer.props,\r\n                }));\r\n                vueRenderers.push(node);\r\n            });\r\n        }\r\n        return h('div', {\r\n            ref: (el) => { this.rootEl = el; },\r\n        }, ...vueRenderers);\r\n    },\r\n});\n\nconst FloatingMenu = defineComponent({\r\n    name: 'FloatingMenu',\r\n    props: {\r\n        pluginKey: {\r\n            // TODO: TypeScript breaks :(\r\n            // type: [String, Object as PropType<Exclude<FloatingMenuPluginProps['pluginKey'], string>>],\r\n            type: null,\r\n            default: 'floatingMenu',\r\n        },\r\n        editor: {\r\n            type: Object,\r\n            required: true,\r\n        },\r\n        tippyOptions: {\r\n            type: Object,\r\n            default: () => ({}),\r\n        },\r\n        shouldShow: {\r\n            type: Function,\r\n            default: null,\r\n        },\r\n    },\r\n    setup(props, { slots }) {\r\n        const root = ref(null);\r\n        onMounted(() => {\r\n            const { pluginKey, editor, tippyOptions, shouldShow, } = props;\r\n            editor.registerPlugin(FloatingMenuPlugin({\r\n                pluginKey,\r\n                editor,\r\n                element: root.value,\r\n                tippyOptions,\r\n                shouldShow,\r\n            }));\r\n        });\r\n        onBeforeUnmount(() => {\r\n            const { pluginKey, editor } = props;\r\n            editor.unregisterPlugin(pluginKey);\r\n        });\r\n        return () => { var _a; return h('div', { ref: root }, (_a = slots.default) === null || _a === void 0 ? void 0 : _a.call(slots)); };\r\n    },\r\n});\n\nconst NodeViewContent = defineComponent({\r\n    name: 'NodeViewContent',\r\n    props: {\r\n        as: {\r\n            type: String,\r\n            default: 'div',\r\n        },\r\n    },\r\n    render() {\r\n        return h(this.as, {\r\n            style: {\r\n                whiteSpace: 'pre-wrap',\r\n            },\r\n            'data-node-view-content': '',\r\n        });\r\n    },\r\n});\n\nconst NodeViewWrapper = defineComponent({\r\n    name: 'NodeViewWrapper',\r\n    props: {\r\n        as: {\r\n            type: String,\r\n            default: 'div',\r\n        },\r\n    },\r\n    inject: ['onDragStart', 'decorationClasses'],\r\n    render() {\r\n        var _a, _b;\r\n        return h(this.as, {\r\n            // @ts-ignore\r\n            class: this.decorationClasses,\r\n            style: {\r\n                whiteSpace: 'normal',\r\n            },\r\n            'data-node-view-wrapper': '',\r\n            // @ts-ignore (https://github.com/vuejs/vue-next/issues/3031)\r\n            onDragstart: this.onDragStart,\r\n        }, (_b = (_a = this.$slots).default) === null || _b === void 0 ? void 0 : _b.call(_a));\r\n    },\r\n});\n\nconst useEditor = (options = {}) => {\r\n    const editor = shallowRef();\r\n    onMounted(() => {\r\n        editor.value = new Editor(options);\r\n    });\r\n    onBeforeUnmount(() => {\r\n        var _a;\r\n        (_a = editor.value) === null || _a === void 0 ? void 0 : _a.destroy();\r\n    });\r\n    return editor;\r\n};\n\nclass VueRenderer {\r\n    constructor(component, { props = {}, editor }) {\r\n        this.id = Math.floor(Math.random() * 0xFFFFFFFF).toString();\r\n        this.editor = editor;\r\n        this.component = markRaw(component);\r\n        this.teleportElement = document.createElement('div');\r\n        this.element = this.teleportElement;\r\n        this.props = reactive(props);\r\n        this.editor.vueRenderers.set(this.id, this);\r\n        if (this.editor.contentComponent) {\r\n            this.editor.contentComponent.update();\r\n            if (this.teleportElement.children.length !== 1) {\r\n                throw Error('VueRenderer doesn’t support multiple child elements.');\r\n            }\r\n            this.element = this.teleportElement.firstElementChild;\r\n        }\r\n    }\r\n    get ref() {\r\n        var _a;\r\n        return (_a = this.editor.contentComponent) === null || _a === void 0 ? void 0 : _a.refs[this.id];\r\n    }\r\n    updateProps(props = {}) {\r\n        Object\r\n            .entries(props)\r\n            .forEach(([key, value]) => {\r\n            this.props[key] = value;\r\n        });\r\n    }\r\n    destroy() {\r\n        this.editor.vueRenderers.delete(this.id);\r\n    }\r\n}\n\nconst nodeViewProps = {\r\n    editor: {\r\n        type: Object,\r\n        required: true,\r\n    },\r\n    node: {\r\n        type: Object,\r\n        required: true,\r\n    },\r\n    decorations: {\r\n        type: Object,\r\n        required: true,\r\n    },\r\n    selected: {\r\n        type: Boolean,\r\n        required: true,\r\n    },\r\n    extension: {\r\n        type: Object,\r\n        required: true,\r\n    },\r\n    getPos: {\r\n        type: Function,\r\n        required: true,\r\n    },\r\n    updateAttributes: {\r\n        type: Function,\r\n        required: true,\r\n    },\r\n    deleteNode: {\r\n        type: Function,\r\n        required: true,\r\n    },\r\n};\r\nclass VueNodeView extends NodeView {\r\n    mount() {\r\n        const props = {\r\n            editor: this.editor,\r\n            node: this.node,\r\n            decorations: this.decorations,\r\n            selected: false,\r\n            extension: this.extension,\r\n            getPos: () => this.getPos(),\r\n            updateAttributes: (attributes = {}) => this.updateAttributes(attributes),\r\n            deleteNode: () => this.deleteNode(),\r\n        };\r\n        const onDragStart = this.onDragStart.bind(this);\r\n        this.decorationClasses = ref(this.getDecorationClasses());\r\n        const extendedComponent = defineComponent({\r\n            extends: { ...this.component },\r\n            props: Object.keys(props),\r\n            template: this.component.template,\r\n            setup: reactiveProps => {\r\n                var _a, _b;\r\n                provide('onDragStart', onDragStart);\r\n                provide('decorationClasses', this.decorationClasses);\r\n                return (_b = (_a = this.component).setup) === null || _b === void 0 ? void 0 : _b.call(_a, reactiveProps, {\r\n                    expose: () => undefined,\r\n                });\r\n            },\r\n            // add support for scoped styles\r\n            // @ts-ignore\r\n            // eslint-disable-next-line\r\n            __scopeId: this.component.__scopeId,\r\n            // add support for CSS Modules\r\n            // @ts-ignore\r\n            // eslint-disable-next-line\r\n            __cssModules: this.component.__cssModules,\r\n            // add support for vue devtools\r\n            // @ts-ignore\r\n            // eslint-disable-next-line\r\n            __name: this.component.__name,\r\n            // @ts-ignore\r\n            // eslint-disable-next-line\r\n            __file: this.component.__file,\r\n        });\r\n        this.renderer = new VueRenderer(extendedComponent, {\r\n            editor: this.editor,\r\n            props,\r\n        });\r\n    }\r\n    get dom() {\r\n        if (!this.renderer.element.hasAttribute('data-node-view-wrapper')) {\r\n            throw Error('Please use the NodeViewWrapper component for your node view.');\r\n        }\r\n        return this.renderer.element;\r\n    }\r\n    get contentDOM() {\r\n        if (this.node.isLeaf) {\r\n            return null;\r\n        }\r\n        const contentElement = this.dom.querySelector('[data-node-view-content]');\r\n        return (contentElement || this.dom);\r\n    }\r\n    update(node, decorations) {\r\n        const updateProps = (props) => {\r\n            this.decorationClasses.value = this.getDecorationClasses();\r\n            this.renderer.updateProps(props);\r\n        };\r\n        if (typeof this.options.update === 'function') {\r\n            const oldNode = this.node;\r\n            const oldDecorations = this.decorations;\r\n            this.node = node;\r\n            this.decorations = decorations;\r\n            return this.options.update({\r\n                oldNode,\r\n                oldDecorations,\r\n                newNode: node,\r\n                newDecorations: decorations,\r\n                updateProps: () => updateProps({ node, decorations }),\r\n            });\r\n        }\r\n        if (node.type !== this.node.type) {\r\n            return false;\r\n        }\r\n        if (node === this.node && this.decorations === decorations) {\r\n            return true;\r\n        }\r\n        this.node = node;\r\n        this.decorations = decorations;\r\n        updateProps({ node, decorations });\r\n        return true;\r\n    }\r\n    selectNode() {\r\n        this.renderer.updateProps({\r\n            selected: true,\r\n        });\r\n        this.renderer.element.classList.add('ProseMirror-selectednode');\r\n    }\r\n    deselectNode() {\r\n        this.renderer.updateProps({\r\n            selected: false,\r\n        });\r\n        this.renderer.element.classList.remove('ProseMirror-selectednode');\r\n    }\r\n    getDecorationClasses() {\r\n        return (this.decorations\r\n            // @ts-ignore\r\n            .map(item => item.type.attrs.class)\r\n            .flat()\r\n            .join(' '));\r\n    }\r\n    destroy() {\r\n        this.renderer.destroy();\r\n    }\r\n}\r\nfunction VueNodeViewRenderer(component, options) {\r\n    return (props) => {\r\n        // try to get the parent component\r\n        // this is important for vue devtools to show the component hierarchy correctly\r\n        // maybe it’s `undefined` because <editor-content> isn’t rendered yet\r\n        if (!props.editor.contentComponent) {\r\n            return {};\r\n        }\r\n        return new VueNodeView(component, props, options);\r\n    };\r\n}\n\nexport { BubbleMenu, Editor, EditorContent, FloatingMenu, NodeViewContent, NodeViewWrapper, VueNodeViewRenderer, VueRenderer, nodeViewProps, useEditor };\n//# sourceMappingURL=index.js.map\n",
+      "start": 1761251034154,
+      "end": 1761251036446,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251036447,
+      "end": 1761251036447,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251036447,
+      "end": 1761251036447,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251036447,
+      "end": 1761251036447,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251036447,
+      "end": 1761251036447,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251036447,
+      "end": 1761251036447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251036447,
+      "end": 1761251036447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251036447,
+      "end": 1761251036447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251036447,
+      "end": 1761251036447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251036447,
+      "end": 1761251036447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251036447,
+      "end": 1761251036447,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251036447,
+      "end": 1761251036448,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251036449,
+      "end": 1761251036449,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251036449,
+      "end": 1761251036449,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251036449,
+      "end": 1761251036450,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251036450,
+      "end": 1761251036450,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251036450,
+      "end": 1761251036450,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251036450,
+      "end": 1761251036450,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251036450,
+      "end": 1761251036450,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251036450,
+      "end": 1761251036450,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251036450,
+      "end": 1761251036450,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251036450,
+      "end": 1761251036450,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251036450,
+      "end": 1761251036457,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251036457,
+      "end": 1761251036457,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251036457,
+      "end": 1761251036457,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251036457,
+      "end": 1761251036457,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251036457,
+      "end": 1761251036458,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251036458,
+      "end": 1761251036458,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251036458,
+      "end": 1761251036458,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251036458,
+      "end": 1761251036458,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251036458,
+      "end": 1761251036458,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251036458,
+      "end": 1761251036458,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251036458,
+      "end": 1761251036458,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251036458,
+      "end": 1761251036458,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251036458,
+      "end": 1761251036458,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251036458,
+      "end": 1761251036458,
+      "order": "normal"
+    }
+  ]
+}

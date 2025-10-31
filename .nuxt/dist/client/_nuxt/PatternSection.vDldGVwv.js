@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o,c as r,_ as s}from"./entry.Cl9EbFL9.js";const n={},a={class:"patternLight dark:patternDark"};function c(t,_,p,d,f,i){return o(),r("div",a,[s(t.$slots,"default")])}const u=e(n,[["render",c]]);export{u as default};

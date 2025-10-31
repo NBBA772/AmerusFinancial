@@ -1,0 +1,235 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/categories/[name].vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport { Series, Video } from \".prisma/client\";\nimport getParam from \"~/composables/getParam\";\nimport type { Ref } from \"vue\";\n\ndefinePageMeta({\n  layout: \"mobile-only\",\n});\n\nconst setColorTheme = (newTheme: Theme) => {\n  useColorMode().preference = newTheme;\n};\n\nconst route = useRoute();\n\ntype topicData = {\n  series: Series[];\n  videos: Video[];\n};\n\nconst topicName = getParam(\"name\") as string;\nconst { data, pending } = await useFetch<topicData>(`/api/topic/${topicName}`, {\n  key: route.fullPath,\n});\nconst videoPlaceholderElement = ref(null);\nconst videoWrapper: Ref<HTMLElement | null> = ref(null);\n\nconst activeVideo = ref(data?.value?.videos[0]);\n\nfunction setActive(video: Video) {\n  activeVideo.value = video;\n\n  const htmlString = `<div class=\"video__youtube\" :id=\"${activeVideo.value.host_id}\">\n                        <img src=\"https://i.ytimg.com/vi/${activeVideo.value.host_id}/maxresdefault.jpg\"\n                          class=\"block object-cover object-center lg:rounded-lg w-full min-w-200 aspect-video mb-10 p-0\"\n                          alt=\"video thumbnail\" />\n                      </div>\n                    `;\n  if (videoWrapper.value) {\n    videoWrapper.value.innerHTML = htmlString;\n  }\n}\n\nfunction createIframe(vidId: string) {\n  const url = \"https://www.youtube.com/embed/\" + vidId + \"?autoplay=1\";\n  const htmlString = `<iframe class=\"mt-5 block object-cover object-center lg:rounded-lg w-full min-w-200 aspect-video mb-10 p-0\" src=\"${url}\" allowfullscreen allow=\"autoplay\"></iframe>`;\n\n  if (videoWrapper.value) {\n    videoWrapper.value.innerHTML = htmlString;\n  }\n}\n</script>\n\n<template>\n  <div class=\"md:flex dark:bg-slate-900\">\n    <aside\n      class=\"hidden md:block pl-10 pr-10 text-left h-screen w-1/4 dark:bg-slate-900\"\n    >\n      <div class=\"text-gray-800 dark:text-gray-100 text-xl\">\n        <div class=\"p-2.5 mt-1 flex items-center\">\n          <NuxtLink to=\"/\">\n            <img\n              class=\"h-20\"\n              src=\"/img/logo_clear_fsj.png\"\n              alt=\"full stack jack logo\"\n            />\n            <h1 class=\"font-bold text-gray-800 dark:text-gray-200 text-[15px]\">\n              Full Stack Jack\n            </h1>\n          </NuxtLink>\n        </div>\n        <div>\n          <span\n            class=\"hidden md:block\"\n            @click=\"\n              setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')\n            \"\n          >\n            <svg\n              v-if=\"$colorMode.value == 'dark'\"\n              xmlns=\"http://www.w3.org/2000/svg\"\n              class=\"h-6 w-6 text-gray-50 hidden lg:block\"\n              viewBox=\"0 0 20 20\"\n              fill=\"currentColor\"\n            >\n              <path\n                d=\"M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z\"\n              />\n            </svg>\n            <svg\n              v-if=\"$colorMode.value == 'light'\"\n              xmlns=\"http://www.w3.org/2000/svg\"\n              class=\"h-6 w-6 hidden lg:block\"\n              viewBox=\"0 0 20 20\"\n              fill=\"currentColor\"\n            >\n              <path\n                fill-rule=\"evenodd\"\n                d=\"M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z\"\n                clip-rule=\"evenodd\"\n              />\n            </svg>\n          </span>\n        </div>\n        <div class=\"my-2 bg-gray-600 h-[1px]\"></div>\n      </div>\n      <div>\n        <img src=\"/img/nuxt3.svg\" alt=\"\" />\n      </div>\n      <div\n        class=\"p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-green-600 text-white\"\n        onclick=\"dropdown()\"\n      >\n        <i class=\"bi bi-chat-left-text-fill\"></i>\n        <div class=\"flex justify-between w-full items-center\">\n          <span class=\"text-sm rotate-180\" id=\"arrow\">\n            <i class=\"bi bi-chevron-down\"></i>\n          </span>\n        </div>\n      </div>\n      <ul class=\"text-left mx-auto text-gray-800 dark:text-gray-200 font-bold\">\n        <li\n          class=\"cursor-pointer p-2 hover:bg-green-600 rounded-md mt-1\"\n          @click=\"setActive(video)\"\n          v-for=\"(video, index) in data?.videos\"\n          :key=\"index\"\n        >\n          {{ video.title }}\n        </li>\n      </ul>\n    </aside>\n    <div class=\"w-screen pt-0 mt-0\" v-if=\"!pending && data\">\n      <section v-if=\"activeVideo\" class=\"overflow-hidden text-gray-700\">\n        <div class=\"container\">\n          <div\n            class=\"clickable\"\n            @click=\"createIframe(activeVideo?.host_id ?? '')\"\n            ref=\"videoWrapper\"\n          >\n            <div ref=\"videoPlaceholderElement align-center justify-center\">\n              <div\n                class=\"video__youtube container flex\"\n                :id=\"activeVideo?.host_id\"\n              >\n                <img\n                  :src=\"\n                    'https://i.ytimg.com/vi/' +\n                    activeVideo?.host_id +\n                    '/maxresdefault.jpg'\n                  \"\n                  class=\"\"\n                  alt=\"video thumbnail\"\n                />\n                <!-- <img src=\"/img/youtube_social_icon_red.png\"\n                    class=\"center\"\n                    alt=\"youtube play button\"> -->\n              </div>\n            </div>\n          </div>\n        </div>\n      </section>\n    </div>\n    <div class=\"md:hidden\">\n      <ul\n        class=\"mx-auto text-left mx-auto text-gray-800 dark:text-gray-200 font-bold\"\n      >\n        <li\n          class=\"cursor-pointer p-2 hover:bg-green-600 rounded-md mt-1\"\n          @click=\"setActive(video)\"\n          v-for=\"video in data?.videos\"\n        >\n          {{ video.title }}\n        </li>\n      </ul>\n    </div>\n  </div>\n</template>\n\n<style>\n.clickable {\n  cursor: pointer;\n}\n</style>",
+      "start": 1761251025084,
+      "end": 1761251025185,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/categories/[name].vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/categories/[name].vue?vue&type=script&setup=true&lang.ts\";\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/categories/[name].vue?vue&type=style&index=0&lang.css\";\nexport default _sfc_main;\n",
+      "start": 1761251025185,
+      "end": 1761251025276,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251025276,
+      "end": 1761251025276,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025276,
+      "end": 1761251025276,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251025276,
+      "end": 1761251025276,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251025276,
+      "end": 1761251025276,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251025277,
+      "end": 1761251025279,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025279,
+      "end": 1761251025279,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251025279,
+      "end": 1761251025279,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251025279,
+      "end": 1761251025279,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251025279,
+      "end": 1761251025279,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251025279,
+      "end": 1761251025279,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251025279,
+      "end": 1761251025280,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251025280,
+      "end": 1761251025280,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251025280,
+      "end": 1761251025280,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251025280,
+      "end": 1761251025280,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251025280,
+      "end": 1761251025280,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251025280,
+      "end": 1761251025280,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251025280,
+      "end": 1761251025280,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251025280,
+      "end": 1761251025281,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251025281,
+      "end": 1761251025281,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "export { default } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/categories/[name].vue?macro=true&vue&type=script&setup=true&lang.ts\"",
+      "start": 1761251025281,
+      "end": 1761251025282,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251025282,
+      "end": 1761251025282,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251025282,
+      "end": 1761251025282,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251025282,
+      "end": 1761251025282,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251025282,
+      "end": 1761251025282,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251025282,
+      "end": 1761251025282,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251025282,
+      "end": 1761251025282,
+      "order": "normal"
+    }
+  ]
+}

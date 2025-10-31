@@ -1,0 +1,314 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/HomepageHeroSection.vue?vue&type=style&index=0&scoped=37ae6835&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n/* Optional: extra styling if needed */\n",
+      "start": 1761251161164,
+      "end": 1761251161164,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/HomepageHeroSection.vue"
+        ],
+        "names": [],
+        "mappings": ";AA+EA,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/HomepageHeroSection.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <SectionContainer class=\"py-8 text-center bg-[#000000] relative\">\n    <!-- Optional background image -->\n    <div class=\"absolute inset-0 z-10\">\n      <img\n        src=\"/images/aged-couple-of-pensioners-talking-with-employee.jpg\"\n        alt=\"Background\"\n        class=\"w-full h-full object-cover opacity-40\"\n      />\n    </div>\n\n    <div class=\"max-w-5xl mx-auto p-4 relative z-10\">\n      <GridTwoColumns>\n        <div>\n        <ParagraphSubHeadingHero class=\"text-white\">\n          {{ IntroText.SubHeading }}\n        </ParagraphSubHeadingHero>\n        <HeadlineOneHero class=\"text-white\">\n          {{ IntroText.Heading }}\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero class=\"text-white\">\n          {{ IntroText.Description }}\n        </ParagraphDescriptionHero>\n        <ContactButtons />\n        </div>\n\n        <div>\n        <HomePageQuoteForm tag=\"HomePageQuoteForm\" />\n        </div>\n      </GridTwoColumns>\n    </div>\n    \n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Lakeland, FL • Since 2016\",\n        Heading: \"Insurance made simple—for Employers, Families, and Seniors.\",\n        Description:\n          \"One team, comprehensive protection: group benefits & commercial lines for businesses, personal coverage for individuals, and Medicare guidance for seniors.\",\n      },\n      Featured: [\n        {\n          id: 1,\n          title: \"Individual & Family\",\n          description:\n            \"Ensure your family's future with our personalized insurance plans. From life to health coverage, we tailor solutions to meet your needs, providing security and peace of mind.\",\n          to: \"/individual-health-insurance/\",\n          text: \"Get Started Now!\",\n        },\n        {\n          id: 2,\n          title: \"Senior\",\n          description:\n            \"Navigate retirement confidently with our senior insurance plans. From Medicare to long-term care coverage, we offer personalized support for your golden years.\",\n          to: \"/senior-solutions/\",\n          text: \"Get Started Now!\",\n        },\n        {\n          id: 3,\n          title: \"Business\",\n          description:\n            \"Protect your business with our tailored insurance solutions. From liability coverage to employee benefits, we safeguard your interests and promote growth.\",\n          to: \"/business-solutions/\",\n          text: \"Get Started Now!\",\n        },\n      ],\n    };\n  },\n};\n</script>\n\n<style scoped>\n/* Optional: extra styling if needed */\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251161170,
+      "end": 1761251161170,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251161170,
+      "end": 1761251161172,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251161172,
+      "end": 1761251161172,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "",
+      "start": 1761251161173,
+      "end": 1761251161203,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/HomepageHeroSection.vue",
+        "mappings": "",
+        "names": [],
+        "sources": [],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251161203,
+      "end": 1761251161203,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251161204,
+      "end": 1761251161204,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251161210,
+      "end": 1761251161210,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "",
+      "start": 1761251161210,
+      "end": 1761251161215,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/HomepageHeroSection.vue",
+        "mappings": "",
+        "names": [],
+        "sources": [],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251161215,
+      "end": 1761251161215,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161215,
+      "end": 1761251161215,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161215,
+      "end": 1761251161215,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251161215,
+      "end": 1761251161215,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251161215,
+      "end": 1761251161215,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251161216,
+      "end": 1761251161216,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161216,
+      "end": 1761251161217,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251161217,
+      "end": 1761251161306,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251161307,
+      "end": 1761251161307,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1761251161309,
+      "end": 1761251161310,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251161310,
+      "end": 1761251161310,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251161310,
+      "end": 1761251161310,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251161310,
+      "end": 1761251161310,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251161310,
+      "end": 1761251161311,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251161311,
+      "end": 1761251161311,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251161312,
+      "end": 1761251161312,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251161312,
+      "end": 1761251161312,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251161312,
+      "end": 1761251161312,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251161312,
+      "end": 1761251161312,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251161312,
+      "end": 1761251161312,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251161312,
+      "end": 1761251161312,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251161321,
+      "end": 1761251161321,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251161321,
+      "end": 1761251161321,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251161345,
+      "end": 1761251161346,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251161345,
+      "end": 1761251161346,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251161346,
+      "end": 1761251161346,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251161346,
+      "end": 1761251161346,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251161346,
+      "end": 1761251161347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251161347,
+      "end": 1761251161347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251161348,
+      "end": 1761251161348,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251161348,
+      "end": 1761251161348,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251161349,
+      "end": 1761251161349,
+      "order": "normal"
+    }
+  ]
+}

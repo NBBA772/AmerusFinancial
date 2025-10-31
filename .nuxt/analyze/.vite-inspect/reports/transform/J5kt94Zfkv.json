@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/sidebars/HealthSidebar.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <aside\n    class=\"bg-gray-50 rounded-2xl border border-gray-200 sticky top-24 h-fit shadow-sm hover:shadow-md transition-shadow duration-300\"\n  >\n    <!-- Header -->\n    <header\n      class=\"flex items-center gap-3 bg-[#30BCFE] text-white p-5 rounded-t-2xl\"\n    >\n      <Icon name=\"lucide:heart-pulse\" size=\"80\" class=\"text-white\" />\n      <h3 class=\"text-2xl font-semibold\">Explore Health Insurance</h3>\n    </header>\n\n    <!-- Body -->\n    <div class=\"p-6\">\n      <!-- Navigation Links -->\n      <ul class=\"space-y-1\">\n        <li\n          v-for=\"(link, index) in links\"\n          :key=\"link.href\"\n          class=\"group py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-sm\"\n          :class=\"{ 'border-b border-gray-200': index !== links.length - 1 }\"\n        >\n          <NuxtLink\n            :to=\"link.href\"\n            class=\"flex items-center justify-between text-gray-700 group-hover:text-[#30BCFE] transition-colors duration-300\"\n          >\n            <div class=\"flex items-center\">\n              <div\n                class=\"p-2 bg-[#30BCFE]/10 rounded-md mr-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-110\"\n              >\n                <Icon :name=\"link.icon\" class=\"text-[#30BCFE]\" size=\"25\" />\n              </div>\n              <span class=\"font-medium\">{{ link.label }}</span>\n            </div>\n\n            <!-- Badge -->\n            <span\n              v-if=\"link.badge\"\n              class=\"ml-2 inline-flex items-center rounded-full bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5\"\n            >\n              {{ link.badge }}\n            </span>\n          </NuxtLink>\n        </li>\n      </ul>\n\n      <!-- CTA Card -->\n      <div\n        class=\"mt-8 bg-blue-50 rounded-xl p-6 border border-blue-100 transition-all duration-300 hover:shadow-sm\"\n      >\n        <h4 class=\"font-semibold mb-2 text-gray-800 flex items-center gap-2\">\n          <Icon name=\"lucide:help-circle\" class=\"text-[#30BCFE]\" size=\"20\" />\n          Have Questions?\n        </h4>\n\n        <p class=\"text-sm text-gray-600 mb-5 leading-relaxed\">\n          Our specialists can help you understand your options and find the right\n          coverage for your needs.\n        </p>\n\n        <NuxtLink to=\"/contact\">\n          <button\n            class=\"w-full inline-flex items-center justify-center gap-2 rounded-lg text-sm font-semibold bg-[#30BCFE] text-white hover:bg-[#30BCFE]/90 transition-all duration-300 h-11 shadow-sm hover:shadow-md\"\n          >\n            <Icon name=\"lucide:phone\" class=\"h-4 w-4\" />\n            Contact an Advisor\n          </button>\n        </NuxtLink>\n      </div>\n    </div>\n  </aside>\n</template>\n\n<script setup>\nconst links = [\n  { href: \"/services/health/individual-health\", label: \"Individual Health\", icon: \"lucide:user-plus\" },\n  { href: \"/services/health/family-coverage\", label: \"Family Coverage\", icon: \"lucide:users\" },\n  { href: \"/services/health/group-health\", label: \"Group Health\", icon: \"lucide:users\" },\n  { href: \"/services/health/medicare\", label: \"Medicare\", icon: \"lucide:activity\" },\n  { href: \"/services/health/dental\", label: \"Dental Insurance\", icon: \"lucide:stethoscope\" },\n  { href: \"/services/health/senior-dental\", label: \"Senior Dental\", icon: \"lucide:stethoscope\" },\n  { href: \"/services/health/vision-coverage\", label: \"Vision Coverage\", icon: \"lucide:eye\" },\n  { href: \"/guides/medicare-guide\", label: \"Medicare Guide\", icon: \"lucide:file-text\" },\n  {\n    href: \"/blog/health-insurance-networks\",\n    label: \"In-Network vs. Out-of-Network\",\n    icon: \"lucide:shield\",\n    badge: \"New\",\n  },\n];\n</script>\n",
+      "start": 1761251024889,
+      "end": 1761251024980,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024980,
+      "end": 1761251024980,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024980,
+      "end": 1761251024980,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024980,
+      "end": 1761251024980,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024980,
+      "end": 1761251024980,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024980,
+      "end": 1761251024980,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024980,
+      "end": 1761251024980,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024980,
+      "end": 1761251024980,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024980,
+      "end": 1761251024980,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createCommentVNode as _createCommentVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, createTextVNode as _createTextVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"bg-gray-50 rounded-2xl border border-gray-200 sticky top-24 h-fit shadow-sm hover:shadow-md transition-shadow duration-300\" }\nconst _hoisted_2 = { class: \"flex items-center gap-3 bg-[#30BCFE] text-white p-5 rounded-t-2xl\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"h3\", { class: \"text-2xl font-semibold\" }, \"Explore Health Insurance\", -1)\nconst _hoisted_4 = { class: \"p-6\" }\nconst _hoisted_5 = { class: \"space-y-1\" }\nconst _hoisted_6 = { class: \"flex items-center\" }\nconst _hoisted_7 = { class: \"p-2 bg-[#30BCFE]/10 rounded-md mr-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-110\" }\nconst _hoisted_8 = { class: \"font-medium\" }\nconst _hoisted_9 = {\n  key: 0,\n  class: \"ml-2 inline-flex items-center rounded-full bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5\"\n}\nconst _hoisted_10 = { class: \"mt-8 bg-blue-50 rounded-xl p-6 border border-blue-100 transition-all duration-300 hover:shadow-sm\" }\nconst _hoisted_11 = { class: \"font-semibold mb-2 text-gray-800 flex items-center gap-2\" }\nconst _hoisted_12 = /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-sm text-gray-600 mb-5 leading-relaxed\" }, \" Our specialists can help you understand your options and find the right coverage for your needs. \", -1)\nconst _hoisted_13 = { class: \"w-full inline-flex items-center justify-center gap-2 rounded-lg text-sm font-semibold bg-[#30BCFE] text-white hover:bg-[#30BCFE]/90 transition-all duration-300 h-11 shadow-sm hover:shadow-md\" }\n\n\nconst _sfc_main = {\n  __name: 'HealthSidebar',\n  setup(__props) {\n\nconst links = [\n  { href: \"/services/health/individual-health\", label: \"Individual Health\", icon: \"lucide:user-plus\" },\n  { href: \"/services/health/family-coverage\", label: \"Family Coverage\", icon: \"lucide:users\" },\n  { href: \"/services/health/group-health\", label: \"Group Health\", icon: \"lucide:users\" },\n  { href: \"/services/health/medicare\", label: \"Medicare\", icon: \"lucide:activity\" },\n  { href: \"/services/health/dental\", label: \"Dental Insurance\", icon: \"lucide:stethoscope\" },\n  { href: \"/services/health/senior-dental\", label: \"Senior Dental\", icon: \"lucide:stethoscope\" },\n  { href: \"/services/health/vision-coverage\", label: \"Vision Coverage\", icon: \"lucide:eye\" },\n  { href: \"/guides/medicare-guide\", label: \"Medicare Guide\", icon: \"lucide:file-text\" },\n  {\n    href: \"/blog/health-insurance-networks\",\n    label: \"In-Network vs. Out-of-Network\",\n    icon: \"lucide:shield\",\n    badge: \"New\",\n  },\n];\n\nreturn (_ctx, _cache) => {\n  const _component_Icon = _resolveComponent(\"Icon\")\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n\n  return (_openBlock(), _createElementBlock(\"aside\", _hoisted_1, [\n    _createElementVNode(\"header\", _hoisted_2, [\n      _createVNode(_component_Icon, {\n        name: \"lucide:heart-pulse\",\n        size: \"80\",\n        class: \"text-white\"\n      }),\n      _hoisted_3\n    ]),\n    _createElementVNode(\"div\", _hoisted_4, [\n      _createElementVNode(\"ul\", _hoisted_5, [\n        (_openBlock(), _createElementBlock(_Fragment, null, _renderList(links, (link, index) => {\n          return _createElementVNode(\"li\", {\n            key: link.href,\n            class: _normalizeClass([\"group py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-sm\", { 'border-b border-gray-200': index !== links.length - 1 }])\n          }, [\n            _createVNode(_component_NuxtLink, {\n              to: link.href,\n              class: \"flex items-center justify-between text-gray-700 group-hover:text-[#30BCFE] transition-colors duration-300\"\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_6, [\n                  _createElementVNode(\"div\", _hoisted_7, [\n                    _createVNode(_component_Icon, {\n                      name: link.icon,\n                      class: \"text-[#30BCFE]\",\n                      size: \"25\"\n                    }, null, 8, [\"name\"])\n                  ]),\n                  _createElementVNode(\"span\", _hoisted_8, _toDisplayString(link.label), 1)\n                ]),\n                (link.badge)\n                  ? (_openBlock(), _createElementBlock(\"span\", _hoisted_9, _toDisplayString(link.badge), 1))\n                  : _createCommentVNode(\"\", true)\n              ]),\n              _: 2\n            }, 1032, [\"to\"])\n          ], 2)\n        }), 64))\n      ]),\n      _createElementVNode(\"div\", _hoisted_10, [\n        _createElementVNode(\"h4\", _hoisted_11, [\n          _createVNode(_component_Icon, {\n            name: \"lucide:help-circle\",\n            class: \"text-[#30BCFE]\",\n            size: \"20\"\n          }),\n          _createTextVNode(\" Have Questions? \")\n        ]),\n        _hoisted_12,\n        _createVNode(_component_NuxtLink, { to: \"/contact\" }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"button\", _hoisted_13, [\n              _createVNode(_component_Icon, {\n                name: \"lucide:phone\",\n                class: \"h-4 w-4\"\n              }),\n              _createTextVNode(\" Contact an Advisor \")\n            ])\n          ]),\n          _: 1\n        })\n      ])\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1761251024980,
+      "end": 1761251024981,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024981,
+      "end": 1761251024981,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024981,
+      "end": 1761251024982,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024982,
+      "end": 1761251024982,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024982,
+      "end": 1761251024982,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024982,
+      "end": 1761251024982,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024982,
+      "end": 1761251024982,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, createCommentVNode as _createCommentVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, createTextVNode as _createTextVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"bg-gray-50 rounded-2xl border border-gray-200 sticky top-24 h-fit shadow-sm hover:shadow-md transition-shadow duration-300\" }\nconst _hoisted_2 = { class: \"flex items-center gap-3 bg-[#30BCFE] text-white p-5 rounded-t-2xl\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"h3\", { class: \"text-2xl font-semibold\" }, \"Explore Health Insurance\", -1)\nconst _hoisted_4 = { class: \"p-6\" }\nconst _hoisted_5 = { class: \"space-y-1\" }\nconst _hoisted_6 = { class: \"flex items-center\" }\nconst _hoisted_7 = { class: \"p-2 bg-[#30BCFE]/10 rounded-md mr-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-110\" }\nconst _hoisted_8 = { class: \"font-medium\" }\nconst _hoisted_9 = {\n  key: 0,\n  class: \"ml-2 inline-flex items-center rounded-full bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5\"\n}\nconst _hoisted_10 = { class: \"mt-8 bg-blue-50 rounded-xl p-6 border border-blue-100 transition-all duration-300 hover:shadow-sm\" }\nconst _hoisted_11 = { class: \"font-semibold mb-2 text-gray-800 flex items-center gap-2\" }\nconst _hoisted_12 = /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-sm text-gray-600 mb-5 leading-relaxed\" }, \" Our specialists can help you understand your options and find the right coverage for your needs. \", -1)\nconst _hoisted_13 = { class: \"w-full inline-flex items-center justify-center gap-2 rounded-lg text-sm font-semibold bg-[#30BCFE] text-white hover:bg-[#30BCFE]/90 transition-all duration-300 h-11 shadow-sm hover:shadow-md\" }\n\n\nconst _sfc_main = {\n  __name: 'HealthSidebar',\n  setup(__props) {\n\nconst links = [\n  { href: \"/services/health/individual-health\", label: \"Individual Health\", icon: \"lucide:user-plus\" },\n  { href: \"/services/health/family-coverage\", label: \"Family Coverage\", icon: \"lucide:users\" },\n  { href: \"/services/health/group-health\", label: \"Group Health\", icon: \"lucide:users\" },\n  { href: \"/services/health/medicare\", label: \"Medicare\", icon: \"lucide:activity\" },\n  { href: \"/services/health/dental\", label: \"Dental Insurance\", icon: \"lucide:stethoscope\" },\n  { href: \"/services/health/senior-dental\", label: \"Senior Dental\", icon: \"lucide:stethoscope\" },\n  { href: \"/services/health/vision-coverage\", label: \"Vision Coverage\", icon: \"lucide:eye\" },\n  { href: \"/guides/medicare-guide\", label: \"Medicare Guide\", icon: \"lucide:file-text\" },\n  {\n    href: \"/blog/health-insurance-networks\",\n    label: \"In-Network vs. Out-of-Network\",\n    icon: \"lucide:shield\",\n    badge: \"New\",\n  },\n];\n\nreturn (_ctx, _cache) => {\n  const _component_Icon = __nuxt_component_0\n  const _component_NuxtLink = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"aside\", _hoisted_1, [\n    _createElementVNode(\"header\", _hoisted_2, [\n      _createVNode(_component_Icon, {\n        name: \"lucide:heart-pulse\",\n        size: \"80\",\n        class: \"text-white\"\n      }),\n      _hoisted_3\n    ]),\n    _createElementVNode(\"div\", _hoisted_4, [\n      _createElementVNode(\"ul\", _hoisted_5, [\n        (_openBlock(), _createElementBlock(_Fragment, null, _renderList(links, (link, index) => {\n          return _createElementVNode(\"li\", {\n            key: link.href,\n            class: _normalizeClass([\"group py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-sm\", { 'border-b border-gray-200': index !== links.length - 1 }])\n          }, [\n            _createVNode(_component_NuxtLink, {\n              to: link.href,\n              class: \"flex items-center justify-between text-gray-700 group-hover:text-[#30BCFE] transition-colors duration-300\"\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"div\", _hoisted_6, [\n                  _createElementVNode(\"div\", _hoisted_7, [\n                    _createVNode(_component_Icon, {\n                      name: link.icon,\n                      class: \"text-[#30BCFE]\",\n                      size: \"25\"\n                    }, null, 8, [\"name\"])\n                  ]),\n                  _createElementVNode(\"span\", _hoisted_8, _toDisplayString(link.label), 1)\n                ]),\n                (link.badge)\n                  ? (_openBlock(), _createElementBlock(\"span\", _hoisted_9, _toDisplayString(link.badge), 1))\n                  : _createCommentVNode(\"\", true)\n              ]),\n              _: 2\n            }, 1032, [\"to\"])\n          ], 2)\n        }), 64))\n      ]),\n      _createElementVNode(\"div\", _hoisted_10, [\n        _createElementVNode(\"h4\", _hoisted_11, [\n          _createVNode(_component_Icon, {\n            name: \"lucide:help-circle\",\n            class: \"text-[#30BCFE]\",\n            size: \"20\"\n          }),\n          _createTextVNode(\" Have Questions? \")\n        ]),\n        _hoisted_12,\n        _createVNode(_component_NuxtLink, { to: \"/contact\" }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"button\", _hoisted_13, [\n              _createVNode(_component_Icon, {\n                name: \"lucide:phone\",\n                class: \"h-4 w-4\"\n              }),\n              _createTextVNode(\" Contact an Advisor \")\n            ])\n          ]),\n          _: 1\n        })\n      ])\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1761251024982,
+      "end": 1761251024982,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024982,
+      "end": 1761251024982,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024982,
+      "end": 1761251024983,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024983,
+      "end": 1761251024983,
+      "order": "normal"
+    }
+  ]
+}

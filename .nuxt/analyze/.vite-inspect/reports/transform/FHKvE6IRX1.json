@@ -1,0 +1,242 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/WebsiteBuild.vue?macro=true&vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, createVNode as _createVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"h-32 flex justify-center\" }, [\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"flex m-5\" }, [\n    /*#__PURE__*/_createElementVNode(\"h1\", { class: \"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\" }, \" Website Build \")\n  ])\n], -1)\nconst _hoisted_2 = { class: \"md:flex min-h-full\" }\nconst _hoisted_3 = { class: \"w-full z-1 flex justify-right relative\" }\n\nimport DashboardSidebar from \"~~/components/elements/DashboardSidebar.vue\";\nimport Tiptap from \"~~/components/elements/Tiptap.vue\";\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'WebsiteBuild',\n  setup(__props) {\n\n// import QuestionBoard from \"~/components/elements/QuestionBoard.vue\";\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_GptChat = _resolveComponent(\"GptChat\")!\n  const _component_PatternSection = _resolveComponent(\"PatternSection\")!\n\n  return (_openBlock(), _createBlock(_component_PatternSection, null, {\n    default: _withCtx(() => [\n      _hoisted_1,\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createVNode(DashboardSidebar),\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createVNode(_component_GptChat)\n        ])\n      ])\n    ]),\n    _: 1\n  }))\n}\n}\n\n})",
+      "start": 1761251029681,
+      "end": 1761251029683
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251029685,
+      "end": 1761251029685,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251029686,
+      "end": 1761251029686,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251029686,
+      "end": 1761251029686,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251029686,
+      "end": 1761251029686,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251029686,
+      "end": 1761251029686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, createVNode as _createVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = /* @__PURE__ */ _createElementVNode(\"div\", { class: \"h-32 flex justify-center\" }, [\n  /* @__PURE__ */ _createElementVNode(\"div\", { class: \"flex m-5\" }, [\n    /* @__PURE__ */ _createElementVNode(\"h1\", { class: \"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\" }, \" Website Build \")\n  ])\n], -1);\nconst _hoisted_2 = { class: \"md:flex min-h-full\" };\nconst _hoisted_3 = { class: \"w-full z-1 flex justify-right relative\" };\nimport DashboardSidebar from \"~~/components/elements/DashboardSidebar.vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"WebsiteBuild\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_GptChat = _resolveComponent(\"GptChat\");\n      const _component_PatternSection = _resolveComponent(\"PatternSection\");\n      return _openBlock(), _createBlock(_component_PatternSection, null, {\n        default: _withCtx(() => [\n          _hoisted_1,\n          _createElementVNode(\"div\", _hoisted_2, [\n            _createVNode(DashboardSidebar),\n            _createElementVNode(\"div\", _hoisted_3, [\n              _createVNode(_component_GptChat)\n            ])\n          ])\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
+      "start": 1761251029686,
+      "end": 1761251031384,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/WebsiteBuild.vue?macro=true&vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, createVNode as _createVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"h-32 flex justify-center\" }, [\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"flex m-5\" }, [\n    /*#__PURE__*/_createElementVNode(\"h1\", { class: \"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\" }, \" Website Build \")\n  ])\n], -1)\nconst _hoisted_2 = { class: \"md:flex min-h-full\" }\nconst _hoisted_3 = { class: \"w-full z-1 flex justify-right relative\" }\n\nimport DashboardSidebar from \"~~/components/elements/DashboardSidebar.vue\";\nimport Tiptap from \"~~/components/elements/Tiptap.vue\";\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'WebsiteBuild',\n  setup(__props) {\n\n// import QuestionBoard from \"~/components/elements/QuestionBoard.vue\";\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_GptChat = _resolveComponent(\"GptChat\")!\n  const _component_PatternSection = _resolveComponent(\"PatternSection\")!\n\n  return (_openBlock(), _createBlock(_component_PatternSection, null, {\n    default: _withCtx(() => [\n      _hoisted_1,\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createVNode(DashboardSidebar),\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createVNode(_component_GptChat)\n        ])\n      ])\n    ]),\n    _: 1\n  }))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,sBAAsB,qBAAqB,eAAe,cAAc,oBAAoB,mBAAmB,WAAW,UAAU,aAAa,YAAY,eAAe,oBAAoB;AAEzM,MAAM,aAA0B,oCAAoB,OAAO,EAAE,OAAO,2BAA2B,GAAG;AAAA,EACnF,oCAAoB,OAAO,EAAE,OAAO,WAAW,GAAG;AAAA,IAChD,oCAAoB,MAAM,EAAE,OAAO,iFAAiF,GAAG,iBAAiB;AAAA,EACvJ,CAAC;AACH,GAAG,EAAE;AACL,MAAM,aAAa,EAAE,OAAO,qBAAqB;AACjD,MAAM,aAAa,EAAE,OAAO,yCAAyC;AAErE,OAAO,sBAAsB;AAG7B,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAIjB,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,qBAAqB,kBAAkB,SAAS;AACtD,YAAM,4BAA4B,kBAAkB,gBAAgB;AAEpE,aAAQ,WAAW,GAAG,aAAa,2BAA2B,MAAM;AAAA,QAClE,SAAS,SAAS,MAAM;AAAA,UACtB;AAAA,UACA,oBAAoB,OAAO,YAAY;AAAA,YACrC,aAAa,gBAAgB;AAAA,YAC7B,oBAAoB,OAAO,YAAY;AAAA,cACrC,aAAa,kBAAkB;AAAA,YACjC,CAAC;AAAA,UACH,CAAC;AAAA,QACH,CAAC;AAAA,QACD,GAAG;AAAA,MACL,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251031384,
+      "end": 1761251031384,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251031390,
+      "end": 1761251031390,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251031390,
+      "end": 1761251031391,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251031391,
+      "end": 1761251031399,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251031399,
+      "end": 1761251031400,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251031400,
+      "end": 1761251031400,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251031407,
+      "end": 1761251031407,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251031410,
+      "end": 1761251031417,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251031418,
+      "end": 1761251031418,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251031419,
+      "end": 1761251031419,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251031435,
+      "end": 1761251031435,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251031438,
+      "end": 1761251031438,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251031443,
+      "end": 1761251031443,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251031443,
+      "end": 1761251031443,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251031454,
+      "end": 1761251031454,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251031454,
+      "end": 1761251031454,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251031454,
+      "end": 1761251031454,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251031461,
+      "end": 1761251031461,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251031465,
+      "end": 1761251031472,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251031472,
+      "end": 1761251031472,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251031478,
+      "end": 1761251031623,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251031795,
+      "end": 1761251031810,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1761251031875,
+      "end": 1761251031890,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251032111,
+      "end": 1761251032111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251032111,
+      "end": 1761251032111,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251032111,
+      "end": 1761251032112,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251032112,
+      "end": 1761251032112,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251032112,
+      "end": 1761251032112,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251032112,
+      "end": 1761251032112,
+      "order": "normal"
+    }
+  ]
+}

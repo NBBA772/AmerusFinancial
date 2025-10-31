@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/HomePageQuoteForm.vue?nuxt_component=async&nuxt_component_name=HomePageQuoteForm",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div>\n    <div class=\"px-4 mb-8 md:block\">\n      <MultiStepForm />\n    </div>\n  </div>\n</template>\n\n<script>\nimport MultiStepForm from '../sections/HomePage/MultiStepForm.vue';\n\nexport default {\n  props: {\n    tag: {\n      type: String,\n      default: \"newClient\", // Default tag if not provided\n    },\n  },\n  data() {\n    return {\n      firstName: \"\",\n      lastName: \"\",\n      email: \"\",\n      phoneNumber: \"\",\n      tags: [],\n    };\n  },\n  methods: {\n    async handleSubmit() {\n      try {\n        // Create contact\n        await this.createContact();\n        // Reset form fields or show success message\n        this.resetForm();\n        console.log(\"Form submitted successfully\");\n      } catch (error) {\n        console.error(\"Error submitting form:\", error);\n      }\n    },\n    async createContact() {\n      try {\n        const config = useRuntimeConfig();\n        // console.log(config.public.GHL_API_KEY);\n        const myHeaders = new Headers();\n        myHeaders.append(\"Content-Type\", \"application/json\");\n        myHeaders.append(\"Authorization\", `${config.public.GHL_API_KEY}`);\n\n        const data = {\n          firstName: this.firstName,\n          lastName: this.lastName,\n          email: this.email,\n          phone: this.phoneNumber,\n          tags: [this.tag],\n        };\n\n        const raw = JSON.stringify(data);\n\n        const response = await fetch(\n          \"https://rest.gohighlevel.com/v1/contacts/\",\n          {\n            method: \"POST\",\n            headers: myHeaders,\n            body: raw,\n            redirect: \"follow\",\n          }\n        );\n\n        if (!response.ok) {\n          throw new Error(\"Failed to create contact\");\n        }\n\n        const contact = await response.json();\n        console.log(\"Created contact:\", contact); // Log the contact object\n\n        return contact; // Return the contact object\n      } catch (error) {\n        console.error(\"Error creating contact:\", error);\n        throw error;\n      }\n    },\n    resetForm() {\n      // Reset form fields here\n      this.firstName = \"\";\n      this.lastName = \"\";\n      this.email = \"\";\n      this.phoneNumber = \"\";\n      this.tags = [];\n    },\n  },\n};\n</script>\n",
+      "start": 1761251140742,
+      "end": 1761251140900,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251140900,
+      "end": 1761251140900,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251140900,
+      "end": 1761251140900,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251140900,
+      "end": 1761251140901,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251140900,
+      "end": 1761251140901,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251140901,
+      "end": 1761251140901,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251140901,
+      "end": 1761251140901,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251140901,
+      "end": 1761251140901,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251140901,
+      "end": 1761251140901,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251140901,
+      "end": 1761251140901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251140901,
+      "end": 1761251140901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251140901,
+      "end": 1761251140901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251140901,
+      "end": 1761251140901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nimport MultiStepForm from '../sections/HomePage/MultiStepForm.vue';\n\nconst _sfc_main = {\n  props: {\n    tag: {\n      type: String,\n      default: \"newClient\", // Default tag if not provided\n    },\n  },\n  data() {\n    return {\n      firstName: \"\",\n      lastName: \"\",\n      email: \"\",\n      phoneNumber: \"\",\n      tags: [],\n    };\n  },\n  methods: {\n    async handleSubmit() {\n      try {\n        // Create contact\n        await this.createContact();\n        // Reset form fields or show success message\n        this.resetForm();\n        console.log(\"Form submitted successfully\");\n      } catch (error) {\n        console.error(\"Error submitting form:\", error);\n      }\n    },\n    async createContact() {\n      try {\n        const config = useRuntimeConfig();\n        // console.log(config.public.GHL_API_KEY);\n        const myHeaders = new Headers();\n        myHeaders.append(\"Content-Type\", \"application/json\");\n        myHeaders.append(\"Authorization\", `${config.public.GHL_API_KEY}`);\n\n        const data = {\n          firstName: this.firstName,\n          lastName: this.lastName,\n          email: this.email,\n          phone: this.phoneNumber,\n          tags: [this.tag],\n        };\n\n        const raw = JSON.stringify(data);\n\n        const response = await fetch(\n          \"https://rest.gohighlevel.com/v1/contacts/\",\n          {\n            method: \"POST\",\n            headers: myHeaders,\n            body: raw,\n            redirect: \"follow\",\n          }\n        );\n\n        if (!response.ok) {\n          throw new Error(\"Failed to create contact\");\n        }\n\n        const contact = await response.json();\n        console.log(\"Created contact:\", contact); // Log the contact object\n\n        return contact; // Return the contact object\n      } catch (error) {\n        console.error(\"Error creating contact:\", error);\n        throw error;\n      }\n    },\n    resetForm() {\n      // Reset form fields here\n      this.firstName = \"\";\n      this.lastName = \"\";\n      this.email = \"\";\n      this.phoneNumber = \"\";\n      this.tags = [];\n    },\n  },\n};\n\nimport { resolveComponent as _resolveComponent } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_MultiStepForm = _resolveComponent(\"MultiStepForm\")\n\n  _push(`<div${_ssrRenderAttrs(_attrs)}><div class=\"px-4 mb-8 md:block\">`)\n  _push(_ssrRenderComponent(_component_MultiStepForm, null, null, _parent))\n  _push(`</div></div>`)\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/forms/HomePageQuoteForm.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251140901,
+      "end": 1761251140908,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/HomePageQuoteForm.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/HomePageQuoteForm.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <div>\n    <div class=\"px-4 mb-8 md:block\">\n      <MultiStepForm />\n    </div>\n  </div>\n</template>\n\n<script>\nimport MultiStepForm from '../sections/HomePage/MultiStepForm.vue';\n\nexport default {\n  props: {\n    tag: {\n      type: String,\n      default: \"newClient\", // Default tag if not provided\n    },\n  },\n  data() {\n    return {\n      firstName: \"\",\n      lastName: \"\",\n      email: \"\",\n      phoneNumber: \"\",\n      tags: [],\n    };\n  },\n  methods: {\n    async handleSubmit() {\n      try {\n        // Create contact\n        await this.createContact();\n        // Reset form fields or show success message\n        this.resetForm();\n        console.log(\"Form submitted successfully\");\n      } catch (error) {\n        console.error(\"Error submitting form:\", error);\n      }\n    },\n    async createContact() {\n      try {\n        const config = useRuntimeConfig();\n        // console.log(config.public.GHL_API_KEY);\n        const myHeaders = new Headers();\n        myHeaders.append(\"Content-Type\", \"application/json\");\n        myHeaders.append(\"Authorization\", `${config.public.GHL_API_KEY}`);\n\n        const data = {\n          firstName: this.firstName,\n          lastName: this.lastName,\n          email: this.email,\n          phone: this.phoneNumber,\n          tags: [this.tag],\n        };\n\n        const raw = JSON.stringify(data);\n\n        const response = await fetch(\n          \"https://rest.gohighlevel.com/v1/contacts/\",\n          {\n            method: \"POST\",\n            headers: myHeaders,\n            body: raw,\n            redirect: \"follow\",\n          }\n        );\n\n        if (!response.ok) {\n          throw new Error(\"Failed to create contact\");\n        }\n\n        const contact = await response.json();\n        console.log(\"Created contact:\", contact); // Log the contact object\n\n        return contact; // Return the contact object\n      } catch (error) {\n        console.error(\"Error creating contact:\", error);\n        throw error;\n      }\n    },\n    resetForm() {\n      // Reset form fields here\n      this.firstName = \"\";\n      this.lastName = \"\";\n      this.email = \"\";\n      this.phoneNumber = \"\";\n      this.tags = [];\n    },\n  },\n};\n</script>\n"
+        ],
+        "mappings": "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B,CAAC,CAAC,EAAE;QACF,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACjC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACzC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAC/B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACpD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;QAEjE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,EAAE;UACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CA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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/HomePageQuoteForm.vue\").then(r => r.default))",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251140908,
+      "end": 1761251140908,
+      "order": "normal"
+    }
+  ]
+}

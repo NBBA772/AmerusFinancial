@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/services/index.vue?vue&type=style&index=0&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\nul li span {\n  /*\n     * We want the bullets outside of the list,\n     * so the text is aligned. Now the actual bullet\n     * is outside of the list’s container\n     */\n  list-style-position: outside !important;\n\n  /*\n     * Because the bullet is outside of the list’s\n     * container, indent the list entirely\n     */\n  /* margin-left: 1em; */\n}\n.svg svg {\n  width: 100px;\n}\n.logoSection {\n  height: 300px;\n}\n",
+      "start": 1761251169439,
+      "end": 1761251169442,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/services/index.vue"
+        ],
+        "names": [],
+        "mappings": ";AAkHA,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE;EACT,CAAC;KACE,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;KACzC,EAAE,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;KAC9C,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;KACnC,CAAC;EACJ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;EAEvC,CAAC;KACE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;KAC5C,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;KACpC,CAAC;EACJ,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC;AACxB;AACA,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE;EACP,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;AACd;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;AACf",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/services/index.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <PatternSection>\n    <BasicSection>\n      <InsuranceServicesHeroSection />\n      <Breadcrumbs currentPageTitle=\"Insurance Services\" />\n\n      <BasicSection>\n        <div class=\"mx-8\">\n          <!-- Card -->\n          <GridThreeColumns>\n            <div\n              class=\"mx-auto mb-4 bg-indigo-300 dark:bg-indigo-900 shadow-lg rounded-lg\"\n              v-for=\"Service in Services\"\n              :key=\"Service.title\"\n            >\n              <div class=\"px-6 py-5\">\n                <div class=\"flex items-start\">\n                  <img :src=\"Service.image\" class=\"mr-4\" width=\"250\" />\n                  <!-- Card content -->\n                  <div class=\"flex-grow truncate\">\n                    <!-- Card header -->\n                    <div\n                      class=\"w-full sm:flex justify-between items-center mb-3\"\n                    >\n                      <!-- Title -->\n                      <h2\n                        class=\"text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0\"\n                      >\n                        {{ Service.title }}\n                      </h2>\n                    </div>\n                    <!-- Card body -->\n                    <div\n                      class=\"flex items-end justify-between whitespace-normal\"\n                    >\n                      <!-- Paragraph -->\n                      <div class=\"max-w-md text-indigo-100\">\n                        <p class=\"mb-2\">\n                          {{ Service.excerpt }}\n                        </p>\n                      </div>\n                      <!-- More link -->\n                      <nuxt-link\n                        class=\"flex-shrink-0 flex items-center justify-center text-indigo-600 w-10 h-10 rounded-full bg-gradient-to-b from-indigo-50 to-indigo-100 hover:from-white hover:to-indigo-50 focus:outline-none focus-visible:from-white focus-visible:to-white transition duration-150 ml-2\"\n                        :to=\"Service.url\"\n                      >\n                        <span class=\"block font-bold\"\n                          ><span class=\"sr-only\">Read more</span> -></span\n                        >\n                      </nuxt-link>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </GridThreeColumns>\n        </div>\n      </BasicSection>\n      <GetAnswersToYourQuestions />\n    </BasicSection>\n  </PatternSection>\n</template>\n\n<script setup>\nuseSeoMeta({\n  title: 'Insurance Services — Amerus Financial',\n  ogTitle: 'Complete Insurance Solutions — Amerus',\n  description:\n    'Comprehensive insurance services for individuals, families, and businesses. Health, life, auto, home, business, and retirement planning solutions from Amerus.',\n  ogDescription:\n    'Complete insurance portfolio including health, life, auto, home, business insurance, and retirement planning services for all your protection needs.',\n  ogImage: 'https://www.amerusfinancial.com/images/insurance-services.jpg',\n  ogUrl: 'https://www.amerusfinancial.com/services',\n  twitterCard: 'summary_large_image',\n  twitterTitle: 'Complete Insurance Solutions — Amerus',\n  twitterDescription:\n    'Complete insurance portfolio including health, life, auto, home, business insurance, and retirement planning services for all your protection needs.',\n  twitterImage: 'https://www.amerusfinancial.com/images/insurance-services.jpg'\n})\n\nuseHead({\n  link: [\n    {\n      rel: 'canonical',\n      href: 'https://www.amerusfinancial.com/services'\n    }\n  ]\n})\n\nconst Services = [\n  {\n    title: \"Individual & Family\",\n    excerpt:\n      \"Tailored plans for family security. Life and health coverage ensuring peace of mind for your loved ones' future.\",\n    image: \"/images/FamilyAndIndividual.jpg\",\n    url: \"/individual-health-insurance/\",\n  },\n  {\n    title: \"Senior Solutions\",\n    excerpt:\n      \"Confident retirement with personalized support. Medicare, long-term care coverage for worry-free golden years\",\n    image: \"/images/Senior-Solutions.jpg\",\n    url: \"/senior-solutions/\",\n  },\n  {\n    title: \"Business Solutions\",\n    excerpt:\n      \"Safeguard business assets with tailored coverage. Liability, employee benefits ensuring growth and protection for enterprises.\",\n    image: \"/images/Business-Solutions.jpg\",\n    url: \"/business-solutions/\",\n  },\n]\n</script>\n<style>\nul li span {\n  /*\n     * We want the bullets outside of the list,\n     * so the text is aligned. Now the actual bullet\n     * is outside of the list’s container\n     */\n  list-style-position: outside !important;\n\n  /*\n     * Because the bullet is outside of the list’s\n     * container, indent the list entirely\n     */\n  /* margin-left: 1em; */\n}\n.svg svg {\n  width: 100px;\n}\n.logoSection {\n  height: 300px;\n}\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251169452,
+      "end": 1761251169453,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251169452,
+      "end": 1761251169457,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251169476,
+      "end": 1761251169476,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251169476,
+      "end": 1761251169476,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251169493,
+      "end": 1761251169494,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251169493,
+      "end": 1761251169494,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251169496,
+      "end": 1761251169497,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251169497,
+      "end": 1761251169498,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "ul li span{list-style-position:outside!important}.svg svg{width:100px}.logoSection{height:300px}",
+      "start": 1761251169499,
+      "end": 1761251169602,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/services/index.vue",
+        "mappings": "AACA,WAME,qCAOF,CACA,SACE,WACF,CACA,aACE,YACF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/services/index.vue"
+        ],
+        "sourcesContent": [
+          "\nul li span {\n  /*\n     * We want the bullets outside of the list,\n     * so the text is aligned. Now the actual bullet\n     * is outside of the list’s container\n     */\n  list-style-position: outside !important;\n\n  /*\n     * Because the bullet is outside of the list’s\n     * container, indent the list entirely\n     */\n  /* margin-left: 1em; */\n}\n.svg svg {\n  width: 100px;\n}\n.logoSection {\n  height: 300px;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251169602,
+      "end": 1761251169602,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251169604,
+      "end": 1761251169604,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251169604,
+      "end": 1761251169604,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "ul li span{list-style-position:outside!important}.svg svg{width:100px}.logoSection{height:300px}",
+      "start": 1761251169604,
+      "end": 1761251169605,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/services/index.vue",
+        "mappings": "AAAA,WAAW,qCAAqC,CAAC,SAAS,WAAW,CAAC,aAAa,YAAY",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/services/index.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251169605,
+      "end": 1761251169605,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251169605,
+      "end": 1761251169605,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251169605,
+      "end": 1761251169605,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251169605,
+      "end": 1761251169605,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251169605,
+      "end": 1761251169605,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251169605,
+      "end": 1761251169605,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251169605,
+      "end": 1761251169605,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251169605,
+      "end": 1761251169624,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251169624,
+      "end": 1761251169624,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1761251169624,
+      "end": 1761251169625,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251169625,
+      "end": 1761251169625,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251169625,
+      "end": 1761251169625,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251169625,
+      "end": 1761251169625,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251169625,
+      "end": 1761251169625,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251169625,
+      "end": 1761251169625,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251169625,
+      "end": 1761251169625,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251169625,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251169625,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251169626,
+      "end": 1761251169626,
+      "order": "normal"
+    }
+  ]
+}

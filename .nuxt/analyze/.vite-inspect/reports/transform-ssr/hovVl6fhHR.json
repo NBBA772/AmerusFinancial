@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue?vue&type=style&index=0&scoped=8f7651f5&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n",
+      "start": 1761251160415,
+      "end": 1761251160421,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue"
+        ],
+        "names": [],
+        "mappings": ";AAkFA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACf,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACtE",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <!-- <NuxtImg\n          format=\"webp\"\n          src=\"/images/charter-bus.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n        /> -->\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/Business-Solutions-Hero.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\"\n          class=\"full-width-height\"\n        />\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          Business Insurance Solutions Tailored to Your Needs\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero\n          >For over two decades, Amerus Financial has been at the forefront of\n          delivering need-based insurance solutions to a diverse range of\n          businesses, from burgeoning startups to established enterprises. Our\n          team of highly qualified professionals consistently stays abreast of\n          the latest trends and regulatory changes in an insurance landscape\n          that is as dynamic as it is complex.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >We recognize that offering employee benefits can be both a logistical\n          and financial challenge for businesses. That’s why we’ve streamlined\n          the process to make it as straightforward as possible. We begin by\n          deeply understanding your company’s unique requirements and\n          operational intricacies. Based on this understanding, we then develop\n          a tailored plan that not only meets your specific needs but also\n          remains budget-friendly.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >To ensure we provide the highest quality of coverage, we partner with\n          top-rated insurance carriers across the country, all of whom\n          specialize in crafting innovative, effective solutions for businesses\n          like yours. This collaborative approach allows us to offer\n          comprehensive yet cost-effective insurance packages that stand out in\n          the market.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >The trust and confidence that hundreds of companies nationwide have\n          placed in us serve as a testament to the quality, reliability, and\n          excellence of the insurance solutions we provide. Reach out to Amerus\n          Financial today to discover why we have become the go-to source for\n          business insurance solutions that genuinely\n          work.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >Contact us for a customized insurance consultation today at\n          1-888-441-7891</ParagraphDescriptionHero\n        >\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Business Insurance Solutions Tailored to Your Needs\",\n        Description:\n          \"For over two decades, Amerus Financial has been at the forefront of delivering need-based insurance solutions to a diverse range of businesses, from burgeoning startups to established enterprises. Our team of highly qualified professionals consistently stays abreast of the latest trends and regulatory changes in an insurance landscape that is as dynamic as it is complex. We recognize that offering employee benefits can be both a logistical and financial challenge for businesses. That’s why we’ve streamlined the process to make it as straightforward as possible. We begin by deeply understanding your company’s unique requirements and operational intricacies. Based on this understanding, we then develop a tailored plan that not only meets your specific needs but also remains budget-friendly. To ensure we provide the highest quality of coverage, we partner with top-rated insurance carriers across the country, all of whom specialize in crafting innovative, effective solutions for businesses like yours. This collaborative approach allows us to offer comprehensive yet cost-effective insurance packages that stand out in the market. The trust and confidence that hundreds of companies nationwide have placed in us serve as a testament to the quality, reliability, and excellence of the insurance solutions we provide. Reach out to Amerus Financial today to discover why we have become the go-to source for business insurance solutions that genuinely work.\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160422,
+      "end": 1761251160422,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160422,
+      "end": 1761251160422,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160422,
+      "end": 1761251160422,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160422,
+      "end": 1761251160422,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160425,
+      "end": 1761251160425,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160425,
+      "end": 1761251160426,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251160426,
+      "end": 1761251160427,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251160427,
+      "end": 1761251160428,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".image-container{height:100%;overflow:hidden;width:100%}.full-width-height{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}",
+      "start": 1761251160429,
+      "end": 1761251160466,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue",
+        "mappings": "AACA,iBAEE,WAAY,CACZ,eAAgB,CAFhB,UAGF,CAEA,mBAEE,WAAY,CACZ,mBAAiB,CAAjB,gBAAiB,CAFjB,UAGF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue"
+        ],
+        "sourcesContent": [
+          "\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251160466,
+      "end": 1761251160466,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251160466,
+      "end": 1761251160466,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251160466,
+      "end": 1761251160466,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".image-container[data-v-8f7651f5]{height:100%;overflow:hidden;width:100%}.full-width-height[data-v-8f7651f5]{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}",
+      "start": 1761251160466,
+      "end": 1761251160469,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue",
+        "mappings": "AAAA,kCAAiB,WAAW,CAAC,eAAe,CAAC,UAAU,CAAC,oCAAmB,WAAW,CAAC,mBAAmB,CAAC,gBAAgB,CAAC,UAAU",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251160469,
+      "end": 1761251160469,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160469,
+      "end": 1761251160469,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160469,
+      "end": 1761251160469,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251160469,
+      "end": 1761251160481,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251160469,
+      "end": 1761251160481,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251160481,
+      "end": 1761251160507,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160507,
+      "end": 1761251160507,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251160507,
+      "end": 1761251160507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251160507,
+      "end": 1761251160507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".image-container[data-v-8f7651f5]{height:100%;overflow:hidden;width:100%}.full-width-height[data-v-8f7651f5]{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}\"",
+      "start": 1761251160507,
+      "end": 1761251160509,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251160509,
+      "end": 1761251160510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251160510,
+      "end": 1761251160510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251160510,
+      "end": 1761251160510,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251160510,
+      "end": 1761251160516,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251160516,
+      "end": 1761251160516,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251160516,
+      "end": 1761251160519,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251160519,
+      "end": 1761251160519,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251160519,
+      "end": 1761251160519,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251160519,
+      "end": 1761251160519,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251160519,
+      "end": 1761251160519,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251160545,
+      "end": 1761251160545,
+      "order": "normal"
+    }
+  ]
+}

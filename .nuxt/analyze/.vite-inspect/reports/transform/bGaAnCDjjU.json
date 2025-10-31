@@ -1,0 +1,235 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/articles/overview.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "\n\n<template>\n  <PatternSection class=\"flex justify-center w-100\">\n    <ContentList path=\"/articles\" v-slot=\"{ list }\">\n      <div class=\"flex flex-col justify-center w-100\">\n        <div\n          v-for=\"article in list\"\n          :key=\"article._path\"\n          class=\"max-w-xl rounded overflow-hidden shadow-xl transition duration-500 hover:scale-110 my-10 p-0 dark:bg-text-white min-h-[180px]\"\n        >\n          <NuxtLink :to=\"article._path\" v-if=\"article.img\">\n            <GridTwoColumns>\n              <div class=\"mr-4\">\n                <img :src=\"article.img\" alt=\"\" />\n              </div>\n              <div>\n                <div class=\"p-4\">\n                  <div class=\"font-bold text-xl mb-2 dark:text-white\">\n                    {{ article.title }}\n                  </div>\n                  <p class=\"text-gray-700 dark:text-white text-base\">\n                    {{ article.description }}\n                  </p>\n                </div>\n              </div>\n            </GridTwoColumns>\n          </NuxtLink>\n          <NuxtLink :to=\"article._path\" v-else class=\"h-full\">\n            <div class=\"p-4\">\n              <div class=\"font-bold text-xl mb-2 dark:text-white\">\n                {{ article.title }}\n              </div>\n              <p class=\"text-gray-700 dark:text-white text-base\">\n                {{ article.description }}\n              </p>\n            </div>\n          </NuxtLink>\n        </div>\n      </div>\n    </ContentList>\n  </PatternSection>\n</template>",
+      "start": 1761251025083,
+      "end": 1761251025182,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251025182,
+      "end": 1761251025182,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251025182,
+      "end": 1761251025182,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251025182,
+      "end": 1761251025182,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251025182,
+      "end": 1761251025182,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251025182,
+      "end": 1761251025182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251025182,
+      "end": 1761251025182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251025182,
+      "end": 1761251025182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251025182,
+      "end": 1761251025182,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"flex flex-col justify-center w-100\" }\nconst _hoisted_2 = { class: \"mr-4\" }\nconst _hoisted_3 = [\"src\"]\nconst _hoisted_4 = { class: \"p-4\" }\nconst _hoisted_5 = { class: \"font-bold text-xl mb-2 dark:text-white\" }\nconst _hoisted_6 = { class: \"text-gray-700 dark:text-white text-base\" }\nconst _hoisted_7 = { class: \"p-4\" }\nconst _hoisted_8 = { class: \"font-bold text-xl mb-2 dark:text-white\" }\nconst _hoisted_9 = { class: \"text-gray-700 dark:text-white text-base\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n  const _component_ContentList = _resolveComponent(\"ContentList\")\n  const _component_PatternSection = _resolveComponent(\"PatternSection\")\n\n  return (_openBlock(), _createBlock(_component_PatternSection, { class: \"flex justify-center w-100\" }, {\n    default: _withCtx(() => [\n      _createVNode(_component_ContentList, { path: \"/articles\" }, {\n        default: _withCtx(({ list }) => [\n          _createElementVNode(\"div\", _hoisted_1, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(list, (article) => {\n              return (_openBlock(), _createElementBlock(\"div\", {\n                key: article._path,\n                class: \"max-w-xl rounded overflow-hidden shadow-xl transition duration-500 hover:scale-110 my-10 p-0 dark:bg-text-white min-h-[180px]\"\n              }, [\n                (article.img)\n                  ? (_openBlock(), _createBlock(_component_NuxtLink, {\n                      key: 0,\n                      to: article._path\n                    }, {\n                      default: _withCtx(() => [\n                        _createVNode(_component_GridTwoColumns, null, {\n                          default: _withCtx(() => [\n                            _createElementVNode(\"div\", _hoisted_2, [\n                              _createElementVNode(\"img\", {\n                                src: article.img,\n                                alt: \"\"\n                              }, null, 8, _hoisted_3)\n                            ]),\n                            _createElementVNode(\"div\", null, [\n                              _createElementVNode(\"div\", _hoisted_4, [\n                                _createElementVNode(\"div\", _hoisted_5, _toDisplayString(article.title), 1),\n                                _createElementVNode(\"p\", _hoisted_6, _toDisplayString(article.description), 1)\n                              ])\n                            ])\n                          ]),\n                          _: 2\n                        }, 1024)\n                      ]),\n                      _: 2\n                    }, 1032, [\"to\"]))\n                  : (_openBlock(), _createBlock(_component_NuxtLink, {\n                      key: 1,\n                      to: article._path,\n                      class: \"h-full\"\n                    }, {\n                      default: _withCtx(() => [\n                        _createElementVNode(\"div\", _hoisted_7, [\n                          _createElementVNode(\"div\", _hoisted_8, _toDisplayString(article.title), 1),\n                          _createElementVNode(\"p\", _hoisted_9, _toDisplayString(article.description), 1)\n                        ])\n                      ]),\n                      _: 2\n                    }, 1032, [\"to\"]))\n              ]))\n            }), 128))\n          ])\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251025182,
+      "end": 1761251025184,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251025184,
+      "end": 1761251025184,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1761251025184,
+      "end": 1761251025185,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251025185,
+      "end": 1761251025185,
+      "order": "normal"
+    }
+  ]
+}

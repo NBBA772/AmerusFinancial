@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/InsurancePlanningTools.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx } from \"vue\"\n\nconst _hoisted_1 = { class: \"py-16 bg-gray-50\" }\nconst _hoisted_2 = { class: \"container mx-auto px-4\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"text-center mb-12\" }, [\n  /*#__PURE__*/_createElementVNode(\"h2\", { class: \"text-3xl font-bold mb-4\" }, \"Insurance Planning Tools\"),\n  /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-gray-600 max-w-2xl mx-auto\" }, \" Access our suite of interactive calculators, personalized guidance tools, and expert resources to help make informed decisions about your insurance and financial future. \")\n], -1)\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8\" }\nconst _hoisted_5 = { class: \"mt-12 text-center\" }\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"button\", { class: \"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 transition-colors\" }, \" View All Resources \", -1)\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'InsurancePlanningTools',\n  setup(__props) {\n\nconst tools = [\n  {\n    title: \"Retirement Calculator\",\n    description:\n      \"Plan for your future by calculating how much you need to save for a comfortable retirement.\",\n    icon: \"lucide:calculator\",\n    link: \"/retirement\",\n    button: \"Calculate Now\",\n  },\n  {\n    title: \"Health Insurance Glossary\",\n    description:\n      \"Access our comprehensive glossary of health insurance terms and definitions.\",\n    icon: \"lucide:book-open\",\n    link: \"/health-insurance-glossary\",\n    button: \"View Glossary\",\n  },\n  {\n    title: \"Insurance Guides\",\n    description:\n      \"Download helpful guides about Medicare, life insurance, and other coverage options.\",\n    icon: \"lucide:file-text\",\n    link: \"/resources\",\n    button: \"Browse Guides\",\n  },\n  {\n    title: \"Expert Consultation\",\n    description:\n      \"Get personalized advice from our insurance specialists to find the right coverage.\",\n    icon: \"lucide:phone\",\n    link: \"/contact\",\n    button: \"Contact Us\",\n  },\n  {\n    title: \"Medicare Planning\",\n    description:\n      \"Understand Medicare enrollment periods and find the right coverage for your needs.\",\n    icon: \"lucide:heart-pulse\",\n    link: \"/services/health/medicare\",\n    button: \"Learn More\",\n  },\n  {\n    title: \"Insurance Assessment\",\n    description:\n      \"Take our assessment to identify gaps in your current insurance coverage.\",\n    icon: \"lucide:clipboard\",\n    link: \"/contact\",\n    button: \"Start Assessment\",\n  },\n]\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_PlanningToolsCard = _resolveComponent(\"PlanningToolsCard\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        (_openBlock(), _createElementBlock(_Fragment, null, _renderList(tools, (tool, index) => {\n          return _createVNode(_component_PlanningToolsCard, {\n            key: index,\n            title: tool.title,\n            description: tool.description,\n            icon: tool.icon,\n            link: tool.link,\n            \"link-text\": tool.button\n          }, null, 8, [\"title\", \"description\", \"icon\", \"link\", \"link-text\"])\n        }), 64))\n      ]),\n      _createElementVNode(\"div\", _hoisted_5, [\n        _createVNode(_component_NuxtLink, { to: \"/resources\" }, {\n          default: _withCtx(() => [\n            _hoisted_6\n          ]),\n          _: 1\n        })\n      ])\n    ])\n  ]))\n}\n}\n\n})",
+      "start": 1761251028232,
+      "end": 1761251028232
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251028234,
+      "end": 1761251028234,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251028234,
+      "end": 1761251028234,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251028234,
+      "end": 1761251028234,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251028234,
+      "end": 1761251028234,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251028234,
+      "end": 1761251028234,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx } from \"vue\";\nconst _hoisted_1 = { class: \"py-16 bg-gray-50\" };\nconst _hoisted_2 = { class: \"container mx-auto px-4\" };\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"div\", { class: \"text-center mb-12\" }, [\n  /* @__PURE__ */ _createElementVNode(\"h2\", { class: \"text-3xl font-bold mb-4\" }, \"Insurance Planning Tools\"),\n  /* @__PURE__ */ _createElementVNode(\"p\", { class: \"text-gray-600 max-w-2xl mx-auto\" }, \" Access our suite of interactive calculators, personalized guidance tools, and expert resources to help make informed decisions about your insurance and financial future. \")\n], -1);\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8\" };\nconst _hoisted_5 = { class: \"mt-12 text-center\" };\nconst _hoisted_6 = /* @__PURE__ */ _createElementVNode(\"button\", { class: \"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 transition-colors\" }, \" View All Resources \", -1);\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"InsurancePlanningTools\",\n  setup(__props) {\n    const tools = [\n      {\n        title: \"Retirement Calculator\",\n        description: \"Plan for your future by calculating how much you need to save for a comfortable retirement.\",\n        icon: \"lucide:calculator\",\n        link: \"/retirement\",\n        button: \"Calculate Now\"\n      },\n      {\n        title: \"Health Insurance Glossary\",\n        description: \"Access our comprehensive glossary of health insurance terms and definitions.\",\n        icon: \"lucide:book-open\",\n        link: \"/health-insurance-glossary\",\n        button: \"View Glossary\"\n      },\n      {\n        title: \"Insurance Guides\",\n        description: \"Download helpful guides about Medicare, life insurance, and other coverage options.\",\n        icon: \"lucide:file-text\",\n        link: \"/resources\",\n        button: \"Browse Guides\"\n      },\n      {\n        title: \"Expert Consultation\",\n        description: \"Get personalized advice from our insurance specialists to find the right coverage.\",\n        icon: \"lucide:phone\",\n        link: \"/contact\",\n        button: \"Contact Us\"\n      },\n      {\n        title: \"Medicare Planning\",\n        description: \"Understand Medicare enrollment periods and find the right coverage for your needs.\",\n        icon: \"lucide:heart-pulse\",\n        link: \"/services/health/medicare\",\n        button: \"Learn More\"\n      },\n      {\n        title: \"Insurance Assessment\",\n        description: \"Take our assessment to identify gaps in your current insurance coverage.\",\n        icon: \"lucide:clipboard\",\n        link: \"/contact\",\n        button: \"Start Assessment\"\n      }\n    ];\n    return (_ctx, _cache) => {\n      const _component_PlanningToolsCard = _resolveComponent(\"PlanningToolsCard\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _hoisted_3,\n          _createElementVNode(\"div\", _hoisted_4, [\n            (_openBlock(), _createElementBlock(_Fragment, null, _renderList(tools, (tool, index) => {\n              return _createVNode(_component_PlanningToolsCard, {\n                key: index,\n                title: tool.title,\n                description: tool.description,\n                icon: tool.icon,\n                link: tool.link,\n                \"link-text\": tool.button\n              }, null, 8, [\"title\", \"description\", \"icon\", \"link\", \"link-text\"]);\n            }), 64))\n          ]),\n          _createElementVNode(\"div\", _hoisted_5, [\n            _createVNode(_component_NuxtLink, { to: \"/resources\" }, {\n              default: _withCtx(() => [\n                _hoisted_6\n              ]),\n              _: 1\n            })\n          ])\n        ])\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251028234,
+      "end": 1761251029194,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/InsurancePlanningTools.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx } from \"vue\"\n\nconst _hoisted_1 = { class: \"py-16 bg-gray-50\" }\nconst _hoisted_2 = { class: \"container mx-auto px-4\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"text-center mb-12\" }, [\n  /*#__PURE__*/_createElementVNode(\"h2\", { class: \"text-3xl font-bold mb-4\" }, \"Insurance Planning Tools\"),\n  /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-gray-600 max-w-2xl mx-auto\" }, \" Access our suite of interactive calculators, personalized guidance tools, and expert resources to help make informed decisions about your insurance and financial future. \")\n], -1)\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8\" }\nconst _hoisted_5 = { class: \"mt-12 text-center\" }\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"button\", { class: \"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 transition-colors\" }, \" View All Resources \", -1)\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'InsurancePlanningTools',\n  setup(__props) {\n\nconst tools = [\n  {\n    title: \"Retirement Calculator\",\n    description:\n      \"Plan for your future by calculating how much you need to save for a comfortable retirement.\",\n    icon: \"lucide:calculator\",\n    link: \"/retirement\",\n    button: \"Calculate Now\",\n  },\n  {\n    title: \"Health Insurance Glossary\",\n    description:\n      \"Access our comprehensive glossary of health insurance terms and definitions.\",\n    icon: \"lucide:book-open\",\n    link: \"/health-insurance-glossary\",\n    button: \"View Glossary\",\n  },\n  {\n    title: \"Insurance Guides\",\n    description:\n      \"Download helpful guides about Medicare, life insurance, and other coverage options.\",\n    icon: \"lucide:file-text\",\n    link: \"/resources\",\n    button: \"Browse Guides\",\n  },\n  {\n    title: \"Expert Consultation\",\n    description:\n      \"Get personalized advice from our insurance specialists to find the right coverage.\",\n    icon: \"lucide:phone\",\n    link: \"/contact\",\n    button: \"Contact Us\",\n  },\n  {\n    title: \"Medicare Planning\",\n    description:\n      \"Understand Medicare enrollment periods and find the right coverage for your needs.\",\n    icon: \"lucide:heart-pulse\",\n    link: \"/services/health/medicare\",\n    button: \"Learn More\",\n  },\n  {\n    title: \"Insurance Assessment\",\n    description:\n      \"Take our assessment to identify gaps in your current insurance coverage.\",\n    icon: \"lucide:clipboard\",\n    link: \"/contact\",\n    button: \"Start Assessment\",\n  },\n]\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_PlanningToolsCard = _resolveComponent(\"PlanningToolsCard\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        (_openBlock(), _createElementBlock(_Fragment, null, _renderList(tools, (tool, index) => {\n          return _createVNode(_component_PlanningToolsCard, {\n            key: index,\n            title: tool.title,\n            description: tool.description,\n            icon: tool.icon,\n            link: tool.link,\n            \"link-text\": tool.button\n          }, null, 8, [\"title\", \"description\", \"icon\", \"link\", \"link-text\"])\n        }), 64))\n      ]),\n      _createElementVNode(\"div\", _hoisted_5, [\n        _createVNode(_component_NuxtLink, { to: \"/resources\" }, {\n          default: _withCtx(() => [\n            _hoisted_6\n          ]),\n          _: 1\n        })\n      ])\n    ])\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,sBAAsB,qBAAqB,cAAc,aAAa,YAAY,WAAW,aAAa,YAAY,sBAAsB,qBAAqB,oBAAoB,mBAAmB,eAAe,cAAc,WAAW,gBAAgB;AAEzQ,MAAM,aAAa,EAAE,OAAO,mBAAmB;AAC/C,MAAM,aAAa,EAAE,OAAO,yBAAyB;AACrD,MAAM,aAA0B,oCAAoB,OAAO,EAAE,OAAO,oBAAoB,GAAG;AAAA,EAC5E,oCAAoB,MAAM,EAAE,OAAO,0BAA0B,GAAG,0BAA0B;AAAA,EAC1F,oCAAoB,KAAK,EAAE,OAAO,kCAAkC,GAAG,6KAA6K;AACnQ,GAAG,EAAE;AACL,MAAM,aAAa,EAAE,OAAO,uDAAuD;AACnF,MAAM,aAAa,EAAE,OAAO,oBAAoB;AAChD,MAAM,aAA0B,oCAAoB,UAAU,EAAE,OAAO,iNAAiN,GAAG,wBAAwB,EAAE;AAGrT,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAEjB,UAAM,QAAQ;AAAA,MACZ;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,QACF,MAAM;AAAA,QACN,MAAM;AAAA,QACN,QAAQ;AAAA,MACV;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,QACF,MAAM;AAAA,QACN,MAAM;AAAA,QACN,QAAQ;AAAA,MACV;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,QACF,MAAM;AAAA,QACN,MAAM;AAAA,QACN,QAAQ;AAAA,MACV;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,QACF,MAAM;AAAA,QACN,MAAM;AAAA,QACN,QAAQ;AAAA,MACV;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,QACF,MAAM;AAAA,QACN,MAAM;AAAA,QACN,QAAQ;AAAA,MACV;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,QACF,MAAM;AAAA,QACN,MAAM;AAAA,QACN,QAAQ;AAAA,MACV;AAAA,IACF;AAEA,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,+BAA+B,kBAAkB,mBAAmB;AAC1E,YAAM,sBAAsB,kBAAkB,UAAU;AAExD,aAAQ,WAAW,GAAG,oBAAoB,WAAW,YAAY;AAAA,QAC/D,oBAAoB,OAAO,YAAY;AAAA,UACrC;AAAA,UACA,oBAAoB,OAAO,YAAY;AAAA,aACpC,WAAW,GAAG,oBAAoB,WAAW,MAAM,YAAY,OAAO,CAAC,MAAM,UAAU;AACtF,qBAAO,aAAa,8BAA8B;AAAA,gBAChD,KAAK;AAAA,gBACL,OAAO,KAAK;AAAA,gBACZ,aAAa,KAAK;AAAA,gBAClB,MAAM,KAAK;AAAA,gBACX,MAAM,KAAK;AAAA,gBACX,aAAa,KAAK;AAAA,cACpB,GAAG,MAAM,GAAG,CAAC,SAAS,eAAe,QAAQ,QAAQ,WAAW,CAAC;AAAA,YACnE,CAAC,GAAG,EAAE;AAAA,UACR,CAAC;AAAA,UACD,oBAAoB,OAAO,YAAY;AAAA,YACrC,aAAa,qBAAqB,EAAE,IAAI,aAAa,GAAG;AAAA,cACtD,SAAS,SAAS,MAAM;AAAA,gBACtB;AAAA,cACF,CAAC;AAAA,cACD,GAAG;AAAA,YACL,CAAC;AAAA,UACH,CAAC;AAAA,QACH,CAAC;AAAA,MACH,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029194,
+      "end": 1761251029194,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029194,
+      "end": 1761251029194,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029195,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029198,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029199,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/planningTools/PlanningToolsCard.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx } from \"vue\";\nconst _hoisted_1 = { class: \"py-16 bg-gray-50\" };\nconst _hoisted_2 = { class: \"container mx-auto px-4\" };\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"div\", { class: \"text-center mb-12\" }, [\n  /* @__PURE__ */ _createElementVNode(\"h2\", { class: \"text-3xl font-bold mb-4\" }, \"Insurance Planning Tools\"),\n  /* @__PURE__ */ _createElementVNode(\"p\", { class: \"text-gray-600 max-w-2xl mx-auto\" }, \" Access our suite of interactive calculators, personalized guidance tools, and expert resources to help make informed decisions about your insurance and financial future. \")\n], -1);\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8\" };\nconst _hoisted_5 = { class: \"mt-12 text-center\" };\nconst _hoisted_6 = /* @__PURE__ */ _createElementVNode(\"button\", { class: \"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 transition-colors\" }, \" View All Resources \", -1);\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"InsurancePlanningTools\",\n  setup(__props) {\n    const tools = [\n      {\n        title: \"Retirement Calculator\",\n        description: \"Plan for your future by calculating how much you need to save for a comfortable retirement.\",\n        icon: \"lucide:calculator\",\n        link: \"/retirement\",\n        button: \"Calculate Now\"\n      },\n      {\n        title: \"Health Insurance Glossary\",\n        description: \"Access our comprehensive glossary of health insurance terms and definitions.\",\n        icon: \"lucide:book-open\",\n        link: \"/health-insurance-glossary\",\n        button: \"View Glossary\"\n      },\n      {\n        title: \"Insurance Guides\",\n        description: \"Download helpful guides about Medicare, life insurance, and other coverage options.\",\n        icon: \"lucide:file-text\",\n        link: \"/resources\",\n        button: \"Browse Guides\"\n      },\n      {\n        title: \"Expert Consultation\",\n        description: \"Get personalized advice from our insurance specialists to find the right coverage.\",\n        icon: \"lucide:phone\",\n        link: \"/contact\",\n        button: \"Contact Us\"\n      },\n      {\n        title: \"Medicare Planning\",\n        description: \"Understand Medicare enrollment periods and find the right coverage for your needs.\",\n        icon: \"lucide:heart-pulse\",\n        link: \"/services/health/medicare\",\n        button: \"Learn More\"\n      },\n      {\n        title: \"Insurance Assessment\",\n        description: \"Take our assessment to identify gaps in your current insurance coverage.\",\n        icon: \"lucide:clipboard\",\n        link: \"/contact\",\n        button: \"Start Assessment\"\n      }\n    ];\n    return (_ctx, _cache) => {\n      const _component_PlanningToolsCard = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _hoisted_3,\n          _createElementVNode(\"div\", _hoisted_4, [\n            (_openBlock(), _createElementBlock(_Fragment, null, _renderList(tools, (tool, index) => {\n              return _createVNode(_component_PlanningToolsCard, {\n                key: index,\n                title: tool.title,\n                description: tool.description,\n                icon: tool.icon,\n                link: tool.link,\n                \"link-text\": tool.button\n              }, null, 8, [\"title\", \"description\", \"icon\", \"link\", \"link-text\"]);\n            }), 64))\n          ]),\n          _createElementVNode(\"div\", _hoisted_5, [\n            _createVNode(_component_NuxtLink, { to: \"/resources\" }, {\n              default: _withCtx(() => [\n                _hoisted_6\n              ]),\n              _: 1\n            })\n          ])\n        ])\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251029202,
+      "end": 1761251029203,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029203,
+      "end": 1761251029203,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029203,
+      "end": 1761251029203,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029203,
+      "end": 1761251029203,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/ProseCode.vue?vue&type=style&index=0&scoped=115dcfde&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.container {\n  background: #06080A;\n  position: relative;\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n  padding-top: 1em;\n\n  border-radius: 0.5rem;\n}\n\n@media (max-width: 640px) {}\n\n.filename-text {\n  position: absolute;\n  top: 0;\n  left: 1em;\n  padding: 0.25em 0.5em;\n  color: white;\n  font-size: 14px;\n}\n\n.language-text {\n  position: absolute;\n  top: 0;\n  right: 1em;\n  padding: 0.25em 0.5em;\n  font-size: 14px;\n  text-transform: uppercase;\n  border-bottom-right-radius: 0.25em;\n  border-bottom-left-radius: 0.25em;\n}\n\n:slotted(pre) {\n  margin-top: 0;\n  margin-bottom: 0;\n  display: flex;\n  flex: 1 1 0%;\n  overflow-x: auto;\n  padding: 1rem;\n  line-height: 1.625;\n  counter-reset: lines;\n}\n\n:slotted(pre code) {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\n:slotted(pre code .line) {\n  display: inline-table;\n  min-height: 1rem;\n}\n\n:slotted(pre code .line::before) {\n  counter-increment: lines;\n  content: counter(lines);\n  width: 1rem;\n  margin-right: 1.5rem;\n  display: inline-block;\n  text-align: left;\n  color: rgba(115, 138, 148, 0.4);\n}\n\n:slotted(pre code .highlight) {\n  background-color: #363b46;\n  display: block;\n  margin-right: -1em;\n  margin-left: -1em;\n  padding-right: 1em;\n  padding-left: 0.75em;\n  border-left: 0.25em solid red;\n}\n",
+      "start": 1761251159275,
+      "end": 1761251159351,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/ProseCode.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/ProseCode.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div class=\"container\">\n    <div class=\" code-body\">\n      <span v-if=\"filename\" class=\"filename-text mt-2\">\n        {{ filename }}\n      </span>\n      <div class=\"flex justify-end mr-5\">\n        <button @click=\"copy(code).then(() => copyFeedback())\" class=\"w-6 h-6 text-white mb-2\">\n          <svg v-if=\"!hasCopied\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\"\n            stroke=\"currentColor\" class=\"\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n              d=\"M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75\" />\n          </svg>\n        </button>\n        <div class=\"text-white flex justify-end\" v-if=\"hasCopied\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\"\n            stroke=\"currentColor\" class=\"w-6 h-6\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\"\n              d=\"M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z\" />\n          </svg>\n        </div>\n      </div>\n      <slot />\n      <div class=\"mt-10\"></div>\n    </div>\n  </div>\n</template>\n\n<script setup lang=\"ts\">\nimport { useClipboard } from '@vueuse/core';\nimport { ref } from 'vue'\n\nconst {copy} = useClipboard()\n\nconst props = withDefaults(\n  defineProps<{\n    code?: string;\n    language?: string | null;\n    filename?: string | null;\n    highlights: Array<number> | never[];\n  }>(),\n  { code: '', language: null, filename: null, highlights: undefined }\n);\n\nconst languageMap: Record<\n  string,\n  { text: string; color: string; background: string }\n> = {\n  vue: {\n    text: 'vue',\n    background: '#42b883',\n    color: 'white',\n  },\n  js: {\n    text: 'js',\n    background: '#f7df1e',\n    color: 'black',\n  },\n};\n\nconst hasCopied = ref(false)\n\nconst languageText = computed(() =>\n  props.language ? languageMap[props.language]?.text : null\n);\nconst languageBackground = computed(() =>\n  props.language ? languageMap[props.language]?.background : null\n);\nconst languageColor = computed(() =>\n  props.language ? languageMap[props.language]?.color : null\n);\n\nfunction copyFeedback() {\n  hasCopied.value = true\n  setTimeout(() => {\n    hasCopied.value = false\n  }, 2000)\n}\n</script>\n\n<style scoped>\n.container {\n  background: #06080A;\n  position: relative;\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n  padding-top: 1em;\n\n  border-radius: 0.5rem;\n}\n\n@media (max-width: 640px) {}\n\n.filename-text {\n  position: absolute;\n  top: 0;\n  left: 1em;\n  padding: 0.25em 0.5em;\n  color: white;\n  font-size: 14px;\n}\n\n.language-text {\n  position: absolute;\n  top: 0;\n  right: 1em;\n  padding: 0.25em 0.5em;\n  font-size: 14px;\n  text-transform: uppercase;\n  border-bottom-right-radius: 0.25em;\n  border-bottom-left-radius: 0.25em;\n}\n\n:slotted(pre) {\n  margin-top: 0;\n  margin-bottom: 0;\n  display: flex;\n  flex: 1 1 0%;\n  overflow-x: auto;\n  padding: 1rem;\n  line-height: 1.625;\n  counter-reset: lines;\n}\n\n:slotted(pre code) {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\n:slotted(pre code .line) {\n  display: inline-table;\n  min-height: 1rem;\n}\n\n:slotted(pre code .line::before) {\n  counter-increment: lines;\n  content: counter(lines);\n  width: 1rem;\n  margin-right: 1.5rem;\n  display: inline-block;\n  text-align: left;\n  color: rgba(115, 138, 148, 0.4);\n}\n\n:slotted(pre code .highlight) {\n  background-color: #363b46;\n  display: block;\n  margin-right: -1em;\n  margin-left: -1em;\n  padding-right: 1em;\n  padding-left: 0.75em;\n  border-left: 0.25em solid red;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159367,
+      "end": 1761251159367,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159367,
+      "end": 1761251159368,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159377,
+      "end": 1761251159377,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159377,
+      "end": 1761251159378,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159408,
+      "end": 1761251159418,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159408,
+      "end": 1761251159418,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251159421,
+      "end": 1761251159421,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251159421,
+      "end": 1761251159421,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".container{background:#06080a;border-radius:.5rem;margin-bottom:1rem;margin-top:1rem;padding-top:1em;position:relative}.filename-text{color:#fff;left:1em}.filename-text,.language-text{font-size:14px;padding:.25em .5em;position:absolute;top:0}.language-text{border-bottom-left-radius:.25em;border-bottom-right-radius:.25em;right:1em;text-transform:uppercase}:slotted(pre){counter-reset:lines;display:flex;flex:1 1 0%;line-height:1.625;margin-bottom:0;margin-top:0;overflow-x:auto;padding:1rem}:slotted(pre code){display:flex;flex-direction:column;width:100%}:slotted(pre code .line){display:inline-table;min-height:1rem}:slotted(pre code .line:before){color:rgba(115,138,148,.4);content:counter(lines);counter-increment:lines;display:inline-block;margin-right:1.5rem;text-align:left;width:1rem}:slotted(pre code .highlight){background-color:#363b46;border-left:.25em solid red;display:block;margin-left:-1em;margin-right:-1em;padding-left:.75em;padding-right:1em}",
+      "start": 1761251159421,
+      "end": 1761251159495,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/ProseCode.vue",
+        "mappings": "AACA,WACE,kBAAmB,CAMnB,mBAAqB,CAHrB,kBAAmB,CADnB,eAAgB,CAEhB,eAAgB,CAHhB,iBAMF,CAIA,eAKE,UAAY,CAFZ,QAIF,CAEA,8BAHE,cAAe,CAFf,kBAAqB,CAHrB,iBAAkB,CAClB,KAgBF,CATA,eAQE,+BAAiC,CADjC,gCAAkC,CAJlC,SAAU,CAGV,wBAGF,CAEA,cAQE,mBAAoB,CALpB,YAAa,CACb,WAAY,CAGZ,iBAAkB,CALlB,eAAgB,CADhB,YAAa,CAIb,eAAgB,CAChB,YAGF,CAEA,mBAEE,YAAa,CACb,qBAAsB,CAFtB,UAGF,CAEA,yBACE,oBAAqB,CACrB,eACF,CAEA,gCAOE,0BAA+B,CAL/B,sBAAuB,CADvB,uBAAwB,CAIxB,oBAAqB,CADrB,mBAAoB,CAEpB,eAAgB,CAHhB,UAKF,CAEA,8BACE,wBAAyB,CAMzB,2BAA6B,CAL7B,aAAc,CAEd,gBAAiB,CADjB,iBAAkB,CAGlB,kBAAoB,CADpB,iBAGF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/ProseCode.vue"
+        ],
+        "sourcesContent": [
+          "\n.container {\n  background: #06080A;\n  position: relative;\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n  padding-top: 1em;\n\n  border-radius: 0.5rem;\n}\n\n@media (max-width: 640px) {}\n\n.filename-text {\n  position: absolute;\n  top: 0;\n  left: 1em;\n  padding: 0.25em 0.5em;\n  color: white;\n  font-size: 14px;\n}\n\n.language-text {\n  position: absolute;\n  top: 0;\n  right: 1em;\n  padding: 0.25em 0.5em;\n  font-size: 14px;\n  text-transform: uppercase;\n  border-bottom-right-radius: 0.25em;\n  border-bottom-left-radius: 0.25em;\n}\n\n:slotted(pre) {\n  margin-top: 0;\n  margin-bottom: 0;\n  display: flex;\n  flex: 1 1 0%;\n  overflow-x: auto;\n  padding: 1rem;\n  line-height: 1.625;\n  counter-reset: lines;\n}\n\n:slotted(pre code) {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\n:slotted(pre code .line) {\n  display: inline-table;\n  min-height: 1rem;\n}\n\n:slotted(pre code .line::before) {\n  counter-increment: lines;\n  content: counter(lines);\n  width: 1rem;\n  margin-right: 1.5rem;\n  display: inline-block;\n  text-align: left;\n  color: rgba(115, 138, 148, 0.4);\n}\n\n:slotted(pre code .highlight) {\n  background-color: #363b46;\n  display: block;\n  margin-right: -1em;\n  margin-left: -1em;\n  padding-right: 1em;\n  padding-left: 0.75em;\n  border-left: 0.25em solid red;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251159496,
+      "end": 1761251159496,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251159496,
+      "end": 1761251159496,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251159498,
+      "end": 1761251159500,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".container[data-v-115dcfde]{background:#06080a;border-radius:.5rem;margin-bottom:1rem;margin-top:1rem;padding-top:1em;position:relative}.filename-text[data-v-115dcfde]{color:#fff;left:1em}.filename-text[data-v-115dcfde],.language-text[data-v-115dcfde]{font-size:14px;padding:.25em .5em;position:absolute;top:0}.language-text[data-v-115dcfde]{border-bottom-left-radius:.25em;border-bottom-right-radius:.25em;right:1em;text-transform:uppercase}pre[data-v-115dcfde-s]{counter-reset:lines;display:flex;flex:1 1 0%;line-height:1.625;margin-bottom:0;margin-top:0;overflow-x:auto;padding:1rem}pre code[data-v-115dcfde-s]{display:flex;flex-direction:column;width:100%}pre code .line[data-v-115dcfde-s]{display:inline-table;min-height:1rem}pre code .line[data-v-115dcfde-s]:before{color:rgba(115,138,148,.4);content:counter(lines);counter-increment:lines;display:inline-block;margin-right:1.5rem;text-align:left;width:1rem}pre code .highlight[data-v-115dcfde-s]{background-color:#363b46;border-left:.25em solid red;display:block;margin-left:-1em;margin-right:-1em;padding-left:.75em;padding-right:1em}",
+      "start": 1761251159500,
+      "end": 1761251159502,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/ProseCode.vue",
+        "mappings": "AAAA,4BAAW,kBAAkB,CAAC,mBAAmB,CAAC,kBAAkB,CAAC,eAAe,CAAC,eAAe,CAAC,iBAAiB,CAAC,gCAAe,UAAU,CAAC,QAAQ,CAAC,gEAA8B,cAAc,CAAC,kBAAkB,CAAC,iBAAiB,CAAC,KAAK,CAAC,gCAAe,+BAA+B,CAAC,gCAAgC,CAAC,SAAS,CAAC,wBAAwB,CAAC,uBAAc,mBAAmB,CAAC,YAAY,CAAC,WAAW,CAAC,iBAAiB,CAAC,eAAe,CAAC,YAAY,CAAC,eAAe,CAAC,YAAY,CAAC,4BAAmB,YAAY,CAAC,qBAAqB,CAAC,UAAU,CAAC,kCAAyB,oBAAoB,CAAC,eAAe,CAAC,yCAAgC,0BAA0B,CAAC,sBAAsB,CAAC,uBAAuB,CAAC,oBAAoB,CAAC,mBAAmB,CAAC,eAAe,CAAC,UAAU,CAAC,uCAA8B,wBAAwB,CAAC,2BAA2B,CAAC,aAAa,CAAC,gBAAgB,CAAC,iBAAiB,CAAC,kBAAkB,CAAC,iBAAiB",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/content/ProseCode.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251159504,
+      "end": 1761251159504,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251159504,
+      "end": 1761251159504,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251159504,
+      "end": 1761251159504,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251159504,
+      "end": 1761251159504,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251159504,
+      "end": 1761251159504,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251159504,
+      "end": 1761251159504,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251159505,
+      "end": 1761251159505,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251159507,
+      "end": 1761251159507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251159507,
+      "end": 1761251159507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".container[data-v-115dcfde]{background:#06080a;border-radius:.5rem;margin-bottom:1rem;margin-top:1rem;padding-top:1em;position:relative}.filename-text[data-v-115dcfde]{color:#fff;left:1em}.filename-text[data-v-115dcfde],.language-text[data-v-115dcfde]{font-size:14px;padding:.25em .5em;position:absolute;top:0}.language-text[data-v-115dcfde]{border-bottom-left-radius:.25em;border-bottom-right-radius:.25em;right:1em;text-transform:uppercase}pre[data-v-115dcfde-s]{counter-reset:lines;display:flex;flex:1 1 0%;line-height:1.625;margin-bottom:0;margin-top:0;overflow-x:auto;padding:1rem}pre code[data-v-115dcfde-s]{display:flex;flex-direction:column;width:100%}pre code .line[data-v-115dcfde-s]{display:inline-table;min-height:1rem}pre code .line[data-v-115dcfde-s]:before{color:rgba(115,138,148,.4);content:counter(lines);counter-increment:lines;display:inline-block;margin-right:1.5rem;text-align:left;width:1rem}pre code .highlight[data-v-115dcfde-s]{background-color:#363b46;border-left:.25em solid red;display:block;margin-left:-1em;margin-right:-1em;padding-left:.75em;padding-right:1em}\"",
+      "start": 1761251159507,
+      "end": 1761251159507,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251159516,
+      "end": 1761251159516,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251159516,
+      "end": 1761251159516,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251159516,
+      "end": 1761251159516,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251159516,
+      "end": 1761251159518,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251159519,
+      "end": 1761251159519,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251159519,
+      "end": 1761251159519,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251159521,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251159521,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251159529,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251159529,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251159529,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251159529,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251159529,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251159530,
+      "end": 1761251159530,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251159530,
+      "end": 1761251159530,
+      "order": "normal"
+    }
+  ]
+}

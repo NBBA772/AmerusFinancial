@@ -1,0 +1,222 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/@tiptap/extension-horizontal-rule/dist/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { Node, mergeAttributes, nodeInputRule } from '@tiptap/core';\nimport { TextSelection, NodeSelection } from '@tiptap/pm/state';\n\nconst HorizontalRule = Node.create({\r\n    name: 'horizontalRule',\r\n    addOptions() {\r\n        return {\r\n            HTMLAttributes: {},\r\n        };\r\n    },\r\n    group: 'block',\r\n    parseHTML() {\r\n        return [{ tag: 'hr' }];\r\n    },\r\n    renderHTML({ HTMLAttributes }) {\r\n        return ['hr', mergeAttributes(this.options.HTMLAttributes, HTMLAttributes)];\r\n    },\r\n    addCommands() {\r\n        return {\r\n            setHorizontalRule: () => ({ chain, state }) => {\r\n                const { $to: $originTo } = state.selection;\r\n                const currentChain = chain();\r\n                if ($originTo.parentOffset === 0) {\r\n                    currentChain.insertContentAt(Math.max($originTo.pos - 2, 0), { type: this.name });\r\n                }\r\n                else {\r\n                    currentChain.insertContent({ type: this.name });\r\n                }\r\n                return (currentChain\r\n                    // set cursor after horizontal rule\r\n                    .command(({ tr, dispatch }) => {\r\n                    var _a;\r\n                    if (dispatch) {\r\n                        const { $to } = tr.selection;\r\n                        const posAfter = $to.end();\r\n                        if ($to.nodeAfter) {\r\n                            if ($to.nodeAfter.isTextblock) {\r\n                                tr.setSelection(TextSelection.create(tr.doc, $to.pos + 1));\r\n                            }\r\n                            else if ($to.nodeAfter.isBlock) {\r\n                                tr.setSelection(NodeSelection.create(tr.doc, $to.pos));\r\n                            }\r\n                            else {\r\n                                tr.setSelection(TextSelection.create(tr.doc, $to.pos));\r\n                            }\r\n                        }\r\n                        else {\r\n                            // add node after horizontal rule if it’s the end of the document\r\n                            const node = (_a = $to.parent.type.contentMatch.defaultType) === null || _a === void 0 ? void 0 : _a.create();\r\n                            if (node) {\r\n                                tr.insert(posAfter, node);\r\n                                tr.setSelection(TextSelection.create(tr.doc, posAfter + 1));\r\n                            }\r\n                        }\r\n                        tr.scrollIntoView();\r\n                    }\r\n                    return true;\r\n                })\r\n                    .run());\r\n            },\r\n        };\r\n    },\r\n    addInputRules() {\r\n        return [\r\n            nodeInputRule({\r\n                find: /^(?:---|—-|___\\s|\\*\\*\\*\\s)$/,\r\n                type: this.type,\r\n            }),\r\n        ];\r\n    },\r\n});\n\nexport { HorizontalRule, HorizontalRule as default };\n//# sourceMappingURL=index.js.map\n",
+      "start": 1761251039157,
+      "end": 1761251039450,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251039450,
+      "end": 1761251039450,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251039450,
+      "end": 1761251039450,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251039450,
+      "end": 1761251039450,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251039450,
+      "end": 1761251039450,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251039450,
+      "end": 1761251039450,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251039450,
+      "end": 1761251039450,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251039450,
+      "end": 1761251039450,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251039450,
+      "end": 1761251039450,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251039450,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251039451,
+      "end": 1761251039451,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251039451,
+      "end": 1761251039455,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251039455,
+      "end": 1761251039455,
+      "order": "normal"
+    }
+  ]
+}

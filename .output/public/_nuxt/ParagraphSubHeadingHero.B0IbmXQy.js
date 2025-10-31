@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o,c as n,_ as s}from"./entry.Cl9EbFL9.js";const a={},r={class:"mb-4 font-extrabold tracking-tight leading-none text-slate-900 dark:text-slate-400"};function c(t,_,l,p,d,f){return o(),n("p",r,[s(t.$slots,"default")])}const u=e(a,[["render",c]]);export{u as default};

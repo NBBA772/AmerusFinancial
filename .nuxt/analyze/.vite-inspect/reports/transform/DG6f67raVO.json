@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/HeaderCTA.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <section class=\"mx-auto p-2 bg-blue-300 dark:bg-blue-400 text-center\">\n    <div class=\"flex justify-center items-end\">\n      <h3\n        class=\"mb-4 font-extrabold tracking-tight leading-none md:text-2xl lg:text-3xl text-slate-100\"\n      >\n        Get A Free Insurance Quote\n      </h3>\n      <div class=\"flex flex-col\">\n        <NuxtLink\n          to=\"/\"\n          class=\"text-slate-100 hover:text-slate-300 dark:hover:text-slate-100 focus:outline-none focus:ring-4 focus:ring-amber-300 dark:focus:ring-amber-800 bg-amber-400 hover:bg-amber-300 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mx-2 mb-2\"\n        >\n          Get A Quote\n        </NuxtLink>\n      </div>\n    </div>\n  </section>\n</template>\n\n<script>\nexport default {\n  name: \"Ribbon\",\n};\n</script>\n\n<style scoped>\nbutton {\n  font-size: 1em;\n}\n</style>\n",
+      "start": 1761251024147,
+      "end": 1761251024314,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024314,
+      "end": 1761251024314,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024314,
+      "end": 1761251024314,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024314,
+      "end": 1761251024314,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024314,
+      "end": 1761251024314,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024314,
+      "end": 1761251024314,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024314,
+      "end": 1761251024314,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024314,
+      "end": 1761251024314,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024314,
+      "end": 1761251024314,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Ribbon\",\n};\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-3e3077a5\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"mx-auto p-2 bg-blue-300 dark:bg-blue-400 text-center\" }\nconst _hoisted_2 = { class: \"flex justify-center items-end\" }\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h3\", { class: \"mb-4 font-extrabold tracking-tight leading-none md:text-2xl lg:text-3xl text-slate-100\" }, \" Get A Free Insurance Quote \", -1))\nconst _hoisted_4 = { class: \"flex flex-col\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        _createVNode(_component_NuxtLink, {\n          to: \"/\",\n          class: \"text-slate-100 hover:text-slate-300 dark:hover:text-slate-100 focus:outline-none focus:ring-4 focus:ring-amber-300 dark:focus:ring-amber-800 bg-amber-400 hover:bg-amber-300 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mx-2 mb-2\"\n        }, {\n          default: _withCtx(() => [\n            _createTextVNode(\" Get A Quote \")\n          ]),\n          _: 1\n        })\n      ])\n    ])\n  ]))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/HeaderCTA.vue?vue&type=style&index=0&scoped=3e3077a5&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-3e3077a5\"]])",
+      "start": 1761251024314,
+      "end": 1761251024315,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024315,
+      "end": 1761251024315,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024315,
+      "end": 1761251024316,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024316,
+      "end": 1761251024316,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024316,
+      "end": 1761251024316,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024316,
+      "end": 1761251024316,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024316,
+      "end": 1761251024316,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024316,
+      "end": 1761251024316,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\n\nconst _sfc_main = {\n  name: \"Ribbon\",\n};\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-3e3077a5\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"mx-auto p-2 bg-blue-300 dark:bg-blue-400 text-center\" }\nconst _hoisted_2 = { class: \"flex justify-center items-end\" }\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h3\", { class: \"mb-4 font-extrabold tracking-tight leading-none md:text-2xl lg:text-3xl text-slate-100\" }, \" Get A Free Insurance Quote \", -1))\nconst _hoisted_4 = { class: \"flex flex-col\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtLink = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        _createVNode(_component_NuxtLink, {\n          to: \"/\",\n          class: \"text-slate-100 hover:text-slate-300 dark:hover:text-slate-100 focus:outline-none focus:ring-4 focus:ring-amber-300 dark:focus:ring-amber-800 bg-amber-400 hover:bg-amber-300 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mx-2 mb-2\"\n        }, {\n          default: _withCtx(() => [\n            _createTextVNode(\" Get A Quote \")\n          ]),\n          _: 1\n        })\n      ])\n    ])\n  ]))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/HeaderCTA.vue?vue&type=style&index=0&scoped=3e3077a5&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-3e3077a5\"]])",
+      "start": 1761251024316,
+      "end": 1761251024339,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024339,
+      "end": 1761251024339,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024339,
+      "end": 1761251024340,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024340,
+      "end": 1761251024340,
+      "order": "normal"
+    }
+  ]
+}

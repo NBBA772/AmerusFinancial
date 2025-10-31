@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/planningTools/PlanningToolsCard.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, renderList as _renderList, Fragment as _Fragment, withCtx as _withCtx } from \"vue\"\n\nconst _hoisted_1 = { class: \"rounded-lg bg-card text-card-foreground flex flex-col h-full border-2 border-primary/50 shadow-lg\" }\nconst _hoisted_2 = { class: \"flex flex-col space-y-1.5 p-6 pb-2\" }\nconst _hoisted_3 = { class: \"flex items-center gap-2 mb-2\" }\nconst _hoisted_4 = { class: \"p-2 rounded-full bg-primary/10\" }\nconst _hoisted_5 = { class: \"font-semibold tracking-tight text-lg\" }\nconst _hoisted_6 = {\n  key: 0,\n  class: \"ml-2 text-xs font-normal text-white bg-primary px-2 py-0.5 rounded-full\"\n}\nconst _hoisted_7 = { class: \"text-muted-foreground text-sm mb-1\" }\nconst _hoisted_8 = {\n  key: 0,\n  class: \"grid grid-cols-2 gap-2 mt-3 text-xs\"\n}\nconst _hoisted_9 = { class: \"flex items-center p-6 pt-0 mt-auto\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'PlanningToolsCard',\n  props: {\n    title: {},\n    description: {},\n    link: {},\n    linkText: {},\n    icon: {},\n    features: {},\n    isNew: { type: Boolean }\n  },\n  setup(__props: any) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createVNode(_component_Icon, {\n            name: _ctx.icon,\n            class: \"h-16 w-16\"\n          }, null, 8, [\"name\"])\n        ]),\n        _createElementVNode(\"h3\", _hoisted_5, [\n          _createTextVNode(_toDisplayString(_ctx.title) + \" \", 1),\n          (_ctx.isNew)\n            ? (_openBlock(), _createElementBlock(\"span\", _hoisted_6, \"New\"))\n            : _createCommentVNode(\"\", true)\n        ])\n      ]),\n      _createElementVNode(\"p\", _hoisted_7, _toDisplayString(_ctx.description), 1),\n      (_ctx.features?.length)\n        ? (_openBlock(), _createElementBlock(\"div\", _hoisted_8, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_ctx.features, (feature) => {\n              return (_openBlock(), _createElementBlock(\"div\", {\n                key: feature,\n                class: \"flex items-center gap-1\"\n              }, [\n                _createVNode(_component_Icon, {\n                  name: \"lucide:circle-check\",\n                  class: \"h-5 w-5 text-green-500\"\n                }),\n                _createElementVNode(\"span\", null, _toDisplayString(feature), 1)\n              ]))\n            }), 128))\n          ]))\n        : _createCommentVNode(\"\", true)\n    ]),\n    _createElementVNode(\"div\", _hoisted_9, [\n      _createVNode(_component_NuxtLink, {\n        to: _ctx.link,\n        class: \"justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#30BCFE] text-white hover:bg-[#30BCFE]/80 h-10 px-4 py-2 w-full flex items-center gap-2\"\n      }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"span\", null, _toDisplayString(_ctx.linkText), 1)\n        ]),\n        _: 1\n      }, 8, [\"to\"])\n    ])\n  ]))\n}\n}\n\n})",
+      "start": 1761251028026,
+      "end": 1761251028026
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251028037,
+      "end": 1761251028037,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251028040,
+      "end": 1761251028040,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251028040,
+      "end": 1761251028040,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251028040,
+      "end": 1761251028040,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251028040,
+      "end": 1761251028040,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, renderList as _renderList, Fragment as _Fragment, withCtx as _withCtx } from \"vue\";\nconst _hoisted_1 = { class: \"rounded-lg bg-card text-card-foreground flex flex-col h-full border-2 border-primary/50 shadow-lg\" };\nconst _hoisted_2 = { class: \"flex flex-col space-y-1.5 p-6 pb-2\" };\nconst _hoisted_3 = { class: \"flex items-center gap-2 mb-2\" };\nconst _hoisted_4 = { class: \"p-2 rounded-full bg-primary/10\" };\nconst _hoisted_5 = { class: \"font-semibold tracking-tight text-lg\" };\nconst _hoisted_6 = {\n  key: 0,\n  class: \"ml-2 text-xs font-normal text-white bg-primary px-2 py-0.5 rounded-full\"\n};\nconst _hoisted_7 = { class: \"text-muted-foreground text-sm mb-1\" };\nconst _hoisted_8 = {\n  key: 0,\n  class: \"grid grid-cols-2 gap-2 mt-3 text-xs\"\n};\nconst _hoisted_9 = { class: \"flex items-center p-6 pt-0 mt-auto\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"PlanningToolsCard\",\n  props: {\n    title: {},\n    description: {},\n    link: {},\n    linkText: {},\n    icon: {},\n    features: {},\n    isNew: { type: Boolean }\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"div\", _hoisted_3, [\n            _createElementVNode(\"div\", _hoisted_4, [\n              _createVNode(_component_Icon, {\n                name: _ctx.icon,\n                class: \"h-16 w-16\"\n              }, null, 8, [\"name\"])\n            ]),\n            _createElementVNode(\"h3\", _hoisted_5, [\n              _createTextVNode(_toDisplayString(_ctx.title) + \" \", 1),\n              _ctx.isNew ? (_openBlock(), _createElementBlock(\"span\", _hoisted_6, \"New\")) : _createCommentVNode(\"\", true)\n            ])\n          ]),\n          _createElementVNode(\"p\", _hoisted_7, _toDisplayString(_ctx.description), 1),\n          _ctx.features?.length ? (_openBlock(), _createElementBlock(\"div\", _hoisted_8, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_ctx.features, (feature) => {\n              return _openBlock(), _createElementBlock(\"div\", {\n                key: feature,\n                class: \"flex items-center gap-1\"\n              }, [\n                _createVNode(_component_Icon, {\n                  name: \"lucide:circle-check\",\n                  class: \"h-5 w-5 text-green-500\"\n                }),\n                _createElementVNode(\"span\", null, _toDisplayString(feature), 1)\n              ]);\n            }), 128))\n          ])) : _createCommentVNode(\"\", true)\n        ]),\n        _createElementVNode(\"div\", _hoisted_9, [\n          _createVNode(_component_NuxtLink, {\n            to: _ctx.link,\n            class: \"justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#30BCFE] text-white hover:bg-[#30BCFE]/80 h-10 px-4 py-2 w-full flex items-center gap-2\"\n          }, {\n            default: _withCtx(() => [\n              _createElementVNode(\"span\", null, _toDisplayString(_ctx.linkText), 1)\n            ]),\n            _: 1\n          }, 8, [\"to\"])\n        ])\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251028041,
+      "end": 1761251029162,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/planningTools/PlanningToolsCard.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, renderList as _renderList, Fragment as _Fragment, withCtx as _withCtx } from \"vue\"\n\nconst _hoisted_1 = { class: \"rounded-lg bg-card text-card-foreground flex flex-col h-full border-2 border-primary/50 shadow-lg\" }\nconst _hoisted_2 = { class: \"flex flex-col space-y-1.5 p-6 pb-2\" }\nconst _hoisted_3 = { class: \"flex items-center gap-2 mb-2\" }\nconst _hoisted_4 = { class: \"p-2 rounded-full bg-primary/10\" }\nconst _hoisted_5 = { class: \"font-semibold tracking-tight text-lg\" }\nconst _hoisted_6 = {\n  key: 0,\n  class: \"ml-2 text-xs font-normal text-white bg-primary px-2 py-0.5 rounded-full\"\n}\nconst _hoisted_7 = { class: \"text-muted-foreground text-sm mb-1\" }\nconst _hoisted_8 = {\n  key: 0,\n  class: \"grid grid-cols-2 gap-2 mt-3 text-xs\"\n}\nconst _hoisted_9 = { class: \"flex items-center p-6 pt-0 mt-auto\" }\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'PlanningToolsCard',\n  props: {\n    title: {},\n    description: {},\n    link: {},\n    linkText: {},\n    icon: {},\n    features: {},\n    isNew: { type: Boolean }\n  },\n  setup(__props: any) {\n\n\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createVNode(_component_Icon, {\n            name: _ctx.icon,\n            class: \"h-16 w-16\"\n          }, null, 8, [\"name\"])\n        ]),\n        _createElementVNode(\"h3\", _hoisted_5, [\n          _createTextVNode(_toDisplayString(_ctx.title) + \" \", 1),\n          (_ctx.isNew)\n            ? (_openBlock(), _createElementBlock(\"span\", _hoisted_6, \"New\"))\n            : _createCommentVNode(\"\", true)\n        ])\n      ]),\n      _createElementVNode(\"p\", _hoisted_7, _toDisplayString(_ctx.description), 1),\n      (_ctx.features?.length)\n        ? (_openBlock(), _createElementBlock(\"div\", _hoisted_8, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_ctx.features, (feature) => {\n              return (_openBlock(), _createElementBlock(\"div\", {\n                key: feature,\n                class: \"flex items-center gap-1\"\n              }, [\n                _createVNode(_component_Icon, {\n                  name: \"lucide:circle-check\",\n                  class: \"h-5 w-5 text-green-500\"\n                }),\n                _createElementVNode(\"span\", null, _toDisplayString(feature), 1)\n              ]))\n            }), 128))\n          ]))\n        : _createCommentVNode(\"\", true)\n    ]),\n    _createElementVNode(\"div\", _hoisted_9, [\n      _createVNode(_component_NuxtLink, {\n        to: _ctx.link,\n        class: \"justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#30BCFE] text-white hover:bg-[#30BCFE]/80 h-10 px-4 py-2 w-full flex items-center gap-2\"\n      }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"span\", null, _toDisplayString(_ctx.linkText), 1)\n        ]),\n        _: 1\n      }, 8, [\"to\"])\n    ])\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "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",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029162,
+      "end": 1761251029162,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029162,
+      "end": 1761251029162,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029163,
+      "end": 1761251029163,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029163,
+      "end": 1761251029164,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029164,
+      "end": 1761251029164,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029164,
+      "end": 1761251029164,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029165,
+      "end": 1761251029165,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029173,
+      "end": 1761251029173,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029173,
+      "end": 1761251029173,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029173,
+      "end": 1761251029183,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029185,
+      "end": 1761251029185,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029186,
+      "end": 1761251029186,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029186,
+      "end": 1761251029186,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029186,
+      "end": 1761251029186,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, renderList as _renderList, Fragment as _Fragment, withCtx as _withCtx } from \"vue\";\nconst _hoisted_1 = { class: \"rounded-lg bg-card text-card-foreground flex flex-col h-full border-2 border-primary/50 shadow-lg\" };\nconst _hoisted_2 = { class: \"flex flex-col space-y-1.5 p-6 pb-2\" };\nconst _hoisted_3 = { class: \"flex items-center gap-2 mb-2\" };\nconst _hoisted_4 = { class: \"p-2 rounded-full bg-primary/10\" };\nconst _hoisted_5 = { class: \"font-semibold tracking-tight text-lg\" };\nconst _hoisted_6 = {\n  key: 0,\n  class: \"ml-2 text-xs font-normal text-white bg-primary px-2 py-0.5 rounded-full\"\n};\nconst _hoisted_7 = { class: \"text-muted-foreground text-sm mb-1\" };\nconst _hoisted_8 = {\n  key: 0,\n  class: \"grid grid-cols-2 gap-2 mt-3 text-xs\"\n};\nconst _hoisted_9 = { class: \"flex items-center p-6 pt-0 mt-auto\" };\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"PlanningToolsCard\",\n  props: {\n    title: {},\n    description: {},\n    link: {},\n    linkText: {},\n    icon: {},\n    features: {},\n    isNew: { type: Boolean }\n  },\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"div\", _hoisted_3, [\n            _createElementVNode(\"div\", _hoisted_4, [\n              _createVNode(_component_Icon, {\n                name: _ctx.icon,\n                class: \"h-16 w-16\"\n              }, null, 8, [\"name\"])\n            ]),\n            _createElementVNode(\"h3\", _hoisted_5, [\n              _createTextVNode(_toDisplayString(_ctx.title) + \" \", 1),\n              _ctx.isNew ? (_openBlock(), _createElementBlock(\"span\", _hoisted_6, \"New\")) : _createCommentVNode(\"\", true)\n            ])\n          ]),\n          _createElementVNode(\"p\", _hoisted_7, _toDisplayString(_ctx.description), 1),\n          _ctx.features?.length ? (_openBlock(), _createElementBlock(\"div\", _hoisted_8, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_ctx.features, (feature) => {\n              return _openBlock(), _createElementBlock(\"div\", {\n                key: feature,\n                class: \"flex items-center gap-1\"\n              }, [\n                _createVNode(_component_Icon, {\n                  name: \"lucide:circle-check\",\n                  class: \"h-5 w-5 text-green-500\"\n                }),\n                _createElementVNode(\"span\", null, _toDisplayString(feature), 1)\n              ]);\n            }), 128))\n          ])) : _createCommentVNode(\"\", true)\n        ]),\n        _createElementVNode(\"div\", _hoisted_9, [\n          _createVNode(_component_NuxtLink, {\n            to: _ctx.link,\n            class: \"justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#30BCFE] text-white hover:bg-[#30BCFE]/80 h-10 px-4 py-2 w-full flex items-center gap-2\"\n          }, {\n            default: _withCtx(() => [\n              _createElementVNode(\"span\", null, _toDisplayString(_ctx.linkText), 1)\n            ]),\n            _: 1\n          }, 8, [\"to\"])\n        ])\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251029187,
+      "end": 1761251029188,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029188,
+      "end": 1761251029188,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029188,
+      "end": 1761251029188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029189,
+      "end": 1761251029189,
+      "order": "normal"
+    }
+  ]
+}

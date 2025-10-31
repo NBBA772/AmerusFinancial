@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/HomePageQuoteForm.vue?nuxt_component=async&nuxt_component_name=HomePageQuoteForm",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div>\n    <div class=\"px-4 mb-8 md:block\">\n      <MultiStepForm />\n    </div>\n  </div>\n</template>\n\n<script>\nimport MultiStepForm from '../sections/HomePage/MultiStepForm.vue';\n\nexport default {\n  props: {\n    tag: {\n      type: String,\n      default: \"newClient\", // Default tag if not provided\n    },\n  },\n  data() {\n    return {\n      firstName: \"\",\n      lastName: \"\",\n      email: \"\",\n      phoneNumber: \"\",\n      tags: [],\n    };\n  },\n  methods: {\n    async handleSubmit() {\n      try {\n        // Create contact\n        await this.createContact();\n        // Reset form fields or show success message\n        this.resetForm();\n        console.log(\"Form submitted successfully\");\n      } catch (error) {\n        console.error(\"Error submitting form:\", error);\n      }\n    },\n    async createContact() {\n      try {\n        const config = useRuntimeConfig();\n        // console.log(config.public.GHL_API_KEY);\n        const myHeaders = new Headers();\n        myHeaders.append(\"Content-Type\", \"application/json\");\n        myHeaders.append(\"Authorization\", `${config.public.GHL_API_KEY}`);\n\n        const data = {\n          firstName: this.firstName,\n          lastName: this.lastName,\n          email: this.email,\n          phone: this.phoneNumber,\n          tags: [this.tag],\n        };\n\n        const raw = JSON.stringify(data);\n\n        const response = await fetch(\n          \"https://rest.gohighlevel.com/v1/contacts/\",\n          {\n            method: \"POST\",\n            headers: myHeaders,\n            body: raw,\n            redirect: \"follow\",\n          }\n        );\n\n        if (!response.ok) {\n          throw new Error(\"Failed to create contact\");\n        }\n\n        const contact = await response.json();\n        console.log(\"Created contact:\", contact); // Log the contact object\n\n        return contact; // Return the contact object\n      } catch (error) {\n        console.error(\"Error creating contact:\", error);\n        throw error;\n      }\n    },\n    resetForm() {\n      // Reset form fields here\n      this.firstName = \"\";\n      this.lastName = \"\";\n      this.email = \"\";\n      this.phoneNumber = \"\";\n      this.tags = [];\n    },\n  },\n};\n</script>\n",
+      "start": 1761251023427,
+      "end": 1761251023483,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023483,
+      "end": 1761251023483,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023483,
+      "end": 1761251023483,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023483,
+      "end": 1761251023483,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023483,
+      "end": 1761251023484,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023484,
+      "end": 1761251023484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023484,
+      "end": 1761251023484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023484,
+      "end": 1761251023484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023484,
+      "end": 1761251023484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nimport MultiStepForm from '../sections/HomePage/MultiStepForm.vue';\n\nconst _sfc_main = {\n  props: {\n    tag: {\n      type: String,\n      default: \"newClient\", // Default tag if not provided\n    },\n  },\n  data() {\n    return {\n      firstName: \"\",\n      lastName: \"\",\n      email: \"\",\n      phoneNumber: \"\",\n      tags: [],\n    };\n  },\n  methods: {\n    async handleSubmit() {\n      try {\n        // Create contact\n        await this.createContact();\n        // Reset form fields or show success message\n        this.resetForm();\n        console.log(\"Form submitted successfully\");\n      } catch (error) {\n        console.error(\"Error submitting form:\", error);\n      }\n    },\n    async createContact() {\n      try {\n        const config = useRuntimeConfig();\n        // console.log(config.public.GHL_API_KEY);\n        const myHeaders = new Headers();\n        myHeaders.append(\"Content-Type\", \"application/json\");\n        myHeaders.append(\"Authorization\", `${config.public.GHL_API_KEY}`);\n\n        const data = {\n          firstName: this.firstName,\n          lastName: this.lastName,\n          email: this.email,\n          phone: this.phoneNumber,\n          tags: [this.tag],\n        };\n\n        const raw = JSON.stringify(data);\n\n        const response = await fetch(\n          \"https://rest.gohighlevel.com/v1/contacts/\",\n          {\n            method: \"POST\",\n            headers: myHeaders,\n            body: raw,\n            redirect: \"follow\",\n          }\n        );\n\n        if (!response.ok) {\n          throw new Error(\"Failed to create contact\");\n        }\n\n        const contact = await response.json();\n        console.log(\"Created contact:\", contact); // Log the contact object\n\n        return contact; // Return the contact object\n      } catch (error) {\n        console.error(\"Error creating contact:\", error);\n        throw error;\n      }\n    },\n    resetForm() {\n      // Reset form fields here\n      this.firstName = \"\";\n      this.lastName = \"\";\n      this.email = \"\";\n      this.phoneNumber = \"\";\n      this.tags = [];\n    },\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"px-4 mb-8 md:block\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_MultiStepForm = _resolveComponent(\"MultiStepForm\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createVNode(_component_MultiStepForm)\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251023484,
+      "end": 1761251023485,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/HomePageQuoteForm.vue\").then(r => r.default))",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/forms/HomePageQuoteForm.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023485,
+      "end": 1761251023485,
+      "order": "normal"
+    }
+  ]
+}

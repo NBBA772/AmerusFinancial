@@ -1,0 +1,304 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhyAmerus.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'WhyAmerus',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst values = [\n  {\n    title: \"Expert Guidance\",\n    description:\n      \"Licensed advisors who tailor coverage by audience and risk profile—so you get what you need, not what you don’t.\",\n  },\n  {\n    title: \"Whole-Portfolio Coverage\",\n    description:\n      \"From group benefits & commercial lines to personal insurance and Medicare, we coordinate it all.\",\n  },\n  {\n    title: \"Local & Responsive\",\n    description:\n      \"Based in Lakeland, FL with fast quotes, proactive reviews, and clear communication.\",\n  },\n];\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<section${_ssrRenderAttrs(_mergeProps({\n    class: \"py-16 bg-white\",\n    \"aria-labelledby\": \"value-props\"\n  }, _attrs))}><div class=\"container mx-auto px-4\"><div class=\"text-center mb-12\"><h2 id=\"value-props\" class=\"text-3xl md:text-4xl font-bold\"> Why Amerus </h2></div><div class=\"grid grid-cols-1 md:grid-cols-3 gap-8\"><!--[-->`)\n  _ssrRenderList(values, (item, i) => {\n    _push(`<div class=\"rounded-lg border bg-white shadow-sm p-6 text-center transition-all duration-300 hover:shadow-lg\"><h3 class=\"text-xl font-semibold mb-3\">${\n      _ssrInterpolate(item.title)\n    }</h3><p class=\"text-gray-600\">${\n      _ssrInterpolate(item.description)\n    }</p></div>`)\n  })\n  _push(`<!--]--></div></div></section>`)\n}\n}\n\n})",
+      "start": 1761251162409,
+      "end": 1761251162412,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhyAmerus.vue"
+        ],
+        "sourcesContent": [
+          "<!-- File: components/sections/HomePage/WhyAmerus.vue -->\n<script setup lang=\"ts\">\nconst values = [\n  {\n    title: \"Expert Guidance\",\n    description:\n      \"Licensed advisors who tailor coverage by audience and risk profile—so you get what you need, not what you don’t.\",\n  },\n  {\n    title: \"Whole-Portfolio Coverage\",\n    description:\n      \"From group benefits & commercial lines to personal insurance and Medicare, we coordinate it all.\",\n  },\n  {\n    title: \"Local & Responsive\",\n    description:\n      \"Based in Lakeland, FL with fast quotes, proactive reviews, and clear communication.\",\n  },\n];\n</script>\n\n<template>\n  <section class=\"py-16 bg-white\" aria-labelledby=\"value-props\">\n    <div class=\"container mx-auto px-4\">\n      <!-- Section Heading -->\n      <div class=\"text-center mb-12\">\n        <h2 id=\"value-props\" class=\"text-3xl md:text-4xl font-bold\">\n          Why Amerus\n        </h2>\n      </div>\n\n      <!-- Grid of Value Props -->\n      <div class=\"grid grid-cols-1 md:grid-cols-3 gap-8\">\n        <div\n          v-for=\"(item, i) in values\"\n          :key=\"i\"\n          class=\"rounded-lg border bg-white shadow-sm p-6 text-center transition-all duration-300 hover:shadow-lg\"\n        >\n          <h3 class=\"text-xl font-semibold mb-3\">{{ item.title }}</h3>\n          <p class=\"text-gray-600\">{{ item.description }}</p>\n        </div>\n      </div>\n    </div>\n  </section>\n</template>\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;AACwB;AACxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzH,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzG,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC5F,CAAC,CAAC,CAAC,CAAC;AACJ,CAAC,CAAC;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251162419,
+      "end": 1761251162419,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251162419,
+      "end": 1761251162424,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251162425,
+      "end": 1761251162425,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251162425,
+      "end": 1761251162425,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251162426,
+      "end": 1761251162426,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251162426,
+      "end": 1761251162426,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251162426,
+      "end": 1761251162426,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251162426,
+      "end": 1761251162427,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251162430,
+      "end": 1761251162430,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"WhyAmerus\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const values = [\n      {\n        title: \"Expert Guidance\",\n        description: \"Licensed advisors who tailor coverage by audience and risk profile—so you get what you need, not what you don’t.\"\n      },\n      {\n        title: \"Whole-Portfolio Coverage\",\n        description: \"From group benefits & commercial lines to personal insurance and Medicare, we coordinate it all.\"\n      },\n      {\n        title: \"Local & Responsive\",\n        description: \"Based in Lakeland, FL with fast quotes, proactive reviews, and clear communication.\"\n      }\n    ];\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<section${_ssrRenderAttrs(_mergeProps({\n        class: \"py-16 bg-white\",\n        \"aria-labelledby\": \"value-props\"\n      }, _attrs))}><div class=\"container mx-auto px-4\"><div class=\"text-center mb-12\"><h2 id=\"value-props\" class=\"text-3xl md:text-4xl font-bold\"> Why Amerus </h2></div><div class=\"grid grid-cols-1 md:grid-cols-3 gap-8\"><!--[-->`);\n      _ssrRenderList(values, (item, i) => {\n        _push(`<div class=\"rounded-lg border bg-white shadow-sm p-6 text-center transition-all duration-300 hover:shadow-lg\"><h3 class=\"text-xl font-semibold mb-3\">${_ssrInterpolate(item.title)}</h3><p class=\"text-gray-600\">${_ssrInterpolate(item.description)}</p></div>`);\n      });\n      _push(`<!--]--></div></div></section>`);\n    };\n  }\n});\n",
+      "start": 1761251162430,
+      "end": 1761251164637,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhyAmerus.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'WhyAmerus',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst values = [\n  {\n    title: \"Expert Guidance\",\n    description:\n      \"Licensed advisors who tailor coverage by audience and risk profile—so you get what you need, not what you don’t.\",\n  },\n  {\n    title: \"Whole-Portfolio Coverage\",\n    description:\n      \"From group benefits & commercial lines to personal insurance and Medicare, we coordinate it all.\",\n  },\n  {\n    title: \"Local & Responsive\",\n    description:\n      \"Based in Lakeland, FL with fast quotes, proactive reviews, and clear communication.\",\n  },\n];\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<section${_ssrRenderAttrs(_mergeProps({\n    class: \"py-16 bg-white\",\n    \"aria-labelledby\": \"value-props\"\n  }, _attrs))}><div class=\"container mx-auto px-4\"><div class=\"text-center mb-12\"><h2 id=\"value-props\" class=\"text-3xl md:text-4xl font-bold\"> Why Amerus </h2></div><div class=\"grid grid-cols-1 md:grid-cols-3 gap-8\"><!--[-->`)\n  _ssrRenderList(values, (item, i) => {\n    _push(`<div class=\"rounded-lg border bg-white shadow-sm p-6 text-center transition-all duration-300 hover:shadow-lg\"><h3 class=\"text-xl font-semibold mb-3\">${\n      _ssrInterpolate(item.title)\n    }</h3><p class=\"text-gray-600\">${\n      _ssrInterpolate(item.description)\n    }</p></div>`)\n  })\n  _push(`<!--]--></div></div></section>`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,cAAc,mBAAmB;AAC1C,SAAS,kBAAkB,iBAAiB,kBAAkB,iBAAiB,iBAAiB,sBAAsB;AAGtH,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,MAAM,SAAS;AAEjB,UAAM,SAAS;AAAA,MACb;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,MACJ;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,MACJ;AAAA,MACA;AAAA,QACE,OAAO;AAAA,QACP,aACE;AAAA,MACJ;AAAA,IACF;AAEA,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,WAAW,gBAAgB,YAAY;AAAA,QAC3C,OAAO;AAAA,QACP,mBAAmB;AAAA,MACrB,GAAG,MAAM,CAAC,CAAC,oNAAoN;AAC/N,qBAAe,QAAQ,CAAC,MAAM,MAAM;AAClC,cAAM,wJACJ,gBAAgB,KAAK,KAAK,CAC5B,iCACE,gBAAgB,KAAK,WAAW,CAClC,YAAY;AAAA,MACd,CAAC;AACD,YAAM,gCAAgC;AAAA,IACxC;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251164638,
+      "end": 1761251164638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251164638,
+      "end": 1761251164638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251164708,
+      "end": 1761251164708,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251164708,
+      "end": 1761251164708,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164709,
+      "end": 1761251164709,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164709,
+      "end": 1761251164709,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164709,
+      "end": 1761251164709,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164709,
+      "end": 1761251164710,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251164710,
+      "end": 1761251164710,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164710,
+      "end": 1761251164711,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164712,
+      "end": 1761251164712,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251164713,
+      "end": 1761251164713,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164713,
+      "end": 1761251164713,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164713,
+      "end": 1761251164713,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164714,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164714,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251164716,
+      "end": 1761251164716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251164717,
+      "end": 1761251164717,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251164717,
+      "end": 1761251164717,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251164718,
+      "end": 1761251164718,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251164718,
+      "end": 1761251164718,
+      "order": "normal"
+    }
+  ]
+}

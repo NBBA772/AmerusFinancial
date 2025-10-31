@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/DashboardSidebar.vue?nuxt_component=async&nuxt_component_name=DashboardSidebar",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\n// import DialogBox from \"./DialogBox.vue\";\nconst router = useRouter();\nconst route = useRoute();\nconst isLoggedIn = await useLoggedIn();\nconst hideDialog = ref(true);\n\nconsole.log(route.path);\n\nfunction goToAskForm() {\n  if (isLoggedIn) {\n    router.push(\"/dashboard/ask\");\n  }\n\n  hideDialog.value = false;\n}\n\nfunction rehide() {\n  hideDialog.value = true;\n}\n</script>\n\n<template>\n  <div>\n    <div class=\"pt-5 z-10 boarder justify-right\">\n      <div class=\"w-100\" aria-label=\"Sidebar\">\n        <div\n          class=\"overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-900\"\n        >\n          <ul class=\"space-y-2\">\n            <li>\n              <NuxtLink\n                to=\"/dashboard\"\n                class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n              >\n                <Icon\n                  name=\"material-symbols:space-dashboard-rounded\"\n                  class=\"flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  size=\"45\"\n                />\n                <span class=\"\">Dashboard</span>\n              </NuxtLink>\n            </li>\n            <li>\n              <NuxtLink\n                to=\"/dashboard/WebsiteBuild\"\n                class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n              >\n                <Icon\n                  name=\"file-icons:robots\"\n                  class=\"flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  size=\"45\"\n                />\n                <span class=\"flex-1 whitespace-nowrap\">AI Agent</span>\n              </NuxtLink>\n            </li>\n            <li>\n              <NuxtLink\n                to=\"/dashboard/ask\"\n                class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                @click=\"goToAskForm\"\n              >\n                <Icon\n                  name=\"ic:sharp-live-help\"\n                  class=\"flex items-center pr-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  size=\"45\"\n                />\n                <span class=\"flex-1 whitespace-nowrap\">Ask Question</span>\n              </NuxtLink>\n            </li>\n            <li>\n              <NuxtLink\n                to=\"/dashboard/search\"\n                class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n              >\n                <Icon\n                  name=\"ic:outline-find-in-page\"\n                  class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  size=\"40\"\n                />\n                <span class=\"flex-1 whitespace-nowrap\">Search Questions</span>\n              </NuxtLink>\n            </li>\n            <li>\n              <a\n                href=\"#\"\n                class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n              >\n                <Icon\n                  name=\"material-symbols:reviews-rounded\"\n                  class=\"flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  size=\"50\"\n                />\n                <span class=\"flex-1 whitespace-nowrap\">Leave A Review</span>\n              </a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n",
+      "start": 1761251021960,
+      "end": 1761251022569,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251022569,
+      "end": 1761251022569,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251022569,
+      "end": 1761251022569,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251022569,
+      "end": 1761251022569,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251022569,
+      "end": 1761251022569,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251022569,
+      "end": 1761251022569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251022569,
+      "end": 1761251022569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251022569,
+      "end": 1761251022569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251022569,
+      "end": 1761251022569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/DashboardSidebar.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/DashboardSidebar.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761251022569,
+      "end": 1761251023524,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023525,
+      "end": 1761251023525,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023525,
+      "end": 1761251023525,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023525,
+      "end": 1761251023525,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023525,
+      "end": 1761251023525,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/DashboardSidebar.vue\").then(r => r.default))",
+      "start": 1761251023525,
+      "end": 1761251023526,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023526,
+      "end": 1761251023526,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023526,
+      "end": 1761251023527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023527,
+      "end": 1761251023527,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023527,
+      "end": 1761251023527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023527,
+      "end": 1761251023527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023527,
+      "end": 1761251023527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023527,
+      "end": 1761251023528,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023528,
+      "end": 1761251023528,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023528,
+      "end": 1761251023528,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/DashboardSidebar.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023528,
+      "end": 1761251023528,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023528,
+      "end": 1761251023528,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/User.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"svg\", {\n  xmlns: \"http://www.w3.org/2000/svg\",\n  fill: \"currentColor\",\n  viewBox: \"0 0 24 24\",\n  \"stroke-width\": \"1.5\",\n  stroke: \"currentColor\",\n  class: \"w-6 h-6 dark:text-white hover:dark:text-green-400 hover:text-green-400\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"path\", {\n    \"stroke-linecap\": \"round\",\n    \"stroke-linejoin\": \"round\",\n    d: \"M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z\"\n  })\n], -1)\nconst _hoisted_2 = [\n  _hoisted_1\n]\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"a\", {\n  class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n  href: \"#\"\n}, \"Logout\", -1)\nconst _hoisted_4 = [\n  _hoisted_3\n]\nconst _hoisted_5 = { key: 1 }\nconst _hoisted_6 = { key: 2 }\n\nimport { ref } from \"@vue/reactivity\";\nimport { userLogout } from \"~/composables/useAuth\";\nimport { onClickOutside } from \"@vueuse/core\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'User',\n  props: {\n  isLoggedIn: Boolean,\n},\n  setup(__props) {\n\nconst logout = userLogout;\nconst hideActions = ref(true);\nconst userActions = ref(null);\n\n\n\nonClickOutside(userActions, () => (hideActions.value = true));\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    ref_key: \"userActions\",\n    ref: userActions,\n    class: \"\"\n  }, [\n    _createElementVNode(\"div\", {\n      onClick: _cache[0] || (_cache[0] = ($event: any) => (hideActions.value = !_unref(hideActions)))\n    }, _hoisted_2),\n    _createElementVNode(\"ul\", {\n      class: _normalizeClass([[{ hidden: _unref(hideActions) }], \"dropdown-menu min-w-max absolute bottom bg-white text-base z-100 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 top- m-0 bg-clip-padding border-none\"]),\n      \"aria-labelledby\": \"dropdownMenuButton1\"\n    }, [\n      (__props.isLoggedIn)\n        ? (_openBlock(), _createElementBlock(\"li\", {\n            key: 0,\n            onClick: _cache[1] || (_cache[1] = \n//@ts-ignore\n(...args) => (_unref(logout) && _unref(logout)(...args)))\n          }, _hoisted_4))\n        : _createCommentVNode(\"\", true),\n      (!__props.isLoggedIn)\n        ? (_openBlock(), _createElementBlock(\"li\", _hoisted_5, [\n            _createVNode(_component_NuxtLink, {\n              class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n              href: \"/register\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Register\")\n              ]),\n              _: 1\n            })\n          ]))\n        : _createCommentVNode(\"\", true),\n      (!__props.isLoggedIn)\n        ? (_openBlock(), _createElementBlock(\"li\", _hoisted_6, [\n            _createVNode(_component_NuxtLink, {\n              class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n              href: \"/login\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Login\")\n              ]),\n              _: 1\n            })\n          ]))\n        : _createCommentVNode(\"\", true)\n    ], 2)\n  ], 512))\n}\n}\n\n})",
+      "start": 1761251027425,
+      "end": 1761251027425
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251027427,
+      "end": 1761251027427,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251027427,
+      "end": 1761251027427,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251027427,
+      "end": 1761251027427,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251027427,
+      "end": 1761251027427,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251027427,
+      "end": 1761251027427,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass } from \"vue\";\nconst _hoisted_1 = /* @__PURE__ */ _createElementVNode(\"svg\", {\n  xmlns: \"http://www.w3.org/2000/svg\",\n  fill: \"currentColor\",\n  viewBox: \"0 0 24 24\",\n  \"stroke-width\": \"1.5\",\n  stroke: \"currentColor\",\n  class: \"w-6 h-6 dark:text-white hover:dark:text-green-400 hover:text-green-400\"\n}, [\n  /* @__PURE__ */ _createElementVNode(\"path\", {\n    \"stroke-linecap\": \"round\",\n    \"stroke-linejoin\": \"round\",\n    d: \"M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z\"\n  })\n], -1);\nconst _hoisted_2 = [\n  _hoisted_1\n];\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"a\", {\n  class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n  href: \"#\"\n}, \"Logout\", -1);\nconst _hoisted_4 = [\n  _hoisted_3\n];\nconst _hoisted_5 = { key: 1 };\nconst _hoisted_6 = { key: 2 };\nimport { ref } from \"@vue/reactivity\";\nimport { userLogout } from \"~/composables/useAuth\";\nimport { onClickOutside } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"User\",\n  props: {\n    isLoggedIn: Boolean\n  },\n  setup(__props) {\n    const logout = userLogout;\n    const hideActions = ref(true);\n    const userActions = ref(null);\n    onClickOutside(userActions, () => hideActions.value = true);\n    return (_ctx, _cache) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createElementBlock(\"div\", {\n        ref_key: \"userActions\",\n        ref: userActions,\n        class: \"\"\n      }, [\n        _createElementVNode(\"div\", {\n          onClick: _cache[0] || (_cache[0] = ($event) => hideActions.value = !_unref(hideActions))\n        }, _hoisted_2),\n        _createElementVNode(\"ul\", {\n          class: _normalizeClass([[{ hidden: _unref(hideActions) }], \"dropdown-menu min-w-max absolute bottom bg-white text-base z-100 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 top- m-0 bg-clip-padding border-none\"]),\n          \"aria-labelledby\": \"dropdownMenuButton1\"\n        }, [\n          __props.isLoggedIn ? (_openBlock(), _createElementBlock(\"li\", {\n            key: 0,\n            onClick: _cache[1] || (_cache[1] = //@ts-ignore\n            (...args) => _unref(logout) && _unref(logout)(...args))\n          }, _hoisted_4)) : _createCommentVNode(\"\", true),\n          !__props.isLoggedIn ? (_openBlock(), _createElementBlock(\"li\", _hoisted_5, [\n            _createVNode(_component_NuxtLink, {\n              class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n              href: \"/register\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Register\")\n              ]),\n              _: 1\n            })\n          ])) : _createCommentVNode(\"\", true),\n          !__props.isLoggedIn ? (_openBlock(), _createElementBlock(\"li\", _hoisted_6, [\n            _createVNode(_component_NuxtLink, {\n              class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n              href: \"/login\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Login\")\n              ]),\n              _: 1\n            })\n          ])) : _createCommentVNode(\"\", true)\n        ], 2)\n      ], 512);\n    };\n  }\n});\n",
+      "start": 1761251027427,
+      "end": 1761251028945,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/User.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"svg\", {\n  xmlns: \"http://www.w3.org/2000/svg\",\n  fill: \"currentColor\",\n  viewBox: \"0 0 24 24\",\n  \"stroke-width\": \"1.5\",\n  stroke: \"currentColor\",\n  class: \"w-6 h-6 dark:text-white hover:dark:text-green-400 hover:text-green-400\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"path\", {\n    \"stroke-linecap\": \"round\",\n    \"stroke-linejoin\": \"round\",\n    d: \"M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z\"\n  })\n], -1)\nconst _hoisted_2 = [\n  _hoisted_1\n]\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"a\", {\n  class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n  href: \"#\"\n}, \"Logout\", -1)\nconst _hoisted_4 = [\n  _hoisted_3\n]\nconst _hoisted_5 = { key: 1 }\nconst _hoisted_6 = { key: 2 }\n\nimport { ref } from \"@vue/reactivity\";\nimport { userLogout } from \"~/composables/useAuth\";\nimport { onClickOutside } from \"@vueuse/core\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'User',\n  props: {\n  isLoggedIn: Boolean,\n},\n  setup(__props) {\n\nconst logout = userLogout;\nconst hideActions = ref(true);\nconst userActions = ref(null);\n\n\n\nonClickOutside(userActions, () => (hideActions.value = true));\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    ref_key: \"userActions\",\n    ref: userActions,\n    class: \"\"\n  }, [\n    _createElementVNode(\"div\", {\n      onClick: _cache[0] || (_cache[0] = ($event: any) => (hideActions.value = !_unref(hideActions)))\n    }, _hoisted_2),\n    _createElementVNode(\"ul\", {\n      class: _normalizeClass([[{ hidden: _unref(hideActions) }], \"dropdown-menu min-w-max absolute bottom bg-white text-base z-100 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 top- m-0 bg-clip-padding border-none\"]),\n      \"aria-labelledby\": \"dropdownMenuButton1\"\n    }, [\n      (__props.isLoggedIn)\n        ? (_openBlock(), _createElementBlock(\"li\", {\n            key: 0,\n            onClick: _cache[1] || (_cache[1] = \n//@ts-ignore\n(...args) => (_unref(logout) && _unref(logout)(...args)))\n          }, _hoisted_4))\n        : _createCommentVNode(\"\", true),\n      (!__props.isLoggedIn)\n        ? (_openBlock(), _createElementBlock(\"li\", _hoisted_5, [\n            _createVNode(_component_NuxtLink, {\n              class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n              href: \"/register\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Register\")\n              ]),\n              _: 1\n            })\n          ]))\n        : _createCommentVNode(\"\", true),\n      (!__props.isLoggedIn)\n        ? (_openBlock(), _createElementBlock(\"li\", _hoisted_6, [\n            _createVNode(_component_NuxtLink, {\n              class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n              href: \"/login\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Login\")\n              ]),\n              _: 1\n            })\n          ]))\n        : _createCommentVNode(\"\", true)\n    ], 2)\n  ], 512))\n}\n}\n\n})"
+        ],
+        "mappings": "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",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251028945,
+      "end": 1761251028945,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251028945,
+      "end": 1761251028945,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251028945,
+      "end": 1761251028946,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251028946,
+      "end": 1761251028947,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251028947,
+      "end": 1761251028947,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251028947,
+      "end": 1761251028947,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251028947,
+      "end": 1761251028947,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251028947,
+      "end": 1761251028952,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251028952,
+      "end": 1761251028952,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251028952,
+      "end": 1761251028952,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251028952,
+      "end": 1761251028952,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251028952,
+      "end": 1761251028952,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251028952,
+      "end": 1761251028952,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251028952,
+      "end": 1761251028952,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251028952,
+      "end": 1761251028952,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251028952,
+      "end": 1761251028953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251028953,
+      "end": 1761251028953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251028953,
+      "end": 1761251028953,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251028953,
+      "end": 1761251028969,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251028969,
+      "end": 1761251028971,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251028971,
+      "end": 1761251028986,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251028986,
+      "end": 1761251028986,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029014,
+      "end": 1761251029014,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029015,
+      "end": 1761251029015,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029015,
+      "end": 1761251029015,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, unref as _unref, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass } from \"vue\";\nconst _hoisted_1 = /* @__PURE__ */ _createElementVNode(\"svg\", {\n  xmlns: \"http://www.w3.org/2000/svg\",\n  fill: \"currentColor\",\n  viewBox: \"0 0 24 24\",\n  \"stroke-width\": \"1.5\",\n  stroke: \"currentColor\",\n  class: \"w-6 h-6 dark:text-white hover:dark:text-green-400 hover:text-green-400\"\n}, [\n  /* @__PURE__ */ _createElementVNode(\"path\", {\n    \"stroke-linecap\": \"round\",\n    \"stroke-linejoin\": \"round\",\n    d: \"M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z\"\n  })\n], -1);\nconst _hoisted_2 = [\n  _hoisted_1\n];\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"a\", {\n  class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n  href: \"#\"\n}, \"Logout\", -1);\nconst _hoisted_4 = [\n  _hoisted_3\n];\nconst _hoisted_5 = { key: 1 };\nconst _hoisted_6 = { key: 2 };\nimport { ref } from \"@vue/reactivity\";\nimport { userLogout } from \"~/composables/useAuth\";\nimport { onClickOutside } from \"@vueuse/core\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"User\",\n  props: {\n    isLoggedIn: Boolean\n  },\n  setup(__props) {\n    const logout = userLogout;\n    const hideActions = ref(true);\n    const userActions = ref(null);\n    onClickOutside(userActions, () => hideActions.value = true);\n    return (_ctx, _cache) => {\n      const _component_NuxtLink = __nuxt_component_0;\n      return _openBlock(), _createElementBlock(\"div\", {\n        ref_key: \"userActions\",\n        ref: userActions,\n        class: \"\"\n      }, [\n        _createElementVNode(\"div\", {\n          onClick: _cache[0] || (_cache[0] = ($event) => hideActions.value = !_unref(hideActions))\n        }, _hoisted_2),\n        _createElementVNode(\"ul\", {\n          class: _normalizeClass([[{ hidden: _unref(hideActions) }], \"dropdown-menu min-w-max absolute bottom bg-white text-base z-100 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 top- m-0 bg-clip-padding border-none\"]),\n          \"aria-labelledby\": \"dropdownMenuButton1\"\n        }, [\n          __props.isLoggedIn ? (_openBlock(), _createElementBlock(\"li\", {\n            key: 0,\n            onClick: _cache[1] || (_cache[1] = //@ts-ignore\n            (...args) => _unref(logout) && _unref(logout)(...args))\n          }, _hoisted_4)) : _createCommentVNode(\"\", true),\n          !__props.isLoggedIn ? (_openBlock(), _createElementBlock(\"li\", _hoisted_5, [\n            _createVNode(_component_NuxtLink, {\n              class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n              href: \"/register\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Register\")\n              ]),\n              _: 1\n            })\n          ])) : _createCommentVNode(\"\", true),\n          !__props.isLoggedIn ? (_openBlock(), _createElementBlock(\"li\", _hoisted_6, [\n            _createVNode(_component_NuxtLink, {\n              class: \"dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100\",\n              href: \"/login\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Login\")\n              ]),\n              _: 1\n            })\n          ])) : _createCommentVNode(\"\", true)\n        ], 2)\n      ], 512);\n    };\n  }\n});\n",
+      "start": 1761251029015,
+      "end": 1761251029025,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029029,
+      "end": 1761251029029,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029033,
+      "end": 1761251029034,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029035,
+      "end": 1761251029035,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/layouts/MobileOnly.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport TheMobileNav from \"~/components/layout/TheMobileNav.vue\";\nimport TheFooter from \"~~/components/layout/TheFooter.vue\";\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'MobileOnly',\n  __ssrInlineRender: true,\n  setup(__props) {\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"dark:bg-black\" }, _attrs))}>`)\n  _push(_ssrRenderComponent(TheMobileNav, null, null, _parent))\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(_ssrRenderComponent(TheFooter, null, null, _parent))\n  _push(`</div>`)\n}\n}\n\n})",
+      "start": 1761251179044,
+      "end": 1761251179044,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/layouts/MobileOnly.vue"
+        ],
+        "sourcesContent": [
+          "<script setup lang=\"ts\">\nimport TheMobileNav from \"~/components/layout/TheMobileNav.vue\";\nimport TheFooter from \"~~/components/layout/TheFooter.vue\";\n</script>\n\n<template>\n  <div class=\"dark:bg-black\">\n    <TheMobileNav />\n    <slot />\n    <TheFooter />\n  </div>\n</template>"
+        ],
+        "names": [],
+        "mappings": ";;;;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;;;;;AAFnC;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251179044,
+      "end": 1761251179044,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251179044,
+      "end": 1761251179044,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251179044,
+      "end": 1761251179044,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251179044,
+      "end": 1761251179044,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251179044,
+      "end": 1761251179044,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251179044,
+      "end": 1761251179044,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251179044,
+      "end": 1761251179044,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251179044,
+      "end": 1761251179044,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251179044,
+      "end": 1761251179044,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport TheMobileNav from \"~/components/layout/TheMobileNav.vue\";\nimport TheFooter from \"~~/components/layout/TheFooter.vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"MobileOnly\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"dark:bg-black\" }, _attrs))}>`);\n      _push(_ssrRenderComponent(TheMobileNav, null, null, _parent));\n      _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent);\n      _push(_ssrRenderComponent(TheFooter, null, null, _parent));\n      _push(`</div>`);\n    };\n  }\n});\n",
+      "start": 1761251179044,
+      "end": 1761251179075,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/layouts/MobileOnly.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport TheMobileNav from \"~/components/layout/TheMobileNav.vue\";\nimport TheFooter from \"~~/components/layout/TheFooter.vue\";\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'MobileOnly',\n  __ssrInlineRender: true,\n  setup(__props) {\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"dark:bg-black\" }, _attrs))}>`)\n  _push(_ssrRenderComponent(TheMobileNav, null, null, _parent))\n  _ssrRenderSlot(_ctx.$slots, \"default\", {}, null, _push, _parent)\n  _push(_ssrRenderComponent(TheFooter, null, null, _parent))\n  _push(`</div>`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,cAAc,mBAAmB;AAC1C,SAAS,sBAAsB,qBAAqB,iBAAiB,gBAAgB,kBAAkB,uBAAuB;AAE9H,OAAO,kBAAkB;AACzB,OAAO,eAAe;AAEtB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,MAAM,SAAS;AAGjB,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,OAAO,gBAAgB,YAAY,EAAE,OAAO,gBAAgB,GAAG,MAAM,CAAC,CAAC,GAAG;AAChF,YAAM,oBAAoB,cAAc,MAAM,MAAM,OAAO,CAAC;AAC5D,qBAAe,KAAK,QAAQ,WAAW,CAAC,GAAG,MAAM,OAAO,OAAO;AAC/D,YAAM,oBAAoB,WAAW,MAAM,MAAM,OAAO,CAAC;AACzD,YAAM,QAAQ;AAAA,IAChB;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251179075,
+      "end": 1761251179075,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251179075,
+      "end": 1761251179075,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251179075,
+      "end": 1761251179075,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251179075,
+      "end": 1761251179075,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251179075,
+      "end": 1761251179075,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251179075,
+      "end": 1761251179075,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251179075,
+      "end": 1761251179075,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251179075,
+      "end": 1761251179075,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251179075,
+      "end": 1761251179075,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251179075,
+      "end": 1761251179075,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251179075,
+      "end": 1761251179076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251179076,
+      "end": 1761251179076,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251179076,
+      "end": 1761251179077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251179076,
+      "end": 1761251179077,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251179077,
+      "end": 1761251179077,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251179077,
+      "end": 1761251179077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251179077,
+      "end": 1761251179077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251179077,
+      "end": 1761251179077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251179077,
+      "end": 1761251179077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251179077,
+      "end": 1761251179077,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251179077,
+      "end": 1761251179077,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251179077,
+      "end": 1761251179083,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251179083,
+      "end": 1761251179083,
+      "order": "normal"
+    }
+  ]
+}

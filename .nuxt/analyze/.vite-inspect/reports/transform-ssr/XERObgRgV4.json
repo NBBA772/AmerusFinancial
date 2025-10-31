@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue?vue&type=style&index=0&scoped=6e3794c4&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n/* Optional: smooth height animation */\n.accordion-enter-from,\n.accordion-leave-to {\n  max-height: 0;\n  opacity: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n}\n\n.accordion-enter-to,\n.accordion-leave-from {\n  max-height: 500px; /* large enough for your content */\n  opacity: 1;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n",
+      "start": 1761251160182,
+      "end": 1761251160182,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue"
+        ],
+        "names": [],
+        "mappings": ";AAoCA,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACtC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;EACd,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACnB;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACpB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;EACrD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACtB",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div class=\"border rounded-lg overflow-hidden\">\n    <button\n      class=\"w-full flex justify-between items-center p-4 font-semibold text-left bg-gray-100 hover:bg-gray-200\"\n      @click=\"isOpen = !isOpen\"\n    >\n      {{ term }}\n      <span :class=\"['transform transition-transform duration-300', isOpen ? 'rotate-180' : '']\">\n        ▼\n      </span>\n    </button>\n\n    <Transition\n      name=\"accordion\"\n      enter-active-class=\"transition-all duration-300 ease-out\"\n      leave-active-class=\"transition-all duration-200 ease-in\"\n    >\n      <div v-show=\"isOpen\" class=\"p-4 bg-white text-gray-700\">\n        {{ definition }}\n      </div>\n    </Transition>\n  </div>\n</template>\n\n<script setup lang=\"ts\">\nimport { ref } from 'vue'\n\nconst props = defineProps<{\n  term: string\n  definition: string\n}>()\n\nconst isOpen = ref(false)\n</script>\n\n<style scoped>\n/* Optional: smooth height animation */\n.accordion-enter-from,\n.accordion-leave-to {\n  max-height: 0;\n  opacity: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n}\n\n.accordion-enter-to,\n.accordion-leave-from {\n  max-height: 500px; /* large enough for your content */\n  opacity: 1;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160183,
+      "end": 1761251160183,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160183,
+      "end": 1761251160183,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160183,
+      "end": 1761251160183,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160183,
+      "end": 1761251160183,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160183,
+      "end": 1761251160183,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160183,
+      "end": 1761251160183,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251160183,
+      "end": 1761251160183,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251160183,
+      "end": 1761251160183,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".accordion-enter-from,.accordion-leave-to{max-height:0;opacity:0;padding-bottom:0;padding-top:0}.accordion-enter-to,.accordion-leave-from{max-height:500px;opacity:1;padding-bottom:1rem;padding-top:1rem}",
+      "start": 1761251160183,
+      "end": 1761251160216,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue",
+        "mappings": "AAEA,0CAEE,YAAa,CACb,SAAU,CAEV,gBAAiB,CADjB,aAEF,CAEA,0CAEE,gBAAiB,CACjB,SAAU,CAEV,mBAAoB,CADpB,gBAEF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue"
+        ],
+        "sourcesContent": [
+          "\n/* Optional: smooth height animation */\n.accordion-enter-from,\n.accordion-leave-to {\n  max-height: 0;\n  opacity: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n}\n\n.accordion-enter-to,\n.accordion-leave-from {\n  max-height: 500px; /* large enough for your content */\n  opacity: 1;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251160216,
+      "end": 1761251160216,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251160216,
+      "end": 1761251160216,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251160243,
+      "end": 1761251160243,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".accordion-enter-from[data-v-6e3794c4],.accordion-leave-to[data-v-6e3794c4]{max-height:0;opacity:0;padding-bottom:0;padding-top:0}.accordion-enter-to[data-v-6e3794c4],.accordion-leave-from[data-v-6e3794c4]{max-height:500px;opacity:1;padding-bottom:1rem;padding-top:1rem}",
+      "start": 1761251160245,
+      "end": 1761251160247,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue",
+        "mappings": "AAAA,4EAA0C,YAAY,CAAC,SAAS,CAAC,gBAAgB,CAAC,aAAa,CAAC,4EAA0C,gBAAgB,CAAC,SAAS,CAAC,mBAAmB,CAAC,gBAAgB",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/glossary/AccordionItem.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251160247,
+      "end": 1761251160247,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160247,
+      "end": 1761251160247,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160247,
+      "end": 1761251160247,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251160247,
+      "end": 1761251160247,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251160247,
+      "end": 1761251160247,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251160248,
+      "end": 1761251160248,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160275,
+      "end": 1761251160275,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251160275,
+      "end": 1761251160344,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251160345,
+      "end": 1761251160345,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1761251160345,
+      "end": 1761251160345,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251160366,
+      "end": 1761251160366,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251160366,
+      "end": 1761251160366,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251160366,
+      "end": 1761251160366,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251160367,
+      "end": 1761251160367,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251160373,
+      "end": 1761251160373,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251160373,
+      "end": 1761251160373,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251160373,
+      "end": 1761251160373,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251160374,
+      "end": 1761251160374,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251160374,
+      "end": 1761251160374,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251160374,
+      "end": 1761251160374,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251160374,
+      "end": 1761251160374,
+      "order": "normal"
+    }
+  ]
+}

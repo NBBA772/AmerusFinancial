@@ -1,0 +1,286 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/Tiptap.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div>\n    <label\n      for=\"message\"\n      class=\"block mb-2 ml-5 text-sm font-medium text-gray-900 dark:text-gray-400\"\n      >{{ label }}</label\n    >\n    <editor-content :editor=\"editor\" />\n  </div>\n</template>\n\n<script lang=\"ts\" setup>\nimport { useEditor, EditorContent } from \"@tiptap/vue-3\";\nimport StarterKit from \"@tiptap/starter-kit\";\n\nconst props = defineProps({\n  modelValue: {\n    type: String,\n    default: \"\",\n  },\n  label: {\n    type: String,\n    default: \"\",\n  },\n  editable: {\n    type: Boolean,\n    default: false,\n  },\n});\n\nconst emit = defineEmits([\"update:modelValue\"]);\n\nconst editor = useEditor({\n  editable: props.editable,\n  content: props.modelValue,\n  editorProps: {\n    attributes: {\n      class:\n        \"prose prose-sm sm:prose lg:prose-lg xl:prose-2xl m-5 focus:outline-none rounded-lg p-5  dark:text-white\",\n    },\n  },\n  extensions: [StarterKit],\n  onUpdate: ({ editor }) => {\n    let content = editor.getHTML();\n    emit(\"update:modelValue\", content);\n  },\n});\n</script>",
+      "start": 1761251143139,
+      "end": 1761251143246,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251143246,
+      "end": 1761251143246,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/Tiptap.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/Tiptap.vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"components/elements/Tiptap.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
+      "start": 1761251143246,
+      "end": 1761251143297,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251143297,
+      "end": 1761251143297,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251143298,
+      "end": 1761251143298,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251143298,
+      "end": 1761251143302,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251143302,
+      "end": 1761251143302,
+      "order": "normal"
+    }
+  ]
+}

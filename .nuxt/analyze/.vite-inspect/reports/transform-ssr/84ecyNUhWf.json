@@ -1,0 +1,295 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/GptChat.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"w-full p-4 mx-auto my-8\">\n    <div class=\"bg-gray-300 dark:bg-gray-600 p-8 my-8\">\n      <div v-for=\"message in messages\" :key=\"message.id\" class=\"mb-4\">\n        <div v-if=\"message.sender === 'user'\" class=\"text-right\">\n          <span class=\"bg-blue-500 text-white p-2 rounded-lg\">{{\n            message.text\n          }}</span>\n        </div>\n        <div v-else>\n          <span class=\"bg-gray-300 text-white p-2 rounded-lg\">{{\n            message.text\n          }}</span>\n        </div>\n      </div>\n    </div>\n    <div class=\"flex\">\n      <input\n        v-model=\"newMessage\"\n        @keydown.enter.prevent=\"sendMessage\"\n        type=\"text\"\n        class=\"flex-1 p-2 bg-gray-300 dark:bg-gray-600\"\n        placeholder=\"Type your response...\"\n      />\n      <button\n        @click=\"sendMessage\"\n        class=\"ml-2 p-2 bg-blue-500 text-white rounded\"\n      >\n        Send\n      </button>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      messages: [\n        { id: 1, text: \"Hello!\", sender: \"user\" },\n        { id: 2, text: \"Hi there!\", sender: \"system\" },\n      ],\n      newMessage: \"\",\n    };\n  },\n  methods: {\n    sendMessage() {\n      if (this.newMessage.trim() === \"\") return;\n\n      this.messages.push({\n        id: this.messages.length + 1,\n        text: this.newMessage,\n        sender: \"user\",\n      });\n\n      this.newMessage = \"\";\n    },\n  },\n};\n</script>\n\n<style scoped>\n/* Add any additional styling here */\n</style>",
+      "start": 1761251142544,
+      "end": 1761251142910,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251142910,
+      "end": 1761251142910,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  data() {\n    return {\n      messages: [\n        { id: 1, text: \"Hello!\", sender: \"user\" },\n        { id: 2, text: \"Hi there!\", sender: \"system\" },\n      ],\n      newMessage: \"\",\n    };\n  },\n  methods: {\n    sendMessage() {\n      if (this.newMessage.trim() === \"\") return;\n\n      this.messages.push({\n        id: this.messages.length + 1,\n        text: this.newMessage,\n        sender: \"user\",\n      });\n\n      this.newMessage = \"\";\n    },\n  },\n};\n\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"w-full p-4 mx-auto my-8\" }, _attrs))} data-v-ab744c0b><div class=\"bg-gray-300 dark:bg-gray-600 p-8 my-8\" data-v-ab744c0b><!--[-->`)\n  _ssrRenderList($data.messages, (message) => {\n    _push(`<div class=\"mb-4\" data-v-ab744c0b>`)\n    if (message.sender === 'user') {\n      _push(`<div class=\"text-right\" data-v-ab744c0b><span class=\"bg-blue-500 text-white p-2 rounded-lg\" data-v-ab744c0b>${_ssrInterpolate(message.text)}</span></div>`)\n    } else {\n      _push(`<div data-v-ab744c0b><span class=\"bg-gray-300 text-white p-2 rounded-lg\" data-v-ab744c0b>${_ssrInterpolate(message.text)}</span></div>`)\n    }\n    _push(`</div>`)\n  })\n  _push(`<!--]--></div><div class=\"flex\" data-v-ab744c0b><input${_ssrRenderAttr(\"value\", $data.newMessage)} type=\"text\" class=\"flex-1 p-2 bg-gray-300 dark:bg-gray-600\" placeholder=\"Type your response...\" data-v-ab744c0b><button class=\"ml-2 p-2 bg-blue-500 text-white rounded\" data-v-ab744c0b> Send </button></div></div>`)\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/GptChat.vue?vue&type=style&index=0&scoped=ab744c0b&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/GptChat.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-ab744c0b\"]])",
+      "start": 1761251142910,
+      "end": 1761251142913,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/GptChat.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/GptChat.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <div class=\"w-full p-4 mx-auto my-8\">\n    <div class=\"bg-gray-300 dark:bg-gray-600 p-8 my-8\">\n      <div v-for=\"message in messages\" :key=\"message.id\" class=\"mb-4\">\n        <div v-if=\"message.sender === 'user'\" class=\"text-right\">\n          <span class=\"bg-blue-500 text-white p-2 rounded-lg\">{{\n            message.text\n          }}</span>\n        </div>\n        <div v-else>\n          <span class=\"bg-gray-300 text-white p-2 rounded-lg\">{{\n            message.text\n          }}</span>\n        </div>\n      </div>\n    </div>\n    <div class=\"flex\">\n      <input\n        v-model=\"newMessage\"\n        @keydown.enter.prevent=\"sendMessage\"\n        type=\"text\"\n        class=\"flex-1 p-2 bg-gray-300 dark:bg-gray-600\"\n        placeholder=\"Type your response...\"\n      />\n      <button\n        @click=\"sendMessage\"\n        class=\"ml-2 p-2 bg-blue-500 text-white rounded\"\n      >\n        Send\n      </button>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      messages: [\n        { id: 1, text: \"Hello!\", sender: \"user\" },\n        { id: 2, text: \"Hi there!\", sender: \"system\" },\n      ],\n      newMessage: \"\",\n    };\n  },\n  methods: {\n    sendMessage() {\n      if (this.newMessage.trim() === \"\") return;\n\n      this.messages.push({\n        id: this.messages.length + 1,\n        text: this.newMessage,\n        sender: \"user\",\n      });\n\n      this.newMessage = \"\";\n    },\n  },\n};\n</script>\n\n<style scoped>\n/* Add any additional styling here */\n</style>"
+        ],
+        "mappings": ";AAmCA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACR,EAAE,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;QACzC,EAAE,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;MAChD,CAAC;MACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC;IAChB,CAAC;EACH,CAAC;EACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACZ,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;MAEzC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACjB,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC;QAC5B,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;MAChB,CAAC,CAAC;;MAEF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC;IACtB,CAAC;EACH,CAAC;AACH,CAAC;;;;;;EA1DD,aAAA,gBAAA,cACO,KAAK,EAAC,yBAAyB,IADtC;EAAA,eAG6B,cAAQ,EAHrC,CAGkB,OAAO;IAHzB;QAImB,OAAO,CAAC,MAAM;MAJjC,qHAAA,gBAMY,OAAO,CAAC,IAAI;;MANxB,kGAAA,gBAWY,OAAO,CAAC,IAAI;;IAXxB;;EAAA,+DAAA,eAAA,SAkBiB,gBAAU"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251142913,
+      "end": 1761251142913,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251142913,
+      "end": 1761251142913,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251142913,
+      "end": 1761251142913,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251142913,
+      "end": 1761251142913,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251142913,
+      "end": 1761251142913,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251142913,
+      "end": 1761251142913,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251142913,
+      "end": 1761251142913,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251142913,
+      "end": 1761251142921,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251142921,
+      "end": 1761251142921,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251142921,
+      "end": 1761251142921,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251142921,
+      "end": 1761251142921,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251142921,
+      "end": 1761251142921,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251142921,
+      "end": 1761251142921,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251142921,
+      "end": 1761251142921,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251142921,
+      "end": 1761251142921,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251142921,
+      "end": 1761251142921,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251142922,
+      "end": 1761251142922,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/menu/MenuList.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <nav class=\"hidden md:flex justify-between space-x-10 items-center\">\n    <div class=\"hidden md:flex space-x-10 items-center relative\">\n      <!-- Home -->\n      <nuxt-link to=\"/\">\n        <span class=\"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\">\n          Home\n        </span>\n      </nuxt-link>\n\n      <!-- Services Dropdown -->\n      <div class=\"relative\" @mouseenter=\"open = true\" @mouseleave=\"open = false\">\n        <button\n          class=\"flex items-center text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 focus:outline-none\"\n        >\n          Services\n          <Icon\n            name=\"lucide:chevron-down\"\n            class=\"ml-1 h-4 w-4 transition-transform\"\n            :class=\"{ 'rotate-180': open }\"\n          />\n        </button>\n\n        <!-- Dropdown Menu -->\n        <div\n          v-show=\"open\"\n          class=\"absolute left-0 mt-0 w-64 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 z-20\"\n        >\n          <div class=\"max-h-[calc(100vh-200px)] overflow-y-auto\">\n            <div v-for=\"section in services\" :key=\"section.label\" class=\"mb-2\">\n              <div class=\"px-4 py-1 text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50 dark:bg-gray-700\">\n                {{ section.label }}\n              </div>\n              <div v-for=\"item in section.items\" :key=\"item.href\">\n                <nuxt-link\n                  :to=\"item.href\"\n                  class=\"block px-6 py-2 text-sm text-neutral-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  :class=\"item.active ? 'bg-primary/10 text-primary font-medium' : ''\"\n                >\n                  {{ item.label }}\n                </nuxt-link>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- Resources -->\n      <nuxt-link to=\"/resources\">\n        <span class=\"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\">\n          Resources\n        </span>\n      </nuxt-link>\n\n      <!-- About -->\n      <nuxt-link to=\"/about-us\">\n        <span class=\"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\">\n          About Us\n        </span>\n      </nuxt-link>\n\n      <!-- Contact -->\n      <nuxt-link to=\"/contact\">\n        <span class=\"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\">\n          Contact\n        </span>\n      </nuxt-link>\n    </div>\n  </nav>\n</template>\n\n<script setup>\nimport { ref } from \"vue\";\n\nconst open = ref(false);\n\nconst services = [\n  {\n    label: \"Overview\",\n    items: [\n      { label: \"All Services\", href: \"/services\", active: false },\n    ],\n  },\n  {\n    label: \"Health Insurance\",\n    items: [\n      { label: \"Individual Health\", href: \"/services/health/individual-health\" },\n      { label: \"Family Coverage\", href: \"/services/health/family-coverage\", active: true },\n      { label: \"Group Health\", href: \"/services/health/group-health\" },\n      { label: \"Medicare\", href: \"/services/health/medicare\" },\n      { label: \"Dental Coverage\", href: \"/services/health/dental\" },\n      { label: \"Senior Dental\", href: \"/services/health/senior-dental\" },\n      { label: \"Vision Coverage\", href: \"/services/health/vision-coverage\" },\n      { label: \"Private Health\", href: \"/services/health/private-health\" },\n    ],\n  },\n  {\n    label: \"Life Insurance\",\n    items: [\n      { label: \"Life Insurance\", href: \"/services/life/life-insurance\" },\n      { label: \"Term Life Insurance\", href: \"/services/life/term-life\" },\n      { label: \"Whole Life Insurance\", href: \"/services/life/whole-life\" },\n      { label: \"Universal Life\", href: \"/services/life/universal-life\" },\n      { label: \"Final Expense\", href: \"/services/life/final-expense\" },\n      { label: \"Key Person Insurance\", href: \"/services/life/key-person-insurance\" },\n      { label: \"Group Life Insurance\", href: \"/services/life/group-life-insurance\" },\n      { label: \"Split Dollar\", href: \"/services/life/split-dollar\" },\n    ],\n  },\n  {\n    label: \"Retirement Planning\",\n    items: [\n      { label: \"IRAs\", href: \"/services/retirement/iras\" },\n      { label: \"401(k) Rollovers\", href: \"/services/retirement/401k\" },\n      { label: \"Annuities\", href: \"/services/retirement/annuity\" },\n      { label: \"Pension Planning\", href: \"/services/retirement/pension-planning\" },\n      { label: \"Long Term Care\", href: \"/services/retirement/long-term-care\" },\n      { label: \"Retirement Income\", href: \"/services/retirement/retirement-income\" },\n    ],\n  },\n    {\n    label: \"Auto Insurance\",\n    items: [\n      { label: \"Auto Insurance Overview\", href: \"/services/auto\" },\n      { label: \"Personal Auto\", href: \"/services/auto/personal-auto\" },\n      { label: \"Uninsured Motorist\", href: \"/services/auto/uninsured-motorist\" },\n      { label: \"Multi Vehicle\", href: \"/services/auto/multi-vehicle\" },\n      { label: \"Commercial Auto\", href: \"/services/auto/commercial-auto\" },\n      { label: \"Comprehensive Coverage\", href: \"/services/auto/comprehensive-coverage\" },\n      { label: \"Personal Injury Protection\", href: \"/services/auto/personal-injury-protection\" },\n    ],\n  },\n      {\n    label: \"Home Insurance\",\n    items: [\n      { label: \"Homeowners Insurance\", href: \"/services/home/homeowners\" },\n      { label: \"Property Protection\", href: \"/services/home/property-protection\" },\n      { label: \"Additional Living Expenses\", href: \"/services/home/living-expenses\" },\n      { label: \"Valuable Items Coverage\", href: \"/services/home/valuable-items\" },\n      { label: \"Property Coverage\", href: \"/services/home/property-coverage\" },\n      { label: \"liability Coverage\", href: \"/services/home/liability-coverage\" },\n      { label: \"Flood Insurance\", href: \"/services/home/flood-insurance\" },\n    ],\n  },\n      {\n    label: \"Business Insurance\",\n    items: [\n      { label: \"General Liability\", href: \"/services/business/general-liability\" },\n      { label: \"Professional Liability\", href: \"/services/business/professional-liability\" },\n      { label: \"Workers Comp\", href: \"/services/business/workers-comp\" },\n      { label: \"Commercial Property\", href: \"/services/business/commercial-property\" },\n      { label: \"Commercial Auto\", href: \"/services/auto/commercial-auto\" },\n      { label: \"Key Person Insurance\", href: \"/services/life/key-person-insurance\" },\n      { label: \"Group Health\", href: \"/services/health/group-health\" },\n    ],\n  },\n];\n</script>\n",
+      "start": 1761251024462,
+      "end": 1761251024490,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, createTextVNode as _createTextVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, vShow as _vShow, withDirectives as _withDirectives } from \"vue\"\n\nconst _hoisted_1 = { class: \"hidden md:flex justify-between space-x-10 items-center\" }\nconst _hoisted_2 = { class: \"hidden md:flex space-x-10 items-center relative\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\" }, \" Home \", -1)\nconst _hoisted_4 = { class: \"flex items-center text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 focus:outline-none\" }\nconst _hoisted_5 = { class: \"absolute left-0 mt-0 w-64 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 z-20\" }\nconst _hoisted_6 = { class: \"max-h-[calc(100vh-200px)] overflow-y-auto\" }\nconst _hoisted_7 = { class: \"px-4 py-1 text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50 dark:bg-gray-700\" }\nconst _hoisted_8 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\" }, \" Resources \", -1)\nconst _hoisted_9 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\" }, \" About Us \", -1)\nconst _hoisted_10 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\" }, \" Contact \", -1)\n\nimport { ref } from \"vue\";\n\n\nconst _sfc_main = {\n  __name: 'MenuList',\n  setup(__props) {\n\nconst open = ref(false);\n\nconst services = [\n  {\n    label: \"Overview\",\n    items: [\n      { label: \"All Services\", href: \"/services\", active: false },\n    ],\n  },\n  {\n    label: \"Health Insurance\",\n    items: [\n      { label: \"Individual Health\", href: \"/services/health/individual-health\" },\n      { label: \"Family Coverage\", href: \"/services/health/family-coverage\", active: true },\n      { label: \"Group Health\", href: \"/services/health/group-health\" },\n      { label: \"Medicare\", href: \"/services/health/medicare\" },\n      { label: \"Dental Coverage\", href: \"/services/health/dental\" },\n      { label: \"Senior Dental\", href: \"/services/health/senior-dental\" },\n      { label: \"Vision Coverage\", href: \"/services/health/vision-coverage\" },\n      { label: \"Private Health\", href: \"/services/health/private-health\" },\n    ],\n  },\n  {\n    label: \"Life Insurance\",\n    items: [\n      { label: \"Life Insurance\", href: \"/services/life/life-insurance\" },\n      { label: \"Term Life Insurance\", href: \"/services/life/term-life\" },\n      { label: \"Whole Life Insurance\", href: \"/services/life/whole-life\" },\n      { label: \"Universal Life\", href: \"/services/life/universal-life\" },\n      { label: \"Final Expense\", href: \"/services/life/final-expense\" },\n      { label: \"Key Person Insurance\", href: \"/services/life/key-person-insurance\" },\n      { label: \"Group Life Insurance\", href: \"/services/life/group-life-insurance\" },\n      { label: \"Split Dollar\", href: \"/services/life/split-dollar\" },\n    ],\n  },\n  {\n    label: \"Retirement Planning\",\n    items: [\n      { label: \"IRAs\", href: \"/services/retirement/iras\" },\n      { label: \"401(k) Rollovers\", href: \"/services/retirement/401k\" },\n      { label: \"Annuities\", href: \"/services/retirement/annuity\" },\n      { label: \"Pension Planning\", href: \"/services/retirement/pension-planning\" },\n      { label: \"Long Term Care\", href: \"/services/retirement/long-term-care\" },\n      { label: \"Retirement Income\", href: \"/services/retirement/retirement-income\" },\n    ],\n  },\n    {\n    label: \"Auto Insurance\",\n    items: [\n      { label: \"Auto Insurance Overview\", href: \"/services/auto\" },\n      { label: \"Personal Auto\", href: \"/services/auto/personal-auto\" },\n      { label: \"Uninsured Motorist\", href: \"/services/auto/uninsured-motorist\" },\n      { label: \"Multi Vehicle\", href: \"/services/auto/multi-vehicle\" },\n      { label: \"Commercial Auto\", href: \"/services/auto/commercial-auto\" },\n      { label: \"Comprehensive Coverage\", href: \"/services/auto/comprehensive-coverage\" },\n      { label: \"Personal Injury Protection\", href: \"/services/auto/personal-injury-protection\" },\n    ],\n  },\n      {\n    label: \"Home Insurance\",\n    items: [\n      { label: \"Homeowners Insurance\", href: \"/services/home/homeowners\" },\n      { label: \"Property Protection\", href: \"/services/home/property-protection\" },\n      { label: \"Additional Living Expenses\", href: \"/services/home/living-expenses\" },\n      { label: \"Valuable Items Coverage\", href: \"/services/home/valuable-items\" },\n      { label: \"Property Coverage\", href: \"/services/home/property-coverage\" },\n      { label: \"liability Coverage\", href: \"/services/home/liability-coverage\" },\n      { label: \"Flood Insurance\", href: \"/services/home/flood-insurance\" },\n    ],\n  },\n      {\n    label: \"Business Insurance\",\n    items: [\n      { label: \"General Liability\", href: \"/services/business/general-liability\" },\n      { label: \"Professional Liability\", href: \"/services/business/professional-liability\" },\n      { label: \"Workers Comp\", href: \"/services/business/workers-comp\" },\n      { label: \"Commercial Property\", href: \"/services/business/commercial-property\" },\n      { label: \"Commercial Auto\", href: \"/services/auto/commercial-auto\" },\n      { label: \"Key Person Insurance\", href: \"/services/life/key-person-insurance\" },\n      { label: \"Group Health\", href: \"/services/health/group-health\" },\n    ],\n  },\n];\n\nreturn (_ctx, _cache) => {\n  const _component_nuxt_link = _resolveComponent(\"nuxt-link\")\n  const _component_Icon = _resolveComponent(\"Icon\")\n\n  return (_openBlock(), _createElementBlock(\"nav\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createVNode(_component_nuxt_link, { to: \"/\" }, {\n        default: _withCtx(() => [\n          _hoisted_3\n        ]),\n        _: 1\n      }),\n      _createElementVNode(\"div\", {\n        class: \"relative\",\n        onMouseenter: _cache[0] || (_cache[0] = $event => (open.value = true)),\n        onMouseleave: _cache[1] || (_cache[1] = $event => (open.value = false))\n      }, [\n        _createElementVNode(\"button\", _hoisted_4, [\n          _createTextVNode(\" Services \"),\n          _createVNode(_component_Icon, {\n            name: \"lucide:chevron-down\",\n            class: _normalizeClass([\"ml-1 h-4 w-4 transition-transform\", { 'rotate-180': open.value }])\n          }, null, 8, [\"class\"])\n        ]),\n        _withDirectives(_createElementVNode(\"div\", _hoisted_5, [\n          _createElementVNode(\"div\", _hoisted_6, [\n            (_openBlock(), _createElementBlock(_Fragment, null, _renderList(services, (section) => {\n              return _createElementVNode(\"div\", {\n                key: section.label,\n                class: \"mb-2\"\n              }, [\n                _createElementVNode(\"div\", _hoisted_7, _toDisplayString(section.label), 1),\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(section.items, (item) => {\n                  return (_openBlock(), _createElementBlock(\"div\", {\n                    key: item.href\n                  }, [\n                    _createVNode(_component_nuxt_link, {\n                      to: item.href,\n                      class: _normalizeClass([\"block px-6 py-2 text-sm text-neutral-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\", item.active ? 'bg-primary/10 text-primary font-medium' : ''])\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(_toDisplayString(item.label), 1)\n                      ]),\n                      _: 2\n                    }, 1032, [\"to\", \"class\"])\n                  ]))\n                }), 128))\n              ])\n            }), 64))\n          ])\n        ], 512), [\n          [_vShow, open.value]\n        ])\n      ], 32),\n      _createVNode(_component_nuxt_link, { to: \"/resources\" }, {\n        default: _withCtx(() => [\n          _hoisted_8\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_nuxt_link, { to: \"/about-us\" }, {\n        default: _withCtx(() => [\n          _hoisted_9\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_nuxt_link, { to: \"/contact\" }, {\n        default: _withCtx(() => [\n          _hoisted_10\n        ]),\n        _: 1\n      })\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024490,
+      "end": 1761251024490,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024490,
+      "end": 1761251024491,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024491,
+      "end": 1761251024491,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024491,
+      "end": 1761251024491,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024491,
+      "end": 1761251024491,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024491,
+      "end": 1761251024491,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, createTextVNode as _createTextVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, vShow as _vShow, withDirectives as _withDirectives } from \"vue\"\n\nconst _hoisted_1 = { class: \"hidden md:flex justify-between space-x-10 items-center\" }\nconst _hoisted_2 = { class: \"hidden md:flex space-x-10 items-center relative\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\" }, \" Home \", -1)\nconst _hoisted_4 = { class: \"flex items-center text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 focus:outline-none\" }\nconst _hoisted_5 = { class: \"absolute left-0 mt-0 w-64 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 z-20\" }\nconst _hoisted_6 = { class: \"max-h-[calc(100vh-200px)] overflow-y-auto\" }\nconst _hoisted_7 = { class: \"px-4 py-1 text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50 dark:bg-gray-700\" }\nconst _hoisted_8 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\" }, \" Resources \", -1)\nconst _hoisted_9 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\" }, \" About Us \", -1)\nconst _hoisted_10 = /*#__PURE__*/_createElementVNode(\"span\", { class: \"text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300\" }, \" Contact \", -1)\n\nimport { ref } from \"vue\";\n\n\nconst _sfc_main = {\n  __name: 'MenuList',\n  setup(__props) {\n\nconst open = ref(false);\n\nconst services = [\n  {\n    label: \"Overview\",\n    items: [\n      { label: \"All Services\", href: \"/services\", active: false },\n    ],\n  },\n  {\n    label: \"Health Insurance\",\n    items: [\n      { label: \"Individual Health\", href: \"/services/health/individual-health\" },\n      { label: \"Family Coverage\", href: \"/services/health/family-coverage\", active: true },\n      { label: \"Group Health\", href: \"/services/health/group-health\" },\n      { label: \"Medicare\", href: \"/services/health/medicare\" },\n      { label: \"Dental Coverage\", href: \"/services/health/dental\" },\n      { label: \"Senior Dental\", href: \"/services/health/senior-dental\" },\n      { label: \"Vision Coverage\", href: \"/services/health/vision-coverage\" },\n      { label: \"Private Health\", href: \"/services/health/private-health\" },\n    ],\n  },\n  {\n    label: \"Life Insurance\",\n    items: [\n      { label: \"Life Insurance\", href: \"/services/life/life-insurance\" },\n      { label: \"Term Life Insurance\", href: \"/services/life/term-life\" },\n      { label: \"Whole Life Insurance\", href: \"/services/life/whole-life\" },\n      { label: \"Universal Life\", href: \"/services/life/universal-life\" },\n      { label: \"Final Expense\", href: \"/services/life/final-expense\" },\n      { label: \"Key Person Insurance\", href: \"/services/life/key-person-insurance\" },\n      { label: \"Group Life Insurance\", href: \"/services/life/group-life-insurance\" },\n      { label: \"Split Dollar\", href: \"/services/life/split-dollar\" },\n    ],\n  },\n  {\n    label: \"Retirement Planning\",\n    items: [\n      { label: \"IRAs\", href: \"/services/retirement/iras\" },\n      { label: \"401(k) Rollovers\", href: \"/services/retirement/401k\" },\n      { label: \"Annuities\", href: \"/services/retirement/annuity\" },\n      { label: \"Pension Planning\", href: \"/services/retirement/pension-planning\" },\n      { label: \"Long Term Care\", href: \"/services/retirement/long-term-care\" },\n      { label: \"Retirement Income\", href: \"/services/retirement/retirement-income\" },\n    ],\n  },\n    {\n    label: \"Auto Insurance\",\n    items: [\n      { label: \"Auto Insurance Overview\", href: \"/services/auto\" },\n      { label: \"Personal Auto\", href: \"/services/auto/personal-auto\" },\n      { label: \"Uninsured Motorist\", href: \"/services/auto/uninsured-motorist\" },\n      { label: \"Multi Vehicle\", href: \"/services/auto/multi-vehicle\" },\n      { label: \"Commercial Auto\", href: \"/services/auto/commercial-auto\" },\n      { label: \"Comprehensive Coverage\", href: \"/services/auto/comprehensive-coverage\" },\n      { label: \"Personal Injury Protection\", href: \"/services/auto/personal-injury-protection\" },\n    ],\n  },\n      {\n    label: \"Home Insurance\",\n    items: [\n      { label: \"Homeowners Insurance\", href: \"/services/home/homeowners\" },\n      { label: \"Property Protection\", href: \"/services/home/property-protection\" },\n      { label: \"Additional Living Expenses\", href: \"/services/home/living-expenses\" },\n      { label: \"Valuable Items Coverage\", href: \"/services/home/valuable-items\" },\n      { label: \"Property Coverage\", href: \"/services/home/property-coverage\" },\n      { label: \"liability Coverage\", href: \"/services/home/liability-coverage\" },\n      { label: \"Flood Insurance\", href: \"/services/home/flood-insurance\" },\n    ],\n  },\n      {\n    label: \"Business Insurance\",\n    items: [\n      { label: \"General Liability\", href: \"/services/business/general-liability\" },\n      { label: \"Professional Liability\", href: \"/services/business/professional-liability\" },\n      { label: \"Workers Comp\", href: \"/services/business/workers-comp\" },\n      { label: \"Commercial Property\", href: \"/services/business/commercial-property\" },\n      { label: \"Commercial Auto\", href: \"/services/auto/commercial-auto\" },\n      { label: \"Key Person Insurance\", href: \"/services/life/key-person-insurance\" },\n      { label: \"Group Health\", href: \"/services/health/group-health\" },\n    ],\n  },\n];\n\nreturn (_ctx, _cache) => {\n  const _component_nuxt_link = __nuxt_component_0\n  const _component_Icon = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"nav\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createVNode(_component_nuxt_link, { to: \"/\" }, {\n        default: _withCtx(() => [\n          _hoisted_3\n        ]),\n        _: 1\n      }),\n      _createElementVNode(\"div\", {\n        class: \"relative\",\n        onMouseenter: _cache[0] || (_cache[0] = $event => (open.value = true)),\n        onMouseleave: _cache[1] || (_cache[1] = $event => (open.value = false))\n      }, [\n        _createElementVNode(\"button\", _hoisted_4, [\n          _createTextVNode(\" Services \"),\n          _createVNode(_component_Icon, {\n            name: \"lucide:chevron-down\",\n            class: _normalizeClass([\"ml-1 h-4 w-4 transition-transform\", { 'rotate-180': open.value }])\n          }, null, 8, [\"class\"])\n        ]),\n        _withDirectives(_createElementVNode(\"div\", _hoisted_5, [\n          _createElementVNode(\"div\", _hoisted_6, [\n            (_openBlock(), _createElementBlock(_Fragment, null, _renderList(services, (section) => {\n              return _createElementVNode(\"div\", {\n                key: section.label,\n                class: \"mb-2\"\n              }, [\n                _createElementVNode(\"div\", _hoisted_7, _toDisplayString(section.label), 1),\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(section.items, (item) => {\n                  return (_openBlock(), _createElementBlock(\"div\", {\n                    key: item.href\n                  }, [\n                    _createVNode(_component_nuxt_link, {\n                      to: item.href,\n                      class: _normalizeClass([\"block px-6 py-2 text-sm text-neutral-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700\", item.active ? 'bg-primary/10 text-primary font-medium' : ''])\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(_toDisplayString(item.label), 1)\n                      ]),\n                      _: 2\n                    }, 1032, [\"to\", \"class\"])\n                  ]))\n                }), 128))\n              ])\n            }), 64))\n          ])\n        ], 512), [\n          [_vShow, open.value]\n        ])\n      ], 32),\n      _createVNode(_component_nuxt_link, { to: \"/resources\" }, {\n        default: _withCtx(() => [\n          _hoisted_8\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_nuxt_link, { to: \"/about-us\" }, {\n        default: _withCtx(() => [\n          _hoisted_9\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_nuxt_link, { to: \"/contact\" }, {\n        default: _withCtx(() => [\n          _hoisted_10\n        ]),\n        _: 1\n      })\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1761251024491,
+      "end": 1761251024491,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024491,
+      "end": 1761251024491,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024491,
+      "end": 1761251024491,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024491,
+      "end": 1761251024491,
+      "order": "normal"
+    }
+  ]
+}

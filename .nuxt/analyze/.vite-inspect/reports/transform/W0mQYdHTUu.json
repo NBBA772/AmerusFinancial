@@ -1,0 +1,222 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/@tiptap/extension-italic/dist/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { Mark, mergeAttributes, markInputRule, markPasteRule } from '@tiptap/core';\n\nconst starInputRegex = /(?:^|\\s)((?:\\*)((?:[^*]+))(?:\\*))$/;\r\nconst starPasteRegex = /(?:^|\\s)((?:\\*)((?:[^*]+))(?:\\*))/g;\r\nconst underscoreInputRegex = /(?:^|\\s)((?:_)((?:[^_]+))(?:_))$/;\r\nconst underscorePasteRegex = /(?:^|\\s)((?:_)((?:[^_]+))(?:_))/g;\r\nconst Italic = Mark.create({\r\n    name: 'italic',\r\n    addOptions() {\r\n        return {\r\n            HTMLAttributes: {},\r\n        };\r\n    },\r\n    parseHTML() {\r\n        return [\r\n            {\r\n                tag: 'em',\r\n            },\r\n            {\r\n                tag: 'i',\r\n                getAttrs: node => node.style.fontStyle !== 'normal' && null,\r\n            },\r\n            {\r\n                style: 'font-style=italic',\r\n            },\r\n        ];\r\n    },\r\n    renderHTML({ HTMLAttributes }) {\r\n        return ['em', mergeAttributes(this.options.HTMLAttributes, HTMLAttributes), 0];\r\n    },\r\n    addCommands() {\r\n        return {\r\n            setItalic: () => ({ commands }) => {\r\n                return commands.setMark(this.name);\r\n            },\r\n            toggleItalic: () => ({ commands }) => {\r\n                return commands.toggleMark(this.name);\r\n            },\r\n            unsetItalic: () => ({ commands }) => {\r\n                return commands.unsetMark(this.name);\r\n            },\r\n        };\r\n    },\r\n    addKeyboardShortcuts() {\r\n        return {\r\n            'Mod-i': () => this.editor.commands.toggleItalic(),\r\n            'Mod-I': () => this.editor.commands.toggleItalic(),\r\n        };\r\n    },\r\n    addInputRules() {\r\n        return [\r\n            markInputRule({\r\n                find: starInputRegex,\r\n                type: this.type,\r\n            }),\r\n            markInputRule({\r\n                find: underscoreInputRegex,\r\n                type: this.type,\r\n            }),\r\n        ];\r\n    },\r\n    addPasteRules() {\r\n        return [\r\n            markPasteRule({\r\n                find: starPasteRegex,\r\n                type: this.type,\r\n            }),\r\n            markPasteRule({\r\n                find: underscorePasteRegex,\r\n                type: this.type,\r\n            }),\r\n        ];\r\n    },\r\n});\n\nexport { Italic, Italic as default, starInputRegex, starPasteRegex, underscoreInputRegex, underscorePasteRegex };\n//# sourceMappingURL=index.js.map\n",
+      "start": 1761251039185,
+      "end": 1761251039522,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251039522,
+      "end": 1761251039522,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251039522,
+      "end": 1761251039523,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251039523,
+      "end": 1761251039523,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251039523,
+      "end": 1761251039523,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251039523,
+      "end": 1761251039523,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251039523,
+      "end": 1761251039523,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251039523,
+      "end": 1761251039523,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251039523,
+      "end": 1761251039523,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251039523,
+      "end": 1761251039523,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251039523,
+      "end": 1761251039523,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251039523,
+      "end": 1761251039523,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251039523,
+      "end": 1761251039525,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251039525,
+      "end": 1761251039525,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/search.vue?macro=true&vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\"\n\nimport QuestionBoard from \"~/components/elements/QuestionBoard.vue\";\nimport DashboardSidebar from \"~~/components/elements/DashboardSidebar.vue\";\nimport Tiptap from \"~~/components/elements/Tiptap.vue\";\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'search',\n  __ssrInlineRender: true,\n  setup(__props) {\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_PatternSection = _resolveComponent(\"PatternSection\")!\n\n  _push(_ssrRenderComponent(_component_PatternSection, _attrs, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<div class=\"h-32 flex justify-center\"${\n          _scopeId\n        }><div class=\"flex m-5\"${\n          _scopeId\n        }><h1 class=\"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\"${\n          _scopeId\n        }> Search Questions </h1></div></div><div class=\"md:flex min-h-full\"${\n          _scopeId\n        }>`)\n        _push(_ssrRenderComponent(DashboardSidebar, null, null, _parent, _scopeId))\n        _push(_ssrRenderComponent(QuestionBoard, null, null, _parent, _scopeId))\n        _push(`</div>`)\n      } else {\n        return [\n          _createVNode(\"div\", { class: \"h-32 flex justify-center\" }, [\n            _createVNode(\"div\", { class: \"flex m-5\" }, [\n              _createVNode(\"h1\", { class: \"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\" }, \" Search Questions \")\n            ])\n          ]),\n          _createVNode(\"div\", { class: \"md:flex min-h-full\" }, [\n            _createVNode(DashboardSidebar),\n            _createVNode(QuestionBoard)\n          ])\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n}\n\n})",
+      "start": 1761251165329,
+      "end": 1761251165330,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/search.vue"
+        ],
+        "sourcesContent": [
+          "<script setup lang=\"ts\">\nimport QuestionBoard from \"~/components/elements/QuestionBoard.vue\";\nimport DashboardSidebar from \"~~/components/elements/DashboardSidebar.vue\";\nimport Tiptap from \"~~/components/elements/Tiptap.vue\";\n</script>\n \n <template>\n  <PatternSection>\n    <div class=\"h-32 flex justify-center\">\n      <div class=\"flex m-5\">\n        <!-- <img\n          class=\"mx-auto h-24 w-auto\"\n          src=\"/img/logo.png\"\n          alt=\"full stack jack logo\"\n        /> -->\n        <h1\n          class=\"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\"\n        >\n          Search Questions\n        </h1>\n      </div>\n    </div>\n    <div class=\"md:flex min-h-full\">\n      <DashboardSidebar />\n      <QuestionBoard />\n    </div>\n  </PatternSection>\n</template>"
+        ],
+        "names": [],
+        "mappings": ";;;;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3E,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;;;;;AAH/B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251165330,
+      "end": 1761251165330,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251165330,
+      "end": 1761251165330,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251165330,
+      "end": 1761251165330,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251165330,
+      "end": 1761251165330,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251165330,
+      "end": 1761251165330,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251165330,
+      "end": 1761251165330,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251165330,
+      "end": 1761251165330,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251165330,
+      "end": 1761251165330,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251165330,
+      "end": 1761251165330,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\";\nimport QuestionBoard from \"~/components/elements/QuestionBoard.vue\";\nimport DashboardSidebar from \"~~/components/elements/DashboardSidebar.vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"search\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    return (_ctx, _push, _parent, _attrs) => {\n      const _component_PatternSection = _resolveComponent(\"PatternSection\");\n      _push(_ssrRenderComponent(_component_PatternSection, _attrs, {\n        default: _withCtx((_, _push2, _parent2, _scopeId) => {\n          if (_push2) {\n            _push2(`<div class=\"h-32 flex justify-center\"${_scopeId}><div class=\"flex m-5\"${_scopeId}><h1 class=\"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\"${_scopeId}> Search Questions </h1></div></div><div class=\"md:flex min-h-full\"${_scopeId}>`);\n            _push2(_ssrRenderComponent(DashboardSidebar, null, null, _parent2, _scopeId));\n            _push2(_ssrRenderComponent(QuestionBoard, null, null, _parent2, _scopeId));\n            _push2(`</div>`);\n          } else {\n            return [\n              _createVNode(\"div\", { class: \"h-32 flex justify-center\" }, [\n                _createVNode(\"div\", { class: \"flex m-5\" }, [\n                  _createVNode(\"h1\", { class: \"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\" }, \" Search Questions \")\n                ])\n              ]),\n              _createVNode(\"div\", { class: \"md:flex min-h-full\" }, [\n                _createVNode(DashboardSidebar),\n                _createVNode(QuestionBoard)\n              ])\n            ];\n          }\n        }),\n        _: 1\n      }, _parent));\n    };\n  }\n});\n",
+      "start": 1761251165331,
+      "end": 1761251167849,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/dashboard/search.vue?macro=true&vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\"\n\nimport QuestionBoard from \"~/components/elements/QuestionBoard.vue\";\nimport DashboardSidebar from \"~~/components/elements/DashboardSidebar.vue\";\nimport Tiptap from \"~~/components/elements/Tiptap.vue\";\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'search',\n  __ssrInlineRender: true,\n  setup(__props) {\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  const _component_PatternSection = _resolveComponent(\"PatternSection\")!\n\n  _push(_ssrRenderComponent(_component_PatternSection, _attrs, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<div class=\"h-32 flex justify-center\"${\n          _scopeId\n        }><div class=\"flex m-5\"${\n          _scopeId\n        }><h1 class=\"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\"${\n          _scopeId\n        }> Search Questions </h1></div></div><div class=\"md:flex min-h-full\"${\n          _scopeId\n        }>`)\n        _push(_ssrRenderComponent(DashboardSidebar, null, null, _parent, _scopeId))\n        _push(_ssrRenderComponent(QuestionBoard, null, null, _parent, _scopeId))\n        _push(`</div>`)\n      } else {\n        return [\n          _createVNode(\"div\", { class: \"h-32 flex justify-center\" }, [\n            _createVNode(\"div\", { class: \"flex m-5\" }, [\n              _createVNode(\"h1\", { class: \"py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4\" }, \" Search Questions \")\n            ])\n          ]),\n          _createVNode(\"div\", { class: \"md:flex min-h-full\" }, [\n            _createVNode(DashboardSidebar),\n            _createVNode(QuestionBoard)\n          ])\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,oBAAoB,mBAAmB,WAAW,UAAU,eAAe,oBAAoB;AACxG,SAAS,sBAAsB,2BAA2B;AAE1D,OAAO,mBAAmB;AAC1B,OAAO,sBAAsB;AAG7B,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,MAAM,SAAS;AAGjB,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,4BAA4B,kBAAkB,gBAAgB;AAEpE,YAAM,oBAAoB,2BAA2B,QAAQ;AAAA,QAC3D,SAAS,SAAS,CAAC,GAAGA,QAAOC,UAAS,aAAa;AACjD,cAAID,QAAO;AACT,YAAAA,OAAM,wCACJ,QACF,yBACE,QACF,8FACE,QACF,sEACE,QACF,GAAG;AACH,YAAAA,OAAM,oBAAoB,kBAAkB,MAAM,MAAMC,UAAS,QAAQ,CAAC;AAC1E,YAAAD,OAAM,oBAAoB,eAAe,MAAM,MAAMC,UAAS,QAAQ,CAAC;AACvE,YAAAD,OAAM,QAAQ;AAAA,UAChB,OAAO;AACL,mBAAO;AAAA,cACL,aAAa,OAAO,EAAE,OAAO,2BAA2B,GAAG;AAAA,gBACzD,aAAa,OAAO,EAAE,OAAO,WAAW,GAAG;AAAA,kBACzC,aAAa,MAAM,EAAE,OAAO,iFAAiF,GAAG,oBAAoB;AAAA,gBACtI,CAAC;AAAA,cACH,CAAC;AAAA,cACD,aAAa,OAAO,EAAE,OAAO,qBAAqB,GAAG;AAAA,gBACnD,aAAa,gBAAgB;AAAA,gBAC7B,aAAa,aAAa;AAAA,cAC5B,CAAC;AAAA,YACH;AAAA,UACF;AAAA,QACF,CAAC;AAAA,QACD,GAAG;AAAA,MACL,GAAG,OAAO,CAAC;AAAA,IACb;AAAA,EACA;AAEA,CAAC;",
+        "names": [
+          "_push",
+          "_parent"
+        ]
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251167851,
+      "end": 1761251167851,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251167851,
+      "end": 1761251167851,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251167851,
+      "end": 1761251167851,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251167851,
+      "end": 1761251167851,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251167851,
+      "end": 1761251167852,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251167851,
+      "end": 1761251167852,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251167852,
+      "end": 1761251167852,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251167852,
+      "end": 1761251167852,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251167852,
+      "end": 1761251167852,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251167852,
+      "end": 1761251167852,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251167853,
+      "end": 1761251167853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251167853,
+      "end": 1761251167855,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251167855,
+      "end": 1761251167855,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251167855,
+      "end": 1761251167855,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251167855,
+      "end": 1761251167855,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251167856,
+      "end": 1761251167856,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251167856,
+      "end": 1761251167856,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251167856,
+      "end": 1761251167856,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251167856,
+      "end": 1761251167856,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251167856,
+      "end": 1761251167856,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251167856,
+      "end": 1761251167856,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251167856,
+      "end": 1761251167856,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251167856,
+      "end": 1761251167856,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251167856,
+      "end": 1761251167856,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251167857,
+      "end": 1761251167864,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251167857,
+      "end": 1761251167865,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251167865,
+      "end": 1761251167866,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251167865,
+      "end": 1761251167867,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1761251167869,
+      "end": 1761251167870,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;"
+      }
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1761251167869,
+      "end": 1761251167875,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;"
+      }
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251167876,
+      "end": 1761251167877,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251167967,
+      "end": 1761251167967,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251167968,
+      "end": 1761251167968,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251167968,
+      "end": 1761251167968,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251167968,
+      "end": 1761251167968,
+      "order": "normal"
+    }
+  ]
+}

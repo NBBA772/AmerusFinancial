@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactButtons.vue?vue&type=style&index=0&scoped=1e62c9df&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.text{\n    font-family: 1em;\n}\n",
+      "start": 1761251161545,
+      "end": 1761251161545,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactButtons.vue"
+        ],
+        "names": [],
+        "mappings": ";AAqCA,CAAC,CAAC,CAAC,CAAC,CAAC;IACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;AACpB",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactButtons.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div>\n    <!-- Button Links -->\n    <div class=\"flex flex-wrap justify-center gap-2 my-3\">\n      <NuxtLink\n        to=\"#employers\"\n        class=\"px-3 py-2 rounded-md font-medium bg-sky-500 text-white hover:bg-sky-600 transition-colors\"\n      >\n        For Employers\n      </NuxtLink>\n      <NuxtLink\n        to=\"#families\"\n        class=\"px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n      >\n        For Individuals & Families\n      </NuxtLink>\n      <NuxtLink\n        to=\"#seniors\"\n        class=\"px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n      >\n        For Seniors\n      </NuxtLink>\n    </div>\n\n    <!-- Address & Phone -->\n    <p class=\"text-white text-center m-0\">\n      3308 Cleveland Heights Blvd STE 102, Lakeland, FL •\n      <a href=\"tel:+18884417891\" class=\"underline hover:text-sky-200\">(888) 441‑7891</a>\n    </p>\n  </div>\n</template>\n\n<script setup lang=\"ts\">\n// No script needed for static links\n</script>\n\n<style scoped>\n.text{\n    font-family: 1em;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251161545,
+      "end": 1761251161545,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251161545,
+      "end": 1761251161545,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251161546,
+      "end": 1761251161546,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251161546,
+      "end": 1761251161546,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251161547,
+      "end": 1761251161547,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251161547,
+      "end": 1761251161547,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251161547,
+      "end": 1761251161547,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251161547,
+      "end": 1761251161547,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".text{font-family:1em}",
+      "start": 1761251161547,
+      "end": 1761251161594,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactButtons.vue",
+        "mappings": "AACA,MACI,eACJ",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactButtons.vue"
+        ],
+        "sourcesContent": [
+          "\n.text{\n    font-family: 1em;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251161595,
+      "end": 1761251161595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251161595,
+      "end": 1761251161595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251161599,
+      "end": 1761251161599,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".text[data-v-1e62c9df]{font-family:1em}",
+      "start": 1761251161600,
+      "end": 1761251161601,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactButtons.vue",
+        "mappings": "AAAA,uBAAM,eAAe",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactButtons.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251161601,
+      "end": 1761251161601,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161601,
+      "end": 1761251161602,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161601,
+      "end": 1761251161602,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251161602,
+      "end": 1761251161602,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251161602,
+      "end": 1761251161602,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251161602,
+      "end": 1761251161602,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251161637,
+      "end": 1761251161637,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251161640,
+      "end": 1761251161723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251161734,
+      "end": 1761251161734,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1761251161734,
+      "end": 1761251161734,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251161742,
+      "end": 1761251161742,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251161742,
+      "end": 1761251161742,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251161742,
+      "end": 1761251161742,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251161743,
+      "end": 1761251161743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251161766,
+      "end": 1761251161766,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251161776,
+      "end": 1761251161776,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251161777,
+      "end": 1761251161777,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251161777,
+      "end": 1761251161777,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251161777,
+      "end": 1761251161777,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251161780,
+      "end": 1761251161780,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251161780,
+      "end": 1761251161780,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251161780,
+      "end": 1761251161780,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251161780,
+      "end": 1761251161780,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251161781,
+      "end": 1761251161781,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251161781,
+      "end": 1761251161781,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251161802,
+      "end": 1761251161802,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251161802,
+      "end": 1761251161803,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251161806,
+      "end": 1761251161806,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251161807,
+      "end": 1761251161807,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251161810,
+      "end": 1761251161810,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251161810,
+      "end": 1761251161810,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251161810,
+      "end": 1761251161810,
+      "order": "normal"
+    }
+  ]
+}

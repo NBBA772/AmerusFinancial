@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue?nuxt_component=async&nuxt_component_name=GetStartedHeroSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <SectionContainer class=\"bg-cover bg-center background text-center\">\n    <GridTwoColumns>\n      <div>\n        <ParagraphSubHeadingHero>\n          {{ IntroText.SubHeading }}\n        </ParagraphSubHeadingHero>\n        <HeadlineOneHero>\n          {{ IntroText.Heading }}\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero>\n          {{ IntroText.Description }}\n        </ParagraphDescriptionHero>\n      </div>\n      <div>\n        <RegisterForm />\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"Homepage Hero Section\",\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Join our community and start planning your next adventure.\",\n        Heading: \"Get Started with Good Time Travel Today!\",\n        Description:\n          \"Ready to embark on your next journey? Sign up with Good Time Travel today and gain access to exclusive deals, personalized trip recommendations, and hassle-free booking options. Our user-friendly sign-up form makes it easy to create an account and start exploring our wide range of transportation services. Whether you're planning a group outing, corporate event, or school trip, we've got you covered. Join now and experience the convenience and reliability of Good Time Travel for all your transportation needs.\",\n      },\n      Featured: [\n        {\n          id: 1,\n          title: \"Unmatched Comfort\",\n          description:\n            \"Travel in style and relaxation with our luxurious reclining seats and spacious interiors, ensuring a smooth and enjoyable ride for all passengers.\",\n        },\n        {\n          id: 2,\n          title: \"Convenient Amenities\",\n          description:\n            \"Stay connected and entertained throughout your journey with onboard flat screen monitors and charging ports, providing entertainment and power at your fingertips.\",\n        },\n        {\n          id: 3,\n          title: \"Expert Service\",\n          description:\n            \"Our dedicated and friendly staff are committed to providing top-notch service, from assistance with loading luggage to ensuring a safe and pleasant travel experience for all.\",\n        },\n      ],\n      CTA: {\n        to: \"/get-started\",\n        text: \"Get Started Now!\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.background {\n  background-image: url(\"/img/charter-bus.jpg\");\n}\n</style>\n",
+      "start": 1761251141168,
+      "end": 1761251141355,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141355,
+      "end": 1761251141355,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Homepage Hero Section\",\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Join our community and start planning your next adventure.\",\n        Heading: \"Get Started with Good Time Travel Today!\",\n        Description:\n          \"Ready to embark on your next journey? Sign up with Good Time Travel today and gain access to exclusive deals, personalized trip recommendations, and hassle-free booking options. Our user-friendly sign-up form makes it easy to create an account and start exploring our wide range of transportation services. Whether you're planning a group outing, corporate event, or school trip, we've got you covered. Join now and experience the convenience and reliability of Good Time Travel for all your transportation needs.\",\n      },\n      Featured: [\n        {\n          id: 1,\n          title: \"Unmatched Comfort\",\n          description:\n            \"Travel in style and relaxation with our luxurious reclining seats and spacious interiors, ensuring a smooth and enjoyable ride for all passengers.\",\n        },\n        {\n          id: 2,\n          title: \"Convenient Amenities\",\n          description:\n            \"Stay connected and entertained throughout your journey with onboard flat screen monitors and charging ports, providing entertainment and power at your fingertips.\",\n        },\n        {\n          id: 3,\n          title: \"Expert Service\",\n          description:\n            \"Our dedicated and friendly staff are committed to providing top-notch service, from assistance with loading luggage to ensuring a safe and pleasant travel experience for all.\",\n        },\n      ],\n      CTA: {\n        to: \"/get-started\",\n        text: \"Get Started Now!\",\n      },\n    };\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_SectionContainer = _resolveComponent(\"SectionContainer\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_ParagraphSubHeadingHero = _resolveComponent(\"ParagraphSubHeadingHero\")\n  const _component_HeadlineOneHero = _resolveComponent(\"HeadlineOneHero\")\n  const _component_ParagraphDescriptionHero = _resolveComponent(\"ParagraphDescriptionHero\")\n  const _component_RegisterForm = _resolveComponent(\"RegisterForm\")\n\n  _push(_ssrRenderComponent(_component_SectionContainer, _mergeProps({ class: \"bg-cover bg-center background text-center\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div data-v-ab1489d0${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_ParagraphSubHeadingHero, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.SubHeading)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.SubHeading), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_HeadlineOneHero, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.Heading)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescriptionHero, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.Description)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.Description), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div><div data-v-ab1489d0${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_RegisterForm, null, null, _parent, _scopeId))\n              _push(`</div>`)\n            } else {\n              return [\n                _createVNode(\"div\", null, [\n                  _createVNode(_component_ParagraphSubHeadingHero, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.SubHeading), 1)\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_HeadlineOneHero, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescriptionHero, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.Description), 1)\n                    ]),\n                    _: 1\n                  })\n                ]),\n                _createVNode(\"div\", null, [\n                  _createVNode(_component_RegisterForm)\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n      } else {\n        return [\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", null, [\n                _createVNode(_component_ParagraphSubHeadingHero, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.SubHeading), 1)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_HeadlineOneHero, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescriptionHero, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.Description), 1)\n                  ]),\n                  _: 1\n                })\n              ]),\n              _createVNode(\"div\", null, [\n                _createVNode(_component_RegisterForm)\n              ])\n            ]),\n            _: 1\n          })\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue?vue&type=style&index=0&scoped=ab1489d0&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/GetStarted/GetStartedHeroSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-ab1489d0\"]])",
+      "start": 1761251141355,
+      "end": 1761251141359,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <SectionContainer class=\"bg-cover bg-center background text-center\">\n    <GridTwoColumns>\n      <div>\n        <ParagraphSubHeadingHero>\n          {{ IntroText.SubHeading }}\n        </ParagraphSubHeadingHero>\n        <HeadlineOneHero>\n          {{ IntroText.Heading }}\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero>\n          {{ IntroText.Description }}\n        </ParagraphDescriptionHero>\n      </div>\n      <div>\n        <RegisterForm />\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"Homepage Hero Section\",\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Join our community and start planning your next adventure.\",\n        Heading: \"Get Started with Good Time Travel Today!\",\n        Description:\n          \"Ready to embark on your next journey? Sign up with Good Time Travel today and gain access to exclusive deals, personalized trip recommendations, and hassle-free booking options. Our user-friendly sign-up form makes it easy to create an account and start exploring our wide range of transportation services. Whether you're planning a group outing, corporate event, or school trip, we've got you covered. Join now and experience the convenience and reliability of Good Time Travel for all your transportation needs.\",\n      },\n      Featured: [\n        {\n          id: 1,\n          title: \"Unmatched Comfort\",\n          description:\n            \"Travel in style and relaxation with our luxurious reclining seats and spacious interiors, ensuring a smooth and enjoyable ride for all passengers.\",\n        },\n        {\n          id: 2,\n          title: \"Convenient Amenities\",\n          description:\n            \"Stay connected and entertained throughout your journey with onboard flat screen monitors and charging ports, providing entertainment and power at your fingertips.\",\n        },\n        {\n          id: 3,\n          title: \"Expert Service\",\n          description:\n            \"Our dedicated and friendly staff are committed to providing top-notch service, from assistance with loading luggage to ensuring a safe and pleasant travel experience for all.\",\n        },\n      ],\n      CTA: {\n        to: \"/get-started\",\n        text: \"Get Started Now!\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.background {\n  background-image: url(\"/img/charter-bus.jpg\");\n}\n</style>\n"
+        ],
+        "mappings": ";AAsBA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACR,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAC9D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACnD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACT,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;MACvgB,CAAC;MACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACR;UACE,CAAC,CAAC,EAAE,CAAC;UACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACxJ,CAAC;QACD;UACE,CAAC,CAAC,EAAE,CAAC;UACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YACT,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACxK,CAAC;QACD;UACE,CAAC,CAAC,EAAE,CAAC;UACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;YACT,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;QACpL,CAAC;MACH,CAAC;MACD,CAAC,CAAC,CAAC,EAAE;QACH,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAClB,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;MAC1B,CAAC;IACH,CAAC;EACH,CAAC;AACH,CAAC;;;;;;;;;;;;;EA3DD,MAAA,iDAAA,cACoB,KAAK,EAAC,2CAA2C,IADrE;IAAA,kBACE,CAiBmB;UAlBrB;QAAA,MAAA;UAAA,kBAEI,CAeiB;gBAjBrB;cAAA,6BAAA;cAAA,MAAA;gBAAA,kBAIQ,CAE0B;sBANlC;oBAAA,SAAA,gBAKa,eAAS,CAAC,UAAU;;;sBALjC,kCAKa,eAAS,CAAC,UAAU;;;;gBALjC,GAAA;;cAAA,MAAA;gBAAA,kBAOQ,CAEkB;sBAT1B;oBAAA,SAAA,gBAQa,eAAS,CAAC,OAAO;;;sBAR9B,kCAQa,eAAS,CAAC,OAAO;;;;gBAR9B,GAAA;;cAAA,MAAA;gBAAA,kBAUQ,CAE2B;sBAZnC;oBAAA,SAAA,gBAWa,eAAS,CAAC,WAAW;;;sBAXlC,kCAWa,eAAS,CAAC,WAAW;;;;gBAXlC,GAAA;;cAAA,mCAAA;cAAA,MAAA;cAAA;;;gBAGM,aAUM;kBATJ,aAE0B;oBANlC,kBAKU,CAA0B;sBALpC,kCAKa,eAAS,CAAC,UAAU;;oBALjC,GAAA;;kBAOQ,aAEkB;oBAT1B,kBAQU,CAAuB;sBARjC,kCAQa,eAAS,CAAC,OAAO;;oBAR9B,GAAA;;kBAUQ,aAE2B;oBAZnC,kBAWU,CAA2B;sBAXrC,kCAWa,eAAS,CAAC,WAAW;;oBAXlC,GAAA;;;gBAcM,aAEM;kBADJ,aAAgB;;;;;UAfxB,GAAA;;;;UAEI,aAeiB;YAjBrB,kBAGM,CAUM;cAVN,aAUM;gBATJ,aAE0B;kBANlC,kBAKU,CAA0B;oBALpC,kCAKa,eAAS,CAAC,UAAU;;kBALjC,GAAA;;gBAOQ,aAEkB;kBAT1B,kBAQU,CAAuB;oBARjC,kCAQa,eAAS,CAAC,OAAO;;kBAR9B,GAAA;;gBAUQ,aAE2B;kBAZnC,kBAWU,CAA2B;oBAXrC,kCAWa,eAAS,CAAC,WAAW;;kBAXlC,GAAA;;;cAcM,aAEM;gBADJ,aAAgB;;;YAfxB,GAAA;;;;;IAAA,GAAA"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/GetStarted/GetStartedHeroSection.vue\").then(r => r.default))",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141359,
+      "end": 1761251141359,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141359,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141359,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141360,
+      "end": 1761251141360,
+      "order": "normal"
+    }
+  ]
+}

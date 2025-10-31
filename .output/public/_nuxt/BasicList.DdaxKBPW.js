@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o as s,c as e,_ as c}from"./entry.Cl9EbFL9.js";const n={},r={class:"list-disc pl-8"};function _(o,a,l,p,d,f){return s(),e("ul",r,[c(o.$slots,"default")])}const u=t(n,[["render",_]]);export{u as default};

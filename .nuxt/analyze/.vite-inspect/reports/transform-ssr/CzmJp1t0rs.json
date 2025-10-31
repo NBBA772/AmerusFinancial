@@ -1,0 +1,304 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/ResourceTabs.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderClass as _ssrRenderClass, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { ref } from 'vue'\nconst activeClass = 'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-white text-foreground shadow-sm'\nconst inactiveClass = 'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2'\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ResourceTabs',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst tab = ref<'guides' | 'blog'>('guides')\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ class: \"mx-auto max-w-5xl\" }, _attrs))\n  }><div role=\"tablist\" class=\"h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground bg-gray-300 grid w-full grid-cols-2 mb-8\"><button type=\"button\" class=\"${\n    _ssrRenderClass(tab.value === 'guides' ? activeClass : inactiveClass)\n  }\"> Guides &amp; Forms </button><button type=\"button\" class=\"${\n    _ssrRenderClass(tab.value === 'blog' ? activeClass : inactiveClass)\n  }\"> Blog </button></div>`)\n  if (tab.value === 'guides') {\n    _push(`<div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">`)\n    _ssrRenderSlot(_ctx.$slots, \"guides\", {}, null, _push, _parent)\n    _push(`</div>`)\n  } else {\n    _push(`<div class=\"mt-2 space-y-6\">`)\n    _ssrRenderSlot(_ctx.$slots, \"blog\", {}, null, _push, _parent)\n    _push(`</div>`)\n  }\n  _push(`</div>`)\n}\n}\n\n})",
+      "start": 1761251160845,
+      "end": 1761251160848,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/ResourceTabs.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <div class=\"mx-auto max-w-5xl\">\n    <div role=\"tablist\" class=\"h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground bg-gray-300 grid w-full grid-cols-2 mb-8\">\n      <button \n        type=\"button\" \n        :class=\"tab === 'guides' ? activeClass : inactiveClass\" \n        @click=\"tab = 'guides'\"\n      >\n        Guides & Forms\n      </button>\n      <button \n        type=\"button\" \n        :class=\"tab === 'blog' ? activeClass : inactiveClass\" \n        @click=\"tab = 'blog'\"\n      >\n        Blog\n      </button>\n    </div>\n\n    <div v-if=\"tab === 'guides'\" class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">\n      <slot name=\"guides\" />\n    </div>\n    <div v-else class=\"mt-2 space-y-6\">\n      <slot name=\"blog\" />\n    </div>\n  </div>\n</template>\n\n<script setup lang=\"ts\">\nimport { ref } from 'vue'\nconst tab = ref<'guides' | 'blog'>('guides')\n\nconst activeClass = 'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-white text-foreground shadow-sm'\nconst inactiveClass = 'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2'\n</script>\n"
+        ],
+        "names": [],
+        "mappings": ";;;;AA6BA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAGzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACvS,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;;;;;AAL9O;AAExB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC5C;;;;;;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160848,
+      "end": 1761251160848,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160848,
+      "end": 1761251160849,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160849,
+      "end": 1761251160849,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160849,
+      "end": 1761251160849,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160849,
+      "end": 1761251160850,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160849,
+      "end": 1761251160850,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251160850,
+      "end": 1761251160850,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251160850,
+      "end": 1761251160850,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251160850,
+      "end": 1761251160850,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderClass as _ssrRenderClass, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nimport { ref } from \"vue\";\nconst activeClass = \"inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-white text-foreground shadow-sm\";\nconst inactiveClass = \"inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"ResourceTabs\",\n  __ssrInlineRender: true,\n  setup(__props) {\n    const tab = ref(\"guides\");\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"mx-auto max-w-5xl\" }, _attrs))}><div role=\"tablist\" class=\"h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground bg-gray-300 grid w-full grid-cols-2 mb-8\"><button type=\"button\" class=\"${_ssrRenderClass(tab.value === \"guides\" ? activeClass : inactiveClass)}\"> Guides &amp; Forms </button><button type=\"button\" class=\"${_ssrRenderClass(tab.value === \"blog\" ? activeClass : inactiveClass)}\"> Blog </button></div>`);\n      if (tab.value === \"guides\") {\n        _push(`<div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">`);\n        _ssrRenderSlot(_ctx.$slots, \"guides\", {}, null, _push, _parent);\n        _push(`</div>`);\n      } else {\n        _push(`<div class=\"mt-2 space-y-6\">`);\n        _ssrRenderSlot(_ctx.$slots, \"blog\", {}, null, _push, _parent);\n        _push(`</div>`);\n      }\n      _push(`</div>`);\n    };\n  }\n});\n",
+      "start": 1761251160850,
+      "end": 1761251164349,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/ResourceTabs.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderClass as _ssrRenderClass, ssrRenderSlot as _ssrRenderSlot, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nimport { ref } from 'vue'\nconst activeClass = 'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-white text-foreground shadow-sm'\nconst inactiveClass = 'inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2'\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'ResourceTabs',\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst tab = ref<'guides' | 'blog'>('guides')\n\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ class: \"mx-auto max-w-5xl\" }, _attrs))\n  }><div role=\"tablist\" class=\"h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground bg-gray-300 grid w-full grid-cols-2 mb-8\"><button type=\"button\" class=\"${\n    _ssrRenderClass(tab.value === 'guides' ? activeClass : inactiveClass)\n  }\"> Guides &amp; Forms </button><button type=\"button\" class=\"${\n    _ssrRenderClass(tab.value === 'blog' ? activeClass : inactiveClass)\n  }\"> Blog </button></div>`)\n  if (tab.value === 'guides') {\n    _push(`<div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">`)\n    _ssrRenderSlot(_ctx.$slots, \"guides\", {}, null, _push, _parent)\n    _push(`</div>`)\n  } else {\n    _push(`<div class=\"mt-2 space-y-6\">`)\n    _ssrRenderSlot(_ctx.$slots, \"blog\", {}, null, _push, _parent)\n    _push(`</div>`)\n  }\n  _push(`</div>`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,cAAc,mBAAmB;AAC1C,SAAS,kBAAkB,iBAAiB,iBAAiB,gBAAgB,kBAAkB,uBAAuB;AAEtH,SAAS,WAAW;AACpB,MAAM,cAAc;AACpB,MAAM,gBAAgB;AAEtB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,MAAM,SAAS;AAEjB,UAAM,MAAM,IAAuB,QAAQ;AAG3C,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,OACJ,gBAAgB,YAAY,EAAE,OAAO,oBAAoB,GAAG,MAAM,CAAC,CACrE,qLACE,gBAAgB,IAAI,UAAU,WAAW,cAAc,aAAa,CACtE,+DACE,gBAAgB,IAAI,UAAU,SAAS,cAAc,aAAa,CACpE,yBAAyB;AACzB,UAAI,IAAI,UAAU,UAAU;AAC1B,cAAM,oEAAoE;AAC1E,uBAAe,KAAK,QAAQ,UAAU,CAAC,GAAG,MAAM,OAAO,OAAO;AAC9D,cAAM,QAAQ;AAAA,MAChB,OAAO;AACL,cAAM,8BAA8B;AACpC,uBAAe,KAAK,QAAQ,QAAQ,CAAC,GAAG,MAAM,OAAO,OAAO;AAC5D,cAAM,QAAQ;AAAA,MAChB;AACA,YAAM,QAAQ;AAAA,IAChB;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251164355,
+      "end": 1761251164355,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251164355,
+      "end": 1761251164355,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251164355,
+      "end": 1761251164355,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251164356,
+      "end": 1761251164356,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164356,
+      "end": 1761251164356,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164356,
+      "end": 1761251164356,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164356,
+      "end": 1761251164356,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251164356,
+      "end": 1761251164356,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251164356,
+      "end": 1761251164357,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251164357,
+      "end": 1761251164357,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251164358,
+      "end": 1761251164358,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251164358,
+      "end": 1761251164358,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251164358,
+      "end": 1761251164358,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251164358,
+      "end": 1761251164358,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251164358,
+      "end": 1761251164358,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251164358,
+      "end": 1761251164358,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251164358,
+      "end": 1761251164358,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251164358,
+      "end": 1761251164358,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251164358,
+      "end": 1761251164358,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164366,
+      "end": 1761251164366,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251164366,
+      "end": 1761251164366,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251164366,
+      "end": 1761251164366,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164366,
+      "end": 1761251164366,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251164366,
+      "end": 1761251164366,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164366,
+      "end": 1761251164371,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251164366,
+      "end": 1761251164386,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164386,
+      "end": 1761251164386,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251164386,
+      "end": 1761251164386,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164386,
+      "end": 1761251164386,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251164386,
+      "end": 1761251164386,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251164386,
+      "end": 1761251164386,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251164387,
+      "end": 1761251164387,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251164388,
+      "end": 1761251164388,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251164389,
+      "end": 1761251164389,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251164392,
+      "end": 1761251164392,
+      "order": "normal"
+    }
+  ]
+}

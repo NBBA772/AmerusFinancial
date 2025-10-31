@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/HeaderCTA.vue?vue&type=style&index=0&scoped=3e3077a5&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\nbutton {\n  font-size: 1em;\n}\n",
+      "start": 1761251158577,
+      "end": 1761251158580,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/HeaderCTA.vue"
+        ],
+        "names": [],
+        "mappings": ";AA2BA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;AAChB",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/HeaderCTA.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <section class=\"mx-auto p-2 bg-blue-300 dark:bg-blue-400 text-center\">\n    <div class=\"flex justify-center items-end\">\n      <h3\n        class=\"mb-4 font-extrabold tracking-tight leading-none md:text-2xl lg:text-3xl text-slate-100\"\n      >\n        Get A Free Insurance Quote\n      </h3>\n      <div class=\"flex flex-col\">\n        <NuxtLink\n          to=\"/\"\n          class=\"text-slate-100 hover:text-slate-300 dark:hover:text-slate-100 focus:outline-none focus:ring-4 focus:ring-amber-300 dark:focus:ring-amber-800 bg-amber-400 hover:bg-amber-300 dark:bg-amber-500 dark:hover:bg-amber-600 font-medium text-sm rounded-lg px-5 py-2.5 mx-2 mb-2\"\n        >\n          Get A Quote\n        </NuxtLink>\n      </div>\n    </div>\n  </section>\n</template>\n\n<script>\nexport default {\n  name: \"Ribbon\",\n};\n</script>\n\n<style scoped>\nbutton {\n  font-size: 1em;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251158602,
+      "end": 1761251158602,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251158602,
+      "end": 1761251158602,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251158610,
+      "end": 1761251158610,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251158610,
+      "end": 1761251158613,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251158622,
+      "end": 1761251158623,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251158622,
+      "end": 1761251158623,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251158634,
+      "end": 1761251158634,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251158634,
+      "end": 1761251158634,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "button{font-size:1em}",
+      "start": 1761251158634,
+      "end": 1761251158736,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/HeaderCTA.vue",
+        "mappings": "AACA,OACE,aACF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/HeaderCTA.vue"
+        ],
+        "sourcesContent": [
+          "\nbutton {\n  font-size: 1em;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251158736,
+      "end": 1761251158736,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251158739,
+      "end": 1761251158739,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251158739,
+      "end": 1761251158740,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "button[data-v-3e3077a5]{font-size:1em}",
+      "start": 1761251158741,
+      "end": 1761251158759,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/HeaderCTA.vue",
+        "mappings": "AAAA,wBAAO,aAAa",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/HeaderCTA.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251158762,
+      "end": 1761251158763,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251158763,
+      "end": 1761251158763,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251158763,
+      "end": 1761251158763,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251158763,
+      "end": 1761251158763,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251158763,
+      "end": 1761251158763,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251158763,
+      "end": 1761251158769,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251158769,
+      "end": 1761251158770,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251158771,
+      "end": 1761251158771,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251158771,
+      "end": 1761251158771,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \"button[data-v-3e3077a5]{font-size:1em}\"",
+      "start": 1761251158774,
+      "end": 1761251158774,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251158867,
+      "end": 1761251158867,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251158867,
+      "end": 1761251158867,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251158868,
+      "end": 1761251158868,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251158868,
+      "end": 1761251158868,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251158868,
+      "end": 1761251158868,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251158979,
+      "end": 1761251158998,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251159003,
+      "end": 1761251159003,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251159003,
+      "end": 1761251159007,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251159024,
+      "end": 1761251159024,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251159029,
+      "end": 1761251159042,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251159029,
+      "end": 1761251159042,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251159063,
+      "end": 1761251159063,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251159063,
+      "end": 1761251159063,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251159063,
+      "end": 1761251159064,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251159063,
+      "end": 1761251159064,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251159064,
+      "end": 1761251159064,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251159064,
+      "end": 1761251159064,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251159154,
+      "end": 1761251159154,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251159155,
+      "end": 1761251159155,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251159156,
+      "end": 1761251159156,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251159157,
+      "end": 1761251159157,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251159157,
+      "end": 1761251159157,
+      "order": "normal"
+    }
+  ]
+}

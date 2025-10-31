@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue?nuxt_component=async&nuxt_component_name=BusinessInsuranceSolutionHeroSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <!-- <NuxtImg\n          format=\"webp\"\n          src=\"/images/charter-bus.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n        /> -->\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/Business-Solutions-Hero.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\"\n          class=\"full-width-height\"\n        />\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          Business Insurance Solutions Tailored to Your Needs\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero\n          >For over two decades, Amerus Financial has been at the forefront of\n          delivering need-based insurance solutions to a diverse range of\n          businesses, from burgeoning startups to established enterprises. Our\n          team of highly qualified professionals consistently stays abreast of\n          the latest trends and regulatory changes in an insurance landscape\n          that is as dynamic as it is complex.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >We recognize that offering employee benefits can be both a logistical\n          and financial challenge for businesses. That’s why we’ve streamlined\n          the process to make it as straightforward as possible. We begin by\n          deeply understanding your company’s unique requirements and\n          operational intricacies. Based on this understanding, we then develop\n          a tailored plan that not only meets your specific needs but also\n          remains budget-friendly.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >To ensure we provide the highest quality of coverage, we partner with\n          top-rated insurance carriers across the country, all of whom\n          specialize in crafting innovative, effective solutions for businesses\n          like yours. This collaborative approach allows us to offer\n          comprehensive yet cost-effective insurance packages that stand out in\n          the market.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >The trust and confidence that hundreds of companies nationwide have\n          placed in us serve as a testament to the quality, reliability, and\n          excellence of the insurance solutions we provide. Reach out to Amerus\n          Financial today to discover why we have become the go-to source for\n          business insurance solutions that genuinely\n          work.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >Contact us for a customized insurance consultation today at\n          1-888-441-7891</ParagraphDescriptionHero\n        >\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Business Insurance Solutions Tailored to Your Needs\",\n        Description:\n          \"For over two decades, Amerus Financial has been at the forefront of delivering need-based insurance solutions to a diverse range of businesses, from burgeoning startups to established enterprises. Our team of highly qualified professionals consistently stays abreast of the latest trends and regulatory changes in an insurance landscape that is as dynamic as it is complex. We recognize that offering employee benefits can be both a logistical and financial challenge for businesses. That’s why we’ve streamlined the process to make it as straightforward as possible. We begin by deeply understanding your company’s unique requirements and operational intricacies. Based on this understanding, we then develop a tailored plan that not only meets your specific needs but also remains budget-friendly. To ensure we provide the highest quality of coverage, we partner with top-rated insurance carriers across the country, all of whom specialize in crafting innovative, effective solutions for businesses like yours. This collaborative approach allows us to offer comprehensive yet cost-effective insurance packages that stand out in the market. The trust and confidence that hundreds of companies nationwide have placed in us serve as a testament to the quality, reliability, and excellence of the insurance solutions we provide. Reach out to Amerus Financial today to discover why we have become the go-to source for business insurance solutions that genuinely work.\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n</style>\n",
+      "start": 1761251023513,
+      "end": 1761251023618,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023618,
+      "end": 1761251023618,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Business Insurance Solutions Tailored to Your Needs\",\n        Description:\n          \"For over two decades, Amerus Financial has been at the forefront of delivering need-based insurance solutions to a diverse range of businesses, from burgeoning startups to established enterprises. Our team of highly qualified professionals consistently stays abreast of the latest trends and regulatory changes in an insurance landscape that is as dynamic as it is complex. We recognize that offering employee benefits can be both a logistical and financial challenge for businesses. That’s why we’ve streamlined the process to make it as straightforward as possible. We begin by deeply understanding your company’s unique requirements and operational intricacies. Based on this understanding, we then develop a tailored plan that not only meets your specific needs but also remains budget-friendly. To ensure we provide the highest quality of coverage, we partner with top-rated insurance carriers across the country, all of whom specialize in crafting innovative, effective solutions for businesses like yours. This collaborative approach allows us to offer comprehensive yet cost-effective insurance packages that stand out in the market. The trust and confidence that hundreds of companies nationwide have placed in us serve as a testament to the quality, reliability, and excellence of the insurance solutions we provide. Reach out to Amerus Financial today to discover why we have become the go-to source for business insurance solutions that genuinely work.\",\n      },\n    };\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-8f7651f5\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"p-4\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n  const _component_HeadlineOneHero = _resolveComponent(\"HeadlineOneHero\")\n  const _component_ParagraphDescriptionHero = _resolveComponent(\"ParagraphDescriptionHero\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_SectionContainer = _resolveComponent(\"SectionContainer\")\n\n  return (_openBlock(), _createBlock(_component_SectionContainer, { class: \"text-center\" }, {\n    default: _withCtx(() => [\n      _createVNode(_component_GridTwoColumns, null, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", null, [\n            _createVNode(_component_NuxtImg, {\n              format: \"webp\",\n              src: \"/images/Business-Solutions-Hero.jpg\",\n              alt: \"Happy Kids\",\n              quality: \"80\",\n              sizes: \"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\",\n              class: \"full-width-height\"\n            })\n          ]),\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createVNode(_component_HeadlineOneHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\" Business Insurance Solutions Tailored to Your Needs \")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"For over two decades, Amerus Financial has been at the forefront of delivering need-based insurance solutions to a diverse range of businesses, from burgeoning startups to established enterprises. Our team of highly qualified professionals consistently stays abreast of the latest trends and regulatory changes in an insurance landscape that is as dynamic as it is complex.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"We recognize that offering employee benefits can be both a logistical and financial challenge for businesses. That’s why we’ve streamlined the process to make it as straightforward as possible. We begin by deeply understanding your company’s unique requirements and operational intricacies. Based on this understanding, we then develop a tailored plan that not only meets your specific needs but also remains budget-friendly.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"To ensure we provide the highest quality of coverage, we partner with top-rated insurance carriers across the country, all of whom specialize in crafting innovative, effective solutions for businesses like yours. This collaborative approach allows us to offer comprehensive yet cost-effective insurance packages that stand out in the market.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"The trust and confidence that hundreds of companies nationwide have placed in us serve as a testament to the quality, reliability, and excellence of the insurance solutions we provide. Reach out to Amerus Financial today to discover why we have become the go-to source for business insurance solutions that genuinely work.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Contact us for a customized insurance consultation today at 1-888-441-7891\")\n              ]),\n              _: 1\n            })\n          ])\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue?vue&type=style&index=0&scoped=8f7651f5&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-8f7651f5\"]])",
+      "start": 1761251023618,
+      "end": 1761251023619,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue\").then(r => r.default))",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/BusinessSolutionPage/BusinessInsuranceSolutionHeroSection.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023619,
+      "end": 1761251023619,
+      "order": "normal"
+    }
+  ]
+}

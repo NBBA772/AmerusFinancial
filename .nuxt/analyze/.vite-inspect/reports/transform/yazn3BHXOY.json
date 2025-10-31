@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/HealthcareFrequentlyAskedQuestions.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"text-center\">\n      <HeadlineTwo>Frequently Asked Questions</HeadlineTwo>\n    </div>\n    <div class=\"accordion\">\n      <div>\n        <div class=\"accordion-item\" v-for=\"(item, index) in items\" :key=\"index\">\n          <ParagraphDescription\n            class=\"accordion-header font-extrabold\"\n            @click=\"toggleItem(index)\"\n          >\n            {{ item.title }}\n          </ParagraphDescription>\n          <Transition name=\"slide\">\n            <div\n              class=\"accordion-body bg-blue-100\"\n              :class=\"{ hidden: !isActive(index) }\"\n            >\n              {{ item.content }}\n            </div>\n          </Transition>\n        </div>\n      </div>\n    </div>\n  </BasicSection>\n</template>\n\n\n<script>\nexport default {\n  name: \"HealthcareFrequentlyAskedQuestions\",\n  props: {\n    items: {\n      type: Array,\n      required: true,\n    },\n    active: {\n      type: Number,\n      default: null,\n    },\n  },\n  data() {\n    return {\n      activeItem: this.active,\n    };\n  },\n  methods: {\n    toggleItem(index) {\n      if (this.activeItem === index) {\n        this.activeItem = null; // Close the currently open item\n      } else {\n        this.activeItem = index; // Open the clicked item\n      }\n    },\n    isActive(index) {\n      return this.activeItem === index;\n    },\n  },\n};\n</script>\n\n\n<style>\n.slide-enter-active,\n.slide-leave-active {\n  transition: height 0.5s ease;\n}\n.slide-enter,\n.slide-leave-to {\n  height: 0;\n  overflow: hidden;\n}\n.accordion {\n  border: 1px solid #ccc;\n  margin-bottom: 1rem;\n}\n\n.accordion-item {\n  border-bottom: 1px solid #ccc;\n}\n\n.accordion-header {\n  cursor: pointer;\n  padding: 1rem;\n}\n\n.accordion-body {\n  padding: 1rem;\n}\n</style>\n",
+      "start": 1761251024705,
+      "end": 1761251024797,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024797,
+      "end": 1761251024797,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024797,
+      "end": 1761251024797,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024797,
+      "end": 1761251024797,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024797,
+      "end": 1761251024797,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024797,
+      "end": 1761251024797,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024797,
+      "end": 1761251024797,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024797,
+      "end": 1761251024797,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024797,
+      "end": 1761251024797,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"HealthcareFrequentlyAskedQuestions\",\n  props: {\n    items: {\n      type: Array,\n      required: true,\n    },\n    active: {\n      type: Number,\n      default: null,\n    },\n  },\n  data() {\n    return {\n      activeItem: this.active,\n    };\n  },\n  methods: {\n    toggleItem(index) {\n      if (this.activeItem === index) {\n        this.activeItem = null; // Close the currently open item\n      } else {\n        this.activeItem = index; // Open the clicked item\n      }\n    },\n    isActive(index) {\n      return this.activeItem === index;\n    },\n  },\n};\n\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, Transition as _Transition, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"text-center\" }\nconst _hoisted_2 = { class: \"accordion\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _createVNode(_component_HeadlineTwo, null, {\n          default: _withCtx(() => [\n            _createTextVNode(\"Frequently Asked Questions\")\n          ]),\n          _: 1\n        })\n      ]),\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createElementVNode(\"div\", null, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($props.items, (item, index) => {\n            return (_openBlock(), _createElementBlock(\"div\", {\n              class: \"accordion-item\",\n              key: index\n            }, [\n              _createVNode(_component_ParagraphDescription, {\n                class: \"accordion-header font-extrabold\",\n                onClick: $event => ($options.toggleItem(index))\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(_toDisplayString(item.title), 1)\n                ]),\n                _: 2\n              }, 1032, [\"onClick\"]),\n              _createVNode(_Transition, { name: \"slide\" }, {\n                default: _withCtx(() => [\n                  _createElementVNode(\"div\", {\n                    class: _normalizeClass([\"accordion-body bg-blue-100\", { hidden: !$options.isActive(index) }])\n                  }, _toDisplayString(item.content), 3)\n                ]),\n                _: 2\n              }, 1024)\n            ]))\n          }), 128))\n        ])\n      ])\n    ]),\n    _: 1\n  }))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/HealthcareFrequentlyAskedQuestions.vue?vue&type=style&index=0&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251024797,
+      "end": 1761251024798,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024798,
+      "end": 1761251024798,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024798,
+      "end": 1761251024798,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024798,
+      "end": 1761251024798,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024798,
+      "end": 1761251024798,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024798,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/HeadlineTwo.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/html/ParagraphDescription.vue\";\nimport { default as __nuxt_component_2 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/containers/BasicSection.vue\";\n\nconst _sfc_main = {\n  name: \"HealthcareFrequentlyAskedQuestions\",\n  props: {\n    items: {\n      type: Array,\n      required: true,\n    },\n    active: {\n      type: Number,\n      default: null,\n    },\n  },\n  data() {\n    return {\n      activeItem: this.active,\n    };\n  },\n  methods: {\n    toggleItem(index) {\n      if (this.activeItem === index) {\n        this.activeItem = null; // Close the currently open item\n      } else {\n        this.activeItem = index; // Open the clicked item\n      }\n    },\n    isActive(index) {\n      return this.activeItem === index;\n    },\n  },\n};\n\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, Transition as _Transition, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"text-center\" }\nconst _hoisted_2 = { class: \"accordion\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_HeadlineTwo = __nuxt_component_0\n  const _component_ParagraphDescription = __nuxt_component_1\n  const _component_BasicSection = __nuxt_component_2\n\n  return (_openBlock(), _createBlock(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _createVNode(_component_HeadlineTwo, null, {\n          default: _withCtx(() => [\n            _createTextVNode(\"Frequently Asked Questions\")\n          ]),\n          _: 1\n        })\n      ]),\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createElementVNode(\"div\", null, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($props.items, (item, index) => {\n            return (_openBlock(), _createElementBlock(\"div\", {\n              class: \"accordion-item\",\n              key: index\n            }, [\n              _createVNode(_component_ParagraphDescription, {\n                class: \"accordion-header font-extrabold\",\n                onClick: $event => ($options.toggleItem(index))\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(_toDisplayString(item.title), 1)\n                ]),\n                _: 2\n              }, 1032, [\"onClick\"]),\n              _createVNode(_Transition, { name: \"slide\" }, {\n                default: _withCtx(() => [\n                  _createElementVNode(\"div\", {\n                    class: _normalizeClass([\"accordion-body bg-blue-100\", { hidden: !$options.isActive(index) }])\n                  }, _toDisplayString(item.content), 3)\n                ]),\n                _: 2\n              }, 1024)\n            ]))\n          }), 128))\n        ])\n      ])\n    ]),\n    _: 1\n  }))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/HealthcareFrequentlyAskedQuestions.vue?vue&type=style&index=0&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024799,
+      "end": 1761251024799,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024799,
+      "end": 1761251024800,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024800,
+      "end": 1761251024800,
+      "order": "normal"
+    }
+  ]
+}

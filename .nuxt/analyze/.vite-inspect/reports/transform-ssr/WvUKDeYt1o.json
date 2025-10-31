@@ -1,0 +1,286 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/DashboardSidebar.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\n// import DialogBox from \"./DialogBox.vue\";\nconst router = useRouter();\nconst route = useRoute();\nconst isLoggedIn = await useLoggedIn();\nconst hideDialog = ref(true);\n\nconsole.log(route.path);\n\nfunction goToAskForm() {\n  if (isLoggedIn) {\n    router.push(\"/dashboard/ask\");\n  }\n\n  hideDialog.value = false;\n}\n\nfunction rehide() {\n  hideDialog.value = true;\n}\n</script>\n\n<template>\n  <div>\n    <div class=\"pt-5 z-10 boarder justify-right\">\n      <div class=\"w-100\" aria-label=\"Sidebar\">\n        <div\n          class=\"overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-900\"\n        >\n          <ul class=\"space-y-2\">\n            <li>\n              <NuxtLink\n                to=\"/dashboard\"\n                class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n              >\n                <Icon\n                  name=\"material-symbols:space-dashboard-rounded\"\n                  class=\"flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  size=\"45\"\n                />\n                <span class=\"\">Dashboard</span>\n              </NuxtLink>\n            </li>\n            <li>\n              <NuxtLink\n                to=\"/dashboard/WebsiteBuild\"\n                class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n              >\n                <Icon\n                  name=\"file-icons:robots\"\n                  class=\"flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  size=\"45\"\n                />\n                <span class=\"flex-1 whitespace-nowrap\">AI Agent</span>\n              </NuxtLink>\n            </li>\n            <li>\n              <NuxtLink\n                to=\"/dashboard/ask\"\n                class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                @click=\"goToAskForm\"\n              >\n                <Icon\n                  name=\"ic:sharp-live-help\"\n                  class=\"flex items-center pr-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  size=\"45\"\n                />\n                <span class=\"flex-1 whitespace-nowrap\">Ask Question</span>\n              </NuxtLink>\n            </li>\n            <li>\n              <NuxtLink\n                to=\"/dashboard/search\"\n                class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n              >\n                <Icon\n                  name=\"ic:outline-find-in-page\"\n                  class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  size=\"40\"\n                />\n                <span class=\"flex-1 whitespace-nowrap\">Search Questions</span>\n              </NuxtLink>\n            </li>\n            <li>\n              <a\n                href=\"#\"\n                class=\"flex items-center text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n              >\n                <Icon\n                  name=\"material-symbols:reviews-rounded\"\n                  class=\"flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700\"\n                  size=\"50\"\n                />\n                <span class=\"flex-1 whitespace-nowrap\">Leave A Review</span>\n              </a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n",
+      "start": 1761251142789,
+      "end": 1761251143108,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251143109,
+      "end": 1761251143109,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/DashboardSidebar.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/DashboardSidebar.vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"components/elements/DashboardSidebar.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
+      "start": 1761251143109,
+      "end": 1761251143119,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251143119,
+      "end": 1761251143119,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143119,
+      "end": 1761251143119,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143119,
+      "end": 1761251143119,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143119,
+      "end": 1761251143119,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143119,
+      "end": 1761251143119,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251143119,
+      "end": 1761251143120,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143120,
+      "end": 1761251143120,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251143123,
+      "end": 1761251143123,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143124,
+      "end": 1761251143124,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251143125,
+      "end": 1761251143125,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251143125,
+      "end": 1761251143126,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251143126,
+      "end": 1761251143126,
+      "order": "normal"
+    }
+  ]
+}

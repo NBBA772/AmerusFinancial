@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhoWeServe.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, withModifiers as _withModifiers, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-12e571cd\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"py-16 bg-white\" }\nconst _hoisted_2 = { class: \"container mx-auto px-4\" }\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", { class: \"text-3xl md:text-4xl font-bold text-center mb-12\" }, \" Who We Serve \", -1))\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-3 gap-6 perspective\" }\nconst _hoisted_5 = [\"onClick\"]\nconst _hoisted_6 = { class: \"absolute inset-0 rounded-lg shadow-md overflow-hidden backface-hidden\" }\nconst _hoisted_7 = [\"src\", \"alt\"]\nconst _hoisted_8 = { class: \"absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white\" }\nconst _hoisted_9 = { class: \"text-xl font-bold mb-2\" }\nconst _hoisted_10 = { class: \"text-sm text-white/90 mb-4\" }\nconst _hoisted_11 = { class: \"flex gap-2\" }\nconst _hoisted_12 = { class: \"absolute inset-0 rounded-lg shadow-md bg-[#30BCFE] text-white p-6 flex flex-col justify-center transform rotate-y-180 backface-hidden\" }\nconst _hoisted_13 = { class: \"text-lg font-bold mb-4\" }\nconst _hoisted_14 = { class: \"space-y-2 text-left mx-auto max-w-xs\" }\nconst _hoisted_15 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"w-2 h-2 bg-white rounded-full mr-2 flex-shrink-0\" }, null, -1))\n\nimport { ref } from \"vue\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'WhoWeServe',\n  setup(__props) {\n\nconst cards = ref([\n  {\n    title: \"Employers & Group Plans\",\n    description: \"Design competitive benefits, control costs, and protect your business.\",\n    image:\n      \"https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n    alt: \"Businesses\",\n    backTitle: \"Popular Employer Resources\",\n    backItems: [\n      \"Benefits Enrollment Guide\",\n      \"Compliance Checklist (ACA, ERISA)\",\n      \"Workers’ Comp Basics\",\n    ],\n    backLinks: [\n      \"/employers/benefits-enrollment\",\n      \"/employers/compliance-checklist\",\n      \"/employers/workers-comp\",\n    ],\n    learnMoreLink: \"/businesses\",\n    getQuoteLink: \"/info\",\n  },\n  {\n    title: \"Individuals & Families\",\n    description:\n      \"Protect what matters with clear, affordable coverage.\",\n    image:\n      \"https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n    alt: \"Families\",\n    backTitle: \"Helpful Guides\",\n    backItems: [\n      \"Home & Auto Bundling Savings\",\n      \"How Much Life Insurance Do I Need?\",\n      \"Health Plan Basics\",\n    ],\n    backLinks: [\n      \"/families/life-health\",\n      \"/families/property-coverage\",\n      \"/families/college-savings\",\n      \"/families/emergency-support\",\n    ],\n    learnMoreLink: \"/families\",\n    getQuoteLink: \"/info\",\n  },\n  {\n    title: \"Seniors & Medicare\",\n    description:\n      \"Navigate Medicare with confidence and complete your retirement plan.\",\n    image:\n      \"https://images.unsplash.com/photo-1628891892235-5d834f9c64c1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n    alt: \"Seniors\",\n    backTitle: \"Medicare Resources\",\n    backItems: [\n      \"Medicare 101\",\n      \"Medigap vs. Advantage\",\n      \"Enrollment Dates & Deadlines\",\n    ],\n    backLinks: [\n      \"/seniors/medicare-advantage\",\n      \"/seniors/retirement-planning\",\n      \"/seniors/prescriptions\",\n      \"/seniors/long-term-care\",\n    ],\n    learnMoreLink: \"/seniors\",\n    getQuoteLink: \"/info\",\n  },\n]);\n\nconst flipped = ref<boolean[]>(cards.value.map(() => false));\nconst toggleFlip = (i: number) => (flipped.value[i] = !flipped.value[i]);\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(cards.value, (card, i) => {\n          return (_openBlock(), _createElementBlock(\"div\", {\n            key: i,\n            class: \"relative h-80 w-full group\"\n          }, [\n            _createElementVNode(\"button\", {\n              class: \"absolute top-2 right-2 z-30 bg-black/50 text-white text-xs px-2 py-1 rounded-md flex items-center gap-1 hover:bg-black/60\",\n              onClick: _withModifiers(($event: any) => (toggleFlip(i)), [\"stop\"])\n            }, [\n              _createVNode(_component_Icon, {\n                name: \"mdi:swap-horizontal\",\n                class: \"w-6 h-6\"\n              })\n            ], 8, _hoisted_5),\n            _createElementVNode(\"div\", {\n              class: _normalizeClass([\"relative w-full h-full transition-transform duration-700 transform-style-preserve-3d\", { 'rotate-y-180': flipped.value[i] }])\n            }, [\n              _createElementVNode(\"div\", _hoisted_6, [\n                _createElementVNode(\"img\", {\n                  src: card.image,\n                  alt: card.alt,\n                  class: \"w-full h-full object-cover\"\n                }, null, 8, _hoisted_7),\n                _createElementVNode(\"div\", _hoisted_8, [\n                  _createElementVNode(\"h3\", _hoisted_9, _toDisplayString(card.title), 1),\n                  _createElementVNode(\"p\", _hoisted_10, _toDisplayString(card.description), 1),\n                  _createElementVNode(\"div\", _hoisted_11, [\n                    _createVNode(_component_NuxtLink, {\n                      to: card.learnMoreLink,\n                      class: \"bg-primary px-3 py-1 text-sm rounded-md hover:bg-primary/80 transition\"\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\" Learn More \")\n                      ]),\n                      _: 2\n                    }, 1032, [\"to\"]),\n                    _createVNode(_component_NuxtLink, {\n                      to: card.getQuoteLink,\n                      class: \"bg-white text-black px-3 py-1 text-sm rounded-md hover:bg-gray-200 transition\"\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\" Get Quote \")\n                      ]),\n                      _: 2\n                    }, 1032, [\"to\"])\n                  ])\n                ])\n              ]),\n              _createElementVNode(\"div\", _hoisted_12, [\n                _createElementVNode(\"h3\", _hoisted_13, _toDisplayString(card.backTitle), 1),\n                _createElementVNode(\"ul\", _hoisted_14, [\n                  (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(card.backItems, (item, j) => {\n                    return (_openBlock(), _createElementBlock(\"li\", {\n                      key: j,\n                      class: \"flex items-center text-sm\"\n                    }, [\n                      _hoisted_15,\n                      _createVNode(_component_NuxtLink, {\n                        to: card.backLinks[j],\n                        class: \"underline hover:text-gray-200\"\n                      }, {\n                        default: _withCtx(() => [\n                          _createTextVNode(_toDisplayString(item), 1)\n                        ]),\n                        _: 2\n                      }, 1032, [\"to\"])\n                    ]))\n                  }), 128))\n                ])\n              ])\n            ], 2)\n          ]))\n        }), 128))\n      ])\n    ])\n  ]))\n}\n}\n\n})",
+      "start": 1761251028234,
+      "end": 1761251028234
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251028242,
+      "end": 1761251028242,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251028242,
+      "end": 1761251028242,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251028242,
+      "end": 1761251028242,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251028242,
+      "end": 1761251028242,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251028242,
+      "end": 1761251028242,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, withModifiers as _withModifiers, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-12e571cd\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"py-16 bg-white\" };\nconst _hoisted_2 = { class: \"container mx-auto px-4\" };\nconst _hoisted_3 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"h2\", { class: \"text-3xl md:text-4xl font-bold text-center mb-12\" }, \" Who We Serve \", -1));\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-3 gap-6 perspective\" };\nconst _hoisted_5 = [\"onClick\"];\nconst _hoisted_6 = { class: \"absolute inset-0 rounded-lg shadow-md overflow-hidden backface-hidden\" };\nconst _hoisted_7 = [\"src\", \"alt\"];\nconst _hoisted_8 = { class: \"absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white\" };\nconst _hoisted_9 = { class: \"text-xl font-bold mb-2\" };\nconst _hoisted_10 = { class: \"text-sm text-white/90 mb-4\" };\nconst _hoisted_11 = { class: \"flex gap-2\" };\nconst _hoisted_12 = { class: \"absolute inset-0 rounded-lg shadow-md bg-[#30BCFE] text-white p-6 flex flex-col justify-center transform rotate-y-180 backface-hidden\" };\nconst _hoisted_13 = { class: \"text-lg font-bold mb-4\" };\nconst _hoisted_14 = { class: \"space-y-2 text-left mx-auto max-w-xs\" };\nconst _hoisted_15 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", { class: \"w-2 h-2 bg-white rounded-full mr-2 flex-shrink-0\" }, null, -1));\nimport { ref } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"WhoWeServe\",\n  setup(__props) {\n    const cards = ref([\n      {\n        title: \"Employers & Group Plans\",\n        description: \"Design competitive benefits, control costs, and protect your business.\",\n        image: \"https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n        alt: \"Businesses\",\n        backTitle: \"Popular Employer Resources\",\n        backItems: [\n          \"Benefits Enrollment Guide\",\n          \"Compliance Checklist (ACA, ERISA)\",\n          \"Workers’ Comp Basics\"\n        ],\n        backLinks: [\n          \"/employers/benefits-enrollment\",\n          \"/employers/compliance-checklist\",\n          \"/employers/workers-comp\"\n        ],\n        learnMoreLink: \"/businesses\",\n        getQuoteLink: \"/info\"\n      },\n      {\n        title: \"Individuals & Families\",\n        description: \"Protect what matters with clear, affordable coverage.\",\n        image: \"https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n        alt: \"Families\",\n        backTitle: \"Helpful Guides\",\n        backItems: [\n          \"Home & Auto Bundling Savings\",\n          \"How Much Life Insurance Do I Need?\",\n          \"Health Plan Basics\"\n        ],\n        backLinks: [\n          \"/families/life-health\",\n          \"/families/property-coverage\",\n          \"/families/college-savings\",\n          \"/families/emergency-support\"\n        ],\n        learnMoreLink: \"/families\",\n        getQuoteLink: \"/info\"\n      },\n      {\n        title: \"Seniors & Medicare\",\n        description: \"Navigate Medicare with confidence and complete your retirement plan.\",\n        image: \"https://images.unsplash.com/photo-1628891892235-5d834f9c64c1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n        alt: \"Seniors\",\n        backTitle: \"Medicare Resources\",\n        backItems: [\n          \"Medicare 101\",\n          \"Medigap vs. Advantage\",\n          \"Enrollment Dates & Deadlines\"\n        ],\n        backLinks: [\n          \"/seniors/medicare-advantage\",\n          \"/seniors/retirement-planning\",\n          \"/seniors/prescriptions\",\n          \"/seniors/long-term-care\"\n        ],\n        learnMoreLink: \"/seniors\",\n        getQuoteLink: \"/info\"\n      }\n    ]);\n    const flipped = ref(cards.value.map(() => false));\n    const toggleFlip = (i) => flipped.value[i] = !flipped.value[i];\n    return (_ctx, _cache) => {\n      const _component_Icon = _resolveComponent(\"Icon\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _hoisted_3,\n          _createElementVNode(\"div\", _hoisted_4, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(cards.value, (card, i) => {\n              return _openBlock(), _createElementBlock(\"div\", {\n                key: i,\n                class: \"relative h-80 w-full group\"\n              }, [\n                _createElementVNode(\"button\", {\n                  class: \"absolute top-2 right-2 z-30 bg-black/50 text-white text-xs px-2 py-1 rounded-md flex items-center gap-1 hover:bg-black/60\",\n                  onClick: _withModifiers(($event) => toggleFlip(i), [\"stop\"])\n                }, [\n                  _createVNode(_component_Icon, {\n                    name: \"mdi:swap-horizontal\",\n                    class: \"w-6 h-6\"\n                  })\n                ], 8, _hoisted_5),\n                _createElementVNode(\"div\", {\n                  class: _normalizeClass([\"relative w-full h-full transition-transform duration-700 transform-style-preserve-3d\", { \"rotate-y-180\": flipped.value[i] }])\n                }, [\n                  _createElementVNode(\"div\", _hoisted_6, [\n                    _createElementVNode(\"img\", {\n                      src: card.image,\n                      alt: card.alt,\n                      class: \"w-full h-full object-cover\"\n                    }, null, 8, _hoisted_7),\n                    _createElementVNode(\"div\", _hoisted_8, [\n                      _createElementVNode(\"h3\", _hoisted_9, _toDisplayString(card.title), 1),\n                      _createElementVNode(\"p\", _hoisted_10, _toDisplayString(card.description), 1),\n                      _createElementVNode(\"div\", _hoisted_11, [\n                        _createVNode(_component_NuxtLink, {\n                          to: card.learnMoreLink,\n                          class: \"bg-primary px-3 py-1 text-sm rounded-md hover:bg-primary/80 transition\"\n                        }, {\n                          default: _withCtx(() => [\n                            _createTextVNode(\" Learn More \")\n                          ]),\n                          _: 2\n                        }, 1032, [\"to\"]),\n                        _createVNode(_component_NuxtLink, {\n                          to: card.getQuoteLink,\n                          class: \"bg-white text-black px-3 py-1 text-sm rounded-md hover:bg-gray-200 transition\"\n                        }, {\n                          default: _withCtx(() => [\n                            _createTextVNode(\" Get Quote \")\n                          ]),\n                          _: 2\n                        }, 1032, [\"to\"])\n                      ])\n                    ])\n                  ]),\n                  _createElementVNode(\"div\", _hoisted_12, [\n                    _createElementVNode(\"h3\", _hoisted_13, _toDisplayString(card.backTitle), 1),\n                    _createElementVNode(\"ul\", _hoisted_14, [\n                      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(card.backItems, (item, j) => {\n                        return _openBlock(), _createElementBlock(\"li\", {\n                          key: j,\n                          class: \"flex items-center text-sm\"\n                        }, [\n                          _hoisted_15,\n                          _createVNode(_component_NuxtLink, {\n                            to: card.backLinks[j],\n                            class: \"underline hover:text-gray-200\"\n                          }, {\n                            default: _withCtx(() => [\n                              _createTextVNode(_toDisplayString(item), 1)\n                            ]),\n                            _: 2\n                          }, 1032, [\"to\"])\n                        ]);\n                      }), 128))\n                    ])\n                  ])\n                ], 2)\n              ]);\n            }), 128))\n          ])\n        ])\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251028242,
+      "end": 1761251029194,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhoWeServe.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, withModifiers as _withModifiers, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-12e571cd\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"py-16 bg-white\" }\nconst _hoisted_2 = { class: \"container mx-auto px-4\" }\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", { class: \"text-3xl md:text-4xl font-bold text-center mb-12\" }, \" Who We Serve \", -1))\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-3 gap-6 perspective\" }\nconst _hoisted_5 = [\"onClick\"]\nconst _hoisted_6 = { class: \"absolute inset-0 rounded-lg shadow-md overflow-hidden backface-hidden\" }\nconst _hoisted_7 = [\"src\", \"alt\"]\nconst _hoisted_8 = { class: \"absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white\" }\nconst _hoisted_9 = { class: \"text-xl font-bold mb-2\" }\nconst _hoisted_10 = { class: \"text-sm text-white/90 mb-4\" }\nconst _hoisted_11 = { class: \"flex gap-2\" }\nconst _hoisted_12 = { class: \"absolute inset-0 rounded-lg shadow-md bg-[#30BCFE] text-white p-6 flex flex-col justify-center transform rotate-y-180 backface-hidden\" }\nconst _hoisted_13 = { class: \"text-lg font-bold mb-4\" }\nconst _hoisted_14 = { class: \"space-y-2 text-left mx-auto max-w-xs\" }\nconst _hoisted_15 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"w-2 h-2 bg-white rounded-full mr-2 flex-shrink-0\" }, null, -1))\n\nimport { ref } from \"vue\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'WhoWeServe',\n  setup(__props) {\n\nconst cards = ref([\n  {\n    title: \"Employers & Group Plans\",\n    description: \"Design competitive benefits, control costs, and protect your business.\",\n    image:\n      \"https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n    alt: \"Businesses\",\n    backTitle: \"Popular Employer Resources\",\n    backItems: [\n      \"Benefits Enrollment Guide\",\n      \"Compliance Checklist (ACA, ERISA)\",\n      \"Workers’ Comp Basics\",\n    ],\n    backLinks: [\n      \"/employers/benefits-enrollment\",\n      \"/employers/compliance-checklist\",\n      \"/employers/workers-comp\",\n    ],\n    learnMoreLink: \"/businesses\",\n    getQuoteLink: \"/info\",\n  },\n  {\n    title: \"Individuals & Families\",\n    description:\n      \"Protect what matters with clear, affordable coverage.\",\n    image:\n      \"https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n    alt: \"Families\",\n    backTitle: \"Helpful Guides\",\n    backItems: [\n      \"Home & Auto Bundling Savings\",\n      \"How Much Life Insurance Do I Need?\",\n      \"Health Plan Basics\",\n    ],\n    backLinks: [\n      \"/families/life-health\",\n      \"/families/property-coverage\",\n      \"/families/college-savings\",\n      \"/families/emergency-support\",\n    ],\n    learnMoreLink: \"/families\",\n    getQuoteLink: \"/info\",\n  },\n  {\n    title: \"Seniors & Medicare\",\n    description:\n      \"Navigate Medicare with confidence and complete your retirement plan.\",\n    image:\n      \"https://images.unsplash.com/photo-1628891892235-5d834f9c64c1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n    alt: \"Seniors\",\n    backTitle: \"Medicare Resources\",\n    backItems: [\n      \"Medicare 101\",\n      \"Medigap vs. Advantage\",\n      \"Enrollment Dates & Deadlines\",\n    ],\n    backLinks: [\n      \"/seniors/medicare-advantage\",\n      \"/seniors/retirement-planning\",\n      \"/seniors/prescriptions\",\n      \"/seniors/long-term-care\",\n    ],\n    learnMoreLink: \"/seniors\",\n    getQuoteLink: \"/info\",\n  },\n]);\n\nconst flipped = ref<boolean[]>(cards.value.map(() => false));\nconst toggleFlip = (i: number) => (flipped.value[i] = !flipped.value[i]);\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_Icon = _resolveComponent(\"Icon\")!\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")!\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(cards.value, (card, i) => {\n          return (_openBlock(), _createElementBlock(\"div\", {\n            key: i,\n            class: \"relative h-80 w-full group\"\n          }, [\n            _createElementVNode(\"button\", {\n              class: \"absolute top-2 right-2 z-30 bg-black/50 text-white text-xs px-2 py-1 rounded-md flex items-center gap-1 hover:bg-black/60\",\n              onClick: _withModifiers(($event: any) => (toggleFlip(i)), [\"stop\"])\n            }, [\n              _createVNode(_component_Icon, {\n                name: \"mdi:swap-horizontal\",\n                class: \"w-6 h-6\"\n              })\n            ], 8, _hoisted_5),\n            _createElementVNode(\"div\", {\n              class: _normalizeClass([\"relative w-full h-full transition-transform duration-700 transform-style-preserve-3d\", { 'rotate-y-180': flipped.value[i] }])\n            }, [\n              _createElementVNode(\"div\", _hoisted_6, [\n                _createElementVNode(\"img\", {\n                  src: card.image,\n                  alt: card.alt,\n                  class: \"w-full h-full object-cover\"\n                }, null, 8, _hoisted_7),\n                _createElementVNode(\"div\", _hoisted_8, [\n                  _createElementVNode(\"h3\", _hoisted_9, _toDisplayString(card.title), 1),\n                  _createElementVNode(\"p\", _hoisted_10, _toDisplayString(card.description), 1),\n                  _createElementVNode(\"div\", _hoisted_11, [\n                    _createVNode(_component_NuxtLink, {\n                      to: card.learnMoreLink,\n                      class: \"bg-primary px-3 py-1 text-sm rounded-md hover:bg-primary/80 transition\"\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\" Learn More \")\n                      ]),\n                      _: 2\n                    }, 1032, [\"to\"]),\n                    _createVNode(_component_NuxtLink, {\n                      to: card.getQuoteLink,\n                      class: \"bg-white text-black px-3 py-1 text-sm rounded-md hover:bg-gray-200 transition\"\n                    }, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\" Get Quote \")\n                      ]),\n                      _: 2\n                    }, 1032, [\"to\"])\n                  ])\n                ])\n              ]),\n              _createElementVNode(\"div\", _hoisted_12, [\n                _createElementVNode(\"h3\", _hoisted_13, _toDisplayString(card.backTitle), 1),\n                _createElementVNode(\"ul\", _hoisted_14, [\n                  (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(card.backItems, (item, j) => {\n                    return (_openBlock(), _createElementBlock(\"li\", {\n                      key: j,\n                      class: \"flex items-center text-sm\"\n                    }, [\n                      _hoisted_15,\n                      _createVNode(_component_NuxtLink, {\n                        to: card.backLinks[j],\n                        class: \"underline hover:text-gray-200\"\n                      }, {\n                        default: _withCtx(() => [\n                          _createTextVNode(_toDisplayString(item), 1)\n                        ]),\n                        _: 2\n                      }, 1032, [\"to\"])\n                    ]))\n                  }), 128))\n                ])\n              ])\n            ], 2)\n          ]))\n        }), 128))\n      ])\n    ])\n  ]))\n}\n}\n\n})"
+        ],
+        "mappings": "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",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029194,
+      "end": 1761251029194,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029194,
+      "end": 1761251029194,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029195,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029196,
+      "end": 1761251029196,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029198,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029199,
+      "end": 1761251029199,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029199,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029202,
+      "end": 1761251029202,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, withModifiers as _withModifiers, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, withCtx as _withCtx, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-12e571cd\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"py-16 bg-white\" };\nconst _hoisted_2 = { class: \"container mx-auto px-4\" };\nconst _hoisted_3 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"h2\", { class: \"text-3xl md:text-4xl font-bold text-center mb-12\" }, \" Who We Serve \", -1));\nconst _hoisted_4 = { class: \"grid grid-cols-1 md:grid-cols-3 gap-6 perspective\" };\nconst _hoisted_5 = [\"onClick\"];\nconst _hoisted_6 = { class: \"absolute inset-0 rounded-lg shadow-md overflow-hidden backface-hidden\" };\nconst _hoisted_7 = [\"src\", \"alt\"];\nconst _hoisted_8 = { class: \"absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white\" };\nconst _hoisted_9 = { class: \"text-xl font-bold mb-2\" };\nconst _hoisted_10 = { class: \"text-sm text-white/90 mb-4\" };\nconst _hoisted_11 = { class: \"flex gap-2\" };\nconst _hoisted_12 = { class: \"absolute inset-0 rounded-lg shadow-md bg-[#30BCFE] text-white p-6 flex flex-col justify-center transform rotate-y-180 backface-hidden\" };\nconst _hoisted_13 = { class: \"text-lg font-bold mb-4\" };\nconst _hoisted_14 = { class: \"space-y-2 text-left mx-auto max-w-xs\" };\nconst _hoisted_15 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"span\", { class: \"w-2 h-2 bg-white rounded-full mr-2 flex-shrink-0\" }, null, -1));\nimport { ref } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"WhoWeServe\",\n  setup(__props) {\n    const cards = ref([\n      {\n        title: \"Employers & Group Plans\",\n        description: \"Design competitive benefits, control costs, and protect your business.\",\n        image: \"https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n        alt: \"Businesses\",\n        backTitle: \"Popular Employer Resources\",\n        backItems: [\n          \"Benefits Enrollment Guide\",\n          \"Compliance Checklist (ACA, ERISA)\",\n          \"Workers’ Comp Basics\"\n        ],\n        backLinks: [\n          \"/employers/benefits-enrollment\",\n          \"/employers/compliance-checklist\",\n          \"/employers/workers-comp\"\n        ],\n        learnMoreLink: \"/businesses\",\n        getQuoteLink: \"/info\"\n      },\n      {\n        title: \"Individuals & Families\",\n        description: \"Protect what matters with clear, affordable coverage.\",\n        image: \"https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n        alt: \"Families\",\n        backTitle: \"Helpful Guides\",\n        backItems: [\n          \"Home & Auto Bundling Savings\",\n          \"How Much Life Insurance Do I Need?\",\n          \"Health Plan Basics\"\n        ],\n        backLinks: [\n          \"/families/life-health\",\n          \"/families/property-coverage\",\n          \"/families/college-savings\",\n          \"/families/emergency-support\"\n        ],\n        learnMoreLink: \"/families\",\n        getQuoteLink: \"/info\"\n      },\n      {\n        title: \"Seniors & Medicare\",\n        description: \"Navigate Medicare with confidence and complete your retirement plan.\",\n        image: \"https://images.unsplash.com/photo-1628891892235-5d834f9c64c1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80\",\n        alt: \"Seniors\",\n        backTitle: \"Medicare Resources\",\n        backItems: [\n          \"Medicare 101\",\n          \"Medigap vs. Advantage\",\n          \"Enrollment Dates & Deadlines\"\n        ],\n        backLinks: [\n          \"/seniors/medicare-advantage\",\n          \"/seniors/retirement-planning\",\n          \"/seniors/prescriptions\",\n          \"/seniors/long-term-care\"\n        ],\n        learnMoreLink: \"/seniors\",\n        getQuoteLink: \"/info\"\n      }\n    ]);\n    const flipped = ref(cards.value.map(() => false));\n    const toggleFlip = (i) => flipped.value[i] = !flipped.value[i];\n    return (_ctx, _cache) => {\n      const _component_Icon = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      return _openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _hoisted_3,\n          _createElementVNode(\"div\", _hoisted_4, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(cards.value, (card, i) => {\n              return _openBlock(), _createElementBlock(\"div\", {\n                key: i,\n                class: \"relative h-80 w-full group\"\n              }, [\n                _createElementVNode(\"button\", {\n                  class: \"absolute top-2 right-2 z-30 bg-black/50 text-white text-xs px-2 py-1 rounded-md flex items-center gap-1 hover:bg-black/60\",\n                  onClick: _withModifiers(($event) => toggleFlip(i), [\"stop\"])\n                }, [\n                  _createVNode(_component_Icon, {\n                    name: \"mdi:swap-horizontal\",\n                    class: \"w-6 h-6\"\n                  })\n                ], 8, _hoisted_5),\n                _createElementVNode(\"div\", {\n                  class: _normalizeClass([\"relative w-full h-full transition-transform duration-700 transform-style-preserve-3d\", { \"rotate-y-180\": flipped.value[i] }])\n                }, [\n                  _createElementVNode(\"div\", _hoisted_6, [\n                    _createElementVNode(\"img\", {\n                      src: card.image,\n                      alt: card.alt,\n                      class: \"w-full h-full object-cover\"\n                    }, null, 8, _hoisted_7),\n                    _createElementVNode(\"div\", _hoisted_8, [\n                      _createElementVNode(\"h3\", _hoisted_9, _toDisplayString(card.title), 1),\n                      _createElementVNode(\"p\", _hoisted_10, _toDisplayString(card.description), 1),\n                      _createElementVNode(\"div\", _hoisted_11, [\n                        _createVNode(_component_NuxtLink, {\n                          to: card.learnMoreLink,\n                          class: \"bg-primary px-3 py-1 text-sm rounded-md hover:bg-primary/80 transition\"\n                        }, {\n                          default: _withCtx(() => [\n                            _createTextVNode(\" Learn More \")\n                          ]),\n                          _: 2\n                        }, 1032, [\"to\"]),\n                        _createVNode(_component_NuxtLink, {\n                          to: card.getQuoteLink,\n                          class: \"bg-white text-black px-3 py-1 text-sm rounded-md hover:bg-gray-200 transition\"\n                        }, {\n                          default: _withCtx(() => [\n                            _createTextVNode(\" Get Quote \")\n                          ]),\n                          _: 2\n                        }, 1032, [\"to\"])\n                      ])\n                    ])\n                  ]),\n                  _createElementVNode(\"div\", _hoisted_12, [\n                    _createElementVNode(\"h3\", _hoisted_13, _toDisplayString(card.backTitle), 1),\n                    _createElementVNode(\"ul\", _hoisted_14, [\n                      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(card.backItems, (item, j) => {\n                        return _openBlock(), _createElementBlock(\"li\", {\n                          key: j,\n                          class: \"flex items-center text-sm\"\n                        }, [\n                          _hoisted_15,\n                          _createVNode(_component_NuxtLink, {\n                            to: card.backLinks[j],\n                            class: \"underline hover:text-gray-200\"\n                          }, {\n                            default: _withCtx(() => [\n                              _createTextVNode(_toDisplayString(item), 1)\n                            ]),\n                            _: 2\n                          }, 1032, [\"to\"])\n                        ]);\n                      }), 128))\n                    ])\n                  ])\n                ], 2)\n              ]);\n            }), 128))\n          ])\n        ])\n      ]);\n    };\n  }\n});\n",
+      "start": 1761251029202,
+      "end": 1761251029203,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029203,
+      "end": 1761251029203,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029203,
+      "end": 1761251029203,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029203,
+      "end": 1761251029203,
+      "order": "normal"
+    }
+  ]
+}

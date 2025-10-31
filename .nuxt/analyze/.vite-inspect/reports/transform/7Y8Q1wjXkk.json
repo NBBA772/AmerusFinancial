@@ -1,0 +1,226 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/MultiStepForm.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<!-- File: components/MultiStepForm.vue -->\n<script setup lang=\"ts\">\nimport { ref } from 'vue'\n\nconst currentStep = ref(1)\n\nconst formData = ref({\n  insuranceType: '',\n  fullName: '',\n  email: '',\n  phone: '',\n})\n\nconst nextStep = () => {\n  if (currentStep.value < 3) currentStep.value++\n}\nconst prevStep = () => {\n  if (currentStep.value > 1) currentStep.value--\n}\n</script>\n\n<template>\n  <div class=\"bg-white rounded-xl shadow-lg max-w-3xl mx-auto\">\n    <!-- Header -->\n    <div class=\"bg-[#30BCFE] py-3 px-4 rounded-t-xl\">\n      <h2 class=\"text-lg font-medium text-white text-center\">\n        Start Your Quote\n      </h2>\n    </div>\n\n    <div class=\"p-6 bg-card text-card-foreground rounded-b-xl shadow-inner\">\n      <!-- Step indicators -->\n      <div class=\"flex items-center justify-between mb-8\">\n        <div class=\"flex space-x-2\">\n          <div\n            v-for=\"step in 3\"\n            :key=\"step\"\n            :class=\"[\n              'flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium',\n              currentStep === step\n                ? 'bg-[#30BCFE] text-white'\n                : 'bg-gray-200 text-gray-600'\n            ]\"\n          >\n            {{ step }}\n          </div>\n        </div>\n        <div class=\"text-sm text-gray-500\">Step {{ currentStep }} of 3</div>\n      </div>\n    \n      <!--Need to make the form functional-->\n      <form\n        action=\"https://formsubmit.co/rudolfgiessen@amerusfinancial.com\"\n        method=\"POST\"\n      >\n        <!-- Hidden fields for FormSubmit -->\n        <input type=\"hidden\" name=\"_subject\" value=\"New Insurance Quote Request\" />\n        <input type=\"hidden\" name=\"_template\" value=\"table\" />\n        <input type=\"hidden\" name=\"_captcha\" value=\"false\" />\n        <input\n          type=\"hidden\"\n          name=\"_autoresponse\"\n          value=\"Thank you for requesting a quote from Amerus Financial. One of our insurance professionals will contact you shortly to discuss your options.\"\n        />\n        <input type=\"hidden\" name=\"_next\" value=\"/thank-you\" />\n        <input type=\"hidden\" name=\"form_type\" value=\"quote\" />\n\n        <!-- Step 1 -->\n        <div v-show=\"currentStep === 1\" class=\"space-y-6\">\n          <h2 class=\"text-xl font-semibold\">I am seeking coverage for</h2>\n\n          <div class=\"space-y-2\">\n            <label for=\"insuranceType\" class=\"text-sm font-medium\">Insurance Type</label>\n            <select\n              name=\"insuranceType\"\n              v-model=\"formData.insuranceType\"\n              class=\"flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2\"\n            >\n              <option value=\"\" disabled>Select insurance type</option>\n              <option value=\"Health\">Health Insurance</option>\n              <option value=\"Life\">Life Insurance</option>\n              <option value=\"Auto\">Auto Insurance</option>\n              <option value=\"Home\">Home Insurance</option>\n              <option value=\"Business\">Business Insurance</option>\n              <option value=\"Medicare\">Medicare Solutions</option>\n              <option value=\"RetirementPlanning\">Retirement Planning</option>\n            </select>\n          </div>\n\n          <div class=\"pt-4 flex justify-end\">\n            <button\n              type=\"button\"\n              @click=\"nextStep\"\n              class=\"inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium bg-[#30BCFE] text-white px-4 py-2 hover:bg-[#30BCFE]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\"\n            >\n              Get Started\n              <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 12h14m-7-7l7 7-7 7\"/>\n              </svg>\n            </button>\n          </div>\n          <p class=\"text-muted\" style=\"margin:.5rem 0 0; font-size:.9rem;\">No obligation • Fast response • Licensed agents</p>\n        </div>\n\n        <!-- Step 2 -->\n        <div v-show=\"currentStep === 2\" class=\"space-y-6\">\n          <h2 class=\"text-xl font-semibold\">Your Contact Information</h2>\n\n          <div class=\"space-y-2\">\n            <label class=\"text-sm font-medium\">Full Name</label>\n            <input type=\"text\" v-model=\"formData.fullName\" name=\"fullName\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\" />\n          </div>\n\n          <div class=\"space-y-2\">\n            <label class=\"text-sm font-medium\">Email</label>\n            <input type=\"email\" v-model=\"formData.email\" name=\"email\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\" />\n          </div>\n\n          <div class=\"space-y-2\">\n            <label class=\"text-sm font-medium\">Phone</label>\n            <input type=\"tel\" v-model=\"formData.phone\" name=\"phone\" class=\"w-full border rounded-md px-3 py-2 bg-background text-card-foreground\" />\n          </div>\n\n          <div class=\"pt-4 flex justify-between\">\n            <button type=\"button\" @click=\"prevStep\" class=\"px-4 py-2 rounded-md border bg-gray-100 text-gray-600\">Back</button>\n            <button type=\"button\" @click=\"nextStep\" class=\"bg-[#30BCFE] text-white px-4 py-2 rounded-md\">Continue</button>\n          </div>\n        </div>\n\n        <!-- Step 3 -->\n        <div v-show=\"currentStep === 3\" class=\"space-y-6\">\n          <h2 class=\"text-xl font-semibold\">Review & Submit</h2>\n          <p><strong>Insurance Type:</strong> {{ formData.insuranceType }}</p>\n          <p><strong>Full Name:</strong> {{ formData.fullName }}</p>\n          <p><strong>Email:</strong> {{ formData.email }}</p>\n          <p><strong>Phone:</strong> {{ formData.phone }}</p>\n\n          <div class=\"pt-4 flex justify-between\">\n            <button type=\"button\" @click=\"prevStep\" class=\"px-4 py-2 rounded-md border bg-gray-100 text-gray-600\">Back</button>\n            <button type=\"submit\" class=\"bg-[#30BCFE] text-white px-4 py-2 rounded-md\">Submit</button>\n          </div>\n        </div>\n      </form>\n    </div>\n  </div>\n</template>\n",
+      "start": 1761251024738,
+      "end": 1761251024845,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024845,
+      "end": 1761251024845,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024845,
+      "end": 1761251024845,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024845,
+      "end": 1761251024845,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024845,
+      "end": 1761251024845,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024845,
+      "end": 1761251024845,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024845,
+      "end": 1761251024845,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024845,
+      "end": 1761251024845,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024845,
+      "end": 1761251024845,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/MultiStepForm.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/MultiStepForm.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761251024845,
+      "end": 1761251024864,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024864,
+      "end": 1761251024864,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024864,
+      "end": 1761251024864,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024864,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024865,
+      "end": 1761251024865,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024865,
+      "end": 1761251024867,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024867,
+      "end": 1761251024867,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024867,
+      "end": 1761251024867,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024867,
+      "end": 1761251024867,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024867,
+      "end": 1761251024867,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251024867,
+      "end": 1761251024867,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024867,
+      "end": 1761251024867,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024867,
+      "end": 1761251024868,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024868,
+      "end": 1761251024868,
+      "order": "normal"
+    }
+  ]
+}

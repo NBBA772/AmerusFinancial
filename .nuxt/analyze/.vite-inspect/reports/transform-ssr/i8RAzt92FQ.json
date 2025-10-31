@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/JoinTheAmerusFinancialCommunitySection.vue?nuxt_component=async&nuxt_component_name=JoinTheAmerusFinancialCommunitySection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"px-4 pb-8 sm:px-8\">\n      <!-- <ParagraphSubHeading>\n        {{ IntroText.SubHeading }}\n      </ParagraphSubHeading> -->\n      <HeadlineTwo>{{ IntroText.Heading }}</HeadlineTwo>\n      <ParagraphDescription>\n        {{ IntroText.description }}\n      </ParagraphDescription>\n    </div>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Industries We Serve\",\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Relying Solely On Referrals And Word Of Mouth Is No Longer Enough For Businesses. Smart Business Owners Now Integrate Digital Marketing Into Their Marketing Plan\",\n        Heading:\n          \"Join the Amerus Financial Community: Building Trust and Confidence in Your Future\",\n        description:\n          \"In alignment with our values of trust and integrity, we collaborate with premier industry carriers to provide you with the best-in-class insurance options. By choosing Amerus Financial, you're not just securing your future; you're joining a community built on reliability and dedication. Schedule a consultation with one of our approachable advisors today, and let's design an insurance plan perfectly tailored to your needs. Together, we'll navigate life's uncertainties with confidence and assurance.\",\n      },\n    };\n  },\n};\n</script>",
+      "start": 1761251141341,
+      "end": 1761251141634,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141634,
+      "end": 1761251141634,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Industries We Serve\",\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Relying Solely On Referrals And Word Of Mouth Is No Longer Enough For Businesses. Smart Business Owners Now Integrate Digital Marketing Into Their Marketing Plan\",\n        Heading:\n          \"Join the Amerus Financial Community: Building Trust and Confidence in Your Future\",\n        description:\n          \"In alignment with our values of trust and integrity, we collaborate with premier industry carriers to provide you with the best-in-class insurance options. By choosing Amerus Financial, you're not just securing your future; you're joining a community built on reliability and dedication. Schedule a consultation with one of our approachable advisors today, and let's design an insurance plan perfectly tailored to your needs. Together, we'll navigate life's uncertainties with confidence and assurance.\",\n      },\n    };\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n\n  _push(_ssrRenderComponent(_component_BasicSection, _mergeProps({ class: \"container mx-auto mt-20\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<div class=\"px-4 pb-8 sm:px-8\"${_scopeId}>`)\n        _push(_ssrRenderComponent(_component_HeadlineTwo, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`${_ssrInterpolate($data.IntroText.Heading)}`)\n            } else {\n              return [\n                _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n        _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`${_ssrInterpolate($data.IntroText.description)}`)\n            } else {\n              return [\n                _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n        _push(`</div>`)\n      } else {\n        return [\n          _createVNode(\"div\", { class: \"px-4 pb-8 sm:px-8\" }, [\n            _createVNode(_component_HeadlineTwo, null, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString($data.IntroText.Heading), 1)\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescription, null, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n              ]),\n              _: 1\n            })\n          ])\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/HomePage/JoinTheAmerusFinancialCommunitySection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251141634,
+      "end": 1761251141639,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/JoinTheAmerusFinancialCommunitySection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/JoinTheAmerusFinancialCommunitySection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"px-4 pb-8 sm:px-8\">\n      <!-- <ParagraphSubHeading>\n        {{ IntroText.SubHeading }}\n      </ParagraphSubHeading> -->\n      <HeadlineTwo>{{ IntroText.Heading }}</HeadlineTwo>\n      <ParagraphDescription>\n        {{ IntroText.description }}\n      </ParagraphDescription>\n    </div>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Industries We Serve\",\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Relying Solely On Referrals And Word Of Mouth Is No Longer Enough For Businesses. Smart Business Owners Now Integrate Digital Marketing Into Their Marketing Plan\",\n        Heading:\n          \"Join the Amerus Financial Community: Building Trust and Confidence in Your Future\",\n        description:\n          \"In alignment with our values of trust and integrity, we collaborate with premier industry carriers to provide you with the best-in-class insurance options. By choosing Amerus Financial, you're not just securing your future; you're joining a community built on reliability and dedication. Schedule a consultation with one of our approachable advisors today, and let's design an insurance plan perfectly tailored to your needs. Together, we'll navigate life's uncertainties with confidence and assurance.\",\n      },\n    };\n  },\n};\n</script>"
+        ],
+        "mappings": ";AAeA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;QACrK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACL,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACrF,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACT,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;MAC5f,CAAC;IACH,CAAC;EACH,CAAC;AACH,CAAC;;;;;;;;;;EA7BD,MAAA,6CAAA,cACgB,KAAK,EAAC,yBAAyB,IAD/C;IAAA,kBACE,CAUe;UAXjB;QAAA,uCAAA;QAAA,MAAA;UAAA,kBAMM,CAAkD;gBANxD;cAAA,SAAA,gBAMsB,eAAS,CAAC,OAAO;;;gBANvC,kCAMsB,eAAS,CAAC,OAAO;;;;UANvC,GAAA;;QAAA,MAAA;UAAA,kBAOM,CAEuB;gBAT7B;cAAA,SAAA,gBAQW,eAAS,CAAC,WAAW;;;gBARhC,kCAQW,eAAS,CAAC,WAAW;;;;UARhC,GAAA;;QAAA;;;UAEI,aAQM,SARD,KAAK,EAAC,mBAAmB;YAI5B,aAAkD;cANxD,kBAMmB,CAAuB;gBAN1C,kCAMsB,eAAS,CAAC,OAAO;;cANvC,GAAA;;YAOM,aAEuB;cAT7B,kBAQQ,CAA2B;gBARnC,kCAQW,eAAS,CAAC,WAAW;;cARhC,GAAA;;;;;;IAAA,GAAA"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141639,
+      "end": 1761251141639,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141639,
+      "end": 1761251141639,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141639,
+      "end": 1761251141639,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141639,
+      "end": 1761251141639,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141639,
+      "end": 1761251141639,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/JoinTheAmerusFinancialCommunitySection.vue\").then(r => r.default))",
+      "start": 1761251141639,
+      "end": 1761251141639,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141639,
+      "end": 1761251141639,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141639,
+      "end": 1761251141639,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141639,
+      "end": 1761251141640,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141640,
+      "end": 1761251141640,
+      "order": "normal"
+    }
+  ]
+}

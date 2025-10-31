@@ -1,0 +1,230 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/IndividualAndFamilyInsuranceServicesHeroSection.vue?nuxt_component=async&nuxt_component_name=IndividualAndFamilyInsuranceServicesHeroSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <!-- <NuxtImg\n          format=\"webp\"\n          src=\"/images/charter-bus.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n        /> -->\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/FamilyAndIndividual.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\"\n          class=\"full-width-height\"\n        />\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          Individual & Family Solutions for Health Insurance\n        </HeadlineOneHero>\n        <ParagraphDescriptionHero>\n          Navigating the increasingly complex and costly world of health\n          insurance has never been more challenging, particularly given the\n          industry’s uncertain future. In such times, having a trusted advisor\n          to guide you through the maze of options for affordable and sufficient\n          health coverage for your family is invaluable.\n        </ParagraphDescriptionHero>\n        <ParagraphDescriptionHero\n          >AFG is recognized and certified by the Centers for Medicare &\n          Medicaid Services (CMS), enabling us to assist you in qualifying for\n          tax subsidies that could cover a significant portion, if not all, of\n          your health insurance premiums. As the landscape of the Affordable\n          Care Act (ACA) undergoes rapid changes, the importance of having an\n          informed and reliable advisor by your side cannot be overstated. Our\n          role is to provide you with timely guidance and answer any queries you\n          may have regarding your health coverage\n          options.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >We are proud to represent a roster of top-rated health insurance\n          providers, including but not limited to United Healthcare, Ambetter,\n          Molina, Aetna, Florida Blue, Blue Cross Blue Shield of South Carolina,\n          Oscar, and Cigna. This range of partnerships ensures that we can offer\n          a variety of high-quality options tailored to meet your specific\n          needs.</ParagraphDescriptionHero\n        >\n        <ParagraphDescriptionHero\n          >Don’t hesitate to secure your family’s future with affordable health\n          insurance. Call us today for a no-obligation quote at\n          1-888-441-7891</ParagraphDescriptionHero\n        >\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Individual & Family Solutions for Health Insurance\",\n        Description:\n          \"Navigating the increasingly complex and costly world of health insurance has never been more challenging, particularly given the industry’s uncertain future. In such times, having a trusted advisor to guide you through the maze of options for affordable and sufficient health coverage for your family is invaluable. AFG is recognized and certified by the Centers for Medicare & Medicaid Services (CMS), enabling us to assist you in qualifying for tax subsidies that could cover a significant portion, if not all, of your health insurance premiums. As the landscape of the Affordable Care Act (ACA) undergoes rapid changes, the importance of having an informed and reliable advisor by your side cannot be overstated. Our role is to provide you with timely guidance and answer any queries you may have regarding your health coverage options. We are proud to represent a roster of top-rated health insurance providers, including but not limited to United Healthcare, Ambetter, Molina, Aetna, Florida Blue, Blue Cross Blue Shield of South Carolina, Oscar, and Cigna. This range of partnerships ensures that we can offer a variety of high-quality options tailored to meet your specific needs. Don’t hesitate to secure your family’s future with affordable health insurance. Call us today for a no-obligation quote at 1-888-441-7891\",\n      },\n    };\n  },\n};\n</script>\n\n<style scoped>\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n</style>\n",
+      "start": 1761251023684,
+      "end": 1761251023747,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251023747,
+      "end": 1761251023747,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251023747,
+      "end": 1761251023747,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251023747,
+      "end": 1761251023747,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251023747,
+      "end": 1761251023747,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251023747,
+      "end": 1761251023747,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251023747,
+      "end": 1761251023747,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251023747,
+      "end": 1761251023747,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251023747,
+      "end": 1761251023747,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {\n      IntroText: {\n        Heading: \"Individual & Family Solutions for Health Insurance\",\n        Description:\n          \"Navigating the increasingly complex and costly world of health insurance has never been more challenging, particularly given the industry’s uncertain future. In such times, having a trusted advisor to guide you through the maze of options for affordable and sufficient health coverage for your family is invaluable. AFG is recognized and certified by the Centers for Medicare & Medicaid Services (CMS), enabling us to assist you in qualifying for tax subsidies that could cover a significant portion, if not all, of your health insurance premiums. As the landscape of the Affordable Care Act (ACA) undergoes rapid changes, the importance of having an informed and reliable advisor by your side cannot be overstated. Our role is to provide you with timely guidance and answer any queries you may have regarding your health coverage options. We are proud to represent a roster of top-rated health insurance providers, including but not limited to United Healthcare, Ambetter, Molina, Aetna, Florida Blue, Blue Cross Blue Shield of South Carolina, Oscar, and Cigna. This range of partnerships ensures that we can offer a variety of high-quality options tailored to meet your specific needs. Don’t hesitate to secure your family’s future with affordable health insurance. Call us today for a no-obligation quote at 1-888-441-7891\",\n      },\n    };\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-37b0a471\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"p-4\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n  const _component_HeadlineOneHero = _resolveComponent(\"HeadlineOneHero\")\n  const _component_ParagraphDescriptionHero = _resolveComponent(\"ParagraphDescriptionHero\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_SectionContainer = _resolveComponent(\"SectionContainer\")\n\n  return (_openBlock(), _createBlock(_component_SectionContainer, { class: \"text-center\" }, {\n    default: _withCtx(() => [\n      _createVNode(_component_GridTwoColumns, null, {\n        default: _withCtx(() => [\n          _createElementVNode(\"div\", null, [\n            _createVNode(_component_NuxtImg, {\n              format: \"webp\",\n              src: \"/images/FamilyAndIndividual.jpg\",\n              alt: \"Happy Kids\",\n              quality: \"80\",\n              sizes: \"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\",\n              class: \"full-width-height\"\n            })\n          ]),\n          _createElementVNode(\"div\", _hoisted_1, [\n            _createVNode(_component_HeadlineOneHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\" Individual & Family Solutions for Health Insurance \")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\" Navigating the increasingly complex and costly world of health insurance has never been more challenging, particularly given the industry’s uncertain future. In such times, having a trusted advisor to guide you through the maze of options for affordable and sufficient health coverage for your family is invaluable. \")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"AFG is recognized and certified by the Centers for Medicare & Medicaid Services (CMS), enabling us to assist you in qualifying for tax subsidies that could cover a significant portion, if not all, of your health insurance premiums. As the landscape of the Affordable Care Act (ACA) undergoes rapid changes, the importance of having an informed and reliable advisor by your side cannot be overstated. Our role is to provide you with timely guidance and answer any queries you may have regarding your health coverage options.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"We are proud to represent a roster of top-rated health insurance providers, including but not limited to United Healthcare, Ambetter, Molina, Aetna, Florida Blue, Blue Cross Blue Shield of South Carolina, Oscar, and Cigna. This range of partnerships ensures that we can offer a variety of high-quality options tailored to meet your specific needs.\")\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_ParagraphDescriptionHero, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Don’t hesitate to secure your family’s future with affordable health insurance. Call us today for a no-obligation quote at 1-888-441-7891\")\n              ]),\n              _: 1\n            })\n          ])\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/IndividualAndFamilyInsuranceServicesHeroSection.vue?vue&type=style&index=0&scoped=37b0a471&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-37b0a471\"]])",
+      "start": 1761251023747,
+      "end": 1761251023748,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/IndividualAndFamilyInsuranceServicesHeroSection.vue\").then(r => r.default))",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251023749,
+      "end": 1761251023749,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251023749,
+      "end": 1761251023750,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/IndividualAndFamilyInsuranceServicesHeroSection.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251023750,
+      "end": 1761251023750,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/dashboard/PipelineHeader.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref } from \"vue\"\nimport { ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport {\n  getGHLPipelines,\n  getGHLOpportunities,\n} from \"~/server/database/repositories/crmServices\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'PipelineHeader',\n  __ssrInlineRender: true,\n  async setup(__props) {\n\nlet __temp: any, __restore: any\n\nconst pipelines = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLPipelines())),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\nconsole.log(pipelines.pipelines[1].stages[0].id);\nconst newClientOpportunities = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLOpportunities(\n  pipelines.pipelines[1].id,\n  pipelines.pipelines[1].stages[0].id\n))),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\n\nconst newFrequentlyAskedQuestionsOpportunities = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLOpportunities(\n  pipelines.pipelines[0].id,\n  pipelines.pipelines[0].stages[0].id\n))),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<!--[--><div class=\"p-2 m-2\"><h3 class=\"text-3xl\">${\n    _ssrInterpolate(_unref(pipelines).pipelines[1].name)\n  }</h3><p class=\"text-2xl\">${\n    _ssrInterpolate(_unref(newClientOpportunities).meta.total)\n  }</p><p>${\n    _ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.name)\n  }</p><p>${\n    _ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.phone)\n  }</p><p>${\n    _ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.email)\n  }</p><p>${\n    _ssrInterpolate(_unref(newClientOpportunities).opportunities[0].status)\n  }</p><p>${\n    _ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.tags[0])\n  }</p></div><div class=\"p-2 m-2\"><h3 class=\"text-3xl\">${\n    _ssrInterpolate(_unref(pipelines).pipelines[0].name)\n  }</h3><p class=\"text-2xl\">${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).meta.total)\n  }</p><p>${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.name)\n  }</p><p>${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.phone)\n  }</p><p>${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.email)\n  }</p><p>${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].status)\n  }</p><p>${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact\n          .tags[0])\n  }</p></div><!--]-->`)\n}\n}\n\n})",
+      "start": 1761251159896,
+      "end": 1761251159897,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/dashboard/PipelineHeader.vue"
+        ],
+        "sourcesContent": [
+          "<script setup lang=\"ts\">\nimport {\n  getGHLPipelines,\n  getGHLOpportunities,\n} from \"~/server/database/repositories/crmServices\";\n\nconst pipelines = await getGHLPipelines();\nconsole.log(pipelines.pipelines[1].stages[0].id);\nconst newClientOpportunities = await getGHLOpportunities(\n  pipelines.pipelines[1].id,\n  pipelines.pipelines[1].stages[0].id\n);\n\nconst newFrequentlyAskedQuestionsOpportunities = await getGHLOpportunities(\n  pipelines.pipelines[0].id,\n  pipelines.pipelines[0].stages[0].id\n);\n</script>\n<template>\n  <div class=\"p-2 m-2\">\n    <h3 class=\"text-3xl\">{{ pipelines.pipelines[1].name }}</h3>\n    <p class=\"text-2xl\">{{ newClientOpportunities.meta.total }}</p>\n    <p>{{ newClientOpportunities.opportunities[0].contact.name }}</p>\n    <p>{{ newClientOpportunities.opportunities[0].contact.phone }}</p>\n    <p>{{ newClientOpportunities.opportunities[0].contact.email }}</p>\n    <p>{{ newClientOpportunities.opportunities[0].status }}</p>\n    <p>{{ newClientOpportunities.opportunities[0].contact.tags[0] }}</p>\n  </div>\n  <div class=\"p-2 m-2\">\n    <h3 class=\"text-3xl\">{{ pipelines.pipelines[0].name }}</h3>\n    <p class=\"text-2xl\">\n      {{ newFrequentlyAskedQuestionsOpportunities.meta.total }}\n    </p>\n    <p>\n      {{\n        newFrequentlyAskedQuestionsOpportunities.opportunities[0].contact.name\n      }}\n    </p>\n    <p>\n      {{\n        newFrequentlyAskedQuestionsOpportunities.opportunities[0].contact.phone\n      }}\n    </p>\n    <p>\n      {{\n        newFrequentlyAskedQuestionsOpportunities.opportunities[0].contact.email\n      }}\n    </p>\n    <p>\n      {{ newFrequentlyAskedQuestionsOpportunities.opportunities[0].status }}\n    </p>\n    <p>\n      {{\n        newFrequentlyAskedQuestionsOpportunities.opportunities[0].contact\n          .tags[0]\n      }}\n    </p>\n  </div>\n</template>"
+        ],
+        "names": [],
+        "mappings": ";;;;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACpD;;;;;;;;AALwB;AAMxB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAAA,gDAAM,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;;;CAAC,CAAC;AAC1C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAAA,gDAAM,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrC;;;;CAAC,CAAC;AACF;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAAA,gDAAM,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3E,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrC;;;;CAAC,CAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159898,
+      "end": 1761251159898,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159898,
+      "end": 1761251159898,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159898,
+      "end": 1761251159898,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159898,
+      "end": 1761251159898,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159899,
+      "end": 1761251159899,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159899,
+      "end": 1761251159900,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251159900,
+      "end": 1761251159900,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251159901,
+      "end": 1761251159901,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251159901,
+      "end": 1761251159901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref } from \"vue\";\nimport { ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport {\n  getGHLPipelines,\n  getGHLOpportunities\n} from \"~/server/database/repositories/crmServices\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"PipelineHeader\",\n  __ssrInlineRender: true,\n  async setup(__props) {\n    let __temp, __restore;\n    const pipelines = ([__temp, __restore] = _withAsyncContext(() => getGHLPipelines()), __temp = await __temp, __restore(), __temp);\n    console.log(pipelines.pipelines[1].stages[0].id);\n    const newClientOpportunities = ([__temp, __restore] = _withAsyncContext(() => getGHLOpportunities(\n      pipelines.pipelines[1].id,\n      pipelines.pipelines[1].stages[0].id\n    )), __temp = await __temp, __restore(), __temp);\n    const newFrequentlyAskedQuestionsOpportunities = ([__temp, __restore] = _withAsyncContext(() => getGHLOpportunities(\n      pipelines.pipelines[0].id,\n      pipelines.pipelines[0].stages[0].id\n    )), __temp = await __temp, __restore(), __temp);\n    return (_ctx, _push, _parent, _attrs) => {\n      _push(`<!--[--><div class=\"p-2 m-2\"><h3 class=\"text-3xl\">${_ssrInterpolate(_unref(pipelines).pipelines[1].name)}</h3><p class=\"text-2xl\">${_ssrInterpolate(_unref(newClientOpportunities).meta.total)}</p><p>${_ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.name)}</p><p>${_ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.phone)}</p><p>${_ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.email)}</p><p>${_ssrInterpolate(_unref(newClientOpportunities).opportunities[0].status)}</p><p>${_ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.tags[0])}</p></div><div class=\"p-2 m-2\"><h3 class=\"text-3xl\">${_ssrInterpolate(_unref(pipelines).pipelines[0].name)}</h3><p class=\"text-2xl\">${_ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).meta.total)}</p><p>${_ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.name)}</p><p>${_ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.phone)}</p><p>${_ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.email)}</p><p>${_ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].status)}</p><p>${_ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.tags[0])}</p></div><!--]-->`);\n    };\n  }\n});\n",
+      "start": 1761251159901,
+      "end": 1761251163572,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/dashboard/PipelineHeader.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { withAsyncContext as _withAsyncContext, defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref } from \"vue\"\nimport { ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nimport {\n  getGHLPipelines,\n  getGHLOpportunities,\n} from \"~/server/database/repositories/crmServices\";\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'PipelineHeader',\n  __ssrInlineRender: true,\n  async setup(__props) {\n\nlet __temp: any, __restore: any\n\nconst pipelines = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLPipelines())),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\nconsole.log(pipelines.pipelines[1].stages[0].id);\nconst newClientOpportunities = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLOpportunities(\n  pipelines.pipelines[1].id,\n  pipelines.pipelines[1].stages[0].id\n))),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\n\nconst newFrequentlyAskedQuestionsOpportunities = (\n  ([__temp,__restore] = _withAsyncContext(() => getGHLOpportunities(\n  pipelines.pipelines[0].id,\n  pipelines.pipelines[0].stages[0].id\n))),\n  __temp = await __temp,\n  __restore(),\n  __temp\n);\n\nreturn (_ctx: any,_push: any,_parent: any,_attrs: any) => {\n  _push(`<!--[--><div class=\"p-2 m-2\"><h3 class=\"text-3xl\">${\n    _ssrInterpolate(_unref(pipelines).pipelines[1].name)\n  }</h3><p class=\"text-2xl\">${\n    _ssrInterpolate(_unref(newClientOpportunities).meta.total)\n  }</p><p>${\n    _ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.name)\n  }</p><p>${\n    _ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.phone)\n  }</p><p>${\n    _ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.email)\n  }</p><p>${\n    _ssrInterpolate(_unref(newClientOpportunities).opportunities[0].status)\n  }</p><p>${\n    _ssrInterpolate(_unref(newClientOpportunities).opportunities[0].contact.tags[0])\n  }</p></div><div class=\"p-2 m-2\"><h3 class=\"text-3xl\">${\n    _ssrInterpolate(_unref(pipelines).pipelines[0].name)\n  }</h3><p class=\"text-2xl\">${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).meta.total)\n  }</p><p>${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.name)\n  }</p><p>${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.phone)\n  }</p><p>${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact.email)\n  }</p><p>${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].status)\n  }</p><p>${\n    _ssrInterpolate(_unref(newFrequentlyAskedQuestionsOpportunities).opportunities[0].contact\n          .tags[0])\n  }</p></div><!--]-->`)\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,oBAAoB,mBAAmB,mBAAmB,wBAAwB;AAC3F,SAAS,SAAS,cAAc;AAChC,SAAS,kBAAkB,uBAAuB;AAElD;AAAA,EACE;AAAA,EACA;AAAA,OACK;AAGP,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,mBAAmB;AAAA,EACnB,MAAM,MAAM,SAAS;AAEvB,QAAI,QAAa;AAEjB,UAAM,aACH,CAAC,QAAO,SAAS,IAAI,kBAAkB,MAAM,gBAAgB,CAAC,GAC/D,SAAS,MAAM,QACf,UAAU,GACV;AAEF,YAAQ,IAAI,UAAU,UAAU,CAAC,EAAE,OAAO,CAAC,EAAE,EAAE;AAC/C,UAAM,0BACH,CAAC,QAAO,SAAS,IAAI,kBAAkB,MAAM;AAAA,MAC9C,UAAU,UAAU,CAAC,EAAE;AAAA,MACvB,UAAU,UAAU,CAAC,EAAE,OAAO,CAAC,EAAE;AAAA,IACnC,CAAC,GACC,SAAS,MAAM,QACf,UAAU,GACV;AAGF,UAAM,4CACH,CAAC,QAAO,SAAS,IAAI,kBAAkB,MAAM;AAAA,MAC9C,UAAU,UAAU,CAAC,EAAE;AAAA,MACvB,UAAU,UAAU,CAAC,EAAE,OAAO,CAAC,EAAE;AAAA,IACnC,CAAC,GACC,SAAS,MAAM,QACf,UAAU,GACV;AAGF,WAAO,CAAC,MAAU,OAAW,SAAa,WAAgB;AACxD,YAAM,qDACJ,gBAAgB,OAAO,SAAS,EAAE,UAAU,CAAC,EAAE,IAAI,CACrD,4BACE,gBAAgB,OAAO,sBAAsB,EAAE,KAAK,KAAK,CAC3D,UACE,gBAAgB,OAAO,sBAAsB,EAAE,cAAc,CAAC,EAAE,QAAQ,IAAI,CAC9E,UACE,gBAAgB,OAAO,sBAAsB,EAAE,cAAc,CAAC,EAAE,QAAQ,KAAK,CAC/E,UACE,gBAAgB,OAAO,sBAAsB,EAAE,cAAc,CAAC,EAAE,QAAQ,KAAK,CAC/E,UACE,gBAAgB,OAAO,sBAAsB,EAAE,cAAc,CAAC,EAAE,MAAM,CACxE,UACE,gBAAgB,OAAO,sBAAsB,EAAE,cAAc,CAAC,EAAE,QAAQ,KAAK,CAAC,CAAC,CACjF,uDACE,gBAAgB,OAAO,SAAS,EAAE,UAAU,CAAC,EAAE,IAAI,CACrD,4BACE,gBAAgB,OAAO,wCAAwC,EAAE,KAAK,KAAK,CAC7E,UACE,gBAAgB,OAAO,wCAAwC,EAAE,cAAc,CAAC,EAAE,QAAQ,IAAI,CAChG,UACE,gBAAgB,OAAO,wCAAwC,EAAE,cAAc,CAAC,EAAE,QAAQ,KAAK,CACjG,UACE,gBAAgB,OAAO,wCAAwC,EAAE,cAAc,CAAC,EAAE,QAAQ,KAAK,CACjG,UACE,gBAAgB,OAAO,wCAAwC,EAAE,cAAc,CAAC,EAAE,MAAM,CAC1F,UACE,gBAAgB,OAAO,wCAAwC,EAAE,cAAc,CAAC,EAAE,QAC3E,KAAK,CAAC,CAAC,CAChB,oBAAoB;AAAA,IACtB;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251163572,
+      "end": 1761251163572,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251163573,
+      "end": 1761251163573,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251163573,
+      "end": 1761251163573,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251163573,
+      "end": 1761251163573,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251163573,
+      "end": 1761251163573,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251163573,
+      "end": 1761251163573,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251163573,
+      "end": 1761251163573,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251163573,
+      "end": 1761251163573,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251163574,
+      "end": 1761251163574,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251163574,
+      "end": 1761251163574,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251163575,
+      "end": 1761251163576,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251163576,
+      "end": 1761251163576,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251163578,
+      "end": 1761251163578,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251163578,
+      "end": 1761251163578,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251163578,
+      "end": 1761251163578,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251163578,
+      "end": 1761251163578,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251163578,
+      "end": 1761251163578,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251163578,
+      "end": 1761251163578,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251163578,
+      "end": 1761251163578,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251163599,
+      "end": 1761251163599,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251163599,
+      "end": 1761251163599,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251163599,
+      "end": 1761251163599,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251163599,
+      "end": 1761251163600,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251163599,
+      "end": 1761251163600,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251163600,
+      "end": 1761251163614,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251163600,
+      "end": 1761251163615,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251163616,
+      "end": 1761251163616,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251163616,
+      "end": 1761251163616,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251163616,
+      "end": 1761251163616,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251163616,
+      "end": 1761251163616,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251163616,
+      "end": 1761251163616,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251163665,
+      "end": 1761251163666,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251163668,
+      "end": 1761251163668,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251163669,
+      "end": 1761251163669,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251163690,
+      "end": 1761251163691,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/contact/ContactForm.vue?vue&type=style&index=0&scoped=d8eb2431&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.input-field {\n  @apply flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder-gray-400\n    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;\n}\n",
+      "start": 1761251159193,
+      "end": 1761251159194,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/contact/ContactForm.vue"
+        ],
+        "names": [],
+        "mappings": ";AAwDA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACtG,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3H",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/contact/ContactForm.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div class=\"rounded-lg border bg-white text-gray-900 shadow-sm\">\n    <div class=\"p-6 md:p-8\">\n      <h2 class=\"text-2xl font-bold mb-6\">Send Us a Message</h2>\n      <form\n        action=\"https://formsubmit.co/rudolfgiessen@amerusfinancial.com\"\n        method=\"POST\"\n        class=\"space-y-6\"\n      >\n        <input type=\"hidden\" name=\"_subject\" value=\"Contact Form Submission from Amerus Financial Website\" />\n        <input type=\"hidden\" name=\"_template\" value=\"table\" />\n        <input type=\"hidden\" name=\"_autoresponse\" value=\"Thank you for contacting Amerus Financial. A representative will reach out to you shortly.\" />\n        <input type=\"hidden\" name=\"_next\" value=\"/thank-you\" />\n\n        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\">\n          <div>\n            <label for=\"name\" class=\"block text-sm font-medium mb-1\">Full Name</label>\n            <input id=\"name\" name=\"name\" placeholder=\"Your name\" required class=\"input-field\" />\n          </div>\n          <div>\n            <label for=\"email\" class=\"block text-sm font-medium mb-1\">Email Address</label>\n            <input id=\"email\" name=\"email\" type=\"email\" placeholder=\"Your email\" required class=\"input-field\" />\n          </div>\n        </div>\n\n        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\">\n          <div>\n            <label for=\"phone\" class=\"block text-sm font-medium mb-1\">Phone Number (Optional)</label>\n            <input id=\"phone\" name=\"phone\" placeholder=\"Your phone number\" class=\"input-field\" />\n          </div>\n          <div>\n            <label for=\"subject\" class=\"block text-sm font-medium mb-1\">Subject</label>\n            <input id=\"subject\" name=\"subject\" placeholder=\"Message subject\" required class=\"input-field\" />\n          </div>\n        </div>\n\n        <div>\n          <label for=\"message\" class=\"block text-sm font-medium mb-1\">Message</label>\n          <textarea id=\"message\" name=\"message\" placeholder=\"How can we help you?\" required class=\"input-field min-h-[120px] resize-y\"></textarea>\n        </div>\n\n        <button\n          type=\"submit\"\n          class=\"inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors px-4 py-2 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto\"\n        >\n          <NuxtIcon name=\"lucide:send\" class=\"h-4 w-4 mr-2\" /> Send Message\n        </button>\n      </form>\n    </div>\n  </div>\n  \n</template>\n\n<script setup lang=\"ts\"></script>\n\n<style scoped>\n.input-field {\n  @apply flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder-gray-400\n    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159194,
+      "end": 1761251159194,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159194,
+      "end": 1761251159194,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159194,
+      "end": 1761251159194,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159194,
+      "end": 1761251159194,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159195,
+      "end": 1761251159195,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159195,
+      "end": 1761251159196,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251159196,
+      "end": 1761251159196,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251159196,
+      "end": 1761251159197,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".input-field{border-radius:.375rem;border-width:1px;display:flex;height:2.5rem;width:100%;--tw-border-opacity:1;border-color:#d1d5db;border-color:rgb(209 213 219/var(--tw-border-opacity));--tw-bg-opacity:1;background-color:#fff;background-color:rgb(255 255 255/var(--tw-bg-opacity));font-size:.875rem;line-height:1.25rem;padding:.5rem .75rem}.input-field::-moz-placeholder{--tw-placeholder-opacity:1;color:#9ca3af;color:rgb(156 163 175/var(--tw-placeholder-opacity))}.input-field::placeholder{--tw-placeholder-opacity:1;color:#9ca3af;color:rgb(156 163 175/var(--tw-placeholder-opacity))}.input-field:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-inset) 0 0 0 2px var(--tw-ring-offset-color),var(--tw-ring-inset) 0 0 0 4px #3b82f6,0 0 #0000;box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity));--tw-ring-offset-width:2px}.input-field:disabled{cursor:not-allowed;opacity:.5}",
+      "start": 1761251159197,
+      "end": 1761251159227,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/contact/ContactForm.vue",
+        "mappings": "AAEE,aAAA,qBACyH,CADzH,gBACyH,CADzH,YACyH,CADzH,aACyH,CADzH,UACyH,CADzH,qBACyH,CADzH,oBACyH,CADzH,sDACyH,CADzH,iBACyH,CADzH,qBACyH,CADzH,sDACyH,CADzH,iBACyH,CADzH,mBACyH,CADzH,oBACyH,CADzH,+BAAA,0BACyH,CADzH,aACyH,CADzH,oDACyH,CADzH,0BAAA,0BACyH,CADzH,aACyH,CADzH,oDACyH,CADzH,mBAAA,6BACyH,CADzH,kBACyH,CADzH,0GACyH,CADzH,wGACyH,CADzH,sHACyH,CADzH,wFACyH,CADzH,mBACyH,CADzH,sDACyH,CADzH,0BACyH,CADzH,sBAAA,kBACyH,CADzH,UACyH",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/contact/ContactForm.vue"
+        ],
+        "sourcesContent": [
+          "\n.input-field {\n  @apply flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder-gray-400\n    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251159227,
+      "end": 1761251159227,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251159227,
+      "end": 1761251159227,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251159361,
+      "end": 1761251159361,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".input-field[data-v-d8eb2431]{border-radius:.375rem;border-width:1px;display:flex;height:2.5rem;width:100%;--tw-border-opacity:1;border-color:#d1d5db;border-color:rgb(209 213 219/var(--tw-border-opacity));--tw-bg-opacity:1;background-color:#fff;background-color:rgb(255 255 255/var(--tw-bg-opacity));font-size:.875rem;line-height:1.25rem;padding:.5rem .75rem}.input-field[data-v-d8eb2431]::-moz-placeholder{--tw-placeholder-opacity:1;color:#9ca3af;color:rgb(156 163 175/var(--tw-placeholder-opacity))}.input-field[data-v-d8eb2431]::placeholder{--tw-placeholder-opacity:1;color:#9ca3af;color:rgb(156 163 175/var(--tw-placeholder-opacity))}.input-field[data-v-d8eb2431]:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-inset) 0 0 0 2px var(--tw-ring-offset-color),var(--tw-ring-inset) 0 0 0 4px #3b82f6,0 0 #0000;box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity));--tw-ring-offset-width:2px}.input-field[data-v-d8eb2431]:disabled{cursor:not-allowed;opacity:.5}",
+      "start": 1761251159367,
+      "end": 1761251159377,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/contact/ContactForm.vue",
+        "mappings": "AAAA,8BAAa,qBAAqB,CAAC,gBAAgB,CAAC,YAAY,CAAC,aAAa,CAAC,UAAU,CAAC,qBAAqB,CAAC,oBAAoB,CAAC,sDAAsD,CAAC,iBAAiB,CAAC,qBAAqB,CAAC,sDAAsD,CAAC,iBAAiB,CAAC,mBAAmB,CAAC,oBAAoB,CAAC,gDAA+B,0BAA0B,CAAC,aAAa,CAAC,oDAAoD,CAAC,2CAA0B,0BAA0B,CAAC,aAAa,CAAC,oDAAoD,CAAC,oCAAmB,6BAA6B,CAAC,kBAAkB,CAAC,0GAA0G,CAAC,wGAAwG,CAAC,sHAAsH,CAAC,wFAAwF,CAAC,mBAAmB,CAAC,sDAAsD,CAAC,0BAA0B,CAAC,uCAAsB,kBAAkB,CAAC,UAAU",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/contact/ContactForm.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251159378,
+      "end": 1761251159394,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251159418,
+      "end": 1761251159418,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251159418,
+      "end": 1761251159420,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251159421,
+      "end": 1761251159421,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251159421,
+      "end": 1761251159421,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251159421,
+      "end": 1761251159421,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251159459,
+      "end": 1761251159459,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251159467,
+      "end": 1761251159506,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251159507,
+      "end": 1761251159507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1761251159507,
+      "end": 1761251159507,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251159507,
+      "end": 1761251159507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251159516,
+      "end": 1761251159516,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251159516,
+      "end": 1761251159516,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251159516,
+      "end": 1761251159516,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251159518,
+      "end": 1761251159519,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251159519,
+      "end": 1761251159519,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251159521,
+      "end": 1761251159521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251159529,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251159529,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251159529,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251159529,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251159529,
+      "end": 1761251159529,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251159530,
+      "end": 1761251159530,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251159530,
+      "end": 1761251159530,
+      "order": "normal"
+    }
+  ]
+}

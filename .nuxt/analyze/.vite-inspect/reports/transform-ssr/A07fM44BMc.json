@@ -1,0 +1,324 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/DentalInsurancePage/DentalInsuranceServicesHeroSection.vue?vue&type=style&index=0&scoped=817d364d&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n",
+      "start": 1761251160619,
+      "end": 1761251160619,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/DentalInsurancePage/DentalInsuranceServicesHeroSection.vue"
+        ],
+        "names": [],
+        "mappings": ";AAwCA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACf,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClB;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACtE",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/DentalInsurancePage/DentalInsuranceServicesHeroSection.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <SectionContainer class=\"text-center\">\n    <GridTwoColumns>\n      <div>\n        <!-- <NuxtImg\n          format=\"webp\"\n          src=\"/images/charter-bus.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px\"\n        /> -->\n        <NuxtImg\n          format=\"webp\"\n          src=\"/images/dental-insurance-banner.jpg\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          sizes=\"sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px\"\n          class=\"full-width-height\"\n        />\n      </div>\n      <div class=\"p-4\">\n        <HeadlineOneHero>\n          Senior Solutions for Your Unique Needs\n        </HeadlineOneHero>\n        <SeniorDentalQuoteForm tag=\"SeniorDentalInsuranceQuote\" />\n      </div>\n    </GridTwoColumns>\n  </SectionContainer>\n</template>\n\n<script>\nexport default {\n  name: \"HomepageHeroSection\",\n  data() {\n    return {};\n  },\n};\n</script>\n\n<style scoped>\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251160625,
+      "end": 1761251160625,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".image-container{height:100%;overflow:hidden;width:100%}.full-width-height{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}",
+      "start": 1761251160625,
+      "end": 1761251160657,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/DentalInsurancePage/DentalInsuranceServicesHeroSection.vue",
+        "mappings": "AACA,iBAEE,WAAY,CACZ,eAAgB,CAFhB,UAGF,CAEA,mBAEE,WAAY,CACZ,mBAAiB,CAAjB,gBAAiB,CAFjB,UAGF",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/DentalInsurancePage/DentalInsuranceServicesHeroSection.vue"
+        ],
+        "sourcesContent": [
+          "\n.image-container {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n\n.full-width-height {\n  width: 100%;\n  height: 100%;\n  object-fit: cover; /* Ensure the image covers the entire container */\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251160657,
+      "end": 1761251160658,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251160658,
+      "end": 1761251160658,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251160691,
+      "end": 1761251160691,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".image-container[data-v-817d364d]{height:100%;overflow:hidden;width:100%}.full-width-height[data-v-817d364d]{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}",
+      "start": 1761251160692,
+      "end": 1761251160694,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/DentalInsurancePage/DentalInsuranceServicesHeroSection.vue",
+        "mappings": "AAAA,kCAAiB,WAAW,CAAC,eAAe,CAAC,UAAU,CAAC,oCAAmB,WAAW,CAAC,mBAAmB,CAAC,gBAAgB,CAAC,UAAU",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/DentalInsurancePage/DentalInsuranceServicesHeroSection.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251160694,
+      "end": 1761251160694,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160695,
+      "end": 1761251160695,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160695,
+      "end": 1761251160695,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251160695,
+      "end": 1761251160695,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251160695,
+      "end": 1761251160695,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251160696,
+      "end": 1761251160696,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251160736,
+      "end": 1761251160736,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251160743,
+      "end": 1761251160743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251160753,
+      "end": 1761251160753,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".image-container[data-v-817d364d]{height:100%;overflow:hidden;width:100%}.full-width-height[data-v-817d364d]{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}\"",
+      "start": 1761251160753,
+      "end": 1761251160753,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251160757,
+      "end": 1761251160757,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251160759,
+      "end": 1761251160759,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251160759,
+      "end": 1761251160759,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251160759,
+      "end": 1761251160760,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251160762,
+      "end": 1761251160762,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251160762,
+      "end": 1761251160762,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251160763,
+      "end": 1761251160763,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251160763,
+      "end": 1761251160763,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251160768,
+      "end": 1761251160768,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251160768,
+      "end": 1761251160768,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251160768,
+      "end": 1761251160768,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251160768,
+      "end": 1761251160768,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251160768,
+      "end": 1761251160768,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251160794,
+      "end": 1761251160794,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251160794,
+      "end": 1761251160794,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251160794,
+      "end": 1761251160794,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251160794,
+      "end": 1761251160794,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251160797,
+      "end": 1761251160797,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251160798,
+      "end": 1761251160798,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251160798,
+      "end": 1761251160798,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251160799,
+      "end": 1761251160799,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251160799,
+      "end": 1761251160799,
+      "order": "normal"
+    }
+  ]
+}

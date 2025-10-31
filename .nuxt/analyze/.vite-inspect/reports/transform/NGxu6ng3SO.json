@@ -1,0 +1,226 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/CategoryCard.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport { defineProps, PropType } from \"@vue/runtime-core\";\nimport { ICategory } from \"~/types/ICategory\";\n\ndefineProps({\n  category: Object as PropType<ICategory>,\n});\n</script>\n\n<template>\n  <nuxt-link v-if=\"category\" :to=\"category.link\">\n    <div\n      class=\"flex items-center border-b border-gray-200 dark:border-gray-700 pb-12 mr-5\"\n    >\n      <img class=\"h-16\" :src=\"category.image\" alt=\"nuxt 3 logo\" />\n      <div class=\"flex items-start justify-between w-full\">\n        <div class=\"pl-3 w-full\">\n          <div\n            tabindex=\"0\"\n            class=\"focus:outline-none text-xl font-medium leading-5 text-gray-800 dark:text-white\"\n          >\n            <div class=\"mt-5\">\n              {{ category.title }}\n            </div>\n          </div>\n          <p\n            tabindex=\"0\"\n            class=\"focus:outline-none text-sm leading-normal pt-2 text-gray-500 dark:text-gray-200\"\n          >\n            <!--              {{category.lessonQuantity}}-->\n          </p>\n        </div>\n        <div role=\"img\" aria-label=\"bookmark\">\n          <svg\n            class=\"focus:outline-none dark:text-white text-gray-800\"\n            width=\"28\"\n            height=\"28\"\n            viewBox=\"0 0 28 28\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n          >\n            <path\n              d=\"M10.5001 4.66667H17.5001C18.1189 4.66667 18.7124 4.9125 19.15 5.35009C19.5876 5.78767 19.8334 6.38117 19.8334 7V23.3333L14.0001 19.8333L8.16675 23.3333V7C8.16675 6.38117 8.41258 5.78767 8.85017 5.35009C9.28775 4.9125 9.88124 4.66667 10.5001 4.66667Z\"\n              stroke=\"currentColor\"\n              stroke-width=\"1.25\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n          </svg>\n        </div>\n      </div>\n    </div>\n    <div class=\"px-2\">\n      <p\n        tabindex=\"0\"\n        class=\"focus:outline-none text-sm leading-5 py-4 dark:text-white\"\n      >\n        {{ category.message }}\n      </p>\n      <div tabindex=\"0\" class=\"focus:outline-none flex\">\n        <nuxt-link\n          :to=\"tag.link\"\n          v-for=\"(tag, index) in category.tags\"\n          :key=\"index\"\n          class=\"py-2 px-4 text-xs leading-3 text-indigo-700 rounded-full bg-indigo-100\"\n        >\n          #{{ tag.title }}\n        </nuxt-link>\n      </div>\n    </div>\n  </nuxt-link>\n</template>\n",
+      "start": 1761251024489,
+      "end": 1761251024580,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024580,
+      "end": 1761251024580,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024580,
+      "end": 1761251024580,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024580,
+      "end": 1761251024580,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024580,
+      "end": 1761251024580,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024580,
+      "end": 1761251024580,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024580,
+      "end": 1761251024580,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024580,
+      "end": 1761251024580,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024580,
+      "end": 1761251024580,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/CategoryCard.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/CategoryCard.vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761251024580,
+      "end": 1761251024589,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024589,
+      "end": 1761251024589,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024589,
+      "end": 1761251024589,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024589,
+      "end": 1761251024589,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024589,
+      "end": 1761251024589,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024589,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024590,
+      "end": 1761251024590,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024590,
+      "end": 1761251024591,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024591,
+      "end": 1761251024591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024591,
+      "end": 1761251024591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024591,
+      "end": 1761251024591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024591,
+      "end": 1761251024591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251024591,
+      "end": 1761251024591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024591,
+      "end": 1761251024591,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024591,
+      "end": 1761251024591,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024591,
+      "end": 1761251024591,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/composables/useOrganizationSchema.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "/**\n * Composable for consistent Organization schema across all pages\n * Provides standardized organization structured data for Amerus Financial\n */\nexport const useOrganizationSchema = () => {\n  return {\n    '@type': 'Organization',\n    name: 'Amerus Financial',\n    url: 'https://www.amerusfinancial.com',\n    logo: {\n      '@type': 'ImageObject',\n      url: 'https://www.amerusfinancial.com/images/logo.png',\n      width: '300',\n      height: '100'\n    },\n    description: 'Leading provider of insurance and financial services including health insurance, life insurance, and retirement planning solutions.',\n    address: {\n      '@type': 'PostalAddress',\n      addressLocality: 'United States',\n      addressCountry: 'US'\n    },\n    contactPoint: {\n      '@type': 'ContactPoint',\n      telephone: '+1-800-AMERUS',\n      contactType: 'customer service',\n      availableLanguage: 'English'\n    },\n    sameAs: [\n      'https://www.facebook.com/amerusfinancial',\n      'https://www.linkedin.com/company/amerus-financial',\n      'https://twitter.com/amerusfinancial'\n    ],\n    serviceArea: {\n      '@type': 'Country',\n      name: 'United States'\n    }\n  }\n}\n\n/**\n * Composable for consistent Service provider schema\n * Returns the organization object formatted for use in Service schema\n */\nexport const useServiceProvider = () => {\n  return useOrganizationSchema()\n}",
+      "start": 1761251168967,
+      "end": 1761251172767,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251172768,
+      "end": 1761251172768,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251172768,
+      "end": 1761251172768,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251172768,
+      "end": 1761251172768,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251172768,
+      "end": 1761251172768,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251172768,
+      "end": 1761251172768,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251172768,
+      "end": 1761251172768,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251172768,
+      "end": 1761251172768,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251172768,
+      "end": 1761251172768,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251172769,
+      "end": 1761251172769,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "export const useOrganizationSchema = () => {\n  return {\n    \"@type\": \"Organization\",\n    name: \"Amerus Financial\",\n    url: \"https://www.amerusfinancial.com\",\n    logo: {\n      \"@type\": \"ImageObject\",\n      url: \"https://www.amerusfinancial.com/images/logo.png\",\n      width: \"300\",\n      height: \"100\"\n    },\n    description: \"Leading provider of insurance and financial services including health insurance, life insurance, and retirement planning solutions.\",\n    address: {\n      \"@type\": \"PostalAddress\",\n      addressLocality: \"United States\",\n      addressCountry: \"US\"\n    },\n    contactPoint: {\n      \"@type\": \"ContactPoint\",\n      telephone: \"+1-800-AMERUS\",\n      contactType: \"customer service\",\n      availableLanguage: \"English\"\n    },\n    sameAs: [\n      \"https://www.facebook.com/amerusfinancial\",\n      \"https://www.linkedin.com/company/amerus-financial\",\n      \"https://twitter.com/amerusfinancial\"\n    ],\n    serviceArea: {\n      \"@type\": \"Country\",\n      name: \"United States\"\n    }\n  };\n};\nexport const useServiceProvider = () => {\n  return useOrganizationSchema();\n};\n",
+      "start": 1761251172769,
+      "end": 1761251173103,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/composables/useOrganizationSchema.ts"
+        ],
+        "sourcesContent": [
+          "/**\n * Composable for consistent Organization schema across all pages\n * Provides standardized organization structured data for Amerus Financial\n */\nexport const useOrganizationSchema = () => {\n  return {\n    '@type': 'Organization',\n    name: 'Amerus Financial',\n    url: 'https://www.amerusfinancial.com',\n    logo: {\n      '@type': 'ImageObject',\n      url: 'https://www.amerusfinancial.com/images/logo.png',\n      width: '300',\n      height: '100'\n    },\n    description: 'Leading provider of insurance and financial services including health insurance, life insurance, and retirement planning solutions.',\n    address: {\n      '@type': 'PostalAddress',\n      addressLocality: 'United States',\n      addressCountry: 'US'\n    },\n    contactPoint: {\n      '@type': 'ContactPoint',\n      telephone: '+1-800-AMERUS',\n      contactType: 'customer service',\n      availableLanguage: 'English'\n    },\n    sameAs: [\n      'https://www.facebook.com/amerusfinancial',\n      'https://www.linkedin.com/company/amerus-financial',\n      'https://twitter.com/amerusfinancial'\n    ],\n    serviceArea: {\n      '@type': 'Country',\n      name: 'United States'\n    }\n  }\n}\n\n/**\n * Composable for consistent Service provider schema\n * Returns the organization object formatted for use in Service schema\n */\nexport const useServiceProvider = () => {\n  return useOrganizationSchema()\n}"
+        ],
+        "mappings": "AAIO,aAAM,wBAAwB,MAAM;AACzC,SAAO;AAAA,IACL,SAAS;AAAA,IACT,MAAM;AAAA,IACN,KAAK;AAAA,IACL,MAAM;AAAA,MACJ,SAAS;AAAA,MACT,KAAK;AAAA,MACL,OAAO;AAAA,MACP,QAAQ;AAAA,IACV;AAAA,IACA,aAAa;AAAA,IACb,SAAS;AAAA,MACP,SAAS;AAAA,MACT,iBAAiB;AAAA,MACjB,gBAAgB;AAAA,IAClB;AAAA,IACA,cAAc;AAAA,MACZ,SAAS;AAAA,MACT,WAAW;AAAA,MACX,aAAa;AAAA,MACb,mBAAmB;AAAA,IACrB;AAAA,IACA,QAAQ;AAAA,MACN;AAAA,MACA;AAAA,MACA;AAAA,IACF;AAAA,IACA,aAAa;AAAA,MACX,SAAS;AAAA,MACT,MAAM;AAAA,IACR;AAAA,EACF;AACF;AAMO,aAAM,qBAAqB,MAAM;AACtC,SAAO,sBAAsB;AAC/B;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251173107,
+      "end": 1761251173107,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251173107,
+      "end": 1761251173107,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251173108,
+      "end": 1761251173109,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251173109,
+      "end": 1761251173109,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251173113,
+      "end": 1761251173114,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251173113,
+      "end": 1761251173114,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251173114,
+      "end": 1761251173116,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251173114,
+      "end": 1761251173121,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251173121,
+      "end": 1761251173121,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251173122,
+      "end": 1761251173122,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251173124,
+      "end": 1761251173124,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251173140,
+      "end": 1761251173140,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251173140,
+      "end": 1761251173142,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251173144,
+      "end": 1761251173144,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251173147,
+      "end": 1761251173147,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251173147,
+      "end": 1761251173147,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251173147,
+      "end": 1761251173148,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251173148,
+      "end": 1761251173148,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251173148,
+      "end": 1761251173148,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251173159,
+      "end": 1761251173159,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251173159,
+      "end": 1761251173159,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251173159,
+      "end": 1761251173159,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251173161,
+      "end": 1761251173161,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251173161,
+      "end": 1761251173161,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251173204,
+      "end": 1761251173207,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251173204,
+      "end": 1761251173207,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251173207,
+      "end": 1761251173207,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251173207,
+      "end": 1761251173207,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251173207,
+      "end": 1761251173207,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251173207,
+      "end": 1761251173207,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251173207,
+      "end": 1761251173207,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251173208,
+      "end": 1761251173208,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251173208,
+      "end": 1761251173208,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251173208,
+      "end": 1761251173209,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251173209,
+      "end": 1761251173209,
+      "order": "normal"
+    }
+  ]
+}

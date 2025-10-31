@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o as t,c as s,_ as r}from"./entry.Cl9EbFL9.js";const c={},n={class:"grid grid-cols-1 lg:grid-cols-2 gap-0 items-center"};function _(o,a,d,i,l,p){return t(),s("div",n,[r(o.$slots,"default")])}const u=e(c,[["render",_]]);export{u as default};

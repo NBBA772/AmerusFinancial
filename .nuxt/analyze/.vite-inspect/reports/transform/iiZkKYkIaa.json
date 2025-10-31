@@ -1,0 +1,234 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/layout/navbar.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'navbar',\n  setup(__props) {\n\n// import { userLogout } from \"~/composables/useAuth\";\n\n// import { ref } from \"@vue/reactivity\";\n\n// import { onClickOutside } from \"@vueuse/core\";\n\n// const hideActions = ref(true);\n// const userActions = ref(null);\n\n// onClickOutside(userActions, () => (hideActions.value = true));\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_MobileMenuButton = _resolveComponent(\"MobileMenuButton\")!\n  const _component_ClickableLogo = _resolveComponent(\"ClickableLogo\")!\n  const _component_MobileMenuContainer = _resolveComponent(\"MobileMenuContainer\")!\n  const _component_MenuList = _resolveComponent(\"MenuList\")!\n  const _component_MenuContainer = _resolveComponent(\"MenuContainer\")!\n\n  return (_openBlock(), _createBlock(_component_MenuContainer, null, {\n    default: _withCtx(() => [\n      _createVNode(_component_MobileMenuContainer, null, {\n        default: _withCtx(() => [\n          _createVNode(_component_MobileMenuButton),\n          _createVNode(_component_ClickableLogo)\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_MenuList)\n    ]),\n    _: 1\n  }))\n}\n}\n\n})",
+      "start": 1761251027831,
+      "end": 1761251027831
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251027832,
+      "end": 1761251027832,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251027832,
+      "end": 1761251027832,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251027836,
+      "end": 1761251027836,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251027836,
+      "end": 1761251027836,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251027836,
+      "end": 1761251027836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"navbar\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_MobileMenuButton = _resolveComponent(\"MobileMenuButton\");\n      const _component_ClickableLogo = _resolveComponent(\"ClickableLogo\");\n      const _component_MobileMenuContainer = _resolveComponent(\"MobileMenuContainer\");\n      const _component_MenuList = _resolveComponent(\"MenuList\");\n      const _component_MenuContainer = _resolveComponent(\"MenuContainer\");\n      return _openBlock(), _createBlock(_component_MenuContainer, null, {\n        default: _withCtx(() => [\n          _createVNode(_component_MobileMenuContainer, null, {\n            default: _withCtx(() => [\n              _createVNode(_component_MobileMenuButton),\n              _createVNode(_component_ClickableLogo)\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_MenuList)\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
+      "start": 1761251027838,
+      "end": 1761251029157,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/layout/navbar.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'navbar',\n  setup(__props) {\n\n// import { userLogout } from \"~/composables/useAuth\";\n\n// import { ref } from \"@vue/reactivity\";\n\n// import { onClickOutside } from \"@vueuse/core\";\n\n// const hideActions = ref(true);\n// const userActions = ref(null);\n\n// onClickOutside(userActions, () => (hideActions.value = true));\n\nreturn (_ctx: any,_cache: any) => {\n  const _component_MobileMenuButton = _resolveComponent(\"MobileMenuButton\")!\n  const _component_ClickableLogo = _resolveComponent(\"ClickableLogo\")!\n  const _component_MobileMenuContainer = _resolveComponent(\"MobileMenuContainer\")!\n  const _component_MenuList = _resolveComponent(\"MenuList\")!\n  const _component_MenuContainer = _resolveComponent(\"MenuContainer\")!\n\n  return (_openBlock(), _createBlock(_component_MenuContainer, null, {\n    default: _withCtx(() => [\n      _createVNode(_component_MobileMenuContainer, null, {\n        default: _withCtx(() => [\n          _createVNode(_component_MobileMenuButton),\n          _createVNode(_component_ClickableLogo)\n        ]),\n        _: 1\n      }),\n      _createVNode(_component_MenuList)\n    ]),\n    _: 1\n  }))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,oBAAoB,mBAAmB,eAAe,cAAc,WAAW,UAAU,aAAa,YAAY,eAAe,oBAAoB;AAG9J,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAajB,WAAO,CAAC,MAAU,WAAgB;AAChC,YAAM,8BAA8B,kBAAkB,kBAAkB;AACxE,YAAM,2BAA2B,kBAAkB,eAAe;AAClE,YAAM,iCAAiC,kBAAkB,qBAAqB;AAC9E,YAAM,sBAAsB,kBAAkB,UAAU;AACxD,YAAM,2BAA2B,kBAAkB,eAAe;AAElE,aAAQ,WAAW,GAAG,aAAa,0BAA0B,MAAM;AAAA,QACjE,SAAS,SAAS,MAAM;AAAA,UACtB,aAAa,gCAAgC,MAAM;AAAA,YACjD,SAAS,SAAS,MAAM;AAAA,cACtB,aAAa,2BAA2B;AAAA,cACxC,aAAa,wBAAwB;AAAA,YACvC,CAAC;AAAA,YACD,GAAG;AAAA,UACL,CAAC;AAAA,UACD,aAAa,mBAAmB;AAAA,QAClC,CAAC;AAAA,QACD,GAAG;AAAA,MACL,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251029157,
+      "end": 1761251029157,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251029157,
+      "end": 1761251029157,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1761251029157,
+      "end": 1761251029157,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251029157,
+      "end": 1761251029158,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029158,
+      "end": 1761251029158,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251029158,
+      "end": 1761251029158,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251029158,
+      "end": 1761251029158,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251029158,
+      "end": 1761251029158,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251029158,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251029159,
+      "end": 1761251029159,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251029159,
+      "end": 1761251029160,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251029160,
+      "end": 1761251029160,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251029160,
+      "end": 1761251029160,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251029160,
+      "end": 1761251029160,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251029160,
+      "end": 1761251029160,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/menu/MobileMenuButton.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/menu/ClickableLogo.vue\";\nimport { default as __nuxt_component_2 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/containers/MobileMenuContainer.vue\";\nimport { default as __nuxt_component_3 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/menu/MenuList.vue\";\nimport { default as __nuxt_component_4 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/containers/MenuContainer.vue\";\nimport { defineComponent as _defineComponent } from \"vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"navbar\",\n  setup(__props) {\n    return (_ctx, _cache) => {\n      const _component_MobileMenuButton = __nuxt_component_0;\n      const _component_ClickableLogo = __nuxt_component_1;\n      const _component_MobileMenuContainer = __nuxt_component_2;\n      const _component_MenuList = __nuxt_component_3;\n      const _component_MenuContainer = __nuxt_component_4;\n      return _openBlock(), _createBlock(_component_MenuContainer, null, {\n        default: _withCtx(() => [\n          _createVNode(_component_MobileMenuContainer, null, {\n            default: _withCtx(() => [\n              _createVNode(_component_MobileMenuButton),\n              _createVNode(_component_ClickableLogo)\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_MenuList)\n        ]),\n        _: 1\n      });\n    };\n  }\n});\n",
+      "start": 1761251029160,
+      "end": 1761251029161,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251029161,
+      "end": 1761251029161,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251029161,
+      "end": 1761251029161,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251029161,
+      "end": 1761251029161,
+      "order": "normal"
+    }
+  ]
+}

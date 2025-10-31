@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhatWeProvideSection..vue?nuxt_component=async&nuxt_component_name=WhatWeProvideSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <!-- <NuxtImg\n          format=\"webp\"\n          src=\"/images/happy-kids.jpg\"\n          sizes=\"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          loading=\"lazy\"\n        /> -->\n        <video controls>\n          <source\n            src=\"/videos/Amerus-Financial-Group-Insurance-Agency.mp4\"\n            type=\"video/mp4\"\n          />\n          Your browser does not support the video tag.\n        </video>\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n        <ParagraphDescription>\n          {{ IntroText.description }}\n        </ParagraphDescription>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline: \"What We Provide\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n    };\n  },\n};\n</script>",
+      "start": 1761251141372,
+      "end": 1761251141687,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141687,
+      "end": 1761251141687,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141687,
+      "end": 1761251141687,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141687,
+      "end": 1761251141688,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141687,
+      "end": 1761251141688,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141688,
+      "end": 1761251141688,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141688,
+      "end": 1761251141688,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141688,
+      "end": 1761251141688,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141688,
+      "end": 1761251141688,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141688,
+      "end": 1761251141688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141688,
+      "end": 1761251141688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141688,
+      "end": 1761251141688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141688,
+      "end": 1761251141688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline: \"What We Provide\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n    };\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderComponent as _ssrRenderComponent, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\nimport _imports_0 from '/videos/Amerus-Financial-Group-Insurance-Agency.mp4'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n\n  _push(_ssrRenderComponent(_component_BasicSection, _mergeProps({ class: \"container mx-auto mt-20\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div class=\"px-4 sm:px-8\"${\n                _scopeId\n              }><video controls${\n                _scopeId\n              }><source${\n                _ssrRenderAttr(\"src\", _imports_0)\n              } type=\"video/mp4\"${\n                _scopeId\n              }> Your browser does not support the video tag. </video></div><div class=\"px-4 sm:px-8\"${\n                _scopeId\n              }>`)\n              _push(_ssrRenderComponent(_component_HeadlineTwo, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.Headline)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`${_ssrInterpolate($data.IntroText.description)}`)\n                  } else {\n                    return [\n                      _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div>`)\n            } else {\n              return [\n                _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                  _createVNode(\"video\", { controls: \"\" }, [\n                    _createVNode(\"source\", {\n                      src: _imports_0,\n                      type: \"video/mp4\"\n                    }),\n                    _createTextVNode(\" Your browser does not support the video tag. \")\n                  ])\n                ]),\n                _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                  _createVNode(_component_HeadlineTwo, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n                    ]),\n                    _: 1\n                  })\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n      } else {\n        return [\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                _createVNode(\"video\", { controls: \"\" }, [\n                  _createVNode(\"source\", {\n                    src: _imports_0,\n                    type: \"video/mp4\"\n                  }),\n                  _createTextVNode(\" Your browser does not support the video tag. \")\n                ])\n              ]),\n              _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                _createVNode(_component_HeadlineTwo, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.Headline), 1)\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(_toDisplayString($data.IntroText.description), 1)\n                  ]),\n                  _: 1\n                })\n              ])\n            ]),\n            _: 1\n          })\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/HomePage/WhatWeProvideSection..vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251141688,
+      "end": 1761251141694,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhatWeProvideSection..vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhatWeProvideSection..vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <!-- <NuxtImg\n          format=\"webp\"\n          src=\"/images/happy-kids.jpg\"\n          sizes=\"sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px\"\n          alt=\"Happy Kids\"\n          quality=\"80\"\n          loading=\"lazy\"\n        /> -->\n        <video controls>\n          <source\n            src=\"/videos/Amerus-Financial-Group-Insurance-Agency.mp4\"\n            type=\"video/mp4\"\n          />\n          Your browser does not support the video tag.\n        </video>\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo>{{ IntroText.Headline }}</HeadlineTwo>\n        <ParagraphDescription>\n          {{ IntroText.description }}\n        </ParagraphDescription>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"Ideal Customers Section\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      IntroText: {\n        SubHeading:\n          \"Secure Your Future: Amerus Financial Group - Your Independent Insurance Agency for Health, Annuities, Life, and Employee Benefits\",\n        Headline: \"What We Provide\",\n        description:\n          \"Amerus Financial Group operates as an independant insurance agency with a focus on Health Insurance, Annuities, Life Insurance, and Employee Benefits. Our goal is to forge lasting connections with our clients, a commitment facilitated by our outstanding customer service. In line with this, we proudly collaborate with premier carriers in the industry, specifically selecting those whose business ideals align seamlessly with ours.\",\n      },\n    };\n  },\n};\n</script>"
+        ],
+        "mappings": ";AA+BA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC/B,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAClB,CAAC;EACD,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACL,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACrI,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;UACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CA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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141694,
+      "end": 1761251141694,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141694,
+      "end": 1761251141694,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141694,
+      "end": 1761251141694,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141694,
+      "end": 1761251141694,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141694,
+      "end": 1761251141694,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhatWeProvideSection..vue\").then(r => r.default))",
+      "start": 1761251141694,
+      "end": 1761251141694,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141694,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141695,
+      "end": 1761251141695,
+      "order": "normal"
+    }
+  ]
+}

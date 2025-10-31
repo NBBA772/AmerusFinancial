@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/resources/NeedPersonalizedAssistance.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"bg-blue-50 rounded-lg p-6 border border-blue-100 my-12 max-w-5xl mx-auto\">\n    <div class=\"flex flex-col md:flex-row items-start md:items-center\">\n      <!-- Icon -->\n      <div class=\"mb-4 md:mb-0 md:mr-6\">\n        <div class=\"bg-white rounded-full p-3 inline-block\">\n          <Icon name=\"lucide-info\" class=\"h-8 w-8 text-[#30BCFE]\" />\n        </div>\n      </div>\n\n      <!-- Content -->\n      <div>\n        <h3 class=\"text-xl font-semibold mb-2\">Need Personalized Assistance?</h3>\n        <p class=\"text-gray-700 mb-4\">\n          Our team of insurance experts is ready to help you navigate these resources and find the right solutions for your specific needs.\n        </p>\n\n        <!-- Buttons -->\n        <div class=\"flex flex-wrap gap-3\">\n          <NuxtLink\n            to=\"/contact\"\n            class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-white h-10 px-4 py-2 bg-[#30BCFE] hover:bg-primary/90\"\n          >\n            Contact An Advisor\n          </NuxtLink>\n\n          <NuxtLink\n            to=\"/resources\"\n            class=\"router-link-active router-link-exact-active px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n          >\n            Contact an Agent\n          </NuxtLink>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n\n",
+      "start": 1761251024588,
+      "end": 1761251024641,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024641,
+      "end": 1761251024641,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024641,
+      "end": 1761251024641,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024641,
+      "end": 1761251024641,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024641,
+      "end": 1761251024641,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024641,
+      "end": 1761251024641,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024641,
+      "end": 1761251024641,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024641,
+      "end": 1761251024641,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024641,
+      "end": 1761251024641,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"bg-blue-50 rounded-lg p-6 border border-blue-100 my-12 max-w-5xl mx-auto\" }\nconst _hoisted_2 = { class: \"flex flex-col md:flex-row items-start md:items-center\" }\nconst _hoisted_3 = { class: \"mb-4 md:mb-0 md:mr-6\" }\nconst _hoisted_4 = { class: \"bg-white rounded-full p-3 inline-block\" }\nconst _hoisted_5 = /*#__PURE__*/_createElementVNode(\"h3\", { class: \"text-xl font-semibold mb-2\" }, \"Need Personalized Assistance?\", -1)\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-gray-700 mb-4\" }, \" Our team of insurance experts is ready to help you navigate these resources and find the right solutions for your specific needs. \", -1)\nconst _hoisted_7 = { class: \"flex flex-wrap gap-3\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_Icon = _resolveComponent(\"Icon\")\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createVNode(_component_Icon, {\n            name: \"lucide-info\",\n            class: \"h-8 w-8 text-[#30BCFE]\"\n          })\n        ])\n      ]),\n      _createElementVNode(\"div\", null, [\n        _hoisted_5,\n        _hoisted_6,\n        _createElementVNode(\"div\", _hoisted_7, [\n          _createVNode(_component_NuxtLink, {\n            to: \"/contact\",\n            class: \"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-white h-10 px-4 py-2 bg-[#30BCFE] hover:bg-primary/90\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" Contact An Advisor \")\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_NuxtLink, {\n            to: \"/resources\",\n            class: \"router-link-active router-link-exact-active px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" Contact an Agent \")\n            ]),\n            _: 1\n          })\n        ])\n      ])\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251024641,
+      "end": 1761251024642,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024642,
+      "end": 1761251024642,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt/dist/app/components/nuxt-link\";\nconst _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"bg-blue-50 rounded-lg p-6 border border-blue-100 my-12 max-w-5xl mx-auto\" }\nconst _hoisted_2 = { class: \"flex flex-col md:flex-row items-start md:items-center\" }\nconst _hoisted_3 = { class: \"mb-4 md:mb-0 md:mr-6\" }\nconst _hoisted_4 = { class: \"bg-white rounded-full p-3 inline-block\" }\nconst _hoisted_5 = /*#__PURE__*/_createElementVNode(\"h3\", { class: \"text-xl font-semibold mb-2\" }, \"Need Personalized Assistance?\", -1)\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-gray-700 mb-4\" }, \" Our team of insurance experts is ready to help you navigate these resources and find the right solutions for your specific needs. \", -1)\nconst _hoisted_7 = { class: \"flex flex-wrap gap-3\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_Icon = __nuxt_component_0\n  const _component_NuxtLink = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createVNode(_component_Icon, {\n            name: \"lucide-info\",\n            class: \"h-8 w-8 text-[#30BCFE]\"\n          })\n        ])\n      ]),\n      _createElementVNode(\"div\", null, [\n        _hoisted_5,\n        _hoisted_6,\n        _createElementVNode(\"div\", _hoisted_7, [\n          _createVNode(_component_NuxtLink, {\n            to: \"/contact\",\n            class: \"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-white h-10 px-4 py-2 bg-[#30BCFE] hover:bg-primary/90\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" Contact An Advisor \")\n            ]),\n            _: 1\n          }),\n          _createVNode(_component_NuxtLink, {\n            to: \"/resources\",\n            class: \"router-link-active router-link-exact-active px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors\"\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\" Contact an Agent \")\n            ]),\n            _: 1\n          })\n        ])\n      ])\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251024642,
+      "end": 1761251024643,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024643,
+      "end": 1761251024643,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024643,
+      "end": 1761251024643,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024643,
+      "end": 1761251024643,
+      "order": "normal"
+    }
+  ]
+}

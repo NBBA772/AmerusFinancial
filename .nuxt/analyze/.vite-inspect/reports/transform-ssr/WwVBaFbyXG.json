@@ -1,0 +1,314 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/GptChat.vue?vue&type=style&index=0&scoped=ab744c0b&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n/* Add any additional styling here */\n",
+      "start": 1761251158904,
+      "end": 1761251158979,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/GptChat.vue"
+        ],
+        "names": [],
+        "mappings": ";AA8DA,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC",
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/GptChat.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div class=\"w-full p-4 mx-auto my-8\">\n    <div class=\"bg-gray-300 dark:bg-gray-600 p-8 my-8\">\n      <div v-for=\"message in messages\" :key=\"message.id\" class=\"mb-4\">\n        <div v-if=\"message.sender === 'user'\" class=\"text-right\">\n          <span class=\"bg-blue-500 text-white p-2 rounded-lg\">{{\n            message.text\n          }}</span>\n        </div>\n        <div v-else>\n          <span class=\"bg-gray-300 text-white p-2 rounded-lg\">{{\n            message.text\n          }}</span>\n        </div>\n      </div>\n    </div>\n    <div class=\"flex\">\n      <input\n        v-model=\"newMessage\"\n        @keydown.enter.prevent=\"sendMessage\"\n        type=\"text\"\n        class=\"flex-1 p-2 bg-gray-300 dark:bg-gray-600\"\n        placeholder=\"Type your response...\"\n      />\n      <button\n        @click=\"sendMessage\"\n        class=\"ml-2 p-2 bg-blue-500 text-white rounded\"\n      >\n        Send\n      </button>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      messages: [\n        { id: 1, text: \"Hello!\", sender: \"user\" },\n        { id: 2, text: \"Hi there!\", sender: \"system\" },\n      ],\n      newMessage: \"\",\n    };\n  },\n  methods: {\n    sendMessage() {\n      if (this.newMessage.trim() === \"\") return;\n\n      this.messages.push({\n        id: this.messages.length + 1,\n        text: this.newMessage,\n        sender: \"user\",\n      });\n\n      this.newMessage = \"\";\n    },\n  },\n};\n</script>\n\n<style scoped>\n/* Add any additional styling here */\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159003,
+      "end": 1761251159007,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251159003,
+      "end": 1761251159009,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159024,
+      "end": 1761251159024,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251159024,
+      "end": 1761251159025,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159042,
+      "end": 1761251159050,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251159042,
+      "end": 1761251159050,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251159063,
+      "end": 1761251159063,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251159063,
+      "end": 1761251159064,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "",
+      "start": 1761251159064,
+      "end": 1761251159157,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/GptChat.vue",
+        "mappings": "",
+        "names": [],
+        "sources": [],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251159158,
+      "end": 1761251159158,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251159158,
+      "end": 1761251159158,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251159158,
+      "end": 1761251159158,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "",
+      "start": 1761251159158,
+      "end": 1761251159158,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/GptChat.vue",
+        "mappings": "",
+        "names": [],
+        "sources": [],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251159158,
+      "end": 1761251159158,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251159158,
+      "end": 1761251159158,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251159158,
+      "end": 1761251159158,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251159158,
+      "end": 1761251159158,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251159158,
+      "end": 1761251159158,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251159158,
+      "end": 1761251159158,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251159159,
+      "end": 1761251159159,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251159159,
+      "end": 1761251159169,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251159169,
+      "end": 1761251159169,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1761251159169,
+      "end": 1761251159169,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251159169,
+      "end": 1761251159169,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251159169,
+      "end": 1761251159169,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251159169,
+      "end": 1761251159169,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251159169,
+      "end": 1761251159169,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251159169,
+      "end": 1761251159169,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251159169,
+      "end": 1761251159169,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251159169,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251159169,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251159170,
+      "end": 1761251159170,
+      "order": "normal"
+    }
+  ]
+}

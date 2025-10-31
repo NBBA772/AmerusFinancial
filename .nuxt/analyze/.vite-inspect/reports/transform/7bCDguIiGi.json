@@ -1,0 +1,226 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/RetirementBreakdown.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<!-- components/RetirementBreakdown.vue -->\n<template>\n  <div v-if=\"result\" class=\"mt-8 bg-white shadow-lg rounded-xl p-6\">\n    <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\">\n      <!-- Current Retirement Plan -->\n      <div class=\"space-y-4\">\n        <p class=\"text-lg font-semibold text-gray-700\">Current Retirement Plan</p>\n        <div class=\"border-t border-gray-200 pt-2 flex justify-between\">\n          <span>Total retirement savings</span>\n          <span class=\"font-bold text-gray-900\">${{ formattedHave }}</span>\n        </div>\n        <div class=\"border-t border-gray-200 pt-2 flex justify-between\">\n          <span>Monthly contribution</span>\n          <span class=\"font-bold text-gray-900\">${{ monthlyContribution.toLocaleString() }}</span>\n        </div>\n        <div class=\"border-t border-gray-200 pt-2 flex justify-between\">\n          <span>Age retirement savings runs out</span>\n          <span class=\"font-bold text-gray-900\">{{ ageSavingsRunsOutCurrent }}</span>\n        </div>\n      </div>\n\n      <!-- Target Retirement Plan -->\n      <div class=\"space-y-4\">\n        <p class=\"text-lg font-semibold text-gray-700\">Target Retirement Plan</p>\n        <div class=\"border-t border-gray-200 pt-2 flex justify-between\">\n          <span>Total retirement savings</span>\n          <span class=\"font-bold text-gray-900\">${{ formattedNeed }}</span>\n        </div>\n        <div class=\"border-t border-gray-200 pt-2 flex justify-between items-center\">\n          <span>Monthly contribution</span>\n          <span class=\"font-bold text-gray-900\">${{ suggestedContribution.toLocaleString() }}</span>\n        </div>\n        <div class=\"border-t border-gray-200 pt-2 flex justify-between\">\n          <span>Age retirement savings runs out</span>\n          <span class=\"font-bold text-gray-900\">{{ ageSavingsRunsOutTarget }}</span>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script setup>\nimport { ref, computed } from 'vue'\n\n// Props from the calculator or parent component\ndefineProps({\n  result: Boolean,\n  formattedHave: String,\n  formattedNeed: String,\n  monthlyContribution: Number,\n  suggestedContribution: Number,\n  ageSavingsRunsOutCurrent: Number,\n  ageSavingsRunsOutTarget: Number,\n})\n</script>\n",
+      "start": 1761251024147,
+      "end": 1761251024310,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024310,
+      "end": 1761251024310,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024310,
+      "end": 1761251024310,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024310,
+      "end": 1761251024310,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024310,
+      "end": 1761251024310,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024310,
+      "end": 1761251024310,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024310,
+      "end": 1761251024310,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024310,
+      "end": 1761251024310,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024310,
+      "end": 1761251024310,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = {\n  key: 0,\n  class: \"mt-8 bg-white shadow-lg rounded-xl p-6\"\n}\nconst _hoisted_2 = { class: \"grid grid-cols-1 md:grid-cols-2 gap-6\" }\nconst _hoisted_3 = { class: \"space-y-4\" }\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-lg font-semibold text-gray-700\" }, \"Current Retirement Plan\", -1)\nconst _hoisted_5 = { class: \"border-t border-gray-200 pt-2 flex justify-between\" }\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"span\", null, \"Total retirement savings\", -1)\nconst _hoisted_7 = { class: \"font-bold text-gray-900\" }\nconst _hoisted_8 = { class: \"border-t border-gray-200 pt-2 flex justify-between\" }\nconst _hoisted_9 = /*#__PURE__*/_createElementVNode(\"span\", null, \"Monthly contribution\", -1)\nconst _hoisted_10 = { class: \"font-bold text-gray-900\" }\nconst _hoisted_11 = { class: \"border-t border-gray-200 pt-2 flex justify-between\" }\nconst _hoisted_12 = /*#__PURE__*/_createElementVNode(\"span\", null, \"Age retirement savings runs out\", -1)\nconst _hoisted_13 = { class: \"font-bold text-gray-900\" }\nconst _hoisted_14 = { class: \"space-y-4\" }\nconst _hoisted_15 = /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-lg font-semibold text-gray-700\" }, \"Target Retirement Plan\", -1)\nconst _hoisted_16 = { class: \"border-t border-gray-200 pt-2 flex justify-between\" }\nconst _hoisted_17 = /*#__PURE__*/_createElementVNode(\"span\", null, \"Total retirement savings\", -1)\nconst _hoisted_18 = { class: \"font-bold text-gray-900\" }\nconst _hoisted_19 = { class: \"border-t border-gray-200 pt-2 flex justify-between items-center\" }\nconst _hoisted_20 = /*#__PURE__*/_createElementVNode(\"span\", null, \"Monthly contribution\", -1)\nconst _hoisted_21 = { class: \"font-bold text-gray-900\" }\nconst _hoisted_22 = { class: \"border-t border-gray-200 pt-2 flex justify-between\" }\nconst _hoisted_23 = /*#__PURE__*/_createElementVNode(\"span\", null, \"Age retirement savings runs out\", -1)\nconst _hoisted_24 = { class: \"font-bold text-gray-900\" }\n\nimport { ref, computed } from 'vue'\n\n// Props from the calculator or parent component\n\nconst _sfc_main = {\n  __name: 'RetirementBreakdown',\n  props: {\n  result: Boolean,\n  formattedHave: String,\n  formattedNeed: String,\n  monthlyContribution: Number,\n  suggestedContribution: Number,\n  ageSavingsRunsOutCurrent: Number,\n  ageSavingsRunsOutTarget: Number,\n},\n  setup(__props) {\n\n\n\nreturn (_ctx, _cache) => {\n  return (__props.result)\n    ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"div\", _hoisted_3, [\n            _hoisted_4,\n            _createElementVNode(\"div\", _hoisted_5, [\n              _hoisted_6,\n              _createElementVNode(\"span\", _hoisted_7, \"$\" + _toDisplayString(__props.formattedHave), 1)\n            ]),\n            _createElementVNode(\"div\", _hoisted_8, [\n              _hoisted_9,\n              _createElementVNode(\"span\", _hoisted_10, \"$\" + _toDisplayString(__props.monthlyContribution.toLocaleString()), 1)\n            ]),\n            _createElementVNode(\"div\", _hoisted_11, [\n              _hoisted_12,\n              _createElementVNode(\"span\", _hoisted_13, _toDisplayString(__props.ageSavingsRunsOutCurrent), 1)\n            ])\n          ]),\n          _createElementVNode(\"div\", _hoisted_14, [\n            _hoisted_15,\n            _createElementVNode(\"div\", _hoisted_16, [\n              _hoisted_17,\n              _createElementVNode(\"span\", _hoisted_18, \"$\" + _toDisplayString(__props.formattedNeed), 1)\n            ]),\n            _createElementVNode(\"div\", _hoisted_19, [\n              _hoisted_20,\n              _createElementVNode(\"span\", _hoisted_21, \"$\" + _toDisplayString(__props.suggestedContribution.toLocaleString()), 1)\n            ]),\n            _createElementVNode(\"div\", _hoisted_22, [\n              _hoisted_23,\n              _createElementVNode(\"span\", _hoisted_24, _toDisplayString(__props.ageSavingsRunsOutTarget), 1)\n            ])\n          ])\n        ])\n      ]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1761251024310,
+      "end": 1761251024311,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024311,
+      "end": 1761251024311,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024311,
+      "end": 1761251024312,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024312,
+      "end": 1761251024312,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024312,
+      "end": 1761251024312,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024312,
+      "end": 1761251024312,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024312,
+      "end": 1761251024312,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251024312,
+      "end": 1761251024313,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024313,
+      "end": 1761251024313,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024313,
+      "end": 1761251024313,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024313,
+      "end": 1761251024313,
+      "order": "normal"
+    }
+  ]
+}

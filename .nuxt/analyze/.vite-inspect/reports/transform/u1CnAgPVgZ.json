@@ -1,0 +1,235 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/PrivacyPolicy.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <PatternSection>\n    <BasicSection class=\"container mx-auto mt-20\">\n      <HeadlineOneHero>Amerus Financial Privacy Policy</HeadlineOneHero>\n      This privacy policy has been compiled to better serve those who are\n      concerned with how their ‘Personally Identifiable Information’ (PII) is\n      being used online. PII, as described in US privacy law and information\n      security, is information that can be used on its own or with other\n      information to identify, contact, or locate a single person, or to\n      identify an individual in context. Please read our privacy policy\n      carefully to get a clear understanding of how we collect, use, protect or\n      otherwise handle your Personally Identifiable Information in accordance\n      with our website. What personal information do we collect from the people\n      that visit our blog, website or app? When ordering or registering on our\n      site, as appropriate, you may be asked to enter your name, email address,\n      mailing address, phone number, credit card information, social security\n      number or other details to help you with your experience.\n\n      <HeadlineTwo>When do we collect information?</HeadlineTwo>\n      We collect information from you when you register on our site, place an\n      order, fill out a form or enter information on our site. How do we use\n      your information? We may use the information we collect from you when you\n      register, make a purchase, sign up for our newsletter, respond to a survey\n      or marketing communication, surf the website, or use certain other site\n      features in the following ways: To allow us to better service you in\n      responding to your customer service requests. To quickly process your\n      transactions.\n      <HeadlineTwo>How do we protect your information?</HeadlineTwo>\n      Our website is scanned on a regular basis for security holes and known\n      vulnerabilities in order to make your visit to our site as safe as\n      possible.\n\n      <HeadlineTwo>We use regular Malware Scanning.</HeadlineTwo>\n      Your personal information is contained behind secured networks and is only\n      accessible by a limited number of persons who have special access rights\n      to such systems, and are required to keep the information confidential. In\n      addition, all sensitive/credit information you supply is encrypted via\n      Secure Socket Layer (SSL) technology. We implement a variety of security\n      measures when a user places an order enters, submits, or accesses their\n      information to maintain the safety of your personal information. All\n      transactions are processed through a gateway provider and are not stored\n      or processed on our servers.\n\n      <HeadlineTwo>Do we use ‘cookies’?</HeadlineTwo>\n      Yes. Cookies are small files that a site or its service provider transfers\n      to your computer’s hard drive through your Web browser (if you allow) that\n      enables the site’s or service provider’s systems to recognize your browser\n      and capture and remember certain information. For instance, we use cookies\n      to help us remember and process the items in your shopping cart. They are\n      also used to help us understand your preferences based on previous or\n      current site activity, which enables us to provide you with improved\n      services. We also use cookies to help us compile aggregate data about site\n      traffic and site interaction so that we can offer better site experiences\n      and tools in the future.\n\n      <HeadlineTwo>We use cookies to:</HeadlineTwo>\n      Help remember and process the items in the shopping cart. Understand and\n      save user’s preferences for future visits. Compile aggregate data about\n      site traffic and site interactions in order to offer better site\n      experiences and tools in the future. We may also use trusted third-party\n      services that track this information on our behalf. You can choose to have\n      your computer warn you each time a cookie is being sent, or you can choose\n      to turn off all cookies. You do this through your browser settings. Since\n      browser is a little different, look at your browser’s Help Menu to learn\n      the correct way to modify your cookies. If you turn cookies off, Some of\n      the features that make your site experience more efficient may not\n      function properly. It won’t affect the user’s experience that make your\n      site experience more efficient and may not function properly.\n\n      <HeadlineTwo>Third-party disclosure</HeadlineTwo>\n      We do not sell, trade, or otherwise transfer to outside parties your\n      Personally Identifiable Information.\n\n      <HeadlineTwo>Third-party links</HeadlineTwo>\n      Occasionally, at our discretion, we may include or offer third-party\n      products or services on our website. These third-party sites have separate\n      and independent privacy policies. We therefore have no responsibility or\n      liability for the content and activities of these linked sites.\n      Nonetheless, we seek to protect the integrity of our site and welcome any\n      feedback about these sites.\n\n      <HeadlineTwo>Google</HeadlineTwo>\n      Google’s advertising requirements can be summed up by Google’s Advertising\n      Principles. They are put in place to provide a positive experience for\n      users. https://support.google.com/adwordspolicy/answer/1316548?hl=en We\n      use Google AdSense Advertising on our website. Google, as a third-party\n      vendor, uses cookies to serve ads on our site. Google’s use of the DART\n      cookie enables it to serve ads to our users based on previous visits to\n      our site and other sites on the Internet. Users may opt-out of the use of\n      the DART cookie by visiting the Google Ad and Content Network privacy\n      policy.\n\n      <HeadlineTwo>We have implemented the following:</HeadlineTwo>\n      Demographics and Interests Reporting We, along with third-party vendors\n      such as Google use first-party cookies (such as the Google Analytics\n      cookies) and third-party cookies (such as the DoubleClick cookie) or other\n      third-party identifiers together to compile data regarding user\n      interactions with ad impressions and other ad service functions as they\n      relate to our website.\n\n      <HeadlineTwo>Opting out:</HeadlineTwo>\n      Users can set preferences for how Google advertises to you using the\n      Google Ad Settings page. Alternatively, you can opt out by visiting the\n      Network Advertising Initiative opt out page or by using the Google\n      Analytics opt out Browser add on. California Online Privacy Protection\n      ActCalOPPA is the first state law in the nation to require commercial\n      websites and online services to post a privacy policy. The law’s reach\n      stretches well beyond California to require any person or company in the\n      United States (and conceivably the world) that operates websites\n      collecting Personally Identifiable Information from California consumers\n      to post a conspicuous privacy policy on its website stating exactly the\n      information being collected and those individuals or companies with whom\n      it is being shared. – See more at:\n      http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpufAccording\n      to CalOPPA, we agree to the following:\n\n      <HeadlineTwo>Users can visit our site anonymously.</HeadlineTwo>\n      Once this privacy policy is created, we will add a link to it on our home\n      page or as a minimum, on the first significant page after entering our\n      website. Our Privacy Policy link includes the word ‘Privacy’ and can\n      easily be found on the page specified above. You will be notified of any\n      Privacy Policy changes: On our Privacy Policy Page\n      <HeadlineTwo>Can change your personal information:</HeadlineTwo>\n      By emailing us By calling us By logging in to your account\n      <HeadlineTwo>How does our site handle Do Not Track signals?</HeadlineTwo>\n      We honor Do Not Track signals and Do Not Track, plant cookies, or use\n      advertising when a Do Not Track (DNT) browser mechanism is in place.\n\n      <HeadlineTwo\n        >Does our site allow third-party behavioral tracking?</HeadlineTwo\n      >\n      It’s also important to note that we do not allow third-party behavioral\n      tracking COPPA (Children Online Privacy Protection Act)When it comes to\n      the collection of personal information from children under the age of 13\n      years old, the Children’s Online Privacy Protection Act (COPPA) puts\n      parents in control. The Federal Trade Commission, United States’ consumer\n      protection agency, enforces the COPPA Rule, which spells out what\n      operators of websites and online services must do to protect children’s\n      privacy and safety online. We do not specifically market to children under\n      the age of 13 years old.\n\n      <HeadlineTwo>Fair Information Practices</HeadlineTwo>\n      The Fair Information Practices Principles form the backbone of privacy law\n      in the United States and the concepts they include have played a\n      significant role in the development of data protection laws around the\n      globe. Understanding the Fair Information Practice Principles and how they\n      should be implemented is critical to comply with the various privacy laws\n      that protect personal information. In order to be in line with Fair\n      Information Practices we will take the following responsive action, should\n      a data breach occur:\n\n      <HeadlineTwo>We will notify you via email</HeadlineTwo>\n      Within 1 business day\n      <HeadlineTwo>We will notify you via letter</HeadlineTwo>\n      Within 7 business days We also agree to the Individual Redress Principle\n      which requires that individuals have the right to legally pursue\n      enforceable rights against data collectors and processors who fail to\n      adhere to the law. This principle requires not only that individuals have\n      enforceable rights against data users, but also that individuals have\n      recourse to courts or government agencies to investigate and/or prosecute\n      non-compliance by data processors.\n\n      <HeadlineTwo>CAN SPAM Act</HeadlineTwo>\n      The CAN-SPAM Act is a law that sets the rules for commercial email,\n      establishes requirements for commercial messages, gives recipients the\n      right to have emails stopped from being sent to them, and spells out tough\n      penalties for violations.\n\n      <HeadlineTwo>We collect your email address in order to:</HeadlineTwo>\n      Send information, respond to inquiries, and/or other requests or questions\n      Process orders and to send information and updates pertaining to orders.\n      Send you additional information related to your product and/or service\n      Market to our mailing list or continue to send emails to our clients after\n      the original transaction has occurred.\n      <HeadlineTwo\n        >To be in accordance with CANSPAM, we agree to the\n        following:</HeadlineTwo\n      >\n      Not use false or misleading subjects or email addresses. Identify the\n      message as an advertisement in some reasonable way. Include the physical\n      address of our business or site headquarters. Monitor third-party email\n      marketing services for compliance, if one is used. Honor\n      opt-out/unsubscribe requests quickly. Allow users to unsubscribe by using\n      the link at the bottom of each email. If at any time you would like to\n      unsubscribe from receiving future emails, you can email us a Follow the\n      instructions at the bottom of each email. and we will promptly remove you\n      from ALL correspondence.\n\n      <HeadlineTwo>Contacting Us</HeadlineTwo>\n      If there are any questions regarding this privacy policy, you may contact\n      us using the information below. http://www.amerusfinancial.com\n      <pre>\n215 Imperial Blvd Suite A1\n\nLakeland, FL 33803\n\nUnited States\n</pre\n      >\n      support@AmerusFinancial.com(888) 441-7891\n      <!-- <CustomerReviewSection /> -->\n    </BasicSection>\n  </PatternSection>\n</template>",
+      "start": 1761251025142,
+      "end": 1761251025261,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251025261,
+      "end": 1761251025261,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251025261,
+      "end": 1761251025261,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251025261,
+      "end": 1761251025261,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251025261,
+      "end": 1761251025261,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251025261,
+      "end": 1761251025261,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251025261,
+      "end": 1761251025261,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251025261,
+      "end": 1761251025261,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251025261,
+      "end": 1761251025261,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"pre\", null, \"215 Imperial Blvd Suite A1\\n\\nLakeland, FL 33803\\n\\nUnited States\\n\", -1)\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_HeadlineOneHero = _resolveComponent(\"HeadlineOneHero\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n  const _component_PatternSection = _resolveComponent(\"PatternSection\")\n\n  return (_openBlock(), _createBlock(_component_PatternSection, null, {\n    default: _withCtx(() => [\n      _createVNode(_component_BasicSection, { class: \"container mx-auto mt-20\" }, {\n        default: _withCtx(() => [\n          _createVNode(_component_HeadlineOneHero, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Amerus Financial Privacy Policy\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" This privacy policy has been compiled to better serve those who are concerned with how their ‘Personally Identifiable Information’ (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website. What personal information do we collect from the people that visit our blog, website or app? When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, phone number, credit card information, social security number or other details to help you with your experience. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"When do we collect information?\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" We collect information from you when you register on our site, place an order, fill out a form or enter information on our site. How do we use your information? We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways: To allow us to better service you in responding to your customer service requests. To quickly process your transactions. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"How do we protect your information?\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"We use regular Malware Scanning.\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology. We implement a variety of security measures when a user places an order enters, submits, or accesses their information to maintain the safety of your personal information. All transactions are processed through a gateway provider and are not stored or processed on our servers. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Do we use ‘cookies’?\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Yes. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow) that enables the site’s or service provider’s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"We use cookies to:\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Help remember and process the items in the shopping cart. Understand and save user’s preferences for future visits. Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf. You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser’s Help Menu to learn the correct way to modify your cookies. If you turn cookies off, Some of the features that make your site experience more efficient may not function properly. It won’t affect the user’s experience that make your site experience more efficient and may not function properly. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Third-party disclosure\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Third-party links\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Occasionally, at our discretion, we may include or offer third-party products or services on our website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Google\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Google’s advertising requirements can be summed up by Google’s Advertising Principles. They are put in place to provide a positive experience for users. https://support.google.com/adwordspolicy/answer/1316548?hl=en We use Google AdSense Advertising on our website. Google, as a third-party vendor, uses cookies to serve ads on our site. Google’s use of the DART cookie enables it to serve ads to our users based on previous visits to our site and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the Google Ad and Content Network privacy policy. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"We have implemented the following:\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Demographics and Interests Reporting We, along with third-party vendors such as Google use first-party cookies (such as the Google Analytics cookies) and third-party cookies (such as the DoubleClick cookie) or other third-party identifiers together to compile data regarding user interactions with ad impressions and other ad service functions as they relate to our website. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Opting out:\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Users can set preferences for how Google advertises to you using the Google Ad Settings page. Alternatively, you can opt out by visiting the Network Advertising Initiative opt out page or by using the Google Analytics opt out Browser add on. California Online Privacy Protection ActCalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law’s reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. – See more at: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpufAccording to CalOPPA, we agree to the following: \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Users can visit our site anonymously.\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Once this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant page after entering our website. Our Privacy Policy link includes the word ‘Privacy’ and can easily be found on the page specified above. You will be notified of any Privacy Policy changes: On our Privacy Policy Page \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Can change your personal information:\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" By emailing us By calling us By logging in to your account \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"How does our site handle Do Not Track signals?\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Does our site allow third-party behavioral tracking?\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" It’s also important to note that we do not allow third-party behavioral tracking COPPA (Children Online Privacy Protection Act)When it comes to the collection of personal information from children under the age of 13 years old, the Children’s Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, United States’ consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children’s privacy and safety online. We do not specifically market to children under the age of 13 years old. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Fair Information Practices\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information. In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur: \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"We will notify you via email\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Within 1 business day \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"We will notify you via letter\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Within 7 business days We also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government agencies to investigate and/or prosecute non-compliance by data processors. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"CAN SPAM Act\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"We collect your email address in order to:\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Send information, respond to inquiries, and/or other requests or questions Process orders and to send information and updates pertaining to orders. Send you additional information related to your product and/or service Market to our mailing list or continue to send emails to our clients after the original transaction has occurred. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"To be in accordance with CANSPAM, we agree to the following:\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" Not use false or misleading subjects or email addresses. Identify the message as an advertisement in some reasonable way. Include the physical address of our business or site headquarters. Monitor third-party email marketing services for compliance, if one is used. Honor opt-out/unsubscribe requests quickly. Allow users to unsubscribe by using the link at the bottom of each email. If at any time you would like to unsubscribe from receiving future emails, you can email us a Follow the instructions at the bottom of each email. and we will promptly remove you from ALL correspondence. \"),\n          _createVNode(_component_HeadlineTwo, null, {\n            default: _withCtx(() => [\n              _createTextVNode(\"Contacting Us\")\n            ]),\n            _: 1\n          }),\n          _createTextVNode(\" If there are any questions regarding this privacy policy, you may contact us using the information below. http://www.amerusfinancial.com \"),\n          _hoisted_1,\n          _createTextVNode(\" support@AmerusFinancial.com(888) 441-7891 \")\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251025261,
+      "end": 1761251025263,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251025263,
+      "end": 1761251025263,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251025263,
+      "end": 1761251025267,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251025267,
+      "end": 1761251025267,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1761251025267,
+      "end": 1761251025268,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251025268,
+      "end": 1761251025268,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251025268,
+      "end": 1761251025268,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251025268,
+      "end": 1761251025268,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251025268,
+      "end": 1761251025268,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251025268,
+      "end": 1761251025268,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251025268,
+      "end": 1761251025268,
+      "order": "normal"
+    }
+  ]
+}

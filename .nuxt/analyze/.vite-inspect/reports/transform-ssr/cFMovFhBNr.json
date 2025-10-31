@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/MedicarePage/MedicareInsuranceFrequentlyAskedQuestions.vue?nuxt_component=async&nuxt_component_name=MedicareInsuranceFrequentlyAskedQuestions",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"text-center\">\n      <HeadlineTwo>Frequently Asked Questions</HeadlineTwo>\n    </div>\n    <div class=\"accordion\">\n      <div>\n        <div class=\"accordion-item\" v-for=\"(item, index) in items\" :key=\"index\">\n          <ParagraphDescription\n            class=\"accordion-header font-extrabold\"\n            @click=\"toggleItem(index)\"\n          >\n            {{ item.title }}\n          </ParagraphDescription>\n          <Transition name=\"slide\">\n            <div\n              class=\"accordion-body bg-blue-100\"\n              :class=\"{ hidden: !isActive(index) }\"\n            >\n              {{ item.content }}\n            </div>\n          </Transition>\n        </div>\n      </div>\n    </div>\n  </BasicSection>\n</template>\n\n\n<script>\nexport default {\n  name: \"HealthcareFrequentlyAskedQuestions\",\n  props: {\n    items: {\n      type: Array,\n      required: true,\n    },\n    active: {\n      type: Number,\n      default: null,\n    },\n  },\n  data() {\n    return {\n      activeItem: this.active,\n    };\n  },\n  methods: {\n    toggleItem(index) {\n      if (this.activeItem === index) {\n        this.activeItem = null; // Close the currently open item\n      } else {\n        this.activeItem = index; // Open the clicked item\n      }\n    },\n    isActive(index) {\n      return this.activeItem === index;\n    },\n  },\n};\n</script>\n\n\n<style>\n.slide-enter-active,\n.slide-leave-active {\n  transition: height 0.5s ease;\n}\n.slide-enter,\n.slide-leave-to {\n  height: 0;\n  overflow: hidden;\n}\n.accordion {\n  border: 1px solid #ccc;\n  margin-bottom: 1rem;\n}\n\n.accordion-item {\n  border-bottom: 1px solid #ccc;\n}\n\n.accordion-header {\n  cursor: pointer;\n  padding: 1rem;\n}\n\n.accordion-body {\n  padding: 1rem;\n}\n</style>\n",
+      "start": 1761251141687,
+      "end": 1761251141939,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141939,
+      "end": 1761251141939,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141939,
+      "end": 1761251141939,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141939,
+      "end": 1761251141939,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141939,
+      "end": 1761251141939,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141939,
+      "end": 1761251141939,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141939,
+      "end": 1761251141939,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141939,
+      "end": 1761251141939,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141939,
+      "end": 1761251141940,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141940,
+      "end": 1761251141940,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141940,
+      "end": 1761251141940,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141940,
+      "end": 1761251141940,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141940,
+      "end": 1761251141940,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"HealthcareFrequentlyAskedQuestions\",\n  props: {\n    items: {\n      type: Array,\n      required: true,\n    },\n    active: {\n      type: Number,\n      default: null,\n    },\n  },\n  data() {\n    return {\n      activeItem: this.active,\n    };\n  },\n  methods: {\n    toggleItem(index) {\n      if (this.activeItem === index) {\n        this.activeItem = null; // Close the currently open item\n      } else {\n        this.activeItem = index; // Open the clicked item\n      }\n    },\n    isActive(index) {\n      return this.activeItem === index;\n    },\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, toDisplayString as _toDisplayString, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createBlock as _createBlock, Transition as _Transition, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n\n  _push(_ssrRenderComponent(_component_BasicSection, _mergeProps({ class: \"container mx-auto mt-20\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<div class=\"text-center\"${_scopeId}>`)\n        _push(_ssrRenderComponent(_component_HeadlineTwo, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`Frequently Asked Questions`)\n            } else {\n              return [\n                _createTextVNode(\"Frequently Asked Questions\")\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n        _push(`</div><div class=\"accordion\"${\n          _scopeId\n        }><div${\n          _scopeId\n        }><!--[-->`)\n        _ssrRenderList($props.items, (item, index) => {\n          _push(`<div class=\"accordion-item\"${_scopeId}>`)\n          _push(_ssrRenderComponent(_component_ParagraphDescription, {\n            class: \"accordion-header font-extrabold\",\n            onClick: $event => ($options.toggleItem(index))\n          }, {\n            default: _withCtx((_, _push, _parent, _scopeId) => {\n              if (_push) {\n                _push(`${_ssrInterpolate(item.title)}`)\n              } else {\n                return [\n                  _createTextVNode(_toDisplayString(item.title), 1)\n                ]\n              }\n            }),\n            _: 2\n          }, _parent, _scopeId))\n          _push(`<div class=\"${\n            _ssrRenderClass([{ hidden: !$options.isActive(index) }, \"accordion-body bg-blue-100\"])\n          }\"${\n            _scopeId\n          }>${\n            _ssrInterpolate(item.content)\n          }</div></div>`)\n        })\n        _push(`<!--]--></div></div>`)\n      } else {\n        return [\n          _createVNode(\"div\", { class: \"text-center\" }, [\n            _createVNode(_component_HeadlineTwo, null, {\n              default: _withCtx(() => [\n                _createTextVNode(\"Frequently Asked Questions\")\n              ]),\n              _: 1\n            })\n          ]),\n          _createVNode(\"div\", { class: \"accordion\" }, [\n            _createVNode(\"div\", null, [\n              (_openBlock(true), _createBlock(_Fragment, null, _renderList($props.items, (item, index) => {\n                return (_openBlock(), _createBlock(\"div\", {\n                  class: \"accordion-item\",\n                  key: index\n                }, [\n                  _createVNode(_component_ParagraphDescription, {\n                    class: \"accordion-header font-extrabold\",\n                    onClick: $event => ($options.toggleItem(index))\n                  }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString(item.title), 1)\n                    ]),\n                    _: 2\n                  }, 1032, [\"onClick\"]),\n                  _createVNode(_Transition, { name: \"slide\" }, {\n                    default: _withCtx(() => [\n                      _createVNode(\"div\", {\n                        class: [\"accordion-body bg-blue-100\", { hidden: !$options.isActive(index) }]\n                      }, _toDisplayString(item.content), 3)\n                    ]),\n                    _: 2\n                  }, 1024)\n                ]))\n              }), 128))\n            ])\n          ])\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/MedicarePage/MedicareInsuranceFrequentlyAskedQuestions.vue?vue&type=style&index=0&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/MedicarePage/MedicareInsuranceFrequentlyAskedQuestions.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251141940,
+      "end": 1761251141943,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/MedicarePage/MedicareInsuranceFrequentlyAskedQuestions.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/MedicarePage/MedicareInsuranceFrequentlyAskedQuestions.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <div class=\"text-center\">\n      <HeadlineTwo>Frequently Asked Questions</HeadlineTwo>\n    </div>\n    <div class=\"accordion\">\n      <div>\n        <div class=\"accordion-item\" v-for=\"(item, index) in items\" :key=\"index\">\n          <ParagraphDescription\n            class=\"accordion-header font-extrabold\"\n            @click=\"toggleItem(index)\"\n          >\n            {{ item.title }}\n          </ParagraphDescription>\n          <Transition name=\"slide\">\n            <div\n              class=\"accordion-body bg-blue-100\"\n              :class=\"{ hidden: !isActive(index) }\"\n            >\n              {{ item.content }}\n            </div>\n          </Transition>\n        </div>\n      </div>\n    </div>\n  </BasicSection>\n</template>\n\n\n<script>\nexport default {\n  name: \"HealthcareFrequentlyAskedQuestions\",\n  props: {\n    items: {\n      type: Array,\n      required: true,\n    },\n    active: {\n      type: Number,\n      default: null,\n    },\n  },\n  data() {\n    return {\n      activeItem: this.active,\n    };\n  },\n  methods: {\n    toggleItem(index) {\n      if (this.activeItem === index) {\n        this.activeItem = null; // Close the currently open item\n      } else {\n        this.activeItem = index; // Open the clicked item\n      }\n    },\n    isActive(index) {\n      return this.activeItem === index;\n    },\n  },\n};\n</script>\n\n\n<style>\n.slide-enter-active,\n.slide-leave-active {\n  transition: height 0.5s ease;\n}\n.slide-enter,\n.slide-leave-to {\n  height: 0;\n  overflow: hidden;\n}\n.accordion {\n  border: 1px solid #ccc;\n  margin-bottom: 1rem;\n}\n\n.accordion-item {\n  border-bottom: 1px solid #ccc;\n}\n\n.accordion-header {\n  cursor: pointer;\n  padding: 1rem;\n}\n\n.accordion-body {\n  padding: 1rem;\n}\n</style>\n"
+        ],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/MedicarePage/MedicareInsuranceFrequentlyAskedQuestions.vue\").then(r => r.default))",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141944,
+      "end": 1761251141944,
+      "order": "normal"
+    }
+  ]
+}

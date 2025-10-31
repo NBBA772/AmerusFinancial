@@ -1,0 +1,235 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/series/[name].vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport { Series, Video } from \".prisma/client\";\nimport getParam from \"~/composables/getParam\";\n\ndefinePageMeta({\n  layout: false,\n});\n\nconst route = useRoute()\n\ntype topicData = {\n  series: Series[]\n  videos: Video[]\n}\n\nconst topicName = getParam('name') as string\nconst { data, pending } = await useFetch<topicData>(`/api/topic/${topicName}`, { key: route.fullPath })\nconst videoPlaceholderElement = ref(null)\nconst videoWrapper = ref(new HTMLElement)\n\nconst activeVideo = ref(data?.value?.videos[0])\n\nfunction setActive(video: Video) {\n  activeVideo.value = video\n\n  const htmlString = `<div class=\"video__youtube\" :id=\"${activeVideo.value.host_id}\">\n                        <img src=\"https://i.ytimg.com/vi/${activeVideo.value.host_id}/maxresdefault.jpg\"\n                          class=\"block object-cover object-center lg:rounded-lg w-full min-w-200 aspect-video mb-10 p-0\"\n                          alt=\"video thumbnail\" />\n                          <img src=\"/img/youtube_social_icon_red.png\"\n                          class=\"absolute text-5xl text-white top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2\"\n                          alt=\"youtube play button\">\n                      </div>\n                    `\n  videoWrapper.value.innerHTML = htmlString;\n}\n\nfunction createIframe(vidId: string) {\n  const url = 'https://www.youtube.com/embed/' + vidId + '?autoplay=1'\n  const htmlString = `<iframe class=\"mt-5 block object-cover object-center lg:rounded-lg w-full min-w-200 aspect-video mb-10 p-0\" src=\"${url}\" allowfullscreen allow=\"autoplay\"></iframe>`\n\n  videoWrapper.value.innerHTML = htmlString;\n}\n\n</script>\n\n<template>\n\n  <div>\n    <span class=\"absolute text-white text-4xl top-5 left-4 cursor-pointer\" onclick=\"openSidebar()\">\n      <i class=\"bi bi-filter-left px-2 bg-gray-900 rounded-md\"></i>\n    </span>\n    <div class=\"sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-gray-900\">\n      <div class=\"text-gray-100 text-xl\">\n        <div class=\"p-2.5 mt-1 flex items-center\">\n\n          <NuxtLink to=\"/\">\n            <img class=\"h-20\" src=\"/img/logo_clear_fsj.png\" alt=\"full stack jack logo\">\n            <h1 class=\"font-bold text-gray-200 text-[15px] ml-3\">Full Stack Jack</h1>\n          </NuxtLink>\n          \n\n        </div>\n        <div class=\"my-2 bg-gray-600 h-[1px]\"></div>\n      </div>\n      <div class=\"p-2.5 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700 text-white\">\n        <i class=\"bi bi-search text-sm\"></i>\n        <input type=\"text\" placeholder=\"Search\" class=\"text-[15px] ml-4 w-full bg-transparent focus:outline-none\" />\n      </div>\n      <div\n        class=\"p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white\">\n        <i class=\"bi bi-house-door-fill\"></i>\n        <span class=\"text-[15px] ml-4 text-gray-200 font-bold\">Home</span>\n      </div>\n      <div\n        class=\"p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white\">\n        <i class=\"bi bi-bookmark-fill\"></i>\n        <span class=\"text-[15px] ml-4 text-gray-200 font-bold\">Bookmark</span>\n      </div>\n      <div class=\"my-4 bg-gray-600 h-[1px]\"></div>\n      <div class=\"p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white\"\n        onclick=\"dropdown()\">\n        <i class=\"bi bi-chat-left-text-fill\"></i>\n        <div class=\"flex justify-between w-full items-center\">\n          <span class=\"text-[15px] ml-4 text-gray-200 font-bold\">Videos</span>\n          <span class=\"text-sm rotate-180\" id=\"arrow\">\n            <i class=\"bi bi-chevron-down\"></i>\n          </span>\n        </div>\n      </div>\n      <ul class=\"text-left text-sm mt-2 w-4/5 mx-auto text-gray-200 font-bold\" id=\"submenu\">\n        <li class=\"cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1\" @click=\"setActive(video)\"\n          v-for=\"video in data.videos\">\n          {{ video.title }}\n        </li>\n      </ul>\n    </div>\n    <div class=\"dark:bg-black min-h-screen\" v-if=\"!pending && data\">\n      <div>\n        <section class=\"overflow-hidden text-gray-700 p-0\">\n          <div class=\"container px-0 py-2 mx-auto lg:pt-12 lg:px-32\">\n            <div class=\"flex flex-wrap -m-1 md:-m-2 xxxxx\" @click=\"createIframe(activeVideo?.host_id)\"\n              ref=\"videoWrapper\">\n              <div class=\"mt-5\" ref=\"videoPlaceholderElement\">\n                <div class=\"video__youtube container\" :id=\"activeVideo?.host_id\">\n                  <img :src=\"'https://i.ytimg.com/vi/' + activeVideo?.host_id + '/maxresdefault.jpg'\"\n                    class=\"block object-cover object-center lg:rounded-lg w-full min-w-200 aspect-video mb-10 p-0\"\n                    alt=\"video thumbnail\" />\n                  <img src=\"/img/youtube_social_icon_red.png\"\n                    class=\"absolute text-5xl text-white top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2\"\n                    alt=\"youtube play button\">\n                </div>\n              </div>\n            </div>\n          </div>\n        </section>\n      </div>\n    </div>\n  </div>\n\n</template>\n",
+      "start": 1761251025180,
+      "end": 1761251025284,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251025284,
+      "end": 1761251025284,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251025284,
+      "end": 1761251025284,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251025284,
+      "end": 1761251025284,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251025284,
+      "end": 1761251025284,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251025284,
+      "end": 1761251025284,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251025284,
+      "end": 1761251025284,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251025284,
+      "end": 1761251025284,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251025284,
+      "end": 1761251025284,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/series/[name].vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/series/[name].vue?vue&type=script&setup=true&lang.ts\";\nexport default _sfc_main;\n",
+      "start": 1761251025284,
+      "end": 1761251025396,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "export { default } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/series/[name].vue?macro=true&vue&type=script&setup=true&lang.ts\"",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251025396,
+      "end": 1761251025396,
+      "order": "normal"
+    }
+  ]
+}

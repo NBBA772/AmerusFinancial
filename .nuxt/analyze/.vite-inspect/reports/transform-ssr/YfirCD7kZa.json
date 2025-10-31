@@ -1,0 +1,294 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/contact/ContactForm.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"rounded-lg border bg-white text-gray-900 shadow-sm\">\n    <div class=\"p-6 md:p-8\">\n      <h2 class=\"text-2xl font-bold mb-6\">Send Us a Message</h2>\n      <form\n        action=\"https://formsubmit.co/rudolfgiessen@amerusfinancial.com\"\n        method=\"POST\"\n        class=\"space-y-6\"\n      >\n        <input type=\"hidden\" name=\"_subject\" value=\"Contact Form Submission from Amerus Financial Website\" />\n        <input type=\"hidden\" name=\"_template\" value=\"table\" />\n        <input type=\"hidden\" name=\"_autoresponse\" value=\"Thank you for contacting Amerus Financial. A representative will reach out to you shortly.\" />\n        <input type=\"hidden\" name=\"_next\" value=\"/thank-you\" />\n\n        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\">\n          <div>\n            <label for=\"name\" class=\"block text-sm font-medium mb-1\">Full Name</label>\n            <input id=\"name\" name=\"name\" placeholder=\"Your name\" required class=\"input-field\" />\n          </div>\n          <div>\n            <label for=\"email\" class=\"block text-sm font-medium mb-1\">Email Address</label>\n            <input id=\"email\" name=\"email\" type=\"email\" placeholder=\"Your email\" required class=\"input-field\" />\n          </div>\n        </div>\n\n        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\">\n          <div>\n            <label for=\"phone\" class=\"block text-sm font-medium mb-1\">Phone Number (Optional)</label>\n            <input id=\"phone\" name=\"phone\" placeholder=\"Your phone number\" class=\"input-field\" />\n          </div>\n          <div>\n            <label for=\"subject\" class=\"block text-sm font-medium mb-1\">Subject</label>\n            <input id=\"subject\" name=\"subject\" placeholder=\"Message subject\" required class=\"input-field\" />\n          </div>\n        </div>\n\n        <div>\n          <label for=\"message\" class=\"block text-sm font-medium mb-1\">Message</label>\n          <textarea id=\"message\" name=\"message\" placeholder=\"How can we help you?\" required class=\"input-field min-h-[120px] resize-y\"></textarea>\n        </div>\n\n        <button\n          type=\"submit\"\n          class=\"inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors px-4 py-2 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto\"\n        >\n          <NuxtIcon name=\"lucide:send\" class=\"h-4 w-4 mr-2\" /> Send Message\n        </button>\n      </form>\n    </div>\n  </div>\n  \n</template>\n\n<script setup lang=\"ts\"></script>\n\n<style scoped>\n.input-field {\n  @apply flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder-gray-400\n    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;\n}\n</style>\n",
+      "start": 1761251142698,
+      "end": 1761251143073,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143073,
+      "end": 1761251143073,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251143073,
+      "end": 1761251143073,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143074,
+      "end": 1761251143074,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251143074,
+      "end": 1761251143074,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251143074,
+      "end": 1761251143074,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251143074,
+      "end": 1761251143074,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251143074,
+      "end": 1761251143074,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251143074,
+      "end": 1761251143074,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251143074,
+      "end": 1761251143074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251143074,
+      "end": 1761251143074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251143074,
+      "end": 1761251143074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251143074,
+      "end": 1761251143074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  const _component_NuxtIcon = _resolveComponent(\"NuxtIcon\")\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"rounded-lg border bg-white text-gray-900 shadow-sm\" }, _attrs))} data-v-d8eb2431><div class=\"p-6 md:p-8\" data-v-d8eb2431><h2 class=\"text-2xl font-bold mb-6\" data-v-d8eb2431>Send Us a Message</h2><form action=\"https://formsubmit.co/rudolfgiessen@amerusfinancial.com\" method=\"POST\" class=\"space-y-6\" data-v-d8eb2431><input type=\"hidden\" name=\"_subject\" value=\"Contact Form Submission from Amerus Financial Website\" data-v-d8eb2431><input type=\"hidden\" name=\"_template\" value=\"table\" data-v-d8eb2431><input type=\"hidden\" name=\"_autoresponse\" value=\"Thank you for contacting Amerus Financial. A representative will reach out to you shortly.\" data-v-d8eb2431><input type=\"hidden\" name=\"_next\" value=\"/thank-you\" data-v-d8eb2431><div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\" data-v-d8eb2431><div data-v-d8eb2431><label for=\"name\" class=\"block text-sm font-medium mb-1\" data-v-d8eb2431>Full Name</label><input id=\"name\" name=\"name\" placeholder=\"Your name\" required class=\"input-field\" data-v-d8eb2431></div><div data-v-d8eb2431><label for=\"email\" class=\"block text-sm font-medium mb-1\" data-v-d8eb2431>Email Address</label><input id=\"email\" name=\"email\" type=\"email\" placeholder=\"Your email\" required class=\"input-field\" data-v-d8eb2431></div></div><div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\" data-v-d8eb2431><div data-v-d8eb2431><label for=\"phone\" class=\"block text-sm font-medium mb-1\" data-v-d8eb2431>Phone Number (Optional)</label><input id=\"phone\" name=\"phone\" placeholder=\"Your phone number\" class=\"input-field\" data-v-d8eb2431></div><div data-v-d8eb2431><label for=\"subject\" class=\"block text-sm font-medium mb-1\" data-v-d8eb2431>Subject</label><input id=\"subject\" name=\"subject\" placeholder=\"Message subject\" required class=\"input-field\" data-v-d8eb2431></div></div><div data-v-d8eb2431><label for=\"message\" class=\"block text-sm font-medium mb-1\" data-v-d8eb2431>Message</label><textarea id=\"message\" name=\"message\" placeholder=\"How can we help you?\" required class=\"input-field min-h-[120px] resize-y\" data-v-d8eb2431></textarea></div><button type=\"submit\" class=\"inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors px-4 py-2 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto\" data-v-d8eb2431>`)\n  _push(_ssrRenderComponent(_component_NuxtIcon, {\n    name: \"lucide:send\",\n    class: \"h-4 w-4 mr-2\"\n  }, null, _parent))\n  _push(` Send Message </button></form></div></div>`)\n}\n\nimport \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/contact/ContactForm.vue?vue&type=style&index=0&scoped=d8eb2431&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/contact/ContactForm.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-d8eb2431\"]])",
+      "start": 1761251143074,
+      "end": 1761251143076,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/contact/ContactForm.vue"
+        ],
+        "names": [],
+        "mappings": ";;;;;;EAAA,aAAA,gBAAA,cACO,KAAK,EAAC,oDAAoD,IADjE;EAAA,MAAA;IA6CoB,IAAI,EAAC,aAAa;IAAC,KAAK,EAAC,cAAc;;EA7C3D",
+        "sourcesContent": [
+          "<template>\n  <div class=\"rounded-lg border bg-white text-gray-900 shadow-sm\">\n    <div class=\"p-6 md:p-8\">\n      <h2 class=\"text-2xl font-bold mb-6\">Send Us a Message</h2>\n      <form\n        action=\"https://formsubmit.co/rudolfgiessen@amerusfinancial.com\"\n        method=\"POST\"\n        class=\"space-y-6\"\n      >\n        <input type=\"hidden\" name=\"_subject\" value=\"Contact Form Submission from Amerus Financial Website\" />\n        <input type=\"hidden\" name=\"_template\" value=\"table\" />\n        <input type=\"hidden\" name=\"_autoresponse\" value=\"Thank you for contacting Amerus Financial. A representative will reach out to you shortly.\" />\n        <input type=\"hidden\" name=\"_next\" value=\"/thank-you\" />\n\n        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\">\n          <div>\n            <label for=\"name\" class=\"block text-sm font-medium mb-1\">Full Name</label>\n            <input id=\"name\" name=\"name\" placeholder=\"Your name\" required class=\"input-field\" />\n          </div>\n          <div>\n            <label for=\"email\" class=\"block text-sm font-medium mb-1\">Email Address</label>\n            <input id=\"email\" name=\"email\" type=\"email\" placeholder=\"Your email\" required class=\"input-field\" />\n          </div>\n        </div>\n\n        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\">\n          <div>\n            <label for=\"phone\" class=\"block text-sm font-medium mb-1\">Phone Number (Optional)</label>\n            <input id=\"phone\" name=\"phone\" placeholder=\"Your phone number\" class=\"input-field\" />\n          </div>\n          <div>\n            <label for=\"subject\" class=\"block text-sm font-medium mb-1\">Subject</label>\n            <input id=\"subject\" name=\"subject\" placeholder=\"Message subject\" required class=\"input-field\" />\n          </div>\n        </div>\n\n        <div>\n          <label for=\"message\" class=\"block text-sm font-medium mb-1\">Message</label>\n          <textarea id=\"message\" name=\"message\" placeholder=\"How can we help you?\" required class=\"input-field min-h-[120px] resize-y\"></textarea>\n        </div>\n\n        <button\n          type=\"submit\"\n          class=\"inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors px-4 py-2 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto\"\n        >\n          <NuxtIcon name=\"lucide:send\" class=\"h-4 w-4 mr-2\" /> Send Message\n        </button>\n      </form>\n    </div>\n  </div>\n  \n</template>\n\n<script setup lang=\"ts\"></script>\n\n<style scoped>\n.input-field {\n  @apply flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm placeholder-gray-400\n    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251143076,
+      "end": 1761251143076,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143076,
+      "end": 1761251143076,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143076,
+      "end": 1761251143076,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143076,
+      "end": 1761251143076,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251143076,
+      "end": 1761251143076,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251143076,
+      "end": 1761251143076,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251143076,
+      "end": 1761251143076,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251143076,
+      "end": 1761251143082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251143082,
+      "end": 1761251143082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251143082,
+      "end": 1761251143082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251143082,
+      "end": 1761251143082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251143082,
+      "end": 1761251143082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251143082,
+      "end": 1761251143082,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251143082,
+      "end": 1761251143083,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251143083,
+      "end": 1761251143083,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251143083,
+      "end": 1761251143084,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251143084,
+      "end": 1761251143084,
+      "order": "normal"
+    }
+  ]
+}

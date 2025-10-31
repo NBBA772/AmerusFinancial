@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/services/CoverageFeatures.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"space-y-10 mt-12\">\n    <!-- Card with Integrated Header -->\n    <div\n      class=\"rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 bg-gradient-to-br from-card/80 to-card/60 backdrop-blur-sm\"\n    >\n      <!-- Header Bar -->\n      <div class=\"bg-[#30BCFE] text-white px-6 py-4 flex items-center justify-between\">\n        <div>\n          <h2 class=\"text-2xl font-bold tracking-tight\">Coverage Features</h2>\n          <p class=\"text-sm opacity-90\">\n            Explore the essential protections included in every plan\n          </p>\n        </div>\n        <Icon name=\"lucide:shield\" size=\"50\" />\n      </div>\n\n      <!-- Feature List -->\n      <div class=\"p-8\">\n        <ul class=\"grid grid-cols-1 md:grid-cols-2 gap-4\">\n          <li\n            v-for=\"feature in features\"\n            :key=\"feature\"\n            class=\"flex items-start gap-3 p-3 rounded-xl hover:bg-[#30BCFE]/5 transition-colors duration-300\"\n          >\n            <div\n              class=\"flex items-center justify-center w-10 h-10 rounded-full bg-[#30BCFE]/10 text-[#30BCFE]\"\n            >\n              <Icon name=\"lucide:check\" size=\"22\" />\n            </div>\n            <p class=\"leading-snug text-foreground font-medium\">\n              {{ feature }}\n            </p>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script setup>\nimport { toRef } from 'vue'\n\nconst props = defineProps({\n  /** Required: array of feature strings */\n  features: {\n    type: Array,\n    required: true,\n  },\n})\n\nconst features = toRef(props, 'features')\n</script>\n\n",
+      "start": 1761251024870,
+      "end": 1761251024974,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString } from \"vue\"\n\nconst _hoisted_1 = { class: \"space-y-10 mt-12\" }\nconst _hoisted_2 = { class: \"rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 bg-gradient-to-br from-card/80 to-card/60 backdrop-blur-sm\" }\nconst _hoisted_3 = { class: \"bg-[#30BCFE] text-white px-6 py-4 flex items-center justify-between\" }\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"div\", null, [\n  /*#__PURE__*/_createElementVNode(\"h2\", { class: \"text-2xl font-bold tracking-tight\" }, \"Coverage Features\"),\n  /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-sm opacity-90\" }, \" Explore the essential protections included in every plan \")\n], -1)\nconst _hoisted_5 = { class: \"p-8\" }\nconst _hoisted_6 = { class: \"grid grid-cols-1 md:grid-cols-2 gap-4\" }\nconst _hoisted_7 = { class: \"flex items-center justify-center w-10 h-10 rounded-full bg-[#30BCFE]/10 text-[#30BCFE]\" }\nconst _hoisted_8 = { class: \"leading-snug text-foreground font-medium\" }\n\nimport { toRef } from 'vue'\n\n\nconst _sfc_main = {\n  __name: 'CoverageFeatures',\n  props: {\n  /** Required: array of feature strings */\n  features: {\n    type: Array,\n    required: true,\n  },\n},\n  setup(__props) {\n\nconst props = __props\n\nconst features = toRef(props, 'features')\n\nreturn (_ctx, _cache) => {\n  const _component_Icon = _resolveComponent(\"Icon\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _hoisted_4,\n        _createVNode(_component_Icon, {\n          name: \"lucide:shield\",\n          size: \"50\"\n        })\n      ]),\n      _createElementVNode(\"div\", _hoisted_5, [\n        _createElementVNode(\"ul\", _hoisted_6, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(features.value, (feature) => {\n            return (_openBlock(), _createElementBlock(\"li\", {\n              key: feature,\n              class: \"flex items-start gap-3 p-3 rounded-xl hover:bg-[#30BCFE]/5 transition-colors duration-300\"\n            }, [\n              _createElementVNode(\"div\", _hoisted_7, [\n                _createVNode(_component_Icon, {\n                  name: \"lucide:check\",\n                  size: \"22\"\n                })\n              ]),\n              _createElementVNode(\"p\", _hoisted_8, _toDisplayString(feature), 1)\n            ]))\n          }), 128))\n        ])\n      ])\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251024974,
+      "end": 1761251024974,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251024974,
+      "end": 1761251024975,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251024975,
+      "end": 1761251024975,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251024975,
+      "end": 1761251024975,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251024975,
+      "end": 1761251024975,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251024975,
+      "end": 1761251024975,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/nuxt-icon/dist/runtime/Icon.vue\";\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString } from \"vue\"\n\nconst _hoisted_1 = { class: \"space-y-10 mt-12\" }\nconst _hoisted_2 = { class: \"rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 bg-gradient-to-br from-card/80 to-card/60 backdrop-blur-sm\" }\nconst _hoisted_3 = { class: \"bg-[#30BCFE] text-white px-6 py-4 flex items-center justify-between\" }\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"div\", null, [\n  /*#__PURE__*/_createElementVNode(\"h2\", { class: \"text-2xl font-bold tracking-tight\" }, \"Coverage Features\"),\n  /*#__PURE__*/_createElementVNode(\"p\", { class: \"text-sm opacity-90\" }, \" Explore the essential protections included in every plan \")\n], -1)\nconst _hoisted_5 = { class: \"p-8\" }\nconst _hoisted_6 = { class: \"grid grid-cols-1 md:grid-cols-2 gap-4\" }\nconst _hoisted_7 = { class: \"flex items-center justify-center w-10 h-10 rounded-full bg-[#30BCFE]/10 text-[#30BCFE]\" }\nconst _hoisted_8 = { class: \"leading-snug text-foreground font-medium\" }\n\nimport { toRef } from 'vue'\n\n\nconst _sfc_main = {\n  __name: 'CoverageFeatures',\n  props: {\n  /** Required: array of feature strings */\n  features: {\n    type: Array,\n    required: true,\n  },\n},\n  setup(__props) {\n\nconst props = __props\n\nconst features = toRef(props, 'features')\n\nreturn (_ctx, _cache) => {\n  const _component_Icon = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _hoisted_4,\n        _createVNode(_component_Icon, {\n          name: \"lucide:shield\",\n          size: \"50\"\n        })\n      ]),\n      _createElementVNode(\"div\", _hoisted_5, [\n        _createElementVNode(\"ul\", _hoisted_6, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(features.value, (feature) => {\n            return (_openBlock(), _createElementBlock(\"li\", {\n              key: feature,\n              class: \"flex items-start gap-3 p-3 rounded-xl hover:bg-[#30BCFE]/5 transition-colors duration-300\"\n            }, [\n              _createElementVNode(\"div\", _hoisted_7, [\n                _createVNode(_component_Icon, {\n                  name: \"lucide:check\",\n                  size: \"22\"\n                })\n              ]),\n              _createElementVNode(\"p\", _hoisted_8, _toDisplayString(feature), 1)\n            ]))\n          }), 128))\n        ])\n      ])\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1761251024975,
+      "end": 1761251024975,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251024975,
+      "end": 1761251024975,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251024975,
+      "end": 1761251024975,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251024975,
+      "end": 1761251024975,
+      "order": "normal"
+    }
+  ]
+}

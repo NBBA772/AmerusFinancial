@@ -1,0 +1,227 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/index.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <PatternSection>\n    <HomepageHeroSection />\n    <!-- <WhatWeProvideSection /> -->\n    <!-- <IndividualAndFamilySolutionsSection /> -->\n    <!-- <SeniorSolutionsSection /> -->\n    <!-- <WeProvideThePlanCTA /> -->\n    <!-- <BusinessSolutionsSection /> -->\n    <!-- <JoinTheAmerusFinancialCommunitySection /> -->\n     <!-- <ServiceGrid /> -->\n      <WhyAmerus />\n     <WhoWeServe />\n     <TrustedCarriers />\n     <InsurancePlanningTools />\n    \n    <CustomerReviewSection />\n    <ContactSection />\n    <FaqSection />\n    <CallToAction />\n  </PatternSection>\n</template>",
+      "start": 1761251025735,
+      "end": 1761251025810,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251025810,
+      "end": 1761251025810,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251025810,
+      "end": 1761251025810,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251025810,
+      "end": 1761251025810,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251025810,
+      "end": 1761251025811,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251025811,
+      "end": 1761251025811,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251025811,
+      "end": 1761251025811,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251025811,
+      "end": 1761251025811,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251025811,
+      "end": 1761251025811,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_HomepageHeroSection = _resolveComponent(\"HomepageHeroSection\")\n  const _component_WhyAmerus = _resolveComponent(\"WhyAmerus\")\n  const _component_WhoWeServe = _resolveComponent(\"WhoWeServe\")\n  const _component_TrustedCarriers = _resolveComponent(\"TrustedCarriers\")\n  const _component_InsurancePlanningTools = _resolveComponent(\"InsurancePlanningTools\")\n  const _component_CustomerReviewSection = _resolveComponent(\"CustomerReviewSection\")\n  const _component_ContactSection = _resolveComponent(\"ContactSection\")\n  const _component_FaqSection = _resolveComponent(\"FaqSection\")\n  const _component_CallToAction = _resolveComponent(\"CallToAction\")\n  const _component_PatternSection = _resolveComponent(\"PatternSection\")\n\n  return (_openBlock(), _createBlock(_component_PatternSection, null, {\n    default: _withCtx(() => [\n      _createVNode(_component_HomepageHeroSection),\n      _createVNode(_component_WhyAmerus),\n      _createVNode(_component_WhoWeServe),\n      _createVNode(_component_TrustedCarriers),\n      _createVNode(_component_InsurancePlanningTools),\n      _createVNode(_component_CustomerReviewSection),\n      _createVNode(_component_ContactSection),\n      _createVNode(_component_FaqSection),\n      _createVNode(_component_CallToAction)\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251025811,
+      "end": 1761251025811,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251025811,
+      "end": 1761251025811,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025811,
+      "end": 1761251025811,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251025811,
+      "end": 1761251025812,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1761251025812,
+      "end": 1761251025812,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251025812,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251025813,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251025813,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251025813,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251025813,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251025813,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251025813,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251025813,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251025813,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251025813,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251025813,
+      "end": 1761251025813,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251025813,
+      "end": 1761251025814,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251025814,
+      "end": 1761251025814,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251025814,
+      "end": 1761251025816,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251025817,
+      "end": 1761251025817,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251025817,
+      "end": 1761251025817,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1761251025817,
+      "end": 1761251025817,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1761251025817,
+      "end": 1761251025817,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/HomepageHeroSection.vue\";\nimport { default as __nuxt_component_1 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhyAmerus.vue\";\nimport { default as __nuxt_component_2 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/WhoWeServe.vue\";\nimport { default as __nuxt_component_3 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/TrustedCarriers.vue\";\nimport { default as __nuxt_component_4 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/InsurancePlanningTools.vue\";\nimport { default as __nuxt_component_5 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/CustomerReviewSection.vue\";\nimport { default as __nuxt_component_6 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/ContactSection.vue\";\nimport { default as __nuxt_component_7 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/HomePage/FaqSection.vue\";\nimport { default as __nuxt_component_8 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/CallToAction.vue\";\nimport { default as __nuxt_component_9 } from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/elements/containers/PatternSection.vue\";\nconst _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_HomepageHeroSection = __nuxt_component_0\n  const _component_WhyAmerus = __nuxt_component_1\n  const _component_WhoWeServe = __nuxt_component_2\n  const _component_TrustedCarriers = __nuxt_component_3\n  const _component_InsurancePlanningTools = __nuxt_component_4\n  const _component_CustomerReviewSection = __nuxt_component_5\n  const _component_ContactSection = __nuxt_component_6\n  const _component_FaqSection = __nuxt_component_7\n  const _component_CallToAction = __nuxt_component_8\n  const _component_PatternSection = __nuxt_component_9\n\n  return (_openBlock(), _createBlock(_component_PatternSection, null, {\n    default: _withCtx(() => [\n      _createVNode(_component_HomepageHeroSection),\n      _createVNode(_component_WhyAmerus),\n      _createVNode(_component_WhoWeServe),\n      _createVNode(_component_TrustedCarriers),\n      _createVNode(_component_InsurancePlanningTools),\n      _createVNode(_component_CustomerReviewSection),\n      _createVNode(_component_ContactSection),\n      _createVNode(_component_FaqSection),\n      _createVNode(_component_CallToAction)\n    ]),\n    _: 1\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1761251025817,
+      "end": 1761251025817,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251025817,
+      "end": 1761251025817,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251025817,
+      "end": 1761251025818,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251025818,
+      "end": 1761251025818,
+      "order": "normal"
+    }
+  ]
+}

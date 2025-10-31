@@ -1,0 +1,297 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/ShortTermHealthInsuranceProsAndConsSection.vue?nuxt_component=async&nuxt_component_name=ShortTermHealthInsuranceProsAndConsSection",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo class=\"text-center\">Pros:</HeadlineTwo>\n        <ParagraphDescription>No Enrollment Periods</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >With Short term plans you can shop anytime of year and even have\n            coverage effective the next day.</ListItems\n          >\n        </BasicList>\n\n        <ParagraphDescription>Economical Premiums</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >Premiums are not based on household size and income such as a\n            marketplace plan. Therefore these plans can be a fraction of the\n            cost of the plans on the marketplace</ListItems\n          >\n          <ListItems>Broad Networks</ListItems>\n          <ListItems\n            >Oftentimes have large networks of Doctors and Hospitals for you to\n            choose from.</ListItems\n          >\n        </BasicList>\n\n        <ParagraphDescription>Customizable</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >Short Term Health plans can be customized to meet your individual\n            needs.</ListItems\n          >\n        </BasicList>\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo class=\"text-center\">Cons:</HeadlineTwo>\n\n        <ParagraphDescription\n          >Pre-existing coverage limitations</ParagraphDescription\n        >\n        <BasicList>\n          <ListItems\n            >You may be denied coverage if you have any pre-existing conditions.\n            If you are accepted for coverage you may have claims related to your\n            condition denied</ListItems\n          >\n        </BasicList>\n\n        <ParagraphDescription>Policy maximum coverage</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >Policies may have annual limits and lifetime maximums on coverage\n            benefits.</ListItems\n          >\n        </BasicList>\n\n        <ParagraphDescription>Not ACA Compliant</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >Do not cover preventative care free of charge as an exchange\n            plan.</ListItems\n          >\n        </BasicList>\n\n        <ParagraphDescription>ACA Subsidies don’t apply</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >There are no government subsidies that apply to premiums and tax\n            credits.</ListItems\n          >\n        </BasicList>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"TwoColumnSection\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>",
+      "start": 1761251141527,
+      "end": 1761251141860,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251141860,
+      "end": 1761251141860,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: \"TwoColumnSection\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_BasicSection = _resolveComponent(\"BasicSection\")\n  const _component_GridTwoColumns = _resolveComponent(\"GridTwoColumns\")\n  const _component_HeadlineTwo = _resolveComponent(\"HeadlineTwo\")\n  const _component_ParagraphDescription = _resolveComponent(\"ParagraphDescription\")\n  const _component_BasicList = _resolveComponent(\"BasicList\")\n  const _component_ListItems = _resolveComponent(\"ListItems\")\n\n  _push(_ssrRenderComponent(_component_BasicSection, _mergeProps({ class: \"container mx-auto mt-20\" }, _attrs), {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(_ssrRenderComponent(_component_GridTwoColumns, null, {\n          default: _withCtx((_, _push, _parent, _scopeId) => {\n            if (_push) {\n              _push(`<div class=\"px-4 sm:px-8\"${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_HeadlineTwo, { class: \"text-center\" }, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Pros:`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Pros:\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`No Enrollment Periods`)\n                  } else {\n                    return [\n                      _createTextVNode(\"No Enrollment Periods\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_BasicList, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`With Short term plans you can shop anytime of year and even have coverage effective the next day.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"With Short term plans you can shop anytime of year and even have coverage effective the next day.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                  } else {\n                    return [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"With Short term plans you can shop anytime of year and even have coverage effective the next day.\")\n                        ]),\n                        _: 1\n                      })\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Economical Premiums`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Economical Premiums\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_BasicList, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Premiums are not based on household size and income such as a marketplace plan. Therefore these plans can be a fraction of the cost of the plans on the marketplace`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Premiums are not based on household size and income such as a marketplace plan. Therefore these plans can be a fraction of the cost of the plans on the marketplace\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Broad Networks`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Broad Networks\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Oftentimes have large networks of Doctors and Hospitals for you to choose from.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Oftentimes have large networks of Doctors and Hospitals for you to choose from.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                  } else {\n                    return [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Premiums are not based on household size and income such as a marketplace plan. Therefore these plans can be a fraction of the cost of the plans on the marketplace\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Broad Networks\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Oftentimes have large networks of Doctors and Hospitals for you to choose from.\")\n                        ]),\n                        _: 1\n                      })\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Customizable`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Customizable\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_BasicList, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Short Term Health plans can be customized to meet your individual needs.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Short Term Health plans can be customized to meet your individual needs.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                  } else {\n                    return [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Short Term Health plans can be customized to meet your individual needs.\")\n                        ]),\n                        _: 1\n                      })\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div><div class=\"px-4 sm:px-8\"${_scopeId}>`)\n              _push(_ssrRenderComponent(_component_HeadlineTwo, { class: \"text-center\" }, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Cons:`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Cons:\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Pre-existing coverage limitations`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Pre-existing coverage limitations\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_BasicList, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`You may be denied coverage if you have any pre-existing conditions. If you are accepted for coverage you may have claims related to your condition denied`)\n                        } else {\n                          return [\n                            _createTextVNode(\"You may be denied coverage if you have any pre-existing conditions. If you are accepted for coverage you may have claims related to your condition denied\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                  } else {\n                    return [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"You may be denied coverage if you have any pre-existing conditions. If you are accepted for coverage you may have claims related to your condition denied\")\n                        ]),\n                        _: 1\n                      })\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Policy maximum coverage`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Policy maximum coverage\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_BasicList, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Policies may have annual limits and lifetime maximums on coverage benefits.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Policies may have annual limits and lifetime maximums on coverage benefits.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                  } else {\n                    return [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Policies may have annual limits and lifetime maximums on coverage benefits.\")\n                        ]),\n                        _: 1\n                      })\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`Not ACA Compliant`)\n                  } else {\n                    return [\n                      _createTextVNode(\"Not ACA Compliant\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_BasicList, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`Do not cover preventative care free of charge as an exchange plan.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"Do not cover preventative care free of charge as an exchange plan.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                  } else {\n                    return [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Do not cover preventative care free of charge as an exchange plan.\")\n                        ]),\n                        _: 1\n                      })\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_ParagraphDescription, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(`ACA Subsidies don’t apply`)\n                  } else {\n                    return [\n                      _createTextVNode(\"ACA Subsidies don’t apply\")\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(_ssrRenderComponent(_component_BasicList, null, {\n                default: _withCtx((_, _push, _parent, _scopeId) => {\n                  if (_push) {\n                    _push(_ssrRenderComponent(_component_ListItems, null, {\n                      default: _withCtx((_, _push, _parent, _scopeId) => {\n                        if (_push) {\n                          _push(`There are no government subsidies that apply to premiums and tax credits.`)\n                        } else {\n                          return [\n                            _createTextVNode(\"There are no government subsidies that apply to premiums and tax credits.\")\n                          ]\n                        }\n                      }),\n                      _: 1\n                    }, _parent, _scopeId))\n                  } else {\n                    return [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"There are no government subsidies that apply to premiums and tax credits.\")\n                        ]),\n                        _: 1\n                      })\n                    ]\n                  }\n                }),\n                _: 1\n              }, _parent, _scopeId))\n              _push(`</div>`)\n            } else {\n              return [\n                _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                  _createVNode(_component_HeadlineTwo, { class: \"text-center\" }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Pros:\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"No Enrollment Periods\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"With Short term plans you can shop anytime of year and even have coverage effective the next day.\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Economical Premiums\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Premiums are not based on household size and income such as a marketplace plan. Therefore these plans can be a fraction of the cost of the plans on the marketplace\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Broad Networks\")\n                        ]),\n                        _: 1\n                      }),\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Oftentimes have large networks of Doctors and Hospitals for you to choose from.\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Customizable\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Short Term Health plans can be customized to meet your individual needs.\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  })\n                ]),\n                _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                  _createVNode(_component_HeadlineTwo, { class: \"text-center\" }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Cons:\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Pre-existing coverage limitations\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"You may be denied coverage if you have any pre-existing conditions. If you are accepted for coverage you may have claims related to your condition denied\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Policy maximum coverage\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Policies may have annual limits and lifetime maximums on coverage benefits.\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"Not ACA Compliant\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"Do not cover preventative care free of charge as an exchange plan.\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_ParagraphDescription, null, {\n                    default: _withCtx(() => [\n                      _createTextVNode(\"ACA Subsidies don’t apply\")\n                    ]),\n                    _: 1\n                  }),\n                  _createVNode(_component_BasicList, null, {\n                    default: _withCtx(() => [\n                      _createVNode(_component_ListItems, null, {\n                        default: _withCtx(() => [\n                          _createTextVNode(\"There are no government subsidies that apply to premiums and tax credits.\")\n                        ]),\n                        _: 1\n                      })\n                    ]),\n                    _: 1\n                  })\n                ])\n              ]\n            }\n          }),\n          _: 1\n        }, _parent, _scopeId))\n      } else {\n        return [\n          _createVNode(_component_GridTwoColumns, null, {\n            default: _withCtx(() => [\n              _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                _createVNode(_component_HeadlineTwo, { class: \"text-center\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Pros:\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"No Enrollment Periods\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_BasicList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"With Short term plans you can shop anytime of year and even have coverage effective the next day.\")\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Economical Premiums\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_BasicList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Premiums are not based on household size and income such as a marketplace plan. Therefore these plans can be a fraction of the cost of the plans on the marketplace\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Broad Networks\")\n                      ]),\n                      _: 1\n                    }),\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Oftentimes have large networks of Doctors and Hospitals for you to choose from.\")\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Customizable\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_BasicList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Short Term Health plans can be customized to meet your individual needs.\")\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                })\n              ]),\n              _createVNode(\"div\", { class: \"px-4 sm:px-8\" }, [\n                _createVNode(_component_HeadlineTwo, { class: \"text-center\" }, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Cons:\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Pre-existing coverage limitations\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_BasicList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"You may be denied coverage if you have any pre-existing conditions. If you are accepted for coverage you may have claims related to your condition denied\")\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Policy maximum coverage\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_BasicList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Policies may have annual limits and lifetime maximums on coverage benefits.\")\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"Not ACA Compliant\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_BasicList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"Do not cover preventative care free of charge as an exchange plan.\")\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_ParagraphDescription, null, {\n                  default: _withCtx(() => [\n                    _createTextVNode(\"ACA Subsidies don’t apply\")\n                  ]),\n                  _: 1\n                }),\n                _createVNode(_component_BasicList, null, {\n                  default: _withCtx(() => [\n                    _createVNode(_component_ListItems, null, {\n                      default: _withCtx(() => [\n                        _createTextVNode(\"There are no government subsidies that apply to premiums and tax credits.\")\n                      ]),\n                      _: 1\n                    })\n                  ]),\n                  _: 1\n                })\n              ])\n            ]),\n            _: 1\n          })\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/sections/IndividualAndFamilyInsurancePage/ShortTermHealthInsuranceProsAndConsSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1761251141860,
+      "end": 1761251141880,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/ShortTermHealthInsuranceProsAndConsSection.vue",
+        "names": [],
+        "sources": [
+          "/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/ShortTermHealthInsuranceProsAndConsSection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <BasicSection class=\"container mx-auto mt-20\">\n    <GridTwoColumns>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo class=\"text-center\">Pros:</HeadlineTwo>\n        <ParagraphDescription>No Enrollment Periods</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >With Short term plans you can shop anytime of year and even have\n            coverage effective the next day.</ListItems\n          >\n        </BasicList>\n\n        <ParagraphDescription>Economical Premiums</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >Premiums are not based on household size and income such as a\n            marketplace plan. Therefore these plans can be a fraction of the\n            cost of the plans on the marketplace</ListItems\n          >\n          <ListItems>Broad Networks</ListItems>\n          <ListItems\n            >Oftentimes have large networks of Doctors and Hospitals for you to\n            choose from.</ListItems\n          >\n        </BasicList>\n\n        <ParagraphDescription>Customizable</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >Short Term Health plans can be customized to meet your individual\n            needs.</ListItems\n          >\n        </BasicList>\n      </div>\n      <div class=\"px-4 sm:px-8\">\n        <HeadlineTwo class=\"text-center\">Cons:</HeadlineTwo>\n\n        <ParagraphDescription\n          >Pre-existing coverage limitations</ParagraphDescription\n        >\n        <BasicList>\n          <ListItems\n            >You may be denied coverage if you have any pre-existing conditions.\n            If you are accepted for coverage you may have claims related to your\n            condition denied</ListItems\n          >\n        </BasicList>\n\n        <ParagraphDescription>Policy maximum coverage</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >Policies may have annual limits and lifetime maximums on coverage\n            benefits.</ListItems\n          >\n        </BasicList>\n\n        <ParagraphDescription>Not ACA Compliant</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >Do not cover preventative care free of charge as an exchange\n            plan.</ListItems\n          >\n        </BasicList>\n\n        <ParagraphDescription>ACA Subsidies don’t apply</ParagraphDescription>\n        <BasicList>\n          <ListItems\n            >There are no government subsidies that apply to premiums and tax\n            credits.</ListItems\n          >\n        </BasicList>\n      </div>\n    </GridTwoColumns>\n  </BasicSection>\n</template>\n\n<script>\nexport default {\n  name: \"TwoColumnSection\",\n  props: {\n    title: String,\n    description: String,\n    mediaFirst: Boolean,\n    subTitle: String,\n  },\n  data() {\n    return {\n      colorMode: useColorMode(),\n    };\n  },\n  computed: {\n    // const isDark = this.$colorMode.value === \"dark\";\n    isDark() {\n      if (this.colorMode.preference === \"dark\") {\n        return true;\n      } else {\n        return false;\n      }\n    },\n  },\n};\n</script>\n\n<style scoped>\n</style>"
+        ],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251141881,
+      "end": 1761251141881,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141881,
+      "end": 1761251141881,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251141881,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/amerusfinancial/Desktop/projects/Amerus/app/components/sections/IndividualAndFamilyInsurancePage/ShortTermHealthInsuranceProsAndConsSection.vue\").then(r => r.default))",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251141882,
+      "end": 1761251141882,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141882,
+      "end": 1761251141883,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251141882,
+      "end": 1761251141883,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141883,
+      "end": 1761251141883,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251141883,
+      "end": 1761251141883,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251141883,
+      "end": 1761251141883,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251141883,
+      "end": 1761251141883,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251141883,
+      "end": 1761251141883,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251141883,
+      "end": 1761251141883,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251141883,
+      "end": 1761251141883,
+      "order": "normal"
+    }
+  ]
+}

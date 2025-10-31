@@ -1,0 +1,286 @@
+{
+  "resolvedId": "/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/health-insurance-glossary.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <PatternSection>\n     <HomepageHeroSection />\n    <div class=\"container mx-auto px-4\">\n      <div class=\"max-w-4xl mx-auto\">\n        <div class=\"my-12\">\n          <!-- Header -->\n          <div class=\"flex items-center space-x-4 mb-8\">\n            <div class=\"bg-primary/10 p-3 rounded-full\">\n              <Icon name=\"lucide-book-open\" class=\"h-16 w-16 text-primary\" />\n            </div>\n            <div>\n              <h2 class=\"text-2xl font-semibold\">Navigate Health Insurance Terms with Confidence</h2>\n              <p class=\"text-gray-600\">\n                Our comprehensive glossary helps you understand the complex language of health insurance\n              </p>\n            </div>\n          </div>\n\n          <!-- Search -->\n          <div class=\"rounded-lg border bg-card text-card-foreground shadow-sm p-6\">\n            <div class=\"mb-8 relative\">\n              <Icon name=\"lucide-search\" class=\"absolute ml-4 top-1/2 transform -translate-y-1/2 text-gray-500 h-5 w-5\" />\n              <input\n                v-model=\"searchQuery\"\n                type=\"text\"\n                class=\"flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm pl-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\"\n                placeholder=\"Search for a term or definition...\"\n              />\n            </div>\n\n            <!-- Cards (hide when searching) -->\n            <div v-if=\"!searchQuery\" class=\"grid grid-cols-1 md:grid-cols-3 gap-4 mb-8\">\n              <GlossaryTermCard\n                title=\"Quick Reference\"\n                description=\"Instantly access definitions of common terms like deductibles, copays, and premiums.\"\n                icon=\"lucide-info\"\n                bgClass=\"bg-amber-50\"\n                borderClass=\"border-amber-200\"\n                iconColor=\"text-amber-600\"\n              />\n              <GlossaryTermCard\n                title=\"Insurance Basics\"\n                description=\"Learn the essential concepts that form the foundation of health insurance.\"\n                icon=\"lucide-library\"\n                bgClass=\"bg-blue-50\"\n                borderClass=\"border-blue-200\"\n                iconColor=\"text-blue-600\"\n              />\n              <GlossaryTermCard\n                title=\"Medicare Terms\"\n                description=\"Definitions for Medicare-related terms to help seniors understand their healthcare options.\"\n                icon=\"lucide-book-open\"\n                bgClass=\"bg-green-50\"\n                borderClass=\"border-green-200\"\n                iconColor=\"text-green-600\"\n              />\n            </div>\n\n            <!-- Accordion -->\n            <div class=\"space-y-6\">\n              <div v-for=\"(group, letter) in filteredTerms\" :key=\"letter\" class=\"border-b pb-4 last:border-0\">\n                <h3 class=\"text-6xl font-bold text-primary mb-4\">{{ letter }}</h3>\n                <div class=\"space-y-2\">\n                  <AccordionItem\n                    v-for=\"item in group\"\n                    :key=\"item.term\"\n                    :term=\"item.term\"\n                    :definition=\"item.definition\"\n                  />\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <StillHaveQuestions />\n      </div>\n    </div>\n    <CallToAction />\n  </PatternSection>\n</template>\n\n<script setup lang=\"ts\">\nimport { ref, computed } from 'vue'\n\nconst searchQuery = ref('')\n\nconst terms = {\n  A: [\n    { term: 'Affordable Care Act (ACA)', definition: \"A comprehensive healthcare reform law enacted in March 2010, also known as 'Obamacare.' The law aims to make health insurance more affordable and accessible for all Americans while improving the quality of healthcare and health insurance. \"},\n    { term: 'Annual Limit', definition: 'A cap on the benefits your insurance company will pay in a year. These caps may be placed on particular services such as prescriptions or hospitalizations.' },\n  ],\n  C: [\n    { term: 'Coinsurance', definition: 'Your share of the costs of a covered healthcare service, calculated as a percentage (for example, 20%) of the allowed amount for the service.' },\n    { term: 'Copayment (Copay)', definition: 'A fixed amount (for example, $15) you pay for a covered healthcare service, usually when you receive the service.' },\n    { term: 'Covered Services', definition: 'Healthcare services that your health insurance plan has agreed to pay for, as outlined in your policy documents.' },\n  ],\n  D: [\n    { term: 'Deductible', definition: 'The amount you pay for covered healthcare services before your insurance plan starts to pay. For example, with a $2,000 deductible, you pay the first $2,000 of covered services yourself.' },\n    { term: 'Dependent', definition: 'A person who relies on another person for support, like a spouse or child, and is covered under that person\\'s health insurance plan.' },\n  ],\n  E: [\n    { term: 'Effective Date', definition: 'The date your insurance coverage begins.' },\n    { term: 'Exclusions', definition: 'Specific conditions, treatments, or services that your health insurance plan will not cover.' },\n  ],\n  H: [\n    { term: 'Health Insurance Exchange (Marketplace)', definition: 'A state or federal platform where individuals, families, and small businesses can shop for and purchase health insurance coverage, and potentially qualify for subsidies.' },\n    { term: 'Health Maintenance Organization (HMO)', definition: 'A type of health insurance plan that typically limits coverage to care from doctors who work for or contract with the HMO. Generally, HMOs require you to select a primary care physician who coordinates your care.' },\n  ],\n  I: [\n    { term: 'In-Network Provider', definition: 'A healthcare provider who has contracted with your health insurance company to provide services at a discounted rate.' },\n    { term: 'Insurance Premium', definition: 'The amount you pay to your health insurance company for your coverage, typically on a monthly basis.' },\n  ],  \n  M: [\n    { term: 'Medicaid', definition: 'A state and federal program that provides health coverage for some low-income people, families and children, pregnant women, the elderly, and people with disabilities.' },\n    { term: 'Medicare', definition: 'A federal health insurance program for people who are 65 or older, certain younger people with disabilities, and people with End-Stage Renal Disease.' },\n  ],  \n  O: [\n    { term: 'Open Enrollment Period', definition: 'The yearly period when people can enroll in a health insurance plan or change their existing coverage.' },\n    { term: 'Out-of-Pocket Maximum', definition: 'The most you have to pay for covered services in a plan year. After you spend this amount on deductibles, copayments, and coinsurance, your health plan pays 100% of the costs of covered benefits.' },\n  ],  \n  P: [\n    { term: 'Pre-existing Condition', definition: 'A health problem you had before the date your new health coverage starts. Under the ACA, health insurance companies can\\'t refuse to cover you or charge you more because of a pre-existing condition.' },\n    { term: 'Preferred Provider Organization (PPO)', definition: 'A type of health plan that contracts with medical providers to create a network of participating providers. You pay less if you use providers in the network but can use providers outside the network for an additional cost.' },\n  ],  \n}\n\nconst filteredTerms = computed(() => {\n  if (!searchQuery.value.trim()) return terms\n\n  const query = searchQuery.value.toLowerCase()\n  const result: Record<string, typeof terms[string]> = {}\n\n  for (const [letter, items] of Object.entries(terms)) {\n    const matches = items.filter(\n      item =>\n        item.term.toLowerCase().includes(query) ||\n        item.definition.toLowerCase().includes(query)\n    )\n    if (matches.length > 0) result[letter] = matches\n  }\n\n  return result\n})\n</script>\n",
+      "start": 1761251151015,
+      "end": 1761251151242,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "pre"
+    },
+    {
+      "name": "content-slot",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1761251151242,
+      "end": 1761251151242,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/health-insurance-glossary.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/amerusfinancial/Desktop/projects/Amerus/app/pages/health-insurance-glossary.vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"pages/health-insurance-glossary.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
+      "start": 1761251151242,
+      "end": 1761251151262,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1761251151262,
+      "end": 1761251151262,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1761251151262,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "unhead:remove-server-composables",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "unhead:use-seo-meta-transform",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1761251151263,
+      "end": 1761251151263,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1761251151264,
+      "end": 1761251151264,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1761251151264,
+      "end": 1761251151265,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1761251151265,
+      "end": 1761251151265,
+      "order": "normal"
+    }
+  ]
+}
