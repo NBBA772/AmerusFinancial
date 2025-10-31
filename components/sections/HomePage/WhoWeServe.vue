@@ -19,8 +19,8 @@ const cards = ref([
       "/employers/compliance-checklist",
       "/employers/workers-comp",
     ],
-    learnMoreLink: "/businesses",
-    getQuoteLink: "/info",
+    learnMoreLink: "/services/business/general-liability",
+    getQuoteLink: "/contact",
   },
   {
     title: "Individuals & Families",
@@ -41,8 +41,8 @@ const cards = ref([
       "/families/college-savings",
       "/families/emergency-support",
     ],
-    learnMoreLink: "/families",
-    getQuoteLink: "/info",
+    learnMoreLink: "/services/health/individual-health",
+    getQuoteLink: "/contact",
   },
   {
     title: "Seniors & Medicare",
@@ -63,8 +63,8 @@ const cards = ref([
       "/seniors/prescriptions",
       "/seniors/long-term-care",
     ],
-    learnMoreLink: "/seniors",
-    getQuoteLink: "/info",
+    learnMoreLink: "/services/retirement/iras",
+    getQuoteLink: "/contact",
   },
 ]);
 
