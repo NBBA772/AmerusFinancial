@@ -14,12 +14,12 @@
       >
         For Individuals & Families
       </NuxtLink>
-      <NuxtLink
+      <!-- <NuxtLink
         to="#seniors"
         class="px-3 py-2 rounded-md font-medium border border-sky-500 text-sky-500 hover:bg-sky-100 transition-colors"
       >
         For Seniors
-      </NuxtLink>
+      </NuxtLink> -->
     </div>
 
     <!-- Address & Phone -->
