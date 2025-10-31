@@ -68,7 +68,15 @@
         </div>
         <!-- Right Column: Nuxt Image -->
         <div class="flex justify-center md:justify-end">
-          <NuxtImg src="/images/happy-family-at-home.jpg" alt="Happy Family at Home" class="rounded-2xl shadow-lg object-cover" />
+          <NuxtImg 
+            format="webp"
+            sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px"
+            quality="80"
+            loading="lazy"
+            src="/images/happy-family-at-home.jpg" 
+            alt="Happy Family at Home" 
+            class="rounded-2xl shadow-lg object-cover" 
+          />
         </div>
       </div>
     </div>
