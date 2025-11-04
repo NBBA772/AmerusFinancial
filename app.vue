@@ -24,7 +24,7 @@ useSchemaOrg([
   defineLocalBusiness({
     name: 'Amerus Financial',
     logo: "/logo.png",
-    description: 'Insurance and financial services',
+    description: 'Insurance and financial services.',
     url: 'https://www.amerusfinancial.com',
     telephone: '+1-888-441-7891',
     email: 'info@amerusfinancial.com',
