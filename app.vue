@@ -10,7 +10,17 @@ nuxtApp.hook("page:finish", () => {
 useHead({
   link: [{ rel: "icon", type: "image/x-icon", href: "/img/favicon.ico" }],
 });
-
+definePageMeta({
+  head: {
+    script: [
+      {
+        src: 'https://analytics.ahrefs.com/analytics.js',
+        'data-key': 'V0zZlhoarGMJAxDX81ncuA',
+        async: true
+      }
+    ]
+  }
+})
 await useUser();
 useSchemaOrg([
   defineLocalBusiness({
