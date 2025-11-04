@@ -73,7 +73,7 @@ useSeoMeta({
   title: 'Workers\' Compensation Insurance — Amerus Financial',
   ogTitle: 'Workers\' Compensation Insurance — Amerus',
   description:
-    'Protect your employees and business with comprehensive workers\' compensation insurance covering medical expenses and lost wages from workplace injuries.',
+    'Protect your employees and business with comprehensive workers\' compensation insurance covering medical expenses and lost wages from workplace injuries',
   ogDescription:
     'Workers\' compensation insurance protecting employees from workplace injuries and employers from liability claims.',
   ogImage: 'https://www.amerusfinancial.com/images/workers-compensation.jpg',
