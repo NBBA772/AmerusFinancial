@@ -17,7 +17,7 @@
             
 
 
-            <!-- Section with background and blue header -->
+            <!-- Section with background and blue header .-->
             <section
               class="rounded-2xl overflow-hidden shadow-sm border border-[#e0f1ff] bg-gradient-to-br from-[#f8fbff] to-[#eef7ff] hover:shadow-md transition-all duration-300 bg-gradient-to-br from-card/80 to-card/60 backdrop-blur-sm"
             >
