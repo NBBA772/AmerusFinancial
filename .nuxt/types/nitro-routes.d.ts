@@ -48,6 +48,9 @@ declare module 'nitropack' {
     '/api/lesson/:name': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/lesson/[name]').default>>>>
     }
+    '/api/sitemap-urls': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/sitemap-urls').default>>>>
+    }
     '/api/stripe/createPortalSession': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/stripe/createPortalSession').default>>>>
     }
@@ -62,9 +65,6 @@ declare module 'nitropack' {
     }
     '/api/topics': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/topics').default>>>>
-    }
-    '/api/sitemap-urls': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/routes/api/sitemap-urls').default>>>>
     }
     '/sitemap-content': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/routes/sitemap-content').default>>>>

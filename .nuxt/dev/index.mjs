@@ -792,7 +792,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-06T21:34:51.397Z"
+          "lastmod": "2025-11-06T21:54:58.212Z"
         },
         "include": [],
         "exclude": [
@@ -841,7 +841,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-06T21:34:51.397Z"
+          "lastmod": "2025-11-06T21:54:58.212Z"
         },
         "include": [],
         "exclude": [
@@ -7608,12 +7608,12 @@ const _lazy_Eoyvqz = () => Promise.resolve().then(function () { return search$1;
 const _lazy_egPW47 = () => Promise.resolve().then(function () { return contact_post$1; });
 const _lazy_Zp2cKC = () => Promise.resolve().then(function () { return quote_post$1; });
 const _lazy_E5b2YV = () => Promise.resolve().then(function () { return _name_$3; });
+const _lazy_KfIVc6 = () => Promise.resolve().then(function () { return sitemapUrls$1; });
 const _lazy_gOkl89 = () => Promise.resolve().then(function () { return createPortalSession$1; });
 const _lazy_BzXVqe = () => Promise.resolve().then(function () { return webhooks_post$1; });
 const _lazy_EYWQ5h = () => Promise.resolve().then(function () { return subscribe_post$1; });
 const _lazy_AUlBGS = () => Promise.resolve().then(function () { return _name_$1; });
 const _lazy_HMv22d = () => Promise.resolve().then(function () { return topics$1; });
-const _lazy_iObjlk = () => Promise.resolve().then(function () { return sitemapUrls$1; });
 const _lazy_bEJMYU = () => Promise.resolve().then(function () { return sitemapContent$1; });
 const _lazy_CBnrKq = () => Promise.resolve().then(function () { return renderer$1; });
 const _lazy_4PKnCu = () => Promise.resolve().then(function () { return font$1; });
@@ -7637,12 +7637,12 @@ const handlers = [
   { route: '/api/email/contact', handler: _lazy_egPW47, lazy: true, middleware: false, method: "post" },
   { route: '/api/email/quote', handler: _lazy_Zp2cKC, lazy: true, middleware: false, method: "post" },
   { route: '/api/lesson/:name', handler: _lazy_E5b2YV, lazy: true, middleware: false, method: undefined },
+  { route: '/api/sitemap-urls', handler: _lazy_KfIVc6, lazy: true, middleware: false, method: undefined },
   { route: '/api/stripe/createPortalSession', handler: _lazy_gOkl89, lazy: true, middleware: false, method: undefined },
   { route: '/api/stripe/webhooks', handler: _lazy_BzXVqe, lazy: true, middleware: false, method: "post" },
   { route: '/api/subscribe', handler: _lazy_EYWQ5h, lazy: true, middleware: false, method: "post" },
   { route: '/api/topic/:name', handler: _lazy_AUlBGS, lazy: true, middleware: false, method: undefined },
   { route: '/api/topics', handler: _lazy_HMv22d, lazy: true, middleware: false, method: undefined },
-  { route: '/api/sitemap-urls', handler: _lazy_iObjlk, lazy: true, middleware: false, method: undefined },
   { route: '/sitemap-content', handler: _lazy_bEJMYU, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_error', handler: _lazy_CBnrKq, lazy: true, middleware: false, method: undefined },
   { route: '/api/_mdc/highlight', handler: _LxXtK8, lazy: false, middleware: false, method: undefined },
@@ -13551,6 +13551,38 @@ const _name_$3 = /*#__PURE__*/Object.freeze({
   default: _name_$2
 });
 
+const sitemapUrls = defineEventHandler(async (event) => {
+  const articles = await serverQueryContent(event).where({ _extension: "md" }).find();
+  const articleUrls = articles.map((article) => {
+    if (!article.slug) {
+      console.warn(`Article found without slug: ${article._file}`);
+      return null;
+    }
+    return {
+      loc: `/articles/${article.slug}`,
+      lastmod: article.date || (/* @__PURE__ */ new Date()).toISOString(),
+      changefreq: "monthly",
+      priority: 0.8
+    };
+  }).filter(Boolean);
+  const staticUrls = [
+    { loc: "/", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "daily", priority: 1 },
+    { loc: "/about-us", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "monthly", priority: 0.8 },
+    { loc: "/contact", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "monthly", priority: 0.8 },
+    { loc: "/services/health", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "weekly", priority: 0.9 },
+    { loc: "/services/life", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "weekly", priority: 0.9 },
+    { loc: "/services/retirement", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "weekly", priority: 0.9 },
+    { loc: "/services/business", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "weekly", priority: 0.9 },
+    { loc: "/articles/overview", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "daily", priority: 0.9 }
+  ];
+  return [...staticUrls, ...articleUrls];
+});
+
+const sitemapUrls$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: sitemapUrls
+});
+
 const config$1 = useRuntimeConfig();
 const stripe$1 = new Stripe(config$1.private.stripeSecretKey, null);
 const createPortalSession = eventHandler(async (event) => {
@@ -13775,40 +13807,6 @@ const topics = defineEventHandler(async () => {
 const topics$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,
   default: topics
-});
-
-const sitemapUrls = defineEventHandler(async (event) => {
-  const articles = await serverQueryContent(event).where({ _extension: "md" }).find();
-  const staticRoutes = [
-    "/services/health/dental",
-    "/services/health/medicare",
-    "/services/health/vision-coverage",
-    "/services/health/individual-health",
-    "/services/health/private-health",
-    "/services/life/term-life",
-    "/services/life/final-expense",
-    "/services/life/group-life-insurance",
-    "/services/retirement/401k",
-    "/services/retirement/iras"
-  ];
-  const articleUrls = articles.map((article) => ({
-    loc: `/articles/${article.slug}`,
-    lastmod: article.date || (/* @__PURE__ */ new Date()).toISOString(),
-    priority: 0.8,
-    changefreq: "weekly"
-  }));
-  const staticUrls = staticRoutes.map((route) => ({
-    loc: route,
-    lastmod: (/* @__PURE__ */ new Date()).toISOString(),
-    priority: 1,
-    changefreq: "weekly"
-  }));
-  return [...staticUrls, ...articleUrls];
-});
-
-const sitemapUrls$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  default: sitemapUrls
 });
 
 const sitemapContent = defineEventHandler(async (event) => {
