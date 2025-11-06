@@ -1,3 +1,21 @@
+<script setup>
+const { data: article } = await useAsyncData('article', () => queryContent(useRoute().params.slug.join('/')).findOne())
+
+// Set meta tags using the article data
+useSeoMeta({
+  title: article.value?.title,
+  description: article.value?.description,
+  ogTitle: `${article.value?.title} — Amerus Financial`,
+  ogDescription: article.value?.description,
+  ogImage: article.value?.img,
+  ogUrl: `https://www.amerusfinancial.com/articles/${article.value?.slug}`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: `${article.value?.title} — Amerus Financial`,
+  twitterDescription: article.value?.description,
+  twitterImage: article.value?.img
+})
+</script>
+
 <template>
   <div class="flex justify-center gap-x-12">
     <main
