@@ -14,6 +14,16 @@ useSeoMeta({
   twitterDescription: article.value?.description,
   twitterImage: article.value?.img
 })
+
+// Add canonical URL
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: `https://www.amerusfinancial.com/articles/${article.value?.slug}`
+    }
+  ]
+})
 </script>
 
 <template>

@@ -133,14 +133,25 @@ export const useEnhancedSocialMeta = (data: {
   description: string
   image: string
   url: string
-  type?: string
+  type?: 'website' | 'article' | 'book' | 'profile' | 'music.song' | 'music.album' | 'music.playlist' | 'music.radio_status' | 'video.movie' | 'video.episode' | 'video.tv_show' | 'video.other'
   locale?: string
 }) => {
+  // Set both Open Graph URL and canonical URL
+  useHead({
+    link: [
+      {
+        rel: 'canonical',
+        href: data.url
+      }
+    ]
+  })
+  
   useSeoMeta({
     // Enhanced Open Graph
-    ogType: data.type || 'website',
+    ogType: data.type || 'website' as const,
     ogLocale: data.locale || 'en_US',
     ogSiteName: 'Amerus Financial',
+    ogUrl: data.url,
     
     // Article specific tags
     ...(data.type === 'article' && {

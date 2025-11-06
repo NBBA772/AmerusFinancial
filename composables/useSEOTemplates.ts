@@ -48,9 +48,11 @@ useSocialMeta({
 })
 
 // Enhanced meta tags and canonical
+// Ensure URL consistency between OG and canonical
+const url = pageData.url.toLowerCase()
 useHead({
   link: [
-    { rel: 'canonical', href: '${pageData.url}' },
+    { rel: 'canonical', href: url },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
     { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
