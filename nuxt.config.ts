@@ -15,7 +15,15 @@ export default defineNuxtConfig({
       
     ]
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/content', 'nuxt-icon', '@nuxt/image','@nuxtjs/seo'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    '@nuxt/content',
+    'nuxt-icon',
+    '@nuxt/image',
+    '@nuxtjs/seo',
+    'nuxt-simple-sitemap'
+  ],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.js',
@@ -74,21 +82,17 @@ export default defineNuxtConfig({
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
     indexable: true // Changed to true for SEO
   },
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.amerusfinancial.com'
+  },
   sitemap: {
     enabled: true,
-    gzip: true,
-    routes: [
-      '/services/health/dental',
-      '/services/health/medicare', 
-      '/services/health/vision-coverage',
-      '/services/health/individual-health',
-      '/services/health/private-health',
-      '/services/life/term-life',
-      '/services/life/final-expense',
-      '/services/life/group-life-insurance',
-      '/services/retirement/401k',
-      '/services/retirement/iras'
-    ]
+    defaults: {
+      changefreq: 'daily',
+      priority: 0.5,
+      lastmod: new Date().toISOString()
+    },
+    dynamicUrlsApiEndpoint: '/api/sitemap-urls'
   },
   robots: {
     enabled: true,
