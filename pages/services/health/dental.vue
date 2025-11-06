@@ -72,7 +72,7 @@ useSeoMeta({
   title: 'Dental Insurance & Dental Plans',
   ogTitle: 'Dental Insurance Plans & Coverage — Amerus',
   description:
-    'Find affordable dental insurance plans for preventive care, fillings, crowns, and orthodontics. Compare options and start a 15-minute consultation with Amerus today.',
+    'Affordable dental insurance covering preventive care, fillings & major procedures. Compare plans starting at $25/month.',
   ogDescription:
     'Explore dental insurance options covering preventive visits, basic and major procedures, and orthodontic care.',
   ogImage: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',

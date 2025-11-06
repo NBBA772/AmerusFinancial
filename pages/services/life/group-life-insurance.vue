@@ -72,7 +72,7 @@ useSeoMeta({
   title: 'Group Life Insurance for Employers',
   ogTitle: 'Employee Group Life Insurance Benefits — Amerus',
   description:
-    'Provide essential financial protection for your employees with cost-effective group life insurance that enhances your benefits package and attracts quality talent.',
+    'Cost-effective group life insurance for employees. Enhance benefits package with affordable coverage and attract top talent.',
   ogDescription:
     'Enhance your employee benefits package with group life insurance offering financial protection for your team and their families through affordable employer-sponsored coverage.',
   ogImage: 'https://www.amerusfinancial.com/images/group-life-insurance.jpg',

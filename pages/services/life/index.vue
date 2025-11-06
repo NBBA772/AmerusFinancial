@@ -100,7 +100,7 @@ useSeoMeta({
   title: 'Life Insurance Solutions',
   ogTitle: 'Life Insurance Coverage & Protection — Amerus',
   description:
-    'Secure your family\'s financial future with comprehensive life insurance coverage. From term to permanent life insurance, find the protection that fits your needs.',
+    'Find comprehensive life insurance coverage starting at $50/month. Compare term, whole & universal life options for your family\'s protection.',
   ogDescription:
     'Explore comprehensive life insurance options including term life, whole life, universal life, and final expense coverage to protect your family\'s financial future.',
   ogImage: 'https://www.amerusfinancial.com/images/life-insurance.jpg',

@@ -73,7 +73,7 @@ useSeoMeta({
   title: '401(k) Retirement Plans & Planning',
   ogTitle: '401(k) Retirement Plans & Investment Options — Amerus',
   description:
-    'Maximize your retirement savings with 401(k) plans featuring employer matching, tax advantages, and investment options. Expert retirement planning guidance from Amerus.',
+    'Expert 401(k) retirement planning with employer matching and tax advantages. Get personalized guidance for your retirement goals.',
   ogDescription:
     'Discover 401(k) retirement plans with employer matching, tax-deferred growth, and professional investment guidance.',
   ogImage: 'https://www.amerusfinancial.com/images/401k-retirement-planning.jpg',

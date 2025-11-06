@@ -73,7 +73,7 @@ useSeoMeta({
   title: 'Split Dollar Life Insurance',
   ogTitle: 'Executive Split Dollar Life Insurance — Amerus',
   description:
-    'Create a strategic partnership where both employer and employee share the benefits and costs of a life insurance policy as part of an executive benefit strategy.',
+    'Expert split dollar life insurance solutions sharing costs between employer & employee. Strategic executive benefits with tax advantages.',
   ogDescription:
     'Discover split dollar life insurance arrangements that allow employers and executives to share premium costs and benefits for strategic executive compensation and retention.',
   ogImage: 'https://www.amerusfinancial.com/images/split-dollar-insurance.jpg',

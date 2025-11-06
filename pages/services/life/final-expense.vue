@@ -72,7 +72,7 @@ useSeoMeta({
   title: 'Final Expense Life Insurance',
   ogTitle: 'Final Expense Insurance for End-of-Life Costs — Amerus',
   description:
-    'Affordable final expense life insurance to cover funeral costs and end-of-life expenses. Guaranteed approval options available for seniors with simplified underwriting.',
+    'Affordable final expense insurance covering funeral costs. Guaranteed approval with no medical exam starting at $35/month.',
   ogDescription:
     'Secure final expense insurance to ease the financial burden on your family with affordable coverage for funeral and burial costs.',
   ogImage: 'https://www.amerusfinancial.com/images/final-expense-insurance.jpg',
