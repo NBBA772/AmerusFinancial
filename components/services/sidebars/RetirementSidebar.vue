@@ -79,7 +79,7 @@ const links = [
   { href: "/services/retirement/pension-planning", label: "Pension Planning", icon: "lucide:building" },
   { href: "/services/retirement/long-term-care", label: "Long-Term Care", icon: "lucide:milestone" },
   { href: "/services/retirement/retirement-income", label: "Retirement Income", icon: "lucide:wallet" },
-  { href: "/guides/retirement-planning-checklist", label: "Retirement Planning Guide", icon: "lucide:receipt" },
+  // { href: "/guides/retirement-planning-checklist", label: "Retirement Planning Guide", icon: "lucide:receipt" },
   // { href: "/blog/maximize-your-401k-contributions", label: "Maximize 401(k) Contributions", icon: "lucide:chart-no-axes-column-increasing", badge: "New" },
 ];
 </script>
