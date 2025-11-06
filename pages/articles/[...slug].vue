@@ -22,7 +22,12 @@ useHead({
       rel: 'canonical',
       href: `https://www.amerusfinancial.com/articles/${article.value?.slug}`
     }
-  ]
+  ],
+    meta: [
+    // Enable indexing
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' }
+  ],
 })
 </script>
 

@@ -792,7 +792,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-06T21:09:53.895Z"
+          "lastmod": "2025-11-06T21:34:51.397Z"
         },
         "include": [],
         "exclude": [
@@ -841,7 +841,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-06T21:09:53.895Z"
+          "lastmod": "2025-11-06T21:34:51.397Z"
         },
         "include": [],
         "exclude": [
