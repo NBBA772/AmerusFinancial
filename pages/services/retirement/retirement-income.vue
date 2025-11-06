@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Retirement Income Planning & Solutions — Amerus Financial',
+  title: 'Retirement Income Planning & Solutions',
   ogTitle: 'Retirement Income Planning — Amerus',
   description:
     'Create sustainable retirement income with annuities, pensions, and investment strategies. Plan your financial future with expert guidance from Amerus.',

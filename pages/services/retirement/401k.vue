@@ -70,7 +70,7 @@ useEnhancedMetaTags({
 })
 
 useSeoMeta({
-  title: '401(k) Retirement Plans & Planning — Amerus Financial',
+  title: '401(k) Retirement Plans & Planning',
   ogTitle: '401(k) Retirement Plans & Investment Options — Amerus',
   description:
     'Maximize your retirement savings with 401(k) plans featuring employer matching, tax advantages, and investment options. Expert retirement planning guidance from Amerus.',

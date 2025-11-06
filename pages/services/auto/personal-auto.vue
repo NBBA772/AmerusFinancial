@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Personal Auto Insurance Coverage — Amerus Financial',
+  title: 'Personal Auto Insurance Coverage',
   ogTitle: 'Personal Auto Insurance — Amerus',
   description:
     'Comprehensive personal auto insurance with liability, collision, and comprehensive coverage. Get competitive rates and protect your vehicle with Amerus.',

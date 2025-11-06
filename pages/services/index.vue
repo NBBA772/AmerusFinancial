@@ -46,7 +46,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Insurance Services — Amerus Financial',
+  title: 'Insurance Services',
   ogTitle: 'Complete Insurance Solutions — Amerus',
   description:
     'Comprehensive insurance services for individuals, families, and businesses. Health, life, auto, home, business, and retirement planning solutions from Amerus.',

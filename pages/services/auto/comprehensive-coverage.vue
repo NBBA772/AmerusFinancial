@@ -71,7 +71,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Comprehensive Auto Insurance Coverage — Amerus Financial',
+  title: 'Comprehensive Auto Insurance Coverage',
   ogTitle: 'Comprehensive Auto Coverage — Amerus',
   description:
     'Protect your vehicle from theft, vandalism, and weather damage with comprehensive auto insurance coverage. Get competitive rates from Amerus.',

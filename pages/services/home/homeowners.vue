@@ -94,7 +94,7 @@ useEnhancedMetaTags({
 })
 
 useSeoMeta({
-  title: 'Homeowners Insurance Coverage — Amerus Financial',
+  title: 'Homeowners Insurance Coverage',
   ogTitle: 'Homeowners Insurance Protection — Amerus',
   description:
     'Comprehensive homeowners insurance protecting your home, belongings, and family from unexpected events. Get affordable coverage with excellent customer service.',

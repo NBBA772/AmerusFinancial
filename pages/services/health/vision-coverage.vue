@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Vision Insurance Coverage — Amerus Financial',
+  title: 'Vision Insurance Coverage',
   ogTitle: 'Vision Insurance Coverage — Amerus',
   description:
     'Affordable vision insurance plans covering eye exams, glasses, contact lenses, and frames with extensive provider networks.',

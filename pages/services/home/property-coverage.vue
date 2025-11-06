@@ -69,7 +69,7 @@ useEnhancedMetaTags({
 })
 
 useSeoMeta({
-  title: 'Property Coverage Insurance — Amerus Financial',
+  title: 'Property Coverage Insurance',
   ogTitle: 'Property Coverage & Protection — Amerus',
   description:
     'Comprehensive property coverage insurance protecting your home structure and belongings from fire, theft, vandalism, and natural disasters.',

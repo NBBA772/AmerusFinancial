@@ -85,7 +85,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Retirement Planning Services — Amerus Financial',
+  title: 'Retirement Planning Services',
   ogTitle: 'Retirement Planning & Financial Services — Amerus',
   description:
     'Comprehensive retirement planning with 401(k), IRAs, annuities, and pension strategies. Build a secure financial future with expert retirement guidance.',

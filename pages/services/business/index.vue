@@ -79,7 +79,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Business Insurance Solutions — Amerus Financial',
+  title: 'Business Insurance Solutions',
   ogTitle: 'Business Insurance Coverage — Amerus',
   description:
     'Comprehensive business insurance including general liability, workers comp, commercial property, and professional liability. Protect your business with Amerus.',

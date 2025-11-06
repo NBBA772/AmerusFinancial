@@ -64,7 +64,7 @@ useEnhancedMetaTags({
 })
 
 useSeoMeta({
-  title: 'Universal Life Insurance Plans — Amerus Financial',
+  title: 'Universal Life Insurance Plans',
   ogTitle: 'Universal Life Insurance with Investment Options — Amerus',
   description:
     'Flexible universal life insurance with investment components and adjustable premiums. Build cash value while protecting your family with customizable coverage.',

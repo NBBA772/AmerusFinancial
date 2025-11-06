@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Liability Coverage Insurance — Amerus Financial',
+  title: 'Liability Coverage Insurance',
   ogTitle: 'Liability Coverage & Protection — Amerus',
   description:
     'Comprehensive liability coverage insurance protecting you from legal claims and lawsuits. Get personal liability protection for your home and family.',

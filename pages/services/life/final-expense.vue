@@ -69,7 +69,7 @@ useEnhancedMetaTags({
 })
 
 useSeoMeta({
-  title: 'Final Expense Life Insurance — Amerus Financial',
+  title: 'Final Expense Life Insurance',
   ogTitle: 'Final Expense Insurance for End-of-Life Costs — Amerus',
   description:
     'Affordable final expense life insurance to cover funeral costs and end-of-life expenses. Guaranteed approval options available for seniors with simplified underwriting.',

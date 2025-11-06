@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Flood Insurance Coverage — Amerus Financial',
+  title: 'Flood Insurance Coverage',
   ogTitle: 'Flood Insurance Protection — Amerus',
   description:
     'Comprehensive flood insurance protection for your home and belongings. Protect against flood damage with affordable NFIP and private flood coverage.',

@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Family Health Insurance Plans — Amerus Financial',
+  title: 'Family Health Insurance Plans',
   ogTitle: 'Family Health Insurance Plans — Amerus',
   description:
     'Protect your entire family with comprehensive health insurance coverage including medical, dental, and vision benefits for all family members.',

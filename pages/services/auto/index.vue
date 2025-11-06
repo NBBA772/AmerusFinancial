@@ -62,7 +62,7 @@ usePerformanceMonitoring()
 
 // Enhanced social sharing
 useSocialMeta({
-  title: 'Auto Insurance Coverage & Protection — Amerus Financial',
+  title: 'Auto Insurance Coverage & Protection',
   description: 'Comprehensive auto insurance with liability, collision, comprehensive, and specialized coverage options. Get competitive rates and protect your vehicle with Amerus.',
   image: 'https://www.amerusfinancial.com/images/auto-insurance-coverage.jpg',
   url: 'https://www.amerusfinancial.com/services/auto',
@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Auto Insurance Coverage & Protection — Amerus Financial',
+  title: 'Auto Insurance Coverage & Protection',
   ogTitle: 'Auto Insurance Coverage — Amerus',
   description:
     'Comprehensive auto insurance with liability, collision, comprehensive, and specialized coverage options. Get competitive rates and protect your vehicle with Amerus.',

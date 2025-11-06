@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Term Life Insurance Plans — Amerus Financial',
+  title: 'Term Life Insurance Plans',
   ogTitle: 'Term Life Insurance Plans — Amerus',
   description:
     'Affordable term life insurance providing temporary coverage and financial protection for your family with flexible coverage amounts.',

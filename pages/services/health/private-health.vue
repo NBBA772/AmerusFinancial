@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Private Health Insurance Plans — Amerus Financial',
+  title: 'Private Health Insurance Plans',
   ogTitle: 'Private Health Insurance Plans — Amerus',
   description:
     'Secure private health insurance with flexible coverage options, premium networks, and comprehensive medical benefits.',

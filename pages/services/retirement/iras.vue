@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'IRA Retirement Planning — Amerus Financial',
+  title: 'IRA Retirement Planning',
   ogTitle: 'IRA Investment & Retirement Strategies — Amerus',
   description:
     'Comprehensive IRA retirement planning services including Traditional and Roth IRAs. Maximize your retirement savings with expert guidance and tax-advantaged strategies.',

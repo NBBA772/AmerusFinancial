@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Medicare Insurance Plans & Supplements — Amerus Financial',
+  title: 'Medicare Insurance Plans & Supplements',
   ogTitle: 'Medicare Insurance Plans & Supplements — Amerus',
   description:
     'Navigate Medicare with confidence. Find Medicare Advantage, Supplement, and Part D prescription drug plans with expert guidance.',

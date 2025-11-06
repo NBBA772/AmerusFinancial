@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Uninsured Motorist Coverage — Amerus Financial',
+  title: 'Uninsured Motorist Coverage',
   ogTitle: 'Uninsured Motorist Coverage — Amerus',
   description:
     'Protect yourself from uninsured and underinsured drivers with comprehensive uninsured motorist coverage. Get protection from Amerus.',

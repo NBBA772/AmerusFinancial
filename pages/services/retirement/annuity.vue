@@ -70,7 +70,7 @@ useEnhancedMetaTags({
 })
 
 useSeoMeta({
-  title: 'Annuity Planning & Retirement Income — Amerus Financial',
+  title: 'Annuity Planning & Retirement Income',
   ogTitle: 'Annuity Planning & Guaranteed Income — Amerus',
   description:
     'Secure guaranteed retirement income with annuities. Fixed, variable, and immediate annuity options with professional guidance for lifetime income planning.',

@@ -68,7 +68,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Individual Health Insurance Plans — Amerus Financial',
+  title: 'Individual Health Insurance Plans',
   ogTitle: 'Individual Health Insurance Plans — Amerus',
   description:
     'Find affordable individual health insurance plans with comprehensive medical coverage, preventive care, and prescription drug benefits.',

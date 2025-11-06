@@ -69,7 +69,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Dental Insurance & Dental Plans — Amerus Financial',
+  title: 'Dental Insurance & Dental Plans',
   ogTitle: 'Dental Insurance Plans & Coverage — Amerus',
   description:
     'Find affordable dental insurance plans for preventive care, fillings, crowns, and orthodontics. Compare options and start a 15-minute consultation with Amerus today.',

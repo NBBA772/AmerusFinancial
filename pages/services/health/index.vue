@@ -97,7 +97,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Health Insurance Plans & Coverage — Amerus Financial',
+  title: 'Health Insurance Plans & Coverage',
   ogTitle: 'Health Insurance Solutions — Amerus',
   description:
     'Comprehensive health insurance solutions including individual, family, group, Medicare, dental and vision coverage. Find the right health plan for your needs.',

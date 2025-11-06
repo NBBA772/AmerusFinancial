@@ -70,7 +70,7 @@ useEnhancedMetaTags({
 })
 
 useSeoMeta({
-  title: 'Long-Term Care Planning & Insurance — Amerus Financial',
+  title: 'Long-Term Care Planning & Insurance',
   ogTitle: 'Long-Term Care Insurance & Planning — Amerus',
   description:
     'Protect your retirement with comprehensive long-term care insurance and planning. Coverage for home care, assisted living, and nursing facilities.',

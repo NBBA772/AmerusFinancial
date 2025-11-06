@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Commercial Property Insurance — Amerus Financial',
+  title: 'Commercial Property Insurance',
   ogTitle: 'Commercial Property Insurance — Amerus',
   description:
     'Protect your business property and assets with comprehensive commercial property insurance covering buildings, equipment, and inventory.',

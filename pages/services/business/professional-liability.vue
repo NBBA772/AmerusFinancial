@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Professional Liability Insurance (E&O) — Amerus Financial',
+  title: 'Professional Liability Insurance (E&O)',
   ogTitle: 'Professional Liability Insurance — Amerus',
   description:
     'Protect your professional practice from errors and omissions claims with comprehensive professional liability insurance coverage.',

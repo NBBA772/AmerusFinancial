@@ -91,7 +91,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Home Insurance Solutions & Coverage — Amerus Financial',
+  title: 'Home Insurance Solutions & Coverage',
   ogTitle: 'Home Insurance Solutions — Amerus',
   description:
     'Comprehensive home insurance solutions including homeowners, property protection, flood insurance, and liability coverage. Protect your most valuable asset.',

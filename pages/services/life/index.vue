@@ -97,7 +97,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Life Insurance Solutions — Amerus Financial',
+  title: 'Life Insurance Solutions',
   ogTitle: 'Life Insurance Coverage & Protection — Amerus',
   description:
     'Secure your family\'s financial future with comprehensive life insurance coverage. From term to permanent life insurance, find the protection that fits your needs.',

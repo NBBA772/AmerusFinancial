@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Workers\' Compensation Insurance — Amerus Financial',
+  title: 'Workers\' Compensation Insurance',
   ogTitle: 'Workers\' Compensation Insurance — Amerus',
   description:
     'Protect your employees and business with comprehensive workers\' compensation insurance covering medical expenses and lost wages from workplace injuries',

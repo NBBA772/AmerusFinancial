@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Senior Dental Insurance Plans — Amerus Financial',
+  title: 'Senior Dental Insurance Plans',
   ogTitle: 'Senior Dental Insurance Plans — Amerus',
   description:
     'Specialized dental insurance for seniors with coverage for dentures, implants, and comprehensive oral care designed for older adults.',

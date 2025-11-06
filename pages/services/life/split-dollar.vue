@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Split Dollar Life Insurance — Amerus Financial',
+  title: 'Split Dollar Life Insurance',
   ogTitle: 'Executive Split Dollar Life Insurance — Amerus',
   description:
     'Create a strategic partnership where both employer and employee share the benefits and costs of a life insurance policy as part of an executive benefit strategy.',

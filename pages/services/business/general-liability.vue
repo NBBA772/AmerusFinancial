@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'General Liability Insurance for Business — Amerus Financial',
+  title: 'General Liability Insurance for Business',
   ogTitle: 'General Liability Insurance — Amerus',
   description:
     'Protect your business from lawsuits and claims with comprehensive general liability insurance. Get coverage for bodily injury, property damage, and more.',

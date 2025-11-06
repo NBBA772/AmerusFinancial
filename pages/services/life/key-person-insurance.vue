@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Key Person Insurance for Businesses — Amerus Financial',
+  title: 'Key Person Insurance for Businesses',
   ogTitle: 'Key Employee Life Insurance Protection — Amerus',
   description:
     'Protect your business from the financial impact of losing a key employee or executive with specialized coverage designed for business continuity and stability.',

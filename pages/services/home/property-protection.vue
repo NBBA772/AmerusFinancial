@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Property Protection Insurance — Amerus Financial',
+  title: 'Property Protection Insurance',
   ogTitle: 'Property Protection & Security — Amerus',
   description:
     'Comprehensive property protection insurance safeguarding your home and assets from unexpected events. Get complete coverage for your property investment.',

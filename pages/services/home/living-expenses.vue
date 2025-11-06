@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Additional Living Expenses Coverage — Amerus Financial',
+  title: 'Additional Living Expenses Coverage',
   ogTitle: 'Additional Living Expenses Coverage — Amerus',
   description:
     'Financial protection for temporary housing and extra costs when your home becomes uninhabitable. Get coverage for hotel costs, meals, and displacement expenses.',

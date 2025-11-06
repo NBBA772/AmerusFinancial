@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Personal Injury Protection (PIP) Insurance — Amerus Financial',
+  title: 'Personal Injury Protection (PIP) Insurance',
   ogTitle: 'Personal Injury Protection Insurance — Amerus',
   description:
     'Personal injury protection insurance covers medical expenses and lost wages after auto accidents, regardless of fault. Get PIP coverage from Amerus.',

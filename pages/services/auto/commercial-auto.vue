@@ -68,7 +68,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Commercial Auto Insurance for Business — Amerus Financial',
+  title: 'Commercial Auto Insurance for Business',
   ogTitle: 'Commercial Auto Insurance — Amerus',
   description:
     'Comprehensive commercial auto insurance for business vehicles, fleets, and company cars. Protect your business with competitive rates from Amerus.',

@@ -70,7 +70,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Whole Life Insurance Plans — Amerus Financial',
+  title: 'Whole Life Insurance Plans',
   ogTitle: 'Whole Life Insurance Plans — Amerus',
   description:
     'Permanent whole life insurance with guaranteed cash value growth, lifetime coverage, and stable premiums for long-term financial security.',

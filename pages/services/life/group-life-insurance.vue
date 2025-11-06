@@ -69,7 +69,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Group Life Insurance for Employers — Amerus Financial',
+  title: 'Group Life Insurance for Employers',
   ogTitle: 'Employee Group Life Insurance Benefits — Amerus',
   description:
     'Provide essential financial protection for your employees with cost-effective group life insurance that enhances your benefits package and attracts quality talent.',

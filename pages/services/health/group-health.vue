@@ -69,7 +69,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Group Health Insurance Plans — Amerus Financial',
+  title: 'Group Health Insurance Plans',
   ogTitle: 'Group Health Insurance Plans — Amerus',
   description:
     'Affordable group health insurance for businesses and organizations. Comprehensive employee health benefits with competitive rates.',

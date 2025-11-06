@@ -69,7 +69,7 @@ useSocialMeta({
 })
 
 useSeoMeta({
-  title: 'Valuable Items Insurance Coverage — Amerus Financial',
+  title: 'Valuable Items Insurance Coverage',
   ogTitle: 'Valuable Items & Personal Property Coverage — Amerus',
   description:
     'Specialized valuable items insurance protecting jewelry, art, collectibles, and high-value personal property with comprehensive coverage and appraisal support.',

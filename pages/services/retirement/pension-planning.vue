@@ -70,7 +70,7 @@ useEnhancedMetaTags({
 })
 
 useSeoMeta({
-  title: 'Pension Planning & Retirement Benefits — Amerus Financial',
+  title: 'Pension Planning & Retirement Benefits',
   ogTitle: 'Pension Planning & Benefit Optimization — Amerus',
   description:
     'Maximize your pension benefits with expert planning for defined benefit plans, pension rollovers, and retirement income optimization strategies.',
