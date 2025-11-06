@@ -95,6 +95,391 @@ const _inlineRuntimeConfig = {
       "/__nuxt_error": {
         "cache": false
       },
+      "/ns1.amerusfinancial.com/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/ns2.amerusfinancial.com/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/types-of-healthcare-plans/": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthinsurancequote": {
+        "redirect": {
+          "to": "/contact",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group/": {
+        "redirect": {
+          "to": "/services/health/group-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthcare": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/rome-georgia/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicare-health-plans-2021/": {
+        "redirect": {
+          "to": "/articles/medicare-health-plans-2021",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group-insurance/how-does-business-health-insurance-work/": {
+        "redirect": {
+          "to": "/articles/how-does-business-health-insurance-work",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/types-of-life-insurance/": {
+        "redirect": {
+          "to": "/articles/types-of-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance-2/why-use-a-health-insurance-agent/": {
+        "redirect": {
+          "to": "/articles/why-use-a-health-insurance-agent",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/pros-cons-of-medicare-advantage/": {
+        "redirect": {
+          "to": "/articles/pros-and-cons-of-medicare-advantage",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/what-is-term-life-insurance/": {
+        "redirect": {
+          "to": "/articles/what-is-term-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/what-is-medicare/": {
+        "redirect": {
+          "to": "/articles/what-is-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/senior-whole-life-insurance-guide/": {
+        "redirect": {
+          "to": "/articles/senior-whole-life-insurance-everything-you-need-to-know",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/enrolling-within-medicare/": {
+        "redirect": {
+          "to": "/articles/enrolling-within-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/how-much-does-medicare-cost/": {
+        "redirect": {
+          "to": "/articles/how-much-does-medicare-cost",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicare-eligibility/": {
+        "redirect": {
+          "to": "/articles/medicare-eligibility",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicare-extra-help/": {
+        "redirect": {
+          "to": "/articles/medicare-extra-help",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicare-at-the-right-time/": {
+        "redirect": {
+          "to": "/articles/medicare-at-the-right-time",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/open-enrollment/": {
+        "redirect": {
+          "to": "/articles/open-enrollment",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicare-part-a-and-part-b-coverage/": {
+        "redirect": {
+          "to": "/articles/medicare-part-a-and-part-b-coverage",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/qualifying-for-medicare-with-disabilities/": {
+        "redirect": {
+          "to": "/articles/qualifying-for-medicare-with-disabilities",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/reducing-expenses-in-medicare/": {
+        "redirect": {
+          "to": "/articles/reducing-expenses-in-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/the-abcs-and-d-of-medicare/": {
+        "redirect": {
+          "to": "/articles/the-abcs-and-d-of-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/signing-up-for-medicare/": {
+        "redirect": {
+          "to": "/articles/signing-up-for-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/when-medicare-coverage-begins/": {
+        "redirect": {
+          "to": "/articles/when-medicare-coverage-begins",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance-2/health-insurance-subsidies/": {
+        "redirect": {
+          "to": "/articles/health-insurance-subsidies",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance-2/managing-your-healthcare-plan/": {
+        "redirect": {
+          "to": "/articles/managing-your-healthcare-plan",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicaid-medicare/": {
+        "redirect": {
+          "to": "/articles/medicaid-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance-2/researching-health-insurance-options/": {
+        "redirect": {
+          "to": "/articles/researching-health-insurance-options",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance-2/types-of-healthcare-plans/": {
+        "redirect": {
+          "to": "/articles/types-of-healthcare-plans",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/how-to-buy-the-right-life-insurance-policy/": {
+        "redirect": {
+          "to": "/articles/how-to-buy-the-right-life-insurance-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/what-is-universal-life-insurance/": {
+        "redirect": {
+          "to": "/articles/what-is-universal-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/understanding-a-fixed-annuity-for-retirement-planning/": {
+        "redirect": {
+          "to": "/articles/understanding-a-fixed-annuity-for-retirement-planning",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group-insurance/what-you-should-know-about-group-health-insurance/": {
+        "redirect": {
+          "to": "/articles/what-you-should-know-about-group-health-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/difference-between-universal-and-whole-life-insurance/": {
+        "redirect": {
+          "to": "/articles/difference-between-universal-and-whole-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/pros-and-cons-of-a-fixed-annuity/": {
+        "redirect": {
+          "to": "/articles/pros-and-cons-of-a-fixed-annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance/what-sets-amerus-agents-apart/": {
+        "redirect": {
+          "to": "/articles/what-sets-amerus-agents-apart",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/final-expense-insurance/what-is-final-expense-insurance/": {
+        "redirect": {
+          "to": "/articles/what-is-final-expense-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/advantages-of-an-index-universal-life-insurance-policy/": {
+        "redirect": {
+          "to": "/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/understanding-the-taxation-advantages-of-fixed-annuities/": {
+        "redirect": {
+          "to": "/articles/understanding-the-taxation-advantages-of-fixed-annuities",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthcare/": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/lifeinsurance/": {
+        "redirect": {
+          "to": "/services/life/life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/senior-dental/": {
+        "redirect": {
+          "to": "/services/health/senior-dental",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/individual-health-insurance/": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/": {
+        "redirect": {
+          "to": "/services/retirement/annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/senior-solutions/": {
+        "redirect": {
+          "to": "/services/health/senior-dental",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/Medicare/": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/senior-life/": {
+        "redirect": {
+          "to": "/services/life/life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group-health-insurance/": {
+        "redirect": {
+          "to": "/services/health/group-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/auto-insurance/": {
+        "redirect": {
+          "to": "/services/auto",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/home-insurance/": {
+        "redirect": {
+          "to": "/services/home/property-protection",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/contact-insurance-agency/": {
+        "redirect": {
+          "to": "/about-us",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/learn-about-amerus-financial/": {
+        "redirect": {
+          "to": "/contact",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
       "/sitemap.xsl": {
         "headers": {
           "Content-Type": "application/xslt+xml"
@@ -10806,6 +11191,171 @@ const sources$1 = [
             },
             {
                 "loc": "/subscribe/success"
+            },
+            {
+                "loc": "/ns1.amerusfinancial.com/"
+            },
+            {
+                "loc": "/ns2.amerusfinancial.com/"
+            },
+            {
+                "loc": "/types-of-healthcare-plans/"
+            },
+            {
+                "loc": "/healthinsurancequote"
+            },
+            {
+                "loc": "/group/"
+            },
+            {
+                "loc": "/healthcare"
+            },
+            {
+                "loc": "/rome-georgia/"
+            },
+            {
+                "loc": "/medicare/medicare-health-plans-2021/"
+            },
+            {
+                "loc": "/group-insurance/how-does-business-health-insurance-work/"
+            },
+            {
+                "loc": "/life-insurance/types-of-life-insurance/"
+            },
+            {
+                "loc": "/health-insurance-2/why-use-a-health-insurance-agent/"
+            },
+            {
+                "loc": "/medicare/pros-cons-of-medicare-advantage/"
+            },
+            {
+                "loc": "/life-insurance/what-is-term-life-insurance/"
+            },
+            {
+                "loc": "/medicare/what-is-medicare/"
+            },
+            {
+                "loc": "/life-insurance/senior-whole-life-insurance-guide/"
+            },
+            {
+                "loc": "/medicare/enrolling-within-medicare/"
+            },
+            {
+                "loc": "/medicare/how-much-does-medicare-cost/"
+            },
+            {
+                "loc": "/medicare/medicare-eligibility/"
+            },
+            {
+                "loc": "/medicare/medicare-extra-help/"
+            },
+            {
+                "loc": "/medicare/medicare-at-the-right-time/"
+            },
+            {
+                "loc": "/medicare/open-enrollment/"
+            },
+            {
+                "loc": "/medicare/medicare-part-a-and-part-b-coverage/"
+            },
+            {
+                "loc": "/medicare/qualifying-for-medicare-with-disabilities/"
+            },
+            {
+                "loc": "/medicare/reducing-expenses-in-medicare/"
+            },
+            {
+                "loc": "/medicare/the-abcs-and-d-of-medicare/"
+            },
+            {
+                "loc": "/medicare/signing-up-for-medicare/"
+            },
+            {
+                "loc": "/medicare/when-medicare-coverage-begins/"
+            },
+            {
+                "loc": "/health-insurance-2/health-insurance-subsidies/"
+            },
+            {
+                "loc": "/health-insurance-2/managing-your-healthcare-plan/"
+            },
+            {
+                "loc": "/medicare/medicaid-medicare/"
+            },
+            {
+                "loc": "/health-insurance-2/researching-health-insurance-options/"
+            },
+            {
+                "loc": "/health-insurance-2/types-of-healthcare-plans/"
+            },
+            {
+                "loc": "/life-insurance/how-to-buy-the-right-life-insurance-policy/"
+            },
+            {
+                "loc": "/life-insurance/what-is-universal-life-insurance/"
+            },
+            {
+                "loc": "/annuities/understanding-a-fixed-annuity-for-retirement-planning/"
+            },
+            {
+                "loc": "/group-insurance/what-you-should-know-about-group-health-insurance/"
+            },
+            {
+                "loc": "/life-insurance/difference-between-universal-and-whole-life-insurance/"
+            },
+            {
+                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/"
+            },
+            {
+                "loc": "/health-insurance/what-sets-amerus-agents-apart/"
+            },
+            {
+                "loc": "/final-expense-insurance/what-is-final-expense-insurance/"
+            },
+            {
+                "loc": "/life-insurance/advantages-of-an-index-universal-life-insurance-policy/"
+            },
+            {
+                "loc": "/annuities/understanding-the-taxation-advantages-of-fixed-annuities/"
+            },
+            {
+                "loc": "/healthcare/"
+            },
+            {
+                "loc": "/lifeinsurance/"
+            },
+            {
+                "loc": "/senior-dental/"
+            },
+            {
+                "loc": "/individual-health-insurance/"
+            },
+            {
+                "loc": "/annuities/"
+            },
+            {
+                "loc": "/senior-solutions/"
+            },
+            {
+                "loc": "/Medicare/"
+            },
+            {
+                "loc": "/senior-life/"
+            },
+            {
+                "loc": "/group-health-insurance/"
+            },
+            {
+                "loc": "/category/auto-insurance/"
+            },
+            {
+                "loc": "/category/home-insurance/"
+            },
+            {
+                "loc": "/contact-insurance-agency/"
+            },
+            {
+                "loc": "/learn-about-amerus-financial/"
             }
         ],
         "sourceType": "app"
