@@ -4,6 +4,7 @@
   <PatternSection class="flex justify-center w-100">
     <ContentList path="/articles" v-slot="{ list }">
       <div class="flex flex-col justify-center w-100">
+        <h1 class="text-4xl font-bold text-center mb-8 dark:text-white">Articles</h1>
         <div
           v-for="article in list"
           :key="article._path"

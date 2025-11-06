@@ -25,7 +25,7 @@
    Back
  </nuxt-link>
  <ContentDoc v-slot="{ doc }">
-   <h2 class="text-4xl font-semibold text-black dark:text-white">{{ doc.title }}</h2>
+   <h1 class="text-4xl font-semibold text-black dark:text-white">{{ doc.title }}</h1>
    <p class="text-gray-500 dark:text-white">
      by {{ doc.author }}, {{ doc.date }}
    </p>

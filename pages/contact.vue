@@ -70,7 +70,7 @@ const resetToNewMessage = () => {
                 <!-- Sidebar -->
                 <div class="w-full lg:w-1/3">
                 <div class="sticky top-24 space-y-6">
-                    <h2 class="text-2xl font-bold mb-6">Get In Touch</h2>
+                    <h1 class="text-2xl font-bold mb-6">Get In Touch</h1>
                     <p class="text-gray-600 mb-8">
                     Whether you have questions about insurance coverage, need a quote, or want to review your current policies, we're here to provide the information and support you need.
                     </p>
