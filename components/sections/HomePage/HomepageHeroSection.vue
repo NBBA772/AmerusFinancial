@@ -19,9 +19,9 @@
         <ParagraphSubHeadingHero class="text-white">
           {{ IntroText.SubHeading }}
         </ParagraphSubHeadingHero>
-        <HeadlineOneHero class="text-white">
+        <HeadlineTwo class="text-white">
           {{ IntroText.Heading }}
-        </HeadlineOneHero>
+        </HeadlineTwo>
         <ParagraphDescriptionHero class="text-white">
           {{ IntroText.Description }}
         </ParagraphDescriptionHero>

@@ -126,6 +126,7 @@
     "../node_modules/nuxt-seo-experiments/dist/module.mjs/runtime/server",
     "../node_modules/nuxt-link-checker/dist/module.mjs/runtime/server",
     "../node_modules/@nuxtjs/seo/runtime/server",
+    "../node_modules/nuxt-simple-sitemap/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./module/nuxt-site-config.d.ts",
