@@ -82,7 +82,7 @@
           </p>
           <div class="flex space-x-4 text-sm text-white/50">
             <NuxtLink to="/privacy-policy" class="hover:text-white transition duration-300">Privacy Policy</NuxtLink>
-            <NuxtLink to="/terms-of-service" class="hover:text-white transition duration-300">Terms of Service</NuxtLink>
+            <!-- <NuxtLink to="/terms-of-service" class="hover:text-white transition duration-300">Terms of Service</NuxtLink> -->
             <NuxtLink to="/sitemap.xml" class="hover:text-white transition duration-300">Sitemap</NuxtLink>
           </div>
         </div>
