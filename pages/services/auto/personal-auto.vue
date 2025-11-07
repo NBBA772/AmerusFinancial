@@ -56,59 +56,52 @@
 
 <script setup>
 // Enhanced SEO using stable composables
-useEnhancedMetaTags()
 useResourceHints(['/images/personal-auto-insurance.jpg'])
 usePerformanceMonitoring()
 
-// Enhanced social sharing
-useSocialMeta({
-  title: 'Personal Auto Insurance Coverage — Amerus Financial',
-  description: 'Comprehensive personal auto insurance with liability, collision, and comprehensive coverage. Get competitive rates and protect your vehicle with Amerus.',
-  image: 'https://www.amerusfinancial.com/images/personal-auto-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto/personal-auto',
-  type: 'website'
-})
+// Define common values
+const pageUrl = 'https://www.amerusfinancial.com/services/auto/personal-auto'
+const pageTitle = 'Personal Auto Insurance — Amerus'
+const pageDescription = 'Comprehensive personal auto insurance with liability, collision, and comprehensive coverage. Get competitive rates and protect your vehicle with Amerus.'
+const pageImage = 'https://www.amerusfinancial.com/images/personal-auto-insurance.jpg'
 
-useSeoMeta({
-  title: 'Personal Auto Insurance Coverage',
-  ogTitle: 'Personal Auto Insurance — Amerus',
-  description:
-    'Comprehensive personal auto insurance with liability, collision, and comprehensive coverage. Get competitive rates and protect your vehicle with Amerus.',
-  ogDescription:
-    'Personal auto insurance with full coverage options including liability, collision, comprehensive, and uninsured motorist protection.',
-  ogImage: 'https://www.amerusfinancial.com/images/personal-auto-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto/personal-auto',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Personal Auto Insurance — Amerus',
-  twitterDescription:
-    'Personal auto insurance with full coverage options including liability, collision, comprehensive, and uninsured motorist protection.',
-  twitterImage: 'https://www.amerusfinancial.com/images/personal-auto-insurance.jpg',
-  keywords: 'personal auto insurance, car insurance, auto coverage, liability insurance, collision coverage, comprehensive coverage, auto insurance quotes, vehicle insurance, car insurance rates'
-})
-
-// optional — add canonical link and enhanced meta tags
+// Set all meta tags in one place
 useHead({
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/auto/personal-auto'
-    },
-    // DNS prefetch for performance
-    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
-    // Preconnect for critical resources
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-  ],
+  title: 'Personal Auto Insurance Coverage — Amerus Financial',
   meta: [
-    // Enhanced crawling directives
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    // Social media optimization
+    // Basic meta
+    { name: 'description', content: pageDescription },
+    { name: 'keywords', content: 'personal auto insurance, car insurance, auto coverage, liability insurance, collision coverage, comprehensive coverage, auto insurance quotes, vehicle insurance, car insurance rates' },
+    
+    // Required Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:site_name', content: 'Amerus Financial' },
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:description', content: pageDescription },
+    { property: 'og:image', content: pageImage },
+    { property: 'og:url', content: pageUrl },
+    
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: pageTitle },
+    { name: 'twitter:description', content: pageDescription },
+    { name: 'twitter:image', content: pageImage },
     { name: 'twitter:site', content: '@amerusfinancial' },
     { name: 'twitter:creator', content: '@amerusfinancial' },
+    
     // Technical SEO
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
     { name: 'format-detection', content: 'telephone=no' },
     { name: 'theme-color', content: '#30BCFE' }
+  ],
+  link: [
+    { rel: 'canonical', href: pageUrl },
+    // Performance optimizations
+    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
   ]
 })
 

@@ -56,59 +56,52 @@
 
 <script setup>
 // Enhanced SEO using stable composables
-useEnhancedMetaTags()
 useResourceHints(['/images/uninsured-motorist-coverage.jpg'])
 usePerformanceMonitoring()
 
-// Enhanced social sharing
-useSocialMeta({
-  title: 'Uninsured Motorist Coverage — Amerus Financial',
-  description: 'Protect yourself from uninsured and underinsured drivers with comprehensive uninsured motorist coverage. Get protection from Amerus.',
-  image: 'https://www.amerusfinancial.com/images/uninsured-motorist-coverage.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto/uninsured-motorist',
-  type: 'website'
-})
+// Define common values
+const pageUrl = 'https://www.amerusfinancial.com/services/auto/uninsured-motorist'
+const pageTitle = 'Uninsured Motorist Coverage — Amerus'
+const pageDescription = 'Protect yourself from uninsured and underinsured drivers with comprehensive uninsured motorist coverage. Get protection from Amerus.'
+const pageImage = 'https://www.amerusfinancial.com/images/uninsured-motorist-coverage.jpg'
 
-useSeoMeta({
-  title: 'Uninsured Motorist Coverage',
-  ogTitle: 'Uninsured Motorist Coverage — Amerus',
-  description:
-    'Protect yourself from uninsured and underinsured drivers with comprehensive uninsured motorist coverage. Get protection from Amerus.',
-  ogDescription:
-    'Uninsured motorist coverage protecting you when hit by drivers without insurance or insufficient coverage limits.',
-  ogImage: 'https://www.amerusfinancial.com/images/uninsured-motorist-coverage.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto/uninsured-motorist',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Uninsured Motorist Coverage — Amerus',
-  twitterDescription:
-    'Uninsured motorist coverage protecting you when hit by drivers without insurance or insufficient coverage limits.',
-  twitterImage: 'https://www.amerusfinancial.com/images/uninsured-motorist-coverage.jpg',
-  keywords: 'uninsured motorist coverage, underinsured motorist, hit and run protection, uninsured driver protection, auto insurance protection, motorist coverage'
-})
-
-// optional — add canonical link and enhanced meta tags
+// Set all meta tags in one place
 useHead({
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/auto/uninsured-motorist'
-    },
-    // DNS prefetch for performance
-    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
-    // Preconnect for critical resources
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-  ],
+  title: 'Uninsured Motorist Coverage — Amerus Financial',
   meta: [
-    // Enhanced crawling directives
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    // Social media optimization
+    // Basic meta
+    { name: 'description', content: pageDescription },
+    { name: 'keywords', content: 'uninsured motorist coverage, underinsured motorist, hit and run protection, uninsured driver protection, auto insurance protection, motorist coverage' },
+    
+    // Required Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:site_name', content: 'Amerus Financial' },
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:description', content: pageDescription },
+    { property: 'og:image', content: pageImage },
+    { property: 'og:url', content: pageUrl },
+    
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: pageTitle },
+    { name: 'twitter:description', content: pageDescription },
+    { name: 'twitter:image', content: pageImage },
     { name: 'twitter:site', content: '@amerusfinancial' },
     { name: 'twitter:creator', content: '@amerusfinancial' },
+    
     // Technical SEO
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
     { name: 'format-detection', content: 'telephone=no' },
     { name: 'theme-color', content: '#30BCFE' }
+  ],
+  link: [
+    { rel: 'canonical', href: pageUrl },
+    // Performance optimizations
+    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
   ]
 })
 

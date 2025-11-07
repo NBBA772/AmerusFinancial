@@ -56,59 +56,52 @@
 
 <script setup>
 // Enhanced SEO using stable composables
-useEnhancedMetaTags()
 useResourceHints(['/images/multi-vehicle-insurance.jpg'])
 usePerformanceMonitoring()
 
-// Enhanced social sharing
-useSocialMeta({
-  title: 'Multi-Vehicle Auto Insurance Discounts',
-  description: 'Save money with multi-vehicle auto insurance discounts. Insure multiple cars, trucks, and motorcycles under one policy with Amerus.',
-  image: 'https://www.amerusfinancial.com/images/multi-vehicle-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto/multi-vehicle',
-  type: 'website'
-})
+// Define common values
+const pageUrl = 'https://www.amerusfinancial.com/services/auto/multi-vehicle'
+const pageTitle = 'Multi-Vehicle Auto Insurance — Amerus'
+const pageDescription = 'Save money with multi-vehicle auto insurance discounts. Insure multiple cars, trucks, and motorcycles under one policy with Amerus.'
+const pageImage = 'https://www.amerusfinancial.com/images/multi-vehicle-insurance.jpg'
 
-useSeoMeta({
-  title: 'Multi-Vehicle Auto Insurance Discounts',
-  ogTitle: 'Multi-Vehicle Auto Insurance — Amerus',
-  description:
-    'Save money with multi-vehicle auto insurance discounts. Insure multiple cars, trucks, and motorcycles under one policy with Amerus.',
-  ogDescription:
-    'Multi-vehicle auto insurance with significant discounts for insuring multiple vehicles under one policy for families and businesses.',
-  ogImage: 'https://www.amerusfinancial.com/images/multi-vehicle-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto/multi-vehicle',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Multi-Vehicle Auto Insurance — Amerus',
-  twitterDescription:
-    'Multi-vehicle auto insurance with significant discounts for insuring multiple vehicles under one policy for families and businesses.',
-  twitterImage: 'https://www.amerusfinancial.com/images/multi-vehicle-insurance.jpg',
-  keywords: 'multi vehicle insurance, multi car insurance, fleet insurance, family auto insurance, vehicle discounts, multiple car coverage, auto insurance savings'
-})
-
-// optional — add canonical link and enhanced meta tags
+// Set all meta tags in one place
 useHead({
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/auto/multi-vehicle'
-    },
-    // DNS prefetch for performance
-    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
-    // Preconnect for critical resources
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-  ],
+  title: 'Multi-Vehicle Auto Insurance Discounts — Amerus Financial',
   meta: [
-    // Enhanced crawling directives
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    // Social media optimization
+    // Basic meta
+    { name: 'description', content: pageDescription },
+    { name: 'keywords', content: 'multi vehicle insurance, multi car insurance, fleet insurance, family auto insurance, vehicle discounts, multiple car coverage, auto insurance savings' },
+    
+    // Required Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:site_name', content: 'Amerus Financial' },
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:description', content: pageDescription },
+    { property: 'og:image', content: pageImage },
+    { property: 'og:url', content: pageUrl },
+    
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: pageTitle },
+    { name: 'twitter:description', content: pageDescription },
+    { name: 'twitter:image', content: pageImage },
     { name: 'twitter:site', content: '@amerusfinancial' },
     { name: 'twitter:creator', content: '@amerusfinancial' },
+    
     // Technical SEO
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
     { name: 'format-detection', content: 'telephone=no' },
     { name: 'theme-color', content: '#30BCFE' }
+  ],
+  link: [
+    { rel: 'canonical', href: pageUrl },
+    // Performance optimizations
+    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
   ]
 })
 

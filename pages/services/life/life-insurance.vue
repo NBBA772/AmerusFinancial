@@ -56,59 +56,52 @@
 
 <script setup>
 // Enhanced SEO using stable composables
-useEnhancedMetaTags()
 useResourceHints(['/images/life-insurance.jpg'])
 usePerformanceMonitoring()
 
-// Enhanced social sharing
-useSocialMeta({
-  title: 'Life Insurance Coverage & Protection — Amerus Financial',
-  description: 'Protecting your family\'s financial future with customized life insurance solutions that provide security and peace of mind for your loved ones.',
-  image: 'https://www.amerusfinancial.com/images/life-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/life/life-insurance',
-  type: 'website'
-})
+// Define common values
+const pageUrl = 'https://www.amerusfinancial.com/services/life/life-insurance'
+const pageTitle = 'Life Insurance Solutions for Families — Amerus'
+const pageDescription = 'Protecting your family\'s financial future with customized life insurance solutions that provide security and peace of mind for your loved ones.'
+const pageImage = 'https://www.amerusfinancial.com/images/life-insurance.jpg'
 
-useSeoMeta({
-  title: 'Life Insurance Coverage & Protection',
-  ogTitle: 'Life Insurance Solutions for Families — Amerus',
-  description:
-    'Protecting your family\'s financial future with customized life insurance solutions that provide security and peace of mind for your loved ones.',
-  ogDescription:
-    'Secure your family\'s financial future with comprehensive life insurance coverage including term life, whole life, and universal life insurance options.',
-  ogImage: 'https://www.amerusfinancial.com/images/life-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/life/life-insurance',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Life Insurance Solutions for Families — Amerus',
-  twitterDescription:
-    'Secure your family\'s financial future with comprehensive life insurance coverage including term life, whole life, and universal life insurance options.',
-  twitterImage: 'https://www.amerusfinancial.com/images/life-insurance.jpg',
-  keywords: 'life insurance, family protection, life insurance coverage, term life insurance, whole life insurance, universal life insurance, life insurance quotes, financial security, family financial planning'
-})
-
-// optional — add canonical link and enhanced meta tags
+// Set all meta tags in one place
 useHead({
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/life/life-insurance'
-    },
-    // DNS prefetch for performance
-    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
-    // Preconnect for critical resources
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-  ],
+  title: 'Life Insurance Coverage & Protection — Amerus Financial',
   meta: [
-    // Enhanced crawling directives
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    // Social media optimization
+    // Basic meta
+    { name: 'description', content: pageDescription },
+    { name: 'keywords', content: 'life insurance, family protection, life insurance coverage, term life insurance, whole life insurance, universal life insurance, life insurance quotes, financial security, family financial planning' },
+    
+    // Required Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:site_name', content: 'Amerus Financial' },
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:description', content: pageDescription },
+    { property: 'og:image', content: pageImage },
+    { property: 'og:url', content: pageUrl },
+    
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: pageTitle },
+    { name: 'twitter:description', content: pageDescription },
+    { name: 'twitter:image', content: pageImage },
     { name: 'twitter:site', content: '@amerusfinancial' },
     { name: 'twitter:creator', content: '@amerusfinancial' },
+    
     // Technical SEO
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
     { name: 'format-detection', content: 'telephone=no' },
     { name: 'theme-color', content: '#30BCFE' }
+  ],
+  link: [
+    { rel: 'canonical', href: pageUrl },
+    // Performance optimizations
+    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
   ]
 })
 
