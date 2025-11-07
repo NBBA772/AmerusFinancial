@@ -1,6 +1,79 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+// Enhanced SEO using stable composables
+useEnhancedMetaTags()
+useResourceHints(['/images/contact-og.jpg'])
+usePerformanceMonitoring()
+
+// Consolidated SEO + Social Meta for Contact page
+const pageUrl = 'https://www.amerusfinancial.com/contact'
+const pageTitle = 'Contact Amerus Financial — Get In Touch'
+const pageDescription = "Reach our team for quotes, coverage questions, or policy reviews. Call, email, or send a message — we typically respond within 1 business day."
+const pageImage = 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
+
+useHead({
+  title: pageTitle,
+  meta: [
+    // Basic meta
+    { name: 'description', content: pageDescription },
+
+    // Required Open Graph tags
+    { property: 'og:type', content: 'website' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:site_name', content: 'Amerus Financial' },
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:description', content: pageDescription },
+    { property: 'og:image', content: pageImage },
+    { property: 'og:url', content: pageUrl },
+
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: pageTitle },
+    { name: 'twitter:description', content: pageDescription },
+    { name: 'twitter:image', content: pageImage },
+    { name: 'twitter:site', content: '@amerusfinancial' },
+    { name: 'twitter:creator', content: '@amerusfinancial' },
+
+    // Technical SEO
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' }
+  ],
+  link: [
+    { rel: 'canonical', href: pageUrl },
+    // Performance optimizations
+    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+  ]
+})
+
+// Structured Data - Service Schema with consistent organization
+const serviceProvider = useServiceProvider()
+
+useSchemaOrg([
+  {
+    '@type': 'Service',
+    name: 'Comprehensive Auto Coverage',
+    provider: serviceProvider,
+    description: 'Comprehensive auto insurance coverage protecting against theft, vandalism, weather damage, and other non-collision incidents with affordable rates starting at $75.',
+    serviceType: 'Insurance',
+    category: 'Comprehensive Auto Insurance',
+    areaServed: 'United States',
+    offers: {
+      '@type': 'Offer',
+      price: '75.00',
+      priceCurrency: 'USD',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        billingIncrement: 1,
+        unitText: 'monthly'
+      },
+      description: 'Comprehensive auto coverage starting at $75 per month'
+    }
+  },
+])
+
 // Form state
 const isSubmitting = ref(false)
 const showSuccessMessage = ref(false)
