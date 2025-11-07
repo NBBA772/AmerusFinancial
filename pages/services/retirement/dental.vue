@@ -58,56 +58,49 @@
 useEnhancedMetaTags()
 useResourceHints(['/images/dental-insurance.jpg'])
 usePerformanceMonitoring()
+// Consolidated SEO + Social Meta (single useHead)
+const pageUrl = 'https://www.amerusfinancial.com/services/health/dental'
+const pageTitle = 'Dental Insurance & Dental Plans — Amerus Financial'
+// Shortened meta description (~155 chars)
+const pageDescription = 'Affordable dental insurance covering preventive care, fillings, crowns, root canals & orthodontics. 15-minute consultation to compare plans.'
+const pageImage = 'https://www.amerusfinancial.com/images/dental-insurance.jpg'
 
-// Enhanced social sharing
-useSocialMeta({
-  title: 'Dental Insurance & Dental Plans — Amerus Financial',
-  description: 'Find affordable dental insurance plans for preventive care, fillings, crowns, and orthodontics. Compare options and start a 15-minute consultation with Amerus today.',
-  image: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/health/dental',
-  type: 'website'
-})
-
-useSeoMeta({
-  title: 'Dental Insurance & Dental Plans',
-  ogTitle: 'Dental Insurance Plans & Coverage — Amerus',
-  description:
-    'Find affordable dental insurance plans for preventive care, fillings, crowns, and orthodontics. Compare options and start a 15-minute consultation with Amerus today.',
-  ogDescription:
-    'Explore dental insurance options covering preventive visits, basic and major procedures, and orthodontic care.',
-  ogImage: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/health/dental',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Dental Insurance Plans & Coverage — Amerus',
-  twitterDescription:
-    'Explore dental insurance options covering preventive visits, basic and major procedures, and orthodontic care.',
-  twitterImage: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',
-  keywords: 'dental insurance, dental plans, dental coverage, preventive care, dental cleanings, fillings, crowns, root canals, orthodontics, dentist network, affordable dental insurance, dental benefits'
-})
-
-// optional — add canonical link and enhanced meta tags
 useHead({
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/health/dental'
-    },
-    // DNS prefetch for performance
-    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
-    // Preconnect for critical resources
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-  ],
+  title: pageTitle,
   meta: [
-    // Enhanced crawling directives
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    // Social media optimization
+    // Basic meta
+    { name: 'description', content: pageDescription },
+    { name: 'keywords', content: 'dental insurance, dental plans, dental coverage, preventive care, dental cleanings, fillings, crowns, root canals, orthodontics, dentist network, affordable dental insurance, dental benefits' },
+
+    // Required Open Graph tags
+    { property: 'og:type', content: 'website' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:site_name', content: 'Amerus Financial' },
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:description', content: 'Explore dental insurance options covering preventive visits, basic and major procedures, and orthodontic care.' },
+    { property: 'og:image', content: pageImage },
+    { property: 'og:url', content: pageUrl },
+
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: pageTitle },
+    { name: 'twitter:description', content: 'Explore dental insurance options covering preventive visits, basic and major procedures, and orthodontic care.' },
+    { name: 'twitter:image', content: pageImage },
     { name: 'twitter:site', content: '@amerusfinancial' },
     { name: 'twitter:creator', content: '@amerusfinancial' },
+
     // Technical SEO
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
     { name: 'format-detection', content: 'telephone=no' },
     { name: 'theme-color', content: '#30BCFE' }
+  ],
+  link: [
+    { rel: 'canonical', href: pageUrl },
+    // Performance optimizations
+    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
   ]
 })
 

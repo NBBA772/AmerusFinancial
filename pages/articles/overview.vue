@@ -13,7 +13,15 @@
           <NuxtLink :to="article._path" v-if="article.img">
             <GridTwoColumns>
               <div class="mr-4">
-                <img :src="article.img" alt="" />
+                <NuxtImg 
+                class="min-w-64"
+                format="webp"
+                :src="article.img" 
+                sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px"
+                alt="Article Image"
+                quality="80"
+                loading="lazy"
+                />
               </div>
               <div>
                 <div class="p-4">
