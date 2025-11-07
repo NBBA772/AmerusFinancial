@@ -1,33 +1,52 @@
 <script setup>
-const { data: article } = await useAsyncData('article', () => queryContent(useRoute().params.slug.join('/')).findOne())
+const route = useRoute()
+const { data: article } = await useAsyncData('article', () => queryContent(route.params.slug.join('/')).findOne())
 
-// Set meta tags using the article data
-useSeoMeta({
-  title: article.value?.title,
-  description: article.value?.description,
-  ogTitle: `${article.value?.title} — Amerus Financial`,
-  ogDescription: article.value?.description,
-  ogImage: article.value?.img,
-  ogUrl: `https://www.amerusfinancial.com/articles/${article.value?.slug}`,
-  twitterCard: 'summary_large_image',
-  twitterTitle: `${article.value?.title} — Amerus Financial`,
-  twitterDescription: article.value?.description,
-  twitterImage: article.value?.img
-})
+// Construct the proper URL from route path
+const pageUrl = `https://www.amerusfinancial.com${route.path}`
+const pageTitle = article.value?.title ? `${article.value.title} — Amerus Financial` : 'Article — Amerus Financial'
+const pageDescription = article.value?.description || 'Read this article from Amerus Financial'
+const pageImage = article.value?.img || 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
 
-// Add canonical URL
+// Consolidated meta tags in single useHead
 useHead({
-  link: [
-    {
-      rel: 'canonical',
-      href: `https://www.amerusfinancial.com/articles/${article.value?.slug}`
-    }
-  ],
-    meta: [
-    // Enable indexing
+  title: pageTitle,
+  meta: [
+    // Basic meta
+    { name: 'description', content: pageDescription },
+    
+    // Required Open Graph tags
+    { property: 'og:type', content: 'article' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:site_name', content: 'Amerus Financial' },
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:description', content: pageDescription },
+    { property: 'og:image', content: pageImage },
+    { property: 'og:url', content: pageUrl },
+    
+    // Article-specific OG tags
+    { property: 'article:author', content: article.value?.author || 'Amerus Financial' },
+    { property: 'article:published_time', content: article.value?.date },
+    
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: pageTitle },
+    { name: 'twitter:description', content: pageDescription },
+    { name: 'twitter:image', content: pageImage },
+    { name: 'twitter:site', content: '@amerusfinancial' },
+    { name: 'twitter:creator', content: '@amerusfinancial' },
+    
+    // Technical SEO
     { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
     { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' }
   ],
+  link: [
+    { rel: 'canonical', href: pageUrl },
+    // Performance optimizations
+    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+  ]
 })
 </script>
 
