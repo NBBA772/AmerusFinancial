@@ -65,59 +65,51 @@
 
 <script setup>
 // Enhanced SEO using stable composables
-useEnhancedMetaTags()
 useResourceHints(['/images/business-insurance.jpg'])
 usePerformanceMonitoring()
 
-// Enhanced social sharing
-useSocialMeta({
-  title: 'Business Insurance Solutions — Amerus Financial',
-  description: 'Comprehensive business insurance including general liability, workers comp, commercial property, and professional liability. Protect your business with Amerus.',
-  image: 'https://www.amerusfinancial.com/images/business-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/business',
-  type: 'website'
-})
+// Define common values
+const pageUrl = 'https://www.amerusfinancial.com/services/business'
+const pageTitle = 'Business Insurance Solutions — Amerus'
+const pageDescription = 'Comprehensive business insurance including general liability, workers comp, commercial property, and professional liability. Protect your business with Amerus.'
+const pageImage = 'https://www.amerusfinancial.com/images/business-insurance.jpg'
 
-useSeoMeta({
-  title: 'Business Insurance Solutions',
-  ogTitle: 'Business Insurance Coverage — Amerus',
-  description:
-    'Comprehensive business insurance including general liability, workers comp, commercial property, and professional liability. Protect your business with Amerus.',
-  ogDescription:
-    'Complete business insurance solutions including liability protection, workers compensation, commercial property, and professional liability coverage.',
-  ogImage: 'https://www.amerusfinancial.com/images/business-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/business',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Business Insurance Solutions — Amerus',
-  twitterDescription:
-    'Complete business insurance solutions including liability protection, workers compensation, commercial property, and professional liability coverage.',
-  twitterImage: 'https://www.amerusfinancial.com/images/business-insurance.jpg',
-  keywords: 'business insurance, commercial insurance, general liability, workers compensation, commercial property insurance, professional liability, business protection, commercial coverage'
-})
-
-// optional — add canonical link and enhanced meta tags
+// Consolidated meta including required Open Graph tags
 useHead({
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/business'
-    },
-    // DNS prefetch for performance
-    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
-    // Preconnect for critical resources
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-  ],
+  title: 'Business Insurance Solutions — Amerus Financial',
   meta: [
-    // Enhanced crawling directives
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    // Social media optimization
+    // Basic meta
+    { name: 'description', content: pageDescription },
+    { name: 'keywords', content: 'business insurance, commercial insurance, general liability, workers compensation, commercial property insurance, professional liability, business protection, commercial coverage' },
+
+    // Required Open Graph (ensure order)
+    { property: 'og:type', content: 'website' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:site_name', content: 'Amerus Financial' },
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:description', content: pageDescription },
+    { property: 'og:image', content: pageImage },
+    { property: 'og:url', content: pageUrl },
+
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: pageTitle },
+    { name: 'twitter:description', content: pageDescription },
+    { name: 'twitter:image', content: pageImage },
     { name: 'twitter:site', content: '@amerusfinancial' },
     { name: 'twitter:creator', content: '@amerusfinancial' },
+
     // Technical SEO
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
     { name: 'format-detection', content: 'telephone=no' },
     { name: 'theme-color', content: '#30BCFE' }
+  ],
+  link: [
+    { rel: 'canonical', href: pageUrl },
+    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
   ]
 })
 

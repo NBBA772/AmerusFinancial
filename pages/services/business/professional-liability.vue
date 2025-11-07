@@ -56,59 +56,51 @@
 
 <script setup>
 // Enhanced SEO using stable composables
-useEnhancedMetaTags()
 useResourceHints(['/images/professional-liability-insurance.jpg'])
 usePerformanceMonitoring()
 
-// Enhanced social sharing
-useSocialMeta({
-  title: 'Professional Liability Insurance (E&O) — Amerus Financial',
-  description: 'Protect your professional practice from errors and omissions claims with comprehensive professional liability insurance coverage.',
-  image: 'https://www.amerusfinancial.com/images/professional-liability-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/business/professional-liability',
-  type: 'website'
-})
+// Define common values
+const pageUrl = 'https://www.amerusfinancial.com/services/business/professional-liability'
+const pageTitle = 'Professional Liability Insurance — Amerus'
+const pageDescription = 'Protect your professional practice from errors and omissions claims with comprehensive professional liability insurance coverage.'
+const pageImage = 'https://www.amerusfinancial.com/images/professional-liability-insurance.jpg'
 
-useSeoMeta({
-  title: 'Professional Liability Insurance (E&O)',
-  ogTitle: 'Professional Liability Insurance — Amerus',
-  description:
-    'Protect your professional practice from errors and omissions claims with comprehensive professional liability insurance coverage.',
-  ogDescription:
-    'Professional liability (E&O) insurance protecting professionals from claims of negligence, errors, and omissions in their services.',
-  ogImage: 'https://www.amerusfinancial.com/images/professional-liability-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/business/professional-liability',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Professional Liability Insurance — Amerus',
-  twitterDescription:
-    'Professional liability (E&O) insurance protecting professionals from claims of negligence, errors, and omissions in their services.',
-  twitterImage: 'https://www.amerusfinancial.com/images/professional-liability-insurance.jpg',
-  keywords: 'professional liability insurance, errors and omissions insurance, E&O insurance, professional indemnity, malpractice insurance, professional coverage'
-})
-
-// optional — add canonical link and enhanced meta tags
+// Set all meta tags in one place
 useHead({
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/business/professional-liability'
-    },
-    // DNS prefetch for performance
-    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
-    // Preconnect for critical resources
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-  ],
+  title: 'Professional Liability Insurance (E&O) — Amerus Financial',
   meta: [
-    // Enhanced crawling directives
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    // Social media optimization
+    // Basic meta
+    { name: 'description', content: pageDescription },
+    { name: 'keywords', content: 'professional liability insurance, errors and omissions insurance, E&O insurance, professional indemnity, malpractice insurance, professional coverage' },
+
+    // Required Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:site_name', content: 'Amerus Financial' },
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:description', content: pageDescription },
+    { property: 'og:image', content: pageImage },
+    { property: 'og:url', content: pageUrl },
+
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: pageTitle },
+    { name: 'twitter:description', content: pageDescription },
+    { name: 'twitter:image', content: pageImage },
     { name: 'twitter:site', content: '@amerusfinancial' },
     { name: 'twitter:creator', content: '@amerusfinancial' },
+
     // Technical SEO
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
     { name: 'format-detection', content: 'telephone=no' },
     { name: 'theme-color', content: '#30BCFE' }
+  ],
+  link: [
+    { rel: 'canonical', href: pageUrl },
+    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
   ]
 })
 

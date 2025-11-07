@@ -56,59 +56,52 @@
 
 <script setup>
 // Enhanced SEO using stable composables
-useEnhancedMetaTags()
 useResourceHints(['/images/commercial-property-insurance.jpg'])
 usePerformanceMonitoring()
 
-// Enhanced social sharing
-useSocialMeta({
-  title: 'Commercial Property Insurance — Amerus Financial',
-  description: 'Protect your business property and assets with comprehensive commercial property insurance covering buildings, equipment, and inventory.',
-  image: 'https://www.amerusfinancial.com/images/commercial-property-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/business/commercial-property',
-  type: 'website'
-})
+// Define common values
+const pageUrl = 'https://www.amerusfinancial.com/services/business/commercial-property'
+const pageTitle = 'Commercial Property Insurance — Amerus'
+const pageDescription = 'Protect your business property and assets with comprehensive commercial property insurance covering buildings, equipment, and inventory.'
+const pageImage = 'https://www.amerusfinancial.com/images/commercial-property-insurance.jpg'
 
-useSeoMeta({
-  title: 'Commercial Property Insurance',
-  ogTitle: 'Commercial Property Insurance — Amerus',
-  description:
-    'Protect your business property and assets with comprehensive commercial property insurance covering buildings, equipment, and inventory.',
-  ogDescription:
-    'Commercial property insurance protecting business buildings, equipment, inventory, and other physical assets from damage and loss.',
-  ogImage: 'https://www.amerusfinancial.com/images/commercial-property-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/business/commercial-property',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Commercial Property Insurance — Amerus',
-  twitterDescription:
-    'Commercial property insurance protecting business buildings, equipment, inventory, and other physical assets from damage and loss.',
-  twitterImage: 'https://www.amerusfinancial.com/images/commercial-property-insurance.jpg',
-  keywords: 'commercial property insurance, business property coverage, building insurance, equipment insurance, inventory protection, commercial real estate insurance'
-})
-
-// optional — add canonical link and enhanced meta tags
+// Set all meta tags in one place
 useHead({
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/business/commercial-property'
-    },
-    // DNS prefetch for performance
-    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
-    // Preconnect for critical resources
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-  ],
+  title: 'Commercial Property Insurance — Amerus Financial',
   meta: [
-    // Enhanced crawling directives
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    // Social media optimization
+    // Basic meta
+    { name: 'description', content: pageDescription },
+    { name: 'keywords', content: 'commercial property insurance, business property coverage, building insurance, equipment insurance, inventory protection, commercial real estate insurance' },
+
+    // Required Open Graph
+    { property: 'og:type', content: 'website' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:site_name', content: 'Amerus Financial' },
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:description', content: pageDescription },
+    { property: 'og:image', content: pageImage },
+    { property: 'og:url', content: pageUrl },
+
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: pageTitle },
+    { name: 'twitter:description', content: pageDescription },
+    { name: 'twitter:image', content: pageImage },
     { name: 'twitter:site', content: '@amerusfinancial' },
     { name: 'twitter:creator', content: '@amerusfinancial' },
+
     // Technical SEO
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
     { name: 'format-detection', content: 'telephone=no' },
     { name: 'theme-color', content: '#30BCFE' }
+  ],
+  link: [
+    { rel: 'canonical', href: pageUrl },
+    // DNS prefetched and preconnect optimizations
+    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
   ]
 })
 
