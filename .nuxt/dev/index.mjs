@@ -792,7 +792,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-07T14:48:14.392Z"
+          "lastmod": "2025-11-07T16:28:01.690Z"
         },
         "include": [],
         "exclude": [
@@ -841,7 +841,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-07T14:48:14.392Z"
+          "lastmod": "2025-11-07T16:28:01.690Z"
         },
         "include": [],
         "exclude": [
@@ -12068,7 +12068,19 @@ const sources$3 = [
                 "loc": "/"
             },
             {
+                "loc": "/info"
+            },
+            {
+                "loc": "/login"
+            },
+            {
+                "loc": "/player"
+            },
+            {
                 "loc": "/privacy-policy"
+            },
+            {
+                "loc": "/register"
             },
             {
                 "loc": "/resources/auto-insurance-guide"
@@ -12477,7 +12489,19 @@ const sources$1 = [
                 "loc": "/"
             },
             {
+                "loc": "/info"
+            },
+            {
+                "loc": "/login"
+            },
+            {
+                "loc": "/player"
+            },
+            {
                 "loc": "/privacy-policy"
+            },
+            {
+                "loc": "/register"
             },
             {
                 "loc": "/resources/auto-insurance-guide"
