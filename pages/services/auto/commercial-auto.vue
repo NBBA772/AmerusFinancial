@@ -54,50 +54,59 @@
 
 <script setup>
 // Enhanced SEO using stable composables
+useEnhancedMetaTags()
 useResourceHints(['/images/commercial-auto-insurance.jpg'])
 usePerformanceMonitoring()
 
-// Define common values
-const pageUrl = 'https://www.amerusfinancial.com/services/auto/commercial-auto'
-const pageTitle = 'Commercial Auto Insurance — Amerus'
-const pageDescription = 'Commercial auto insurance covering business vehicles, fleet coverage, and company car protection with liability and comprehensive options.'
-const pageImage = 'https://www.amerusfinancial.com/images/commercial-auto-insurance.jpg'
-
-// Set all meta tags in one place
-useHead({
+// Enhanced social sharing
+useSocialMeta({
   title: 'Commercial Auto Insurance for Business — Amerus Financial',
-  meta: [
-    // Basic meta
-    { name: 'description', content: pageDescription },
-    { name: 'keywords', content: 'commercial auto insurance, business vehicle insurance, fleet insurance, company car insurance, commercial vehicle coverage, business auto liability' },
-    
-    // Required Open Graph
-    { property: 'og:type', content: 'website' },
-    { property: 'og:locale', content: 'en_US' },
-    { property: 'og:site_name', content: 'Amerus Financial' },
-    { property: 'og:title', content: pageTitle },
-    { property: 'og:description', content: pageDescription },
-    { property: 'og:image', content: pageImage },
-    { property: 'og:url', content: pageUrl },
-    
-    // Twitter Card
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: pageTitle },
-    { name: 'twitter:description', content: pageDescription },
-    { name: 'twitter:image', content: pageImage },
-    { name: 'twitter:site', content: '@amerusfinancial' },
-    { name: 'twitter:creator', content: '@amerusfinancial' },
-    
-    // Technical SEO
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' }
-  ],
+  description: 'Comprehensive commercial auto insurance for business vehicles, fleets, and company cars. Protect your business with competitive rates from Amerus.',
+  image: 'https://www.amerusfinancial.com/images/commercial-auto-insurance.jpg',
+  url: 'https://www.amerusfinancial.com/services/auto/commercial-auto',
+  type: 'website'
+})
+
+useSeoMeta({
+  title: 'Commercial Auto Insurance for Business — Amerus Financial',
+  ogTitle: 'Commercial Auto Insurance — Amerus',
+  description:
+    'Comprehensive commercial auto insurance for business vehicles, fleets, and company cars. Protect your business with competitive rates from Amerus.',
+  ogDescription:
+    'Commercial auto insurance covering business vehicles, fleet coverage, and company car protection with liability and comprehensive options.',
+  ogImage: 'https://www.amerusfinancial.com/images/commercial-auto-insurance.jpg',
+  ogUrl: 'https://www.amerusfinancial.com/services/auto/commercial-auto',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Commercial Auto Insurance — Amerus',
+  twitterDescription:
+    'Commercial auto insurance covering business vehicles, fleet coverage, and company car protection with liability and comprehensive options.',
+  twitterImage: 'https://www.amerusfinancial.com/images/commercial-auto-insurance.jpg',
+  keywords: 'commercial auto insurance, business vehicle insurance, fleet insurance, company car insurance, commercial vehicle coverage, business auto liability'
+})
+
+// optional — add canonical link and enhanced meta tags
+useHead({
   link: [
-    { rel: 'canonical', href: pageUrl },
-    // Performance optimizations
+    {
+      rel: 'canonical',
+      href: 'https://www.amerusfinancial.com/services/auto/commercial-auto'
+    },
+    // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
     { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    // Preconnect for critical resources
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+  ],
+  meta: [
+    // Enhanced crawling directives
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    // Social media optimization
+    { name: 'twitter:site', content: '@amerusfinancial' },
+    { name: 'twitter:creator', content: '@amerusfinancial' },
+    // Technical SEO
+    { name: 'format-detection', content: 'telephone=no' },
+    { name: 'theme-color', content: '#30BCFE' }
   ]
 })
 

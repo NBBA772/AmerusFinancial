@@ -55,51 +55,60 @@
 </template>
 
 <script setup>
+// Enhanced SEO using stable composables
+useEnhancedMetaTags()
 useResourceHints(['/images/workers-compensation.jpg'])
 usePerformanceMonitoring()
-// Page-level SEO values (consolidated into a single useHead)
-const pageUrl = 'https://www.amerusfinancial.com/services/business/workers-comp'
-const pageTitle = "Workers' Compensation Insurance — Amerus Financial"
-const pageDescription = "Protect your employees and business with comprehensive workers' compensation insurance covering medical expenses and lost wages from workplace injuries."
-const pageImage = 'https://www.amerusfinancial.com/images/workers-compensation.jpg'
 
-// Consolidated meta + social tags (includes required Open Graph tags)
+// Enhanced social sharing
+useSocialMeta({
+  title: 'Workers\' Compensation Insurance — Amerus Financial',
+  description: 'Protect your employees and business with comprehensive workers\' compensation insurance covering medical expenses and lost wages from workplace injuries.',
+  image: 'https://www.amerusfinancial.com/images/workers-compensation.jpg',
+  url: 'https://www.amerusfinancial.com/services/business/workers-comp',
+  type: 'website'
+})
+
+useSeoMeta({
+  title: 'Workers\' Compensation Insurance',
+  ogTitle: 'Workers\' Compensation Insurance — Amerus',
+  description:
+    'Protect your employees and business with comprehensive workers\' compensation insurance covering medical expenses and lost wages from workplace injuries',
+  ogDescription:
+    'Workers\' compensation insurance protecting employees from workplace injuries and employers from liability claims.',
+  ogImage: 'https://www.amerusfinancial.com/images/workers-compensation.jpg',
+  ogUrl: 'https://www.amerusfinancial.com/services/business/workers-comp',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Workers\' Compensation Insurance — Amerus',
+  twitterDescription:
+    'Workers\' compensation insurance protecting employees from workplace injuries and employers from liability claims.',
+  twitterImage: 'https://www.amerusfinancial.com/images/workers-compensation.jpg',
+  keywords: 'workers compensation insurance, workers comp, workplace injury insurance, employee protection, employer liability, workplace safety coverage'
+})
+
+// optional — add canonical link and enhanced meta tags
 useHead({
-  title: pageTitle,
-  meta: [
-    // Basic meta
-    { name: 'description', content: pageDescription },
-    { name: 'keywords', content: 'workers compensation insurance, workers comp, workplace injury insurance, employee protection, employer liability, workplace safety coverage' },
-
-    // Required Open Graph tags
-    { property: 'og:type', content: 'website' },
-    { property: 'og:locale', content: 'en_US' },
-    { property: 'og:site_name', content: 'Amerus Financial' },
-    { property: 'og:title', content: pageTitle },
-    { property: 'og:description', content: pageDescription },
-    { property: 'og:image', content: pageImage },
-    { property: 'og:url', content: pageUrl },
-
-    // Twitter
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: pageTitle },
-    { name: 'twitter:description', content: pageDescription },
-    { name: 'twitter:image', content: pageImage },
-    { name: 'twitter:site', content: '@amerusfinancial' },
-    { name: 'twitter:creator', content: '@amerusfinancial' },
-
-    // Technical SEO
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'format-detection', content: 'telephone=no' },
-    { name: 'theme-color', content: '#30BCFE' }
-  ],
   link: [
-    { rel: 'canonical', href: pageUrl },
-    // Performance optimizations
+    {
+      rel: 'canonical',
+      href: 'https://www.amerusfinancial.com/services/business/workers-comp'
+    },
+    // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
     { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    // Preconnect for critical resources
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+  ],
+  meta: [
+    // Enhanced crawling directives
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    // Social media optimization
+    { name: 'twitter:site', content: '@amerusfinancial' },
+    { name: 'twitter:creator', content: '@amerusfinancial' },
+    // Technical SEO
+    { name: 'format-detection', content: 'telephone=no' },
+    { name: 'theme-color', content: '#30BCFE' }
   ]
 })
 

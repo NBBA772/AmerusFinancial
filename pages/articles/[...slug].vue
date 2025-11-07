@@ -1,41 +1,35 @@
-&lt;script setup>
-const route = useRoute()
-const { data: article } = await useAsyncData('article', () => 
-  queryContent(route.params.slug.join('/')).findOne()
-)
+<script setup>
+const { data: article } = await useAsyncData('article', () => queryContent(useRoute().params.slug.join('/')).findOne())
 
-// Watch for article data changes and update meta tags when data is available
-watch(() => article.value, (newArticle) => {
-  if (newArticle) {
-    const url = `https://www.amerusfinancial.com/articles/${newArticle.slug}`
-    
-    useSeoMeta({
-      title: newArticle.title,
-      description: newArticle.description,
-      ogTitle: `${newArticle.title} — Amerus Financial`,
-      ogDescription: newArticle.description,
-      ogImage: newArticle.img,
-      ogUrl: url,
-      twitterCard: 'summary_large_image',
-      twitterTitle: `${newArticle.title} — Amerus Financial`,
-      twitterDescription: newArticle.description,
-      twitterImage: newArticle.img
-    })
+// Set meta tags using the article data
+useSeoMeta({
+  title: article.value?.title,
+  description: article.value?.description,
+  ogTitle: `${article.value?.title} — Amerus Financial`,
+  ogDescription: article.value?.description,
+  ogImage: article.value?.img,
+  ogUrl: `https://www.amerusfinancial.com/articles/${article.value?.slug}`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: `${article.value?.title} — Amerus Financial`,
+  twitterDescription: article.value?.description,
+  twitterImage: article.value?.img
+})
 
-    useHead({
-      link: [
-        {
-          rel: 'canonical',
-          href: url
-        }
-      ],
-      meta: [
-        { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-        { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' }
-      ]
-    })
-  }
-}, { immediate: true })
+// Add canonical URL
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: `https://www.amerusfinancial.com/articles/${article.value?.slug}`
+    }
+  ],
+    meta: [
+    // Enable indexing
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' }
+  ],
+})
+</script>
 
 <template>
   <div class="flex justify-center gap-x-12">

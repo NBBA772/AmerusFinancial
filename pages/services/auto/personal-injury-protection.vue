@@ -56,52 +56,59 @@
 
 <script setup>
 // Enhanced SEO using stable composables
+useEnhancedMetaTags()
 useResourceHints(['/images/personal-injury-protection.jpg'])
 usePerformanceMonitoring()
 
-// Define common values
-const pageUrl = 'https://www.amerusfinancial.com/services/auto/personal-injury-protection'
-const pageTitle = 'Personal Injury Protection Insurance — Amerus'
-const pageDescription = 'Personal injury protection insurance covers medical expenses and lost wages after auto accidents, regardless of fault. Get PIP coverage from Amerus.'
-const pageImage = 'https://www.amerusfinancial.com/images/personal-injury-protection.jpg'
-
-// Set all meta tags in one place
-useHead({
+// Enhanced social sharing
+useSocialMeta({
   title: 'Personal Injury Protection (PIP) Insurance — Amerus Financial',
-  meta: [
-    // Basic meta
-    { name: 'description', content: pageDescription },
-    { name: 'keywords', content: 'personal injury protection, PIP insurance, no fault insurance, medical coverage auto, lost wages coverage, accident medical bills, auto injury insurance' },
-    
-    // Required Open Graph
-    { property: 'og:type', content: 'website' },
-    { property: 'og:locale', content: 'en_US' },
-    { property: 'og:site_name', content: 'Amerus Financial' },
-    { property: 'og:title', content: pageTitle },
-    { property: 'og:description', content: pageDescription },
-    { property: 'og:image', content: pageImage },
-    { property: 'og:url', content: pageUrl },
-    
-    // Twitter Card
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: pageTitle },
-    { name: 'twitter:description', content: pageDescription },
-    { name: 'twitter:image', content: pageImage },
-    { name: 'twitter:site', content: '@amerusfinancial' },
-    { name: 'twitter:creator', content: '@amerusfinancial' },
-    
-    // Technical SEO
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'format-detection', content: 'telephone=no' },
-    { name: 'theme-color', content: '#30BCFE' }
-  ],
+  description: 'Personal injury protection insurance covers medical expenses and lost wages after auto accidents, regardless of fault. Get PIP coverage from Amerus.',
+  image: 'https://www.amerusfinancial.com/images/personal-injury-protection.jpg',
+  url: 'https://www.amerusfinancial.com/services/auto/personal-injury-protection',
+  type: 'website'
+})
+
+useSeoMeta({
+  title: 'Personal Injury Protection (PIP) Insurance',
+  ogTitle: 'Personal Injury Protection Insurance — Amerus',
+  description:
+    'Personal injury protection insurance covers medical expenses and lost wages after auto accidents, regardless of fault. Get PIP coverage from Amerus.',
+  ogDescription:
+    'PIP insurance providing no-fault medical coverage, lost wage compensation, and essential services after auto accidents.',
+  ogImage: 'https://www.amerusfinancial.com/images/personal-injury-protection.jpg',
+  ogUrl: 'https://www.amerusfinancial.com/services/auto/personal-injury-protection',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Personal Injury Protection Insurance — Amerus',
+  twitterDescription:
+    'PIP insurance providing no-fault medical coverage, lost wage compensation, and essential services after auto accidents.',
+  twitterImage: 'https://www.amerusfinancial.com/images/personal-injury-protection.jpg',
+  keywords: 'personal injury protection, PIP insurance, no fault insurance, medical coverage auto, lost wages coverage, accident medical bills, auto injury insurance'
+})
+
+// optional — add canonical link and enhanced meta tags
+useHead({
   link: [
-    { rel: 'canonical', href: pageUrl },
-    // Performance optimizations
+    {
+      rel: 'canonical',
+      href: 'https://www.amerusfinancial.com/services/auto/personal-injury-protection'
+    },
+    // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
     { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+    // Preconnect for critical resources
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+  ],
+  meta: [
+    // Enhanced crawling directives
+    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
+    // Social media optimization
+    { name: 'twitter:site', content: '@amerusfinancial' },
+    { name: 'twitter:creator', content: '@amerusfinancial' },
+    // Technical SEO
+    { name: 'format-detection', content: 'telephone=no' },
+    { name: 'theme-color', content: '#30BCFE' }
   ]
 })
 

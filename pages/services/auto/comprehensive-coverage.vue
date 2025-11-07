@@ -57,53 +57,34 @@
 <script setup>
 
 // Enhanced SEO using stable composables
+useEnhancedMetaTags()
 useResourceHints(['/images/comprehensive-auto-coverage.jpg'])
 usePerformanceMonitoring()
 
-// Define common values
-const pageUrl = 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage'
-const pageTitle = 'Comprehensive Auto Coverage — Amerus'
-const pageDescription = 'Comprehensive auto insurance covering theft, vandalism, weather damage, and other non-collision incidents for complete vehicle protection.'
-const pageImage = 'https://www.amerusfinancial.com/images/comprehensive-auto-coverage.jpg'
-
-// Set all meta tags in one place
-useHead({
+// Enhanced social sharing
+useSocialMeta({
   title: 'Comprehensive Auto Insurance Coverage — Amerus Financial',
-  meta: [
-    // Basic meta
-    { name: 'description', content: pageDescription },
-    { name: 'keywords', content: 'comprehensive auto insurance, comprehensive coverage, auto theft protection, vandalism coverage, weather damage insurance, comprehensive car insurance, vehicle protection, auto insurance coverage' },
-    
-    // Required Open Graph (in correct order)
-    { property: 'og:title', content: pageTitle },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:image', content: pageImage },
-    { property: 'og:url', content: pageUrl },
-    
-    // Additional Open Graph
-    { property: 'og:locale', content: 'en_US' },
-    { property: 'og:site_name', content: 'Amerus Financial' },
-    { property: 'og:description', content: pageDescription },
-    
-    // Twitter Card
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: pageTitle },
-    { name: 'twitter:description', content: pageDescription },
-    { name: 'twitter:image', content: pageImage },
-    { name: 'twitter:site', content: '@amerusfinancial' },
-    { name: 'twitter:creator', content: '@amerusfinancial' },
-    
-    // Technical SEO
-    { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
-    { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' }
-  ],
-  link: [
-    { rel: 'canonical', href: pageUrl },
-    // Performance optimizations
-    { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-    { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-  ]
+  description: 'Protect your vehicle from theft, vandalism, and weather damage with comprehensive auto insurance coverage. Get competitive rates from Amerus.',
+  image: 'https://www.amerusfinancial.com/images/comprehensive-auto-coverage.jpg',
+  url: 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage',
+  type: 'website'
+})
+
+useSeoMeta({
+  title: 'Comprehensive Auto Insurance Coverage',
+  ogTitle: 'Comprehensive Auto Coverage — Amerus',
+  description:
+    'Protect your vehicle from theft, vandalism, and weather damage with comprehensive auto insurance coverage. Get competitive rates from Amerus.',
+  ogDescription:
+    'Comprehensive auto insurance covering theft, vandalism, weather damage, and other non-collision incidents for complete vehicle protection.',
+  ogImage: 'https://www.amerusfinancial.com/images/comprehensive-auto-coverage.jpg',
+  ogUrl: 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Comprehensive Auto Coverage — Amerus',
+  twitterDescription:
+    'Comprehensive auto insurance covering theft, vandalism, weather damage, and other non-collision incidents for complete vehicle protection.',
+  twitterImage: 'https://www.amerusfinancial.com/images/comprehensive-auto-coverage.jpg',
+  keywords: 'comprehensive auto insurance, comprehensive coverage, auto theft protection, vandalism coverage, weather damage insurance, comprehensive car insurance, vehicle protection, auto insurance coverage'
 })
 
 // optional — add canonical link and enhanced meta tags
