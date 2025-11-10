@@ -34,7 +34,7 @@ useSchemaOrg([
     // Use absolute logo URL for richer SERP display
     logo: "https://www.amerusfinancial.com/logo.png",
     // Provide a stable @id for entity reconciliation
-    id: 'https://www.amerusfinancial.com/#identity',
+    '@id': 'https://www.amerusfinancial.com/#identity',
     description: 'Insurance and financial services.',
     url: 'https://www.amerusfinancial.com',
     telephone: '+1-888-441-7891',
