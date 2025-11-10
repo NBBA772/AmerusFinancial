@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Business Insurance',
   title: 'Commercial Auto Insurance',
   description: 'Comprehensive vehicle insurance for business fleets, delivery vehicles, and company cars with liability and full coverage options.',
-  image: '/images/commercial-auto-insurance.jpg',
+  image: '/images/row-of-vans-needing-commercial-auto-insurance.jpg',
   imageAlt: 'commercial auto insurance for business vehicles',
   cta: { href: '/contact', label: 'Get Fleet Coverage Quote' }
 }

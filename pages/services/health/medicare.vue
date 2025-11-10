@@ -213,7 +213,8 @@ useSchemaOrg([
       ratingValue: '4.8',
       reviewCount: '5'
     },
-    review: reviewData
+    // Expand reviewData into review array with proper @type Review objects
+    review: reviewData.reviews
   },
   
   // FAQ Schema for better SERP features
