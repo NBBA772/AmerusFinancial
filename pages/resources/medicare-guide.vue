@@ -111,7 +111,7 @@ usePerformanceMonitoring()
 
 // Consolidated SEO + Social Meta for Medicare Guide
 const pageUrl = 'https://www.amerusfinancial.com/resources/medicare-guide'
-const pageTitle = 'Medicare Guide — Parts A, B, C, D, Enrollment & Costs'
+const pageTitle = 'Medicare Guide — Parts A, B, C, D, Enrollment'
 const pageDescription = 'Understand Medicare eligibility, enrollment periods, and the differences between Parts A, B, C, and D. Compare costs and coverage to choose the right plan.'
 const pageImage = 'https://www.amerusfinancial.com/images/medicare-insurance.jpg'
 

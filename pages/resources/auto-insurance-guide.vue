@@ -100,7 +100,7 @@ usePerformanceMonitoring()
 
 // Consolidated SEO + Social Meta for Auto Insurance Guide
 const pageUrl = 'https://www.amerusfinancial.com/resources/auto-insurance-guide'
-const pageTitle = 'Complete Auto Insurance Guide — Coverage, Rates & Claims'
+const pageTitle = 'Auto Insurance Guide — Coverage, Rates & Claims'
 const pageDescription = 'Understand auto insurance coverage options, premium factors, and the claims process. Practical tips to save money and choose the right policy.'
 const pageImage = 'https://www.amerusfinancial.com/images/friends-driving-insured-car.jpg'
 

@@ -24,7 +24,7 @@ usePerformanceMonitoring()
 
 // Consolidated SEO + Social Meta for Retirement Planning Checklist page
 const pageUrl = 'https://www.amerusfinancial.com/resources/retirement-planning-checklist'
-const pageTitle = 'Retirement Planning Checklist — 50+ Key Steps for a Secure Future'
+const pageTitle = 'Retirement Planning Checklist'
 const pageDescription = 'Comprehensive retirement planning checklist: savings milestones, Medicare & Social Security timing, tax strategy, risk protection, income planning and post-retirement tasks.'
 const pageImage = 'https://www.amerusfinancial.com/images/man-doing-retirement-checklist.jpg'
 

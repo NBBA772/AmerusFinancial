@@ -60,7 +60,7 @@ usePerformanceMonitoring()
 
 // Enhanced social sharing
 useSocialMeta({
-  title: 'Commercial Auto Insurance for Business — Amerus Financial',
+  title: 'Commercial Auto Insurance for Business',
   description: 'Comprehensive commercial auto insurance for business vehicles, fleets, and company cars. Protect your business with competitive rates from Amerus.',
   image: 'https://www.amerusfinancial.com/images/commercial-auto-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/auto/commercial-auto',

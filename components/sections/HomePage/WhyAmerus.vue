@@ -24,9 +24,9 @@ const values = [
     <div class="container mx-auto px-4">
       <!-- Section Heading -->
       <div class="text-center mb-12">
-        <h2 id="value-props" class="text-3xl md:text-4xl font-bold">
+        <h1 id="value-props" class="text-3xl md:text-4xl font-bold">
           Why Amerus
-        </h2>
+        </h1>
       </div>
 
       <!-- Grid of Value Props -->

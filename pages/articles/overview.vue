@@ -56,7 +56,7 @@ useResourceHints(['/images/contact-og.jpg'])
 usePerformanceMonitoring()
 
 // Consolidated SEO + Social Meta for Articles Overview page
-const pageUrl = 'https://www.amerusfinancial.com/articles'
+const pageUrl = 'https://www.amerusfinancial.com/articles/overview'
 const pageTitle = 'Insurance & Financial Articles — Amerus Insights'
 const pageDescription = 'Browse expert articles on insurance, retirement, health, auto, life, and financial planning. Stay informed with actionable insights from Amerus Financial.'
 const pageImage = 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'

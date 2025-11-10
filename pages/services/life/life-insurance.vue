@@ -67,7 +67,7 @@ const pageImage = 'https://www.amerusfinancial.com/images/life-insurance.jpg'
 
 // Set all meta tags in one place
 useHead({
-  title: 'Life Insurance Coverage & Protection — Amerus Financial',
+  title: 'Life Insurance Coverage & Protection',
   meta: [
     // Basic meta
     { name: 'description', content: pageDescription },
