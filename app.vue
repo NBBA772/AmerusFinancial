@@ -31,20 +31,27 @@ await useUser();
 useSchemaOrg([
   defineLocalBusiness({
     name: 'Amerus Financial',
-    logo: "/logo.png",
+    // Use absolute logo URL for richer SERP display
+    logo: "https://www.amerusfinancial.com/logo.png",
+    // Provide a stable @id for entity reconciliation
+    id: 'https://www.amerusfinancial.com/#identity',
     description: 'Insurance and financial services.',
     url: 'https://www.amerusfinancial.com',
     telephone: '+1-888-441-7891',
     email: 'info@amerusfinancial.com',
     priceRange: '$$',
-    serviceArea: 'United States',
-        address: {
-      addressCountry: "US",
-      postalCode: "33813",
-      address: "5115 S Lakeland Dr STE 1",
-      addressLocality: "Lakeland",
-      addressRegion: "Florida",
-      streetAddress: "5115 S Lakeland Dr STE 1",
+    // Replace deprecated serviceArea with areaServed AdministrativeArea object
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '5115 S Lakeland Dr STE 1',
+      addressLocality: 'Lakeland',
+      addressRegion: 'FL',
+      postalCode: '33813',
+      addressCountry: 'US'
     },
     openingHoursSpecification: [
       {
@@ -54,132 +61,208 @@ useSchemaOrg([
       },
     ],
     hasOfferCatalog: {
+      '@type': 'OfferCatalog',
       name: 'Insurance Services',
       itemListElement: [
-        { 
-          '@type': 'Service',
-          name: 'Health Insurance',
-          url: 'https://www.amerusfinancial.com/services/health'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Health Insurance',
+            url: 'https://www.amerusfinancial.com/services/health'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Individual Health Insurance',
-          url: 'https://www.amerusfinancial.com/services/health/individual'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Individual Health Insurance',
+            url: 'https://www.amerusfinancial.com/services/health/individual'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Family Health Insurance',
-          url: 'https://www.amerusfinancial.com/services/health/family'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Family Health Insurance',
+            url: 'https://www.amerusfinancial.com/services/health/family'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Group Health Insurance',
-          url: 'https://www.amerusfinancial.com/services/health/group'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Group Health Insurance',
+            url: 'https://www.amerusfinancial.com/services/health/group'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Medicare Insurance',
-          url: 'https://www.amerusfinancial.com/services/health/medicare'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Medicare Insurance',
+            url: 'https://www.amerusfinancial.com/services/health/medicare'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Dental Insurance',
-          url: 'https://www.amerusfinancial.com/services/health/dental'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Dental Insurance',
+            url: 'https://www.amerusfinancial.com/services/health/dental'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Vision Insurance',
-          url: 'https://www.amerusfinancial.com/services/health/vision'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Vision Insurance',
+            url: 'https://www.amerusfinancial.com/services/health/vision'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Life Insurance',
-          url: 'https://www.amerusfinancial.com/services/life'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Life Insurance',
+            url: 'https://www.amerusfinancial.com/services/life'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Term Life Insurance',
-          url: 'https://www.amerusfinancial.com/services/life/term-life'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Term Life Insurance',
+            url: 'https://www.amerusfinancial.com/services/life/term-life'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Whole Life Insurance',
-          url: 'https://www.amerusfinancial.com/services/life/whole-life'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Whole Life Insurance',
+            url: 'https://www.amerusfinancial.com/services/life/whole-life'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Universal Life Insurance',
-          url: 'https://www.amerusfinancial.com/services/life/universal-life'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Universal Life Insurance',
+            url: 'https://www.amerusfinancial.com/services/life/universal-life'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Auto Insurance',
-          url: 'https://www.amerusfinancial.com/services/auto'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Auto Insurance',
+            url: 'https://www.amerusfinancial.com/services/auto'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Personal Auto Insurance',
-          url: 'https://www.amerusfinancial.com/services/auto/personal-auto'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Personal Auto Insurance',
+            url: 'https://www.amerusfinancial.com/services/auto/personal-auto'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Commercial Auto Insurance',
-          url: 'https://www.amerusfinancial.com/services/auto/commercial-auto'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Commercial Auto Insurance',
+            url: 'https://www.amerusfinancial.com/services/auto/commercial-auto'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Home Insurance',
-          url: 'https://www.amerusfinancial.com/services/home'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Home Insurance',
+            url: 'https://www.amerusfinancial.com/services/home'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Homeowners Insurance',
-          url: 'https://www.amerusfinancial.com/services/home/homeowners'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Homeowners Insurance',
+            url: 'https://www.amerusfinancial.com/services/home/homeowners'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Flood Insurance',
-          url: 'https://www.amerusfinancial.com/services/home/flood'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Flood Insurance',
+            url: 'https://www.amerusfinancial.com/services/home/flood'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Business Insurance',
-          url: 'https://www.amerusfinancial.com/services/business'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Business Insurance',
+            url: 'https://www.amerusfinancial.com/services/business'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'General Liability Insurance',
-          url: 'https://www.amerusfinancial.com/services/business/general-liability'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'General Liability Insurance',
+            url: 'https://www.amerusfinancial.com/services/business/general-liability'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Professional Liability Insurance',
-          url: 'https://www.amerusfinancial.com/services/business/professional-liability'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Professional Liability Insurance',
+            url: 'https://www.amerusfinancial.com/services/business/professional-liability'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Workers Compensation',
-          url: 'https://www.amerusfinancial.com/services/business/workers-comp'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Workers Compensation',
+            url: 'https://www.amerusfinancial.com/services/business/workers-comp'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Retirement Planning',
-          url: 'https://www.amerusfinancial.com/services/retirement'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Retirement Planning',
+            url: 'https://www.amerusfinancial.com/services/retirement'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'IRA Services',
-          url: 'https://www.amerusfinancial.com/services/retirement/iras'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'IRA Services',
+            url: 'https://www.amerusfinancial.com/services/retirement/iras'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: '401(k) Planning',
-          url: 'https://www.amerusfinancial.com/services/retirement/401k'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: '401(k) Planning',
+            url: 'https://www.amerusfinancial.com/services/retirement/401k'
+          }
         },
-        { 
-          '@type': 'Service',
-          name: 'Annuities',
-          url: 'https://www.amerusfinancial.com/services/retirement/annuity'
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Annuities',
+            url: 'https://www.amerusfinancial.com/services/retirement/annuity'
+          }
         }
       ]
     }
