@@ -154,6 +154,9 @@ export default defineNuxtConfig({
     '/medicare/qualifying-for-medicare-with-disabilities/': { redirect: '/articles/qualifying-for-medicare-with-disabilities', statusCode: 301 },
     '/medicare/reducing-expenses-in-medicare/': { redirect: '/articles/reducing-expenses-in-medicare', statusCode: 301 },
     '/medicare/the-abcs-and-d-of-medicare/': { redirect: '/articles/the-abcs-and-d-of-medicare', statusCode: 301 },
+
+    '/articles/the-abc-and-d-of-medicare': { redirect: '/articles/the-abcs-and-d-of-medicare', statusCode: 301 },
+
     '/medicare/signing-up-for-medicare/': { redirect: '/articles/signing-up-for-medicare', statusCode: 301 },
     '/medicare/when-medicare-coverage-begins/': { redirect: '/articles/when-medicare-coverage-begins', statusCode: 301 },
     '/health-insurance-2/health-insurance-subsidies/': { redirect: '/articles/health-insurance-subsidies', statusCode: 301 },

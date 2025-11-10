@@ -7,9 +7,9 @@
         <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-4 text-[#30BCFE] border-[#30BCFE]/30 bg-[#30BCFE]/10">
           Financial Planning
         </div>
-        <h2 class="text-3xl font-bold mb-4 text-gray-800">
+        <h1 class="text-3xl font-bold mb-4 text-gray-800">
           Retirement Calculator
-        </h2>
+        </h1>
         <p class="text-gray-600 max-w-3xl mx-auto">
           Plan for your future by calculating how much you need to save for a comfortable retirement.
         </p>
