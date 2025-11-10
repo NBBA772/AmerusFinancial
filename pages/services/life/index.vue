@@ -196,7 +196,10 @@ useSchemaOrg([
     description: 'Comprehensive life insurance coverage including term, whole, universal, and final expense insurance to secure your family\'s financial future with affordable monthly plans starting at $50.',
     serviceType: 'Insurance',
     category: 'Life Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '50.00',

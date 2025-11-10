@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Specialized key person insurance protecting businesses from the financial impact of losing critical employees or executives with customized coverage starting at $150 monthly.',
     serviceType: 'Insurance',
     category: 'Business Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '150.00',

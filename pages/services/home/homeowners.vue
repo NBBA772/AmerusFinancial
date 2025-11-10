@@ -193,7 +193,10 @@ useSchemaOrg([
     description: 'Comprehensive homeowners insurance protecting your home, belongings, and family from unexpected events with affordable monthly premiums starting at $120.',
     serviceType: 'Insurance',
     category: 'Homeowners Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '120.00',

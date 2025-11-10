@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Professional retirement income planning services including annuities, pension optimization, and withdrawal strategies for guaranteed lifetime income.',
     serviceType: 'Financial Services',
     category: 'Retirement Planning',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '1000.00',

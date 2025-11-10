@@ -175,7 +175,10 @@ useSchemaOrg([
     description: 'Comprehensive Individual Retirement Account planning including Traditional and Roth IRAs with expert guidance for tax-advantaged retirement savings starting at $350.',
     serviceType: 'Financial Planning',
     category: 'IRA Planning',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '350.00',

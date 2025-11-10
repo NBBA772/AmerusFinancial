@@ -175,7 +175,10 @@ useSchemaOrg([
     description: 'Comprehensive flood insurance protection for your home and belongings with NFIP and private flood coverage options starting at $85.',
     serviceType: 'Insurance',
     category: 'Flood Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '85.00',

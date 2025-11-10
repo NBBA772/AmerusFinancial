@@ -190,7 +190,10 @@ useSchemaOrg([
     description: 'Comprehensive home insurance coverage including homeowners, property protection, flood, liability, and valuable items coverage with affordable monthly options starting at $120.',
     serviceType: 'Insurance',
     category: 'Home Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '120.00',

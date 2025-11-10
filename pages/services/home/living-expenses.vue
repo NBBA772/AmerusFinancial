@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Additional living expenses coverage providing financial protection for temporary housing and displacement costs with affordable monthly plans starting at $35.',
     serviceType: 'Insurance',
     category: 'Home Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '35.00',

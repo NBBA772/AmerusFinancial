@@ -175,7 +175,10 @@ useSchemaOrg([
     description: 'Premium private health insurance coverage with comprehensive benefits and access to top healthcare providers starting at $300.',
     serviceType: 'Insurance',
     category: 'Private Health Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '300.00',

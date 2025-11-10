@@ -168,7 +168,10 @@ useSchemaOrg([
     description: 'Specialized valuable items insurance protecting jewelry, art, collectibles, and high-value personal property with comprehensive coverage starting at $45 monthly.',
     serviceType: 'Insurance',
     category: 'Personal Property Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '45.00',

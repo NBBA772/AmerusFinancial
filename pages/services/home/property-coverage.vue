@@ -174,7 +174,10 @@ useSchemaOrg([
     description: 'Comprehensive property coverage insurance protecting your home structure and belongings from fire, theft, vandalism, and natural disasters with affordable monthly plans starting at $110.',
     serviceType: 'Insurance',
     category: 'Property Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '110.00',

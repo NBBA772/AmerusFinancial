@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Multi-vehicle auto insurance with significant discounts for insuring multiple cars, trucks, and motorcycles under one convenient policy.',
     serviceType: 'Insurance',
     category: 'Multi-Vehicle Auto Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '150.00',

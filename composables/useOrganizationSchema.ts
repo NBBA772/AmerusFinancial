@@ -4,6 +4,7 @@
  */
 export const useOrganizationSchema = () => {
   return {
+    '@id': 'https://www.amerusfinancial.com#organization',
     '@type': 'Organization',
     name: 'Amerus Financial',
     url: 'https://www.amerusfinancial.com',
@@ -16,12 +17,15 @@ export const useOrganizationSchema = () => {
     description: 'Leading provider of insurance and financial services including health insurance, life insurance, and retirement planning solutions.',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'United States',
+      streetAddress: '5115 S Lakeland Dr STE 1',
+      addressLocality: 'Lakeland',
+      addressRegion: 'FL',
+      postalCode: '33813',
       addressCountry: 'US'
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-800-AMERUS',
+      telephone: '+1-888-441-7891',
       contactType: 'customer service',
       availableLanguage: 'English'
     },
@@ -30,8 +34,8 @@ export const useOrganizationSchema = () => {
       'https://www.linkedin.com/company/amerus-financial',
       'https://twitter.com/amerusfinancial'
     ],
-    serviceArea: {
-      '@type': 'Country',
+    areaServed: {
+      '@type': 'AdministrativeArea',
       name: 'United States'
     }
   }

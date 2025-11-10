@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Comprehensive commercial property insurance protecting business buildings, equipment, inventory, and contents from damage and loss.',
     serviceType: 'Insurance',
     category: 'Commercial Property Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '300.00',

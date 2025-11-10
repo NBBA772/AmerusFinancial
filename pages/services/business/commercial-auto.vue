@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Comprehensive commercial auto insurance for business vehicles, fleets, and company cars with competitive rates and full protection.',
     serviceType: 'Insurance',
     category: 'Commercial Auto Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '200.00',

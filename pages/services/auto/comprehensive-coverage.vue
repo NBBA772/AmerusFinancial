@@ -170,7 +170,10 @@ useSchemaOrg([
     description: 'Comprehensive auto insurance coverage protecting against theft, vandalism, weather damage, and other non-collision incidents with affordable rates starting at $75.',
     serviceType: 'Insurance',
     category: 'Comprehensive Auto Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '75.00',

@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Comprehensive general liability insurance protecting businesses from third-party claims of bodily injury, property damage, and personal injury.',
     serviceType: 'Insurance',
     category: 'General Liability Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '150.00',

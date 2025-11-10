@@ -168,7 +168,10 @@ useSchemaOrg([
     description: 'Comprehensive group health insurance coverage for businesses providing employee medical benefits with affordable monthly plans starting at $500.',
     serviceType: 'Insurance',
     category: 'Group Health Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '500.00',

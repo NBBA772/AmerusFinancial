@@ -168,7 +168,10 @@ useSchemaOrg([
     description: 'Affordable final expense life insurance to cover funeral costs and end-of-life expenses with guaranteed approval options and simplified underwriting starting at $35 monthly.',
     serviceType: 'Insurance',
     category: 'Life Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '35.00',

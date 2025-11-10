@@ -179,7 +179,10 @@ useSchemaOrg([
     description: 'Individual health insurance plans providing comprehensive medical coverage, preventive care, and prescription drug benefits starting at $300.',
     serviceType: 'Insurance',
     category: 'Health Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '300.00',

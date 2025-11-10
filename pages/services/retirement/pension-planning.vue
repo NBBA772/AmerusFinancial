@@ -179,7 +179,10 @@ useSchemaOrg([
     description: 'Comprehensive pension planning and benefit optimization for defined benefit plans, pension rollovers, and retirement income strategies starting at $650 consultation.',
     serviceType: 'Financial Planning',
     category: 'Pension Planning',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '650.00',

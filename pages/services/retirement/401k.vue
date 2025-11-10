@@ -179,7 +179,10 @@ useSchemaOrg([
     description: 'Comprehensive 401(k) retirement planning with employer matching, tax advantages, and professional investment guidance starting at $500 consultation.',
     serviceType: 'Financial Planning',
     category: 'Retirement Planning',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '500.00',

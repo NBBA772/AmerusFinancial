@@ -168,7 +168,10 @@ useSchemaOrg([
     description: 'Cost-effective group life insurance for employers to provide essential financial protection for employees and their families with customizable benefits packages starting at $75 monthly.',
     serviceType: 'Insurance',
     category: 'Life Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '75.00',

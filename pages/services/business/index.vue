@@ -178,7 +178,10 @@ useSchemaOrg([
     description: 'Comprehensive business insurance including general liability, workers compensation, commercial property, and professional liability coverage.',
     serviceType: 'Insurance',
     category: 'Business Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '250.00',

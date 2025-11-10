@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Personal injury protection (PIP) insurance covering medical expenses, lost wages, and essential services after auto accidents regardless of fault.',
     serviceType: 'Insurance',
     category: 'Personal Injury Protection',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '50.00',

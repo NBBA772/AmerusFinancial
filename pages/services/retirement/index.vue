@@ -184,7 +184,10 @@ useSchemaOrg([
     description: 'Comprehensive retirement planning services including 401(k) management, IRAs, annuities, and pension strategies with expert financial guidance starting at $500.',
     serviceType: 'Financial Planning',
     category: 'Retirement Planning',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '500.00',

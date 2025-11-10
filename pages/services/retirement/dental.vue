@@ -161,7 +161,10 @@ useSchemaOrg([
     description: 'Comprehensive dental insurance coverage for preventive care, fillings, crowns, and orthodontics with affordable monthly plans starting at $25.',
     serviceType: 'Insurance',
     category: 'Dental Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '25.00',

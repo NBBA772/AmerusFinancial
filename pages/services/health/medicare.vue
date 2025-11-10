@@ -181,7 +181,10 @@ useSchemaOrg([
     description: 'Medicare insurance plans including Medicare Advantage, Medicare Supplement, and Part D prescription drug coverage for seniors starting at $150.',
     serviceType: 'Insurance',
     category: 'Health Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '150.00',

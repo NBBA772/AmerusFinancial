@@ -175,7 +175,10 @@ useSchemaOrg([
     description: 'Specialized dental insurance coverage for seniors including dentures, implants, and comprehensive oral care with affordable monthly plans starting at $45.',
     serviceType: 'Insurance',
     category: 'Senior Dental Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '45.00',

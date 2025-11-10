@@ -181,7 +181,10 @@ useSchemaOrg([
     description: 'Vision insurance coverage providing eye exam benefits, glasses, contact lenses, and frames with affordable monthly plans starting at $30.',
     serviceType: 'Insurance',
     category: 'Vision Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '30.00',

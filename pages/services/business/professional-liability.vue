@@ -181,7 +181,10 @@ useSchemaOrg([
     description: 'Professional liability (E&O) insurance protecting businesses from claims of errors, omissions, and professional negligence with coverage starting at $200.',
     serviceType: 'Insurance',
     category: 'Business Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '200.00',

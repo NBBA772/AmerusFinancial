@@ -175,7 +175,10 @@ useSchemaOrg([
     description: 'Comprehensive family health insurance coverage for medical, preventive care, and specialist visits with affordable monthly plans starting at $250.',
     serviceType: 'Insurance',
     category: 'Family Health Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '250.00',

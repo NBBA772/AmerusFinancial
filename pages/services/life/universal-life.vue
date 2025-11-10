@@ -4,9 +4,9 @@
       <ContentHero :data="hero" />
       <ContentHeader
       >
-        <h1 class="text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
+        <h2 class="text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
           Universal Life Insurance
-        </h1>
+        </h2>
         <p class="mt-4 text-slate-600 dark:text-slate-300">
           Universal life insurance offers the flexibility to adjust your premiums and coverage as your life changes, while building cash value through investment options. This permanent life insurance solution adapts to your evolving financial needs.
         </p>
@@ -174,7 +174,10 @@ useSchemaOrg([
     description: 'Flexible universal life insurance with adjustable premiums and investment options, providing permanent protection with cash value accumulation starting at $150.',
     serviceType: 'Insurance',
     category: 'Universal Life Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '150.00',

@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Uninsured motorist coverage protecting you from uninsured and underinsured drivers with comprehensive bodily injury and property damage protection.',
     serviceType: 'Insurance',
     category: 'Uninsured Motorist Coverage',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '40.00',

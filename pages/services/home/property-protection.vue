@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Comprehensive property protection insurance safeguarding your home and assets from unexpected events with affordable monthly plans starting at $115.',
     serviceType: 'Insurance',
     category: 'Property Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '115.00',

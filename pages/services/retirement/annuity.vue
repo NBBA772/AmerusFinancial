@@ -179,7 +179,10 @@ useSchemaOrg([
     description: 'Comprehensive annuity planning for guaranteed retirement income with fixed, variable, and immediate annuity options starting at $750 consultation.',
     serviceType: 'Financial Planning',
     category: 'Retirement Planning',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '750.00',

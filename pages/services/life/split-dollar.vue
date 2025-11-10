@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Strategic split dollar life insurance arrangements for executive benefits where employers and employees share premium costs and policy benefits with customized programs starting at $200 monthly.',
     serviceType: 'Insurance',
     category: 'Executive Benefits',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '200.00',

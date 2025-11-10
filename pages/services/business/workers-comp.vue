@@ -181,7 +181,10 @@ useSchemaOrg([
     description: 'Workers compensation insurance protecting employees from workplace injuries and employers from liability with coverage starting at $150.',
     serviceType: 'Insurance',
     category: 'Business Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '150.00',

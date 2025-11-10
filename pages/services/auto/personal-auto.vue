@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Comprehensive personal auto insurance with liability, collision, comprehensive coverage, and competitive rates for vehicle protection.',
     serviceType: 'Insurance',
     category: 'Auto Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '100.00',

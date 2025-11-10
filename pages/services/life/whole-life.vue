@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Permanent whole life insurance with guaranteed cash value growth, fixed premiums, and lifetime coverage providing financial security starting at $125.',
     serviceType: 'Insurance',
     category: 'Whole Life Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '125.00',

@@ -196,7 +196,10 @@ useSchemaOrg([
     description: 'Comprehensive health insurance coverage including individual, family, group, Medicare, dental and vision plans with affordable monthly options starting at $150.',
     serviceType: 'Insurance',
     category: 'Health Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '150.00',

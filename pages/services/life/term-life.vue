@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Affordable term life insurance providing temporary coverage and financial protection for your family with flexible coverage amounts starting at $30 monthly.',
     serviceType: 'Insurance',
     category: 'Life Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '30.00',

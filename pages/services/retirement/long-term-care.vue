@@ -179,7 +179,10 @@ useSchemaOrg([
     description: 'Comprehensive long-term care insurance and planning for retirement protection covering home care, assisted living, and nursing facilities starting at $600 consultation.',
     serviceType: 'Insurance Planning',
     category: 'Long-Term Care Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '600.00',

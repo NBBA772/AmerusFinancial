@@ -169,7 +169,10 @@ useSchemaOrg([
     description: 'Comprehensive liability coverage insurance protecting you from legal claims and lawsuits with affordable monthly plans starting at $40.',
     serviceType: 'Insurance',
     category: 'Liability Insurance',
-    areaServed: 'United States',
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'United States'
+    },
     offers: {
       '@type': 'Offer',
       price: '40.00',
