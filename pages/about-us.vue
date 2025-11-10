@@ -18,7 +18,7 @@ usePerformanceMonitoring()
 // Consolidated SEO + Social Meta for About Us page
 const pageUrl = 'https://www.amerusfinancial.com/about-us'
 const pageTitle = 'About Amerus Financial — Our Mission, Team & Values'
-const pageDescription = 'Learn about Amerus Financial—our mission, values, and team dedicated to helping clients make confident insurance and financial decisions across life, health, auto, and retirement.'
+const pageDescription = 'Learn about Amerus Financial—our mission, values, and team helping clients make confident insurance and financial decisions.'
 const pageImage = 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
 
 useHead({

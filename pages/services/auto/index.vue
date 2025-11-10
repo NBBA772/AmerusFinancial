@@ -57,14 +57,14 @@
 <script setup>
 // Enhanced SEO using stable composables
 useEnhancedMetaTags()
-useResourceHints(['/images/dental-insurance.jpg'])
+useResourceHints(['/images/insured-cars-in-traffic.jpg'])
 usePerformanceMonitoring()
 
 // Enhanced social sharing
 useSocialMeta({
   title: 'Auto Insurance Coverage & Protection',
-  description: 'Comprehensive auto insurance with liability, collision, comprehensive, and specialized coverage options. Get competitive rates and protect your vehicle with Amerus.',
-  image: 'https://www.amerusfinancial.com/images/auto-insurance-coverage.jpg',
+  description: 'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
+  image: 'https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg',
   url: 'https://www.amerusfinancial.com/services/auto',
   type: 'website'
 })
@@ -73,16 +73,16 @@ useSeoMeta({
   title: 'Auto Insurance Coverage & Protection',
   ogTitle: 'Auto Insurance Coverage — Amerus',
   description:
-    'Comprehensive auto insurance with liability, collision, comprehensive, and specialized coverage options. Get competitive rates and protect your vehicle with Amerus.',
+    'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
   ogDescription:
-    'Auto insurance coverage including liability, collision, comprehensive, uninsured motorist, and specialized protection for your vehicle.',
-  ogImage: 'https://www.amerusfinancial.com/images/auto-insurance-coverage.jpg',
+    'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
+  ogImage: 'https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/auto',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Auto Insurance Coverage — Amerus',
   twitterDescription:
-    'Auto insurance coverage including liability, collision, comprehensive, uninsured motorist, and specialized protection for your vehicle.',
-  twitterImage: 'https://www.amerusfinancial.com/images/auto-insurance-coverage.jpg',
+    'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
+  twitterImage: 'https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg',
   keywords: 'auto insurance, car insurance, vehicle insurance, liability coverage, collision coverage, comprehensive coverage, auto insurance quotes, vehicle protection, auto insurance rates'
 })
 

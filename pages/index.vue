@@ -33,7 +33,7 @@ usePerformanceMonitoring()
 // Consolidated SEO + Social Meta for Home page
 const pageUrl = 'https://www.amerusfinancial.com/'
 const pageTitle = 'Insurance Guidance for Life, Health, Auto & Retirement'
-const pageDescription = 'Independent insurance guidance for life, health, auto, business and retirement planning. Compare coverage options and get personalized support from Amerus Financial.'
+const pageDescription = 'Independent insurance guidance for life, health, auto, business and retirement. Compare coverage options and get personalized support.'
 const pageImage = 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
 
 useHead({
