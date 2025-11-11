@@ -2,7 +2,7 @@
   <PatternSection class="flex justify-center w-100">
     <ContentList path="/articles" v-slot="{ list }">
       <div class="flex flex-col justify-center w-100">
-        <h1 class="text-4xl font-bold text-center mb-8 dark:text-white">Articles</h1>
+        <h1 class="text-4xl font-bold text-center mb-8 dark:text-white">Insurance & Financial Planning Articles</h1>
         <div
           v-for="article in list"
           :key="article._path"
@@ -57,7 +57,7 @@ usePerformanceMonitoring()
 
 // Consolidated SEO + Social Meta for Articles Overview page
 const pageUrl = 'https://www.amerusfinancial.com/articles/overview'
-const pageTitle = 'Insurance & Financial Articles — Amerus Insights'
+const pageTitle = 'Insurance & Financial Articles'
 const pageDescription = 'Browse expert articles on insurance, retirement, health, auto, life, and financial planning. Stay informed with actionable insights from Amerus Financial.'
 const pageImage = 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
 

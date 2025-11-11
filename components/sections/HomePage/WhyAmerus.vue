@@ -25,7 +25,7 @@ const values = [
       <!-- Section Heading -->
       <div class="text-center mb-12">
         <h1 id="value-props" class="text-3xl md:text-4xl font-bold">
-          Why Amerus
+          Why Choose Amerus Financial for Insurance Coverage
         </h1>
       </div>
 
