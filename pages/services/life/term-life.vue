@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Term Life Insurance',
   description: 'Maximum protection at affordable rates for a specified period, providing financial security for your loved ones when they need it most.',
-  image: '/images/happy-family-term-life-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/happy-family-term-life-insurance.jpg',
   imageAlt: 'happy family term life insurance',
   cta: { href: '/contact', label: 'Explore Term Life Options' }
 }

@@ -251,7 +251,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Property Coverage',
   description: 'Comprehensive protection for your home\'s structure and personal belongings against a wide range of perils, ensuring you\'re covered for unexpected damages and losses.',
-  image: '/images/fire-damage-property-coverage.jpg',
+  image: 'https://www.amerusfinancial.com/images/fire-damage-property-coverage.jpg',
   imageAlt: 'fire damage to property',
   cta: { href: '/contact', label: 'Get Property Coverage' }
 }

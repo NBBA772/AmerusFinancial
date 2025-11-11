@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Whole Life Insurance',
   description: 'Permanent life insurance protection combined with a cash value component that grows over time, providing lifelong security and financial benefits.',
-  image: '/images/family-whole-life-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/family-whole-life-insurance.jpg',
   imageAlt: 'happy family whole life insurance',
   cta: { href: '/contact', label: 'Explore Whole Life Options' }
 }

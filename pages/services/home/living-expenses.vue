@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Additional Living Expenses Coverage',
   description: 'Financial protection for temporary housing and extra costs when your home becomes uninhabitable due to a covered loss, helping you maintain your standard of living.',
-  image: '/images/additional-living-expenses-coverage-motel-room.jpg',
+  image: 'https://www.amerusfinancial.com/images/additional-living-expenses-coverage-motel-room.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Explore Living Expenses Coverage' }
 }

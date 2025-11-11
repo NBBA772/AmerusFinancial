@@ -251,7 +251,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Universal Life Insurance',
   description: 'Flexible permanent life insurance that adapts to your changing financial needs with investment options.',
-  image: '/images/senior-woman-life-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/senior-woman-life-insurance.jpg',
   imageAlt: 'universal life insurance',
   cta: { href: '/contact', label: 'Get Universal Life Quote' }
 }

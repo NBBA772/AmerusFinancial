@@ -255,7 +255,7 @@ const hero = {
   eyebrow: 'Insurance Services',
   title: 'Business Insurance Solutions',
   description: 'Protect your business with comprehensive commercial insurance coverage. From liability protection to workers compensation, secure your business against potential risks.',
-  image: '/images/Business-Solutions.jpg',
+  image: 'https://www.amerusfinancial.com/images/Business-Solutions.jpg',
   imageAlt: 'business insurance coverage',
   cta: { href: '/contact', label: 'Get Business Insurance Quote' }
 }

@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Auto Insurance',
   title: 'Personal Auto Insurance',
   description: 'Comprehensive auto insurance coverage to protect you, your vehicle, and your finances on the road.',
-  image: '/images/man-driving-insured-car.jpg',
+  image: 'https://www.amerusfinancial.com/images/man-driving-insured-car.jpg',
   imageAlt: 'personal auto insurance',
   cta: { href: '/contact', label: 'Get Auto Insurance Quote' }
 }

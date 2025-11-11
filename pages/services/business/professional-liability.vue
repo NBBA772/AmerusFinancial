@@ -258,7 +258,7 @@ const hero = {
   eyebrow: 'Business Insurance',
   title: 'Professional Liability Insurance',
   description: 'Protect your professional services with comprehensive E&O coverage against negligence claims and service errors.',
-  image: '/images/professional-liability-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/professional-liability-insurance.jpg',
   imageAlt: 'professional liability insurance',
   cta: { href: '/contact', label: 'Get E&O Quote' }
 }

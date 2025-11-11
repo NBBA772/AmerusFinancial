@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'life Insurance',
   title: 'Key Person Insurance',
   description: 'Protect your business from the financial impact of losing a key employee or executive with specialized coverage designed for business continuity.',
-  image: '/images/mature-man-key-person-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/mature-man-key-person-insurance.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Get a Quote' }
 }

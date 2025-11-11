@@ -256,7 +256,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: 'Pension Planning',
   description: 'Expert guidance to optimize your pension benefits and integrate them into your comprehensive retirement strategy for maximum financial security.',
-  image: '/images/couple-pension-planning.jpg',
+  image: 'https://www.amerusfinancial.com/images/couple-pension-planning.jpg',
   imageAlt: 'senior woman pension insurance',
   cta: { href: '/contact', label: 'Start Your Pension Planning' }
 }

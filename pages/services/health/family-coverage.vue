@@ -252,7 +252,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Family Coverage Options',
   description: 'Comprehensive health insurance solutions designed for families of all sizes, ensuring every member receives the care they need at rates you can afford.',
-  image: '/images/healthcare-family.jpg',
+  image: 'https://www.amerusfinancial.com/images/healthcare-family.jpg',
   imageAlt: 'family healthcare',
   cta: { href: '/contact', label: 'Get a Quote' }
 }

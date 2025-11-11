@@ -258,7 +258,7 @@ const hero = {
   eyebrow: 'Business Insurance',
   title: 'Workers Compensation Insurance',
   description: 'Protect your employees and business with comprehensive workers compensation coverage for workplace injuries and employer liability.',
-  image: '/images/workers-compensation-insurance-fall-at-work.jpg',
+  image: 'https://www.amerusfinancial.com/images/workers-compensation-insurance-fall-at-work.jpg',
   imageAlt: 'workers compensation insurance',
   cta: { href: '/contact', label: 'Get Workers Comp Quote' }
 }

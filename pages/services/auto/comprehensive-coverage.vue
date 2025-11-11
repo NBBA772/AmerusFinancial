@@ -247,7 +247,7 @@ const hero = {
   eyebrow: 'Auto Insurance',
   title: 'Comprehensive Auto Coverage',
   description: 'Protect your vehicle from theft, vandalism, weather damage, and other non-collision incidents with comprehensive coverage.',
-  image: '/images/tree-fell-on-car-comprehensive-auto-coverage.jpg',
+  image: 'https://www.amerusfinancial.com/images/tree-fell-on-car-comprehensive-auto-coverage.jpg',
   imageAlt: 'comprehensive auto insurance coverage',
   cta: { href: '/contact', label: 'Get Comprehensive Quote' }
 }

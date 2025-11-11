@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: 'Retirement Income Strategies',
   description: 'Comprehensive planning to create reliable, sustainable income streams throughout your retirement years, ensuring financial security and preserving your lifestyle.',
-  image: '/images/young-woman-planing-for-retirement.jpg',
+  image: 'https://www.amerusfinancial.com/images/young-woman-planing-for-retirement.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Create Your Income Strategy' }
 }

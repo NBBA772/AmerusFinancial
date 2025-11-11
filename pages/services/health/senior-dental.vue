@@ -252,7 +252,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Senior Dental Solutions',
   description: 'Specialized dental coverage designed for seniors\' unique oral health needs with Medicare coordination.',
-  image: '/images/senior-dental-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/senior-dental-insurance.jpg',
   imageAlt: 'dental insurance',
   cta: { href: '/contact', label: 'Speak with a Medicare Specialist' }
 }

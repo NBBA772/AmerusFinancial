@@ -245,7 +245,7 @@ const hero = {
   eyebrow: 'life Insurance',
   title: 'Final Expense Insurance',
   description: 'Providing peace of mind for you and your loved ones with coverage for funeral costs and end-of-life expenses.',
-  image: '/images/seniors-final-expense.jpg',
+  image: 'https://www.amerusfinancial.com/images/seniors-final-expense.jpg',
   imageAlt: 'senior final expense insurance',
   cta: { href: '/contact', label: 'Speak with a Specialist' }
 }

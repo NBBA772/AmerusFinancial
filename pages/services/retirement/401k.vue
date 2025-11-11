@@ -256,7 +256,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: '401(k) Retirement Plans',
   description: 'Building a secure financial future for you and your employees through tax-advantaged retirement savings plans.',
-  image: '/images/senior-woman-life-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/senior-woman-life-insurance.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Schedule a Consultation' }
 }

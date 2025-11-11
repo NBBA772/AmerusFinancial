@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Individual Health Insurance',
   description: 'Personalized healthcare coverage designed specifically for your unique medical needs and budget.',
-  image: '/images/uninsured-motorist-in-car-accident.jpg',
+  image: 'https://www.amerusfinancial.com/images/uninsured-motorist-in-car-accident.jpg',
   imageAlt: 'uninsured motorist in car accident',
   cta: { href: '/contact', label: 'Get a Personalized Quote' }
 }

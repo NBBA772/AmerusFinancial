@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Auto Insurance',
   title: 'Auto Insurance Coverage',
   description: 'Comprehensive auto insurance protection for your vehicle with liability, collision, comprehensive, and specialized coverage options.',
-  image: '/images/insured-cars-in-traffic.jpg',
+  image: 'https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg',
   imageAlt: 'auto insurance coverage',
   cta: { href: '/contact', label: 'Get a Personalized Quote' }
 }

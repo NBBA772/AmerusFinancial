@@ -245,7 +245,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Group Health Insurance',
   description: 'Comprehensive health benefits for your employees that attract and retain top talent while providing tax advantages for your business.',
-  image: '/images/group-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/group-insurance.jpg',
   imageAlt: 'dental insurance',
   cta: { href: '/contact', label: 'Get a Group Health Quote' }
 }

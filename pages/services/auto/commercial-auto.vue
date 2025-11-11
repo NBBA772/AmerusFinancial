@@ -244,7 +244,7 @@ const hero = {
   eyebrow: 'Auto Insurance',
   title: 'Commercial Auto Insurance',
   description: 'Comprehensive commercial auto insurance for business vehicles, fleets, and company cars with competitive rates and full protection.',
-  image: '/images/row-of-vans-needing-commercial-auto-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/row-of-vans-needing-commercial-auto-insurance.jpg',
   imageAlt: 'commercial auto insurance',
   cta: { href: '/contact', label: 'Get Commercial Auto Quote' }
 }

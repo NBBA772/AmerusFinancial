@@ -273,7 +273,7 @@ const hero = {
   eyebrow: 'Insurance Services',
   title: 'Life Insurance Solutions',
   description: 'Secure your family\'s financial future with comprehensive life insurance coverage. From term to permanent life insurance, find the protection that fits your needs.',
-  image: '/images/happy-family-term-life-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/happy-family-term-life-insurance.jpg',
   imageAlt: 'life insurance coverage',
   cta: { href: '/contact', label: 'Get Life Insurance Quote' }
 }

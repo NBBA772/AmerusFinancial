@@ -270,7 +270,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Homeowners Insurance',
   description: 'Comprehensive protection for your home and belongings, safeguarding your most valuable asset against disasters, theft, and liability claims.',
-  image: '/images/homeowners-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/homeowners-insurance.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Get a Homeowners Quote' }
 }

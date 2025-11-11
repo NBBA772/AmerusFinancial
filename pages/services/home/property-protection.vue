@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Property Protection Insurance',
   description: 'Comprehensive coverage for your home, belongings, and other structures against a wide range of perils, safeguarding your most valuable investments.',
-  image: '/images/property-protection.jpg',
+  image: 'https://www.amerusfinancial.com/images/property-protection.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Get a Property Protection Quote' }
 }

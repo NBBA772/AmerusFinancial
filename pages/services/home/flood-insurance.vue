@@ -252,7 +252,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Flood Insurance',
   description: 'Essential protection against flood damage that standard homeowners insurance doesn\'t cover, safeguarding your home and belongings from rising water disasters.',
-  image: '/images/flood-insurance-house-flooded.jpg',
+  image: 'https://www.amerusfinancial.com/images/flood-insurance-house-flooded.jpg',
   imageAlt: 'house flooded with water',
   cta: { href: '/contact', label: 'Secure Flood Protection' }
 }

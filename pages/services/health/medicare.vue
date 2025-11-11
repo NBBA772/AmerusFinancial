@@ -265,7 +265,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Medicare Solutions',
   description: 'Expert guidance for navigating your Medicare options with personalized support for your healthcare needs.',
-  image: '/images/medicare-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/medicare-insurance.jpg',
   imageAlt: 'dental insurance',
   cta: { href: '/contact', label: 'Contact a Medicare Specialist' }
 }

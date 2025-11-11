@@ -252,7 +252,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: 'Individual Retirement Accounts (IRAs)',
   description: 'Secure your financial future with tax-advantaged Individual Retirement Accounts that help you build wealth for retirement on your terms.',
-  image: '/images/individual-retirement-accounts-iras.jpg',
+  image: 'https://www.amerusfinancial.com/images/individual-retirement-accounts-iras.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Start Your Retirement Plan' }
 }

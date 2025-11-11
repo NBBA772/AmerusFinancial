@@ -245,7 +245,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Valuable Items Coverage',
   description: 'Specialized protection for high-value possessions that exceed standard homeowners insurance limits, including jewelry, art, collectibles, and electronics.',
-  image: '/images/valuable-items-coverage-jewelry-box.jpg',
+  image: 'https://www.amerusfinancial.com/images/valuable-items-coverage-jewelry-box.jpg',
   imageAlt: 'jewelry box with valuable items',
   cta: { href: '/contact', label: 'Protect Your Valuables' }
 }

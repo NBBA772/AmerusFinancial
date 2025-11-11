@@ -267,7 +267,7 @@ const hero = {
   eyebrow: 'Insurance Services',
   title: 'Home Insurance Solutions',
   description: 'Protect your most valuable asset with comprehensive home insurance coverage. From basic homeowners protection to specialized flood insurance, secure your home and belongings.',
-  image: '/images/homeowners-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/homeowners-insurance.jpg',
   imageAlt: 'home insurance coverage',
   cta: { href: '/contact', label: 'Get Home Insurance Quote' }
 }

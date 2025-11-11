@@ -74,37 +74,37 @@ const Services = [
   {
     title: "Health Insurance",
     excerpt: "Comprehensive health plans for individuals, families, seniors, and groups. Coverage for medical, dental, vision, and more.",
-    image: "/images/couple-got-individual-health-insurance.jpg",
+    image: "https://www.amerusfinancial.com/images/couple-got-individual-health-insurance.jpg",
     url: "/services/health/individual-health",
   },
   {
     title: "Life Insurance",
     excerpt: "Protect your loved ones with term, whole, and group life insurance. Flexible options for every stage of life.",
-    image: "/images/senior-woman-life-insurance.jpg",
+    image: "https://www.amerusfinancial.com/images/senior-woman-life-insurance.jpg",
     url: "/services/life/life-insurance",
   },
   {
     title: "Retirement Planning",
     excerpt: "Plan for your future with IRAs, 401(k) rollovers, annuities, pension planning, and retirement income solutions.",
-    image: "/images/individual-retirement-accounts-iras.jpg",
+    image: "https://www.amerusfinancial.com/images/individual-retirement-accounts-iras.jpg",
     url: "/services/retirement/iras",
   },
   {
     title: "Auto Insurance",
     excerpt: "Protect your vehicles with personal, commercial, multi-vehicle, and uninsured motorist coverage options.",
-    image: "/images/insured-cars-in-traffic.jpg",
+    image: "https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg",
     url: "/services/auto",
   },
   {
     title: "Home Insurance",
     excerpt: "Safeguard your home and property with coverage for homeowners, valuables, flood, and liability.",
-    image: "/images/property-protection.jpg",
+    image: "https://www.amerusfinancial.com/images/property-protection.jpg",
     url: "/services/home/property-protection",
   },
   {
     title: "Business Insurance",
     excerpt: "Comprehensive solutions for general liability, professional liability, workers comp, property, and more.",
-    image: "/images/general-liability-insurance-slip-and-fall.jpg",
+    image: "https://www.amerusfinancial.com/images/general-liability-insurance-slip-and-fall.jpg",
     url: "/services/business/general-liability",
   },
 ]

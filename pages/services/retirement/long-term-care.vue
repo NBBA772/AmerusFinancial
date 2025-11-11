@@ -256,7 +256,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: 'Long-Term Care Insurance',
   description: 'Specialized coverage that helps pay for extended care services in nursing homes, assisted living facilities, or your own home when you\'re unable to perform daily activities independently.',
-  image: '/images/couple-talking-long-term-care-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/couple-talking-long-term-care-insurance.jpg',
   imageAlt: 'couple discussing long-term care insurance',
   cta: { href: '/contact', label: 'Explore Long-Term Care Options' }
 }

@@ -258,7 +258,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Vision Coverage',
   description: 'Protect your eye health with comprehensive vision insurance that covers exams, glasses, contacts, and more at affordable rates.',
-  image: '/images/vision-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/vision-insurance.jpg',
   imageAlt: 'vision coverage',
   cta: { href: '/contact', label: 'Check Your Vision Coverage Options' }
 }

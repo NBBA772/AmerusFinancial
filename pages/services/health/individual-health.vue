@@ -256,7 +256,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Individual Health Insurance',
   description: 'Personalized healthcare coverage designed specifically for your unique medical needs and budget.',
-  image: '/images/couple-got-individual-health-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/couple-got-individual-health-insurance.jpg',
   imageAlt: 'individual health insurance coverage',
   cta: { href: '/contact', label: 'Get a Personalized Quote' }
 }

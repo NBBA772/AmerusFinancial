@@ -245,7 +245,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Dental Solutions',
   description: 'Comprehensive coverage for your oral health needs, from routine cleanings to major procedures.',
-  image: '/images/dental-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',
   imageAlt: 'dental insurance',
   cta: { href: '/contact', label: 'Find Dental Coverage' }
 }

@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Business Insurance',
   title: 'Commercial Property Insurance',
   description: 'Comprehensive protection for your business buildings, equipment, inventory, and contents against fire, theft, and natural disasters.',
-  image: '/images/commercial-property-insurance-strip-mall.jpg',
+  image: 'https://www.amerusfinancial.com/images/commercial-property-insurance-strip-mall.jpg',
   imageAlt: 'commercial property insurance coverage',
   cta: { href: '/contact', label: 'Get a Business Quote' }
 }

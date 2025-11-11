@@ -252,7 +252,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Private Health Insurance',
   description: 'Premium healthcare coverage with enhanced benefits and flexibility, giving you greater control over your healthcare choices.',
-  image: '/images/private-health.jpg',
+  image: 'https://www.amerusfinancial.com/images/private-health.jpg',
   imageAlt: 'private health insurance',
   cta: { href: '/contact', label: 'Get a Private Health Quote' }
 }

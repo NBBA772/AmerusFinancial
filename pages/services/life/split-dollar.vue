@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Split Dollar Life Insurance',
   description: 'Create a strategic partnership where both employer and employee share the benefits and costs of a life insurance policy as part of an executive benefit strategy.',
-  image: '/images/employer-employee-split-dollar.jpg',
+  image: 'https://www.amerusfinancial.com/images/employer-employee-split-dollar.jpg',
   imageAlt: 'employer employee split dollar life insurance',
   cta: { href: '/contact', label: 'Discuss Split Dollar Options' }
 }

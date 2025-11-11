@@ -245,7 +245,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Group Life Insurance',
   description: 'Provide essential financial protection for your employees\' families with cost-effective group life insurance that enhances your benefits package.',
-  image: '/images/employees-families-group-life-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/employees-families-group-life-insurance.jpg',
   imageAlt: 'employees families group life insurance',
   cta: { href: '/contact', label: 'Enhance Your Benefits Package' }
 }

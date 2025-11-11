@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Business Insurance',
   title: 'General Liability Insurance',
   description: 'Essential protection for your business against third-party claims of bodily injury, property damage, and personal injury.',
-  image: '/images/general-liability-insurance-slip-and-fall.jpg',
+  image: 'https://www.amerusfinancial.com/images/general-liability-insurance-slip-and-fall.jpg',
   imageAlt: 'slip and fall accident at a business',
   cta: { href: '/contact', label: 'Get a Personalized Quote' }
 }

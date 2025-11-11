@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Auto Insurance',
   title: 'Multi-Vehicle Insurance',
   description: 'Save money and simplify management by insuring multiple vehicles under one convenient policy with significant discounts.',
-  image: '/images/family-with-multi-vehicle-insurance.jpg',
+  image: 'https://www.amerusfinancial.com/images/family-with-multi-vehicle-insurance.jpg',
   imageAlt: 'multi-vehicle auto insurance family coverage',
   cta: { href: '/contact', label: 'Get Multi-Car Quote' }
 }

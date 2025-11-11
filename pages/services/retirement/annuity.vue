@@ -256,7 +256,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: 'Annuities',
   description: 'Secure, guaranteed income solutions that provide stability and predictability for your retirement years.',
-  image: '/images/man-sigining-up-for-annuity-plan.jpg',
+  image: 'https://www.amerusfinancial.com/images/man-sigining-up-for-annuity-plan.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Explore Annuity Options' }
 }

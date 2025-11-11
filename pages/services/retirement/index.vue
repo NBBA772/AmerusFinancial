@@ -262,7 +262,7 @@ const hero = {
   eyebrow: 'Financial Planning',
   title: 'Retirement Planning Solutions',
   description: 'Build a secure financial future with comprehensive retirement planning services. From IRAs to annuities, create the retirement income strategy that works for you.',
-  image: '/images/retirement-calculator.jpg',
+  image: 'https://www.amerusfinancial.com/images/retirement-calculator.jpg',
   imageAlt: 'retirement planning services',
   cta: { href: '/contact', label: 'Start Retirement Planning' }
 }

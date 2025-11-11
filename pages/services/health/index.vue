@@ -273,7 +273,7 @@ const hero = {
   eyebrow: 'Insurance Services',
   title: 'Health Insurance Solutions',
   description: 'Comprehensive health insurance plans to protect you and your family. From individual coverage to Medicare supplements, find the right health insurance solution.',
-  image: '/images/healthcare-family.jpg',
+  image: 'https://www.amerusfinancial.com/images/healthcare-family.jpg',
   imageAlt: 'health insurance coverage',
   cta: { href: '/contact', label: 'Get Health Insurance Quote' }
 }
