@@ -76,11 +76,14 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.amerusfinancial.com',
+    url: 'https://www.amerusfinancial.com/',
     name: 'Amerus Financial',
     description: 'Amerus Financial provides retirement planning, insurance solutions, and financial guidance for individuals and businesses.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
     indexable: true // Changed to true for SEO
+  },
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.amerusfinancial.com'
   },
   sitemap: {
     enabled: true,
