@@ -2,7 +2,7 @@
   <BasicSection class="container mx-auto mt-20">
     <GridTwoColumns>
       <div class="p-4 sm:p-8">
-        <img src="/img/Your-Sites-Launch.jpg" />
+        <img src="https://www.amerusfinancial.com/img/Your-Sites-Launch.jpg" />
       </div>
       <div class="p-4 sm:p-8">
         <ParagraphSubHeading>{{ IntroText.SubHeading }}</ParagraphSubHeading>

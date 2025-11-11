@@ -4,13 +4,13 @@
       <div>
         <!-- <NuxtImg
           format="webp"
-          src="/images/charter-bus.jpg"
+          src="https://www.amerusfinancial.com/images/charter-bus.jpg"
           alt="Happy Kids"
           quality="80"
           sizes="sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px"
         /> -->
         <video controls>
-          <source src="/videos/jessicahill.mp4" type="video/mp4" />
+          <source src="https://www.amerusfinancial.com/videos/jessicahill.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

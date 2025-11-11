@@ -29,14 +29,14 @@
         </div>
       </div>
       <div>
-        <img src="/img/Sales-Generating-Machine.png" v-show="isDark" />
-        <img src="/img/Sales-Generating-Machine-Light.png" v-show="!isDark" />
+        <img src="https://www.amerusfinancial.com/img/Sales-Generating-Machine.png" v-show="isDark" />
+        <img src="https://www.amerusfinancial.com/img/Sales-Generating-Machine-Light.png" v-show="!isDark" />
       </div>
     </GridTwoColumns>
     <GridTwoColumns v-else>
       <div>
-        <img src="/img/Sales-Generating-Machine.png" v-show="isDark" />
-        <img src="/img/Sales-Generating-Machine-Light.png" v-show="!isDark" />
+        <img src="https://www.amerusfinancial.com/img/Sales-Generating-Machine.png" v-show="isDark" />
+        <img src="https://www.amerusfinancial.com/img/Sales-Generating-Machine-Light.png" v-show="!isDark" />
       </div>
       <div>
         <p

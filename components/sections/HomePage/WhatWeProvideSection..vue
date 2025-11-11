@@ -4,7 +4,7 @@
       <div class="px-4 sm:px-8">
         <!-- <NuxtImg
           format="webp"
-          src="/images/happy-kids.jpg"
+          src="https://www.amerusfinancial.com/images/happy-kids.jpg"
           sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px"
           alt="Happy Kids"
           quality="80"
@@ -12,7 +12,7 @@
         /> -->
         <video controls>
           <source
-            src="/videos/Amerus-Financial-Group-Insurance-Agency.mp4"
+            src="https://www.amerusfinancial.com/videos/Amerus-Financial-Group-Insurance-Agency.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.

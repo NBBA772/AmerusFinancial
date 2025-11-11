@@ -74,7 +74,7 @@
             sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px"
             quality="80"
             loading="lazy"
-            src="/images/medicare-insurance.jpg" 
+            src="https://www.amerusfinancial.com/images/medicare-insurance.jpg" 
             alt="Medicare Insurance" 
             class="rounded-2xl shadow-lg object-cover" 
           />
