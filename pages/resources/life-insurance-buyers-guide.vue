@@ -107,7 +107,7 @@ usePerformanceMonitoring()
 
 // Consolidated SEO + Social Meta for Life Insurance Buyer Guide
 const pageUrl = 'https://www.amerusfinancial.com/resources/life-insurance-buyers-guide'
-const pageTitle = 'Life Insurance Buyer\'s Guide — Amerus Financial'
+const pageTitle = 'Life Insurance Buyer\'s Guide'
 const pageDescription = 'Understand term vs whole vs universal life, calculate coverage needs, and compare cost factors to choose the right life insurance policy.'
 const pageImage = 'https://www.amerusfinancial.com/images/happy-family-at-home.jpg'
 
