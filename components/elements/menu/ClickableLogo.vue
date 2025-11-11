@@ -16,7 +16,7 @@
       <NuxtImg
         preload
         format="webp"
-        src="/img/logo_white.png"
+        src="https://www.amerusfinancial.com/img/logo_white.png"
         alt="Happy Kids"
         quality="80"
         width="175"
@@ -25,7 +25,7 @@
       <NuxtImg
         preload
         format="webp"
-        src="/img/logo.png"
+        src="https://www.amerusfinancial.com/img/logo.png"
         alt="Happy Kids"
         quality="80"
         width="175"

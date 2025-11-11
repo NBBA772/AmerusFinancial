@@ -79,7 +79,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   twitterTitle: 'Commercial Auto Insurance — Amerus',
   twitterDescription:
-    'Commercial auto insurance covering business vehicles, fleet coverage, and company car protection with liability and comprehensive options.',
+    'Commercial auto insurance for business vehicles and fleets. Liability, collision, and comprehensive coverage.',
   twitterImage: 'https://www.amerusfinancial.com/images/commercial-auto-insurance.jpg',
   keywords: 'commercial auto insurance, business vehicle insurance, fleet insurance, company car insurance, commercial vehicle coverage, business auto liability'
 })
