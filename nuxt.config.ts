@@ -104,7 +104,7 @@ export default defineNuxtConfig({
       '@type': 'Organization',
       name: 'Amerus Financial',
       url: 'https://www.amerusfinancial.com/',
-      logo: 'https://www.amerusfinancial.com/_vercel/image?url=%2Fimg%2Flogo_white.png&w=320&q=80'
+      logo: 'https://www.amerusfinancial.com/img/logo_white.png'
     }
   },
   generate: {
