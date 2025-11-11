@@ -185,7 +185,8 @@ export default defineNuxtConfig({
     '/category/auto-insurance/': { redirect: '/services/auto', statusCode: 301 },
     '/category/home-insurance/': { redirect: '/services/home/property-protection', statusCode: 301 },
     '/contact-insurance-agency/': { redirect: '/about-us', statusCode: 301 },
-    '/learn-about-amerus-financial/': { redirect: '/contact', statusCode: 301 }
+    '/player': { redirect: '/contact', statusCode: 301 },
+    '/content': { redirect: '/', statusCode: 301 },
   },
   vite: {
   server: {
