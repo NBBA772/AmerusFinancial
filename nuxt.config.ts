@@ -56,6 +56,8 @@ export default defineNuxtConfig({
       appDomain: process.env.APP_DOMAIN,
       gitHash: process.env.GITHUB_SHA,
       releaseVersion: process.env.RELEASE_VERSION,
+      enableThirdPartyScripts:
+        process.env.NUXT_PUBLIC_ENABLE_THIRD_PARTY_SCRIPTS === 'true' || false,
     }
   },
   experimental: {
