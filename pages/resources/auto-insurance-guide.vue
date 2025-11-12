@@ -68,7 +68,7 @@
         </div>
         <!-- Right Column: Nuxt Image -->
         <div class="flex justify-center md:justify-end">
-          <NuxtImg src="https://www.amerusfinancial.com/images//friends-driving-insured-car.jpg" alt="Retirement Planning Illustration" class="rounded-2xl shadow-lg object-cover" />
+          <NuxtImg src="https://www.amerusfinancial.com/images/friends-driving-insured-car.jpg" alt="Retirement Planning Illustration" class="rounded-2xl shadow-lg object-cover" />
         </div>
       </div>
     </div>
