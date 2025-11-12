@@ -6,7 +6,7 @@ const cards = ref([
     title: "Employers & Group Plans",
     description: "Design competitive benefits, control costs, and protect your business.",
     image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      "https://www.amerusfinancial.com/images/shaking-hands.jpg",
     alt: "Businesses",
     backTitle: "Popular Employer Resources",
     backItems: [
@@ -27,7 +27,7 @@ const cards = ref([
     description:
       "Protect what matters with clear, affordable coverage.",
     image:
-      "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      "https://www.amerusfinancial.com/images/father-and-sons.jpg",
     alt: "Families",
     backTitle: "Helpful Guides",
     backItems: [
@@ -49,7 +49,7 @@ const cards = ref([
     description:
       "Navigate Medicare with confidence and complete your retirement plan.",
     image:
-      "https://images.unsplash.com/photo-1628891892235-5d834f9c64c1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      "https://www.amerusfinancial.com/images/seniors-talking.jpg",
     alt: "Seniors",
     backTitle: "Medicare Resources",
     backItems: [
