@@ -100,12 +100,30 @@ useHead({
 // Structured Data - Articles Overview WebPage schema
 const organization = useServiceProvider()
 useSchemaOrg([
+  // Primary image for the Articles overview page with extended licensing / attribution metadata
+  {
+    '@type': 'ImageObject',
+    '@id': pageUrl + '#primaryimage',
+    url: pageImage,
+    contentUrl: pageImage,
+    caption: pageTitle,
+    // Creator can be an Organization (your company) or a Person
+    creator: {
+      '@type': 'Organization',
+      name: 'Amerus Financial',
+      url: 'https://www.amerusfinancial.com'
+    },
+    creditText: 'Amerus Financial',
+    copyrightNotice: `Copyright ${new Date().getFullYear()} Amerus Financial. All rights reserved.`,
+    acquireLicensePage: 'https://www.amerusfinancial.com/about-us'
+  },
   {
     '@type': 'WebPage',
     '@id': pageUrl,
     url: pageUrl,
     name: pageTitle,
     description: pageDescription,
+    primaryImageOfPage: { '@id': pageUrl + '#primaryimage' },
     isPartOf: {
       '@type': 'Website',
       name: 'Amerus Financial',
