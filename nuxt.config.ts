@@ -194,6 +194,11 @@ export default defineNuxtConfig({
     '/contact-insurance-agency/': { redirect: '/about-us', statusCode: 301 },
     '/player': { redirect: '/contact', statusCode: 301 },
     '/content': { redirect: '/', statusCode: 301 },
+
+    '/annuities/index.php': { redirect: '/services/retirement/annuity', statusCode: 301 },
+    '/appointments/': { redirect: '/contact', statusCode: 301 },
+    '/insurance-services/': { redirect: '/services', statusCode: 301 },
+    '/news-updates/': { redirect: '/articles/overview', statusCode: 301 },
   },
   vite: {
   server: {
