@@ -1,0 +1,56 @@
+# llms.txt - Guidance for AI and LLM Crawlers for Amerus Financial
+# Reference: emerging community conventions for AI crawler governance.
+# This file is complementary to robots.txt and provides machine-readable
+# directives for Large Language Model (LLM) indexers.
+
+# Site identity
+site: https://www.amerusfinancial.com
+owner: Amerus Financial
+contact: support@amerusfinancial.com
+last-updated: 2025-11-12
+
+# Licensing & Usage
+# Content (articles, service descriptions) is protected by copyright. You
+# may index snippets for search but MUST NOT reproduce full articles.
+license: CC-BY-NC-ND-4.0-excerpt-only
+copyright-notice: Copyright (c) 2025 Amerus Financial. All rights reserved.
+
+# Allowed Purposes
+allow-purpose: search
+allow-purpose: summarization
+allow-purpose: snippet-generation (<= 500 characters)
+
+# Disallowed Purposes
+disallow-purpose: full-article-replication
+disallow-purpose: commercial-redistribution
+disallow-purpose: training-on-private-user-data
+
+# Rate Limits (suggested)
+rate-limit: 100 requests / 24h
+
+# Content Scope
+allow-path: /articles/
+allow-path: /services/
+allow-path: /about-us
+allow-path: /contact
+
+# Sensitive or dynamic endpoints should be excluded
+disallow-path: /api/
+disallow-path: /server/
+
+# Attribution Requirement
+attribution-required: true
+attribution-format: "Source: Amerus Financial (https://www.amerusfinancial.com)"
+
+# Derivative Works
+derivative-works: prohibited
+
+# Model Training
+model-training: restricted
+training-restriction-detail: "Only publicly available, non-personal, short-form excerpts may be used."
+
+# Request for Removal
+takedown-contact: legal@amerusfinancial.com
+
+# Additional Notes
+note: This llms.txt is an experimental policy document. LLM providers should honor both robots.txt and this file.
