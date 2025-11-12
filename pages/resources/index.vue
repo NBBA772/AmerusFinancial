@@ -84,7 +84,7 @@ usePerformanceMonitoring()
 
 // Consolidated SEO + Social Meta for Resources page
 const pageUrl = 'https://www.amerusfinancial.com/resources'
-const pageTitle = 'Client Resources & Tools — Amerus Financial'
+const pageTitle = 'Insurance & Financial Resources Hub'
 const pageDescription = 'Explore calculators, guides, and tools to make confident insurance and financial decisions. Medicare, life, auto, and retirement resources in one place.'
 const pageImage = 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
 
