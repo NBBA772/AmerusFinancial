@@ -57,7 +57,7 @@
 <script setup>
 // Enhanced SEO using stable composables
 useEnhancedMetaTags()
-useResourceHints(['/images/insured-cars-in-traffic.jpg'])
+useResourceHints(['https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg'])
 usePerformanceMonitoring()
 
 // Enhanced social sharing
