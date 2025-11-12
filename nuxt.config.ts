@@ -199,6 +199,9 @@ export default defineNuxtConfig({
     '/appointments/': { redirect: '/contact', statusCode: 301 },
     '/insurance-services/': { redirect: '/services', statusCode: 301 },
     '/news-updates/': { redirect: '/articles/overview', statusCode: 301 },
+
+    '/categories/': { redirect: '/articles/overview', statusCode: 301 },
+    '/register/': { redirect: '/', statusCode: 301 },
   },
   vite: {
   server: {
