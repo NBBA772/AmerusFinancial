@@ -254,7 +254,7 @@ useSchemaOrg([
 
 const hero = {
   eyebrow: 'Retirement Planning',
-  title: 'Pension Planning',
+  title: 'Pension Planning & Retirement Benefit Optimization',
   description: 'Expert guidance to optimize your pension benefits and integrate them into your comprehensive retirement strategy for maximum financial security.',
   image: 'https://www.amerusfinancial.com/images/couple-pension-planning.jpg',
   imageAlt: 'senior woman pension insurance',

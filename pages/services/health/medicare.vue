@@ -263,7 +263,7 @@ useSchemaOrg([
 
 const hero = {
   eyebrow: 'Health Insurance',
-  title: 'Medicare Solutions',
+  title: 'Medicare Insurance Plans & Supplements',
   description: 'Expert guidance for navigating your Medicare options with personalized support for your healthcare needs.',
   image: 'https://www.amerusfinancial.com/images/medicare-insurance.jpg',
   imageAlt: 'dental insurance',

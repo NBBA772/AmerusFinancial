@@ -249,7 +249,7 @@ useSchemaOrg([
 
 const hero = {
   eyebrow: 'Home Insurance',
-  title: 'Property Coverage',
+  title: 'Property Coverage Insurance for Home & Belongings',
   description: 'Comprehensive protection for your home\'s structure and personal belongings against a wide range of perils, ensuring you\'re covered for unexpected damages and losses.',
   image: 'https://www.amerusfinancial.com/images/fire-damage-property-coverage.jpg',
   imageAlt: 'fire damage to property',

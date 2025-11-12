@@ -250,7 +250,7 @@ useSchemaOrg([
 
 const hero = {
   eyebrow: 'Home Insurance',
-  title: 'Flood Insurance',
+  title: 'Flood Insurance Coverage & Protection for Homes',
   description: 'Essential protection against flood damage that standard homeowners insurance doesn\'t cover, safeguarding your home and belongings from rising water disasters.',
   image: 'https://www.amerusfinancial.com/images/flood-insurance-house-flooded.jpg',
   imageAlt: 'house flooded with water',

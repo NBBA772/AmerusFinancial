@@ -256,7 +256,7 @@ useSchemaOrg([
 
 const hero = {
   eyebrow: 'Health Insurance',
-  title: 'Vision Coverage',
+  title: 'Vision Insurance Coverage for Eye Exams, Glasses, and Contacts',
   description: 'Protect your eye health with comprehensive vision insurance that covers exams, glasses, contacts, and more at affordable rates.',
   image: 'https://www.amerusfinancial.com/images/vision-insurance.jpg',
   imageAlt: 'vision coverage',

@@ -237,7 +237,7 @@ useSchemaOrg([
 
 const hero = {
   eyebrow: 'Life Insurance',
-  title: 'Life Insurance',
+  title: 'Life Insurance Coverage & Protection for Families',
   description: 'Protecting your family\'s financial future with customized life insurance solutions that provide security and peace of mind.',
   image: 'https://www.amerusfinancial.com/images/senior-woman-life-insurance.jpg',
   imageAlt: 'senior woman life insurance',

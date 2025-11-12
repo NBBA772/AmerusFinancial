@@ -244,7 +244,7 @@ useSchemaOrg([
 
 const hero = {
   eyebrow: 'Life Insurance',
-  title: 'Term Life Insurance',
+  title: 'Term Life Insurance Coverage for Families',
   description: 'Maximum protection at affordable rates for a specified period, providing financial security for your loved ones when they need it most.',
   image: 'https://www.amerusfinancial.com/images/happy-family-term-life-insurance.jpg',
   imageAlt: 'happy family term life insurance',

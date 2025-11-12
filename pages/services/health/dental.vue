@@ -243,7 +243,7 @@ useSchemaOrg([
 
 const hero = {
   eyebrow: 'Health Insurance',
-  title: 'Dental Solutions',
+  title: 'Dental Insurance Plans & Coverage for Families',
   description: 'Comprehensive coverage for your oral health needs, from routine cleanings to major procedures.',
   image: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',
   imageAlt: 'dental insurance',

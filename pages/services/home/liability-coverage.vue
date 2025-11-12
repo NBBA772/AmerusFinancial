@@ -244,7 +244,7 @@ useSchemaOrg([
 
 const hero = {
   eyebrow: 'Home Insurance',
-  title: 'Liability Coverage',
+  title: 'Liability Coverage Insurance & Legal Protection',
   description: 'Financial protection against lawsuits for injury or property damage that you or household members cause to others, including legal defense costs.',
   image: 'https://www.amerusfinancial.com/images/liability-coverage-car-accident.jpg',
   imageAlt: 'senior woman life insurance',

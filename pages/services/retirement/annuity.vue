@@ -254,7 +254,7 @@ useSchemaOrg([
 
 const hero = {
   eyebrow: 'Retirement Planning',
-  title: 'Annuities',
+  title: 'Annuities & Guaranteed Retirement Income Solutions',
   description: 'Secure, guaranteed income solutions that provide stability and predictability for your retirement years.',
   image: 'https://www.amerusfinancial.com/images/man-sigining-up-for-annuity-plan.jpg',
   imageAlt: 'senior woman life insurance',
