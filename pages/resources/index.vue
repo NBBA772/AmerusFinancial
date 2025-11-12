@@ -19,21 +19,21 @@
                 description="A comprehensive guide to understanding Medicare and its different parts."
                 link="/resources/medicare-guide"
                 icon="lucide:file-text"
-                image="/images/medicare-insurance.jpg"
+                image="https://www.amerusfinancial.com/images/medicare-insurance.jpg"
                 />
                 <ResourceCard
                 title="Life Insurance Buyer's Guide"
                 description="Learn about different types of life insurance and how to choose the right policy."
                 link="/resources/life-insurance-buyers-guide"
                 icon="lucide:book"
-                image="/images/happy-family-at-home.jpg"
+                image="https://www.amerusfinancial.com/images/happy-family-at-home.jpg"
                 />
                 <ResourceCard
                 title="Health Insurance Glossary"
                 description="A complete glossary of health insurance terms and definitions."
                 link="/resources/health-insurance-glossary"
                 icon="lucide:book"
-                image="/images/man-on-phone-looking-at-insurance-terms.jpg"
+                image="https://www.amerusfinancial.com/images/man-on-phone-looking-at-insurance-terms.jpg"
                 />
                 <!-- <ResourceCard
                 title="Business Insurance Tax Guide"
@@ -51,7 +51,7 @@
                 icon="lucide:car"
                 :features="['Coverage Options','Premium Factors','Claims Process','Money-Saving Tips']"
                 isNew
-                image="/images/friends-driving-insured-car.jpg"
+                image="https://www.amerusfinancial.com/images/friends-driving-insured-car.jpg"
                 />
                 <ResourceCard
                 title="Retirement Planning Checklist"
@@ -60,7 +60,7 @@
                 icon="lucide:calendar"
                 :features="['Interactive Tracking','Age-Based Guidance','Expert Tips','Progress Tracking']"
                 isNew
-                image="/images/seniors-planning-retirement.jpg"
+                image="https://www.amerusfinancial.com/images/seniors-planning-retirement.jpg"
                 />
             </template>
 
