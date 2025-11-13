@@ -205,6 +205,35 @@ export default defineNuxtConfig({
 
     '/categories/': { redirect: '/articles/overview', statusCode: 301 },
     '/register/': { redirect: '/', statusCode: 301 },
+
+
+
+
+    '/medicare-health-plans-2021/' : { redirect: '/services/health/medicare', statusCode: 301 },
+    '/medicare/form.php' : { redirect: '/services/health/medicare', statusCode: 301 },
+    '/learn-about-amerus-financial/' : { redirect: '/about-us', statusCode: 301 },
+    '/types-of-life-insurance/' : { redirect: '/services', statusCode: 301 },
+    '/dev/wp-content/uploads/2017/07/African-American-Family-600x415.jpg' : { redirect: '/', statusCode: 301 },
+    '/senior-life/index.html' : { redirect: '/services/life/life-insurance', statusCode: 301 },
+    '/agent-login/' : { redirect: '/', statusCode: 301 },
+    '/life-insurance-request/' : { redirect: '/contact', statusCode: 301 },
+    '/what-is-term-life-insurance/' : { redirect: '/services/life/term-life', statusCode: 301 },
+    '/lifeinsurance/index.html' : { redirect: '/services/life/life-insurance', statusCode: 301 },
+    '/wp-content/uploads/2020/12/99a81103d2a55eb36b697a1b53577944.jpg' : { redirect: '/', statusCode: 301 },
+    '/wp-content/uploads/2017/05/Medicare-Website-Ad-compressor-1.jpg' : { redirect: '/', statusCode: 301 },
+    '/events/amerus-agent-training-convention/' : { redirect: '/', statusCode: 301 },
+    '/healthcare/index.html' : { redirect: '/services/health/individual-health', statusCode: 301 },
+    '/healthinsurance/es/index.html' : { redirect: '/', statusCode: 301 },
+    '/wp-content/uploads/2020/12/9c95087daf7e2f5793a770b9bf0c24c9-768x512.jpg' : { redirect: '/', statusCode: 301 },
+    '/employee-enrollment-health-app/' : { redirect: '/contact', statusCode: 301 },
+    '/wp-content/uploads/2020/08/Amerus-website-ad-headers3-1-scaled.jpg' : { redirect: '/', statusCode: 301 },
+    '/category/health-insurance-2/' : { redirect: '/articles/overview', statusCode: 301 },
+    '/category/medicare/' : { redirect: '/articles/overview', statusCode: 301 },
+    '/how-much-does-medicare-cost/' : { redirect: '/articles/how-much-does-medicare-cost', statusCode: 301 },
+    '/healthinsurance/index.html' : { redirect: '/services/health/individual-health', statusCode: 301 },
+    '/healthinsurancequote/index.html' : { redirect: '/services/health/individual-health', statusCode: 301 },
+    '/dev/wp-content/uploads/2017/08/Jacob-400x400.png' : { redirect: '/', statusCode: 301 },
+    '/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg' : { redirect: '/', statusCode: 301 },
   },
   vite: {
   server: {
