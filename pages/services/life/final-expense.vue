@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useEnhancedMetaTags({
   title: 'Final Expense Life Insurance — Amerus Financial',
   description: 'Affordable final expense life insurance to cover funeral costs and end-of-life expenses. Guaranteed approval options available for seniors with simplified underwriting.',
-  image: 'https://www.amerusfinancial.com/images/final-expense-insurance.jpg',
+  image: '/images/final-expense-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/life/final-expense',
 })
 
@@ -75,13 +75,13 @@ useSeoMeta({
     'Affordable final expense insurance covering funeral costs. Guaranteed approval with no medical exam starting at $35/month.',
   ogDescription:
     'Secure final expense insurance to ease the financial burden on your family with affordable coverage for funeral and burial costs.',
-  ogImage: 'https://www.amerusfinancial.com/images/final-expense-insurance.jpg',
+  ogImage: '/images/final-expense-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/life/final-expense',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Final Expense Insurance for End-of-Life Costs — Amerus',
   twitterDescription:
     'Secure final expense insurance to ease the financial burden on your family with affordable coverage for funeral and burial costs.',
-  twitterImage: 'https://www.amerusfinancial.com/images/final-expense-insurance.jpg',
+  twitterImage: '/images/final-expense-insurance.jpg',
   keywords: 'final expense insurance, burial insurance, funeral insurance, end of life insurance, senior life insurance, guaranteed acceptance, final expense coverage, affordable burial insurance'
 })
 
@@ -141,22 +141,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our insurance specialists for a personalized final expense insurance quote based on your age, health, and coverage needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Choose Coverage',
     text: 'Select your final expense coverage amount from $5,000 to $25,000 and choose between simplified issue or guaranteed acceptance options.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the simple application with basic health questions. Most applicants require no medical exam for final expense coverage.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your final expense insurance will be activated and your beneficiaries will have coverage for funeral and burial costs.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Final Expense Insurance', 'Step-by-step guide to applying for final expense insurance coverage with Amerus Financial.', 'PT15M', '35.00')
 
@@ -245,7 +245,7 @@ const hero = {
   eyebrow: 'life Insurance',
   title: 'Final Expense Insurance',
   description: 'Providing peace of mind for you and your loved ones with coverage for funeral costs and end-of-life expenses.',
-  image: 'https://www.amerusfinancial.com/images/seniors-final-expense.jpg',
+  image: '/images/seniors-final-expense.jpg',
   imageAlt: 'senior final expense insurance',
   cta: { href: '/contact', label: 'Speak with a Specialist' }
 }

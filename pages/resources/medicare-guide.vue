@@ -74,7 +74,7 @@
             sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px"
             quality="80"
             loading="lazy"
-            src="https://www.amerusfinancial.com/images/medicare-insurance.jpg" 
+            src="/images/medicare-insurance.jpg" 
             alt="Medicare Insurance" 
             class="rounded-2xl shadow-lg object-cover" 
           />
@@ -113,7 +113,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/resources/medicare-guide'
 const pageTitle = 'Medicare Guide: Coverage, Costs & Enrollment (Parts A-D)'
 const pageDescription = 'Understand Medicare eligibility, enrollment periods, and the differences between Parts A, B, C, and D. Compare costs and coverage to choose the right plan.'
-const pageImage = 'https://www.amerusfinancial.com/images/medicare-insurance.jpg'
+const pageImage = '/images/medicare-insurance.jpg'
 
 useHead({
   title: pageTitle,

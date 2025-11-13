@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Personal Auto Insurance Coverage — Amerus Financial',
   description: 'Comprehensive personal auto insurance with liability, collision, and comprehensive coverage. Get competitive rates and protect your vehicle with Amerus.',
-  image: 'https://www.amerusfinancial.com/images/personal-auto-insurance.jpg',
+  image: '/images/personal-auto-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/auto/personal-auto',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Comprehensive personal auto insurance with liability, collision, and comprehensive coverage. Get competitive rates and protect your vehicle with Amerus.',
   ogDescription:
     'Personal auto insurance with full coverage options including liability, collision, comprehensive, and uninsured motorist protection.',
-  ogImage: 'https://www.amerusfinancial.com/images/personal-auto-insurance.jpg',
+  ogImage: '/images/personal-auto-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/auto/personal-auto',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Personal Auto Insurance — Amerus',
   twitterDescription:
     'Personal auto insurance with full coverage options including liability, collision, comprehensive, and uninsured motorist protection.',
-  twitterImage: 'https://www.amerusfinancial.com/images/personal-auto-insurance.jpg',
+  twitterImage: '/images/personal-auto-insurance.jpg',
   keywords: 'personal auto insurance, car insurance, auto coverage, liability insurance, collision coverage, comprehensive coverage, auto insurance quotes, vehicle insurance, car insurance rates'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Vehicle Information',
     text: 'Provide details about your vehicle including make, model, year, and current coverage to get an accurate quote.',
-    image: 'https://www.amerusfinancial.com/images/vehicle-info.jpg'
+    image: '/images/vehicle-info.jpg'
   },
   {
     name: 'Coverage Selection',
     text: 'Choose your coverage levels for liability, collision, comprehensive, and additional protections based on your needs.',
-    image: 'https://www.amerusfinancial.com/images/coverage-selection.jpg'
+    image: '/images/coverage-selection.jpg'
   },
   {
     name: 'Review & Compare',
     text: 'Review different auto insurance options with various deductibles and coverage limits to find the best value.',
-    image: 'https://www.amerusfinancial.com/images/auto-compare.jpg'
+    image: '/images/auto-compare.jpg'
   },
   {
     name: 'Finalize Policy',
     text: 'Complete your application and activate your personal auto insurance coverage with immediate protection.',
-    image: 'https://www.amerusfinancial.com/images/policy-finalize.jpg'
+    image: '/images/policy-finalize.jpg'
   }
 ], 'How to Get Personal Auto Insurance', 'Step-by-step guide to getting personal auto insurance coverage with Amerus Financial.', 'PT20M', '100.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Auto Insurance',
   title: 'Personal Auto Insurance',
   description: 'Comprehensive auto insurance coverage to protect you, your vehicle, and your finances on the road.',
-  image: 'https://www.amerusfinancial.com/images/man-driving-insured-car.jpg',
+  image: '/images/man-driving-insured-car.jpg',
   imageAlt: 'personal auto insurance',
   cta: { href: '/contact', label: 'Get Auto Insurance Quote' }
 }

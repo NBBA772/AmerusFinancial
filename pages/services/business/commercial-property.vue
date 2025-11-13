@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Commercial Property Insurance — Amerus Financial',
   description: 'Protect your business property and assets with comprehensive commercial property insurance covering buildings, equipment, and inventory.',
-  image: 'https://www.amerusfinancial.com/images/commercial-property-insurance.jpg',
+  image: '/images/commercial-property-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/business/commercial-property',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Protect your business property and assets with comprehensive commercial property insurance covering buildings, equipment, and inventory.',
   ogDescription:
     'Commercial property insurance protecting business buildings, equipment, inventory, and other physical assets from damage and loss.',
-  ogImage: 'https://www.amerusfinancial.com/images/commercial-property-insurance.jpg',
+  ogImage: '/images/commercial-property-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/business/commercial-property',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Commercial Property Insurance — Amerus',
   twitterDescription:
     'Commercial property insurance protecting business buildings, equipment, inventory, and other physical assets from damage and loss.',
-  twitterImage: 'https://www.amerusfinancial.com/images/commercial-property-insurance.jpg',
+  twitterImage: '/images/commercial-property-insurance.jpg',
   keywords: 'commercial property insurance, business property coverage, building insurance, equipment insurance, inventory protection, commercial real estate insurance'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Property Assessment',
     text: 'Evaluate your business property including buildings, equipment, and inventory to determine coverage needs and values.',
-    image: 'https://www.amerusfinancial.com/images/property-assessment.jpg'
+    image: '/images/property-assessment.jpg'
   },
   {
     name: 'Coverage Analysis',
     text: 'Review commercial property coverage options including replacement cost, actual cash value, and business interruption protection.',
-    image: 'https://www.amerusfinancial.com/images/coverage-analysis.jpg'
+    image: '/images/coverage-analysis.jpg'
   },
   {
     name: 'Policy Customization',
     text: 'Customize your commercial property policy with appropriate limits, deductibles, and additional coverage endorsements.',
-    image: 'https://www.amerusfinancial.com/images/policy-customization.jpg'
+    image: '/images/policy-customization.jpg'
   },
   {
     name: 'Coverage Activation',
     text: 'Activate your commercial property insurance for immediate protection of your business assets and property.',
-    image: 'https://www.amerusfinancial.com/images/coverage-activation.jpg'
+    image: '/images/coverage-activation.jpg'
   }
 ], 'How to Get Commercial Property Insurance', 'Step-by-step guide to getting commercial property insurance for your business.', 'PT20M', '300.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Business Insurance',
   title: 'Commercial Property Insurance',
   description: 'Comprehensive protection for your business buildings, equipment, inventory, and contents against fire, theft, and natural disasters.',
-  image: 'https://www.amerusfinancial.com/images/commercial-property-insurance-strip-mall.jpg',
+  image: '/images/commercial-property-insurance-strip-mall.jpg',
   imageAlt: 'commercial property insurance coverage',
   cta: { href: '/contact', label: 'Get a Business Quote' }
 }

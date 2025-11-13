@@ -16,7 +16,7 @@
       <div class="mx-auto mb-12">
         <div class="relative overflow-hidden rounded-2xl shadow-2xl">
           <img 
-            src="https://www.amerusfinancial.com/images/Amerus-Group.jpg" 
+            src="/images/Amerus-Group.jpg" 
             alt="Amerus Financial Team" 
             class="w-full h-auto object-cover"
           />

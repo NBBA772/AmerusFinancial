@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useEnhancedMetaTags({
   title: 'Universal Life Insurance Plans — Amerus Financial',
   description: 'Flexible universal life insurance with investment components and adjustable premiums. Build cash value while protecting your family with customizable coverage.',
-  image: 'https://www.amerusfinancial.com/images/universal-life-insurance.jpg',
+  image: '/images/universal-life-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/life/universal-life',
 })
 
@@ -75,13 +75,13 @@ useSeoMeta({
     'Flexible universal life insurance with investment components and adjustable premiums. Build cash value while protecting your family with customizable coverage.',
   ogDescription:
     'Discover universal life insurance plans with flexible premiums and investment opportunities for long-term financial growth.',
-  ogImage: 'https://www.amerusfinancial.com/images/universal-life-insurance.jpg',
+  ogImage: '/images/universal-life-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/life/universal-life',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Universal Life Insurance with Investment Options — Amerus',
   twitterDescription:
     'Discover universal life insurance plans with flexible premiums and investment opportunities for long-term financial growth.',
-  twitterImage: 'https://www.amerusfinancial.com/images/universal-life-insurance.jpg',
+  twitterImage: '/images/universal-life-insurance.jpg',
   keywords: 'universal life insurance, permanent life insurance, cash value life insurance, investment life insurance, flexible premiums, life insurance savings, universal life policies, financial planning, retirement planning'
 })
 
@@ -251,7 +251,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Universal Life Insurance',
   description: 'Flexible permanent life insurance that adapts to your changing financial needs with investment options.',
-  image: 'https://www.amerusfinancial.com/images/senior-woman-life-insurance.jpg',
+  image: '/images/senior-woman-life-insurance.jpg',
   imageAlt: 'universal life insurance',
   cta: { href: '/contact', label: 'Get Universal Life Quote' }
 }

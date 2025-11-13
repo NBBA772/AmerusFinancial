@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Family Health Insurance Plans — Amerus Financial',
   description: 'Protect your entire family with comprehensive health insurance coverage including medical, dental, and vision benefits for all family members.',
-  image: 'https://www.amerusfinancial.com/images/family-health-insurance.jpg',
+  image: '/images/family-health-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/health/family-coverage',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Protect your entire family with comprehensive health insurance coverage including medical, dental, and vision benefits for all family members.',
   ogDescription:
     'Family health insurance plans providing comprehensive medical coverage, preventive care, and benefits for parents, children, and dependents.',
-  ogImage: 'https://www.amerusfinancial.com/images/family-health-insurance.jpg',
+  ogImage: '/images/family-health-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/health/family-coverage',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Family Health Insurance Plans — Amerus',
   twitterDescription:
     'Family health insurance plans providing comprehensive medical coverage, preventive care, and benefits for parents, children, and dependents.',
-  twitterImage: 'https://www.amerusfinancial.com/images/family-health-insurance.jpg',
+  twitterImage: '/images/family-health-insurance.jpg',
   keywords: 'family health insurance, family medical coverage, children health insurance, family health plans, dependent coverage, family healthcare'
 })
 
@@ -252,7 +252,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Family Coverage Options',
   description: 'Comprehensive health insurance solutions designed for families of all sizes, ensuring every member receives the care they need at rates you can afford.',
-  image: 'https://www.amerusfinancial.com/images/healthcare-family.jpg',
+  image: '/images/healthcare-family.jpg',
   imageAlt: 'family healthcare',
   cta: { href: '/contact', label: 'Get a Quote' }
 }

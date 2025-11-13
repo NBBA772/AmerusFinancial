@@ -4,7 +4,7 @@
     <!-- Background image -->
     <div class="absolute inset-0">
       <img
-        src="https://www.amerusfinancial.com/images/Group-Health-Insurance-Excerpt.jpg"
+        src="/images/Group-Health-Insurance-Excerpt.jpg"
         alt="Background"
         class="w-full h-full object-cover"
       />

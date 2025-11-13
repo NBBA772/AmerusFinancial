@@ -63,7 +63,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Group Life Insurance for Employers — Amerus Financial',
   description: 'Provide essential financial protection for your employees with cost-effective group life insurance that enhances your benefits package and attracts quality talent.',
-  image: 'https://www.amerusfinancial.com/images/group-life-insurance.jpg',
+  image: '/images/group-life-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/life/group-life-insurance',
   type: 'website'
 })
@@ -75,13 +75,13 @@ useSeoMeta({
     'Cost-effective group life insurance for employees. Enhance benefits package with affordable coverage and attract top talent.',
   ogDescription:
     'Enhance your employee benefits package with group life insurance offering financial protection for your team and their families through affordable employer-sponsored coverage.',
-  ogImage: 'https://www.amerusfinancial.com/images/group-life-insurance.jpg',
+  ogImage: '/images/group-life-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/life/group-life-insurance',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Employee Group Life Insurance Benefits — Amerus',
   twitterDescription:
     'Enhance your employee benefits package with group life insurance offering financial protection for your team and their families through affordable employer-sponsored coverage.',
-  twitterImage: 'https://www.amerusfinancial.com/images/group-life-insurance.jpg',
+  twitterImage: '/images/group-life-insurance.jpg',
   keywords: 'group life insurance, employee benefits, employer life insurance, group term life, employee life insurance, business insurance, group benefits, employer-sponsored insurance, employee protection'
 })
 
@@ -141,22 +141,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our group insurance specialists for a customized group life insurance quote based on your company size, industry, and employee demographics.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Design Benefits',
     text: 'Work with our team to design a group life insurance program that fits your budget and meets your employees\' needs with flexible coverage options.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Implement Program',
     text: 'Complete the group application and enrollment process with our support team handling all administrative details and employee communications.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your group life insurance program will be activated and your employees will have immediate access to their life insurance benefits.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Implement Group Life Insurance', 'Step-by-step guide to implementing group life insurance for your employees with Amerus Financial.', 'PT20M', '75.00')
 
@@ -245,7 +245,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Group Life Insurance',
   description: 'Provide essential financial protection for your employees\' families with cost-effective group life insurance that enhances your benefits package.',
-  image: 'https://www.amerusfinancial.com/images/employees-families-group-life-insurance.jpg',
+  image: '/images/employees-families-group-life-insurance.jpg',
   imageAlt: 'employees families group life insurance',
   cta: { href: '/contact', label: 'Enhance Your Benefits Package' }
 }

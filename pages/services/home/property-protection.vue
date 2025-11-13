@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Property Protection Insurance — Amerus Financial',
   description: 'Comprehensive property protection insurance safeguarding your home and assets from unexpected events. Get complete coverage for your property investment.',
-  image: 'https://www.amerusfinancial.com/images/property-protection-insurance.jpg',
+  image: '/images/property-protection-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/home/property-protection',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Comprehensive property protection insurance safeguarding your home and assets from unexpected events. Get complete coverage for your property investment.',
   ogDescription:
     'Secure your property investment with comprehensive protection insurance covering your home and assets against various risks and damages.',
-  ogImage: 'https://www.amerusfinancial.com/images/property-protection-insurance.jpg',
+  ogImage: '/images/property-protection-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/home/property-protection',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Property Protection & Security — Amerus',
   twitterDescription:
     'Secure your property investment with comprehensive protection insurance covering your home and assets against various risks and damages.',
-  twitterImage: 'https://www.amerusfinancial.com/images/property-protection-insurance.jpg',
+  twitterImage: '/images/property-protection-insurance.jpg',
   keywords: 'property protection, home protection insurance, property security, asset protection, property risk coverage, home asset insurance, property investment protection'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our insurance specialists for a personalized property protection insurance quote based on your home and asset values.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Plans',
     text: 'Review different property protection options including coverage levels, deductibles, and specialized protections for your property.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the simple application form with your property details and asset information for comprehensive protection.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your property protection insurance will be activated and your home and assets will be fully protected.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Property Protection Insurance', 'Step-by-step guide to applying for property protection insurance with Amerus Financial.', 'PT15M', '115.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Property Protection Insurance',
   description: 'Comprehensive coverage for your home, belongings, and other structures against a wide range of perils, safeguarding your most valuable investments.',
-  image: 'https://www.amerusfinancial.com/images/property-protection.jpg',
+  image: '/images/property-protection.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Get a Property Protection Quote' }
 }

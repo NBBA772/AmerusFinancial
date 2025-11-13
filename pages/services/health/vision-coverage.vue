@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Vision Insurance Coverage — Amerus Financial',
   description: 'Affordable vision insurance plans covering eye exams, glasses, contact lenses, and frames with extensive provider networks.',
-  image: 'https://www.amerusfinancial.com/images/vision-insurance.jpg',
+  image: '/images/vision-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/health/vision-coverage',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Affordable vision insurance plans covering eye exams, glasses, contact lenses, and frames with extensive provider networks.',
   ogDescription:
     'Vision insurance coverage providing eye exam benefits, glasses, contact lenses, and frames through quality vision care networks.',
-  ogImage: 'https://www.amerusfinancial.com/images/vision-insurance.jpg',
+  ogImage: '/images/vision-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/health/vision-coverage',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Vision Insurance Coverage — Amerus',
   twitterDescription:
     'Vision insurance coverage providing eye exam benefits, glasses, contact lenses, and frames through quality vision care networks.',
-  twitterImage: 'https://www.amerusfinancial.com/images/vision-insurance.jpg',
+  twitterImage: '/images/vision-insurance.jpg',
   keywords: 'vision insurance, eye care coverage, glasses insurance, contact lens coverage, eye exam benefits, vision care plans'
 })
 
@@ -154,22 +154,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get Vision Quote',
     text: 'Contact our insurance specialists for a personalized vision insurance quote based on your eye care needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Vision Plans',
     text: 'Review different vision insurance options including coverage for exams, glasses, contacts, and provider networks.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the simple vision insurance application with your personal information and coverage preferences.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your vision insurance coverage will be activated and you can start using eye care benefits.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Vision Insurance', 'Step-by-step guide to applying for vision insurance coverage with Amerus Financial.', 'PT15M', '30.00')
 
@@ -258,7 +258,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Vision Insurance Coverage for Eye Exams, Glasses, and Contacts',
   description: 'Protect your eye health with comprehensive vision insurance that covers exams, glasses, contacts, and more at affordable rates.',
-  image: 'https://www.amerusfinancial.com/images/vision-insurance.jpg',
+  image: '/images/vision-insurance.jpg',
   imageAlt: 'vision coverage',
   cta: { href: '/contact', label: 'Check Your Vision Coverage Options' }
 }

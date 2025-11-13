@@ -68,7 +68,7 @@
         </div>
         <!-- Right Column: Nuxt Image -->
         <div class="flex justify-center md:justify-end">
-          <NuxtImg src="https://www.amerusfinancial.com/images/friends-driving-insured-car.jpg" alt="Retirement Planning Illustration" class="rounded-2xl shadow-lg object-cover" />
+          <NuxtImg src="/images/friends-driving-insured-car.jpg" alt="Retirement Planning Illustration" class="rounded-2xl shadow-lg object-cover" />
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/resources/auto-insurance-guide'
 const pageTitle = 'Auto Insurance Guide & Coverage Tips'
 const pageDescription = 'Understand auto insurance coverage options, premium factors, and the claims process. Practical tips to save money and choose the right policy.'
-const pageImage = 'https://www.amerusfinancial.com/images/friends-driving-insured-car.jpg'
+const pageImage = '/images/friends-driving-insured-car.jpg'
 
 useHead({
   title: pageTitle,

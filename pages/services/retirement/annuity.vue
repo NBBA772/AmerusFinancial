@@ -65,7 +65,7 @@ useEnhancedMetaTags({
   title: 'Annuity Planning & Retirement Income — Amerus Financial',
   description: 'Secure guaranteed retirement income with annuities. Fixed, variable, and immediate annuity options with professional guidance for lifetime income planning.',
   canonical: 'https://www.amerusfinancial.com/services/retirement/annuity',
-  image: 'https://www.amerusfinancial.com/images/annuity-retirement-planning.jpg',
+  image: '/images/annuity-retirement-planning.jpg',
   keywords: 'annuity planning, retirement income, guaranteed income, fixed annuities, variable annuities, immediate annuities, deferred annuities, lifetime income, retirement security, financial planning'
 })
 
@@ -76,13 +76,13 @@ useSeoMeta({
     'Secure guaranteed retirement income with annuities. Fixed, variable, and immediate annuity options with professional guidance for lifetime income planning.',
   ogDescription:
     'Discover annuity options for guaranteed retirement income including fixed, variable, and immediate annuities with lifetime income protection.',
-  ogImage: 'https://www.amerusfinancial.com/images/annuity-retirement-planning.jpg',
+  ogImage: '/images/annuity-retirement-planning.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/retirement/annuity',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Annuity Planning & Guaranteed Income — Amerus',
   twitterDescription:
     'Discover annuity options for guaranteed retirement income including fixed, variable, and immediate annuities with lifetime income protection.',
-  twitterImage: 'https://www.amerusfinancial.com/images/annuity-retirement-planning.jpg',
+  twitterImage: '/images/annuity-retirement-planning.jpg',
   keywords: 'annuity planning, retirement income, guaranteed income, fixed annuities, variable annuities, immediate annuities, deferred annuities, lifetime income, retirement security, financial planning'
 })
 
@@ -256,7 +256,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: 'Annuities & Guaranteed Retirement Income Solutions',
   description: 'Secure, guaranteed income solutions that provide stability and predictability for your retirement years.',
-  image: 'https://www.amerusfinancial.com/images/man-sigining-up-for-annuity-plan.jpg',
+  image: '/images/man-sigining-up-for-annuity-plan.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Explore Annuity Options' }
 }

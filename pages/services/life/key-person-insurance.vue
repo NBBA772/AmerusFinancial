@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Key Person Insurance for Businesses — Amerus Financial',
   description: 'Protect your business from the financial impact of losing a key employee or executive with specialized coverage designed for business continuity and stability.',
-  image: 'https://www.amerusfinancial.com/images/key-person-insurance.jpg',
+  image: '/images/key-person-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/life/key-person-insurance',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Protect your business from the financial impact of losing a key employee or executive with specialized coverage designed for business continuity and stability.',
   ogDescription:
     'Secure your business against the loss of key personnel with key person insurance that protects company value, maintains operations, and ensures business continuity.',
-  ogImage: 'https://www.amerusfinancial.com/images/key-person-insurance.jpg',
+  ogImage: '/images/key-person-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/life/key-person-insurance',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Key Employee Life Insurance Protection — Amerus',
   twitterDescription:
     'Secure your business against the loss of key personnel with key person insurance that protects company value, maintains operations, and ensures business continuity.',
-  twitterImage: 'https://www.amerusfinancial.com/images/key-person-insurance.jpg',
+  twitterImage: '/images/key-person-insurance.jpg',
   keywords: 'key person insurance, key man insurance, business insurance, key employee insurance, business continuity insurance, executive insurance, key personnel protection, business life insurance'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Identify Key Personnel',
     text: 'Work with our specialists to identify key employees whose loss would significantly impact your business operations, revenue, or company value.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Assess Financial Impact',
     text: 'Calculate the financial value each key person brings to your business including revenue generation, specialized skills, and replacement costs.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Apply for Coverage',
     text: 'Complete the key person insurance application including business information, key employee details, and coverage amount requirements.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Protection',
     text: 'Once approved, your key person insurance policy will be activated and your business will be protected against the loss of critical personnel.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Get Key Person Insurance', 'Step-by-step guide to protecting your business with key person insurance coverage through Amerus Financial.', 'PT25M', '150.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'life Insurance',
   title: 'Key Person Insurance',
   description: 'Protect your business from the financial impact of losing a key employee or executive with specialized coverage designed for business continuity.',
-  image: 'https://www.amerusfinancial.com/images/mature-man-key-person-insurance.jpg',
+  image: '/images/mature-man-key-person-insurance.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Get a Quote' }
 }

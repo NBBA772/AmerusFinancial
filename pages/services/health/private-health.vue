@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Private Health Insurance Plans — Amerus Financial',
   description: 'Secure private health insurance with flexible coverage options, premium networks, and comprehensive medical benefits.',
-  image: 'https://www.amerusfinancial.com/images/private-health-insurance.jpg',
+  image: '/images/private-health-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/health/private-health',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Secure private health insurance with flexible coverage options, premium networks, and comprehensive medical benefits.',
   ogDescription:
     'Private health insurance plans offering flexible coverage, premium provider networks, and comprehensive medical benefits for individuals and families.',
-  ogImage: 'https://www.amerusfinancial.com/images/private-health-insurance.jpg',
+  ogImage: '/images/private-health-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/health/private-health',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Private Health Insurance Plans — Amerus',
   twitterDescription:
     'Private health insurance plans offering flexible coverage, premium provider networks, and comprehensive medical benefits for individuals and families.',
-  twitterImage: 'https://www.amerusfinancial.com/images/private-health-insurance.jpg',
+  twitterImage: '/images/private-health-insurance.jpg',
   keywords: 'private health insurance, premium health coverage, flexible health plans, private medical insurance, comprehensive health benefits'
 })
 
@@ -252,7 +252,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Private Health Insurance',
   description: 'Premium healthcare coverage with enhanced benefits and flexibility, giving you greater control over your healthcare choices.',
-  image: 'https://www.amerusfinancial.com/images/private-health.jpg',
+  image: '/images/private-health.jpg',
   imageAlt: 'private health insurance',
   cta: { href: '/contact', label: 'Get a Private Health Quote' }
 }

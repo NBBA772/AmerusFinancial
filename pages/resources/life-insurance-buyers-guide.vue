@@ -73,7 +73,7 @@
             sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px"
             quality="80"
             loading="lazy"
-            src="https://www.amerusfinancial.com/images/happy-family-at-home.jpg" 
+            src="/images/happy-family-at-home.jpg" 
             alt="Happy Family at Home" 
             class="rounded-2xl shadow-lg object-cover" 
           />
@@ -109,7 +109,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/resources/life-insurance-buyers-guide'
 const pageTitle = 'Life Insurance Buyer\'s Guide'
 const pageDescription = 'Understand term vs whole vs universal life, calculate coverage needs, and compare cost factors to choose the right life insurance policy.'
-const pageImage = 'https://www.amerusfinancial.com/images/happy-family-at-home.jpg'
+const pageImage = '/images/happy-family-at-home.jpg'
 
 useHead({
   title: pageTitle,

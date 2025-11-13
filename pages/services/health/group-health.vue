@@ -63,7 +63,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Group Health Insurance Plans — Amerus Financial',
   description: 'Affordable group health insurance for businesses and organizations. Comprehensive employee health benefits with competitive rates.',
-  image: 'https://www.amerusfinancial.com/images/group-health-insurance.jpg',
+  image: '/images/group-health-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/health/group-health',
   type: 'website'
 })
@@ -75,13 +75,13 @@ useSeoMeta({
     'Affordable group health insurance for businesses and organizations. Comprehensive employee health benefits with competitive rates.',
   ogDescription:
     'Group health insurance plans for businesses providing comprehensive employee health benefits, medical coverage, and wellness programs.',
-  ogImage: 'https://www.amerusfinancial.com/images/group-health-insurance.jpg',
+  ogImage: '/images/group-health-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/health/group-health',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Group Health Insurance Plans — Amerus',
   twitterDescription:
     'Group health insurance plans for businesses providing comprehensive employee health benefits, medical coverage, and wellness programs.',
-  twitterImage: 'https://www.amerusfinancial.com/images/group-health-insurance.jpg',
+  twitterImage: '/images/group-health-insurance.jpg',
   keywords: 'group health insurance, employee health benefits, business health plans, employer health coverage, group medical insurance'
 })
 
@@ -141,22 +141,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our insurance specialists for a personalized group health insurance quote based on your business needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Plans',
     text: 'Review different group health insurance options including coverage levels, deductibles, and provider networks.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the simple application form with your business and employee information.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your group health insurance coverage will be activated and employees can start using benefits.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Group Health Insurance', 'Step-by-step guide to applying for group health insurance coverage with Amerus Financial.', 'PT15M', '500.00')
 
@@ -245,7 +245,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Group Health Insurance',
   description: 'Comprehensive health benefits for your employees that attract and retain top talent while providing tax advantages for your business.',
-  image: 'https://www.amerusfinancial.com/images/group-insurance.jpg',
+  image: '/images/group-insurance.jpg',
   imageAlt: 'dental insurance',
   cta: { href: '/contact', label: 'Get a Group Health Quote' }
 }

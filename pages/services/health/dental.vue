@@ -63,7 +63,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Dental Insurance & Dental Plans — Amerus Financial',
   description: 'Find affordable dental insurance plans for preventive care, fillings, crowns, and orthodontics. Compare options and start a 15-minute consultation with Amerus today.',
-  image: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',
+  image: '/images/dental-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/health/dental',
   type: 'website'
 })
@@ -75,13 +75,13 @@ useSeoMeta({
     'Affordable dental insurance covering preventive care, fillings & major procedures. Compare plans starting at $25/month.',
   ogDescription:
     'Explore dental insurance options covering preventive visits, basic and major procedures, and orthodontic care.',
-  ogImage: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',
+  ogImage: '/images/dental-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/health/dental',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Dental Insurance Plans & Coverage — Amerus',
   twitterDescription:
     'Explore dental insurance options covering preventive visits, basic and major procedures, and orthodontic care.',
-  twitterImage: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',
+  twitterImage: '/images/dental-insurance.jpg',
   keywords: 'dental insurance, dental plans, dental coverage, preventive care, dental cleanings, fillings, crowns, root canals, orthodontics, dentist network, affordable dental insurance, dental benefits'
 })
 
@@ -141,22 +141,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our insurance specialists for a personalized dental insurance quote based on your needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Plans',
     text: 'Review different dental insurance options including coverage levels, deductibles, and network dentists.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the simple application form with your personal and health information.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your dental insurance coverage will be activated and you can start using benefits.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Dental Insurance', 'Step-by-step guide to applying for dental insurance coverage with Amerus Financial.', 'PT15M', '25.00')
 
@@ -245,7 +245,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Dental Insurance Plans & Coverage for Families',
   description: 'Comprehensive coverage for your oral health needs, from routine cleanings to major procedures.',
-  image: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',
+  image: '/images/dental-insurance.jpg',
   imageAlt: 'dental insurance',
   cta: { href: '/contact', label: 'Find Dental Coverage' }
 }

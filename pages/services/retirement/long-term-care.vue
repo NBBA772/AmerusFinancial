@@ -65,7 +65,7 @@ useEnhancedMetaTags({
   title: 'Long-Term Care Planning & Insurance — Amerus Financial',
   description: 'Protect your retirement with comprehensive long-term care insurance and planning. Coverage for home care, assisted living, and nursing facilities.',
   canonical: 'https://www.amerusfinancial.com/services/retirement/long-term-care',
-  image: 'https://www.amerusfinancial.com/images/long-term-care-planning.jpg',
+  image: '/images/long-term-care-planning.jpg',
   keywords: 'long-term care insurance, long-term care planning, nursing home insurance, home care coverage, assisted living insurance, elder care planning, retirement protection, healthcare costs'
 })
 
@@ -76,13 +76,13 @@ useSeoMeta({
     'Protect your retirement with comprehensive long-term care insurance and planning. Coverage for home care, assisted living, and nursing facilities.',
   ogDescription:
     'Discover long-term care insurance options covering home care, assisted living, and nursing facilities with comprehensive retirement protection.',
-  ogImage: 'https://www.amerusfinancial.com/images/long-term-care-planning.jpg',
+  ogImage: '/images/long-term-care-planning.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/retirement/long-term-care',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Long-Term Care Insurance & Planning — Amerus',
   twitterDescription:
     'Discover long-term care insurance options covering home care, assisted living, and nursing facilities with comprehensive retirement protection.',
-  twitterImage: 'https://www.amerusfinancial.com/images/long-term-care-planning.jpg',
+  twitterImage: '/images/long-term-care-planning.jpg',
   keywords: 'long-term care insurance, long-term care planning, nursing home insurance, home care coverage, assisted living insurance, elder care planning, retirement protection, healthcare costs'
 })
 
@@ -256,7 +256,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: 'Long-Term Care Insurance',
   description: 'Specialized coverage that helps pay for extended care services in nursing homes, assisted living facilities, or your own home when you\'re unable to perform daily activities independently.',
-  image: 'https://www.amerusfinancial.com/images/couple-talking-long-term-care-insurance.jpg',
+  image: '/images/couple-talking-long-term-care-insurance.jpg',
   imageAlt: 'couple discussing long-term care insurance',
   cta: { href: '/contact', label: 'Explore Long-Term Care Options' }
 }

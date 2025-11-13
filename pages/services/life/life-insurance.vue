@@ -63,7 +63,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/services/life/life-insurance'
 const pageTitle = 'Life Insurance Solutions for Families — Amerus'
 const pageDescription = 'Protecting your family\'s financial future with customized life insurance solutions that provide security and peace of mind for your loved ones.'
-const pageImage = 'https://www.amerusfinancial.com/images/life-insurance.jpg'
+const pageImage = '/images/life-insurance.jpg'
 
 // Set all meta tags in one place
 useHead({
@@ -135,22 +135,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our life insurance specialists for a personalized life insurance quote based on your age, health, income, and family protection needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Choose Coverage Type',
     text: 'Select the right life insurance type for your situation - term life for temporary needs or permanent life insurance for lifelong protection and cash value.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the life insurance application with your personal information, health history, and undergo any required medical examinations.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your life insurance policy will be activated and your beneficiaries will have the financial protection and security they need.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Get Life Insurance', 'Step-by-step guide to securing life insurance coverage for your family with Amerus Financial.', 'PT20M', '50.00')
 
@@ -239,7 +239,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Life Insurance Coverage & Protection for Families',
   description: 'Protecting your family\'s financial future with customized life insurance solutions that provide security and peace of mind.',
-  image: 'https://www.amerusfinancial.com/images/senior-woman-life-insurance.jpg',
+  image: '/images/senior-woman-life-insurance.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Find the Right Coverage' }
 }

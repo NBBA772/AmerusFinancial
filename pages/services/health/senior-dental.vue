@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Senior Dental Insurance Plans — Amerus Financial',
   description: 'Specialized dental insurance for seniors with coverage for dentures, implants, and comprehensive oral care designed for older adults.',
-  image: 'https://www.amerusfinancial.com/images/senior-dental-insurance.jpg',
+  image: '/images/senior-dental-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/health/senior-dental',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Specialized dental insurance for seniors with coverage for dentures, implants, and comprehensive oral care designed for older adults.',
   ogDescription:
     'Senior dental insurance plans providing specialized coverage for dentures, implants, and comprehensive oral care for older adults.',
-  ogImage: 'https://www.amerusfinancial.com/images/senior-dental-insurance.jpg',
+  ogImage: '/images/senior-dental-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/health/senior-dental',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Senior Dental Insurance Plans — Amerus',
   twitterDescription:
     'Senior dental insurance plans providing specialized coverage for dentures, implants, and comprehensive oral care for older adults.',
-  twitterImage: 'https://www.amerusfinancial.com/images/senior-dental-insurance.jpg',
+  twitterImage: '/images/senior-dental-insurance.jpg',
   keywords: 'senior dental insurance, denture coverage, dental implants for seniors, elderly dental care, senior oral health insurance'
 })
 
@@ -252,7 +252,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Senior Dental Solutions',
   description: 'Specialized dental coverage designed for seniors\' unique oral health needs with Medicare coordination.',
-  image: 'https://www.amerusfinancial.com/images/senior-dental-insurance.jpg',
+  image: '/images/senior-dental-insurance.jpg',
   imageAlt: 'dental insurance',
   cta: { href: '/contact', label: 'Speak with a Medicare Specialist' }
 }

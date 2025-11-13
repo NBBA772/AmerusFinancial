@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Flood Insurance Coverage — Amerus Financial',
   description: 'Comprehensive flood insurance protection for your home and belongings. Protect against flood damage with affordable NFIP and private flood coverage.',
-  image: 'https://www.amerusfinancial.com/images/flood-insurance.jpg',
+  image: '/images/flood-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/home/flood-insurance',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Comprehensive flood insurance protection for your home and belongings. Protect against flood damage with affordable NFIP and private flood coverage.',
   ogDescription:
     'Get essential flood insurance coverage to protect your home from water damage with comprehensive NFIP and private flood insurance options.',
-  ogImage: 'https://www.amerusfinancial.com/images/flood-insurance.jpg',
+  ogImage: '/images/flood-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/home/flood-insurance',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Flood Insurance Protection — Amerus',
   twitterDescription:
     'Get essential flood insurance coverage to protect your home from water damage with comprehensive NFIP and private flood insurance options.',
-  twitterImage: 'https://www.amerusfinancial.com/images/flood-insurance.jpg',
+  twitterImage: '/images/flood-insurance.jpg',
   keywords: 'flood insurance, NFIP flood insurance, private flood insurance, flood coverage, water damage protection, flood zone insurance, home flood protection'
 })
 
@@ -252,7 +252,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Flood Insurance Coverage & Protection for Homes',
   description: 'Essential protection against flood damage that standard homeowners insurance doesn\'t cover, safeguarding your home and belongings from rising water disasters.',
-  image: 'https://www.amerusfinancial.com/images/flood-insurance-house-flooded.jpg',
+  image: '/images/flood-insurance-house-flooded.jpg',
   imageAlt: 'house flooded with water',
   cta: { href: '/contact', label: 'Secure Flood Protection' }
 }

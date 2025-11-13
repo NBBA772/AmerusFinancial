@@ -59,7 +59,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/articles/overview'
 const pageTitle = 'Insurance & Financial Articles'
 const pageDescription = 'Browse expert articles on insurance, retirement, health, auto, life, and financial planning. Stay informed with actionable insights from Amerus Financial.'
-const pageImage = 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
+const pageImage = '/images/amerus-og-default.jpg'
 
 useHead({
   title: pageTitle,

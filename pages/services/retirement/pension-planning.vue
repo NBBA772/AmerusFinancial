@@ -65,7 +65,7 @@ useEnhancedMetaTags({
   title: 'Pension Planning & Retirement Benefits — Amerus Financial',
   description: 'Maximize your pension benefits with expert planning for defined benefit plans, pension rollovers, and retirement income optimization strategies.',
   canonical: 'https://www.amerusfinancial.com/services/retirement/pension-planning',
-  image: 'https://www.amerusfinancial.com/images/pension-planning.jpg',
+  image: '/images/pension-planning.jpg',
   keywords: 'pension planning, defined benefit plans, pension rollover, retirement benefits, pension optimization, pension income, retirement planning, federal pension, state pension, corporate pension'
 })
 
@@ -76,13 +76,13 @@ useSeoMeta({
     'Maximize your pension benefits with expert planning for defined benefit plans, pension rollovers, and retirement income optimization strategies.',
   ogDescription:
     'Discover pension planning strategies for defined benefit plans, pension rollovers, and retirement income optimization with professional guidance.',
-  ogImage: 'https://www.amerusfinancial.com/images/pension-planning.jpg',
+  ogImage: '/images/pension-planning.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/retirement/pension-planning',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Pension Planning & Benefit Optimization — Amerus',
   twitterDescription:
     'Discover pension planning strategies for defined benefit plans, pension rollovers, and retirement income optimization with professional guidance.',
-  twitterImage: 'https://www.amerusfinancial.com/images/pension-planning.jpg',
+  twitterImage: '/images/pension-planning.jpg',
   keywords: 'pension planning, defined benefit plans, pension rollover, retirement benefits, pension optimization, pension income, retirement planning, federal pension, state pension, corporate pension'
 })
 
@@ -256,7 +256,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: 'Pension Planning & Retirement Benefit Optimization',
   description: 'Expert guidance to optimize your pension benefits and integrate them into your comprehensive retirement strategy for maximum financial security.',
-  image: 'https://www.amerusfinancial.com/images/couple-pension-planning.jpg',
+  image: '/images/couple-pension-planning.jpg',
   imageAlt: 'senior woman pension insurance',
   cta: { href: '/contact', label: 'Start Your Pension Planning' }
 }

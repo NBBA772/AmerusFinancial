@@ -62,7 +62,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Commercial Auto Insurance for Business',
   description: 'Comprehensive commercial auto insurance for business vehicles, fleets, and company cars. Protect your business with competitive rates from Amerus.',
-  image: 'https://www.amerusfinancial.com/images/commercial-auto-insurance.jpg',
+  image: '/images/commercial-auto-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/auto/commercial-auto',
   type: 'website'
 })
@@ -74,13 +74,13 @@ useSeoMeta({
     'Comprehensive commercial auto insurance for business vehicles, fleets, and company cars. Protect your business with competitive rates from Amerus.',
   ogDescription:
     'Commercial auto insurance covering business vehicles, fleet coverage, and company car protection with liability and comprehensive options.',
-  ogImage: 'https://www.amerusfinancial.com/images/commercial-auto-insurance.jpg',
+  ogImage: '/images/commercial-auto-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/auto/commercial-auto',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Commercial Auto Insurance — Amerus',
   twitterDescription:
     'Commercial auto insurance for business vehicles and fleets. Liability, collision, and comprehensive coverage.',
-  twitterImage: 'https://www.amerusfinancial.com/images/commercial-auto-insurance.jpg',
+  twitterImage: '/images/commercial-auto-insurance.jpg',
   keywords: 'commercial auto insurance, business vehicle insurance, fleet insurance, company car insurance, commercial vehicle coverage, business auto liability'
 })
 
@@ -140,22 +140,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Business Assessment',
     text: 'Provide details about your business vehicles, usage, and current commercial auto insurance needs.',
-    image: 'https://www.amerusfinancial.com/images/row-of-vans-needing-commercial-auto-insurance.jpg'
+    image: '/images/row-of-vans-needing-commercial-auto-insurance.jpg'
   },
   {
     name: 'Fleet Analysis',
     text: 'Review your vehicle fleet including types, values, and commercial usage patterns for accurate coverage.',
-    image: 'https://www.amerusfinancial.com/images/row-of-vans-needing-commercial-auto-insurance.jpg'
+    image: '/images/row-of-vans-needing-commercial-auto-insurance.jpg'
   },
   {
     name: 'Coverage Design',
     text: 'Design commercial auto insurance coverage including liability, collision, and comprehensive protection.',
-    image: 'https://www.amerusfinancial.com/images/row-of-vans-needing-commercial-auto-insurance.jpg'
+    image: '/images/row-of-vans-needing-commercial-auto-insurance.jpg'
   },
   {
     name: 'Policy Activation',
     text: 'Finalize your commercial auto insurance policy and activate coverage for your business vehicles.',
-    image: 'https://www.amerusfinancial.com/images/row-of-vans-needing-commercial-auto-insurance.jpg'
+    image: '/images/row-of-vans-needing-commercial-auto-insurance.jpg'
   }
 ], 'How to Get Commercial Auto Insurance', 'Step-by-step guide to getting commercial auto insurance for your business vehicles.', 'PT25M', '200.00')
 
@@ -244,7 +244,7 @@ const hero = {
   eyebrow: 'Auto Insurance',
   title: 'Commercial Auto Insurance',
   description: 'Comprehensive commercial auto insurance for business vehicles, fleets, and company cars with competitive rates and full protection.',
-  image: 'https://www.amerusfinancial.com/images/row-of-vans-needing-commercial-auto-insurance.jpg',
+  image: '/images/row-of-vans-needing-commercial-auto-insurance.jpg',
   imageAlt: 'commercial auto insurance',
   cta: { href: '/contact', label: 'Get Commercial Auto Quote' }
 }

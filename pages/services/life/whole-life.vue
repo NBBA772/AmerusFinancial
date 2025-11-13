@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Whole Life Insurance Plans — Amerus Financial',
   description: 'Permanent whole life insurance with guaranteed cash value growth, lifetime coverage, and stable premiums for long-term financial security.',
-  image: 'https://www.amerusfinancial.com/images/whole-life-insurance.jpg',
+  image: '/images/whole-life-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/life/whole-life',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Permanent whole life insurance with guaranteed cash value growth, lifetime coverage, and stable premiums for long-term financial security.',
   ogDescription:
     'Whole life insurance plans providing permanent coverage, guaranteed cash value growth, and lifetime financial protection for your family.',
-  ogImage: 'https://www.amerusfinancial.com/images/whole-life-insurance.jpg',
+  ogImage: '/images/whole-life-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/life/whole-life',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Whole Life Insurance Plans — Amerus',
   twitterDescription:
     'Whole life insurance plans providing permanent coverage, guaranteed cash value growth, and lifetime financial protection for your family.',
-  twitterImage: 'https://www.amerusfinancial.com/images/whole-life-insurance.jpg',
+  twitterImage: '/images/whole-life-insurance.jpg',
   keywords: 'whole life insurance, permanent life insurance, cash value insurance, guaranteed life insurance, lifetime coverage'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Assess Coverage Needs',
     text: 'Determine your whole life insurance needs based on income replacement, debt coverage, and long-term financial goals for permanent protection.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Whole Life Plans',
     text: 'Review different whole life insurance options including death benefits, cash value growth rates, premium amounts, and dividend potential.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Submit your whole life insurance application with health information, beneficiary details, and undergo medical underwriting if required.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Whole Life Policy',
     text: 'Once approved, your whole life insurance coverage begins and you can start building cash value through guaranteed premium payments.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Get Whole Life Insurance', 'Step-by-step guide to applying for whole life insurance coverage with guaranteed cash value growth.', 'PT20M', '125.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Whole Life Insurance',
   description: 'Permanent life insurance protection combined with a cash value component that grows over time, providing lifelong security and financial benefits.',
-  image: 'https://www.amerusfinancial.com/images/family-whole-life-insurance.jpg',
+  image: '/images/family-whole-life-insurance.jpg',
   imageAlt: 'happy family whole life insurance',
   cta: { href: '/contact', label: 'Explore Whole Life Options' }
 }

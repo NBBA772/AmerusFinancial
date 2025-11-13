@@ -133,7 +133,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/resources/health-insurance-glossary'
 const pageTitle = 'Health Insurance Glossary & Key Terms'
 const pageDescription = 'Clear definitions of common health insurance terms like deductibles, copays, premiums, and networks to help you understand your coverage.'
-const pageImage = 'https://www.amerusfinancial.com/images/man-on-phone-looking-at-insurance-terms.jpg'
+const pageImage = '/images/man-on-phone-looking-at-insurance-terms.jpg'
 
 useHead({
   title: pageTitle,

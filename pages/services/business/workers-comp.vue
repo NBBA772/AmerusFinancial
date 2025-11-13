@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Workers\' Compensation Insurance — Amerus Financial',
   description: 'Protect your employees and business with comprehensive workers\' compensation insurance covering medical expenses and lost wages from workplace injuries.',
-  image: 'https://www.amerusfinancial.com/images/workers-compensation.jpg',
+  image: '/images/workers-compensation.jpg',
   url: 'https://www.amerusfinancial.com/services/business/workers-comp',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Protect your employees and business with comprehensive workers\' compensation insurance covering medical expenses and lost wages from workplace injuries',
   ogDescription:
     'Workers\' compensation insurance protecting employees from workplace injuries and employers from liability claims.',
-  ogImage: 'https://www.amerusfinancial.com/images/workers-compensation.jpg',
+  ogImage: '/images/workers-compensation.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/business/workers-comp',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Workers\' Compensation Insurance — Amerus',
   twitterDescription:
     'Workers\' compensation insurance protecting employees from workplace injuries and employers from liability claims.',
-  twitterImage: 'https://www.amerusfinancial.com/images/workers-compensation.jpg',
+  twitterImage: '/images/workers-compensation.jpg',
   keywords: 'workers compensation insurance, workers comp, workplace injury insurance, employee protection, employer liability, workplace safety coverage'
 })
 
@@ -154,22 +154,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Determine Coverage Needs',
     text: 'Assess your workforce size, job classifications, and workplace risks to determine appropriate workers compensation coverage.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Get Workers Comp Quote',
     text: 'Contact our business insurance specialists for a workers compensation quote based on your industry and payroll.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Submit the workers compensation application with employee counts, job descriptions, and safety program details.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Protection',
     text: 'Once approved, your workers compensation coverage protects employees and your business from workplace injury claims.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Get Workers Compensation Insurance', 'Step-by-step guide to securing workers compensation insurance for your business employees.', 'PT25M', '150.00')
 
@@ -258,7 +258,7 @@ const hero = {
   eyebrow: 'Business Insurance',
   title: 'Workers Compensation Insurance',
   description: 'Protect your employees and business with comprehensive workers compensation coverage for workplace injuries and employer liability.',
-  image: 'https://www.amerusfinancial.com/images/workers-compensation-insurance-fall-at-work.jpg',
+  image: '/images/workers-compensation-insurance-fall-at-work.jpg',
   imageAlt: 'workers compensation insurance',
   cta: { href: '/contact', label: 'Get Workers Comp Quote' }
 }

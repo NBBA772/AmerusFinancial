@@ -62,7 +62,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Individual Health Insurance Plans — Amerus Financial',
   description: 'Find affordable individual health insurance plans with comprehensive medical coverage, preventive care, and prescription drug benefits.',
-  image: 'https://www.amerusfinancial.com/images/individual-health-insurance.jpg',
+  image: '/images/individual-health-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/health/individual-health',
   type: 'website'
 })
@@ -74,13 +74,13 @@ useSeoMeta({
     'Find affordable individual health insurance plans with comprehensive medical coverage, preventive care, and prescription drug benefits.',
   ogDescription:
     'Individual health insurance plans providing comprehensive medical coverage, preventive care, and prescription drug benefits for individuals and families.',
-  ogImage: 'https://www.amerusfinancial.com/images/individual-health-insurance.jpg',
+  ogImage: '/images/individual-health-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/health/individual-health',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Individual Health Insurance Plans — Amerus',
   twitterDescription:
     'Individual health insurance plans providing comprehensive medical coverage, preventive care, and prescription drug benefits for individuals and families.',
-  twitterImage: 'https://www.amerusfinancial.com/images/individual-health-insurance.jpg',
+  twitterImage: '/images/individual-health-insurance.jpg',
   keywords: 'individual health insurance, private health insurance, medical coverage, health insurance plans, preventive care, prescription drugs, healthcare coverage'
 })
 
@@ -152,22 +152,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Compare Health Plans',
     text: 'Review individual health insurance options including coverage levels, deductibles, and provider networks.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Get Health Quote',
     text: 'Contact our health insurance specialists for a personalized individual health insurance quote.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the health insurance application with your medical history and coverage preferences.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your individual health insurance coverage begins and you can start using benefits.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Get Individual Health Insurance', 'Step-by-step guide to applying for individual health insurance coverage.', 'PT20M', '300.00')
 
@@ -256,7 +256,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Individual Health Insurance',
   description: 'Personalized healthcare coverage designed specifically for your unique medical needs and budget.',
-  image: 'https://www.amerusfinancial.com/images/couple-got-individual-health-insurance.jpg',
+  image: '/images/couple-got-individual-health-insurance.jpg',
   imageAlt: 'individual health insurance coverage',
   cta: { href: '/contact', label: 'Get a Personalized Quote' }
 }

@@ -20,7 +20,7 @@
         </OrderedList>
       </div>
       <div class="p-4 sm:p-8">
-        <img src="https://www.amerusfinancial.com/img/When-You-Register.jpg" />
+        <img src="/img/When-You-Register.jpg" />
       </div>
     </GridTwoColumns>
   </BasicSection>

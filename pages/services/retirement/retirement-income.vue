@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Retirement Income Planning & Solutions — Amerus Financial',
   description: 'Create sustainable retirement income with annuities, pensions, and investment strategies. Plan your financial future with expert guidance from Amerus.',
-  image: 'https://www.amerusfinancial.com/images/retirement-income.jpg',
+  image: '/images/retirement-income.jpg',
   url: 'https://www.amerusfinancial.com/services/retirement/retirement-income',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Create sustainable retirement income with annuities, pensions, and investment strategies. Plan your financial future with expert guidance from Amerus.',
   ogDescription:
     'Comprehensive retirement income planning including annuities, pension optimization, and withdrawal strategies for financial security.',
-  ogImage: 'https://www.amerusfinancial.com/images/retirement-income.jpg',
+  ogImage: '/images/retirement-income.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/retirement/retirement-income',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Retirement Income Planning — Amerus',
   twitterDescription:
     'Comprehensive retirement income planning including annuities, pension optimization, and withdrawal strategies for financial security.',
-  twitterImage: 'https://www.amerusfinancial.com/images/retirement-income.jpg',
+  twitterImage: '/images/retirement-income.jpg',
   keywords: 'retirement income, retirement planning, annuities, pension planning, retirement withdrawal strategies, income for life, retirement income streams, guaranteed income, retirement financial planning, senior financial planning'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Retirement Assessment',
     text: 'Evaluate your current financial situation, retirement goals, and expected expenses to determine income needs.',
-    image: 'https://www.amerusfinancial.com/images/retirement-assessment.jpg'
+    image: '/images/retirement-assessment.jpg'
   },
   {
     name: 'Income Strategy Design',
     text: 'Develop a comprehensive retirement income strategy using annuities, pensions, and investment withdrawals.',
-    image: 'https://www.amerusfinancial.com/images/income-strategy.jpg'
+    image: '/images/income-strategy.jpg'
   },
   {
     name: 'Product Selection',
     text: 'Choose appropriate income products including immediate annuities, deferred annuities, and pension options.',
-    image: 'https://www.amerusfinancial.com/images/product-selection.jpg'
+    image: '/images/product-selection.jpg'
   },
   {
     name: 'Implementation',
     text: 'Implement your retirement income plan with ongoing monitoring and adjustments as needed.',
-    image: 'https://www.amerusfinancial.com/images/plan-implementation.jpg'
+    image: '/images/plan-implementation.jpg'
   }
 ], 'How to Plan Retirement Income', 'Step-by-step guide to creating sustainable retirement income with Amerus Financial.', 'PT45M', '1000.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: 'Retirement Income Strategies',
   description: 'Comprehensive planning to create reliable, sustainable income streams throughout your retirement years, ensuring financial security and preserving your lifestyle.',
-  image: 'https://www.amerusfinancial.com/images/young-woman-planing-for-retirement.jpg',
+  image: '/images/young-woman-planing-for-retirement.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Create Your Income Strategy' }
 }

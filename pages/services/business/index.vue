@@ -73,7 +73,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Business Insurance Solutions — Amerus Financial',
   description: 'Comprehensive business insurance including general liability, workers comp, commercial property, and professional liability. Protect your business with Amerus.',
-  image: 'https://www.amerusfinancial.com/images/business-insurance.jpg',
+  image: '/images/business-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/business',
   type: 'website'
 })
@@ -85,13 +85,13 @@ useSeoMeta({
     'Comprehensive business insurance including general liability, workers comp, commercial property, and professional liability. Protect your business with Amerus.',
   ogDescription:
     'Complete business insurance solutions including liability protection, workers compensation, commercial property, and professional liability coverage.',
-  ogImage: 'https://www.amerusfinancial.com/images/business-insurance.jpg',
+  ogImage: '/images/business-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/business',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Business Insurance Solutions — Amerus',
   twitterDescription:
     'Complete business insurance solutions including liability protection, workers compensation, commercial property, and professional liability coverage.',
-  twitterImage: 'https://www.amerusfinancial.com/images/business-insurance.jpg',
+  twitterImage: '/images/business-insurance.jpg',
   keywords: 'business insurance, commercial insurance, general liability, workers compensation, commercial property insurance, professional liability, business protection, commercial coverage'
 })
 
@@ -151,22 +151,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Business Assessment',
     text: 'Evaluate your business operations, industry risks, and insurance requirements to determine coverage needs.',
-    image: 'https://www.amerusfinancial.com/images/business-assessment.jpg'
+    image: '/images/business-assessment.jpg'
   },
   {
     name: 'Coverage Selection',
     text: 'Choose from general liability, workers comp, commercial property, and professional liability coverage options.',
-    image: 'https://www.amerusfinancial.com/images/business-coverage-selection.jpg'
+    image: '/images/business-coverage-selection.jpg'
   },
   {
     name: 'Policy Customization',
     text: 'Customize your business insurance package with appropriate limits, deductibles, and additional protections.',
-    image: 'https://www.amerusfinancial.com/images/business-policy-custom.jpg'
+    image: '/images/business-policy-custom.jpg'
   },
   {
     name: 'Coverage Activation',
     text: 'Activate your comprehensive business insurance package for complete commercial protection.',
-    image: 'https://www.amerusfinancial.com/images/business-coverage-activate.jpg'
+    image: '/images/business-coverage-activate.jpg'
   }
 ], 'How to Get Business Insurance', 'Step-by-step guide to getting comprehensive business insurance coverage.', 'PT25M', '250.00')
 
@@ -255,7 +255,7 @@ const hero = {
   eyebrow: 'Insurance Services',
   title: 'Business Insurance Solutions',
   description: 'Protect your business with comprehensive commercial insurance coverage. From liability protection to workers compensation, secure your business against potential risks.',
-  image: 'https://www.amerusfinancial.com/images/Business-Solutions.jpg',
+  image: '/images/Business-Solutions.jpg',
   imageAlt: 'business insurance coverage',
   cta: { href: '/contact', label: 'Get Business Insurance Quote' }
 }

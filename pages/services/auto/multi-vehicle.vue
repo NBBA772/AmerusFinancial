@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Multi-Vehicle Auto Insurance Discounts',
   description: 'Save money with multi-vehicle auto insurance discounts. Insure multiple cars, trucks, and motorcycles under one policy with Amerus.',
-  image: 'https://www.amerusfinancial.com/images/multi-vehicle-insurance.jpg',
+  image: '/images/multi-vehicle-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/auto/multi-vehicle',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Save money with multi-vehicle auto insurance discounts. Insure multiple cars, trucks, and motorcycles under one policy with Amerus.',
   ogDescription:
     'Multi-vehicle auto insurance with significant discounts for insuring multiple vehicles under one policy for families and businesses.',
-  ogImage: 'https://www.amerusfinancial.com/images/multi-vehicle-insurance.jpg',
+  ogImage: '/images/multi-vehicle-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/auto/multi-vehicle',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Multi-Vehicle Auto Insurance — Amerus',
   twitterDescription:
     'Multi-vehicle auto insurance with significant discounts for insuring multiple vehicles under one policy for families and businesses.',
-  twitterImage: 'https://www.amerusfinancial.com/images/multi-vehicle-insurance.jpg',
+  twitterImage: '/images/multi-vehicle-insurance.jpg',
   keywords: 'multi vehicle insurance, multi car insurance, fleet insurance, family auto insurance, vehicle discounts, multiple car coverage, auto insurance savings'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Vehicle Inventory',
     text: 'List all vehicles you want to insure including make, model, year, and current coverage for each vehicle.',
-    image: 'https://www.amerusfinancial.com/images/vehicle-inventory.jpg'
+    image: '/images/vehicle-inventory.jpg'
   },
   {
     name: 'Compare Savings',
     text: 'Review multi-vehicle discounts and compare savings versus individual policies for each vehicle.',
-    image: 'https://www.amerusfinancial.com/images/multi-vehicle-savings.jpg'
+    image: '/images/multi-vehicle-savings.jpg'
   },
   {
     name: 'Customize Coverage',
     text: 'Choose coverage levels for each vehicle with the flexibility to have different deductibles and limits.',
-    image: 'https://www.amerusfinancial.com/images/customize-coverage.jpg'
+    image: '/images/customize-coverage.jpg'
   },
   {
     name: 'Activate Policy',
     text: 'Complete your multi-vehicle policy setup and enjoy the convenience of one bill for all vehicles.',
-    image: 'https://www.amerusfinancial.com/images/activate-multi-policy.jpg'
+    image: '/images/activate-multi-policy.jpg'
   }
 ], 'How to Get Multi-Vehicle Insurance', 'Step-by-step guide to getting multi-vehicle insurance discounts and coverage.', 'PT20M', '150.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Auto Insurance',
   title: 'Multi-Vehicle Insurance',
   description: 'Save money and simplify management by insuring multiple vehicles under one convenient policy with significant discounts.',
-  image: 'https://www.amerusfinancial.com/images/family-with-multi-vehicle-insurance.jpg',
+  image: '/images/family-with-multi-vehicle-insurance.jpg',
   imageAlt: 'multi-vehicle auto insurance family coverage',
   cta: { href: '/contact', label: 'Get Multi-Car Quote' }
 }

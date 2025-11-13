@@ -7,7 +7,7 @@
         <ParagraphDescription>
           {{ IntroText.description }}
         </ParagraphDescription>
-        <img src="https://www.amerusfinancial.com/img/Not-Just-A-Website.jpg" />
+        <img src="/img/Not-Just-A-Website.jpg" />
       </div>
       <div class="p-4 sm:p-8">
         <div class="container mx-auto p-4">

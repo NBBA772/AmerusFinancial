@@ -85,7 +85,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Home Insurance Solutions & Coverage — Amerus Financial',
   description: 'Comprehensive home insurance solutions including homeowners, property protection, flood insurance, and liability coverage. Protect your most valuable asset.',
-  image: 'https://www.amerusfinancial.com/images/home-insurance.jpg',
+  image: '/images/home-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/home',
   type: 'website'
 })
@@ -97,13 +97,13 @@ useSeoMeta({
     'Comprehensive home insurance solutions including homeowners, property protection, flood insurance, and liability coverage. Protect your most valuable asset.',
   ogDescription:
     'Explore home insurance options including homeowners insurance, property protection, flood coverage, liability protection, and valuable items coverage.',
-  ogImage: 'https://www.amerusfinancial.com/images/home-insurance.jpg',
+  ogImage: '/images/home-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/home',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Home Insurance Solutions — Amerus',
   twitterDescription:
     'Explore home insurance options including homeowners insurance, property protection, flood coverage, liability protection, and valuable items coverage.',
-  twitterImage: 'https://www.amerusfinancial.com/images/home-insurance.jpg',
+  twitterImage: '/images/home-insurance.jpg',
   keywords: 'home insurance, homeowners insurance, property protection, flood insurance, liability coverage, valuable items coverage, home protection, property insurance'
 })
 
@@ -163,22 +163,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our insurance specialists for a personalized home insurance quote based on your property protection needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Plans',
     text: 'Review different home insurance options including homeowners, property protection, flood, and liability coverage plans.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the simple application form with your property and home information for your chosen plan.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your home insurance coverage will be activated and you can start protecting your property and belongings.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Home Insurance', 'Step-by-step guide to applying for home insurance coverage with Amerus Financial.', 'PT15M', '120.00')
 
@@ -267,7 +267,7 @@ const hero = {
   eyebrow: 'Insurance Services',
   title: 'Home Insurance Solutions',
   description: 'Protect your most valuable asset with comprehensive home insurance coverage. From basic homeowners protection to specialized flood insurance, secure your home and belongings.',
-  image: 'https://www.amerusfinancial.com/images/homeowners-insurance.jpg',
+  image: '/images/homeowners-insurance.jpg',
   imageAlt: 'home insurance coverage',
   cta: { href: '/contact', label: 'Get Home Insurance Quote' }
 }

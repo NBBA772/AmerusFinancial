@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Term Life Insurance Plans — Amerus Financial',
   description: 'Affordable term life insurance providing temporary coverage and financial protection for your family with flexible coverage amounts.',
-  image: 'https://www.amerusfinancial.com/images/term-life-insurance.jpg',
+  image: '/images/term-life-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/life/term-life',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Affordable term life insurance providing temporary coverage and financial protection for your family with flexible coverage amounts.',
   ogDescription:
     'Term life insurance plans offering affordable temporary coverage and financial protection for your family during specific time periods.',
-  ogImage: 'https://www.amerusfinancial.com/images/term-life-insurance.jpg',
+  ogImage: '/images/term-life-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/life/term-life',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Term Life Insurance Plans — Amerus',
   twitterDescription:
     'Term life insurance plans offering affordable temporary coverage and financial protection for your family during specific time periods.',
-  twitterImage: 'https://www.amerusfinancial.com/images/term-life-insurance.jpg',
+  twitterImage: '/images/term-life-insurance.jpg',
   keywords: 'term life insurance, affordable life insurance, temporary life coverage, family financial protection, life insurance quotes'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our term life insurance specialists for a personalized quote based on your age, health, coverage needs, and preferred term length.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Choose Term Length',
     text: 'Select the right term period for your situation - 10, 15, 20, or 30 years based on your financial obligations and family protection needs.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the term life insurance application with your personal information, health history, and undergo any required medical examinations.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your term life insurance policy will be activated and your beneficiaries will have the affordable protection they need.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Get Term Life Insurance', 'Step-by-step guide to securing affordable term life insurance coverage for your family with Amerus Financial.', 'PT15M', '30.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Term Life Insurance Coverage for Families',
   description: 'Maximum protection at affordable rates for a specified period, providing financial security for your loved ones when they need it most.',
-  image: 'https://www.amerusfinancial.com/images/happy-family-term-life-insurance.jpg',
+  image: '/images/happy-family-term-life-insurance.jpg',
   imageAlt: 'happy family term life insurance',
   cta: { href: '/contact', label: 'Explore Term Life Options' }
 }

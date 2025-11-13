@@ -4,7 +4,7 @@
       <div class="px-4 sm:px-8">
         <NuxtImg
           format="webp"
-          src="https://www.amerusfinancial.com/images/Group-Health-Insurance-Excerpt.jpg"
+          src="/images/Group-Health-Insurance-Excerpt.jpg"
           sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px"
           alt="Happy Kids"
           quality="80"

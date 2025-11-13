@@ -65,7 +65,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Comprehensive Auto Insurance Coverage — Amerus Financial',
   description: 'Protect your vehicle from theft, vandalism, and weather damage with comprehensive auto insurance coverage. Get competitive rates from Amerus.',
-  image: 'https://www.amerusfinancial.com/images/comprehensive-auto-coverage.jpg',
+  image: '/images/comprehensive-auto-coverage.jpg',
   url: 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage',
   type: 'website'
 })
@@ -77,13 +77,13 @@ useSeoMeta({
     'Protect your vehicle from theft, vandalism, and weather damage with comprehensive auto insurance coverage. Get competitive rates from Amerus.',
   ogDescription:
     'Comprehensive auto insurance covering theft, vandalism, weather damage, and other non-collision incidents for complete vehicle protection.',
-  ogImage: 'https://www.amerusfinancial.com/images/comprehensive-auto-coverage.jpg',
+  ogImage: '/images/comprehensive-auto-coverage.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Comprehensive Auto Coverage — Amerus',
   twitterDescription:
     'Comprehensive auto insurance covering theft, vandalism, weather damage, and other non-collision incidents for complete vehicle protection.',
-  twitterImage: 'https://www.amerusfinancial.com/images/comprehensive-auto-coverage.jpg',
+  twitterImage: '/images/comprehensive-auto-coverage.jpg',
   keywords: 'comprehensive auto insurance, comprehensive coverage, auto theft protection, vandalism coverage, weather damage insurance, comprehensive car insurance, vehicle protection, auto insurance coverage'
 })
 
@@ -143,22 +143,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Coverage Assessment',
     text: 'Evaluate your vehicle value and comprehensive coverage needs for protection against non-collision damage.',
-    image: 'https://www.amerusfinancial.com/images/coverage-assessment.jpg'
+    image: '/images/coverage-assessment.jpg'
   },
   {
     name: 'Deductible Selection',
     text: 'Choose your comprehensive deductible amount to balance monthly premiums with out-of-pocket costs.',
-    image: 'https://www.amerusfinancial.com/images/deductible-selection.jpg'
+    image: '/images/deductible-selection.jpg'
   },
   {
     name: 'Coverage Review',
     text: 'Review comprehensive coverage options including theft, vandalism, weather, and animal damage protection.',
-    image: 'https://www.amerusfinancial.com/images/comprehensive-review.jpg'
+    image: '/images/comprehensive-review.jpg'
   },
   {
     name: 'Policy Activation',
     text: 'Activate your comprehensive auto coverage for immediate protection against non-collision incidents.',
-    image: 'https://www.amerusfinancial.com/images/comprehensive-activate.jpg'
+    image: '/images/comprehensive-activate.jpg'
   }
 ], 'How to Get Comprehensive Auto Coverage', 'Step-by-step guide to getting comprehensive auto insurance coverage.', 'PT15M', '75.00')
 
@@ -247,7 +247,7 @@ const hero = {
   eyebrow: 'Auto Insurance',
   title: 'Comprehensive Auto Coverage',
   description: 'Protect your vehicle from theft, vandalism, weather damage, and other non-collision incidents with comprehensive coverage.',
-  image: 'https://www.amerusfinancial.com/images/tree-fell-on-car-comprehensive-auto-coverage.jpg',
+  image: '/images/tree-fell-on-car-comprehensive-auto-coverage.jpg',
   imageAlt: 'comprehensive auto insurance coverage',
   cta: { href: '/contact', label: 'Get Comprehensive Quote' }
 }

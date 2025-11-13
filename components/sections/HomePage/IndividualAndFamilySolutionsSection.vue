@@ -25,7 +25,7 @@
       <div class="px-4 sm:px-8">
         <NuxtImg
           format="webp"
-          src="https://www.amerusfinancial.com/images/FamilyAndIndividual.jpg"
+          src="/images/FamilyAndIndividual.jpg"
           sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px"
           alt="Bus Driver"
           quality="80"

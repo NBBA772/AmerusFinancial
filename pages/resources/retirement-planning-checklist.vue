@@ -26,7 +26,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/resources/retirement-planning-checklist'
 const pageTitle = 'Retirement Planning Checklist'
 const pageDescription = 'Complete retirement planning checklist: savings milestones, Medicare/Social Security timing, tax strategy, risk protection, and income planning.'
-const pageImage = 'https://www.amerusfinancial.com/images/man-doing-retirement-checklist.jpg'
+const pageImage = '/images/man-doing-retirement-checklist.jpg'
 
 useHead({
   title: pageTitle,

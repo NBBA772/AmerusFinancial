@@ -19,7 +19,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/about-us'
 const pageTitle = 'About Amerus Financial'
 const pageDescription = 'Learn about Amerus Financial—our mission, values, and team helping clients make confident insurance and financial decisions.'
-const pageImage = 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
+const pageImage = '/images/amerus-og-default.jpg'
 
 useHead({
   title: pageTitle,

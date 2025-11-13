@@ -3,7 +3,7 @@
     <div class="relative w-full h-72 md:h-96 flex items-center justify-center">
       <NuxtImg
         format="webp"
-        src="https://www.amerusfinancial.com/images/insurance-products-banner.jpg"
+        src="/images/insurance-products-banner.jpg"
         alt="Insurance Services Banner"
         quality="80"
         class="absolute inset-0 w-full h-full object-cover z-0"

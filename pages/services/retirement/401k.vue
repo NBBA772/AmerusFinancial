@@ -65,7 +65,7 @@ useEnhancedMetaTags({
   title: '401(k) Retirement Plans & Planning — Amerus Financial',
   description: 'Maximize your retirement savings with 401(k) plans featuring employer matching, tax advantages, and investment options. Expert retirement planning guidance from Amerus.',
   canonical: 'https://www.amerusfinancial.com/services/retirement/401k',
-  image: 'https://www.amerusfinancial.com/images/401k-retirement-planning.jpg',
+  image: '/images/401k-retirement-planning.jpg',
   keywords: '401k plans, retirement planning, employer matching, tax-deferred savings, retirement contributions, 401k rollover, retirement benefits, investment options, retirement guidance, financial planning'
 })
 
@@ -76,13 +76,13 @@ useSeoMeta({
     'Expert 401(k) retirement planning with employer matching and tax advantages. Get personalized guidance for your retirement goals.',
   ogDescription:
     'Discover 401(k) retirement plans with employer matching, tax-deferred growth, and professional investment guidance.',
-  ogImage: 'https://www.amerusfinancial.com/images/401k-retirement-planning.jpg',
+  ogImage: '/images/401k-retirement-planning.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/retirement/401k',
   twitterCard: 'summary_large_image',
   twitterTitle: '401(k) Retirement Plans & Investment Options — Amerus',
   twitterDescription:
     'Discover 401(k) retirement plans with employer matching, tax-deferred growth, and professional investment guidance.',
-  twitterImage: 'https://www.amerusfinancial.com/images/401k-retirement-planning.jpg',
+  twitterImage: '/images/401k-retirement-planning.jpg',
   keywords: '401k plans, retirement planning, employer matching, tax-deferred savings, retirement contributions, 401k rollover, retirement benefits, investment options, retirement guidance, financial planning'
 })
 
@@ -256,7 +256,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: '401(k) Retirement Plans',
   description: 'Building a secure financial future for you and your employees through tax-advantaged retirement savings plans.',
-  image: 'https://www.amerusfinancial.com/images/senior-woman-life-insurance.jpg',
+  image: '/images/senior-woman-life-insurance.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Schedule a Consultation' }
 }

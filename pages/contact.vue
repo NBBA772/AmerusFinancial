@@ -10,7 +10,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/contact'
 const pageTitle = 'Contact Amerus Financial — Get In Touch'
 const pageDescription = "Reach our team for quotes, coverage questions, or policy reviews. Call, email, or send a message — we typically respond within 1 business day."
-const pageImage = 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
+const pageImage = '/images/amerus-og-default.jpg'
 
 useHead({
   title: pageTitle,

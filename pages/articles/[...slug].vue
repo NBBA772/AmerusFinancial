@@ -6,7 +6,7 @@ const { data: article } = await useAsyncData('article', () => queryContent(route
 const pageUrl = `https://www.amerusfinancial.com${route.path}`
 const pageTitle = article.value?.title ? `${article.value.title} — Amerus Financial` : 'Article — Amerus Financial'
 const pageDescription = article.value?.description || 'Read this article from Amerus Financial'
-const pageImage = article.value?.img || 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
+const pageImage = article.value?.img || '/images/amerus-og-default.jpg'
 
 // Consolidated meta tags in single useHead
 useHead({

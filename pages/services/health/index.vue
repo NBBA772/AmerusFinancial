@@ -91,7 +91,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Health Insurance Plans & Coverage — Amerus Financial',
   description: 'Comprehensive health insurance solutions including individual, family, group, Medicare, dental and vision coverage. Find the right health plan for your needs.',
-  image: 'https://www.amerusfinancial.com/images/health-insurance.jpg',
+  image: '/images/health-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/health',
   type: 'website'
 })
@@ -103,13 +103,13 @@ useSeoMeta({
     'Comprehensive health insurance solutions including individual, family, group, Medicare, dental and vision coverage. Find the right health plan for your needs.',
   ogDescription:
     'Explore health insurance options including individual plans, family coverage, group health, Medicare supplements, dental and vision insurance.',
-  ogImage: 'https://www.amerusfinancial.com/images/health-insurance.jpg',
+  ogImage: '/images/health-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/health',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Health Insurance Solutions — Amerus',
   twitterDescription:
     'Explore health insurance options including individual plans, family coverage, group health, Medicare supplements, dental and vision insurance.',
-  twitterImage: 'https://www.amerusfinancial.com/images/health-insurance.jpg',
+  twitterImage: '/images/health-insurance.jpg',
   keywords: 'health insurance, medical coverage, individual health plans, family health insurance, group health, Medicare, dental insurance, vision coverage, health benefits'
 })
 
@@ -169,22 +169,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our insurance specialists for a personalized health insurance quote based on your coverage needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Plans',
     text: 'Review different health insurance options including individual, family, group, and Medicare coverage plans.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the simple application form with your personal and health information for your chosen plan.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your health insurance coverage will be activated and you can start using your benefits.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Health Insurance', 'Step-by-step guide to applying for health insurance coverage with Amerus Financial.', 'PT15M', '150.00')
 
@@ -273,7 +273,7 @@ const hero = {
   eyebrow: 'Insurance Services',
   title: 'Health Insurance Solutions',
   description: 'Comprehensive health insurance plans to protect you and your family. From individual coverage to Medicare supplements, find the right health insurance solution.',
-  image: 'https://www.amerusfinancial.com/images/healthcare-family.jpg',
+  image: '/images/healthcare-family.jpg',
   imageAlt: 'health insurance coverage',
   cta: { href: '/contact', label: 'Get Health Insurance Quote' }
 }

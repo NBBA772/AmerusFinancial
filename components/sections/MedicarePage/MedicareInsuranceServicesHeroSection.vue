@@ -4,7 +4,7 @@
       <div>
         <NuxtImg
           format="webp"
-          src="https://www.amerusfinancial.com/images/MedicareInsuranceServices.jpg"
+          src="/images/MedicareInsuranceServices.jpg"
           alt="Happy Kids"
           quality="80"
           sizes="sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px"

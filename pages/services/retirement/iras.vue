@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'IRA Retirement Planning — Amerus Financial',
   description: 'Comprehensive IRA retirement planning services including Traditional and Roth IRAs. Maximize your retirement savings with expert guidance and tax-advantaged strategies.',
-  image: 'https://www.amerusfinancial.com/images/ira-retirement-planning.jpg',
+  image: '/images/ira-retirement-planning.jpg',
   url: 'https://www.amerusfinancial.com/services/retirement/iras',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Expert IRA planning with Traditional & Roth options. Maximize retirement savings through tax-advantaged strategies & personalized guidance.',
   ogDescription:
     'Build your retirement wealth with Traditional and Roth IRA strategies, contribution limits guidance, and tax-efficient retirement planning solutions.',
-  ogImage: 'https://www.amerusfinancial.com/images/ira-retirement-planning.jpg',
+  ogImage: '/images/ira-retirement-planning.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/retirement/iras',
   twitterCard: 'summary_large_image',
   twitterTitle: 'IRA Investment & Retirement Strategies — Amerus',
   twitterDescription:
     'Build your retirement wealth with Traditional and Roth IRA strategies, contribution limits guidance, and tax-efficient retirement planning solutions.',
-  twitterImage: 'https://www.amerusfinancial.com/images/ira-retirement-planning.jpg',
+  twitterImage: '/images/ira-retirement-planning.jpg',
   keywords: 'IRA retirement planning, Traditional IRA, Roth IRA, retirement savings, IRA contributions, retirement investment, tax-advantaged retirement, IRA rollover, retirement strategy'
 })
 
@@ -148,22 +148,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Assess IRA Eligibility',
     text: 'Determine your eligibility for Traditional and Roth IRAs based on income limits, employment status, and tax situation.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Choose IRA Type',
     text: 'Compare Traditional and Roth IRA options to select the best IRA type for your retirement goals and tax strategy.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Open IRA Account',
     text: 'Complete the IRA application process and set up your Individual Retirement Account with appropriate investment options.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Fund and Manage',
     text: 'Make contributions to your IRA within annual limits and manage your retirement investments for long-term growth.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Set Up Your IRA', 'Step-by-step guide to opening and managing Individual Retirement Accounts with Amerus Financial.', 'PT20M', '350.00')
 
@@ -252,7 +252,7 @@ const hero = {
   eyebrow: 'Retirement Planning',
   title: 'Individual Retirement Accounts (IRAs)',
   description: 'Secure your financial future with tax-advantaged Individual Retirement Accounts that help you build wealth for retirement on your terms.',
-  image: 'https://www.amerusfinancial.com/images/individual-retirement-accounts-iras.jpg',
+  image: '/images/individual-retirement-accounts-iras.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Start Your Retirement Plan' }
 }

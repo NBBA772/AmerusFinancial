@@ -10,7 +10,7 @@ export const useOrganizationSchema = () => {
     url: 'https://www.amerusfinancial.com',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://www.amerusfinancial.com/images/logo.png',
+      url: '/images/logo.png',
       width: '300',
       height: '100'
     },

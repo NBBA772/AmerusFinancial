@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Uninsured Motorist Coverage — Amerus Financial',
   description: 'Protect yourself from uninsured and underinsured drivers with comprehensive uninsured motorist coverage. Get protection from Amerus.',
-  image: 'https://www.amerusfinancial.com/images/uninsured-motorist-coverage.jpg',
+  image: '/images/uninsured-motorist-coverage.jpg',
   url: 'https://www.amerusfinancial.com/services/auto/uninsured-motorist',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Protect yourself from uninsured and underinsured drivers with comprehensive uninsured motorist coverage. Get protection from Amerus.',
   ogDescription:
     'Uninsured motorist coverage protecting you when hit by drivers without insurance or insufficient coverage limits.',
-  ogImage: 'https://www.amerusfinancial.com/images/uninsured-motorist-coverage.jpg',
+  ogImage: '/images/uninsured-motorist-coverage.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/auto/uninsured-motorist',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Uninsured Motorist Coverage — Amerus',
   twitterDescription:
     'Uninsured motorist coverage protecting you when hit by drivers without insurance or insufficient coverage limits.',
-  twitterImage: 'https://www.amerusfinancial.com/images/uninsured-motorist-coverage.jpg',
+  twitterImage: '/images/uninsured-motorist-coverage.jpg',
   keywords: 'uninsured motorist coverage, underinsured motorist, hit and run protection, uninsured driver protection, auto insurance protection, motorist coverage'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Coverage Assessment',
     text: 'Evaluate your state requirements and determine the uninsured motorist coverage limits you need for protection.',
-    image: 'https://www.amerusfinancial.com/images/uninsured-assessment.jpg'
+    image: '/images/uninsured-assessment.jpg'
   },
   {
     name: 'Compare Options',
     text: 'Review uninsured and underinsured motorist coverage options including bodily injury and property damage limits.',
-    image: 'https://www.amerusfinancial.com/images/uninsured-compare.jpg'
+    image: '/images/uninsured-compare.jpg'
   },
   {
     name: 'Add to Policy',
     text: 'Add uninsured motorist coverage to your auto insurance policy with your selected coverage limits.',
-    image: 'https://www.amerusfinancial.com/images/uninsured-add-policy.jpg'
+    image: '/images/uninsured-add-policy.jpg'
   },
   {
     name: 'Activate Protection',
     text: 'Activate your uninsured motorist coverage for immediate protection against uninsured and underinsured drivers.',
-    image: 'https://www.amerusfinancial.com/images/uninsured-activate.jpg'
+    image: '/images/uninsured-activate.jpg'
   }
 ], 'How to Get Uninsured Motorist Coverage', 'Step-by-step guide to getting uninsured motorist protection for auto accidents.', 'PT15M', '40.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Individual Health Insurance',
   description: 'Personalized healthcare coverage designed specifically for your unique medical needs and budget.',
-  image: 'https://www.amerusfinancial.com/images/uninsured-motorist-in-car-accident.jpg',
+  image: '/images/uninsured-motorist-in-car-accident.jpg',
   imageAlt: 'uninsured motorist in car accident',
   cta: { href: '/contact', label: 'Get a Personalized Quote' }
 }

@@ -57,14 +57,14 @@
 <script setup>
 // Enhanced SEO using stable composables
 useEnhancedMetaTags()
-useResourceHints(['https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg'])
+useResourceHints(['/images/insured-cars-in-traffic.jpg'])
 usePerformanceMonitoring()
 
 // Enhanced social sharing
 useSocialMeta({
   title: 'Auto Insurance Coverage & Protection',
   description: 'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
-  image: 'https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg',
+  image: '/images/insured-cars-in-traffic.jpg',
   url: 'https://www.amerusfinancial.com/services/auto',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
   ogDescription:
     'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
-  ogImage: 'https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg',
+  ogImage: '/images/insured-cars-in-traffic.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/auto',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Auto Insurance Coverage — Amerus',
   twitterDescription:
     'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
-  twitterImage: 'https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg',
+  twitterImage: '/images/insured-cars-in-traffic.jpg',
   keywords: 'auto insurance, car insurance, vehicle insurance, liability coverage, collision coverage, comprehensive coverage, auto insurance quotes, vehicle protection, auto insurance rates'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Vehicle Information',
     text: 'Provide details about your vehicle including make, model, year, and current coverage to get an accurate auto insurance quote.',
-    image: 'https://www.amerusfinancial.com/images/vehicle-info.jpg'
+    image: '/images/vehicle-info.jpg'
   },
   {
     name: 'Coverage Selection',
     text: 'Choose your coverage levels for liability, collision, comprehensive, and additional protections based on your needs.',
-    image: 'https://www.amerusfinancial.com/images/coverage-selection.jpg'
+    image: '/images/coverage-selection.jpg'
   },
   {
     name: 'Review & Compare',
     text: 'Review different auto insurance options with various deductibles and coverage limits to find the best value.',
-    image: 'https://www.amerusfinancial.com/images/auto-compare.jpg'
+    image: '/images/auto-compare.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Complete your application and activate your auto insurance coverage with immediate protection for your vehicle.',
-    image: 'https://www.amerusfinancial.com/images/auto-activate.jpg'
+    image: '/images/auto-activate.jpg'
   }
 ], 'How to Get Auto Insurance', 'Step-by-step guide to getting auto insurance coverage with Amerus Financial.', 'PT20M', '100.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Auto Insurance',
   title: 'Auto Insurance Coverage',
   description: 'Comprehensive auto insurance protection for your vehicle with liability, collision, comprehensive, and specialized coverage options.',
-  image: 'https://www.amerusfinancial.com/images/insured-cars-in-traffic.jpg',
+  image: '/images/insured-cars-in-traffic.jpg',
   imageAlt: 'auto insurance coverage',
   cta: { href: '/contact', label: 'Get a Personalized Quote' }
 }

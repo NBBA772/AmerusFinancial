@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Liability Coverage Insurance — Amerus Financial',
   description: 'Comprehensive liability coverage insurance protecting you from legal claims and lawsuits. Get personal liability protection for your home and family.',
-  image: 'https://www.amerusfinancial.com/images/liability-coverage-insurance.jpg',
+  image: '/images/liability-coverage-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/home/liability-coverage',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Comprehensive liability coverage insurance protecting you from legal claims and lawsuits. Get personal liability protection for your home and family.',
   ogDescription:
     'Protect yourself from legal claims with comprehensive liability coverage insurance for your home and personal activities.',
-  ogImage: 'https://www.amerusfinancial.com/images/liability-coverage-insurance.jpg',
+  ogImage: '/images/liability-coverage-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/home/liability-coverage',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Liability Coverage & Protection — Amerus',
   twitterDescription:
     'Protect yourself from legal claims with comprehensive liability coverage insurance for your home and personal activities.',
-  twitterImage: 'https://www.amerusfinancial.com/images/liability-coverage-insurance.jpg',
+  twitterImage: '/images/liability-coverage-insurance.jpg',
   keywords: 'liability coverage, personal liability insurance, liability protection, legal liability coverage, home liability insurance, personal injury protection, lawsuit protection'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our insurance specialists for a personalized liability coverage quote based on your protection needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Plans',
     text: 'Review different liability coverage options including coverage limits, personal liability protection, and umbrella policies.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the simple application form with your personal and property information for liability coverage.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your liability coverage will be activated and you will be protected against legal claims and lawsuits.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Liability Coverage', 'Step-by-step guide to applying for liability coverage insurance with Amerus Financial.', 'PT15M', '40.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Liability Coverage Insurance & Legal Protection',
   description: 'Financial protection against lawsuits for injury or property damage that you or household members cause to others, including legal defense costs.',
-  image: 'https://www.amerusfinancial.com/images/liability-coverage-car-accident.jpg',
+  image: '/images/liability-coverage-car-accident.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Get Liability Protection' }
 }

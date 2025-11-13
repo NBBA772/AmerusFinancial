@@ -76,6 +76,7 @@ export default defineNuxtConfig({
       // sharp: {},
       // headers: {}
     },
+    domains: ['www.amerusfinancial.com'],
   },
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.amerusfinancial.com',

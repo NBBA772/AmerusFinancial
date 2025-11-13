@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Professional Liability Insurance (E&O) — Amerus Financial',
   description: 'Protect your professional practice from errors and omissions claims with comprehensive professional liability insurance coverage.',
-  image: 'https://www.amerusfinancial.com/images/professional-liability-insurance.jpg',
+  image: '/images/professional-liability-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/business/professional-liability',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Protect your professional practice from errors and omissions claims with comprehensive professional liability insurance coverage.',
   ogDescription:
     'Professional liability (E&O) insurance protecting professionals from claims of negligence, errors, and omissions in their services.',
-  ogImage: 'https://www.amerusfinancial.com/images/professional-liability-insurance.jpg',
+  ogImage: '/images/professional-liability-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/business/professional-liability',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Professional Liability Insurance — Amerus',
   twitterDescription:
     'Professional liability (E&O) insurance protecting professionals from claims of negligence, errors, and omissions in their services.',
-  twitterImage: 'https://www.amerusfinancial.com/images/professional-liability-insurance.jpg',
+  twitterImage: '/images/professional-liability-insurance.jpg',
   keywords: 'professional liability insurance, errors and omissions insurance, E&O insurance, professional indemnity, malpractice insurance, professional coverage'
 })
 
@@ -154,22 +154,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Assess Professional Risks',
     text: 'Evaluate your professional services and identify potential liability exposures specific to your industry.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Get Coverage Quote',
     text: 'Contact our business insurance specialists for a professional liability insurance quote tailored to your practice.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Submit Application',
     text: 'Complete the professional liability application with details about your services, revenue, and claims history.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Secure Protection',
     text: 'Once approved, your professional liability coverage protects against errors, omissions, and negligence claims.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Get Professional Liability Insurance', 'Step-by-step guide to securing professional liability (E&O) insurance coverage for your business.', 'PT20M', '200.00')
 
@@ -258,7 +258,7 @@ const hero = {
   eyebrow: 'Business Insurance',
   title: 'Professional Liability Insurance',
   description: 'Protect your professional services with comprehensive E&O coverage against negligence claims and service errors.',
-  image: 'https://www.amerusfinancial.com/images/professional-liability-insurance.jpg',
+  image: '/images/professional-liability-insurance.jpg',
   imageAlt: 'professional liability insurance',
   cta: { href: '/contact', label: 'Get E&O Quote' }
 }

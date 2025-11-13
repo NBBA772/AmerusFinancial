@@ -79,7 +79,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Retirement Planning Services — Amerus Financial',
   description: 'Comprehensive retirement planning with 401(k), IRAs, annuities, and pension strategies. Build a secure financial future with expert retirement guidance.',
-  image: 'https://www.amerusfinancial.com/images/retirement-planning.jpg',
+  image: '/images/retirement-planning.jpg',
   url: 'https://www.amerusfinancial.com/services/retirement',
   type: 'website'
 })
@@ -91,13 +91,13 @@ useSeoMeta({
     'Comprehensive retirement planning with 401(k), IRAs, annuities, and pension strategies. Build a secure financial future with expert retirement guidance.',
   ogDescription:
     'Explore retirement planning services including 401(k) management, IRA options, annuities, and comprehensive retirement income strategies.',
-  ogImage: 'https://www.amerusfinancial.com/images/retirement-planning.jpg',
+  ogImage: '/images/retirement-planning.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/retirement',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Retirement Planning & Financial Services — Amerus',
   twitterDescription:
     'Explore retirement planning services including 401(k) management, IRA options, annuities, and comprehensive retirement income strategies.',
-  twitterImage: 'https://www.amerusfinancial.com/images/retirement-planning.jpg',
+  twitterImage: '/images/retirement-planning.jpg',
   keywords: 'retirement planning, 401k management, IRA services, annuities, pension planning, retirement income, financial planning, retirement strategies, retirement savings, retirement advisors'
 })
 
@@ -157,22 +157,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Assess Retirement Goals',
     text: 'Evaluate your retirement timeline, income needs, and current savings to develop a comprehensive retirement planning strategy.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Review Retirement Options',
     text: 'Compare different retirement planning options including 401(k), IRAs, annuities, and pension optimization strategies.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Develop Strategy',
     text: 'Create a personalized retirement plan with investment allocations, contribution strategies, and income distribution planning.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Implement & Monitor',
     text: 'Execute your retirement plan and regularly review performance to ensure you stay on track for your retirement goals.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Plan for Retirement', 'Step-by-step guide to comprehensive retirement planning with Amerus Financial.', 'PT30M', '500.00')
 
@@ -262,7 +262,7 @@ const hero = {
   eyebrow: 'Financial Planning',
   title: 'Retirement Planning Solutions',
   description: 'Build a secure financial future with comprehensive retirement planning services. From IRAs to annuities, create the retirement income strategy that works for you.',
-  image: 'https://www.amerusfinancial.com/images/retirement-calculator.jpg',
+  image: '/images/retirement-calculator.jpg',
   imageAlt: 'retirement planning services',
   cta: { href: '/contact', label: 'Start Retirement Planning' }
 }

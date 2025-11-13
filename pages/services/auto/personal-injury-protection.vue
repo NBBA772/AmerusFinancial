@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Personal Injury Protection (PIP) Insurance — Amerus Financial',
   description: 'Personal injury protection insurance covers medical expenses and lost wages after auto accidents, regardless of fault. Get PIP coverage from Amerus.',
-  image: 'https://www.amerusfinancial.com/images/personal-injury-protection.jpg',
+  image: '/images/personal-injury-protection.jpg',
   url: 'https://www.amerusfinancial.com/services/auto/personal-injury-protection',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Personal injury protection insurance covers medical expenses and lost wages after auto accidents, regardless of fault. Get PIP coverage from Amerus.',
   ogDescription:
     'PIP insurance providing no-fault medical coverage, lost wage compensation, and essential services after auto accidents.',
-  ogImage: 'https://www.amerusfinancial.com/images/personal-injury-protection.jpg',
+  ogImage: '/images/personal-injury-protection.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/auto/personal-injury-protection',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Personal Injury Protection Insurance — Amerus',
   twitterDescription:
     'PIP insurance providing no-fault medical coverage, lost wage compensation, and essential services after auto accidents.',
-  twitterImage: 'https://www.amerusfinancial.com/images/personal-injury-protection.jpg',
+  twitterImage: '/images/personal-injury-protection.jpg',
   keywords: 'personal injury protection, PIP insurance, no fault insurance, medical coverage auto, lost wages coverage, accident medical bills, auto injury insurance'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Coverage Assessment',
     text: 'Evaluate your state requirements and determine the PIP coverage limits you need for medical and wage protection.',
-    image: 'https://www.amerusfinancial.com/images/pip-assessment.jpg'
+    image: '/images/pip-assessment.jpg'
   },
   {
     name: 'Compare Options',
     text: 'Review different PIP coverage options including medical limits, lost wage percentages, and essential services coverage.',
-    image: 'https://www.amerusfinancial.com/images/pip-compare.jpg'
+    image: '/images/pip-compare.jpg'
   },
   {
     name: 'Add to Policy',
     text: 'Add personal injury protection to your auto insurance policy with your selected coverage limits and deductibles.',
-    image: 'https://www.amerusfinancial.com/images/pip-add-policy.jpg'
+    image: '/images/pip-add-policy.jpg'
   },
   {
     name: 'Activate Protection',
     text: 'Activate your PIP coverage for immediate no-fault medical and wage protection after auto accidents.',
-    image: 'https://www.amerusfinancial.com/images/pip-activate.jpg'
+    image: '/images/pip-activate.jpg'
   }
 ], 'How to Get Personal Injury Protection', 'Step-by-step guide to getting PIP insurance coverage for auto accidents.', 'PT15M', '50.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'PIP Insurance & Medical Coverage',
   description: 'Personalized healthcare coverage designed specifically for your unique medical needs and budget.',
-  image: 'https://www.amerusfinancial.com/images/car-accident-personal-injury-protection.jpg',
+  image: '/images/car-accident-personal-injury-protection.jpg',
   imageAlt: 'car accident personal injury protection',
   cta: { href: '/contact', label: 'Get a Personalized Quote' }
 }

@@ -16,7 +16,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/retirement'
 const pageTitle = 'Retirement Planning'
 const pageDescription = 'Plan for retirement with savings milestones, Social Security and Medicare timing, tax strategies, risk protection, and lifetime income planning.'
-const pageImage = 'https://www.amerusfinancial.com/images/seniors-planning-retirement.jpg'
+const pageImage = '/images/seniors-planning-retirement.jpg'
 
 useHead({
     title: pageTitle,

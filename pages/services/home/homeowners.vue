@@ -89,7 +89,7 @@ usePerformanceMonitoring()
 useEnhancedMetaTags({
   title: 'Homeowners Insurance Coverage — Amerus Financial',
   description: 'Comprehensive homeowners insurance protecting your home, belongings, and family from unexpected events. Get affordable coverage with excellent customer service.',
-  image: 'https://www.amerusfinancial.com/images/homeowners-insurance.jpg',
+  image: '/images/homeowners-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/home/homeowners',
 })
 
@@ -100,13 +100,13 @@ useSeoMeta({
     'Comprehensive homeowners insurance protecting your home, belongings, and family from unexpected events. Get affordable coverage with excellent customer service.',
   ogDescription:
     'Protect your home and family with comprehensive homeowners insurance covering dwelling, personal property, and liability protection.',
-  ogImage: 'https://www.amerusfinancial.com/images/homeowners-insurance.jpg',
+  ogImage: '/images/homeowners-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/home/homeowners',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Homeowners Insurance Protection — Amerus',
   twitterDescription:
     'Protect your home and family with comprehensive homeowners insurance covering dwelling, personal property, and liability protection.',
-  twitterImage: 'https://www.amerusfinancial.com/images/homeowners-insurance.jpg',
+  twitterImage: '/images/homeowners-insurance.jpg',
   keywords: 'homeowners insurance, home insurance, dwelling coverage, personal property insurance, liability protection, home insurance quotes, property insurance, home protection'
 })
 
@@ -270,7 +270,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Homeowners Insurance',
   description: 'Comprehensive protection for your home and belongings, safeguarding your most valuable asset against disasters, theft, and liability claims.',
-  image: 'https://www.amerusfinancial.com/images/homeowners-insurance.jpg',
+  image: '/images/homeowners-insurance.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Get a Homeowners Quote' }
 }

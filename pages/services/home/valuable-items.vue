@@ -63,7 +63,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Valuable Items Insurance — Amerus Financial',
   description: 'Specialized valuable items insurance protecting jewelry, art, collectibles, and high-value personal property with comprehensive coverage and appraisal support.',
-  image: 'https://www.amerusfinancial.com/images/valuable-items-insurance.jpg',
+  image: '/images/valuable-items-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/home/valuable-items',
   type: 'website'
 })
@@ -75,13 +75,13 @@ useSeoMeta({
     'Specialized valuable items insurance protecting jewelry, art, collectibles, and high-value personal property with comprehensive coverage and appraisal support.',
   ogDescription:
     'Protect your valuable possessions with specialized insurance coverage for jewelry, art, collectibles, and high-value items that exceed standard homeowners limits.',
-  ogImage: 'https://www.amerusfinancial.com/images/valuable-items-insurance.jpg',
+  ogImage: '/images/valuable-items-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/home/valuable-items',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Valuable Items & Personal Property Coverage — Amerus',
   twitterDescription:
     'Protect your valuable possessions with specialized insurance coverage for jewelry, art, collectibles, and high-value items that exceed standard homeowners limits.',
-  twitterImage: 'https://www.amerusfinancial.com/images/valuable-items-insurance.jpg',
+  twitterImage: '/images/valuable-items-insurance.jpg',
   keywords: 'valuable items insurance, jewelry insurance, art insurance, collectibles coverage, personal property insurance, high-value items, scheduled property, appraisal coverage, antiques insurance'
 })
 
@@ -141,22 +141,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our insurance specialists for a personalized valuable items insurance quote based on your high-value possessions and collections.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Appraise Items',
     text: 'Get professional appraisals for your valuable items to establish proper coverage amounts and replacement values.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Schedule Coverage',
     text: 'Complete the application with detailed information about your valuable items including descriptions, values, and photos.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Protection',
     text: 'Once approved, your valuable items coverage will be activated and your possessions will be protected worldwide.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Insure Your Valuable Items', 'Step-by-step guide to getting valuable items insurance coverage with Amerus Financial.', 'PT20M', '45.00')
 
@@ -245,7 +245,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Valuable Items Coverage',
   description: 'Specialized protection for high-value possessions that exceed standard homeowners insurance limits, including jewelry, art, collectibles, and electronics.',
-  image: 'https://www.amerusfinancial.com/images/valuable-items-coverage-jewelry-box.jpg',
+  image: '/images/valuable-items-coverage-jewelry-box.jpg',
   imageAlt: 'jewelry box with valuable items',
   cta: { href: '/contact', label: 'Protect Your Valuables' }
 }

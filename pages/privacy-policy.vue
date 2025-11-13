@@ -215,7 +215,7 @@ usePerformanceMonitoring()
 const pageUrl = 'https://www.amerusfinancial.com/privacy-policy'
 const pageTitle = 'Privacy Policy — Amerus Financial'
 const pageDescription = 'Learn how Amerus Financial collects, uses, protects, and shares personal information including contact, billing, and usage data across our services.'
-const pageImage = 'https://www.amerusfinancial.com/images/amerus-og-default.jpg'
+const pageImage = '/images/amerus-og-default.jpg'
 
 useHead({
   title: pageTitle,

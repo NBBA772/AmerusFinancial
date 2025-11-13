@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Medicare Insurance Plans & Supplements — Amerus Financial',
   description: 'Navigate Medicare with confidence. Find Medicare Advantage, Supplement, and Part D prescription drug plans with expert guidance.',
-  image: 'https://www.amerusfinancial.com/images/medicare-insurance.jpg',
+  image: '/images/medicare-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/health/medicare',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Navigate Medicare with confidence. Find Medicare Advantage, Supplement, and Part D prescription drug plans with expert guidance.',
   ogDescription:
     'Medicare insurance plans including Medicare Advantage, Medicare Supplement (Medigap), and Part D prescription drug coverage for seniors.',
-  ogImage: 'https://www.amerusfinancial.com/images/medicare-insurance.jpg',
+  ogImage: '/images/medicare-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/health/medicare',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Medicare Insurance Plans & Supplements — Amerus',
   twitterDescription:
     'Medicare insurance plans including Medicare Advantage, Medicare Supplement (Medigap), and Part D prescription drug coverage for seniors.',
-  twitterImage: 'https://www.amerusfinancial.com/images/medicare-insurance.jpg',
+  twitterImage: '/images/medicare-insurance.jpg',
   keywords: 'medicare insurance, medicare advantage, medicare supplement, medigap, part D, prescription drug plans, senior health insurance, medicare guidance'
 })
 
@@ -154,22 +154,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Understand Medicare Basics',
     text: 'Learn about Medicare Parts A, B, C, and D, and determine which coverage options best meet your healthcare needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Medicare Plans',
     text: 'Review Medicare Advantage, Medicare Supplement, and Part D plans available in your area with our specialists.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Enrollment',
     text: 'Enroll in your chosen Medicare plan during your enrollment period with guided assistance through the process.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Medicare Benefits',
     text: 'Once enrolled, your Medicare coverage begins and you can start using your healthcare benefits and prescription drug coverage.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Enroll in Medicare', 'Step-by-step guide to understanding and enrolling in Medicare insurance coverage.', 'PT30M', '150.00')
 
@@ -265,7 +265,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Medicare Insurance Plans & Supplements',
   description: 'Expert guidance for navigating your Medicare options with personalized support for your healthcare needs.',
-  image: 'https://www.amerusfinancial.com/images/medicare-insurance.jpg',
+  image: '/images/medicare-insurance.jpg',
   imageAlt: 'dental insurance',
   cta: { href: '/contact', label: 'Contact a Medicare Specialist' }
 }

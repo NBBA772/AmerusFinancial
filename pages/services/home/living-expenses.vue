@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Additional Living Expenses Coverage — Amerus Financial',
   description: 'Financial protection for temporary housing and extra costs when your home becomes uninhabitable. Get coverage for hotel costs, meals, and displacement expenses.',
-  image: 'https://www.amerusfinancial.com/images/additional-living-expenses.jpg',
+  image: '/images/additional-living-expenses.jpg',
   url: 'https://www.amerusfinancial.com/services/home/living-expenses',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Financial protection for temporary housing and extra costs when your home becomes uninhabitable. Get coverage for hotel costs, meals, and displacement expenses.',
   ogDescription:
     'Additional living expenses coverage provides financial protection for temporary housing, meals, and other costs when your home is uninhabitable.',
-  ogImage: 'https://www.amerusfinancial.com/images/additional-living-expenses.jpg',
+  ogImage: '/images/additional-living-expenses.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/home/living-expenses',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Additional Living Expenses Coverage — Amerus',
   twitterDescription:
     'Additional living expenses coverage provides financial protection for temporary housing, meals, and other costs when your home is uninhabitable.',
-  twitterImage: 'https://www.amerusfinancial.com/images/additional-living-expenses.jpg',
+  twitterImage: '/images/additional-living-expenses.jpg',
   keywords: 'additional living expenses, ALE coverage, temporary housing insurance, displacement coverage, hotel expense coverage, living expense protection'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our insurance specialists for a personalized additional living expenses coverage quote based on your home value.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Plans',
     text: 'Review different ALE coverage options including coverage limits, duration, and what living expenses are covered.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the simple application form with your home and family information for living expenses coverage.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your additional living expenses coverage will be activated to protect against displacement costs.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Additional Living Expenses Coverage', 'Step-by-step guide to applying for additional living expenses coverage with Amerus Financial.', 'PT15M', '35.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Additional Living Expenses Coverage',
   description: 'Financial protection for temporary housing and extra costs when your home becomes uninhabitable due to a covered loss, helping you maintain your standard of living.',
-  image: 'https://www.amerusfinancial.com/images/additional-living-expenses-coverage-motel-room.jpg',
+  image: '/images/additional-living-expenses-coverage-motel-room.jpg',
   imageAlt: 'senior woman life insurance',
   cta: { href: '/contact', label: 'Explore Living Expenses Coverage' }
 }

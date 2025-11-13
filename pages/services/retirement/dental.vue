@@ -63,7 +63,7 @@ const pageUrl = 'https://www.amerusfinancial.com/services/health/dental'
 const pageTitle = 'Dental Insurance & Dental Plans — Amerus Financial'
 // Shortened meta description (~155 chars)
 const pageDescription = 'Affordable dental insurance covering preventive care, fillings, crowns, root canals & orthodontics. 15-minute consultation to compare plans.'
-const pageImage = 'https://www.amerusfinancial.com/images/dental-insurance.jpg'
+const pageImage = '/images/dental-insurance.jpg'
 
 useHead({
   title: pageTitle,
@@ -134,22 +134,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our insurance specialists for a personalized dental insurance quote based on your needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Plans',
     text: 'Review different dental insurance options including coverage levels, deductibles, and network dentists.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the simple application form with your personal and health information.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your dental insurance coverage will be activated and you can start using benefits.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Dental Insurance', 'Step-by-step guide to applying for dental insurance coverage with Amerus Financial.', 'PT15M', '25.00')
 
@@ -238,7 +238,7 @@ const hero = {
   eyebrow: 'Health Insurance',
   title: 'Dental Solutions',
   description: 'Comprehensive coverage for your oral health needs, from routine cleanings to major procedures.',
-  image: 'https://www.amerusfinancial.com/images/dental-insurance.jpg',
+  image: '/images/dental-insurance.jpg',
   imageAlt: 'dental insurance',
   cta: { href: '/contact', label: 'Find Dental Coverage' }
 }

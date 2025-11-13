@@ -91,7 +91,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Life Insurance Solutions — Amerus Financial',
   description: 'Secure your family\'s financial future with comprehensive life insurance coverage. From term to permanent life insurance, find the protection that fits your needs.',
-  image: 'https://www.amerusfinancial.com/images/life-insurance.jpg',
+  image: '/images/life-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/life',
   type: 'website'
 })
@@ -103,13 +103,13 @@ useSeoMeta({
     'Find comprehensive life insurance coverage starting at $50/month. Compare term, whole & universal life options for your family\'s protection.',
   ogDescription:
     'Explore comprehensive life insurance options including term life, whole life, universal life, and final expense coverage to protect your family\'s financial future.',
-  ogImage: 'https://www.amerusfinancial.com/images/life-insurance.jpg',
+  ogImage: '/images/life-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/life',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Life Insurance Coverage & Protection — Amerus',
   twitterDescription:
     'Explore comprehensive life insurance options including term life, whole life, universal life, and final expense coverage to protect your family\'s financial future.',
-  twitterImage: 'https://www.amerusfinancial.com/images/life-insurance.jpg',
+  twitterImage: '/images/life-insurance.jpg',
   keywords: 'life insurance, term life insurance, whole life insurance, universal life insurance, final expense insurance, life insurance quotes, family financial protection, life insurance coverage'
 })
 
@@ -169,22 +169,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Get a Quote',
     text: 'Contact our life insurance specialists for a personalized life insurance quote based on your age, health, and coverage needs.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Compare Options',
     text: 'Review different life insurance types including term, whole, and universal life insurance to find the best coverage for your family.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Complete Application',
     text: 'Fill out the life insurance application with your personal and health information, including any required medical exams.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Activate Coverage',
     text: 'Once approved, your life insurance policy will be activated and your beneficiaries will have the financial protection they need.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Apply for Life Insurance', 'Step-by-step guide to applying for life insurance coverage with Amerus Financial.', 'PT20M', '50.00')
 
@@ -273,7 +273,7 @@ const hero = {
   eyebrow: 'Insurance Services',
   title: 'Life Insurance Solutions',
   description: 'Secure your family\'s financial future with comprehensive life insurance coverage. From term to permanent life insurance, find the protection that fits your needs.',
-  image: 'https://www.amerusfinancial.com/images/happy-family-term-life-insurance.jpg',
+  image: '/images/happy-family-term-life-insurance.jpg',
   imageAlt: 'life insurance coverage',
   cta: { href: '/contact', label: 'Get Life Insurance Quote' }
 }

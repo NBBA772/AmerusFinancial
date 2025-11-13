@@ -148,22 +148,22 @@ export const serviceTemplates = {
       {
         name: 'Determine Coverage Needs',
         text: 'Calculate how much term life insurance you need based on income, debts, and family expenses.',
-        image: 'https://www.amerusfinancial.com/images/term-life-step-1.jpg'
+        image: '/images/term-life-step-1.jpg'
       },
       {
         name: 'Choose Term Length',
         text: 'Select the appropriate term length (10, 20, or 30 years) based on your financial obligations.',
-        image: 'https://www.amerusfinancial.com/images/term-life-step-2.jpg'
+        image: '/images/term-life-step-2.jpg'
       },
       {
         name: 'Complete Application',
         text: 'Fill out the application with health and lifestyle information, may require medical exam.',
-        image: 'https://www.amerusfinancial.com/images/term-life-step-3.jpg'
+        image: '/images/term-life-step-3.jpg'
       },
       {
         name: 'Policy Activation',
         text: 'Once approved, your term life insurance policy will be issued and coverage begins.',
-        image: 'https://www.amerusfinancial.com/images/term-life-step-4.jpg'
+        image: '/images/term-life-step-4.jpg'
       }
     ]
   }

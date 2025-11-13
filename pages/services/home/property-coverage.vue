@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useEnhancedMetaTags({
   title: 'Property Coverage Insurance — Amerus Financial',
   description: 'Comprehensive property coverage insurance protecting your home structure and belongings from fire, theft, vandalism, and natural disasters.',
-  image: 'https://www.amerusfinancial.com/images/property-coverage-insurance.jpg',
+  image: '/images/property-coverage-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/home/property-coverage',
 })
 
@@ -75,13 +75,13 @@ useSeoMeta({
     'Comprehensive property coverage insurance protecting your home structure and belongings from fire, theft, vandalism, and natural disasters.',
   ogDescription:
     'Secure property coverage insurance for your home and belongings with comprehensive protection against damage and loss.',
-  ogImage: 'https://www.amerusfinancial.com/images/property-coverage-insurance.jpg',
+  ogImage: '/images/property-coverage-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/home/property-coverage',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Property Coverage & Protection — Amerus',
   twitterDescription:
     'Secure property coverage insurance for your home and belongings with comprehensive protection against damage and loss.',
-  twitterImage: 'https://www.amerusfinancial.com/images/property-coverage-insurance.jpg',
+  twitterImage: '/images/property-coverage-insurance.jpg',
   keywords: 'property coverage, home property insurance, dwelling coverage, personal property protection, property damage insurance, home contents insurance, property insurance coverage'
 })
 
@@ -251,7 +251,7 @@ const hero = {
   eyebrow: 'Home Insurance',
   title: 'Property Coverage Insurance for Home & Belongings',
   description: 'Comprehensive protection for your home\'s structure and personal belongings against a wide range of perils, ensuring you\'re covered for unexpected damages and losses.',
-  image: 'https://www.amerusfinancial.com/images/fire-damage-property-coverage.jpg',
+  image: '/images/fire-damage-property-coverage.jpg',
   imageAlt: 'fire damage to property',
   cta: { href: '/contact', label: 'Get Property Coverage' }
 }

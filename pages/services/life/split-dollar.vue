@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'Split Dollar Life Insurance — Amerus Financial',
   description: 'Create a strategic partnership where both employer and employee share the benefits and costs of a life insurance policy as part of an executive benefit strategy.',
-  image: 'https://www.amerusfinancial.com/images/split-dollar-insurance.jpg',
+  image: '/images/split-dollar-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/life/split-dollar',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Expert split dollar life insurance solutions sharing costs between employer & employee. Strategic executive benefits with tax advantages.',
   ogDescription:
     'Discover split dollar life insurance arrangements that allow employers and executives to share premium costs and benefits for strategic executive compensation and retention.',
-  ogImage: 'https://www.amerusfinancial.com/images/split-dollar-insurance.jpg',
+  ogImage: '/images/split-dollar-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/life/split-dollar',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Executive Split Dollar Life Insurance — Amerus',
   twitterDescription:
     'Discover split dollar life insurance arrangements that allow employers and executives to share premium costs and benefits for strategic executive compensation and retention.',
-  twitterImage: 'https://www.amerusfinancial.com/images/split-dollar-insurance.jpg',
+  twitterImage: '/images/split-dollar-insurance.jpg',
   keywords: 'split dollar life insurance, executive benefits, employer shared premiums, executive compensation, split dollar arrangements, executive retention, business life insurance, executive life insurance'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Assess Executive Needs',
     text: 'Work with our specialists to evaluate your executive benefit objectives and determine if split dollar life insurance aligns with your compensation strategy.',
-    image: 'https://www.amerusfinancial.com/images/step-1-quote.jpg'
+    image: '/images/step-1-quote.jpg'
   },
   {
     name: 'Design Agreement',
     text: 'Create a customized split dollar arrangement specifying premium sharing, benefit allocation, and agreement terms between employer and executive.',
-    image: 'https://www.amerusfinancial.com/images/step-2-compare.jpg'
+    image: '/images/step-2-compare.jpg'
   },
   {
     name: 'Structure Policy',
     text: 'Establish the life insurance policy with appropriate ownership structure, whether endorsement method or collateral assignment approach.',
-    image: 'https://www.amerusfinancial.com/images/step-3-apply.jpg'
+    image: '/images/step-3-apply.jpg'
   },
   {
     name: 'Implement Program',
     text: 'Once approved, your split dollar life insurance arrangement will be activated providing executive benefits while sharing costs between parties.',
-    image: 'https://www.amerusfinancial.com/images/step-4-activate.jpg'
+    image: '/images/step-4-activate.jpg'
   }
 ], 'How to Implement Split Dollar Life Insurance', 'Step-by-step guide to establishing split dollar life insurance arrangements for executive benefits with Amerus Financial.', 'PT30M', '200.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Life Insurance',
   title: 'Split Dollar Life Insurance',
   description: 'Create a strategic partnership where both employer and employee share the benefits and costs of a life insurance policy as part of an executive benefit strategy.',
-  image: 'https://www.amerusfinancial.com/images/employer-employee-split-dollar.jpg',
+  image: '/images/employer-employee-split-dollar.jpg',
   imageAlt: 'employer employee split dollar life insurance',
   cta: { href: '/contact', label: 'Discuss Split Dollar Options' }
 }

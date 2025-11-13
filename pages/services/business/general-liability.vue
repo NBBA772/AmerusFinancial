@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useSocialMeta({
   title: 'General Liability Insurance for Business — Amerus Financial',
   description: 'Protect your business from lawsuits and claims with comprehensive general liability insurance. Get coverage for bodily injury, property damage, and more.',
-  image: 'https://www.amerusfinancial.com/images/general-liability-insurance.jpg',
+  image: '/images/general-liability-insurance.jpg',
   url: 'https://www.amerusfinancial.com/services/business/general-liability',
   type: 'website'
 })
@@ -76,13 +76,13 @@ useSeoMeta({
     'Protect your business from lawsuits and claims with comprehensive general liability insurance. Get coverage for bodily injury, property damage, and more.',
   ogDescription:
     'Business general liability insurance covering bodily injury, property damage, personal injury, and advertising injury claims against your business.',
-  ogImage: 'https://www.amerusfinancial.com/images/general-liability-insurance.jpg',
+  ogImage: '/images/general-liability-insurance.jpg',
   ogUrl: 'https://www.amerusfinancial.com/services/business/general-liability',
   twitterCard: 'summary_large_image',
   twitterTitle: 'General Liability Insurance — Amerus',
   twitterDescription:
     'Business general liability insurance covering bodily injury, property damage, personal injury, and advertising injury claims against your business.',
-  twitterImage: 'https://www.amerusfinancial.com/images/general-liability-insurance.jpg',
+  twitterImage: '/images/general-liability-insurance.jpg',
   keywords: 'general liability insurance, business liability, commercial liability, business insurance, liability coverage, bodily injury coverage, property damage insurance, business protection'
 })
 
@@ -142,22 +142,22 @@ const howToSteps = useHowToSchema([
   {
     name: 'Business Risk Assessment',
     text: 'Evaluate your business operations and identify potential liability risks to determine appropriate coverage needs.',
-    image: 'https://www.amerusfinancial.com/images/business-risk-assessment.jpg'
+    image: '/images/business-risk-assessment.jpg'
   },
   {
     name: 'Coverage Selection',
     text: 'Choose general liability coverage limits for bodily injury, property damage, and personal injury protection.',
-    image: 'https://www.amerusfinancial.com/images/liability-coverage-selection.jpg'
+    image: '/images/liability-coverage-selection.jpg'
   },
   {
     name: 'Policy Review',
     text: 'Review your general liability policy terms, exclusions, and additional coverage options with our specialists.',
-    image: 'https://www.amerusfinancial.com/images/liability-policy-review.jpg'
+    image: '/images/liability-policy-review.jpg'
   },
   {
     name: 'Coverage Activation',
     text: 'Activate your general liability insurance for immediate protection against third-party claims and lawsuits.',
-    image: 'https://www.amerusfinancial.com/images/liability-activation.jpg'
+    image: '/images/liability-activation.jpg'
   }
 ], 'How to Get General Liability Insurance', 'Step-by-step guide to getting general liability insurance for your business.', 'PT20M', '150.00')
 
@@ -246,7 +246,7 @@ const hero = {
   eyebrow: 'Business Insurance',
   title: 'General Liability Insurance',
   description: 'Essential protection for your business against third-party claims of bodily injury, property damage, and personal injury.',
-  image: 'https://www.amerusfinancial.com/images/general-liability-insurance-slip-and-fall.jpg',
+  image: '/images/general-liability-insurance-slip-and-fall.jpg',
   imageAlt: 'slip and fall accident at a business',
   cta: { href: '/contact', label: 'Get a Personalized Quote' }
 }

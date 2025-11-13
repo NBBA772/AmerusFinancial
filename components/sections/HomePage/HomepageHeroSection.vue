@@ -7,7 +7,7 @@
         sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:700px"
         quality="80"
         loading="lazy"
-        src="https://www.amerusfinancial.com/images/aged-couple-of-pensioners-talking-with-employee.jpg"
+        src="/images/aged-couple-of-pensioners-talking-with-employee.jpg"
         alt="Background"
         class="w-full h-full object-cover opacity-40"
       />
