@@ -16,9 +16,11 @@ export default defineEventHandler(async (event) => {
 
     // Normalize date to ISO 8601 for sitemap
     const rawDate = (article as any).date || (article as any).updatedAt
-  const parsed = rawDate ? new Date(rawDate) : new Date()
-  // Always pass ISO 8601 string for sitemap lastmod (W3C Datetime)
-  const lastmod = isNaN(parsed.getTime()) ? new Date().toISOString() : parsed.toISOString()
+    const parsed = rawDate ? new Date(rawDate) : new Date()
+    // Format as YYYY-MM-DD only (W3C Datetime date form)
+    const lastmod = isNaN(parsed.getTime())
+      ? new Date().toISOString().slice(0, 10)
+      : parsed.toISOString().slice(0, 10)
 
     return {
       loc: `/articles/${article.slug}`,
@@ -29,16 +31,16 @@ export default defineEventHandler(async (event) => {
   }).filter(Boolean) // Remove any null entries
 
   // Add your static routes
-  const nowIso = new Date().toISOString()
+  const nowIsoDate = new Date().toISOString().slice(0, 10)
   const staticUrls = [
-    { loc: '/', lastmod: nowIso, changefreq: 'daily', priority: 1.0 },
-    { loc: '/about-us', lastmod: nowIso, changefreq: 'monthly', priority: 0.8 },
-    { loc: '/contact', lastmod: nowIso, changefreq: 'monthly', priority: 0.8 },
-    { loc: '/services/health', lastmod: nowIso, changefreq: 'weekly', priority: 0.9 },
-    { loc: '/services/life', lastmod: nowIso, changefreq: 'weekly', priority: 0.9 },
-    { loc: '/services/retirement', lastmod: nowIso, changefreq: 'weekly', priority: 0.9 },
-    { loc: '/services/business', lastmod: nowIso, changefreq: 'weekly', priority: 0.9 },
-    { loc: '/articles/overview', lastmod: nowIso, changefreq: 'daily', priority: 0.9 }
+    { loc: '/', lastmod: nowIsoDate, changefreq: 'daily', priority: 1.0 },
+    { loc: '/about-us', lastmod: nowIsoDate, changefreq: 'monthly', priority: 0.8 },
+    { loc: '/contact', lastmod: nowIsoDate, changefreq: 'monthly', priority: 0.8 },
+    { loc: '/services/health', lastmod: nowIsoDate, changefreq: 'weekly', priority: 0.9 },
+    { loc: '/services/life', lastmod: nowIsoDate, changefreq: 'weekly', priority: 0.9 },
+    { loc: '/services/retirement', lastmod: nowIsoDate, changefreq: 'weekly', priority: 0.9 },
+    { loc: '/services/business', lastmod: nowIsoDate, changefreq: 'weekly', priority: 0.9 },
+    { loc: '/articles/overview', lastmod: nowIsoDate, changefreq: 'daily', priority: 0.9 }
   ]
 
   // Combine and return all URLs

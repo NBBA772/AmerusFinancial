@@ -16,7 +16,9 @@ export default defineNitroPlugin(async (nitroApp: any) => {
         // Normalize date to ISO 8601, fallback to now if invalid
         const rawDate = (content as any).date || (content as any).updatedAt
         const parsed = rawDate ? new Date(rawDate) : new Date()
-        const lastmod = isNaN(parsed.getTime()) ? new Date().toISOString() : parsed.toISOString()
+        const lastmod = isNaN(parsed.getTime())
+          ? new Date().toISOString().slice(0, 10)
+          : parsed.toISOString().slice(0, 10)
         nitroApp.hooks.callHook('sitemap:routes', {
           url,
           lastmod,
