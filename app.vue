@@ -9,7 +9,21 @@ nuxtApp.hook("page:finish", () => {
 
 useHead({
   link: [{ rel: "icon", type: "image/x-icon", href: "/img/favicon.ico" }],
-  script: []
+  script: [
+    {
+      src: "https://analytics.ahrefs.com/analytics.js",
+      "data-key": "V0zZlhoarGMJAxDX81ncuA",
+      async: true
+    },
+    {
+      type: "text/javascript",
+      id: "sa-dynamic-optimization",
+      "data-uuid": "d9ce0fbb-2201-4f35-943d-e7d1ad7e8913",
+      src: "data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gImQ5Y2UwZmJiLTIyMDEtNGYzNS05NDNkLWU3ZDFhZDdlODkxMyI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw==",
+      "data-nowprocket": "",
+      "data-nitro-exclude": ""
+    }
+  ]
 });
 
 
