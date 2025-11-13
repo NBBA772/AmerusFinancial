@@ -14,6 +14,38 @@
           <!-- Main Content -->
           <div class="w-full md:w-2/3 flex flex-col gap-8">
 
+            <!-- SEO Health Insurance Overview Section -->
+<section class="flex flex-col gap-6">
+  <h2 class="text-3xl font-bold text-gray-900">
+    Affordable Health Insurance Plans for Every Need
+  </h2>
+
+  <p class="text-gray-700 leading-relaxed">
+    At Amerus Financial, we help individuals, families, and businesses compare
+    <strong>health insurance plans</strong> from top-rated 
+    <strong>health insurance companies</strong>. Whether you're exploring
+    options on the <strong>health insurance marketplace</strong> or looking
+    for private coverage, our licensed advisors make it simple to find
+    <strong>affordable health insurance</strong> that fits your medical needs
+    and budget.
+  </p>
+
+  <p class="text-gray-700 leading-relaxed">
+    Our experts guide you through individual health insurance, family
+    coverage, Medicare, dental, vision, and group benefits—ensuring you have
+    access to comprehensive healthcare protection, no matter your situation.
+    Compare benefits, review premiums, and choose the right health insurance
+    plan with confidence.
+  </p>
+
+  <ul class="list-disc pl-6 text-gray-700">
+    <li>Explore marketplace and private <strong>health insurance plans</strong></li>
+    <li>Compare multiple <strong>health insurance companies</strong></li>
+    <li>Find budget-friendly and <strong>affordable health insurance</strong></li>
+    <li>Get personalized quotes tailored to your coverage needs</li>
+    <li>Access expert guidance for the <strong>health insurance marketplace</strong></li>
+  </ul>
+</section>
 
 
             <!-- Health Insurance Services Grid -->
@@ -82,7 +114,7 @@
 </template>
 
 <script setup>
-// Enhanced SEO using stable composables
+// Enhanced SEO using stable composposables
 useEnhancedMetaTags()
 useResourceHints(['/images/health-insurance.jpg'])
 usePerformanceMonitoring()
@@ -110,8 +142,22 @@ useSeoMeta({
   twitterDescription:
     'Explore health insurance options including individual plans, family coverage, group health, Medicare supplements, dental and vision insurance.',
   twitterImage: '/images/health-insurance.jpg',
-  keywords: 'health insurance, medical coverage, individual health plans, family health insurance, group health, Medicare, dental insurance, vision coverage, health benefits'
+  keywords:
+    'health insurance, health insurance plans, health insurance marketplace, health insurance companies, affordable health insurance, medical coverage, individual health plans, family health insurance, group health, Medicare, dental insurance, vision coverage, health benefits'
 })
+
+
+// 🔥 NEW — secondary semantic keywords
+useHead({
+  meta: [
+    {
+      name: 'keywords-secondary',
+      content:
+        'health insurance marketplace, ACA plans, affordable care coverage, health insurance quotes, compare health plans, private health insurance options, enrollment help'
+    }
+  ]
+})
+
 
 // optional — add canonical link and enhanced meta tags
 useHead({
@@ -135,7 +181,26 @@ useHead({
     { name: 'twitter:creator', content: '@amerusfinancial' },
     // Technical SEO
     { name: 'format-detection', content: 'telephone=no' },
-    { name: 'theme-color', content: '#30BCFE' }
+    { name: 'theme-color', content: '#30BCFE' },
+
+    // 🔥 NEW — OG marketplace enhancement
+    {
+      property: 'og:title',
+      content: 'Health Insurance Marketplace — Compare Affordable Plans'
+    },
+    {
+      property: 'og:description',
+      content:
+        'Shop and compare affordable health insurance plans including ACA marketplace plans, private health plans, Medicare, dental and vision coverage.'
+    },
+    {
+      property: 'og:image',
+      content: 'https://www.amerusfinancial.com/images/health-insurance-marketplace.jpg'
+    },
+    {
+      property: 'og:url',
+      content: 'https://www.amerusfinancial.com/services/health'
+    }
   ]
 })
 
@@ -188,6 +253,8 @@ const howToSteps = useHowToSchema([
   }
 ], 'How to Apply for Health Insurance', 'Step-by-step guide to applying for health insurance coverage with Amerus Financial.', 'PT15M', '150.00')
 
+
+// MAIN SCHEMA
 useSchemaOrg([
   {
     '@type': 'Service',
@@ -212,7 +279,7 @@ useSchemaOrg([
       description: 'Health insurance plans starting at $150 per month'
     }
   },
-  
+
   // Review/Rating Schema for enhanced SERP display
   {
     '@type': 'Product',
@@ -225,8 +292,8 @@ useSchemaOrg([
     },
     ...reviewData
   },
-  
-  // FAQ Schema for better SERP features
+
+  // FAQ Schema
   {
     '@type': 'FAQPage',
     mainEntity: [
@@ -265,8 +332,74 @@ useSchemaOrg([
     ]
   },
 
-  // HowTo Schema for application process
-  howToSteps
+  // HowTo Schema
+  howToSteps,
+
+  // 🔥 NEW — Health Insurance Marketplace Schema
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HealthInsuranceAgency',
+    name: 'Amerus Financial Health Insurance Marketplace',
+    url: 'https://www.amerusfinancial.com/services/health',
+    description:
+      'Compare marketplace and private health insurance plans including ACA, individual, family, group, Medicare, dental and vision coverage.',
+    image: 'https://www.amerusfinancial.com/images/health-insurance-marketplace.jpg',
+    areaServed: 'US',
+    offers: {
+      '@type': 'OfferCatalog',
+      name: 'Health Insurance Marketplace Plans',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Product',
+            name: 'ACA Marketplace Health Plans',
+            category: 'HealthInsurancePlan'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Product',
+            name: 'Private Health Insurance',
+            category: 'HealthInsurancePlan'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Product',
+            name: 'Family Health Insurance',
+            category: 'HealthInsurancePlan'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Product',
+            name: 'Medicare Supplements & Advantage Plans',
+            category: 'MedicareInsurancePlan'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Product',
+            name: 'Dental Insurance',
+            category: 'DentalInsurancePlan'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Product',
+            name: 'Vision Insurance',
+            category: 'VisionInsurancePlan'
+          }
+        }
+      ]
+    }
+  }
 ])
 
 const hero = {
