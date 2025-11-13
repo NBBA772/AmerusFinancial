@@ -205,6 +205,7 @@ export default defineNuxtConfig({
 
     '/categories/': { redirect: '/articles/overview', statusCode: 301 },
     '/register/': { redirect: '/', statusCode: 301 },
+    '/dashbord/': { redirect: '/', statusCode: 301 },
 
 
 
@@ -233,6 +234,10 @@ export default defineNuxtConfig({
     '/healthinsurance/index.html' : { redirect: '/services/health/individual-health', statusCode: 301 },
     '/healthinsurancequote/index.html' : { redirect: '/services/health/individual-health', statusCode: 301 },
     '/dev/wp-content/uploads/2017/08/Jacob-400x400.png' : { redirect: '/', statusCode: 301 },
+    '/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg' : { redirect: '/', statusCode: 301 },
+
+
+    '/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg' : { redirect: '/', statusCode: 301 },
     '/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg' : { redirect: '/', statusCode: 301 },
   },
   vite: {
