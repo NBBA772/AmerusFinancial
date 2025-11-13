@@ -263,7 +263,21 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
+      "/articles/reducing-expenses-in-mmedicare": {
+        "redirect": {
+          "to": "/articles/reducing-expenses-in-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
       "/medicare/the-abcs-and-d-of-medicare/": {
+        "redirect": {
+          "to": "/articles/the-abcs-and-d-of-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/articles/the-abc-and-d-of-medicare": {
         "redirect": {
           "to": "/articles/the-abcs-and-d-of-medicare",
           "statusCode": 307
@@ -473,12 +487,248 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/learn-about-amerus-financial/": {
+      "/player": {
         "redirect": {
           "to": "/contact",
           "statusCode": 307
         },
         "statusCode": 301
+      },
+      "/content": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/index.php": {
+        "redirect": {
+          "to": "/services/retirement/annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/appointments/": {
+        "redirect": {
+          "to": "/contact",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/insurance-services/": {
+        "redirect": {
+          "to": "/services",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/news-updates/": {
+        "redirect": {
+          "to": "/articles/overview",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/categories/": {
+        "redirect": {
+          "to": "/articles/overview",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/register/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/dashbord/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare-health-plans-2021/": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/form.php": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/learn-about-amerus-financial/": {
+        "redirect": {
+          "to": "/about-us",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/types-of-life-insurance/": {
+        "redirect": {
+          "to": "/services",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/dev/wp-content/uploads/2017/07/African-American-Family-600x415.jpg": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/senior-life/index.html": {
+        "redirect": {
+          "to": "/services/life/life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/agent-login/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance-request/": {
+        "redirect": {
+          "to": "/contact",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/what-is-term-life-insurance/": {
+        "redirect": {
+          "to": "/services/life/term-life",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/lifeinsurance/index.html": {
+        "redirect": {
+          "to": "/services/life/life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/wp-content/uploads/2020/12/99a81103d2a55eb36b697a1b53577944.jpg": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/wp-content/uploads/2017/05/Medicare-Website-Ad-compressor-1.jpg": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/events/amerus-agent-training-convention/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthcare/index.html": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthinsurance/es/index.html": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/wp-content/uploads/2020/12/9c95087daf7e2f5793a770b9bf0c24c9-768x512.jpg": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/employee-enrollment-health-app/": {
+        "redirect": {
+          "to": "/contact",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/wp-content/uploads/2020/08/Amerus-website-ad-headers3-1-scaled.jpg": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/health-insurance-2/": {
+        "redirect": {
+          "to": "/articles/overview",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/medicare/": {
+        "redirect": {
+          "to": "/articles/overview",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/how-much-does-medicare-cost/": {
+        "redirect": {
+          "to": "/articles/how-much-does-medicare-cost",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthinsurance/index.html": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthinsurancequote/index.html": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/dev/wp-content/uploads/2017/08/Jacob-400x400.png": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/**": {
+        "headers": {
+          "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
+        }
       },
       "/sitemap.xsl": {
         "headers": {
@@ -503,6 +753,7 @@ const _inlineRuntimeConfig = {
     "appDomain": "",
     "gitHash": "",
     "releaseVersion": "",
+    "enableThirdPartyScripts": false,
     "mdc": {
       "components": {
         "prose": true,
@@ -633,10 +884,11 @@ const _inlineRuntimeConfig = {
         "id": "schema-org-graph"
       },
       "identity": {
-        "type": "Organization",
+        "@id": "https://www.amerusfinancial.com/#identity",
+        "@type": "Organization",
         "name": "Amerus Financial",
         "url": "https://www.amerusfinancial.com/",
-        "logo": "https://www.amerusfinancial.com/_vercel/image?url=%2Fimg%2Flogo_white.png&w=320&q=80"
+        "logo": "https://www.amerusfinancial.com/img/logo_white.png"
       },
       "version": "3.3.3"
     }
@@ -792,7 +1044,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-07T19:12:19.451Z"
+          "lastmod": "2025-11-13T20:43:20.853Z"
         },
         "include": [],
         "exclude": [
@@ -841,7 +1093,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-07T19:12:19.451Z"
+          "lastmod": "2025-11-13T20:43:20.853Z"
         },
         "include": [],
         "exclude": [
@@ -863,7 +1115,11 @@ const _inlineRuntimeConfig = {
       {
         "_priority": -3,
         "_context": "nuxt-site-config:config",
-        "url": "https://www.amerusfinancial.com"
+        "url": "https://www.amerusfinancial.com",
+        "name": "Amerus Financial",
+        "description": "Amerus Financial provides retirement planning, insurance solutions, and financial guidance for individuals and businesses.",
+        "defaultLocale": "en",
+        "indexable": true
       }
     ],
     "version": "2.2.9",
@@ -938,7 +1194,9 @@ const _inlineRuntimeConfig = {
       ]
     },
     "http": {
-      "domains": []
+      "domains": [
+        "www.amerusfinancial.com"
+      ]
     }
   }
 };
@@ -4685,11 +4943,14 @@ const _JkpMrjS9eL = defineNitroPlugin$1(async (nitroApp) => {
   nitroApp.hooks.hook("content:server", async () => {
     const contentList = await serverQueryContent().find();
     contentList.forEach((content) => {
-      if (content._file.startsWith("articles/")) {
+      if (content?._file && content._file.startsWith("articles/")) {
         const url = `/articles/${content.slug}`;
+        const rawDate = content.date || content.updatedAt;
+        const parsed = rawDate ? new Date(rawDate) : /* @__PURE__ */ new Date();
+        const lastmod = isNaN(parsed.getTime()) ? /* @__PURE__ */ new Date() : parsed;
         nitroApp.hooks.callHook("sitemap:routes", {
           url,
-          lastmod: content.date || content.updatedAt,
+          lastmod,
           changefreq: "weekly",
           priority: 0.8
         });
@@ -12056,31 +12317,13 @@ const sources$3 = [
                 "loc": "/articles/overview"
             },
             {
-                "loc": "/categories"
-            },
-            {
                 "loc": "/contact"
-            },
-            {
-                "loc": "/content"
             },
             {
                 "loc": "/"
             },
             {
-                "loc": "/info"
-            },
-            {
-                "loc": "/login"
-            },
-            {
-                "loc": "/player"
-            },
-            {
                 "loc": "/privacy-policy"
-            },
-            {
-                "loc": "/register"
             },
             {
                 "loc": "/resources/auto-insurance-guide"
@@ -12320,7 +12563,13 @@ const sources$3 = [
                 "loc": "/medicare/reducing-expenses-in-medicare/"
             },
             {
+                "loc": "/articles/reducing-expenses-in-mmedicare"
+            },
+            {
                 "loc": "/medicare/the-abcs-and-d-of-medicare/"
+            },
+            {
+                "loc": "/articles/the-abc-and-d-of-medicare"
             },
             {
                 "loc": "/medicare/signing-up-for-medicare/"
@@ -12410,7 +12659,106 @@ const sources$3 = [
                 "loc": "/contact-insurance-agency/"
             },
             {
+                "loc": "/player"
+            },
+            {
+                "loc": "/content"
+            },
+            {
+                "loc": "/annuities/index.php"
+            },
+            {
+                "loc": "/appointments/"
+            },
+            {
+                "loc": "/insurance-services/"
+            },
+            {
+                "loc": "/news-updates/"
+            },
+            {
+                "loc": "/categories/"
+            },
+            {
+                "loc": "/register/"
+            },
+            {
+                "loc": "/dashbord/"
+            },
+            {
+                "loc": "/medicare-health-plans-2021/"
+            },
+            {
+                "loc": "/medicare/form.php"
+            },
+            {
                 "loc": "/learn-about-amerus-financial/"
+            },
+            {
+                "loc": "/types-of-life-insurance/"
+            },
+            {
+                "loc": "/dev/wp-content/uploads/2017/07/African-American-Family-600x415.jpg"
+            },
+            {
+                "loc": "/senior-life/index.html"
+            },
+            {
+                "loc": "/agent-login/"
+            },
+            {
+                "loc": "/life-insurance-request/"
+            },
+            {
+                "loc": "/what-is-term-life-insurance/"
+            },
+            {
+                "loc": "/lifeinsurance/index.html"
+            },
+            {
+                "loc": "/wp-content/uploads/2020/12/99a81103d2a55eb36b697a1b53577944.jpg"
+            },
+            {
+                "loc": "/wp-content/uploads/2017/05/Medicare-Website-Ad-compressor-1.jpg"
+            },
+            {
+                "loc": "/events/amerus-agent-training-convention/"
+            },
+            {
+                "loc": "/healthcare/index.html"
+            },
+            {
+                "loc": "/healthinsurance/es/index.html"
+            },
+            {
+                "loc": "/wp-content/uploads/2020/12/9c95087daf7e2f5793a770b9bf0c24c9-768x512.jpg"
+            },
+            {
+                "loc": "/employee-enrollment-health-app/"
+            },
+            {
+                "loc": "/wp-content/uploads/2020/08/Amerus-website-ad-headers3-1-scaled.jpg"
+            },
+            {
+                "loc": "/category/health-insurance-2/"
+            },
+            {
+                "loc": "/category/medicare/"
+            },
+            {
+                "loc": "/how-much-does-medicare-cost/"
+            },
+            {
+                "loc": "/healthinsurance/index.html"
+            },
+            {
+                "loc": "/healthinsurancequote/index.html"
+            },
+            {
+                "loc": "/dev/wp-content/uploads/2017/08/Jacob-400x400.png"
+            },
+            {
+                "loc": "/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg"
             }
         ],
         "sourceType": "app"
@@ -12477,31 +12825,13 @@ const sources$1 = [
                 "loc": "/articles/overview"
             },
             {
-                "loc": "/categories"
-            },
-            {
                 "loc": "/contact"
-            },
-            {
-                "loc": "/content"
             },
             {
                 "loc": "/"
             },
             {
-                "loc": "/info"
-            },
-            {
-                "loc": "/login"
-            },
-            {
-                "loc": "/player"
-            },
-            {
                 "loc": "/privacy-policy"
-            },
-            {
-                "loc": "/register"
             },
             {
                 "loc": "/resources/auto-insurance-guide"
@@ -12741,7 +13071,13 @@ const sources$1 = [
                 "loc": "/medicare/reducing-expenses-in-medicare/"
             },
             {
+                "loc": "/articles/reducing-expenses-in-mmedicare"
+            },
+            {
                 "loc": "/medicare/the-abcs-and-d-of-medicare/"
+            },
+            {
+                "loc": "/articles/the-abc-and-d-of-medicare"
             },
             {
                 "loc": "/medicare/signing-up-for-medicare/"
@@ -12831,7 +13167,106 @@ const sources$1 = [
                 "loc": "/contact-insurance-agency/"
             },
             {
+                "loc": "/player"
+            },
+            {
+                "loc": "/content"
+            },
+            {
+                "loc": "/annuities/index.php"
+            },
+            {
+                "loc": "/appointments/"
+            },
+            {
+                "loc": "/insurance-services/"
+            },
+            {
+                "loc": "/news-updates/"
+            },
+            {
+                "loc": "/categories/"
+            },
+            {
+                "loc": "/register/"
+            },
+            {
+                "loc": "/dashbord/"
+            },
+            {
+                "loc": "/medicare-health-plans-2021/"
+            },
+            {
+                "loc": "/medicare/form.php"
+            },
+            {
                 "loc": "/learn-about-amerus-financial/"
+            },
+            {
+                "loc": "/types-of-life-insurance/"
+            },
+            {
+                "loc": "/dev/wp-content/uploads/2017/07/African-American-Family-600x415.jpg"
+            },
+            {
+                "loc": "/senior-life/index.html"
+            },
+            {
+                "loc": "/agent-login/"
+            },
+            {
+                "loc": "/life-insurance-request/"
+            },
+            {
+                "loc": "/what-is-term-life-insurance/"
+            },
+            {
+                "loc": "/lifeinsurance/index.html"
+            },
+            {
+                "loc": "/wp-content/uploads/2020/12/99a81103d2a55eb36b697a1b53577944.jpg"
+            },
+            {
+                "loc": "/wp-content/uploads/2017/05/Medicare-Website-Ad-compressor-1.jpg"
+            },
+            {
+                "loc": "/events/amerus-agent-training-convention/"
+            },
+            {
+                "loc": "/healthcare/index.html"
+            },
+            {
+                "loc": "/healthinsurance/es/index.html"
+            },
+            {
+                "loc": "/wp-content/uploads/2020/12/9c95087daf7e2f5793a770b9bf0c24c9-768x512.jpg"
+            },
+            {
+                "loc": "/employee-enrollment-health-app/"
+            },
+            {
+                "loc": "/wp-content/uploads/2020/08/Amerus-website-ad-headers3-1-scaled.jpg"
+            },
+            {
+                "loc": "/category/health-insurance-2/"
+            },
+            {
+                "loc": "/category/medicare/"
+            },
+            {
+                "loc": "/how-much-does-medicare-cost/"
+            },
+            {
+                "loc": "/healthinsurance/index.html"
+            },
+            {
+                "loc": "/healthinsurancequote/index.html"
+            },
+            {
+                "loc": "/dev/wp-content/uploads/2017/08/Jacob-400x400.png"
+            },
+            {
+                "loc": "/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg"
             }
         ],
         "sourceType": "app"
@@ -13558,22 +13993,26 @@ const sitemapUrls = defineEventHandler(async (event) => {
       console.warn(`Article found without slug: ${article._file}`);
       return null;
     }
+    const rawDate = article.date || article.updatedAt;
+    const parsed = rawDate ? new Date(rawDate) : /* @__PURE__ */ new Date();
+    const lastmod = isNaN(parsed.getTime()) ? /* @__PURE__ */ new Date() : parsed;
     return {
       loc: `/articles/${article.slug}`,
-      lastmod: article.date || (/* @__PURE__ */ new Date()).toISOString(),
+      lastmod,
       changefreq: "monthly",
       priority: 0.8
     };
   }).filter(Boolean);
+  const nowDate = /* @__PURE__ */ new Date();
   const staticUrls = [
-    { loc: "/", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "daily", priority: 1 },
-    { loc: "/about-us", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "monthly", priority: 0.8 },
-    { loc: "/contact", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "monthly", priority: 0.8 },
-    { loc: "/services/health", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "weekly", priority: 0.9 },
-    { loc: "/services/life", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "weekly", priority: 0.9 },
-    { loc: "/services/retirement", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "weekly", priority: 0.9 },
-    { loc: "/services/business", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "weekly", priority: 0.9 },
-    { loc: "/articles/overview", lastmod: (/* @__PURE__ */ new Date()).toISOString(), changefreq: "daily", priority: 0.9 }
+    { loc: "/", lastmod: nowDate, changefreq: "daily", priority: 1 },
+    { loc: "/about-us", lastmod: nowDate, changefreq: "monthly", priority: 0.8 },
+    { loc: "/contact", lastmod: nowDate, changefreq: "monthly", priority: 0.8 },
+    { loc: "/services/health", lastmod: nowDate, changefreq: "weekly", priority: 0.9 },
+    { loc: "/services/life", lastmod: nowDate, changefreq: "weekly", priority: 0.9 },
+    { loc: "/services/retirement", lastmod: nowDate, changefreq: "weekly", priority: 0.9 },
+    { loc: "/services/business", lastmod: nowDate, changefreq: "weekly", priority: 0.9 },
+    { loc: "/articles/overview", lastmod: nowDate, changefreq: "daily", priority: 0.9 }
   ];
   return [...staticUrls, ...articleUrls];
 });
@@ -14296,7 +14735,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = true ? [CapoPlugin({ track: true })] : [];
 
-const appHead = {"link":[],"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"property":"og:type","content":"website"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"en"}};
+const appHead = {"link":[{"rel":"icon","href":"/favicon.ico","sizes":"any"},{"rel":"icon","href":"/favicon-16x16.png","type":"image/png","sizes":"16x16"},{"rel":"icon","href":"/favicon-32x32.png","type":"image/png","sizes":"32x32"},{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","type":"image/png","sizes":"180x180"}],"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"property":"og:type","content":"website"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"en"}};
 
 const appRootId = "__nuxt";
 

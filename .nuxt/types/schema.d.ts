@@ -368,6 +368,8 @@ declare module 'nuxt/schema' {
 
    releaseVersion: string,
 
+   enableThirdPartyScripts: boolean,
+
    mdc: {
       components: {
          prose: boolean,
@@ -554,7 +556,9 @@ declare module 'nuxt/schema' {
       },
 
       identity: {
-         type: string,
+         "@id": string,
+
+         "@type": string,
 
          name: string,
 

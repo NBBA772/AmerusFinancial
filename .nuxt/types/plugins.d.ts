@@ -32,7 +32,8 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/chunk-reload.client").default> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-if-layout-used").default>
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-if-layout-used").default> &
+  InjectionType<typeof import("../../plugins/third-party-analytics.client").default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
