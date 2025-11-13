@@ -48,10 +48,10 @@ useSchemaOrg([
     },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '5115 S Lakeland Dr STE 1',
+      streetAddress: '3308 Cleveland Heights Blvd',
       addressLocality: 'Lakeland',
       addressRegion: 'FL',
-      postalCode: '33813',
+      postalCode: '33803',
       addressCountry: 'US'
     },
     openingHoursSpecification: [

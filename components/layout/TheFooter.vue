@@ -55,7 +55,7 @@
             <li class="flex items-start">
               <i class="lucide lucide-map-pin h-5 w-5 mr-3 mt-0.5 text-[#ff7733]"></i>
               <span class="text-white/70">
-                5115 S Lakeland Dr, Suite 1<br />Lakeland, FL 33813
+                3308 Cleveland Heights Blvd<br />Lakeland, FL 33803
               </span>
             </li>
             <li class="flex items-center">
