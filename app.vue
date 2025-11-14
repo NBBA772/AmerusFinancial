@@ -11,6 +11,18 @@ useHead({
   link: [{ rel: "icon", type: "image/x-icon", href: "/img/favicon.ico" }],
   script: [
     {
+      src: "https://www.googletagmanager.com/gtag/js?id=G-YKGNXPKXG8",
+      async: true
+    },
+    {
+      children: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YKGNXPKXG8');
+      `
+    },
+    {
       src: "https://analytics.ahrefs.com/analytics.js",
       "data-key": "V0zZlhoarGMJAxDX81ncuA",
       async: true
