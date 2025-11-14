@@ -350,7 +350,12 @@ useSchemaOrg([
     url: 'https://www.amerusfinancial.com/services/health',
     description:
       'Compare marketplace and private health insurance plans including ACA, individual, family, group, Medicare, dental and vision coverage.',
-    image: 'https://www.amerusfinancial.com/images/health-insurance-marketplace.jpg',
+    image: {
+      '@type': 'ImageObject',
+      url: 'https://www.amerusfinancial.com/images/health-insurance-marketplace.jpg',
+      width: 1200,
+      height: 630
+    },
     areaServed: 'US',
     offers: {
       '@type': 'OfferCatalog',
