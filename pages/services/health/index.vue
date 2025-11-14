@@ -366,10 +366,15 @@ useSchemaOrg([
           price: '150.00',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
+          url: 'https://www.amerusfinancial.com/services/health/individual-health',
           itemOffered: {
             '@type': 'Service',
             name: 'ACA Marketplace Health Plans',
-            category: 'HealthInsurancePlan'
+            description: 'Affordable Care Act marketplace health insurance plans with comprehensive coverage',
+            provider: {
+              '@type': 'Organization',
+              name: 'Amerus Financial'
+            }
           }
         },
         {
@@ -377,10 +382,15 @@ useSchemaOrg([
           price: '200.00',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
+          url: 'https://www.amerusfinancial.com/services/health/private-health',
           itemOffered: {
             '@type': 'Service',
             name: 'Private Health Insurance',
-            category: 'HealthInsurancePlan'
+            description: 'Private health insurance plans with flexible coverage options',
+            provider: {
+              '@type': 'Organization',
+              name: 'Amerus Financial'
+            }
           }
         },
         {
@@ -388,10 +398,15 @@ useSchemaOrg([
           price: '250.00',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
+          url: 'https://www.amerusfinancial.com/services/health/family-coverage',
           itemOffered: {
             '@type': 'Service',
             name: 'Family Health Insurance',
-            category: 'HealthInsurancePlan'
+            description: 'Comprehensive family health insurance coverage for your entire household',
+            provider: {
+              '@type': 'Organization',
+              name: 'Amerus Financial'
+            }
           }
         },
         {
@@ -399,10 +414,15 @@ useSchemaOrg([
           price: '180.00',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
+          url: 'https://www.amerusfinancial.com/services/health/medicare',
           itemOffered: {
             '@type': 'Service',
             name: 'Medicare Supplements & Advantage Plans',
-            category: 'MedicareInsurancePlan'
+            description: 'Medicare supplement and Medicare Advantage insurance plans',
+            provider: {
+              '@type': 'Organization',
+              name: 'Amerus Financial'
+            }
           }
         },
         {
@@ -410,10 +430,15 @@ useSchemaOrg([
           price: '50.00',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
+          url: 'https://www.amerusfinancial.com/services/health/dental',
           itemOffered: {
             '@type': 'Service',
             name: 'Dental Insurance',
-            category: 'DentalInsurancePlan'
+            description: 'Comprehensive dental insurance coverage for preventive and major care',
+            provider: {
+              '@type': 'Organization',
+              name: 'Amerus Financial'
+            }
           }
         },
         {
@@ -421,10 +446,15 @@ useSchemaOrg([
           price: '30.00',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
+          url: 'https://www.amerusfinancial.com/services/health/vision-coverage',
           itemOffered: {
             '@type': 'Service',
             name: 'Vision Insurance',
-            category: 'VisionInsurancePlan'
+            description: 'Vision insurance plans covering eye exams, glasses, and contacts',
+            provider: {
+              '@type': 'Organization',
+              name: 'Amerus Financial'
+            }
           }
         }
       ]
