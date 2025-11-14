@@ -290,6 +290,13 @@ useSchemaOrg([
       '@type': 'Brand',
       name: 'Amerus Financial'
     },
+    offers: {
+      '@type': 'Offer',
+      price: '150.00',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: 'https://www.amerusfinancial.com/services/health'
+    },
     ...reviewData
   },
 
@@ -351,48 +358,66 @@ useSchemaOrg([
       itemListElement: [
         {
           '@type': 'Offer',
+          price: '150.00',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
           itemOffered: {
-            '@type': 'Product',
+            '@type': 'Service',
             name: 'ACA Marketplace Health Plans',
             category: 'HealthInsurancePlan'
           }
         },
         {
           '@type': 'Offer',
+          price: '200.00',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
           itemOffered: {
-            '@type': 'Product',
+            '@type': 'Service',
             name: 'Private Health Insurance',
             category: 'HealthInsurancePlan'
           }
         },
         {
           '@type': 'Offer',
+          price: '250.00',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
           itemOffered: {
-            '@type': 'Product',
+            '@type': 'Service',
             name: 'Family Health Insurance',
             category: 'HealthInsurancePlan'
           }
         },
         {
           '@type': 'Offer',
+          price: '180.00',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
           itemOffered: {
-            '@type': 'Product',
+            '@type': 'Service',
             name: 'Medicare Supplements & Advantage Plans',
             category: 'MedicareInsurancePlan'
           }
         },
         {
           '@type': 'Offer',
+          price: '50.00',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
           itemOffered: {
-            '@type': 'Product',
+            '@type': 'Service',
             name: 'Dental Insurance',
             category: 'DentalInsurancePlan'
           }
         },
         {
           '@type': 'Offer',
+          price: '30.00',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
           itemOffered: {
-            '@type': 'Product',
+            '@type': 'Service',
             name: 'Vision Insurance',
             category: 'VisionInsurancePlan'
           }
