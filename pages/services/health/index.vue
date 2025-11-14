@@ -286,6 +286,12 @@ useSchemaOrg([
     name: 'Health Insurance Plans',
     description: 'Comprehensive health insurance coverage including individual, family, group, Medicare, dental and vision plans.',
     category: 'Insurance',
+    image: {
+      '@type': 'ImageObject',
+      url: 'https://www.amerusfinancial.com/images/healthcare-family.jpg',
+      width: 1200,
+      height: 630
+    },
     brand: {
       '@type': 'Brand',
       name: 'Amerus Financial'
