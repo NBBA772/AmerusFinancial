@@ -206,7 +206,7 @@ export default defineNuxtConfig({
 
     '/categories/': { redirect: '/articles/overview', statusCode: 301 },
     '/register/': { redirect: '/', statusCode: 301 },
-    '/dashbord/': { redirect: '/', statusCode: 301 },
+    '/dashboard': { redirect: '/', statusCode: 301 },
 
 
 
