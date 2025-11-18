@@ -12,7 +12,7 @@ export default defineNitroPlugin(async (nitroApp: any) => {
     // Add route for each content article
     contentList.forEach((content: any) => {
       if (content?._file && content._file.startsWith('articles/')) {
-        const url = `/articles/${content.slug}`
+        const url = `/articles/${content.slug}/`
         // Normalize date to ISO 8601, fallback to now if invalid
         const rawDate = (content as any).date || (content as any).updatedAt
         const parsed = rawDate ? new Date(rawDate) : new Date()
