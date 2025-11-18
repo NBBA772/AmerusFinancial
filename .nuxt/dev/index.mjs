@@ -95,6 +95,11 @@ const _inlineRuntimeConfig = {
       "/__nuxt_error": {
         "cache": false
       },
+      "/**": {
+        "headers": {
+          "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
+        }
+      },
       "/ns1.amerusfinancial.com/": {
         "redirect": {
           "to": "/",
@@ -543,7 +548,7 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/dashbord/": {
+      "/dashboard": {
         "redirect": {
           "to": "/",
           "statusCode": 307
@@ -725,10 +730,390 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/**": {
-        "headers": {
-          "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
-        }
+      "/what-is-universal-life-insurance": {
+        "redirect": {
+          "to": "/articles/difference-between-universal-and-whole-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare-eligibility": {
+        "redirect": {
+          "to": "/articles/medicare-eligibility",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/pros-and-cons-if-a-fixed-annuity": {
+        "redirect": {
+          "to": "/articles/pros-and-cons-if-a-fixed-annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/onfo": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/api/_content/query/YhjePIzbUf.1762546881745.json?_params=%7B%22first%22:true,%22where%22:%5B%7B%22_path%22:%22/senior-whole-life-insurance-everything-you-need-to-know%22%7D%5D,%22sort%22:%5B%7B%22_file%22:1,%22$numeric%22:true%7D%5D%7D": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/subscribe": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/open-enrollment": {
+        "redirect": {
+          "to": "/articles/open-enrollment",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/what-is-final-expense-insurance": {
+        "redirect": {
+          "to": "/articles/what-is-final-expense-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/signing-up-for-medicare": {
+        "redirect": {
+          "to": "/articles/signing-up-for-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/series": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/PrivacyPolicy": {
+        "redirect": {
+          "to": "/privacy-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/index.php": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/the-abcs-and-d-of-medicare": {
+        "redirect": {
+          "to": "/articles/the-abcs-and-d-of-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/what-is-term-life-insurance": {
+        "redirect": {
+          "to": "/articles/what-is-term-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance-advantages-of-an-index-universal-life-insurance-policy": {
+        "redirect": {
+          "to": "/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/reducing-expenses-in-medicare": {
+        "redirect": {
+          "to": "/articles/reducing-expenses-in-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/understanding-the-taxation-advantages-of-fixed-annuities": {
+        "redirect": {
+          "to": "/articles/understanding-the-taxation-advantages-of-fixed-annuities",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/new-client-census-current-coverage/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/annuities/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/amerus-events/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/janique-chaney/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/gery-craig/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/elementor-5250/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/rob-skinner/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/Medicare/index.html": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/medicare/page/2/?et_blog": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/what-is-universal-life-insurance/feed/": {
+        "redirect": {
+          "to": "/articles/what-is-universal-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/senior-dental/form.php": {
+        "redirect": {
+          "to": "/services/health/senior-dental",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthinsurance/": {
+        "redirect": {
+          "to": "/services/health/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/health-insurance/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/home-owners/": {
+        "redirect": {
+          "to": "/home/property-protection",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/new-client-census-mark-dale/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/lifeinsurance/privacy-policy.html": {
+        "redirect": {
+          "to": "/privacy-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/articles/pros-and-cons-of-a-fixed-annuity": {
+        "redirect": {
+          "to": "/articles/pros-and-cons-if-a-fixed-annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/amerus-financial-blog/page/2/?et_blog": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/ariel-scalici/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/author/amerusfinancial/page/3/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/pros-and-cons-of-a-fixed-annuity/1000": {
+        "redirect": {
+          "to": "/articles/pros-and-cons-if-a-fixed-annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/duplicate/insurance-service": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/cameronfurrow/insurance-services/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/HealthInsurance/Cheap": {
+        "redirect": {
+          "to": "/services/health/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/agent-resources/": {
+        "redirect": {
+          "to": "/resources",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/carolinametalsgroup/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/author/amerusfinancial/page/4/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare-enrroll-now/": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/amerus-financial-blog/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/senior-whole-life-insurance-guide/feed/": {
+        "redirect": {
+          "to": "/articles/senior-whole-life-insurance-everything-you-need-to-know",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/duplicate/privacy-policy/": {
+        "redirect": {
+          "to": "/privacy-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group/index.html#!": {
+        "redirect": {
+          "to": "/services/health/group-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthinsurancequote/": {
+        "redirect": {
+          "to": "/contact",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/coverage-and-premium-confirmation/": {
+        "redirect": {
+          "to": "/contact",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/policies/sitemap": {
+        "redirect": {
+          "to": "/sitemap.xml",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/": {
+        "redirect": {
+          "to": "/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/1000": {
+        "redirect": {
+          "to": "/services/retirement/annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group/index.html": {
+        "redirect": {
+          "to": "/services/health/group-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
       },
       "/sitemap.xsl": {
         "headers": {
@@ -861,6 +1246,12 @@ const _inlineRuntimeConfig = {
           "md",
           "mdc",
           "yaml",
+          "vue",
+          "vue",
+          "vue",
+          "vue",
+          "vue",
+          "vue",
           "vue"
         ]
       },
@@ -943,6 +1334,12 @@ const _inlineRuntimeConfig = {
         "md",
         "mdc",
         "yaml",
+        "vue",
+        "vue",
+        "vue",
+        "vue",
+        "vue",
+        "vue",
         "vue"
       ]
     },
@@ -1044,7 +1441,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-13T20:43:20.853Z"
+          "lastmod": "2025-11-18"
         },
         "include": [],
         "exclude": [
@@ -1093,7 +1490,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-13T20:43:20.853Z"
+          "lastmod": "2025-11-18"
         },
         "include": [],
         "exclude": [
@@ -1119,7 +1516,8 @@ const _inlineRuntimeConfig = {
         "name": "Amerus Financial",
         "description": "Amerus Financial provides retirement planning, insurance solutions, and financial guidance for individuals and businesses.",
         "defaultLocale": "en",
-        "indexable": true
+        "indexable": true,
+        "trailingSlash": true
       }
     ],
     "version": "2.2.9",
@@ -4944,10 +5342,10 @@ const _JkpMrjS9eL = defineNitroPlugin$1(async (nitroApp) => {
     const contentList = await serverQueryContent().find();
     contentList.forEach((content) => {
       if (content?._file && content._file.startsWith("articles/")) {
-        const url = `/articles/${content.slug}`;
+        const url = `/articles/${content.slug}/`;
         const rawDate = content.date || content.updatedAt;
         const parsed = rawDate ? new Date(rawDate) : /* @__PURE__ */ new Date();
-        const lastmod = isNaN(parsed.getTime()) ? /* @__PURE__ */ new Date() : parsed;
+        const lastmod = isNaN(parsed.getTime()) ? (/* @__PURE__ */ new Date()).toISOString().slice(0, 10) : parsed.toISOString().slice(0, 10);
         nitroApp.hooks.callHook("sitemap:routes", {
           url,
           lastmod,
@@ -12683,7 +13081,7 @@ const sources$3 = [
                 "loc": "/register/"
             },
             {
-                "loc": "/dashbord/"
+                "loc": "/dashboard"
             },
             {
                 "loc": "/medicare-health-plans-2021/"
@@ -12759,6 +13157,168 @@ const sources$3 = [
             },
             {
                 "loc": "/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg"
+            },
+            {
+                "loc": "/what-is-universal-life-insurance"
+            },
+            {
+                "loc": "/medicare-eligibility"
+            },
+            {
+                "loc": "/pros-and-cons-if-a-fixed-annuity"
+            },
+            {
+                "loc": "/onfo"
+            },
+            {
+                "loc": "/subscribe"
+            },
+            {
+                "loc": "/open-enrollment"
+            },
+            {
+                "loc": "/what-is-final-expense-insurance"
+            },
+            {
+                "loc": "/signing-up-for-medicare"
+            },
+            {
+                "loc": "/series"
+            },
+            {
+                "loc": "/PrivacyPolicy"
+            },
+            {
+                "loc": "/index.php"
+            },
+            {
+                "loc": "/the-abcs-and-d-of-medicare"
+            },
+            {
+                "loc": "/what-is-term-life-insurance"
+            },
+            {
+                "loc": "/life-insurance-advantages-of-an-index-universal-life-insurance-policy"
+            },
+            {
+                "loc": "/reducing-expenses-in-medicare"
+            },
+            {
+                "loc": "/understanding-the-taxation-advantages-of-fixed-annuities"
+            },
+            {
+                "loc": "/new-client-census-current-coverage/"
+            },
+            {
+                "loc": "/category/annuities/"
+            },
+            {
+                "loc": "/amerus-events/"
+            },
+            {
+                "loc": "/janique-chaney/"
+            },
+            {
+                "loc": "/gery-craig/"
+            },
+            {
+                "loc": "/elementor-5250/"
+            },
+            {
+                "loc": "/rob-skinner/"
+            },
+            {
+                "loc": "/Medicare/index.html"
+            },
+            {
+                "loc": "/category/medicare/page/2/?et_blog"
+            },
+            {
+                "loc": "/life-insurance/what-is-universal-life-insurance/feed/"
+            },
+            {
+                "loc": "/senior-dental/form.php"
+            },
+            {
+                "loc": "/healthinsurance/"
+            },
+            {
+                "loc": "/category/health-insurance/"
+            },
+            {
+                "loc": "/home-owners/"
+            },
+            {
+                "loc": "/new-client-census-mark-dale/"
+            },
+            {
+                "loc": "/lifeinsurance/privacy-policy.html"
+            },
+            {
+                "loc": "/articles/pros-and-cons-of-a-fixed-annuity"
+            },
+            {
+                "loc": "/amerus-financial-blog/page/2/?et_blog"
+            },
+            {
+                "loc": "/ariel-scalici/"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/3/"
+            },
+            {
+                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/1000"
+            },
+            {
+                "loc": "/duplicate/insurance-service"
+            },
+            {
+                "loc": "/cameronfurrow/insurance-services/"
+            },
+            {
+                "loc": "/HealthInsurance/Cheap"
+            },
+            {
+                "loc": "/agent-resources/"
+            },
+            {
+                "loc": "/carolinametalsgroup/"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/4/"
+            },
+            {
+                "loc": "/medicare-enrroll-now/"
+            },
+            {
+                "loc": "/amerus-financial-blog/"
+            },
+            {
+                "loc": "/life-insurance/senior-whole-life-insurance-guide/feed/"
+            },
+            {
+                "loc": "/duplicate/privacy-policy/"
+            },
+            {
+                "loc": "/group/index.html#!"
+            },
+            {
+                "loc": "/healthinsurancequote/"
+            },
+            {
+                "loc": "/coverage-and-premium-confirmation/"
+            },
+            {
+                "loc": "/policies/sitemap"
+            },
+            {
+                "loc": "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/"
+            },
+            {
+                "loc": "/annuities/1000"
+            },
+            {
+                "loc": "/group/index.html"
             }
         ],
         "sourceType": "app"
@@ -13191,7 +13751,7 @@ const sources$1 = [
                 "loc": "/register/"
             },
             {
-                "loc": "/dashbord/"
+                "loc": "/dashboard"
             },
             {
                 "loc": "/medicare-health-plans-2021/"
@@ -13267,6 +13827,168 @@ const sources$1 = [
             },
             {
                 "loc": "/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg"
+            },
+            {
+                "loc": "/what-is-universal-life-insurance"
+            },
+            {
+                "loc": "/medicare-eligibility"
+            },
+            {
+                "loc": "/pros-and-cons-if-a-fixed-annuity"
+            },
+            {
+                "loc": "/onfo"
+            },
+            {
+                "loc": "/subscribe"
+            },
+            {
+                "loc": "/open-enrollment"
+            },
+            {
+                "loc": "/what-is-final-expense-insurance"
+            },
+            {
+                "loc": "/signing-up-for-medicare"
+            },
+            {
+                "loc": "/series"
+            },
+            {
+                "loc": "/PrivacyPolicy"
+            },
+            {
+                "loc": "/index.php"
+            },
+            {
+                "loc": "/the-abcs-and-d-of-medicare"
+            },
+            {
+                "loc": "/what-is-term-life-insurance"
+            },
+            {
+                "loc": "/life-insurance-advantages-of-an-index-universal-life-insurance-policy"
+            },
+            {
+                "loc": "/reducing-expenses-in-medicare"
+            },
+            {
+                "loc": "/understanding-the-taxation-advantages-of-fixed-annuities"
+            },
+            {
+                "loc": "/new-client-census-current-coverage/"
+            },
+            {
+                "loc": "/category/annuities/"
+            },
+            {
+                "loc": "/amerus-events/"
+            },
+            {
+                "loc": "/janique-chaney/"
+            },
+            {
+                "loc": "/gery-craig/"
+            },
+            {
+                "loc": "/elementor-5250/"
+            },
+            {
+                "loc": "/rob-skinner/"
+            },
+            {
+                "loc": "/Medicare/index.html"
+            },
+            {
+                "loc": "/category/medicare/page/2/?et_blog"
+            },
+            {
+                "loc": "/life-insurance/what-is-universal-life-insurance/feed/"
+            },
+            {
+                "loc": "/senior-dental/form.php"
+            },
+            {
+                "loc": "/healthinsurance/"
+            },
+            {
+                "loc": "/category/health-insurance/"
+            },
+            {
+                "loc": "/home-owners/"
+            },
+            {
+                "loc": "/new-client-census-mark-dale/"
+            },
+            {
+                "loc": "/lifeinsurance/privacy-policy.html"
+            },
+            {
+                "loc": "/articles/pros-and-cons-of-a-fixed-annuity"
+            },
+            {
+                "loc": "/amerus-financial-blog/page/2/?et_blog"
+            },
+            {
+                "loc": "/ariel-scalici/"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/3/"
+            },
+            {
+                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/1000"
+            },
+            {
+                "loc": "/duplicate/insurance-service"
+            },
+            {
+                "loc": "/cameronfurrow/insurance-services/"
+            },
+            {
+                "loc": "/HealthInsurance/Cheap"
+            },
+            {
+                "loc": "/agent-resources/"
+            },
+            {
+                "loc": "/carolinametalsgroup/"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/4/"
+            },
+            {
+                "loc": "/medicare-enrroll-now/"
+            },
+            {
+                "loc": "/amerus-financial-blog/"
+            },
+            {
+                "loc": "/life-insurance/senior-whole-life-insurance-guide/feed/"
+            },
+            {
+                "loc": "/duplicate/privacy-policy/"
+            },
+            {
+                "loc": "/group/index.html#!"
+            },
+            {
+                "loc": "/healthinsurancequote/"
+            },
+            {
+                "loc": "/coverage-and-premium-confirmation/"
+            },
+            {
+                "loc": "/policies/sitemap"
+            },
+            {
+                "loc": "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/"
+            },
+            {
+                "loc": "/annuities/1000"
+            },
+            {
+                "loc": "/group/index.html"
             }
         ],
         "sourceType": "app"
@@ -13995,24 +14717,24 @@ const sitemapUrls = defineEventHandler(async (event) => {
     }
     const rawDate = article.date || article.updatedAt;
     const parsed = rawDate ? new Date(rawDate) : /* @__PURE__ */ new Date();
-    const lastmod = isNaN(parsed.getTime()) ? /* @__PURE__ */ new Date() : parsed;
+    const lastmod = isNaN(parsed.getTime()) ? (/* @__PURE__ */ new Date()).toISOString().slice(0, 10) : parsed.toISOString().slice(0, 10);
     return {
-      loc: `/articles/${article.slug}`,
+      loc: `/articles/${article.slug}/`,
       lastmod,
       changefreq: "monthly",
       priority: 0.8
     };
   }).filter(Boolean);
-  const nowDate = /* @__PURE__ */ new Date();
+  const nowIsoDate = (/* @__PURE__ */ new Date()).toISOString().slice(0, 10);
   const staticUrls = [
-    { loc: "/", lastmod: nowDate, changefreq: "daily", priority: 1 },
-    { loc: "/about-us", lastmod: nowDate, changefreq: "monthly", priority: 0.8 },
-    { loc: "/contact", lastmod: nowDate, changefreq: "monthly", priority: 0.8 },
-    { loc: "/services/health", lastmod: nowDate, changefreq: "weekly", priority: 0.9 },
-    { loc: "/services/life", lastmod: nowDate, changefreq: "weekly", priority: 0.9 },
-    { loc: "/services/retirement", lastmod: nowDate, changefreq: "weekly", priority: 0.9 },
-    { loc: "/services/business", lastmod: nowDate, changefreq: "weekly", priority: 0.9 },
-    { loc: "/articles/overview", lastmod: nowDate, changefreq: "daily", priority: 0.9 }
+    { loc: "/", lastmod: nowIsoDate, changefreq: "daily", priority: 1 },
+    { loc: "/about-us", lastmod: nowIsoDate, changefreq: "monthly", priority: 0.8 },
+    { loc: "/contact", lastmod: nowIsoDate, changefreq: "monthly", priority: 0.8 },
+    { loc: "/services/health", lastmod: nowIsoDate, changefreq: "weekly", priority: 0.9 },
+    { loc: "/services/life", lastmod: nowIsoDate, changefreq: "weekly", priority: 0.9 },
+    { loc: "/services/retirement", lastmod: nowIsoDate, changefreq: "weekly", priority: 0.9 },
+    { loc: "/services/business", lastmod: nowIsoDate, changefreq: "weekly", priority: 0.9 },
+    { loc: "/articles/overview", lastmod: nowIsoDate, changefreq: "daily", priority: 0.9 }
   ];
   return [...staticUrls, ...articleUrls];
 });
@@ -14251,7 +14973,7 @@ const topics$1 = /*#__PURE__*/Object.freeze({
 const sitemapContent = defineEventHandler(async (event) => {
   const docs = await serverQueryContent(event).find();
   const routes = docs.map((doc) => ({
-    loc: `/articles/${doc.slug}`,
+    loc: `/articles/${doc.slug}/`,
     lastmod: doc.date,
     priority: 0.8,
     changefreq: "weekly"

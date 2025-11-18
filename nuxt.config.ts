@@ -83,7 +83,8 @@ export default defineNuxtConfig({
     name: 'Amerus Financial',
     description: 'Amerus Financial provides retirement planning, insurance solutions, and financial guidance for individuals and businesses.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
-    indexable: true // Changed to true for SEO
+    indexable: true, // Changed to true for SEO
+    trailingSlash: true
   },
   sitemap: {
     enabled: true,
