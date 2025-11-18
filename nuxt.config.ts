@@ -128,12 +128,13 @@ export default defineNuxtConfig({
         target: 'esnext'
       }
     },
-routeRules: {
-  '/**': {
-    headers: {
-      'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
-    }
-  },
+
+    routeRules: {
+       '/**': {
+        headers: {
+          'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
+        }
+      },
     '/ns1.amerusfinancial.com/': { redirect: '/', statusCode: 301 },
     '/ns2.amerusfinancial.com/': { redirect: '/', statusCode: 301 },
     '/types-of-healthcare-plans/': { redirect: '/services/health/individual-health', statusCode: 301 },
@@ -239,7 +240,7 @@ routeRules: {
     '/what-is-universal-life-insurance' : { redirect: '/articles/difference-between-universal-and-whole-life-insurance', statusCode: 301 },
     '/medicare-eligibility' : { redirect: '/articles/medicare-eligibility', statusCode: 301 },
     '/pros-and-cons-if-a-fixed-annuity' : { redirect: '/articles/pros-and-cons-if-a-fixed-annuity', statusCode: 301 },
-    '/info' : { redirect: '/', statusCode: 301 },
+    '/onfo' : { redirect: '/', statusCode: 301 },
     '/api/_content/query/YhjePIzbUf.1762546881745.json?_params=%7B%22first%22:true,%22where%22:%5B%7B%22_path%22:%22/senior-whole-life-insurance-everything-you-need-to-know%22%7D%5D,%22sort%22:%5B%7B%22_file%22:1,%22$numeric%22:true%7D%5D%7D' : { redirect: '/', statusCode: 301 },
     '/subscribe' : { redirect: '/', statusCode: 301 },
     '/open-enrollment' : { redirect: '/articles/open-enrollment', statusCode: 301 },
@@ -254,7 +255,7 @@ routeRules: {
     '/reducing-expenses-in-medicare' : { redirect: '/articles/reducing-expenses-in-medicare', statusCode: 301 },
     '/understanding-the-taxation-advantages-of-fixed-annuities' : { redirect: '/articles/understanding-the-taxation-advantages-of-fixed-annuities', statusCode: 301 },
     '/new-client-census-current-coverage/' : { redirect: '/', statusCode: 301 },
-    '/category/annuities/' : { redirect: '/', statusCode: 301 },
+    'category/annuities/' : { redirect: '/', statusCode: 301 },
     '/amerus-events/' : { redirect: '/', statusCode: 301 },
     '/janique-chaney/' : { redirect: '/', statusCode: 301 },
     '/gery-craig/' : { redirect: '/', statusCode: 301 },
@@ -266,13 +267,13 @@ routeRules: {
     '/senior-dental/form.php' : { redirect: '/services/health/senior-dental', statusCode: 301 },
     '/healthinsurance/' : { redirect: '/services/health/', statusCode: 301 },
     '/category/health-insurance/' : { redirect: '/articles/overview/', statusCode: 301 },
-    '/home-owners/' : { redirect: '/home/property-protection', statusCode: 301 },
+    'home-owners/' : { redirect: '/home/property-protection', statusCode: 301 },
     '/new-client-census-mark-dale/' : { redirect: '/', statusCode: 301 },
     '/lifeinsurance/privacy-policy.html' : { redirect: '/privacy-policy', statusCode: 301 },
     '/articles/pros-and-cons-of-a-fixed-annuity' : { redirect: '/articles/pros-and-cons-if-a-fixed-annuity', statusCode: 301 },
     '/amerus-financial-blog/page/2/?et_blog' : { redirect: '/articles/overview/', statusCode: 301 },
     '/ariel-scalici/' : { redirect: '/', statusCode: 301 },
-    '/author/amerusfinancial/page/3/' : { redirect: '/articles/overview/', statusCode: 301 },
+    'author/amerusfinancial/page/3/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/annuities/pros-and-cons-of-a-fixed-annuity/1000' : { redirect: '/articles/pros-and-cons-if-a-fixed-annuity', statusCode: 301 },
   
     '/duplicate/insurance-service' : { redirect: '/', statusCode: 301 },
