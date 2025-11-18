@@ -30,7 +30,7 @@ export default defineEventHandler(async (event) => {
 
   // Map articles to sitemap URLs
   const articleUrls: SitemapUrl[] = articles.map(article => ({
-    loc: `/articles/${article.slug}/`,
+    loc: `/articles/${article.slug}`,
     lastmod: article.date || new Date().toISOString(),
     priority: 0.8,
     changefreq: 'weekly'

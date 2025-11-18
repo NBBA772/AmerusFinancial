@@ -23,7 +23,7 @@ export default defineEventHandler(async (event) => {
       : parsed.toISOString().slice(0, 10)
 
     return {
-      loc: `/articles/${article.slug}/`,
+      loc: `/articles/${article.slug}`,
       lastmod,
       changefreq: 'monthly',
       priority: 0.8
