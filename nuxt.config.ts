@@ -128,7 +128,8 @@ export default defineNuxtConfig({
         target: 'esnext'
       }
     },
-
+    
+  },
     routeRules: {
        '/**': {
         headers: {
