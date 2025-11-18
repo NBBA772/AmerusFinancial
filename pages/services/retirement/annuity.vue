@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useEnhancedMetaTags({
   title: 'Annuity Planning & Retirement Income — Amerus Financial',
   description: 'Secure guaranteed retirement income with annuities. Fixed, variable, and immediate annuity options with professional guidance for lifetime income planning.',
-  canonical: 'https://www.amerusfinancial.com/services/retirement/annuity',
+  canonical: 'https://www.amerusfinancial.com/services/retirement/annuity/',
   image: '/images/annuity-retirement-planning.jpg',
   keywords: 'annuity planning, retirement income, guaranteed income, fixed annuities, variable annuities, immediate annuities, deferred annuities, lifetime income, retirement security, financial planning'
 })

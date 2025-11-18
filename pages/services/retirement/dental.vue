@@ -59,7 +59,7 @@ useEnhancedMetaTags()
 useResourceHints(['/images/dental-insurance.jpg'])
 usePerformanceMonitoring()
 // Consolidated SEO + Social Meta (single useHead)
-const pageUrl = 'https://www.amerusfinancial.com/services/health/dental'
+const pageUrl = 'https://www.amerusfinancial.com/services/health/dental/'
 const pageTitle = 'Dental Insurance & Dental Plans — Amerus Financial'
 // Shortened meta description (~155 chars)
 const pageDescription = 'Affordable dental insurance covering preventive care, fillings, crowns, root canals & orthodontics. 15-minute consultation to compare plans.'

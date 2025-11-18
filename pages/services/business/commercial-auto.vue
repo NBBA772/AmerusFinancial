@@ -91,7 +91,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/business/commercial-auto'
+      href: 'https://www.amerusfinancial.com/services/business/commercial-auto/'
     },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },

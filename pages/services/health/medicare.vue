@@ -91,7 +91,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/health/medicare'
+      href: 'https://www.amerusfinancial.com/services/health/medicare/'
     },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },

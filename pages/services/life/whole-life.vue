@@ -91,7 +91,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/life/whole-life'
+      href: 'https://www.amerusfinancial.com/services/life/whole-life/'
     },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },

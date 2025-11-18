@@ -115,7 +115,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/home/homeowners'
+      href: 'https://www.amerusfinancial.com/services/home/homeowners/'
     },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },

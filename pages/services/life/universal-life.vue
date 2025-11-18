@@ -90,7 +90,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/life/universal-life'
+      href: 'https://www.amerusfinancial.com/services/life/universal-life/'
     },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },

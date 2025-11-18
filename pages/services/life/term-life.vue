@@ -91,7 +91,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/life/term-life'
+      href: 'https://www.amerusfinancial.com/services/life/term-life/'
     },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },

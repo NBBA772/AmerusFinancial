@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useEnhancedMetaTags({
   title: 'Pension Planning & Retirement Benefits — Amerus Financial',
   description: 'Maximize your pension benefits with expert planning for defined benefit plans, pension rollovers, and retirement income optimization strategies.',
-  canonical: 'https://www.amerusfinancial.com/services/retirement/pension-planning',
+  canonical: 'https://www.amerusfinancial.com/services/retirement/pension-planning/',
   image: '/images/pension-planning.jpg',
   keywords: 'pension planning, defined benefit plans, pension rollover, retirement benefits, pension optimization, pension income, retirement planning, federal pension, state pension, corporate pension'
 })

@@ -90,7 +90,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/home/valuable-items'
+      href: 'https://www.amerusfinancial.com/services/home/valuable-items/'
     },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },

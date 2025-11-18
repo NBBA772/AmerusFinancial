@@ -65,7 +65,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services'
+      href: 'https://www.amerusfinancial.com/services/'
     }
   ]
 })

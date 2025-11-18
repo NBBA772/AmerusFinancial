@@ -90,7 +90,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/home/property-coverage'
+      href: 'https://www.amerusfinancial.com/services/home/property-coverage/'
     },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },

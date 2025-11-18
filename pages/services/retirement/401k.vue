@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useEnhancedMetaTags({
   title: '401(k) Retirement Plans & Planning — Amerus Financial',
   description: 'Maximize your retirement savings with 401(k) plans featuring employer matching, tax advantages, and investment options. Expert retirement planning guidance from Amerus.',
-  canonical: 'https://www.amerusfinancial.com/services/retirement/401k',
+  canonical: 'https://www.amerusfinancial.com/services/retirement/401k/',
   image: '/images/401k-retirement-planning.jpg',
   keywords: '401k plans, retirement planning, employer matching, tax-deferred savings, retirement contributions, 401k rollover, retirement benefits, investment options, retirement guidance, financial planning'
 })

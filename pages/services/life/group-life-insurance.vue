@@ -90,7 +90,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/life/group-life-insurance'
+      href: 'https://www.amerusfinancial.com/services/life/group-life-insurance/'
     },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },

@@ -92,7 +92,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage'
+      href: 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage/'
     },
     // DNS prefetch for performance
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },

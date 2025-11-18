@@ -60,7 +60,7 @@ useResourceHints(['/images/life-insurance.jpg'])
 usePerformanceMonitoring()
 
 // Define common values
-const pageUrl = 'https://www.amerusfinancial.com/services/life/life-insurance'
+const pageUrl = 'https://www.amerusfinancial.com/services/life/life-insurance/'
 const pageTitle = 'Life Insurance Solutions for Families — Amerus'
 const pageDescription = 'Protecting your family\'s financial future with customized life insurance solutions that provide security and peace of mind for your loved ones.'
 const pageImage = '/images/life-insurance.jpg'

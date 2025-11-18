@@ -64,7 +64,7 @@ usePerformanceMonitoring()
 useEnhancedMetaTags({
   title: 'Long-Term Care Planning & Insurance — Amerus Financial',
   description: 'Protect your retirement with comprehensive long-term care insurance and planning. Coverage for home care, assisted living, and nursing facilities.',
-  canonical: 'https://www.amerusfinancial.com/services/retirement/long-term-care',
+  canonical: 'https://www.amerusfinancial.com/services/retirement/long-term-care/',
   image: '/images/long-term-care-planning.jpg',
   keywords: 'long-term care insurance, long-term care planning, nursing home insurance, home care coverage, assisted living insurance, elder care planning, retirement protection, healthcare costs'
 })
