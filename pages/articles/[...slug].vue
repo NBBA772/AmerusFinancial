@@ -3,7 +3,7 @@ const route = useRoute()
 const { data: article } = await useAsyncData('article', () => queryContent(route.params.slug.join('/')).findOne())
 
 // Construct the proper URL from route path
-const pageUrl = `https://www.amerusfinancial.com${route.path}/`
+const pageUrl = `https://www.amerusfinancial.com${route.path}`
 const pageTitle = article.value?.title ? `${article.value.title} — Amerus Financial` : 'Article — Amerus Financial'
 const pageDescription = article.value?.description || 'Read this article from Amerus Financial'
 const pageImage = article.value?.img || '/images/amerus-og-default.jpg'

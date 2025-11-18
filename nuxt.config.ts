@@ -295,6 +295,8 @@ export default defineNuxtConfig({
     '/health-insurance/advantages-of-an-index-universal-life-insurance-policy/' : { redirect: '/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy', statusCode: 301 },
     '/annuities/1000' : { redirect: '/services/retirement/annuity', statusCode: 301 },
     '/group/index.html' : { redirect: '/services/health/group-health', statusCode: 301 },
+
+    
   },
   vite: {
   server: {
