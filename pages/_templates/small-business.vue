@@ -1,6 +1,6 @@
 <template>
   <PatternSection>
-    <HomepageHeroSection />
+    <SmallBusinessHero />
     <main class="flex-grow">
       <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <Breadcrumbs
@@ -10,22 +10,31 @@
         />
       </div>
 
-      <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <!-- <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <Hero :hero="hero" />
-      </div>
+      </div> -->
 
+    
+        <TwoColumnContent 
+          :content="twoColumnSection1"
+          imagePosition="left"
+          :showDivider="false"
+          :showBackgroundPattern="true"
+        />
+      
+
+      
       <TwoColumnContent 
-        :content="{
-          title: 'Personal Auto Insurance',
-          description: 'Comprehensive auto insurance coverage to protect you, your vehicle, and your finances on the road.',
-          image: '/images/man-driving-insured-car.jpg'
-        }"
+        :content="twoColumnSection2"
         backgroundColor="bg-[#F2F8FB]"
-        imagePosition="left"
+        imagePosition="right"
         :showDivider="false"
       />
 
-      <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <!-- Numbered Steps Section -->
+      <NumberedSteps />
+
+      <!-- <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <TwoColumnContent 
           :content="{
             title: 'Uninsured Motorist Insurance',
@@ -35,50 +44,13 @@
           imagePosition="right"
           :showDivider="false"
         />
-      </div>
+      </div> -->
 
-      <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row gap-8">
-            <!-- Main Content -->
-            <div class="w-full md:w-2/3 flex flex-col gap-8">
-              
-
-
-              <!-- Section with background and blue header -->
-              <section
-                class="rounded-2xl overflow-hidden shadow-sm border border-[#e0f1ff] bg-gradient-to-br from-[#f8fbff] to-[#eef7ff] hover:shadow-md transition-all duration-300 bg-gradient-to-br from-card/80 to-card/60 backdrop-blur-sm"
-              >
-                <!-- Blue Header -->
-                <div class="bg-gradient-to-r from-[#30BCFE] to-[#2563eb] text-white py-6 px-6 flex items-center justify-between">
-                  <div>
-                    <h2 class="text-2xl font-bold tracking-tight">Key Benefits</h2>
-                    <p class="text-sm opacity-90">Discover what makes our coverage the right choice for you</p>
-                  </div>
-                  <Icon name="lucide:car" size="50" class="text-white" />
-                </div>
-
-                <!-- Inner Content -->
-                <div class="p-8">
-                  <Benefits :benefits="benefits"/>
-                  <div class="border-t border-[#d4ebff] my-8"></div>
-                  <InfoCards :info="info" />
-                </div>
-              </section>
-
-
-              <CoverageFeatures :features="features" />
-              <CTA :cta="cta" button-class="bg-gradient-to-r from-[#30BCFE] to-[#2563eb] py-6 px-6 text-white" />
-            </div>
-
-            <!-- Sidebar -->
-            <div class="w-full md:w-1/3">
-              <AutoSidebar />
-            </div>
-        </div>
-      </div>
+     
       
     </main>
-    <CallToAction />
+    <WeWorkForYou />
+    <ReadyToSeeOptions />
   </PatternSection>
 </template>
 
@@ -270,11 +242,41 @@ useSchemaOrg([
   howToSteps
 ])
 
+// Two Column Content Sections
+const twoColumnSection1 = {
+  title: 'The Smarter Way to Offer Benefits',
+  description: 'At Amerus Financial Group, we help small businesses access large-group benefits at a fraction of the cost. Our team of licensed advisors partners with top carriers to create customized benefit packages that fit your company\'s needs without complicated paperwork or high administrative costs.',
+  image: '/images/small-business.png',
+  imageAlt: 'Small business group benefits',
+  bulletsHeading: 'Quick Highlights:',
+  bullets: [
+    'Nationwide doctor and hospital access',
+    'PPO, HSA, and level-funded options',
+    'Dental, Vision, Life, and Disability add-ons',
+    'No referrals or approvals required',
+    'Local, dedicated support through Amerus Advisors'
+  ]
+}
+
+const twoColumnSection2 = {
+  title: 'If You Have Two or More Employees, You May Qualify',
+  description: 'Many business owners don\'t realize how accessible group health coverage has become. Whether you\'re a startup, family business, or established company, you can enjoy nationwide network access and competitive pricing typically reserved for large corporations.',
+  image: '/images/2-or-more-employees.png',
+  imageAlt: 'Two or more employees qualify for group benefits',
+  bulletsHeading: 'Eligible Businesses Include:',
+  bullets: [
+    'Small businesses with 2–100 employees',
+    'Family-run or partnership-based companies',
+    'Contractors and 1099 teams',
+    'Nonprofits and ministries'
+  ]
+}
+
 const hero = {
   eyebrow: 'Auto Insurance',
-  title: 'Auto Insurance Coverage',
-  description: 'Comprehensive auto insurance protection for your vehicle with liability, collision, comprehensive, and specialized coverage options.',
-  image: '/images/insured-cars-in-traffic.jpg',
+  title: 'The Smarter Way to Offer Benefits',
+  description: 'At Amerus Financial Group, we help small businesses access large-group benefits at a fraction of the cost. Our team of licensed advisors partners with top carriers to create customized benefit packages that fit your company\'s needs — without complicated paperwork or high administrative costs.',
+  image: '/images/small-business.png',
   imageAlt: 'auto insurance coverage',
   cta: { href: '/contact', label: 'Get a Personalized Quote' }
 }

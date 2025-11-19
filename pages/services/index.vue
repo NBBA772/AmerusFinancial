@@ -30,6 +30,7 @@
             <nuxt-link
               :to="Service.url"
               class="mt-auto w-full py-2 px-4 rounded-lg bg-gradient-to-r from-[#30BCFE] to-[#2563eb] text-white font-semibold shadow transition duration-150 hover:from-[#2563eb] hover:to-[#30BCFE] focus:outline-none"
+              :aria-label="`Learn more about ${Service.title}`"
             >
               Learn More
             </nuxt-link>

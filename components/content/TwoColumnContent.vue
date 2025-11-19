@@ -1,6 +1,18 @@
 <template>
-  <div class="w-full py-12" :class="backgroundColor">
-    <div class="container mx-auto" :class="backgroundColor !== 'bg-transparent' ? 'px-4 sm:px-6 lg:px-8' : ''">
+  <div class="w-full py-12 relative overflow-hidden" :class="backgroundColor">
+    <!-- Background Image -->
+    <div v-if="showBackgroundPattern" class="absolute inset-0 opacity-40">
+      <NuxtImg
+        format="webp"
+        quality="80"
+        loading="lazy"
+        src="/images/background-lines.png"
+        alt="Background pattern"
+        class="w-full min-h-full object-cover"
+      />
+    </div>
+
+    <div class="container mx-auto relative z-10" :class="backgroundColor !== 'bg-transparent' ? 'px-4 sm:px-6 lg:px-8' : ''">
       <div class="flex flex-col gap-8 items-center" :class="[
         imagePosition === 'left' ? 'md:flex-row-reverse' : 'md:flex-row'
       ]">
@@ -18,6 +30,20 @@
       <p class="text-lg text-muted-foreground">
         {{ content.description }}
       </p>
+      
+      <!-- Bullet Points List -->
+      <div v-if="content.bullets && content.bullets.length" class="pt-6">
+        <h3 v-if="content.bulletsHeading" class="text-xl font-semibold mb-4 text-gray-900">
+          {{ content.bulletsHeading }}
+        </h3>
+        <ul class="space-y-3">
+          <li v-for="(bullet, index) in content.bullets" :key="index" class="flex items-start gap-3">
+            <Icon name="lucide:check-circle" class="text-[#30BCFE] mt-1 flex-shrink-0" size="20" />
+            <span class="text-base text-gray-700">{{ bullet }}</span>
+          </li>
+        </ul>
+      </div>
+
       <div v-if="content.cta" class="pt-4">
         <NuxtLink
           :to="content.cta.href || '/contact'"
@@ -77,6 +103,11 @@ const props = defineProps({
   backgroundColor: {
     type: String,
     default: 'bg-transparent'
+  },
+  /** Show background pattern image */
+  showBackgroundPattern: {
+    type: Boolean,
+    default: false
   }
 })
 </script>

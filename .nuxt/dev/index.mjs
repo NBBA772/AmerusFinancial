@@ -1260,10 +1260,6 @@ const _inlineRuntimeConfig = {
           "md",
           "mdc",
           "yaml",
-          "vue",
-          "vue",
-          "vue",
-          "vue",
           "vue"
         ]
       },
@@ -1346,10 +1342,6 @@ const _inlineRuntimeConfig = {
         "md",
         "mdc",
         "yaml",
-        "vue",
-        "vue",
-        "vue",
-        "vue",
         "vue"
       ]
     },
