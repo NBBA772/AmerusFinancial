@@ -12,17 +12,7 @@
 
             <Hero :hero="hero" />
 
-          <TwoColumnContent 
-            :content="{
-              title: 'Personal Auto Insurance',
-              description: 'Comprehensive auto insurance coverage to protect you, your vehicle, and your finances on the road.',
-              image: '/images/man-driving-insured-car.jpg'
-            }"
-            backgroundColor="bg-[#F2F8FB]"
-            imagePosition="left"
-            :showDivider="false"
-          />
-
+            
         <div class="flex flex-col md:flex-row gap-8">
           <!-- Main Content -->
           <div class="w-full md:w-2/3 flex flex-col gap-8">
