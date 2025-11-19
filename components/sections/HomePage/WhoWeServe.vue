@@ -121,12 +121,14 @@ const toggleFlip = (i: number) => (flipped.value[i] = !flipped.value[i]);
                   <NuxtLink
                     :to="card.learnMoreLink"
                     class="bg-primary px-3 py-1 text-sm rounded-md hover:bg-primary/80 transition"
+                    :aria-label="`Learn more about ${card.title}`"
                   >
                     Learn More
                   </NuxtLink>
                   <NuxtLink
                     :to="card.getQuoteLink"
                     class="bg-white text-black px-3 py-1 text-sm rounded-md hover:bg-gray-200 transition"
+                    :aria-label="`Get a quote for ${card.title}`"
                   >
                     Get Quote
                   </NuxtLink>
