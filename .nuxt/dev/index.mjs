@@ -97,7 +97,7 @@ const _inlineRuntimeConfig = {
       },
       "/**": {
         "headers": {
-          "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com https://dashboard.searchatlas.com https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
+          "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
         }
       },
       "/ns1.amerusfinancial.com/": {
@@ -114,261 +114,9 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/types-of-healthcare-plans/": {
-        "redirect": {
-          "to": "/services/health/individual-health",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/healthinsurancequote": {
-        "redirect": {
-          "to": "/contact",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/group/": {
-        "redirect": {
-          "to": "/services/health/group-health",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/healthcare": {
-        "redirect": {
-          "to": "/services/health/individual-health",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/rome-georgia/": {
         "redirect": {
           "to": "/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/group-insurance/how-does-business-health-insurance-work/": {
-        "redirect": {
-          "to": "/articles/how-does-business-health-insurance-work",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/life-insurance/types-of-life-insurance/": {
-        "redirect": {
-          "to": "/articles/types-of-life-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/health-insurance-2/why-use-a-health-insurance-agent/": {
-        "redirect": {
-          "to": "/articles/why-use-a-health-insurance-agent",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/life-insurance/what-is-term-life-insurance/": {
-        "redirect": {
-          "to": "/articles/what-is-term-life-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/life-insurance/senior-whole-life-insurance-guide/": {
-        "redirect": {
-          "to": "/articles/senior-whole-life-insurance-everything-you-need-to-know",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/articles/reducing-expenses-in-mmedicare": {
-        "redirect": {
-          "to": "/articles/reducing-expenses-in-medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/articles/the-abc-and-d-of-medicare": {
-        "redirect": {
-          "to": "/articles/the-abcs-and-d-of-medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/health-insurance-2/health-insurance-subsidies/": {
-        "redirect": {
-          "to": "/articles/health-insurance-subsidies",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/health-insurance-2/managing-your-healthcare-plan/": {
-        "redirect": {
-          "to": "/articles/managing-your-healthcare-plan",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/health-insurance-2/researching-health-insurance-options/": {
-        "redirect": {
-          "to": "/articles/researching-health-insurance-options",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/health-insurance-2/types-of-healthcare-plans/": {
-        "redirect": {
-          "to": "/articles/types-of-healthcare-plans",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/life-insurance/how-to-buy-the-right-life-insurance-policy/": {
-        "redirect": {
-          "to": "/articles/how-to-buy-the-right-life-insurance-policy",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/life-insurance/what-is-universal-life-insurance/": {
-        "redirect": {
-          "to": "/articles/what-is-universal-life-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/annuities/understanding-a-fixed-annuity-for-retirement-planning/": {
-        "redirect": {
-          "to": "/articles/understanding-a-fixed-annuity-for-retirement-planning",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/group-insurance/what-you-should-know-about-group-health-insurance/": {
-        "redirect": {
-          "to": "/articles/what-you-should-know-about-group-health-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/life-insurance/difference-between-universal-and-whole-life-insurance/": {
-        "redirect": {
-          "to": "/articles/difference-between-universal-and-whole-life-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/annuities/pros-and-cons-of-a-fixed-annuity/": {
-        "redirect": {
-          "to": "/articles/pros-and-cons-of-a-fixed-annuity",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/health-insurance/what-sets-amerus-agents-apart/": {
-        "redirect": {
-          "to": "/articles/what-sets-amerus-agents-apart",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/final-expense-insurance/what-is-final-expense-insurance/": {
-        "redirect": {
-          "to": "/articles/what-is-final-expense-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/life-insurance/advantages-of-an-index-universal-life-insurance-policy/": {
-        "redirect": {
-          "to": "/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/annuities/understanding-the-taxation-advantages-of-fixed-annuities/": {
-        "redirect": {
-          "to": "/articles/understanding-the-taxation-advantages-of-fixed-annuities",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/healthcare/": {
-        "redirect": {
-          "to": "/services/health/individual-health",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/lifeinsurance/": {
-        "redirect": {
-          "to": "/services/life/life-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/senior-dental/": {
-        "redirect": {
-          "to": "/services/health/senior-dental",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/individual-health-insurance/": {
-        "redirect": {
-          "to": "/services/health/individual-health",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/annuities/": {
-        "redirect": {
-          "to": "/services/retirement/annuity",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/senior-solutions/": {
-        "redirect": {
-          "to": "/services/health/senior-dental",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/Medicare/": {
-        "redirect": {
-          "to": "/services/health/medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/senior-life/": {
-        "redirect": {
-          "to": "/services/life/life-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/group-health-insurance/": {
-        "redirect": {
-          "to": "/services/health/group-health",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/category/auto-insurance/": {
-        "redirect": {
-          "to": "/services/auto",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/category/home-insurance/": {
-        "redirect": {
-          "to": "/services/home/property-protection",
           "statusCode": 307
         },
         "statusCode": 301
@@ -394,37 +142,9 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/annuities/index.php": {
-        "redirect": {
-          "to": "/services/retirement/annuity",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/appointments/": {
         "redirect": {
           "to": "/contact",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/insurance-services/": {
-        "redirect": {
-          "to": "/services",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/news-updates/": {
-        "redirect": {
-          "to": "/articles/overview",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/categories/": {
-        "redirect": {
-          "to": "/articles/overview",
           "statusCode": 307
         },
         "statusCode": 301
@@ -443,20 +163,6 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/medicare-health-plans-2021/": {
-        "redirect": {
-          "to": "/services/health/medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/form.php": {
-        "redirect": {
-          "to": "/services/health/medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/learn-about-amerus-financial/": {
         "redirect": {
           "to": "/about-us",
@@ -464,23 +170,9 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/types-of-life-insurance/": {
-        "redirect": {
-          "to": "/services",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/dev/wp-content/uploads/2017/07/African-American-Family-600x415.jpg": {
         "redirect": {
           "to": "/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/senior-life/index.html": {
-        "redirect": {
-          "to": "/services/life/life-insurance",
           "statusCode": 307
         },
         "statusCode": 301
@@ -495,20 +187,6 @@ const _inlineRuntimeConfig = {
       "/life-insurance-request/": {
         "redirect": {
           "to": "/contact",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/what-is-term-life-insurance/": {
-        "redirect": {
-          "to": "/services/life/term-life",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/lifeinsurance/index.html": {
-        "redirect": {
-          "to": "/services/life/life-insurance",
           "statusCode": 307
         },
         "statusCode": 301
@@ -530,13 +208,6 @@ const _inlineRuntimeConfig = {
       "/events/amerus-agent-training-convention/": {
         "redirect": {
           "to": "/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/healthcare/index.html": {
-        "redirect": {
-          "to": "/services/health/individual-health",
           "statusCode": 307
         },
         "statusCode": 301
@@ -569,48 +240,6 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/category/health-insurance-2/": {
-        "redirect": {
-          "to": "/articles/overview",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/category/medicare/": {
-        "redirect": {
-          "to": "/articles/overview",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/how-much-does-medicare-cost/": {
-        "redirect": {
-          "to": "/articles/how-much-does-medicare-cost",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/healthinsurance/index.html": {
-        "redirect": {
-          "to": "/services/health/individual-health",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/healthinsurancequote/index.html": {
-        "redirect": {
-          "to": "/services/health/individual-health",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/dev/wp-content/uploads/2017/08/Jacob-400x400.png": {
-        "redirect": {
-          "to": "/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg": {
         "redirect": {
           "to": "/",
@@ -618,28 +247,14 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/what-is-universal-life-insurance": {
-        "redirect": {
-          "to": "/articles/difference-between-universal-and-whole-life-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare-eligibility": {
-        "redirect": {
-          "to": "/articles/medicare-eligibility",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/pros-and-cons-if-a-fixed-annuity": {
-        "redirect": {
-          "to": "/articles/pros-and-cons-if-a-fixed-annuity",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/onfo": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/info": {
         "redirect": {
           "to": "/",
           "statusCode": 307
@@ -660,34 +275,6 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/open-enrollment": {
-        "redirect": {
-          "to": "/articles/open-enrollment",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/what-is-final-expense-insurance": {
-        "redirect": {
-          "to": "/articles/what-is-final-expense-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/signing-up-for-medicare": {
-        "redirect": {
-          "to": "/articles/signing-up-for-medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/series": {
-        "redirect": {
-          "to": "/articles/overview/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/PrivacyPolicy": {
         "redirect": {
           "to": "/privacy-policy",
@@ -698,41 +285,6 @@ const _inlineRuntimeConfig = {
       "/index.php": {
         "redirect": {
           "to": "/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/the-abcs-and-d-of-medicare": {
-        "redirect": {
-          "to": "/articles/the-abcs-and-d-of-medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/what-is-term-life-insurance": {
-        "redirect": {
-          "to": "/articles/what-is-term-life-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/life-insurance-advantages-of-an-index-universal-life-insurance-policy": {
-        "redirect": {
-          "to": "/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/reducing-expenses-in-medicare": {
-        "redirect": {
-          "to": "/articles/reducing-expenses-in-medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/understanding-the-taxation-advantages-of-fixed-annuities": {
-        "redirect": {
-          "to": "/articles/understanding-the-taxation-advantages-of-fixed-annuities",
           "statusCode": 307
         },
         "statusCode": 301
@@ -800,34 +352,6 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/life-insurance/what-is-universal-life-insurance/feed/": {
-        "redirect": {
-          "to": "/articles/what-is-universal-life-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/senior-dental/form.php": {
-        "redirect": {
-          "to": "/services/health/senior-dental",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/healthinsurance/": {
-        "redirect": {
-          "to": "/services/health/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/category/health-insurance/": {
-        "redirect": {
-          "to": "/articles/overview/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/home-owners/": {
         "redirect": {
           "to": "/home/property-protection",
@@ -849,37 +373,9 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/articles/pros-and-cons-of-a-fixed-annuity": {
-        "redirect": {
-          "to": "/articles/pros-and-cons-if-a-fixed-annuity",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/amerus-financial-blog/page/2/?et_blog": {
-        "redirect": {
-          "to": "/articles/overview/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/ariel-scalici/": {
         "redirect": {
           "to": "/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/author/amerusfinancial/page/3/": {
-        "redirect": {
-          "to": "/articles/overview/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/annuities/pros-and-cons-of-a-fixed-annuity/1000": {
-        "redirect": {
-          "to": "/articles/pros-and-cons-if-a-fixed-annuity",
           "statusCode": 307
         },
         "statusCode": 301
@@ -898,13 +394,6 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/HealthInsurance/Cheap": {
-        "redirect": {
-          "to": "/services/health/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/agent-resources/": {
         "redirect": {
           "to": "/resources",
@@ -919,44 +408,9 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/author/amerusfinancial/page/4/": {
-        "redirect": {
-          "to": "/articles/overview/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare-enrroll-now/": {
-        "redirect": {
-          "to": "/services/health/medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/amerus-financial-blog/": {
-        "redirect": {
-          "to": "/articles/overview/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/life-insurance/senior-whole-life-insurance-guide/feed/": {
-        "redirect": {
-          "to": "/articles/senior-whole-life-insurance-everything-you-need-to-know",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/duplicate/privacy-policy/": {
         "redirect": {
           "to": "/privacy-policy",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/group/index.html#!": {
-        "redirect": {
-          "to": "/services/health/group-health",
           "statusCode": 307
         },
         "statusCode": 301
@@ -982,30 +436,16 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/": {
-        "redirect": {
-          "to": "/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/annuities/1000": {
-        "redirect": {
-          "to": "/services/retirement/annuity",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/group/index.html": {
-        "redirect": {
-          "to": "/services/health/group-health",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/dashboard/search": {
         "redirect": {
           "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthinsurancequote": {
+        "redirect": {
+          "to": "/contact",
           "statusCode": 307
         },
         "statusCode": 301
@@ -1118,6 +558,573 @@ const _inlineRuntimeConfig = {
       "/medicare/medicaid-medicare/": {
         "redirect": {
           "to": "/articles/medicaid-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/articles/reducing-expenses-in-mmedicare": {
+        "redirect": {
+          "to": "/articles/reducing-expenses-in-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/articles/the-abc-and-d-of-medicare": {
+        "redirect": {
+          "to": "/articles/the-abcs-and-d-of-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/articles/pros-and-cons-of-a-fixed-annuity": {
+        "redirect": {
+          "to": "/articles/pros-and-cons-if-a-fixed-annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group-insurance/how-does-business-health-insurance-work/": {
+        "redirect": {
+          "to": "/articles/how-does-business-health-insurance-work",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/types-of-life-insurance/": {
+        "redirect": {
+          "to": "/articles/types-of-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance-2/why-use-a-health-insurance-agent/": {
+        "redirect": {
+          "to": "/articles/why-use-a-health-insurance-agent",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/what-is-term-life-insurance/": {
+        "redirect": {
+          "to": "/articles/what-is-term-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/senior-whole-life-insurance-guide/": {
+        "redirect": {
+          "to": "/articles/senior-whole-life-insurance-everything-you-need-to-know",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance-2/health-insurance-subsidies/": {
+        "redirect": {
+          "to": "/articles/health-insurance-subsidies",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance-2/managing-your-healthcare-plan/": {
+        "redirect": {
+          "to": "/articles/managing-your-healthcare-plan",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance-2/researching-health-insurance-options/": {
+        "redirect": {
+          "to": "/articles/researching-health-insurance-options",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance-2/types-of-healthcare-plans/": {
+        "redirect": {
+          "to": "/articles/types-of-healthcare-plans",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/how-to-buy-the-right-life-insurance-policy/": {
+        "redirect": {
+          "to": "/articles/how-to-buy-the-right-life-insurance-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/what-is-universal-life-insurance/": {
+        "redirect": {
+          "to": "/articles/what-is-universal-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/understanding-a-fixed-annuity-for-retirement-planning/": {
+        "redirect": {
+          "to": "/articles/understanding-a-fixed-annuity-for-retirement-planning",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group-insurance/what-you-should-know-about-group-health-insurance/": {
+        "redirect": {
+          "to": "/articles/what-you-should-know-about-group-health-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/difference-between-universal-and-whole-life-insurance/": {
+        "redirect": {
+          "to": "/articles/difference-between-universal-and-whole-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/pros-and-cons-of-a-fixed-annuity/": {
+        "redirect": {
+          "to": "/articles/pros-and-cons-of-a-fixed-annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance/what-sets-amerus-agents-apart/": {
+        "redirect": {
+          "to": "/articles/what-sets-amerus-agents-apart",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/final-expense-insurance/what-is-final-expense-insurance/": {
+        "redirect": {
+          "to": "/articles/what-is-final-expense-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/advantages-of-an-index-universal-life-insurance-policy/": {
+        "redirect": {
+          "to": "/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/understanding-the-taxation-advantages-of-fixed-annuities/": {
+        "redirect": {
+          "to": "/articles/understanding-the-taxation-advantages-of-fixed-annuities",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/news-updates/": {
+        "redirect": {
+          "to": "/articles/overview",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/categories/": {
+        "redirect": {
+          "to": "/articles/overview",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/what-is-universal-life-insurance": {
+        "redirect": {
+          "to": "/articles/difference-between-universal-and-whole-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare-eligibility": {
+        "redirect": {
+          "to": "/articles/medicare-eligibility",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/pros-and-cons-if-a-fixed-annuity": {
+        "redirect": {
+          "to": "/articles/pros-and-cons-if-a-fixed-annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/health-insurance-2/": {
+        "redirect": {
+          "to": "/articles/overview",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/medicare/": {
+        "redirect": {
+          "to": "/articles/overview",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/how-much-does-medicare-cost/": {
+        "redirect": {
+          "to": "/articles/how-much-does-medicare-cost",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/dev/wp-content/uploads/2017/08/Jacob-400x400.png": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/what-is-universal-life-insurance/feed/": {
+        "redirect": {
+          "to": "/articles/what-is-universal-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/health-insurance/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/the-abcs-and-d-of-medicare": {
+        "redirect": {
+          "to": "/articles/the-abcs-and-d-of-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/what-is-term-life-insurance": {
+        "redirect": {
+          "to": "/articles/what-is-term-life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/amerus-financial-blog/page/2/?et_blog": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/author/amerusfinancial/page/3/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/pros-and-cons-of-a-fixed-annuity/1000": {
+        "redirect": {
+          "to": "/articles/pros-and-cons-if-a-fixed-annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/author/amerusfinancial/page/4/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/amerus-financial-blog/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance/senior-whole-life-insurance-guide/feed/": {
+        "redirect": {
+          "to": "/articles/senior-whole-life-insurance-everything-you-need-to-know",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/open-enrollment": {
+        "redirect": {
+          "to": "/articles/open-enrollment",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/what-is-final-expense-insurance": {
+        "redirect": {
+          "to": "/articles/what-is-final-expense-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/signing-up-for-medicare": {
+        "redirect": {
+          "to": "/articles/signing-up-for-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/series": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/life-insurance-advantages-of-an-index-universal-life-insurance-policy": {
+        "redirect": {
+          "to": "/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/reducing-expenses-in-medicare": {
+        "redirect": {
+          "to": "/articles/reducing-expenses-in-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/understanding-the-taxation-advantages-of-fixed-annuities": {
+        "redirect": {
+          "to": "/articles/understanding-the-taxation-advantages-of-fixed-annuities",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/": {
+        "redirect": {
+          "to": "/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/insurance-services/": {
+        "redirect": {
+          "to": "/services",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/types-of-life-insurance/": {
+        "redirect": {
+          "to": "/services",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/types-of-healthcare-plans/": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group/": {
+        "redirect": {
+          "to": "/services/health/group-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthcare": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthcare/": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/senior-dental/": {
+        "redirect": {
+          "to": "/services/health/senior-dental",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/individual-health-insurance/": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/senior-solutions/": {
+        "redirect": {
+          "to": "/services/health/senior-dental",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/Medicare/": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group-health-insurance/": {
+        "redirect": {
+          "to": "/services/health/group-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare-health-plans-2021/": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/form.php": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthcare/index.html": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthinsurance/index.html": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthinsurancequote/index.html": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/senior-dental/form.php": {
+        "redirect": {
+          "to": "/services/health/senior-dental",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/healthinsurance/": {
+        "redirect": {
+          "to": "/services/health/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/HealthInsurance/Cheap": {
+        "redirect": {
+          "to": "/services/health/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group/index.html": {
+        "redirect": {
+          "to": "/services/health/group-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/group/index.html#!": {
+        "redirect": {
+          "to": "/services/health/group-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare-enrroll-now/": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/lifeinsurance/": {
+        "redirect": {
+          "to": "/services/life/life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/senior-life/": {
+        "redirect": {
+          "to": "/services/life/life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/senior-life/index.html": {
+        "redirect": {
+          "to": "/services/life/life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/what-is-term-life-insurance/": {
+        "redirect": {
+          "to": "/services/life/term-life",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/lifeinsurance/index.html": {
+        "redirect": {
+          "to": "/services/life/life-insurance",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/": {
+        "redirect": {
+          "to": "/services/retirement/annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/index.php": {
+        "redirect": {
+          "to": "/services/retirement/annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/annuities/1000": {
+        "redirect": {
+          "to": "/services/retirement/annuity",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/auto-insurance/": {
+        "redirect": {
+          "to": "/services/auto",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/home-insurance/": {
+        "redirect": {
+          "to": "/services/home/property-protection",
           "statusCode": 307
         },
         "statusCode": 301
@@ -1256,6 +1263,7 @@ const _inlineRuntimeConfig = {
           "vue",
           "vue",
           "vue",
+          "vue",
           "vue"
         ]
       },
@@ -1338,6 +1346,7 @@ const _inlineRuntimeConfig = {
         "md",
         "mdc",
         "yaml",
+        "vue",
         "vue",
         "vue",
         "vue",
@@ -1446,6 +1455,9 @@ const _inlineRuntimeConfig = {
         },
         "include": [],
         "exclude": [
+          "/_templates/**",
+          "/dashboard/**",
+          "/admin/**",
           "/_nuxt/**",
           "/api/**"
         ],
@@ -1495,6 +1507,9 @@ const _inlineRuntimeConfig = {
         },
         "include": [],
         "exclude": [
+          "/_templates/**",
+          "/dashboard/**",
+          "/admin/**",
           "/_nuxt/**",
           "/api/**"
         ],
@@ -1535,7 +1550,10 @@ const _inlineRuntimeConfig = {
           "*"
         ],
         "disallow": [
-          ""
+          "/_templates/",
+          "/dashboard/",
+          "/admin/",
+          "/dashboard/search"
         ],
         "allow": []
       }
@@ -12710,6 +12728,9 @@ const sources$3 = [
         },
         "urls": [
             {
+                "loc": "/_templates/small-business"
+            },
+            {
                 "loc": "/about-us"
             },
             {
@@ -12896,115 +12917,7 @@ const sources$3 = [
                 "loc": "/ns2.amerusfinancial.com/"
             },
             {
-                "loc": "/types-of-healthcare-plans/"
-            },
-            {
-                "loc": "/healthinsurancequote"
-            },
-            {
-                "loc": "/group/"
-            },
-            {
-                "loc": "/healthcare"
-            },
-            {
                 "loc": "/rome-georgia/"
-            },
-            {
-                "loc": "/group-insurance/how-does-business-health-insurance-work/"
-            },
-            {
-                "loc": "/life-insurance/types-of-life-insurance/"
-            },
-            {
-                "loc": "/health-insurance-2/why-use-a-health-insurance-agent/"
-            },
-            {
-                "loc": "/life-insurance/what-is-term-life-insurance/"
-            },
-            {
-                "loc": "/life-insurance/senior-whole-life-insurance-guide/"
-            },
-            {
-                "loc": "/articles/reducing-expenses-in-mmedicare"
-            },
-            {
-                "loc": "/articles/the-abc-and-d-of-medicare"
-            },
-            {
-                "loc": "/health-insurance-2/health-insurance-subsidies/"
-            },
-            {
-                "loc": "/health-insurance-2/managing-your-healthcare-plan/"
-            },
-            {
-                "loc": "/health-insurance-2/researching-health-insurance-options/"
-            },
-            {
-                "loc": "/health-insurance-2/types-of-healthcare-plans/"
-            },
-            {
-                "loc": "/life-insurance/how-to-buy-the-right-life-insurance-policy/"
-            },
-            {
-                "loc": "/life-insurance/what-is-universal-life-insurance/"
-            },
-            {
-                "loc": "/annuities/understanding-a-fixed-annuity-for-retirement-planning/"
-            },
-            {
-                "loc": "/group-insurance/what-you-should-know-about-group-health-insurance/"
-            },
-            {
-                "loc": "/life-insurance/difference-between-universal-and-whole-life-insurance/"
-            },
-            {
-                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/"
-            },
-            {
-                "loc": "/health-insurance/what-sets-amerus-agents-apart/"
-            },
-            {
-                "loc": "/final-expense-insurance/what-is-final-expense-insurance/"
-            },
-            {
-                "loc": "/life-insurance/advantages-of-an-index-universal-life-insurance-policy/"
-            },
-            {
-                "loc": "/annuities/understanding-the-taxation-advantages-of-fixed-annuities/"
-            },
-            {
-                "loc": "/healthcare/"
-            },
-            {
-                "loc": "/lifeinsurance/"
-            },
-            {
-                "loc": "/senior-dental/"
-            },
-            {
-                "loc": "/individual-health-insurance/"
-            },
-            {
-                "loc": "/annuities/"
-            },
-            {
-                "loc": "/senior-solutions/"
-            },
-            {
-                "loc": "/Medicare/"
-            },
-            {
-                "loc": "/senior-life/"
-            },
-            {
-                "loc": "/group-health-insurance/"
-            },
-            {
-                "loc": "/category/auto-insurance/"
-            },
-            {
-                "loc": "/category/home-insurance/"
             },
             {
                 "loc": "/contact-insurance-agency/"
@@ -13016,19 +12929,7 @@ const sources$3 = [
                 "loc": "/content"
             },
             {
-                "loc": "/annuities/index.php"
-            },
-            {
                 "loc": "/appointments/"
-            },
-            {
-                "loc": "/insurance-services/"
-            },
-            {
-                "loc": "/news-updates/"
-            },
-            {
-                "loc": "/categories/"
             },
             {
                 "loc": "/register/"
@@ -13037,34 +12938,16 @@ const sources$3 = [
                 "loc": "/dashboard"
             },
             {
-                "loc": "/medicare-health-plans-2021/"
-            },
-            {
-                "loc": "/medicare/form.php"
-            },
-            {
                 "loc": "/learn-about-amerus-financial/"
             },
             {
-                "loc": "/types-of-life-insurance/"
-            },
-            {
                 "loc": "/dev/wp-content/uploads/2017/07/African-American-Family-600x415.jpg"
-            },
-            {
-                "loc": "/senior-life/index.html"
             },
             {
                 "loc": "/agent-login/"
             },
             {
                 "loc": "/life-insurance-request/"
-            },
-            {
-                "loc": "/what-is-term-life-insurance/"
-            },
-            {
-                "loc": "/lifeinsurance/index.html"
             },
             {
                 "loc": "/wp-content/uploads/2020/12/99a81103d2a55eb36b697a1b53577944.jpg"
@@ -13074,9 +12957,6 @@ const sources$3 = [
             },
             {
                 "loc": "/events/amerus-agent-training-convention/"
-            },
-            {
-                "loc": "/healthcare/index.html"
             },
             {
                 "loc": "/healthinsurance/es/index.html"
@@ -13091,73 +12971,22 @@ const sources$3 = [
                 "loc": "/wp-content/uploads/2020/08/Amerus-website-ad-headers3-1-scaled.jpg"
             },
             {
-                "loc": "/category/health-insurance-2/"
-            },
-            {
-                "loc": "/category/medicare/"
-            },
-            {
-                "loc": "/how-much-does-medicare-cost/"
-            },
-            {
-                "loc": "/healthinsurance/index.html"
-            },
-            {
-                "loc": "/healthinsurancequote/index.html"
-            },
-            {
-                "loc": "/dev/wp-content/uploads/2017/08/Jacob-400x400.png"
-            },
-            {
                 "loc": "/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg"
-            },
-            {
-                "loc": "/what-is-universal-life-insurance"
-            },
-            {
-                "loc": "/medicare-eligibility"
-            },
-            {
-                "loc": "/pros-and-cons-if-a-fixed-annuity"
             },
             {
                 "loc": "/onfo"
             },
             {
+                "loc": "/info"
+            },
+            {
                 "loc": "/subscribe"
-            },
-            {
-                "loc": "/open-enrollment"
-            },
-            {
-                "loc": "/what-is-final-expense-insurance"
-            },
-            {
-                "loc": "/signing-up-for-medicare"
-            },
-            {
-                "loc": "/series"
             },
             {
                 "loc": "/PrivacyPolicy"
             },
             {
                 "loc": "/index.php"
-            },
-            {
-                "loc": "/the-abcs-and-d-of-medicare"
-            },
-            {
-                "loc": "/what-is-term-life-insurance"
-            },
-            {
-                "loc": "/life-insurance-advantages-of-an-index-universal-life-insurance-policy"
-            },
-            {
-                "loc": "/reducing-expenses-in-medicare"
-            },
-            {
-                "loc": "/understanding-the-taxation-advantages-of-fixed-annuities"
             },
             {
                 "loc": "/new-client-census-current-coverage/"
@@ -13187,18 +13016,6 @@ const sources$3 = [
                 "loc": "/category/medicare/page/2/?et_blog"
             },
             {
-                "loc": "/life-insurance/what-is-universal-life-insurance/feed/"
-            },
-            {
-                "loc": "/senior-dental/form.php"
-            },
-            {
-                "loc": "/healthinsurance/"
-            },
-            {
-                "loc": "/category/health-insurance/"
-            },
-            {
                 "loc": "/home-owners/"
             },
             {
@@ -13208,19 +13025,7 @@ const sources$3 = [
                 "loc": "/lifeinsurance/privacy-policy.html"
             },
             {
-                "loc": "/articles/pros-and-cons-of-a-fixed-annuity"
-            },
-            {
-                "loc": "/amerus-financial-blog/page/2/?et_blog"
-            },
-            {
                 "loc": "/ariel-scalici/"
-            },
-            {
-                "loc": "/author/amerusfinancial/page/3/"
-            },
-            {
-                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/1000"
             },
             {
                 "loc": "/duplicate/insurance-service"
@@ -13229,31 +13034,13 @@ const sources$3 = [
                 "loc": "/cameronfurrow/insurance-services/"
             },
             {
-                "loc": "/HealthInsurance/Cheap"
-            },
-            {
                 "loc": "/agent-resources/"
             },
             {
                 "loc": "/carolinametalsgroup/"
             },
             {
-                "loc": "/author/amerusfinancial/page/4/"
-            },
-            {
-                "loc": "/medicare-enrroll-now/"
-            },
-            {
-                "loc": "/amerus-financial-blog/"
-            },
-            {
-                "loc": "/life-insurance/senior-whole-life-insurance-guide/feed/"
-            },
-            {
                 "loc": "/duplicate/privacy-policy/"
-            },
-            {
-                "loc": "/group/index.html#!"
             },
             {
                 "loc": "/healthinsurancequote/"
@@ -13265,16 +13052,10 @@ const sources$3 = [
                 "loc": "/policies/sitemap"
             },
             {
-                "loc": "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/"
-            },
-            {
-                "loc": "/annuities/1000"
-            },
-            {
-                "loc": "/group/index.html"
-            },
-            {
                 "loc": "/dashboard/search"
+            },
+            {
+                "loc": "/healthinsurancequote"
             },
             {
                 "loc": "/medicare/medicare-health-plans-2021/"
@@ -13323,6 +13104,249 @@ const sources$3 = [
             },
             {
                 "loc": "/medicare/medicaid-medicare/"
+            },
+            {
+                "loc": "/articles/reducing-expenses-in-mmedicare"
+            },
+            {
+                "loc": "/articles/the-abc-and-d-of-medicare"
+            },
+            {
+                "loc": "/articles/pros-and-cons-of-a-fixed-annuity"
+            },
+            {
+                "loc": "/group-insurance/how-does-business-health-insurance-work/"
+            },
+            {
+                "loc": "/life-insurance/types-of-life-insurance/"
+            },
+            {
+                "loc": "/health-insurance-2/why-use-a-health-insurance-agent/"
+            },
+            {
+                "loc": "/life-insurance/what-is-term-life-insurance/"
+            },
+            {
+                "loc": "/life-insurance/senior-whole-life-insurance-guide/"
+            },
+            {
+                "loc": "/health-insurance-2/health-insurance-subsidies/"
+            },
+            {
+                "loc": "/health-insurance-2/managing-your-healthcare-plan/"
+            },
+            {
+                "loc": "/health-insurance-2/researching-health-insurance-options/"
+            },
+            {
+                "loc": "/health-insurance-2/types-of-healthcare-plans/"
+            },
+            {
+                "loc": "/life-insurance/how-to-buy-the-right-life-insurance-policy/"
+            },
+            {
+                "loc": "/life-insurance/what-is-universal-life-insurance/"
+            },
+            {
+                "loc": "/annuities/understanding-a-fixed-annuity-for-retirement-planning/"
+            },
+            {
+                "loc": "/group-insurance/what-you-should-know-about-group-health-insurance/"
+            },
+            {
+                "loc": "/life-insurance/difference-between-universal-and-whole-life-insurance/"
+            },
+            {
+                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/"
+            },
+            {
+                "loc": "/health-insurance/what-sets-amerus-agents-apart/"
+            },
+            {
+                "loc": "/final-expense-insurance/what-is-final-expense-insurance/"
+            },
+            {
+                "loc": "/life-insurance/advantages-of-an-index-universal-life-insurance-policy/"
+            },
+            {
+                "loc": "/annuities/understanding-the-taxation-advantages-of-fixed-annuities/"
+            },
+            {
+                "loc": "/news-updates/"
+            },
+            {
+                "loc": "/categories/"
+            },
+            {
+                "loc": "/what-is-universal-life-insurance"
+            },
+            {
+                "loc": "/medicare-eligibility"
+            },
+            {
+                "loc": "/pros-and-cons-if-a-fixed-annuity"
+            },
+            {
+                "loc": "/category/health-insurance-2/"
+            },
+            {
+                "loc": "/category/medicare/"
+            },
+            {
+                "loc": "/how-much-does-medicare-cost/"
+            },
+            {
+                "loc": "/dev/wp-content/uploads/2017/08/Jacob-400x400.png"
+            },
+            {
+                "loc": "/life-insurance/what-is-universal-life-insurance/feed/"
+            },
+            {
+                "loc": "/category/health-insurance/"
+            },
+            {
+                "loc": "/the-abcs-and-d-of-medicare"
+            },
+            {
+                "loc": "/what-is-term-life-insurance"
+            },
+            {
+                "loc": "/amerus-financial-blog/page/2/?et_blog"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/3/"
+            },
+            {
+                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/1000"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/4/"
+            },
+            {
+                "loc": "/amerus-financial-blog/"
+            },
+            {
+                "loc": "/life-insurance/senior-whole-life-insurance-guide/feed/"
+            },
+            {
+                "loc": "/open-enrollment"
+            },
+            {
+                "loc": "/what-is-final-expense-insurance"
+            },
+            {
+                "loc": "/signing-up-for-medicare"
+            },
+            {
+                "loc": "/series"
+            },
+            {
+                "loc": "/life-insurance-advantages-of-an-index-universal-life-insurance-policy"
+            },
+            {
+                "loc": "/reducing-expenses-in-medicare"
+            },
+            {
+                "loc": "/understanding-the-taxation-advantages-of-fixed-annuities"
+            },
+            {
+                "loc": "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/"
+            },
+            {
+                "loc": "/insurance-services/"
+            },
+            {
+                "loc": "/types-of-life-insurance/"
+            },
+            {
+                "loc": "/types-of-healthcare-plans/"
+            },
+            {
+                "loc": "/group/"
+            },
+            {
+                "loc": "/healthcare"
+            },
+            {
+                "loc": "/healthcare/"
+            },
+            {
+                "loc": "/senior-dental/"
+            },
+            {
+                "loc": "/individual-health-insurance/"
+            },
+            {
+                "loc": "/senior-solutions/"
+            },
+            {
+                "loc": "/Medicare/"
+            },
+            {
+                "loc": "/group-health-insurance/"
+            },
+            {
+                "loc": "/medicare-health-plans-2021/"
+            },
+            {
+                "loc": "/medicare/form.php"
+            },
+            {
+                "loc": "/healthcare/index.html"
+            },
+            {
+                "loc": "/healthinsurance/index.html"
+            },
+            {
+                "loc": "/healthinsurancequote/index.html"
+            },
+            {
+                "loc": "/senior-dental/form.php"
+            },
+            {
+                "loc": "/healthinsurance/"
+            },
+            {
+                "loc": "/HealthInsurance/Cheap"
+            },
+            {
+                "loc": "/group/index.html"
+            },
+            {
+                "loc": "/group/index.html#!"
+            },
+            {
+                "loc": "/medicare-enrroll-now/"
+            },
+            {
+                "loc": "/lifeinsurance/"
+            },
+            {
+                "loc": "/senior-life/"
+            },
+            {
+                "loc": "/senior-life/index.html"
+            },
+            {
+                "loc": "/what-is-term-life-insurance/"
+            },
+            {
+                "loc": "/lifeinsurance/index.html"
+            },
+            {
+                "loc": "/annuities/"
+            },
+            {
+                "loc": "/annuities/index.php"
+            },
+            {
+                "loc": "/annuities/1000"
+            },
+            {
+                "loc": "/category/auto-insurance/"
+            },
+            {
+                "loc": "/category/home-insurance/"
             }
         ],
         "sourceType": "app"
@@ -13383,6 +13407,9 @@ const sources$1 = [
         },
         "urls": [
             {
+                "loc": "/_templates/small-business"
+            },
+            {
                 "loc": "/about-us"
             },
             {
@@ -13569,115 +13596,7 @@ const sources$1 = [
                 "loc": "/ns2.amerusfinancial.com/"
             },
             {
-                "loc": "/types-of-healthcare-plans/"
-            },
-            {
-                "loc": "/healthinsurancequote"
-            },
-            {
-                "loc": "/group/"
-            },
-            {
-                "loc": "/healthcare"
-            },
-            {
                 "loc": "/rome-georgia/"
-            },
-            {
-                "loc": "/group-insurance/how-does-business-health-insurance-work/"
-            },
-            {
-                "loc": "/life-insurance/types-of-life-insurance/"
-            },
-            {
-                "loc": "/health-insurance-2/why-use-a-health-insurance-agent/"
-            },
-            {
-                "loc": "/life-insurance/what-is-term-life-insurance/"
-            },
-            {
-                "loc": "/life-insurance/senior-whole-life-insurance-guide/"
-            },
-            {
-                "loc": "/articles/reducing-expenses-in-mmedicare"
-            },
-            {
-                "loc": "/articles/the-abc-and-d-of-medicare"
-            },
-            {
-                "loc": "/health-insurance-2/health-insurance-subsidies/"
-            },
-            {
-                "loc": "/health-insurance-2/managing-your-healthcare-plan/"
-            },
-            {
-                "loc": "/health-insurance-2/researching-health-insurance-options/"
-            },
-            {
-                "loc": "/health-insurance-2/types-of-healthcare-plans/"
-            },
-            {
-                "loc": "/life-insurance/how-to-buy-the-right-life-insurance-policy/"
-            },
-            {
-                "loc": "/life-insurance/what-is-universal-life-insurance/"
-            },
-            {
-                "loc": "/annuities/understanding-a-fixed-annuity-for-retirement-planning/"
-            },
-            {
-                "loc": "/group-insurance/what-you-should-know-about-group-health-insurance/"
-            },
-            {
-                "loc": "/life-insurance/difference-between-universal-and-whole-life-insurance/"
-            },
-            {
-                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/"
-            },
-            {
-                "loc": "/health-insurance/what-sets-amerus-agents-apart/"
-            },
-            {
-                "loc": "/final-expense-insurance/what-is-final-expense-insurance/"
-            },
-            {
-                "loc": "/life-insurance/advantages-of-an-index-universal-life-insurance-policy/"
-            },
-            {
-                "loc": "/annuities/understanding-the-taxation-advantages-of-fixed-annuities/"
-            },
-            {
-                "loc": "/healthcare/"
-            },
-            {
-                "loc": "/lifeinsurance/"
-            },
-            {
-                "loc": "/senior-dental/"
-            },
-            {
-                "loc": "/individual-health-insurance/"
-            },
-            {
-                "loc": "/annuities/"
-            },
-            {
-                "loc": "/senior-solutions/"
-            },
-            {
-                "loc": "/Medicare/"
-            },
-            {
-                "loc": "/senior-life/"
-            },
-            {
-                "loc": "/group-health-insurance/"
-            },
-            {
-                "loc": "/category/auto-insurance/"
-            },
-            {
-                "loc": "/category/home-insurance/"
             },
             {
                 "loc": "/contact-insurance-agency/"
@@ -13689,19 +13608,7 @@ const sources$1 = [
                 "loc": "/content"
             },
             {
-                "loc": "/annuities/index.php"
-            },
-            {
                 "loc": "/appointments/"
-            },
-            {
-                "loc": "/insurance-services/"
-            },
-            {
-                "loc": "/news-updates/"
-            },
-            {
-                "loc": "/categories/"
             },
             {
                 "loc": "/register/"
@@ -13710,34 +13617,16 @@ const sources$1 = [
                 "loc": "/dashboard"
             },
             {
-                "loc": "/medicare-health-plans-2021/"
-            },
-            {
-                "loc": "/medicare/form.php"
-            },
-            {
                 "loc": "/learn-about-amerus-financial/"
             },
             {
-                "loc": "/types-of-life-insurance/"
-            },
-            {
                 "loc": "/dev/wp-content/uploads/2017/07/African-American-Family-600x415.jpg"
-            },
-            {
-                "loc": "/senior-life/index.html"
             },
             {
                 "loc": "/agent-login/"
             },
             {
                 "loc": "/life-insurance-request/"
-            },
-            {
-                "loc": "/what-is-term-life-insurance/"
-            },
-            {
-                "loc": "/lifeinsurance/index.html"
             },
             {
                 "loc": "/wp-content/uploads/2020/12/99a81103d2a55eb36b697a1b53577944.jpg"
@@ -13747,9 +13636,6 @@ const sources$1 = [
             },
             {
                 "loc": "/events/amerus-agent-training-convention/"
-            },
-            {
-                "loc": "/healthcare/index.html"
             },
             {
                 "loc": "/healthinsurance/es/index.html"
@@ -13764,73 +13650,22 @@ const sources$1 = [
                 "loc": "/wp-content/uploads/2020/08/Amerus-website-ad-headers3-1-scaled.jpg"
             },
             {
-                "loc": "/category/health-insurance-2/"
-            },
-            {
-                "loc": "/category/medicare/"
-            },
-            {
-                "loc": "/how-much-does-medicare-cost/"
-            },
-            {
-                "loc": "/healthinsurance/index.html"
-            },
-            {
-                "loc": "/healthinsurancequote/index.html"
-            },
-            {
-                "loc": "/dev/wp-content/uploads/2017/08/Jacob-400x400.png"
-            },
-            {
                 "loc": "/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg"
-            },
-            {
-                "loc": "/what-is-universal-life-insurance"
-            },
-            {
-                "loc": "/medicare-eligibility"
-            },
-            {
-                "loc": "/pros-and-cons-if-a-fixed-annuity"
             },
             {
                 "loc": "/onfo"
             },
             {
+                "loc": "/info"
+            },
+            {
                 "loc": "/subscribe"
-            },
-            {
-                "loc": "/open-enrollment"
-            },
-            {
-                "loc": "/what-is-final-expense-insurance"
-            },
-            {
-                "loc": "/signing-up-for-medicare"
-            },
-            {
-                "loc": "/series"
             },
             {
                 "loc": "/PrivacyPolicy"
             },
             {
                 "loc": "/index.php"
-            },
-            {
-                "loc": "/the-abcs-and-d-of-medicare"
-            },
-            {
-                "loc": "/what-is-term-life-insurance"
-            },
-            {
-                "loc": "/life-insurance-advantages-of-an-index-universal-life-insurance-policy"
-            },
-            {
-                "loc": "/reducing-expenses-in-medicare"
-            },
-            {
-                "loc": "/understanding-the-taxation-advantages-of-fixed-annuities"
             },
             {
                 "loc": "/new-client-census-current-coverage/"
@@ -13860,18 +13695,6 @@ const sources$1 = [
                 "loc": "/category/medicare/page/2/?et_blog"
             },
             {
-                "loc": "/life-insurance/what-is-universal-life-insurance/feed/"
-            },
-            {
-                "loc": "/senior-dental/form.php"
-            },
-            {
-                "loc": "/healthinsurance/"
-            },
-            {
-                "loc": "/category/health-insurance/"
-            },
-            {
                 "loc": "/home-owners/"
             },
             {
@@ -13881,19 +13704,7 @@ const sources$1 = [
                 "loc": "/lifeinsurance/privacy-policy.html"
             },
             {
-                "loc": "/articles/pros-and-cons-of-a-fixed-annuity"
-            },
-            {
-                "loc": "/amerus-financial-blog/page/2/?et_blog"
-            },
-            {
                 "loc": "/ariel-scalici/"
-            },
-            {
-                "loc": "/author/amerusfinancial/page/3/"
-            },
-            {
-                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/1000"
             },
             {
                 "loc": "/duplicate/insurance-service"
@@ -13902,31 +13713,13 @@ const sources$1 = [
                 "loc": "/cameronfurrow/insurance-services/"
             },
             {
-                "loc": "/HealthInsurance/Cheap"
-            },
-            {
                 "loc": "/agent-resources/"
             },
             {
                 "loc": "/carolinametalsgroup/"
             },
             {
-                "loc": "/author/amerusfinancial/page/4/"
-            },
-            {
-                "loc": "/medicare-enrroll-now/"
-            },
-            {
-                "loc": "/amerus-financial-blog/"
-            },
-            {
-                "loc": "/life-insurance/senior-whole-life-insurance-guide/feed/"
-            },
-            {
                 "loc": "/duplicate/privacy-policy/"
-            },
-            {
-                "loc": "/group/index.html#!"
             },
             {
                 "loc": "/healthinsurancequote/"
@@ -13938,16 +13731,10 @@ const sources$1 = [
                 "loc": "/policies/sitemap"
             },
             {
-                "loc": "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/"
-            },
-            {
-                "loc": "/annuities/1000"
-            },
-            {
-                "loc": "/group/index.html"
-            },
-            {
                 "loc": "/dashboard/search"
+            },
+            {
+                "loc": "/healthinsurancequote"
             },
             {
                 "loc": "/medicare/medicare-health-plans-2021/"
@@ -13996,6 +13783,249 @@ const sources$1 = [
             },
             {
                 "loc": "/medicare/medicaid-medicare/"
+            },
+            {
+                "loc": "/articles/reducing-expenses-in-mmedicare"
+            },
+            {
+                "loc": "/articles/the-abc-and-d-of-medicare"
+            },
+            {
+                "loc": "/articles/pros-and-cons-of-a-fixed-annuity"
+            },
+            {
+                "loc": "/group-insurance/how-does-business-health-insurance-work/"
+            },
+            {
+                "loc": "/life-insurance/types-of-life-insurance/"
+            },
+            {
+                "loc": "/health-insurance-2/why-use-a-health-insurance-agent/"
+            },
+            {
+                "loc": "/life-insurance/what-is-term-life-insurance/"
+            },
+            {
+                "loc": "/life-insurance/senior-whole-life-insurance-guide/"
+            },
+            {
+                "loc": "/health-insurance-2/health-insurance-subsidies/"
+            },
+            {
+                "loc": "/health-insurance-2/managing-your-healthcare-plan/"
+            },
+            {
+                "loc": "/health-insurance-2/researching-health-insurance-options/"
+            },
+            {
+                "loc": "/health-insurance-2/types-of-healthcare-plans/"
+            },
+            {
+                "loc": "/life-insurance/how-to-buy-the-right-life-insurance-policy/"
+            },
+            {
+                "loc": "/life-insurance/what-is-universal-life-insurance/"
+            },
+            {
+                "loc": "/annuities/understanding-a-fixed-annuity-for-retirement-planning/"
+            },
+            {
+                "loc": "/group-insurance/what-you-should-know-about-group-health-insurance/"
+            },
+            {
+                "loc": "/life-insurance/difference-between-universal-and-whole-life-insurance/"
+            },
+            {
+                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/"
+            },
+            {
+                "loc": "/health-insurance/what-sets-amerus-agents-apart/"
+            },
+            {
+                "loc": "/final-expense-insurance/what-is-final-expense-insurance/"
+            },
+            {
+                "loc": "/life-insurance/advantages-of-an-index-universal-life-insurance-policy/"
+            },
+            {
+                "loc": "/annuities/understanding-the-taxation-advantages-of-fixed-annuities/"
+            },
+            {
+                "loc": "/news-updates/"
+            },
+            {
+                "loc": "/categories/"
+            },
+            {
+                "loc": "/what-is-universal-life-insurance"
+            },
+            {
+                "loc": "/medicare-eligibility"
+            },
+            {
+                "loc": "/pros-and-cons-if-a-fixed-annuity"
+            },
+            {
+                "loc": "/category/health-insurance-2/"
+            },
+            {
+                "loc": "/category/medicare/"
+            },
+            {
+                "loc": "/how-much-does-medicare-cost/"
+            },
+            {
+                "loc": "/dev/wp-content/uploads/2017/08/Jacob-400x400.png"
+            },
+            {
+                "loc": "/life-insurance/what-is-universal-life-insurance/feed/"
+            },
+            {
+                "loc": "/category/health-insurance/"
+            },
+            {
+                "loc": "/the-abcs-and-d-of-medicare"
+            },
+            {
+                "loc": "/what-is-term-life-insurance"
+            },
+            {
+                "loc": "/amerus-financial-blog/page/2/?et_blog"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/3/"
+            },
+            {
+                "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/1000"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/4/"
+            },
+            {
+                "loc": "/amerus-financial-blog/"
+            },
+            {
+                "loc": "/life-insurance/senior-whole-life-insurance-guide/feed/"
+            },
+            {
+                "loc": "/open-enrollment"
+            },
+            {
+                "loc": "/what-is-final-expense-insurance"
+            },
+            {
+                "loc": "/signing-up-for-medicare"
+            },
+            {
+                "loc": "/series"
+            },
+            {
+                "loc": "/life-insurance-advantages-of-an-index-universal-life-insurance-policy"
+            },
+            {
+                "loc": "/reducing-expenses-in-medicare"
+            },
+            {
+                "loc": "/understanding-the-taxation-advantages-of-fixed-annuities"
+            },
+            {
+                "loc": "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/"
+            },
+            {
+                "loc": "/insurance-services/"
+            },
+            {
+                "loc": "/types-of-life-insurance/"
+            },
+            {
+                "loc": "/types-of-healthcare-plans/"
+            },
+            {
+                "loc": "/group/"
+            },
+            {
+                "loc": "/healthcare"
+            },
+            {
+                "loc": "/healthcare/"
+            },
+            {
+                "loc": "/senior-dental/"
+            },
+            {
+                "loc": "/individual-health-insurance/"
+            },
+            {
+                "loc": "/senior-solutions/"
+            },
+            {
+                "loc": "/Medicare/"
+            },
+            {
+                "loc": "/group-health-insurance/"
+            },
+            {
+                "loc": "/medicare-health-plans-2021/"
+            },
+            {
+                "loc": "/medicare/form.php"
+            },
+            {
+                "loc": "/healthcare/index.html"
+            },
+            {
+                "loc": "/healthinsurance/index.html"
+            },
+            {
+                "loc": "/healthinsurancequote/index.html"
+            },
+            {
+                "loc": "/senior-dental/form.php"
+            },
+            {
+                "loc": "/healthinsurance/"
+            },
+            {
+                "loc": "/HealthInsurance/Cheap"
+            },
+            {
+                "loc": "/group/index.html"
+            },
+            {
+                "loc": "/group/index.html#!"
+            },
+            {
+                "loc": "/medicare-enrroll-now/"
+            },
+            {
+                "loc": "/lifeinsurance/"
+            },
+            {
+                "loc": "/senior-life/"
+            },
+            {
+                "loc": "/senior-life/index.html"
+            },
+            {
+                "loc": "/what-is-term-life-insurance/"
+            },
+            {
+                "loc": "/lifeinsurance/index.html"
+            },
+            {
+                "loc": "/annuities/"
+            },
+            {
+                "loc": "/annuities/index.php"
+            },
+            {
+                "loc": "/annuities/1000"
+            },
+            {
+                "loc": "/category/auto-insurance/"
+            },
+            {
+                "loc": "/category/home-insurance/"
             }
         ],
         "sourceType": "app"

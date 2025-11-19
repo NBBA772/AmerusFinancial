@@ -94,11 +94,21 @@ export default defineNuxtConfig({
       // Use date-only format for lastmod to satisfy validators (YYYY-MM-DD)
       lastmod: new Date().toISOString().slice(0, 10)
     },
-    dynamicUrlsApiEndpoint: '/api/sitemap-urls'
+    dynamicUrlsApiEndpoint: '/api/sitemap-urls',
+    exclude: [
+      '/_templates/**',
+      '/dashboard/**',
+      '/admin/**'
+    ]
   },
   robots: {
     enabled: true,
-    sitemap: '/sitemap.xml'
+    sitemap: '/sitemap.xml',
+    disallow: [
+      '/_templates/',
+      '/dashboard/',
+      '/admin/'
+    ]
   },
   seo: {
     redirectToCanonicalSiteUrl: true
