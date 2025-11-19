@@ -134,7 +134,7 @@ export default defineNuxtConfig({
     routeRules: {
        '/**': {
         headers: {
-          'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
+          'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com https://dashboard.searchatlas.com https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
         }
       },
     '/ns1.amerusfinancial.com/': { redirect: '/', statusCode: 301 },
@@ -144,34 +144,24 @@ export default defineNuxtConfig({
     '/group/': { redirect: '/services/health/group-health', statusCode: 301 },
     '/healthcare': { redirect: '/services/health/individual-health', statusCode: 301 },
     '/rome-georgia/': { redirect: '/', statusCode: 301 },
-    '/medicare/medicare-health-plans-2021/': { redirect: '/articles/medicare-health-plans-2021', statusCode: 301 },
+
     '/group-insurance/how-does-business-health-insurance-work/': { redirect: '/articles/how-does-business-health-insurance-work', statusCode: 301 },
     '/life-insurance/types-of-life-insurance/': { redirect: '/articles/types-of-life-insurance', statusCode: 301 },
     '/health-insurance-2/why-use-a-health-insurance-agent/': { redirect: '/articles/why-use-a-health-insurance-agent', statusCode: 301 },
-    '/medicare/pros-cons-of-medicare-advantage/': { redirect: '/articles/pros-and-cons-of-medicare-advantage', statusCode: 301 },
+    
     '/life-insurance/what-is-term-life-insurance/': { redirect: '/articles/what-is-term-life-insurance', statusCode: 301 },
-    '/medicare/what-is-medicare/': { redirect: '/articles/what-is-medicare', statusCode: 301 },
-    '/life-insurance/senior-whole-life-insurance-guide/': { redirect: '/articles/senior-whole-life-insurance-everything-you-need-to-know', statusCode: 301 },
-    '/medicare/enrolling-within-medicare/': { redirect: '/articles/enrolling-within-medicare', statusCode: 301 },
-    '/medicare/how-much-does-medicare-cost/': { redirect: '/articles/how-much-does-medicare-cost', statusCode: 301 },
-    '/medicare/medicare-eligibility/': { redirect: '/articles/medicare-eligibility', statusCode: 301 },
-    '/medicare/medicare-extra-help/': { redirect: '/articles/medicare-extra-help', statusCode: 301 },
-    '/medicare/medicare-at-the-right-time/': { redirect: '/articles/medicare-at-the-right-time', statusCode: 301 },
-    '/medicare/open-enrollment/': { redirect: '/articles/open-enrollment', statusCode: 301 },
-    '/medicare/medicare-part-a-and-part-b-coverage/': { redirect: '/articles/medicare-part-a-and-part-b-coverage', statusCode: 301 },
-    '/medicare/qualifying-for-medicare-with-disabilities/': { redirect: '/articles/qualifying-for-medicare-with-disabilities', statusCode: 301 },
-    '/medicare/reducing-expenses-in-medicare/': { redirect: '/articles/reducing-expenses-in-medicare', statusCode: 301 },
-    '/articles/reducing-expenses-in-mmedicare': { redirect: '/articles/reducing-expenses-in-medicare', statusCode: 301 },
-    '/medicare/the-abcs-and-d-of-medicare/': { redirect: '/articles/the-abcs-and-d-of-medicare', statusCode: 301 },
 
+    '/life-insurance/senior-whole-life-insurance-guide/': { redirect: '/articles/senior-whole-life-insurance-everything-you-need-to-know', statusCode: 301 },
+
+    
+    '/articles/reducing-expenses-in-mmedicare': { redirect: '/articles/reducing-expenses-in-medicare', statusCode: 301 },
     '/articles/the-abc-and-d-of-medicare': { redirect: '/articles/the-abcs-and-d-of-medicare', statusCode: 301 },
     
 
-    '/medicare/signing-up-for-medicare/': { redirect: '/articles/signing-up-for-medicare', statusCode: 301 },
-    '/medicare/when-medicare-coverage-begins/': { redirect: '/articles/when-medicare-coverage-begins', statusCode: 301 },
+    
     '/health-insurance-2/health-insurance-subsidies/': { redirect: '/articles/health-insurance-subsidies', statusCode: 301 },
     '/health-insurance-2/managing-your-healthcare-plan/': { redirect: '/articles/managing-your-healthcare-plan', statusCode: 301 },
-    '/medicare/medicaid-medicare/': { redirect: '/articles/medicaid-medicare', statusCode: 301 },
+    
     '/health-insurance-2/researching-health-insurance-options/': { redirect: '/articles/researching-health-insurance-options', statusCode: 301 },
     '/health-insurance-2/types-of-healthcare-plans/': { redirect: '/articles/types-of-healthcare-plans', statusCode: 301 },
     '/life-insurance/how-to-buy-the-right-life-insurance-policy/': { redirect: '/articles/how-to-buy-the-right-life-insurance-policy', statusCode: 301 },
@@ -211,6 +201,9 @@ export default defineNuxtConfig({
 
 
 
+
+
+
     '/medicare-health-plans-2021/' : { redirect: '/services/health/medicare', statusCode: 301 },
     '/medicare/form.php' : { redirect: '/services/health/medicare', statusCode: 301 },
     '/learn-about-amerus-financial/' : { redirect: '/about-us', statusCode: 301 },
@@ -236,6 +229,8 @@ export default defineNuxtConfig({
     '/healthinsurancequote/index.html' : { redirect: '/services/health/individual-health', statusCode: 301 },
     '/dev/wp-content/uploads/2017/08/Jacob-400x400.png' : { redirect: '/', statusCode: 301 },
     '/wp-content/uploads/2020/12/portrait-smiling-senior-couple-home-1536x1024.jpg' : { redirect: '/', statusCode: 301 },
+
+
 
 
 
@@ -277,6 +272,9 @@ export default defineNuxtConfig({
     '/ariel-scalici/' : { redirect: '/', statusCode: 301 },
     '/author/amerusfinancial/page/3/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/annuities/pros-and-cons-of-a-fixed-annuity/1000' : { redirect: '/articles/pros-and-cons-if-a-fixed-annuity', statusCode: 301 },
+
+
+
   
     '/duplicate/insurance-service' : { redirect: '/', statusCode: 301 },
     '/cameronfurrow/insurance-services/' : { redirect: '/', statusCode: 301 },
@@ -295,6 +293,25 @@ export default defineNuxtConfig({
     '/health-insurance/advantages-of-an-index-universal-life-insurance-policy/' : { redirect: '/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy', statusCode: 301 },
     '/annuities/1000' : { redirect: '/services/retirement/annuity', statusCode: 301 },
     '/group/index.html' : { redirect: '/services/health/group-health', statusCode: 301 },
+    '/dashboard/search' : { redirect: '/', statusCode: 301 },
+
+
+    '/medicare/medicare-health-plans-2021/': { redirect: '/articles/medicare-health-plans-2021', statusCode: 301 },
+    '/medicare/pros-cons-of-medicare-advantage/': { redirect: '/articles/pros-and-cons-of-medicare-advantage', statusCode: 301 },
+    '/medicare/what-is-medicare/': { redirect: '/articles/what-is-medicare', statusCode: 301 },
+    '/medicare/enrolling-within-medicare/': { redirect: '/articles/enrolling-within-medicare', statusCode: 301 },
+    '/medicare/how-much-does-medicare-cost/': { redirect: '/articles/how-much-does-medicare-cost', statusCode: 301 },
+    '/medicare/medicare-eligibility/': { redirect: '/articles/medicare-eligibility', statusCode: 301 },
+    '/medicare/medicare-extra-help/': { redirect: '/articles/medicare-extra-help', statusCode: 301 },
+    '/medicare/medicare-at-the-right-time/': { redirect: '/articles/medicare-at-the-right-time', statusCode: 301 },
+    '/medicare/open-enrollment/': { redirect: '/articles/open-enrollment', statusCode: 301 },
+    '/medicare/medicare-part-a-and-part-b-coverage/': { redirect: '/articles/medicare-part-a-and-part-b-coverage', statusCode: 301 },
+    '/medicare/qualifying-for-medicare-with-disabilities/': { redirect: '/articles/qualifying-for-medicare-with-disabilities', statusCode: 301 },
+    '/medicare/reducing-expenses-in-medicare/': { redirect: '/articles/reducing-expenses-in-medicare', statusCode: 301 },
+    '/medicare/the-abcs-and-d-of-medicare/': { redirect: '/articles/the-abcs-and-d-of-medicare', statusCode: 301 },
+    '/medicare/signing-up-for-medicare/': { redirect: '/articles/signing-up-for-medicare', statusCode: 301 },
+    '/medicare/when-medicare-coverage-begins/': { redirect: '/articles/when-medicare-coverage-begins', statusCode: 301 },
+    '/medicare/medicaid-medicare/': { redirect: '/articles/medicaid-medicare', statusCode: 301 },
 
     
   },

@@ -3,14 +3,14 @@
     <HomepageHeroSection />
     <main class="flex-grow">
       <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                  <Breadcrumbs
-              currentPageTitle="Personal Auto Insurance"
-              parentTitle="Services"
-              parentUrl="/services"
-            />
+        <Breadcrumbs
+          currentPageTitle="Personal Auto Insurance"
+          parentTitle="Services"
+          parentUrl="/services"
+        />
 
 
-            <Hero :hero="hero" />
+        <Hero :hero="hero" />
         <div class="flex flex-col md:flex-row gap-8">
           <!-- Main Content -->
           <div class="w-full md:w-2/3 flex flex-col gap-8">

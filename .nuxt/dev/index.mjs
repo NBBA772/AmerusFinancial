@@ -97,7 +97,7 @@ const _inlineRuntimeConfig = {
       },
       "/**": {
         "headers": {
-          "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
+          "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://www.google-analytics.com https://www.googletagmanager.com https://fonts.googleapis.com https://analytics.ahrefs.com https://dashboard.searchatlas.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com https://dashboard.searchatlas.com https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
         }
       },
       "/ns1.amerusfinancial.com/": {
@@ -149,13 +149,6 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/medicare/medicare-health-plans-2021/": {
-        "redirect": {
-          "to": "/articles/medicare-health-plans-2021",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/group-insurance/how-does-business-health-insurance-work/": {
         "redirect": {
           "to": "/articles/how-does-business-health-insurance-work",
@@ -177,23 +170,9 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/medicare/pros-cons-of-medicare-advantage/": {
-        "redirect": {
-          "to": "/articles/pros-and-cons-of-medicare-advantage",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/life-insurance/what-is-term-life-insurance/": {
         "redirect": {
           "to": "/articles/what-is-term-life-insurance",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/what-is-medicare/": {
-        "redirect": {
-          "to": "/articles/what-is-medicare",
           "statusCode": 307
         },
         "statusCode": 301
@@ -205,69 +184,6 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/medicare/enrolling-within-medicare/": {
-        "redirect": {
-          "to": "/articles/enrolling-within-medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/how-much-does-medicare-cost/": {
-        "redirect": {
-          "to": "/articles/how-much-does-medicare-cost",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/medicare-eligibility/": {
-        "redirect": {
-          "to": "/articles/medicare-eligibility",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/medicare-extra-help/": {
-        "redirect": {
-          "to": "/articles/medicare-extra-help",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/medicare-at-the-right-time/": {
-        "redirect": {
-          "to": "/articles/medicare-at-the-right-time",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/open-enrollment/": {
-        "redirect": {
-          "to": "/articles/open-enrollment",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/medicare-part-a-and-part-b-coverage/": {
-        "redirect": {
-          "to": "/articles/medicare-part-a-and-part-b-coverage",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/qualifying-for-medicare-with-disabilities/": {
-        "redirect": {
-          "to": "/articles/qualifying-for-medicare-with-disabilities",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/reducing-expenses-in-medicare/": {
-        "redirect": {
-          "to": "/articles/reducing-expenses-in-medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/articles/reducing-expenses-in-mmedicare": {
         "redirect": {
           "to": "/articles/reducing-expenses-in-medicare",
@@ -275,30 +191,9 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/medicare/the-abcs-and-d-of-medicare/": {
-        "redirect": {
-          "to": "/articles/the-abcs-and-d-of-medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/articles/the-abc-and-d-of-medicare": {
         "redirect": {
           "to": "/articles/the-abcs-and-d-of-medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/signing-up-for-medicare/": {
-        "redirect": {
-          "to": "/articles/signing-up-for-medicare",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/when-medicare-coverage-begins/": {
-        "redirect": {
-          "to": "/articles/when-medicare-coverage-begins",
           "statusCode": 307
         },
         "statusCode": 301
@@ -313,13 +208,6 @@ const _inlineRuntimeConfig = {
       "/health-insurance-2/managing-your-healthcare-plan/": {
         "redirect": {
           "to": "/articles/managing-your-healthcare-plan",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/medicare/medicaid-medicare/": {
-        "redirect": {
-          "to": "/articles/medicaid-medicare",
           "statusCode": 307
         },
         "statusCode": 301
@@ -1115,6 +1003,125 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
+      "/dashboard/search": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicare-health-plans-2021/": {
+        "redirect": {
+          "to": "/articles/medicare-health-plans-2021",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/pros-cons-of-medicare-advantage/": {
+        "redirect": {
+          "to": "/articles/pros-and-cons-of-medicare-advantage",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/what-is-medicare/": {
+        "redirect": {
+          "to": "/articles/what-is-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/enrolling-within-medicare/": {
+        "redirect": {
+          "to": "/articles/enrolling-within-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/how-much-does-medicare-cost/": {
+        "redirect": {
+          "to": "/articles/how-much-does-medicare-cost",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicare-eligibility/": {
+        "redirect": {
+          "to": "/articles/medicare-eligibility",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicare-extra-help/": {
+        "redirect": {
+          "to": "/articles/medicare-extra-help",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicare-at-the-right-time/": {
+        "redirect": {
+          "to": "/articles/medicare-at-the-right-time",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/open-enrollment/": {
+        "redirect": {
+          "to": "/articles/open-enrollment",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicare-part-a-and-part-b-coverage/": {
+        "redirect": {
+          "to": "/articles/medicare-part-a-and-part-b-coverage",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/qualifying-for-medicare-with-disabilities/": {
+        "redirect": {
+          "to": "/articles/qualifying-for-medicare-with-disabilities",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/reducing-expenses-in-medicare/": {
+        "redirect": {
+          "to": "/articles/reducing-expenses-in-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/the-abcs-and-d-of-medicare/": {
+        "redirect": {
+          "to": "/articles/the-abcs-and-d-of-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/signing-up-for-medicare/": {
+        "redirect": {
+          "to": "/articles/signing-up-for-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/when-medicare-coverage-begins/": {
+        "redirect": {
+          "to": "/articles/when-medicare-coverage-begins",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/medicaid-medicare/": {
+        "redirect": {
+          "to": "/articles/medicaid-medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
       "/sitemap.xsl": {
         "headers": {
           "Content-Type": "application/xslt+xml"
@@ -1435,7 +1442,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-18"
+          "lastmod": "2025-11-19"
         },
         "include": [],
         "exclude": [
@@ -1484,7 +1491,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-18"
+          "lastmod": "2025-11-19"
         },
         "include": [],
         "exclude": [
@@ -12904,9 +12911,6 @@ const sources$3 = [
                 "loc": "/rome-georgia/"
             },
             {
-                "loc": "/medicare/medicare-health-plans-2021/"
-            },
-            {
                 "loc": "/group-insurance/how-does-business-health-insurance-work/"
             },
             {
@@ -12916,67 +12920,22 @@ const sources$3 = [
                 "loc": "/health-insurance-2/why-use-a-health-insurance-agent/"
             },
             {
-                "loc": "/medicare/pros-cons-of-medicare-advantage/"
-            },
-            {
                 "loc": "/life-insurance/what-is-term-life-insurance/"
-            },
-            {
-                "loc": "/medicare/what-is-medicare/"
             },
             {
                 "loc": "/life-insurance/senior-whole-life-insurance-guide/"
             },
             {
-                "loc": "/medicare/enrolling-within-medicare/"
-            },
-            {
-                "loc": "/medicare/how-much-does-medicare-cost/"
-            },
-            {
-                "loc": "/medicare/medicare-eligibility/"
-            },
-            {
-                "loc": "/medicare/medicare-extra-help/"
-            },
-            {
-                "loc": "/medicare/medicare-at-the-right-time/"
-            },
-            {
-                "loc": "/medicare/open-enrollment/"
-            },
-            {
-                "loc": "/medicare/medicare-part-a-and-part-b-coverage/"
-            },
-            {
-                "loc": "/medicare/qualifying-for-medicare-with-disabilities/"
-            },
-            {
-                "loc": "/medicare/reducing-expenses-in-medicare/"
-            },
-            {
                 "loc": "/articles/reducing-expenses-in-mmedicare"
             },
             {
-                "loc": "/medicare/the-abcs-and-d-of-medicare/"
-            },
-            {
                 "loc": "/articles/the-abc-and-d-of-medicare"
-            },
-            {
-                "loc": "/medicare/signing-up-for-medicare/"
-            },
-            {
-                "loc": "/medicare/when-medicare-coverage-begins/"
             },
             {
                 "loc": "/health-insurance-2/health-insurance-subsidies/"
             },
             {
                 "loc": "/health-insurance-2/managing-your-healthcare-plan/"
-            },
-            {
-                "loc": "/medicare/medicaid-medicare/"
             },
             {
                 "loc": "/health-insurance-2/researching-health-insurance-options/"
@@ -13313,6 +13272,57 @@ const sources$3 = [
             },
             {
                 "loc": "/group/index.html"
+            },
+            {
+                "loc": "/dashboard/search"
+            },
+            {
+                "loc": "/medicare/medicare-health-plans-2021/"
+            },
+            {
+                "loc": "/medicare/pros-cons-of-medicare-advantage/"
+            },
+            {
+                "loc": "/medicare/what-is-medicare/"
+            },
+            {
+                "loc": "/medicare/enrolling-within-medicare/"
+            },
+            {
+                "loc": "/medicare/how-much-does-medicare-cost/"
+            },
+            {
+                "loc": "/medicare/medicare-eligibility/"
+            },
+            {
+                "loc": "/medicare/medicare-extra-help/"
+            },
+            {
+                "loc": "/medicare/medicare-at-the-right-time/"
+            },
+            {
+                "loc": "/medicare/open-enrollment/"
+            },
+            {
+                "loc": "/medicare/medicare-part-a-and-part-b-coverage/"
+            },
+            {
+                "loc": "/medicare/qualifying-for-medicare-with-disabilities/"
+            },
+            {
+                "loc": "/medicare/reducing-expenses-in-medicare/"
+            },
+            {
+                "loc": "/medicare/the-abcs-and-d-of-medicare/"
+            },
+            {
+                "loc": "/medicare/signing-up-for-medicare/"
+            },
+            {
+                "loc": "/medicare/when-medicare-coverage-begins/"
+            },
+            {
+                "loc": "/medicare/medicaid-medicare/"
             }
         ],
         "sourceType": "app"
@@ -13574,9 +13584,6 @@ const sources$1 = [
                 "loc": "/rome-georgia/"
             },
             {
-                "loc": "/medicare/medicare-health-plans-2021/"
-            },
-            {
                 "loc": "/group-insurance/how-does-business-health-insurance-work/"
             },
             {
@@ -13586,67 +13593,22 @@ const sources$1 = [
                 "loc": "/health-insurance-2/why-use-a-health-insurance-agent/"
             },
             {
-                "loc": "/medicare/pros-cons-of-medicare-advantage/"
-            },
-            {
                 "loc": "/life-insurance/what-is-term-life-insurance/"
-            },
-            {
-                "loc": "/medicare/what-is-medicare/"
             },
             {
                 "loc": "/life-insurance/senior-whole-life-insurance-guide/"
             },
             {
-                "loc": "/medicare/enrolling-within-medicare/"
-            },
-            {
-                "loc": "/medicare/how-much-does-medicare-cost/"
-            },
-            {
-                "loc": "/medicare/medicare-eligibility/"
-            },
-            {
-                "loc": "/medicare/medicare-extra-help/"
-            },
-            {
-                "loc": "/medicare/medicare-at-the-right-time/"
-            },
-            {
-                "loc": "/medicare/open-enrollment/"
-            },
-            {
-                "loc": "/medicare/medicare-part-a-and-part-b-coverage/"
-            },
-            {
-                "loc": "/medicare/qualifying-for-medicare-with-disabilities/"
-            },
-            {
-                "loc": "/medicare/reducing-expenses-in-medicare/"
-            },
-            {
                 "loc": "/articles/reducing-expenses-in-mmedicare"
             },
             {
-                "loc": "/medicare/the-abcs-and-d-of-medicare/"
-            },
-            {
                 "loc": "/articles/the-abc-and-d-of-medicare"
-            },
-            {
-                "loc": "/medicare/signing-up-for-medicare/"
-            },
-            {
-                "loc": "/medicare/when-medicare-coverage-begins/"
             },
             {
                 "loc": "/health-insurance-2/health-insurance-subsidies/"
             },
             {
                 "loc": "/health-insurance-2/managing-your-healthcare-plan/"
-            },
-            {
-                "loc": "/medicare/medicaid-medicare/"
             },
             {
                 "loc": "/health-insurance-2/researching-health-insurance-options/"
@@ -13983,6 +13945,57 @@ const sources$1 = [
             },
             {
                 "loc": "/group/index.html"
+            },
+            {
+                "loc": "/dashboard/search"
+            },
+            {
+                "loc": "/medicare/medicare-health-plans-2021/"
+            },
+            {
+                "loc": "/medicare/pros-cons-of-medicare-advantage/"
+            },
+            {
+                "loc": "/medicare/what-is-medicare/"
+            },
+            {
+                "loc": "/medicare/enrolling-within-medicare/"
+            },
+            {
+                "loc": "/medicare/how-much-does-medicare-cost/"
+            },
+            {
+                "loc": "/medicare/medicare-eligibility/"
+            },
+            {
+                "loc": "/medicare/medicare-extra-help/"
+            },
+            {
+                "loc": "/medicare/medicare-at-the-right-time/"
+            },
+            {
+                "loc": "/medicare/open-enrollment/"
+            },
+            {
+                "loc": "/medicare/medicare-part-a-and-part-b-coverage/"
+            },
+            {
+                "loc": "/medicare/qualifying-for-medicare-with-disabilities/"
+            },
+            {
+                "loc": "/medicare/reducing-expenses-in-medicare/"
+            },
+            {
+                "loc": "/medicare/the-abcs-and-d-of-medicare/"
+            },
+            {
+                "loc": "/medicare/signing-up-for-medicare/"
+            },
+            {
+                "loc": "/medicare/when-medicare-coverage-begins/"
+            },
+            {
+                "loc": "/medicare/medicaid-medicare/"
             }
         ],
         "sourceType": "app"
