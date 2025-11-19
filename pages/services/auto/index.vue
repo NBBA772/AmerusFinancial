@@ -3,80 +3,64 @@
     <HomepageHeroSection />
     <main class="flex-grow">
       <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <Breadcrumbs
-          currentPageTitle="Auto Insurance"
-          parentTitle="Services"
-          parentUrl="/services"
-        />
-      </div>
+                  <Breadcrumbs
+              currentPageTitle="Auto Insurance"
+              parentTitle="Services"
+              parentUrl="/services"
+            />
 
-      <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <Hero :hero="hero" />
-      </div>
 
-      <TwoColumnContent 
-        :content="{
-          title: 'Personal Auto Insurance',
-          description: 'Comprehensive auto insurance coverage to protect you, your vehicle, and your finances on the road.',
-          image: '/images/man-driving-insured-car.jpg'
-        }"
-        backgroundColor="bg-[#F2F8FB]"
-        imagePosition="left"
-        :showDivider="false"
-      />
+            <Hero :hero="hero" />
 
-      <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <TwoColumnContent 
-          :content="{
-            title: 'Uninsured Motorist Insurance',
-            description: 'Personalized healthcare coverage designed specifically for your unique medical needs and budget.',
-            image: '/images/uninsured-motorist-in-car-accident.jpg'
-          }"
-          imagePosition="right"
-          :showDivider="false"
-        />
-      </div>
+          <TwoColumnContent 
+            :content="{
+              title: 'Personal Auto Insurance',
+              description: 'Comprehensive auto insurance coverage to protect you, your vehicle, and your finances on the road.',
+              image: '/images/man-driving-insured-car.jpg'
+            }"
+            backgroundColor="bg-[#F2F8FB]"
+            imagePosition="left"
+            :showDivider="false"
+          />
 
-      <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row gap-8">
-            <!-- Main Content -->
-            <div class="w-full md:w-2/3 flex flex-col gap-8">
-              
+          <!-- Main Content -->
+          <div class="w-full md:w-2/3 flex flex-col gap-8">
+            
 
 
-              <!-- Section with background and blue header -->
-              <section
-                class="rounded-2xl overflow-hidden shadow-sm border border-[#e0f1ff] bg-gradient-to-br from-[#f8fbff] to-[#eef7ff] hover:shadow-md transition-all duration-300 bg-gradient-to-br from-card/80 to-card/60 backdrop-blur-sm"
-              >
-                <!-- Blue Header -->
-                <div class="bg-gradient-to-r from-[#30BCFE] to-[#2563eb] text-white py-6 px-6 flex items-center justify-between">
-                  <div>
-                    <h2 class="text-2xl font-bold tracking-tight">Key Benefits</h2>
-                    <p class="text-sm opacity-90">Discover what makes our coverage the right choice for you</p>
-                  </div>
-                  <Icon name="lucide:car" size="50" class="text-white" />
+            <!-- Section with background and blue header -->
+            <section
+              class="rounded-2xl overflow-hidden shadow-sm border border-[#e0f1ff] bg-gradient-to-br from-[#f8fbff] to-[#eef7ff] hover:shadow-md transition-all duration-300 bg-gradient-to-br from-card/80 to-card/60 backdrop-blur-sm"
+            >
+              <!-- Blue Header -->
+              <div class="bg-gradient-to-r from-[#30BCFE] to-[#2563eb] text-white py-6 px-6 flex items-center justify-between">
+                <div>
+                  <h2 class="text-2xl font-bold tracking-tight">Key Benefits</h2>
+                  <p class="text-sm opacity-90">Discover what makes our coverage the right choice for you</p>
                 </div>
+                <Icon name="lucide:car" size="50" class="text-white" />
+              </div>
 
-                <!-- Inner Content -->
-                <div class="p-8">
-                  <Benefits :benefits="benefits"/>
-                  <div class="border-t border-[#d4ebff] my-8"></div>
-                  <InfoCards :info="info" />
-                </div>
-              </section>
+              <!-- Inner Content -->
+              <div class="p-8">
+                <Benefits :benefits="benefits"/>
+                <div class="border-t border-[#d4ebff] my-8"></div>
+                <InfoCards :info="info" />
+              </div>
+            </section>
 
 
-              <CoverageFeatures :features="features" />
-              <CTA :cta="cta" button-class="bg-gradient-to-r from-[#30BCFE] to-[#2563eb] py-6 px-6 text-white" />
-            </div>
+            <CoverageFeatures :features="features" />
+            <CTA :cta="cta" button-class="bg-gradient-to-r from-[#30BCFE] to-[#2563eb] py-6 px-6 text-white" />
+          </div>
 
-            <!-- Sidebar -->
-            <div class="w-full md:w-1/3">
-              <AutoSidebar />
-            </div>
+          <!-- Sidebar -->
+          <div class="w-full md:w-1/3">
+            <AutoSidebar />
+          </div>
         </div>
       </div>
-      
     </main>
     <CallToAction />
   </PatternSection>
