@@ -43,6 +43,11 @@ export default defineNuxtConfig({
     },
     navigation: {
       fields: ['author', 'subject', 'position']
+    },
+    markdown: {
+      remarkPlugins: [],
+      rehypePlugins: [],
+      anchorLinks: false
     }
   },
   runtimeConfig: {
