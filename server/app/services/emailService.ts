@@ -21,7 +21,7 @@ export class EmailService {
     // Email to team
     const teamEmailResult = await this.resend.emails.send({
       from: 'noreply@amerusfinancial.com', // Update with your verified domain
-      to: [email],
+      to: ['developer@businessbenefitalliance.com'],
       subject: 'New Insurance Quote Request',
       html: this.generateTeamEmailTemplate(data),
       replyTo: email,
