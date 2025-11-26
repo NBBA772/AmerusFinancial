@@ -20,7 +20,7 @@ export class EmailService {
     
     // Email to team
     const teamEmailResult = await this.resend.emails.send({
-      from: 'noreply@amerusfinancial.com', // Update with your verified domain
+      from: 'noreply@updates.amerusfinancial.com', // Update with your verified domain
       to: ['developer@businessbenefitalliance.com'],
       subject: 'New Insurance Quote Request',
       html: this.generateTeamEmailTemplate(data),
@@ -29,8 +29,9 @@ export class EmailService {
     
     // Confirmation email to customer
     const customerEmailResult = await this.resend.emails.send({
-      from: 'noreply@amerusfinancial.com', // Update with your verified domain
-      to: [email],
+      from: 'noreply@updates.amerusfinancial.com', // Update with your verified domain
+    //   to: [email],
+    to: ['developer@businessbenefitalliance.com'],
       subject: 'Thank you for your quote request - Amerus Financial',
       html: this.generateCustomerEmailTemplate(data),
     })
