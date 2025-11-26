@@ -31,7 +31,7 @@ export class EmailService {
     const customerEmailResult = await this.resend.emails.send({
       from: 'noreply@updates.amerusfinancial.com', // Update with your verified domain
     //   to: [email],
-    to: ['developer@businessbenefitalliance.com'],
+    to: [email],
       subject: 'Thank you for your quote request - Amerus Financial',
       html: this.generateCustomerEmailTemplate(data),
     })
