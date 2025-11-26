@@ -15,7 +15,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <!-- Title -->
       <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
-        Simple. Fast. Transparent.
+        {{ title }}
       </h2>
 
       <!-- Steps Grid -->
@@ -36,19 +36,19 @@
           </h3>
           
           <!-- Step Description -->
-          <p class="text-base text-gray-600">
+          <p v-if="step.description" class="text-base text-gray-600">
             {{ step.description }}
           </p>
         </div>
       </div>
 
       <!-- CTA Button -->
-      <div class="flex justify-center mt-12">
+      <div v-if="ctaButton" class="flex justify-center mt-12">
         <NuxtLink
-          to="/contact"
+          :to="ctaButton.href"
           class="inline-flex items-center justify-center gap-2 text-base font-semibold bg-gradient-to-r from-[#30BCFE] to-[#2563eb] text-white py-4 px-10 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
         >
-          Start My Quote
+          {{ ctaButton.label }}
           <Icon name="lucide:arrow-right" size="20" />
         </NuxtLink>
       </div>
@@ -56,27 +56,46 @@
   </section>
 </template>
 
-<script setup>
-const steps = [
-  {
-    icon: 'lucide:file-text',
-    title: 'Step 1',
-    description: 'Complete a short quote form - takes less than 2 minutes'
-  },
-  {
-    icon: 'lucide:search',
-    title: 'Step 2',
-    description: 'Compare plan options - Aetna, UHC, Humana, and more'
-  },
-  {
-    icon: 'lucide:check-circle',
-    title: 'Step 3',
-    description: 'Choose your coverage - tailored to your team\'s needs'
-  },
-  {
-    icon: 'lucide:shield-check',
-    title: 'Step 4',
-    description: 'We handle the rest - setup, compliance, and renewals'
-  }
-]
+<script setup lang="ts">
+interface Step {
+  icon: string
+  title: string
+  description: string
+}
+
+interface CtaButton {
+  href: string
+  label: string
+}
+
+withDefaults(defineProps<{
+  title?: string
+  steps?: Step[]
+  ctaButton?: CtaButton | null
+}>(), {
+  title: 'Simple. Fast. Transparent.',
+  ctaButton: null,
+  steps: () => [
+    {
+      icon: 'lucide:file-text',
+      title: 'Step 1',
+      description: 'Complete a short quote form - takes less than 2 minutes'
+    },
+    {
+      icon: 'lucide:search',
+      title: 'Step 2',
+      description: 'Compare plan options - Aetna, UHC, Humana, and more'
+    },
+    {
+      icon: 'lucide:check-circle',
+      title: 'Step 3',
+      description: 'Choose your coverage - tailored to your team\'s needs'
+    },
+    {
+      icon: 'lucide:shield-check',
+      title: 'Step 4',
+      description: 'We handle the rest - setup, compliance, and renewals'
+    }
+  ]
+})
 </script>

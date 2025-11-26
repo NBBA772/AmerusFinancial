@@ -1443,7 +1443,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-19"
+          "lastmod": "2025-11-21"
         },
         "include": [],
         "exclude": [
@@ -1495,7 +1495,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-19"
+          "lastmod": "2025-11-21"
         },
         "include": [],
         "exclude": [
@@ -12720,6 +12720,9 @@ const sources$3 = [
         },
         "urls": [
             {
+                "loc": "/_templates/fixed-annuity"
+            },
+            {
                 "loc": "/_templates/small-business"
             },
             {
@@ -13398,6 +13401,9 @@ const sources$1 = [
             ]
         },
         "urls": [
+            {
+                "loc": "/_templates/fixed-annuity"
+            },
             {
                 "loc": "/_templates/small-business"
             },
@@ -14444,18 +14450,17 @@ class EmailService {
   async sendQuoteRequest(data) {
     const { insuranceType, fullName, email, phone } = data;
     const teamEmailResult = await this.resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "noreply@amerusfinancial.com",
       // Update with your verified domain
-      to: ["developer@businessbenefitalliance.com"],
+      to: [email],
       subject: "New Insurance Quote Request",
       html: this.generateTeamEmailTemplate(data),
       replyTo: email
     });
     const customerEmailResult = await this.resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "noreply@amerusfinancial.com",
       // Update with your verified domain
-      //   to: [email],
-      to: ["developer@businessbenefitalliance.com"],
+      to: [email],
       subject: "Thank you for your quote request - Amerus Financial",
       html: this.generateCustomerEmailTemplate(data)
     });
@@ -15486,7 +15491,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = true ? [CapoPlugin({ track: true })] : [];
 
-const appHead = {"link":[{"rel":"icon","href":"/favicon.ico","sizes":"any"},{"rel":"icon","href":"/favicon-16x16.png","type":"image/png","sizes":"16x16"},{"rel":"icon","href":"/favicon-32x32.png","type":"image/png","sizes":"32x32"},{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","type":"image/png","sizes":"180x180"}],"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"property":"og:type","content":"website"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"en"}};
+const appHead = {"link":[{"rel":"icon","href":"/favicon-16x16.png","type":"image/png","sizes":"16x16"},{"rel":"icon","href":"/favicon-32x32.png","type":"image/png","sizes":"32x32"},{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","type":"image/png","sizes":"180x180"}],"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"property":"og:type","content":"website"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"en"}};
 
 const appRootId = "__nuxt";
 

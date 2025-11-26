@@ -24,24 +24,22 @@
       >
         {{ content.eyebrow }}
       </div>
-      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
-        {{ content.title }}
-      </h2>
-      <p class="text-lg text-muted-foreground">
-        {{ content.description }}
-      </p>
-      
-      <!-- Bullet Points List -->
-      <div v-if="content.bullets && content.bullets.length" class="pt-6">
-        <h3 v-if="content.bulletsHeading" class="text-xl font-semibold mb-4 text-gray-900">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight" v-html="content.title"></h2>
+       <h3 v-if="content.bulletsHeading" class="text-xl font-semibold mb-4 text-gray-900">
           {{ content.bulletsHeading }}
         </h3>
+      <!-- Bullet Points List -->
+      <div v-if="content.bullets && content.bullets.length" class="pt-6">
+       
         <ul class="space-y-3">
           <li v-for="(bullet, index) in content.bullets" :key="index" class="flex items-start gap-3">
             <Icon name="lucide:check-circle" class="text-[#30BCFE] mt-1 flex-shrink-0" size="20" />
-            <span class="text-base text-gray-700">{{ bullet }}</span>
+            <span class="text-base text-gray-700" v-html="bullet"></span>
           </li>
         </ul>
+        
+        <!-- Post-Bullet Content -->
+        <div v-if="content.postBulletContent" class="text-lg text-gray-700 mt-6" v-html="content.postBulletContent"></div>
       </div>
 
       <div v-if="content.cta" class="pt-4">
@@ -111,3 +109,9 @@ const props = defineProps({
   }
 })
 </script>
+
+<style lang="css" scoped>
+:deep(strong) {
+  color: #30BCFE !important;
+}
+</style>

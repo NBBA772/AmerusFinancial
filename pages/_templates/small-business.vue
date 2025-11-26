@@ -31,8 +31,13 @@
         :showDivider="false"
       />
 
+
       <!-- Numbered Steps Section -->
-      <NumberedSteps />
+      <NumberedSteps 
+        title="Simple. Fast. Transparent." 
+        :steps="steps" 
+        :ctaButton="{ href: '/contact', label: 'Start My Quote' }"
+      />
 
       <!-- <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <TwoColumnContent 
@@ -321,4 +326,45 @@ const cta = {
     label: 'Get a Personalized Quote'
   }
 }
+
+const steps = [
+  {
+    icon: 'lucide:file-text',
+    title: 'Step 1',
+    description: 'Complete a short quote form - takes less than 2 minutes'
+  },
+  {
+    icon: 'lucide:search',
+    title: 'Step 2',
+    description: 'Compare plan options - Aetna, UHC, Humana, and more'
+  },
+  {
+    icon: 'lucide:check-circle',
+    title: 'Step 3',
+    description: 'Choose your coverage - tailored to your team\'s needs'
+  },
+  {
+    icon: 'lucide:shield-check',
+    title: 'Step 4',
+    description: 'We handle the rest - setup, compliance, and renewals'
+  }
+]
+
+const serviceCards = [
+  {
+    title: 'Health Insurance',
+    description: 'Comprehensive health coverage with nationwide network access and competitive rates for your team.',
+    link: '/services/health-insurance'
+  },
+  {
+    title: 'Dental & Vision',
+    description: 'Essential dental and vision benefits to keep your employees healthy and productive.',
+    link: '/services/dental-vision'
+  },
+  {
+    title: 'Life Insurance',
+    description: 'Protect your employees and their families with flexible life insurance options.',
+    link: '/services/life-insurance'
+  }
+]
 </script>

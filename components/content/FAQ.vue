@@ -17,7 +17,7 @@
             :class="openFaq === index ? 'text-[#30BCFE]' : 'text-gray-800'"
             @click="toggleFaq(index)"
           >
-            {{ faq.question }}
+            <span v-html="faq.question"></span>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               width="24" 
@@ -209,6 +209,35 @@ const toggleFaq = (index: number) => {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Style list items with custom bullets */
+:deep(ul) {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+}
+
+:deep(li) {
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+:deep(li::before) {
+  content: '✓';
+  color: #30BCFE;
+  font-weight: bold;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
 }
 
 /* Mobile responsiveness */
