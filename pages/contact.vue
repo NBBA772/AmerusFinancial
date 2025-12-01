@@ -161,8 +161,8 @@ const resetToNewMessage = () => {
                         <div>
                             <h3 class="font-bold">Our Office</h3>
                             <p class="text-gray-600">
-                            5115 S Lakeland Dr, Suite 1<br>
-                            Lakeland, FL 33813
+                            3308 Cleveland Heights Blvd<br>
+                            Lakeland, FL 33803
                             </p>
                         </div>
                         </div>
