@@ -234,13 +234,28 @@
                 </div>
               </div>
 
+              <!-- Success Message -->
+              <div v-if="successMessage" class="p-4 bg-green-50 border border-green-200 rounded-md text-green-800 flex items-start gap-2">
+                <Icon name="lucide:check-circle" class="text-green-600 mt-0.5 flex-shrink-0" size="20" />
+                <span class="text-sm">{{ successMessage }}</span>
+              </div>
+
+              <!-- Error Message -->
+              <div v-if="errorMessage" class="p-4 bg-red-50 border border-red-200 rounded-md text-red-800 flex items-start gap-2">
+                <Icon name="lucide:alert-circle" class="text-red-600 mt-0.5 flex-shrink-0" size="20" />
+                <span class="text-sm">{{ errorMessage }}</span>
+              </div>
+
               <!-- Submit Button -->
               <button
                 type="submit"
-                class="w-full inline-flex items-center justify-center gap-2 text-base font-semibold bg-gradient-to-r from-[#30BCFE] to-[#2563eb] text-white py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
+                :disabled="isSubmitting"
+                class="w-full inline-flex items-center justify-center gap-2 text-base font-semibold bg-gradient-to-r from-[#30BCFE] to-[#2563eb] text-white py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
-                {{ submitButtonText }}
-                <Icon name="lucide:arrow-right" size="20" />
+                <span v-if="!isSubmitting">{{ submitButtonText }}</span>
+                <span v-else>Sending...</span>
+                <Icon v-if="!isSubmitting" name="lucide:arrow-right" size="20" />
+                <Icon v-else name="lucide:loader-2" class="animate-spin" size="20" />
               </button>
             </form>
           </div>
@@ -298,19 +313,73 @@ const formData = ref({
   preferredContact: ''
 })
 
+const isSubmitting = ref(false)
+const successMessage = ref('')
+const errorMessage = ref('')
+
 const handleSubmit = async () => {
-  // Handle form submission
-  console.log('Form submitted:', formData.value)
-  
-  // You can add your API call here
-  // Example:
-  // await $fetch('/api/contact', {
-  //   method: 'POST',
-  //   body: formData.value
-  // })
-  
-  // Navigate to contact page or show success message
-  navigateTo('/contact')
+  // Reset messages
+  successMessage.value = ''
+  errorMessage.value = ''
+  isSubmitting.value = true
+
+  try {
+    // Map form data to API expected format
+    const payload = {
+      fullName: formData.value.name,
+      email: formData.value.email,
+      phone: formData.value.phone,
+      company: formData.value.company,
+      state: formData.value.state,
+      coverageTypes: formData.value.coverageTypes,
+      businessDescription: formData.value.businessDescription,
+      preferredContact: formData.value.preferredContact,
+      insuranceType: 'Fixed & Indexed Annuities'
+    }
+
+    // Submit to API
+    const response = await $fetch('/api/email/annuity-quote', {
+      method: 'POST',
+      body: payload
+    })
+
+    // Show success message
+    successMessage.value = 'Thank you! Your quote request has been sent. We\'ll contact you within 24 hours.'
+    
+    // Reset form after successful submission
+    formData.value = {
+      name: '',
+      email: '',
+      phone: '',
+      company: '',
+      state: '',
+      coverageTypes: [],
+      businessDescription: '',
+      preferredContact: ''
+    }
+
+    // Optionally scroll to success message
+    setTimeout(() => {
+      successMessage.value = ''
+    }, 10000) // Clear after 10 seconds
+
+  } catch (error: any) {
+    console.error('Form submission error:', error)
+    
+    // Handle different error types
+    if (error.statusCode === 400) {
+      errorMessage.value = 'Please check your information and try again.'
+    } else {
+      errorMessage.value = 'Failed to send your request. Please try again or contact us directly.'
+    }
+
+    // Clear error after 8 seconds
+    setTimeout(() => {
+      errorMessage.value = ''
+    }, 8000)
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>
 

@@ -39,6 +39,9 @@ declare module 'nitropack' {
     '/api/dashboard/search': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/dashboard/search').default>>>>
     }
+    '/api/email/annuity-quote': {
+      'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/email/annuity-quote.post').default>>>>
+    }
     '/api/email/contact': {
       'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/email/contact.post').default>>>>
     }

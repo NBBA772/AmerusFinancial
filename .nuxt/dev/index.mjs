@@ -1443,7 +1443,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-21"
+          "lastmod": "2025-12-01"
         },
         "include": [],
         "exclude": [
@@ -1495,7 +1495,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-11-21"
+          "lastmod": "2025-12-01"
         },
         "include": [],
         "exclude": [
@@ -8275,6 +8275,7 @@ const _lazy_uJpz7T = () => Promise.resolve().then(function () { return deleteQue
 const _lazy_VnZTus = () => Promise.resolve().then(function () { return editQuestion$1; });
 const _lazy_9zrUJw = () => Promise.resolve().then(function () { return question$1; });
 const _lazy_Eoyvqz = () => Promise.resolve().then(function () { return search$1; });
+const _lazy_ue8p94 = () => Promise.resolve().then(function () { return annuityQuote_post$1; });
 const _lazy_egPW47 = () => Promise.resolve().then(function () { return contact_post$1; });
 const _lazy_Zp2cKC = () => Promise.resolve().then(function () { return quote_post$1; });
 const _lazy_E5b2YV = () => Promise.resolve().then(function () { return _name_$3; });
@@ -8304,6 +8305,7 @@ const handlers = [
   { route: '/api/dashboard/edit-question', handler: _lazy_VnZTus, lazy: true, middleware: false, method: undefined },
   { route: '/api/dashboard/question', handler: _lazy_9zrUJw, lazy: true, middleware: false, method: undefined },
   { route: '/api/dashboard/search', handler: _lazy_Eoyvqz, lazy: true, middleware: false, method: undefined },
+  { route: '/api/email/annuity-quote', handler: _lazy_ue8p94, lazy: true, middleware: false, method: "post" },
   { route: '/api/email/contact', handler: _lazy_egPW47, lazy: true, middleware: false, method: "post" },
   { route: '/api/email/quote', handler: _lazy_Zp2cKC, lazy: true, middleware: false, method: "post" },
   { route: '/api/lesson/:name', handler: _lazy_E5b2YV, lazy: true, middleware: false, method: undefined },
@@ -12720,6 +12722,9 @@ const sources$3 = [
         },
         "urls": [
             {
+                "loc": "/_templates/fixed-annuity-2"
+            },
+            {
                 "loc": "/_templates/fixed-annuity"
             },
             {
@@ -13401,6 +13406,9 @@ const sources$1 = [
             ]
         },
         "urls": [
+            {
+                "loc": "/_templates/fixed-annuity-2"
+            },
             {
                 "loc": "/_templates/fixed-annuity"
             },
@@ -14450,16 +14458,17 @@ class EmailService {
   async sendQuoteRequest(data) {
     const { insuranceType, fullName, email, phone } = data;
     const teamEmailResult = await this.resend.emails.send({
-      from: "noreply@amerusfinancial.com",
+      from: "noreply@updates.amerusfinancial.com",
       // Update with your verified domain
-      to: [email],
+      to: ["developer@businessbenefitalliance.com", "timbaggett@amerusfinancial.com", "amanda@amerusfinancial.com", "leah@amerusfinancial.com"],
       subject: "New Insurance Quote Request",
       html: this.generateTeamEmailTemplate(data),
       replyTo: email
     });
     const customerEmailResult = await this.resend.emails.send({
-      from: "noreply@amerusfinancial.com",
+      from: "noreply@updates.amerusfinancial.com",
       // Update with your verified domain
+      //   to: [email],
       to: [email],
       subject: "Thank you for your quote request - Amerus Financial",
       html: this.generateCustomerEmailTemplate(data)
@@ -14611,6 +14620,55 @@ class EmailService {
     };
   }
 }
+
+const annuityQuoteSchema = z$1.object({
+  fullName: z$1.string().min(1, "Full name is required"),
+  email: z$1.string().email("Valid email is required"),
+  phone: z$1.string().min(1, "Phone number is required"),
+  company: z$1.string().optional(),
+  state: z$1.string().min(1, "State is required"),
+  coverageTypes: z$1.array(z$1.string()).optional().default([]),
+  businessDescription: z$1.string().optional(),
+  preferredContact: z$1.string().optional(),
+  insuranceType: z$1.string().default("Fixed & Indexed Annuities")
+});
+const annuityQuote_post = defineEventHandler(async (event) => {
+  try {
+    const config = useRuntimeConfig();
+    const body = await readBody(event);
+    const validatedData = annuityQuoteSchema.parse(body);
+    const emailService = new EmailService(config.private.resendApiKey);
+    const result = await emailService.sendQuoteRequest({
+      insuranceType: validatedData.insuranceType,
+      fullName: validatedData.fullName,
+      email: validatedData.email,
+      phone: validatedData.phone
+    });
+    return {
+      message: "Annuity quote request sent successfully",
+      ...result
+    };
+  } catch (error) {
+    console.error("Error sending annuity quote email:", error);
+    if (error instanceof z$1.ZodError) {
+      throw createError({
+        statusCode: 400,
+        statusMessage: "Validation Error",
+        data: error.errors
+      });
+    }
+    throw createError({
+      statusCode: 500,
+      statusMessage: "Failed to send annuity quote request",
+      data: { error: error instanceof Error ? error.message : "Unknown error" }
+    });
+  }
+});
+
+const annuityQuote_post$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: annuityQuote_post
+});
 
 const contactSchema = z$1.object({
   name: z$1.string().min(1, "Name is required"),
