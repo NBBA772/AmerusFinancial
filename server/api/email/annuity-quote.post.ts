@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { EmailService } from '~/server/app/services/emailService'
+import { EmailServiceExtended } from '~/server/app/services/emailServiceExtended'
 
 // Validation schema for the annuity quote form data
 const annuityQuoteSchema = z.object({
@@ -23,16 +23,20 @@ export default defineEventHandler(async (event) => {
     const body = await readBody(event)
     const validatedData = annuityQuoteSchema.parse(body)
     
-    // Initialize email service
-    const emailService = new EmailService(config.private.resendApiKey)
+    // Initialize extended email service
+    const emailService = new EmailServiceExtended(config.private.resendApiKey)
     
-    // Send emails using the existing sendQuoteRequest method
-    // We'll pass the essential fields that the method expects
-    const result = await emailService.sendQuoteRequest({
+    // Send emails with all form data
+    const result = await emailService.sendAnnuityQuoteRequest({
       insuranceType: validatedData.insuranceType,
       fullName: validatedData.fullName,
       email: validatedData.email,
       phone: validatedData.phone,
+      company: validatedData.company,
+      state: validatedData.state,
+      coverageTypes: validatedData.coverageTypes,
+      businessDescription: validatedData.businessDescription,
+      preferredContact: validatedData.preferredContact,
     })
     
     // Return success response
