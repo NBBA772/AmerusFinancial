@@ -8,6 +8,7 @@
         heading="<strong>Safe. Secure. Guaranteed.</strong> Your Retirement Income Starts Here."
         description="<p><strong>FIXED & INDEXED ANNUITIES FOR RETIREMENT PEACE OF MIND</strong> At Amerus Financial Group, we specialize in helping individuals <strong>50 and older</strong> protect their savings, eliminate market risk, and secure guaranteed income for life.</p> <p>Whether you're preparing for retirement or already retired, the right annuity can provide <strong>safety, growth potential, and lifetime income you cannot outlive.</strong></p> <p>We work with <strong>top-rated carriers</strong>, shop multiple companies on your behalf, and help you find the annuity that fits your goals.</p>
 "
+        @cta-click="openModal"
         />
       <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <Breadcrumbs
@@ -201,12 +202,34 @@
         safe, comfortable, and secure future."
         backgroundImage="/images/senior-people-talking-to-each-other.png"
         :showForm="false"
-        :button="{ label: 'Click here to get your free customized quote', href: '/contact' }"
+        :button="{ label: 'Click here to get your free customized quote', href: '#' }"
+        @cta-click="openModal"
         />
+
+    <!-- Quote Modal -->
+    <QuoteModal
+      :isOpen="isModalOpen"
+      title="Request Your Free Retirement Annuity Review"
+      submitButtonText="Get My Quote"
+      @close="closeModal"
+    />
   </PatternSection>
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+// Modal state
+const isModalOpen = ref(false)
+
+const openModal = () => {
+  isModalOpen.value = true
+}
+
+const closeModal = () => {
+  isModalOpen.value = false
+}
+
 // Enhanced SEO using stable composables
 useEnhancedMetaTags()
 useResourceHints(['/images/insured-cars-in-traffic.jpg'])

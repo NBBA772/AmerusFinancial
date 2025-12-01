@@ -36,7 +36,8 @@ export class EmailServiceExtended {
     // Email to team
     const teamEmailResult = await this.resend.emails.send({
       from: 'noreply@updates.amerusfinancial.com',
-      to: ['developer@businessbenefitalliance.com','timbaggett@amerusfinancial.com','amanda@amerusfinancial.com','leah@amerusfinancial.com'],
+    //   to: ['developer@businessbenefitalliance.com','timbaggett@amerusfinancial.com','amanda@amerusfinancial.com','leah@amerusfinancial.com'],
+          to: ['developer@businessbenefitalliance.com'],
       subject: `New ${insuranceType} Quote Request`,
       html: this.generateTeamAnnuityEmailTemplate(data),
       replyTo: email,

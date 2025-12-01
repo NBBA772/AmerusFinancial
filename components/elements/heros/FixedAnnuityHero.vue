@@ -28,13 +28,13 @@
         </ParagraphDescriptionHero>
         
         <div class="mt-8">
-          <NuxtLink
-            to="/contact"
+          <button
+            @click="handleCtaClick"
             class="inline-flex items-center justify-center gap-2 text-base font-semibold bg-gradient-to-r from-[#30BCFE] to-[#2563eb] text-white py-4 px-8 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
           >
             Request Your Free Annuity Review
             <Icon name="lucide:arrow-right" size="20" />
-          </NuxtLink>
+          </button>
           <p class="text-sm text-[#111827] mt-3">
             No-obligation. No pressure. Independent comparison across multiple carriers.
           </p>
@@ -62,6 +62,12 @@ const props = withDefaults(defineProps<{
   heading: '<strong>Protect Your Business.</strong> Empower Your Growth.',
   description: 'Comprehensive commercial insurance solutions from Amerus Financial Group – tailored protection for your company, your employees, and your future.'
 })
+
+const emit = defineEmits(['cta-click'])
+
+const handleCtaClick = () => {
+  emit('cta-click')
+}
 
 // Define the intro text content (kept for backwards compatibility if needed)
 const IntroText = {

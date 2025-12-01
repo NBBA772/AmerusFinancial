@@ -27,13 +27,13 @@
           
           <!-- Optional Button -->
           <div v-if="button" class="mt-8">
-            <NuxtLink
-              :to="button.href"
+            <button
+              @click="handleCtaClick"
               class="inline-flex items-center justify-center gap-2 text-base font-semibold bg-gradient-to-r from-[#30BCFE] to-[#2563eb] text-white py-3 px-8 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
               {{ button.label }}
               <Icon name="lucide:arrow-right" size="20" />
-            </NuxtLink>
+            </button>
           </div>
         </div>
 
@@ -245,6 +245,12 @@ const props = withDefaults(defineProps<{
   description: 'Fill out the form below and an Amerus Commercial Insurance specialist will contact you to review your options.',
   backgroundImage: '/images/cheerful-colleagues-discussing-project-working.png'
 })
+
+const emit = defineEmits(['cta-click'])
+
+const handleCtaClick = () => {
+  emit('cta-click')
+}
 
 const formData = ref({
   name: '',

@@ -76,6 +76,7 @@
         backgroundColor="bg-[#F2F8FB]"
         imagePosition="right"
         :showDivider="false"
+        singleColumn="true"
       />
 
 

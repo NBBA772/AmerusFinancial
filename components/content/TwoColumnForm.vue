@@ -14,10 +14,10 @@
 
     <div class="container mx-auto relative z-10" :class="backgroundColor !== 'bg-transparent' ? 'px-4 sm:px-6 lg:px-8' : ''">
       <div class="flex flex-col gap-8 items-center" :class="[
-        formPosition === 'left' ? 'md:flex-row-reverse' : 'md:flex-row'
+        singleColumn ? '' : (formPosition === 'left' ? 'md:flex-row-reverse' : 'md:flex-row')
       ]">
         <!-- Content Column -->
-        <div class="flex-1 space-y-4">
+        <div v-if="!singleColumn" class="flex-1 space-y-4">
           <div
             v-if="content.eyebrow"
             class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors text-sm bg-amber-50 text-amber-600 border-amber-200 mb-2"
@@ -52,7 +52,7 @@
         </div>
 
         <!-- Form Column -->
-        <div class="flex-1 flex items-center justify-center">
+        <div class="flex-1 flex items-center justify-center" :class="singleColumn ? 'w-full' : ''">
           <div class="w-full bg-[#BFD9FF] rounded-2xl shadow-lg p-8">
             <h3 class="text-2xl font-bold text-gray-900 mb-6">{{ formTitle }}</h3>
             <form @submit.prevent="handleSubmit" class="space-y-4 bg-[#BFD9FF]">
@@ -278,7 +278,7 @@ const props = defineProps({
   formPosition: {
     type: String,
     default: 'right',
-    validator: (value) => ['left', 'right'].includes(value)
+    validator: (value: string) => ['left', 'right'].includes(value)
   },
   formTitle: {
     type: String,
@@ -299,8 +299,14 @@ const props = defineProps({
   showBackgroundPattern: {
     type: Boolean,
     default: false
+  },
+  singleColumn: {
+    type: Boolean,
+    default: false
   }
 })
+
+const emit = defineEmits(['form-submitted'])
 
 const formData = ref({
   name: '',
@@ -345,6 +351,9 @@ const handleSubmit = async () => {
 
     // Show success message
     successMessage.value = 'Thank you! Your quote request has been sent. We\'ll contact you within 24 hours.'
+    
+    // Emit event for parent components (like modal)
+    emit('form-submitted')
     
     // Reset form after successful submission
     formData.value = {
