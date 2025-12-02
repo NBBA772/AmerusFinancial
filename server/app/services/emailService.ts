@@ -160,7 +160,7 @@ export class EmailService {
     
     const result = await this.resend.emails.send({
       from: 'onboarding@resend.dev', // Update with your verified domain
-      to: ['developer@businessbenefitalliance.com'],
+      to: ['developer@businessbenefitalliance.com','timbaggett@amerusfinancial.com','amanda@amerusfinancial.com','leah@amerusfinancial.com'],
       subject: `Contact Form: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
