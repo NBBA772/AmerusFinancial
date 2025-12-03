@@ -146,6 +146,7 @@ const services = [
       {
     label: "Business Insurance",
     items: [
+      { label: "Small Business Insurance", href: "/services/business/small-business" },
       { label: "General Liability", href: "/services/business/general-liability" },
       { label: "Professional Liability", href: "/services/business/professional-liability" },
       { label: "Workers Comp", href: "/services/business/workers-comp" },
