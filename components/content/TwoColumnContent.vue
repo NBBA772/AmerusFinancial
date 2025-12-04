@@ -25,6 +25,8 @@
         {{ content.eyebrow }}
       </div>
       <h2 class="text-3xl sm:text-4xl font-bold tracking-tight" v-html="content.title"></h2>
+      <!-- Description (optional) -->
+      <div v-if="content.description" class="mt-4 text-lg text-gray-700" v-html="content.description"></div>
        <h3 v-if="content.bulletsHeading" class="text-xl font-semibold mb-4 text-gray-900">
           {{ content.bulletsHeading }}
         </h3>

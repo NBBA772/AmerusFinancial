@@ -1443,7 +1443,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-12-01"
+          "lastmod": "2025-12-04"
         },
         "include": [],
         "exclude": [
@@ -1495,7 +1495,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-12-01"
+          "lastmod": "2025-12-04"
         },
         "include": [],
         "exclude": [
@@ -12722,6 +12722,9 @@ const sources$3 = [
         },
         "urls": [
             {
+                "loc": "/_templates/auto-insurance"
+            },
+            {
                 "loc": "/_templates/fixed-annuity-2"
             },
             {
@@ -12801,6 +12804,9 @@ const sources$3 = [
             },
             {
                 "loc": "/services/business/professional-liability"
+            },
+            {
+                "loc": "/services/business/small-business"
             },
             {
                 "loc": "/services/business/workers-comp"
@@ -13407,6 +13413,9 @@ const sources$1 = [
         },
         "urls": [
             {
+                "loc": "/_templates/auto-insurance"
+            },
+            {
                 "loc": "/_templates/fixed-annuity-2"
             },
             {
@@ -13486,6 +13495,9 @@ const sources$1 = [
             },
             {
                 "loc": "/services/business/professional-liability"
+            },
+            {
+                "loc": "/services/business/small-business"
             },
             {
                 "loc": "/services/business/workers-comp"
@@ -14801,7 +14813,7 @@ class EmailService {
     const result = await this.resend.emails.send({
       from: "onboarding@resend.dev",
       // Update with your verified domain
-      to: ["developer@businessbenefitalliance.com"],
+      to: ["developer@businessbenefitalliance.com", "timbaggett@amerusfinancial.com", "amanda@amerusfinancial.com", "leah@amerusfinancial.com"],
       subject: `Contact Form: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

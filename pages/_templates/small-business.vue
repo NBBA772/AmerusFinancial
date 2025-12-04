@@ -1,7 +1,15 @@
 <template>
   <PatternSection>
-    <SmallBusinessHero />
-    <main class="flex-grow">
+  
+    <main class="flex-grow">  
+      <FixedAnnuityHero 
+        backgroundImage="/images/european-woman-resting-rejoicing.png"
+        subHeading=""
+        heading="<strong>Safe. Secure. Guaranteed.</strong> Your Retirement Income Starts Here."
+        description="<p><strong>FIXED & INDEXED ANNUITIES FOR RETIREMENT PEACE OF MIND</strong> At Amerus Financial Group, we specialize in helping individuals <strong>50 and older</strong> protect their savings, eliminate market risk, and secure guaranteed income for life.</p> <p>Whether you're preparing for retirement or already retired, the right annuity can provide <strong>safety, growth potential, and lifetime income you cannot outlive.</strong></p> <p>We work with <strong>top-rated carriers</strong>, shop multiple companies on your behalf, and help you find the annuity that fits your goals.</p>
+"
+        @cta-click="openModal"
+        />
       <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <Breadcrumbs
           currentPageTitle="Auto Insurance"
@@ -10,56 +18,218 @@
         />
       </div>
 
+      <CardGrid 
+          title="Our Most Popular Annuity Solutions"
+          :cards="annuityCards"
+          :columns="2"
+        />
+
       <!-- <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <Hero :hero="hero" />
       </div> -->
 
-    
         <TwoColumnContent 
           :content="twoColumnSection1"
           imagePosition="left"
           :showDivider="false"
           :showBackgroundPattern="true"
         />
-      
 
-      
-      <TwoColumnContent 
-        :content="twoColumnSection2"
-        backgroundColor="bg-[#F2F8FB]"
-        imagePosition="right"
-        :showDivider="false"
-      />
+        <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-center">We proudly work with many of the nation’s leading annuity providers: </h2>
+        </div>
+
+                <!-- Insurance Provider Logos Row -->
+        <div class="w-full bg-[#F2F8FB] py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 items-center justify-items-center">
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/aig.png"
+                        alt="aig"
+                        class="h-12 w-auto object-contain"
+                    />
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/athene.png"
+                        alt="athene"
+                        class="h-12 w-auto object-contain"
+                    />
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/lincoln.png"
+                        alt="lincoln"
+                        class="h-12 w-auto object-contain"
+                    />
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/allianz.png"
+                        alt="allianz"
+                        class="h-12 w-auto object-contain"
+                    />
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/american_equity.png"
+                        alt="american equity"
+                        class="h-12 w-auto object-contain"
+                    />
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/corebridge.png"
+                        alt="corebridge"
+                        class="h-12 w-auto object-contain"
+                    />
+                     <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/ameritass.png"
+                        alt="ameritass"
+                        class="h-12 w-auto object-contain"
+                    />
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/silac.png"
+                        alt="silac"
+                        class="h-12 w-auto object-contain"
+                    />
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/oxford.png"
+                        alt="oxford"
+                        class="h-12 w-auto object-contain"
+                    />
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/north_american.png"
+                        alt="north american"
+                        class="h-12 w-auto object-contain"
+                    />
+                     <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/national_western.png"
+                        alt="national western"
+                        class="h-12 w-auto object-contain"
+                    />
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/global_atlantic.png"
+                        alt="global atlantic"
+                        class="h-12 w-auto object-contain"
+                    />
+
+                    <NuxtImg
+                        format="webp"
+                        quality="80"
+                        loading="lazy"
+                        src="/images/FG.png"
+                        alt="FG"
+                        class="h-12 w-auto object-contain"
+                    />
+                </div>
+            </div>
+        </div>
 
 
-      <!-- Numbered Steps Section -->
-      <NumberedSteps 
-        title="Simple. Fast. Transparent." 
-        :steps="steps" 
-        :ctaButton="{ href: '/contact', label: 'Start My Quote' }"
-      />
 
-      <!-- <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <TwoColumnContent 
-          :content="{
-            title: 'Uninsured Motorist Insurance',
-            description: 'Personalized healthcare coverage designed specifically for your unique medical needs and budget.',
-            image: '/images/uninsured-motorist-in-car-accident.jpg'
-          }"
-          imagePosition="right"
-          :showDivider="false"
+
+      <CardGrid 
+        title="What Our Clients Want Most.<br><strong>And how Amerus helps:</strong>"
+        subheading=""
+        :cards="[
+            { title: '“I want income I can’t outlive.”', description: 'We offer lifetime income riders and guaranteed payout options.' },
+            { title: '“I can’t afford to lose my retirement again.”', description: 'Every annuity we offer eliminates market losses.' },
+            { title: 'I want stability, predictable returns, and safety.”', description: 'MYGAs and Fixed annuities give guaranteed rates for 3–10 years.' },
+
+            { title: '“I want growth… but protected.”', description: 'Fixed Index Annuities give upside potential with no downside.' }
+        ]"
+        :columns="4"
         />
-      </div> -->
+
+        <TwoColumnForm 
+            :content="{
+                title: '📞 Request <strong>Your Free Retirement</strong> Annuity Review. No-obligation. No pressure. <strong>Just clear and honest answers.</strong>',
+                bullets: [
+                '<strong>Call Us:</strong> 888-441-789',
+                '<strong>Email:</strong> info@amerusfinancial.com',
+                '<strong>Website:</strong> www.amerusfinancial.com'
+                ]
+            }"
+            formPosition="right"
+            formTitle="Request a Quote"
+            submitButtonText="Get My Quote"
+            backgroundColor="bg-[#F2F8FB]"
+            />
+
+
+      <div class="w-full mx-auto py-8 md:w-2/3">
+        <!-- FAQ Section -->
+        <FAQ 
+          title="Frequently Asked Questions"
+          :faqs="faqData"
+        />
+    </div>
 
      
       
     </main>
-    <WeWorkForYou />
-    <ReadyToSeeOptions />
+
+        <ReadyToProtectYourBusiness 
+        title="Ready to <strong>Protect Your Retirement?</strong>"
+        description="Amerus Financial Group is here to help you make the right decisions for a
+        safe, comfortable, and secure future."
+        backgroundImage="/images/senior-people-talking-to-each-other.png"
+        :showForm="false"
+        :button="{ label: 'Click here to get your free customized quote', href: '#' }"
+        @cta-click="openModal"
+        />
+
+    <!-- Quote Modal -->
+    <QuoteModal
+      :isOpen="isModalOpen"
+      title="Request Your Free Retirement Annuity Review"
+      submitButtonText="Get My Quote"
+      @close="closeModal"
+    />
   </PatternSection>
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+// Modal state
+const isModalOpen = ref(false)
+
+const openModal = () => {
+  isModalOpen.value = true
+}
+
+const closeModal = () => {
+  isModalOpen.value = false
+}
+
 // Enhanced SEO using stable composables
 useEnhancedMetaTags()
 useResourceHints(['/images/insured-cars-in-traffic.jpg'])
@@ -249,122 +419,79 @@ useSchemaOrg([
 
 // Two Column Content Sections
 const twoColumnSection1 = {
-  title: 'The Smarter Way to Offer Benefits',
-  description: 'At Amerus Financial Group, we help small businesses access large-group benefits at a fraction of the cost. Our team of licensed advisors partners with top carriers to create customized benefit packages that fit your company\'s needs without complicated paperwork or high administrative costs.',
-  image: '/images/small-business.png',
+  title: 'Why Amerus Financial Group? <strong>Because you deserve:</strong>',
+  description: 'At <strong>Amerus Financial Group</strong>, we know every business is different. Whether you\'re a one-truck operation, a growing contractor, or a multi-location company, we design coverage that fits your risks and budget.',
+  image: '/images/mature-couple-doing-family-finances-at-home.png',
   imageAlt: 'Small business group benefits',
-  bulletsHeading: 'Quick Highlights:',
+  bulletsHeading: '',
   bullets: [
-    'Nationwide doctor and hospital access',
-    'PPO, HSA, and level-funded options',
-    'Dental, Vision, Life, and Disability add-ons',
-    'No referrals or approvals required',
-    'Local, dedicated support through Amerus Advisors'
-  ]
+    'A Real Person Your own licensed advisor—not a call center.',
+    'Independent Access We shop <strong>multiple carriers</strong>, ensuring you get the best rate and features.',
+    'Safe Retirement Guidance We specialize in clients <strong>50 and older</strong> who want stability.',
+    'No Market Losses All annuities we offer have <strong>principal protection.</strong>',
+    'Top-Rated Companies We only partner with trusted, reputable carriers.'
+  ],
+  postBulletContent: ''
 }
 
-const twoColumnSection2 = {
-  title: 'If You Have Two or More Employees, You May Qualify',
-  description: 'Many business owners don\'t realize how accessible group health coverage has become. Whether you\'re a startup, family business, or established company, you can enjoy nationwide network access and competitive pricing typically reserved for large corporations.',
-  image: '/images/2-or-more-employees.png',
-  imageAlt: 'Two or more employees qualify for group benefits',
-  bulletsHeading: 'Eligible Businesses Include:',
-  bullets: [
-    'Small businesses with 2–100 employees',
-    'Family-run or partnership-based companies',
-    'Contractors and 1099 teams',
-    'Nonprofits and ministries'
-  ]
-}
 
-const hero = {
-  eyebrow: 'Auto Insurance',
-  title: 'The Smarter Way to Offer Benefits',
-  description: 'At Amerus Financial Group, we help small businesses access large-group benefits at a fraction of the cost. Our team of licensed advisors partners with top carriers to create customized benefit packages that fit your company\'s needs — without complicated paperwork or high administrative costs.',
-  image: '/images/small-business.png',
-  imageAlt: 'auto insurance coverage',
-  cta: { href: '/contact', label: 'Get a Personalized Quote' }
-}
-const benefits = [
-  "Liability protection for bodily injury and property damage",
-  "Collision coverage for vehicle damage from accidents",
-  "Comprehensive coverage for theft, vandalism, and weather damage",
-  "Protection against uninsured and underinsured motorists",
-  "Medical payments coverage for you and your passengers",
-  "Peace of mind knowing you're protected on the road"
-]
-const info = [
-  {
-    title: 'Coverage Amount',
-    text: 'Based on plan selection',
-    icon: 'lucide:badge-dollar-sign'
+const annuityCards = ref([
+  { 
+    title: 'Fixed Index Annuities (FIAs)', 
+    description: '<p>Growth tied to the performance of an index—<strong>without market losses, ever.</strong></p><p class="font-semibold mt-4">Perfect for:</p><ul class="list-none space-y-1 mt-2"><li>✔ Those who want upside potential</li><li>✔ Safety-minded investors</li><li>✔ People nearing retirement</li><li>✔ Tax-deferred growth</li></ul><p class="font-semibold mt-4">Benefits:</p><ul class="list-none space-y-1 mt-2"><li>✔ Never lose a penny due to market downturns</li><li>✔ Earn interest based on index performance</li><li>✔ Multiple crediting strategies</li><li>✔ Optional income riders (lifetime payouts)</li><li>✔ Great for rollovers, 401(k)s, IRAs, and transfers</li></ul>' 
   },
-  {
-    title: 'Protection Type',
-    text: 'Auto Insurance',
-    icon: 'lucide:shield'
+  { 
+    title: 'Multi-Year Guaranteed Annuities (MYGAs)', 
+    description: '<p>A tax-deferred, guaranteed rate—just like a CD, but better.</p><p class="font-semibold mt-4">Perfect for:</p><ul class="list-none space-y-1 mt-2"><li>✔ Safe, predictable growth</li><li>✔ People comparing annuities vs. CDs</li><li>✔ Short- to mid-term goals (3–10 years)</li><li>✔ Short-term and mid-term savings</li></ul><p class="font-semibold mt-4">Benefits:</p><ul class="list-none space-y-1 mt-2"><li>3-year, 5-year, 7-year guaranteed rates</li><li>✔ No market risk</li><li>✔ Tax-deferred growth</li><li>✔Guaranteed annual yield</li><li>✔ Higher rates than most banks</li></ul>' 
   },
-  {
-    title: 'Application Process',
-    text: 'Simple 15-minute consultation',
-    icon: 'lucide:clock'
-  }
-]
-const features = [
-  'Liability coverage required by law',
-  'Collision coverage for accidents and damage',
-  'Comprehensive coverage for theft and weather',
-  'Uninsured motorist protection',
-  'Personal injury protection options',
-  'Roadside assistance and rental coverage'
-]
-const cta = {
-  title: 'Ready to get protected?',
-  description: 'Speak with our insurance experts to find the right coverage for your needs.',
-  primary: {
-    href: '/contact',
-    label: 'Get a Personalized Quote'
-  }
-}
+  { 
+    title: 'Bonus Annuities – Up to 20%', 
+    description: '<p>Designed for clients who want <strong>an immediate boost to their retirement nest egg.</strong></p><p class="font-semibold mt-4">Perfect for:</p><ul class="list-none space-y-1 mt-2"><li>✔ Rollovers from 401(k)s or IRAs</li><li>✔ People seeking larger upfront value</li><li>✔ Those wanting income riders or enhanced benefits</li></ul><p class="font-semibold mt-4">Benefits:</p><ul class="list-none space-y-1 mt-2"><li>Up to 20% premium bonus on day one</li><li>✔ Guaranteed lifetime income options</li><li>✔ Market protection + growth potential</li><li>✔ Great for income-focused retirees</li></ul><p>(Bonus levels vary by carrier, age, and product.)</p>' 
+  },
+    { 
+    title: 'Fixed Annuities', 
+    description: '<p>A simple, safe, guaranteed solution for secure retirement savings.</p><p class="font-semibold mt-4">Benefits:</p><ul class="list-none space-y-1 mt-2"><li>✔ Guaranteed fixed interest rate</li><li>✔ No market volatility</li><li>✔ Tax-advantaged growth</li><li>✔ Option to convert to lifetime income</li></ul>' 
+  },
+])
 
-const steps = [
+const faqData = [
   {
-    icon: 'lucide:file-text',
-    title: 'Step 1',
-    description: 'Complete a short quote form - takes less than 2 minutes'
+    question: 'Is my money safe in an annuity?',
+    answer: 'Yes. Fixed and indexed annuities are protected from market loss, backed by highly rated insurance companies, and regulated for consumer safety.'
   },
-  {
-    icon: 'lucide:search',
-    title: 'Step 2',
-    description: 'Compare plan options - Aetna, UHC, Humana, and more'
+    {
+    question: 'What age can I start an annuity?',
+    answer: 'Most annuities allow new clients from age 0–85, but the strongest benefits are for ages 50–80, especially for income planning.'
   },
-  {
-    icon: 'lucide:check-circle',
-    title: 'Step 3',
-    description: 'Choose your coverage - tailored to your team\'s needs'
+    {
+    question: 'Can I lose money in a Fixed or Indexed Annuity?',
+    answer: '<strong>No.</strong> You can never lose principal due to market downturns.'
   },
-  {
-    icon: 'lucide:shield-check',
-    title: 'Step 4',
-    description: 'We handle the rest - setup, compliance, and renewals'
-  }
-]
-
-const serviceCards = [
-  {
-    title: 'Health Insurance',
-    description: 'Comprehensive health coverage with nationwide network access and competitive rates for your team.',
-    link: '/services/health-insurance'
+    {
+    question: 'Are annuity returns taxable?',
+    answer: 'Earnings grow <strong>tax-deferred</strong>, meaning you don’t pay taxes until you withdraw the money.'
   },
-  {
-    title: 'Dental & Vision',
-    description: 'Essential dental and vision benefits to keep your employees healthy and productive.',
-    link: '/services/dental-vision'
+    {
+    question: 'What’s the difference between a MYGA and a Fixed Index Annuity?',
+    answer: '<ul class="space-y-3"><li class="flex items-start gap-3">MYGA: Guaranteed interest rate for a set number of years</li> <li class="flex items-start gap-3">FIA: Interest tied to a market index, with potential for higher returns</li></ul> <p>Both offer safety and principal protection.</p>'
   },
-  {
-    title: 'Life Insurance',
-    description: 'Protect your employees and their families with flexible life insurance options.',
-    link: '/services/life-insurance'
+    {
+    question: 'Why do some annuities offer a bonus? Is it real?',
+    answer: 'Yes. Bonus annuities add a percentage (up to 20%) to your account immediately. These are ideal for income planning, longer surrender periods, or maximizing rollover value.'
+  },
+    {
+    question: 'Can I access my money if needed?',
+    answer: '<p>Most annuities offer:</p> <ul class="space-y-3"><li class="flex items-start gap-3">10% free withdrawals per year.</li> <li class="flex items-start gap-3">Waivers for nursing home or terminal illness.</li> <li class="flex items-start gap-3">Full access at the end of the term.</li></ul> <p>Your advisor will explain details for each carrier.</p>'
+  },
+    {
+    question: 'What if I already have an annuity?',
+    answer: '<p>We can review it for:</p><ul class="space-y-3"> <li class="flex items-start gap-3">Hidden fees.</li> <li class="flex items-start gap-3">Better rates.</li> <li class="flex items-start gap-3">Better income riders.</li> <li class="flex items-start gap-3">New bonus options.</li></ul> <p>Many clients upgrade to stronger modern products.</p>'
   }
 ]
 </script>
+
+<style scoped>
+:deep(h2 strong, h3) {
+  color: #30BCFE !important;
+}
+</style>
