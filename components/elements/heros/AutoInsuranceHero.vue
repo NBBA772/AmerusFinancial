@@ -79,7 +79,7 @@ const props = withDefaults(defineProps<{
 }>(), {
   backgroundImage: '/images/african-american-traveler-girls.png',
   subHeading: '',
-  heading: '<strong>Protect Your Business.</strong> Empower Your Growth.',
+  heading: '<strong>Save Big on Auto Insurance</strong> — Compare Top Carriers in Minutes',
   description: 'Get low-cost, high-coverage auto insurance without the hassle. Amerus Financial Group partners with the nation’s leading carriers to bring you the best rates — all in one place.'
 })
 
