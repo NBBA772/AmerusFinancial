@@ -1059,6 +1059,13 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
+      "/category/medicare/page/2?et_blog": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
       "/lifeinsurance/": {
         "redirect": {
           "to": "/services/life/life-insurance",
@@ -1260,6 +1267,7 @@ const _inlineRuntimeConfig = {
           "md",
           "mdc",
           "yaml",
+          "vue",
           "vue"
         ]
       },
@@ -1342,6 +1350,7 @@ const _inlineRuntimeConfig = {
         "md",
         "mdc",
         "yaml",
+        "vue",
         "vue"
       ]
     },
@@ -1443,7 +1452,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-12-04"
+          "lastmod": "2025-12-05"
         },
         "include": [],
         "exclude": [
@@ -1495,7 +1504,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-12-04"
+          "lastmod": "2025-12-05"
         },
         "include": [],
         "exclude": [
@@ -13325,6 +13334,9 @@ const sources$3 = [
                 "loc": "/medicare-enrroll-now/"
             },
             {
+                "loc": "/category/medicare/page/2?et_blog"
+            },
+            {
                 "loc": "/lifeinsurance/"
             },
             {
@@ -14014,6 +14026,9 @@ const sources$1 = [
             },
             {
                 "loc": "/medicare-enrroll-now/"
+            },
+            {
+                "loc": "/category/medicare/page/2?et_blog"
             },
             {
                 "loc": "/lifeinsurance/"

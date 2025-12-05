@@ -193,11 +193,13 @@ export default defineNuxtConfig({
     '/agent-resources/' : { redirect: '/resources', statusCode: 301 },
     '/carolinametalsgroup/' : { redirect: '/', statusCode: 301 },
     '/duplicate/privacy-policy/' : { redirect: '/privacy-policy', statusCode: 301 },
-    '/healthinsurancequote/' : { redirect: '/contact', statusCode: 301 },
+
     '/coverage-and-premium-confirmation/' : { redirect: '/contact', statusCode: 301 },
     '/policies/sitemap' : { redirect: '/sitemap.xml', statusCode: 301 },
     '/dashboard/search' : { redirect: '/', statusCode: 301 },
-    '/healthinsurancequote': { redirect: '/contact', statusCode: 301 },
+ 
+    '/terms-of-service' : { redirect: '/', statusCode: 301 },
+    '/thankyou' : { redirect: '/', statusCode: 301 },
 
 
 
@@ -268,6 +270,15 @@ export default defineNuxtConfig({
     '/reducing-expenses-in-medicare' : { redirect: '/articles/reducing-expenses-in-medicare', statusCode: 301 },
     '/understanding-the-taxation-advantages-of-fixed-annuities' : { redirect: '/articles/understanding-the-taxation-advantages-of-fixed-annuities', statusCode: 301 },
     '/health-insurance/advantages-of-an-index-universal-life-insurance-policy/' : { redirect: '/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy', statusCode: 301 },
+    '/amerus-financial-blog/page/2?et_blog' : { redirect: '/articles/overview/', statusCode: 301 },
+    '/api/_content/query/R6vMbsini5.1762873390161.json?_params={"first":true,"where":[{"_path":"/reducing-expenses-in-medicare"}],"sort":[{"_file":1,"$numeric":true}]}' : { redirect: '/articles/overview/', statusCode: 301 },
+    '/api/_content/query/oWJ6DNV40b.1762897215730.json?_params={"first":true,"where":[{"_path":"/managing-your-healthcare-plan"}],"sort":[{"_file":1,"$numeric":true}]}' : { redirect: '/articles/overview/', statusCode: 301 },
+    '/what-sets-amerus-agents-apart' : { redirect: '/articles/what-sets-amerus-agents-apart', statusCode: 301 },
+    '/api/_content/query/YhjePIzbUf.1762546881745.json?_params={"first":true,"where":[{"_path":"/senior-whole-life-insurance-everything-you-need-to-know"}],"sort":[{"_file":1,"$numeric":true}]}' : { redirect: '/articles/overview/', statusCode: 301 },
+ 
+
+   
+ 
 
 
 
@@ -299,6 +310,8 @@ export default defineNuxtConfig({
     '/group/index.html#!' : { redirect: '/services/health/group-health', statusCode: 301 },
     '/medicare-enrroll-now/' : { redirect: '/services/health/medicare', statusCode: 301 },
 
+    '/category/medicare/page/2?et_blog' : { redirect: '/services/health/medicare', statusCode: 301 },
+
     //life
     '/lifeinsurance/': { redirect: '/services/life/life-insurance', statusCode: 301 },
     '/senior-life/': { redirect: '/services/life/life-insurance', statusCode: 301 },
@@ -316,6 +329,7 @@ export default defineNuxtConfig({
 
     //home
     '/category/home-insurance/': { redirect: '/services/home/property-protection', statusCode: 301 },
+     'home/property-protection' : { redirect: '/services/home/property-protection', statusCode: 301 },
     
   },
   vite: {
