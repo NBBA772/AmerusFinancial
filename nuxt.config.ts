@@ -255,6 +255,8 @@ export default defineNuxtConfig({
     '/the-abcs-and-d-of-medicare' : { redirect: '/articles/the-abcs-and-d-of-medicare', statusCode: 301 },
     '/what-is-term-life-insurance' : { redirect: '/articles/what-is-term-life-insurance', statusCode: 301 },
     '/amerus-financial-blog/page/2/' : { redirect: '/articles/overview/', statusCode: 301 },
+    '/category/medicare/page/2' : { redirect: '/articles/overview/', statusCode: 301 },
+
     '/author/amerusfinancial/page/3/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/annuities/pros-and-cons-of-a-fixed-annuity/1000' : { redirect: '/articles/pros-and-cons-if-a-fixed-annuity', statusCode: 301 },
     '/author/amerusfinancial/page/4/' : { redirect: '/articles/overview/', statusCode: 301 },
@@ -268,6 +270,8 @@ export default defineNuxtConfig({
     '/reducing-expenses-in-medicare' : { redirect: '/articles/reducing-expenses-in-medicare', statusCode: 301 },
     '/understanding-the-taxation-advantages-of-fixed-annuities' : { redirect: '/articles/understanding-the-taxation-advantages-of-fixed-annuities', statusCode: 301 },
     '/health-insurance/advantages-of-an-index-universal-life-insurance-policy/' : { redirect: '/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy', statusCode: 301 },
+
+    '/api/_content/query/R6vMbsini5.1762873390161.json?_params={%22first%22:true,%22where%22:[{%22_path%22:%22/reducing-expenses-in-medicare%22}],%22sort%22:[{%22_file%22:1,%22$numeric%22:true}]}' : { redirect: '/', statusCode: 301 },
   
     
 
