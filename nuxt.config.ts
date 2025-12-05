@@ -268,7 +268,7 @@ export default defineNuxtConfig({
     '/reducing-expenses-in-medicare' : { redirect: '/articles/reducing-expenses-in-medicare', statusCode: 301 },
     '/understanding-the-taxation-advantages-of-fixed-annuities' : { redirect: '/articles/understanding-the-taxation-advantages-of-fixed-annuities', statusCode: 301 },
     '/health-insurance/advantages-of-an-index-universal-life-insurance-policy/' : { redirect: '/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy', statusCode: 301 },
-
+  
     
 
 
