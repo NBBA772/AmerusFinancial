@@ -88,6 +88,9 @@ export default defineNuxtConfig({
   },
   sitemap: {
     enabled: true,
+    // Avoid auto-parsing Nuxt pages which can fail on certain page structures.
+    // If you prefer pages to be included, remove this and fix page paths.
+    excludeAppSources: ['nuxt:pages'],
     defaults: {
       changefreq: 'daily',
       priority: 0.5,
