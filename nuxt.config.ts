@@ -254,7 +254,7 @@ export default defineNuxtConfig({
     '/category/health-insurance/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/the-abcs-and-d-of-medicare' : { redirect: '/articles/the-abcs-and-d-of-medicare', statusCode: 301 },
     '/what-is-term-life-insurance' : { redirect: '/articles/what-is-term-life-insurance', statusCode: 301 },
-    '/amerus-financial-blog/page/2/?et_blog' : { redirect: '/articles/overview/', statusCode: 301 },
+    '/amerus-financial-blog/page/2/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/author/amerusfinancial/page/3/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/annuities/pros-and-cons-of-a-fixed-annuity/1000' : { redirect: '/articles/pros-and-cons-if-a-fixed-annuity', statusCode: 301 },
     '/author/amerusfinancial/page/4/' : { redirect: '/articles/overview/', statusCode: 301 },
