@@ -202,6 +202,15 @@ export default defineNuxtConfig({
 
     '/dashboard/ask': { redirect: '/', statusCode: 301 },
     '/dashboard/WebsiteBuild': { redirect: '/', statusCode: 301 },
+    '/agent-employees-biographies/': { redirect: '/', statusCode: 301 },
+
+
+    '/author/amerusfinancial/': { redirect: '/', statusCode: 301 },
+    '/author/amerusfinancial/page/2/': { redirect: '/', statusCode: 301 },
+    '/author/amerusfinancial/page/3/' : { redirect: '/articles/overview/', statusCode: 301 },
+    '/author/amerusfinancial/page/4/' : { redirect: '/articles/overview/', statusCode: 301 },
+    
+    
 
 
 
@@ -260,9 +269,9 @@ export default defineNuxtConfig({
     '/amerus-financial-blog/page/2/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/category/medicare/page/2' : { redirect: '/articles/overview/', statusCode: 301 },
 
-    '/author/amerusfinancial/page/3/' : { redirect: '/articles/overview/', statusCode: 301 },
+  
     '/annuities/pros-and-cons-of-a-fixed-annuity/1000' : { redirect: '/articles/pros-and-cons-if-a-fixed-annuity', statusCode: 301 },
-    '/author/amerusfinancial/page/4/' : { redirect: '/articles/overview/', statusCode: 301 },
+
     '/amerus-financial-blog/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/life-insurance/senior-whole-life-insurance-guide/feed/' : { redirect: '/articles/senior-whole-life-insurance-everything-you-need-to-know', statusCode: 301 },
     '/open-enrollment' : { redirect: '/articles/open-enrollment', statusCode: 301 },
@@ -275,6 +284,7 @@ export default defineNuxtConfig({
     '/health-insurance/advantages-of-an-index-universal-life-insurance-policy/' : { redirect: '/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy', statusCode: 301 },
 
     '/category/medicare/page/2' : { redirect: '/articles/overview/', statusCode: 301 },
+    '/category/life-insurance/' : { redirect: '/articles/overview/', statusCode: 301 },
   
     
 
@@ -307,8 +317,11 @@ export default defineNuxtConfig({
     '/group/index.html' : { redirect: '/services/health/group-health', statusCode: 301 },
     '/group/index.html#!' : { redirect: '/services/health/group-health', statusCode: 301 },
     '/medicare-enrroll-now/' : { redirect: '/services/health/medicare', statusCode: 301 },
+    '/get-health-insurance/' : { redirect: '/services/health/individual-health', statusCode: 301 },
 
     '/category/medicare/page/2?et_blog' : { redirect: '/services/health/medicare', statusCode: 301 },
+    '/medicare' : { redirect: '/services/health/medicare', statusCode: 301 },
+    '/medicare/' : { redirect: '/services/health/medicare', statusCode: 301 },
 
     //life
     '/lifeinsurance/': { redirect: '/services/life/life-insurance', statusCode: 301 },

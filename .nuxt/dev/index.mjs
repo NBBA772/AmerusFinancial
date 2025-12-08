@@ -457,6 +457,55 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
+      "/dashboard/ask": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/dashboard/WebsiteBuild": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/agent-employees-biographies/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/author/amerusfinancial/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/author/amerusfinancial/page/2/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/author/amerusfinancial/page/3/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/author/amerusfinancial/page/4/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
       "/medicare/medicare-health-plans-2021/": {
         "redirect": {
           "to": "/articles/medicare-health-plans-2021",
@@ -828,23 +877,9 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/author/amerusfinancial/page/3/": {
-        "redirect": {
-          "to": "/articles/overview/",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
       "/annuities/pros-and-cons-of-a-fixed-annuity/1000": {
         "redirect": {
           "to": "/articles/pros-and-cons-if-a-fixed-annuity",
-          "statusCode": 307
-        },
-        "statusCode": 301
-      },
-      "/author/amerusfinancial/page/4/": {
-        "redirect": {
-          "to": "/articles/overview/",
           "statusCode": 307
         },
         "statusCode": 301
@@ -1568,7 +1603,9 @@ const _inlineRuntimeConfig = {
           "/_templates/",
           "/dashboard/",
           "/admin/",
-          "/dashboard/search"
+          "/dashboard/search",
+          "/dashboard/ask",
+          "/dashboard/WebsiteBuild"
         ],
         "allow": []
       }
@@ -13090,6 +13127,27 @@ const sources$3 = [
                 "loc": "/healthinsurancequote"
             },
             {
+                "loc": "/dashboard/ask"
+            },
+            {
+                "loc": "/dashboard/WebsiteBuild"
+            },
+            {
+                "loc": "/agent-employees-biographies/"
+            },
+            {
+                "loc": "/author/amerusfinancial/"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/2/"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/3/"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/4/"
+            },
+            {
                 "loc": "/medicare/medicare-health-plans-2021/"
             },
             {
@@ -13249,13 +13307,7 @@ const sources$3 = [
                 "loc": "/category/medicare/page/2"
             },
             {
-                "loc": "/author/amerusfinancial/page/3/"
-            },
-            {
                 "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/1000"
-            },
-            {
-                "loc": "/author/amerusfinancial/page/4/"
             },
             {
                 "loc": "/amerus-financial-blog/"
@@ -13790,6 +13842,27 @@ const sources$1 = [
                 "loc": "/healthinsurancequote"
             },
             {
+                "loc": "/dashboard/ask"
+            },
+            {
+                "loc": "/dashboard/WebsiteBuild"
+            },
+            {
+                "loc": "/agent-employees-biographies/"
+            },
+            {
+                "loc": "/author/amerusfinancial/"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/2/"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/3/"
+            },
+            {
+                "loc": "/author/amerusfinancial/page/4/"
+            },
+            {
                 "loc": "/medicare/medicare-health-plans-2021/"
             },
             {
@@ -13949,13 +14022,7 @@ const sources$1 = [
                 "loc": "/category/medicare/page/2"
             },
             {
-                "loc": "/author/amerusfinancial/page/3/"
-            },
-            {
                 "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/1000"
-            },
-            {
-                "loc": "/author/amerusfinancial/page/4/"
             },
             {
                 "loc": "/amerus-financial-blog/"
