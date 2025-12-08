@@ -200,6 +200,8 @@ export default defineNuxtConfig({
     '/dashboard/search' : { redirect: '/', statusCode: 301 },
     '/healthinsurancequote': { redirect: '/contact', statusCode: 301 },
 
+    '/dashboard/ask': { redirect: '/', statusCode: 301 },
+    '/dashboard/WebsiteBuild': { redirect: '/', statusCode: 301 },
 
 
 
