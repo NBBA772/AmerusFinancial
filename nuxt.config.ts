@@ -1,4 +1,4 @@
-import rehypeExternalLinks from 'rehype-external-links'
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   app: {
