@@ -142,6 +142,13 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
+      "/content/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
       "/appointments/": {
         "redirect": {
           "to": "/contact",
@@ -807,7 +814,14 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
-      "/amerus-financial-blog/page/2/?et_blog": {
+      "/amerus-financial-blog/page/2/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/category/medicare/page/2": {
         "redirect": {
           "to": "/articles/overview/",
           "statusCode": 307
@@ -1452,7 +1466,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-12-05"
+          "lastmod": "2025-12-08"
         },
         "include": [],
         "exclude": [
@@ -1504,7 +1518,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-12-05"
+          "lastmod": "2025-12-08"
         },
         "include": [],
         "exclude": [
@@ -12944,6 +12958,9 @@ const sources$3 = [
                 "loc": "/content"
             },
             {
+                "loc": "/content/"
+            },
+            {
                 "loc": "/appointments/"
             },
             {
@@ -13226,7 +13243,10 @@ const sources$3 = [
                 "loc": "/what-is-term-life-insurance"
             },
             {
-                "loc": "/amerus-financial-blog/page/2/?et_blog"
+                "loc": "/amerus-financial-blog/page/2/"
+            },
+            {
+                "loc": "/category/medicare/page/2"
             },
             {
                 "loc": "/author/amerusfinancial/page/3/"
@@ -13638,6 +13658,9 @@ const sources$1 = [
                 "loc": "/content"
             },
             {
+                "loc": "/content/"
+            },
+            {
                 "loc": "/appointments/"
             },
             {
@@ -13920,7 +13943,10 @@ const sources$1 = [
                 "loc": "/what-is-term-life-insurance"
             },
             {
-                "loc": "/amerus-financial-blog/page/2/?et_blog"
+                "loc": "/amerus-financial-blog/page/2/"
+            },
+            {
+                "loc": "/category/medicare/page/2"
             },
             {
                 "loc": "/author/amerusfinancial/page/3/"

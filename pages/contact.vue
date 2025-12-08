@@ -40,7 +40,8 @@ useHead({
     { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' }
   ],
   link: [
-    { rel: 'canonical', href: pageUrl },
+    { rel: 'canonical', href: pageUrl + '/' },
+    
     // Performance optimizations
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
     { rel: 'dns-prefetch', href: '//www.google-analytics.com' },

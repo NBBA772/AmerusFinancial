@@ -154,6 +154,7 @@ export default defineNuxtConfig({
     '/contact-insurance-agency/': { redirect: '/about-us', statusCode: 301 },
     '/player': { redirect: '/contact', statusCode: 301 },
     '/content': { redirect: '/', statusCode: 301 },
+    '/content/': { redirect: '/', statusCode: 301 },
     '/appointments/': { redirect: '/contact', statusCode: 301 },
     '/register/': { redirect: '/', statusCode: 301 },
     '/dashboard': { redirect: '/', statusCode: 301 },
