@@ -1,4 +1,4 @@
-
+import rehypeExternalLinks from 'rehype-external-links'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   app: {
@@ -35,14 +35,6 @@ export default defineNuxtConfig({
     classSuffix: ''
   },
   content: {
-    markdown: {
-      rehypePlugins: [
-        // Remove 'nofollow' (no rel attribute) and keep other security rels if you want
-        [rehypeExternalLinks, { target: '_blank', rel: ['noopener','noreferrer'] }]
-        // OR if you want no rel at all:
-        // [rehypeExternalLinks, { target: '_blank', rel: [] }]
-      ]
-    },
     highlight: {
       theme: 'github-dark',
       preload: [
