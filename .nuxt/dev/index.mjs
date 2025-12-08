@@ -506,6 +506,13 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
+      "/what-sets-amerus-agents-apart": {
+        "redirect": {
+          "to": "/articles/what-sets-amerus-agents-apart/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
       "/medicare/medicare-health-plans-2021/": {
         "redirect": {
           "to": "/articles/medicare-health-plans-2021",
@@ -683,7 +690,7 @@ const _inlineRuntimeConfig = {
       },
       "/health-insurance-2/managing-your-healthcare-plan/": {
         "redirect": {
-          "to": "/articles/managing-your-healthcare-plan",
+          "to": "/articles/managing-your-healthcare-plan/",
           "statusCode": 307
         },
         "statusCode": 301
@@ -954,6 +961,27 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
+      "/category/life-insurance/": {
+        "redirect": {
+          "to": "/articles/overview/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/login/": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/terms-of-service": {
+        "redirect": {
+          "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
       "/insurance-services/": {
         "redirect": {
           "to": "/services",
@@ -1108,7 +1136,28 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
+      "/get-health-insurance/": {
+        "redirect": {
+          "to": "/services/health/individual-health",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
       "/category/medicare/page/2?et_blog": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare": {
+        "redirect": {
+          "to": "/services/health/medicare",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/medicare/": {
         "redirect": {
           "to": "/services/health/medicare",
           "statusCode": 307
@@ -1316,7 +1365,6 @@ const _inlineRuntimeConfig = {
           "md",
           "mdc",
           "yaml",
-          "vue",
           "vue"
         ]
       },
@@ -1399,7 +1447,6 @@ const _inlineRuntimeConfig = {
         "md",
         "mdc",
         "yaml",
-        "vue",
         "vue"
       ]
     },
@@ -13148,6 +13195,9 @@ const sources$3 = [
                 "loc": "/author/amerusfinancial/page/4/"
             },
             {
+                "loc": "/what-sets-amerus-agents-apart"
+            },
+            {
                 "loc": "/medicare/medicare-health-plans-2021/"
             },
             {
@@ -13340,6 +13390,15 @@ const sources$3 = [
                 "loc": "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/"
             },
             {
+                "loc": "/category/life-insurance/"
+            },
+            {
+                "loc": "/login/"
+            },
+            {
+                "loc": "/terms-of-service"
+            },
+            {
                 "loc": "/insurance-services/"
             },
             {
@@ -13406,7 +13465,16 @@ const sources$3 = [
                 "loc": "/medicare-enrroll-now/"
             },
             {
+                "loc": "/get-health-insurance/"
+            },
+            {
                 "loc": "/category/medicare/page/2?et_blog"
+            },
+            {
+                "loc": "/medicare"
+            },
+            {
+                "loc": "/medicare/"
             },
             {
                 "loc": "/lifeinsurance/"
@@ -13863,6 +13931,9 @@ const sources$1 = [
                 "loc": "/author/amerusfinancial/page/4/"
             },
             {
+                "loc": "/what-sets-amerus-agents-apart"
+            },
+            {
                 "loc": "/medicare/medicare-health-plans-2021/"
             },
             {
@@ -14055,6 +14126,15 @@ const sources$1 = [
                 "loc": "/health-insurance/advantages-of-an-index-universal-life-insurance-policy/"
             },
             {
+                "loc": "/category/life-insurance/"
+            },
+            {
+                "loc": "/login/"
+            },
+            {
+                "loc": "/terms-of-service"
+            },
+            {
                 "loc": "/insurance-services/"
             },
             {
@@ -14121,7 +14201,16 @@ const sources$1 = [
                 "loc": "/medicare-enrroll-now/"
             },
             {
+                "loc": "/get-health-insurance/"
+            },
+            {
                 "loc": "/category/medicare/page/2?et_blog"
+            },
+            {
+                "loc": "/medicare"
+            },
+            {
+                "loc": "/medicare/"
             },
             {
                 "loc": "/lifeinsurance/"
