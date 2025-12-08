@@ -285,6 +285,7 @@ export default defineNuxtConfig({
 
     '/category/medicare/page/2' : { redirect: '/articles/overview/', statusCode: 301 },
     '/category/life-insurance/' : { redirect: '/articles/overview/', statusCode: 301 },
+    '/login/' : { redirect: '/', statusCode: 301 },
   
     
 
