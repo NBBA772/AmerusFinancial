@@ -240,7 +240,7 @@ export default defineNuxtConfig({
     '/life-insurance/what-is-term-life-insurance/': { redirect: '/articles/what-is-term-life-insurance', statusCode: 301 },
     '/life-insurance/senior-whole-life-insurance-guide/': { redirect: '/articles/senior-whole-life-insurance-everything-you-need-to-know', statusCode: 301 },
     '/health-insurance-2/health-insurance-subsidies/': { redirect: '/articles/health-insurance-subsidies', statusCode: 301 },
-    '/health-insurance-2/managing-your-healthcare-plan/': { redirect: '/articles/managing-your-healthcare-plan', statusCode: 301 },
+    '/health-insurance-2/managing-your-healthcare-plan/': { redirect: '/articles/managing-your-healthcare-plan/', statusCode: 301 },
     '/health-insurance-2/researching-health-insurance-options/': { redirect: '/articles/researching-health-insurance-options', statusCode: 301 },
     '/health-insurance-2/types-of-healthcare-plans/': { redirect: '/articles/types-of-healthcare-plans', statusCode: 301 },
     '/life-insurance/how-to-buy-the-right-life-insurance-policy/': { redirect: '/articles/how-to-buy-the-right-life-insurance-policy', statusCode: 301 },
