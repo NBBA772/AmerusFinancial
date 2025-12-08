@@ -65,7 +65,16 @@
             </template>
 
             <template #blog>
-                <p class="text-gray-500 text-center">No blog posts yet.</p>
+                <div class="text-center">
+                    <p class="text-gray-600 text-lg mb-6">Browse our extensive collection of expert articles on insurance, retirement, health, auto, life, and financial planning.</p>
+                    <NuxtLink
+                        to="/articles/overview/"
+                        class="inline-flex items-center justify-center gap-2 text-base font-semibold bg-gradient-to-r from-[#30BCFE] to-[#2563eb] text-white py-4 px-8 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
+                    >
+                        View All Articles
+                        <Icon name="lucide:arrow-right" size="20" />
+                    </NuxtLink>
+                </div>
             </template>
             </ResourceTabs>
 
