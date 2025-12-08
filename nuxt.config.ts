@@ -209,7 +209,7 @@ export default defineNuxtConfig({
     '/author/amerusfinancial/page/2/': { redirect: '/', statusCode: 301 },
     '/author/amerusfinancial/page/3/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/author/amerusfinancial/page/4/' : { redirect: '/articles/overview/', statusCode: 301 },
-    
+    '/what-sets-amerus-agents-apart' : { redirect: '/articles/what-sets-amerus-agents-apart/', statusCode: 301 },
     
 
 
@@ -286,6 +286,7 @@ export default defineNuxtConfig({
     '/category/medicare/page/2' : { redirect: '/articles/overview/', statusCode: 301 },
     '/category/life-insurance/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/login/' : { redirect: '/', statusCode: 301 },
+    '/terms-of-service' : { redirect: '/', statusCode: 301 },
   
     
 
