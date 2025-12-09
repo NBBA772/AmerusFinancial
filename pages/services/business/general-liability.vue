@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'General Liability Insurance for Business — Amerus Financial',
   description: 'Protect your business from lawsuits and claims with comprehensive general liability insurance. Get coverage for bodily injury, property damage, and more.',
   image: '/images/general-liability-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/business/general-liability',
+  url: 'https://www.amerusfinancial.com/services/business/general-liability/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Business general liability insurance covering bodily injury, property damage, personal injury, and advertising injury claims against your business.',
   ogImage: '/images/general-liability-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/business/general-liability',
+  ogUrl: 'https://www.amerusfinancial.com/services/business/general-liability/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'General Liability Insurance — Amerus',
   twitterDescription:

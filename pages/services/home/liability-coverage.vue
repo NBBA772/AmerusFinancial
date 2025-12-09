@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Liability Coverage Insurance — Amerus Financial',
   description: 'Comprehensive liability coverage insurance protecting you from legal claims and lawsuits. Get personal liability protection for your home and family.',
   image: '/images/liability-coverage-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/home/liability-coverage',
+  url: 'https://www.amerusfinancial.com/services/home/liability-coverage/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Protect yourself from legal claims with comprehensive liability coverage insurance for your home and personal activities.',
   ogImage: '/images/liability-coverage-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/home/liability-coverage',
+  ogUrl: 'https://www.amerusfinancial.com/services/home/liability-coverage/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Liability Coverage & Protection — Amerus',
   twitterDescription:

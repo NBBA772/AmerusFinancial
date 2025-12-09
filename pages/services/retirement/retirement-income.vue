@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Retirement Income Planning & Solutions — Amerus Financial',
   description: 'Create sustainable retirement income with annuities, pensions, and investment strategies. Plan your financial future with expert guidance from Amerus.',
   image: '/images/retirement-income.jpg',
-  url: 'https://www.amerusfinancial.com/services/retirement/retirement-income',
+  url: 'https://www.amerusfinancial.com/services/retirement/retirement-income/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Comprehensive retirement income planning including annuities, pension optimization, and withdrawal strategies for financial security.',
   ogImage: '/images/retirement-income.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/retirement/retirement-income',
+  ogUrl: 'https://www.amerusfinancial.com/services/retirement/retirement-income/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Retirement Income Planning — Amerus',
   twitterDescription:

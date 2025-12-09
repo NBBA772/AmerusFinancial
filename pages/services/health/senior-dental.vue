@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Senior Dental Insurance Plans — Amerus Financial',
   description: 'Specialized dental insurance for seniors with coverage for dentures, implants, and comprehensive oral care designed for older adults.',
   image: '/images/senior-dental-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/health/senior-dental',
+  url: 'https://www.amerusfinancial.com/services/health/senior-dental/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Senior dental insurance plans providing specialized coverage for dentures, implants, and comprehensive oral care for older adults.',
   ogImage: '/images/senior-dental-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/health/senior-dental',
+  ogUrl: 'https://www.amerusfinancial.com/services/health/senior-dental/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Senior Dental Insurance Plans — Amerus',
   twitterDescription:

@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Discover long-term care insurance options covering home care, assisted living, and nursing facilities with comprehensive retirement protection.',
   ogImage: '/images/long-term-care-planning.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/retirement/long-term-care',
+  ogUrl: 'https://www.amerusfinancial.com/services/retirement/long-term-care/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Long-Term Care Insurance & Planning — Amerus',
   twitterDescription:

@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Commercial Property Insurance — Amerus Financial',
   description: 'Protect your business property and assets with comprehensive commercial property insurance covering buildings, equipment, and inventory.',
   image: '/images/commercial-property-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/business/commercial-property',
+  url: 'https://www.amerusfinancial.com/services/business/commercial-property/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Commercial property insurance protecting business buildings, equipment, inventory, and other physical assets from damage and loss.',
   ogImage: '/images/commercial-property-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/business/commercial-property',
+  ogUrl: 'https://www.amerusfinancial.com/services/business/commercial-property/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Commercial Property Insurance — Amerus',
   twitterDescription:

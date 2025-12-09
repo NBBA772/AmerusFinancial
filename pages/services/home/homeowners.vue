@@ -90,7 +90,7 @@ useEnhancedMetaTags({
   title: 'Homeowners Insurance Coverage — Amerus Financial',
   description: 'Comprehensive homeowners insurance protecting your home, belongings, and family from unexpected events. Get affordable coverage with excellent customer service.',
   image: '/images/homeowners-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/home/homeowners',
+  url: 'https://www.amerusfinancial.com/services/home/homeowners/',
 })
 
 useSeoMeta({
@@ -101,7 +101,7 @@ useSeoMeta({
   ogDescription:
     'Protect your home and family with comprehensive homeowners insurance covering dwelling, personal property, and liability protection.',
   ogImage: '/images/homeowners-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/home/homeowners',
+  ogUrl: 'https://www.amerusfinancial.com/services/home/homeowners/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Homeowners Insurance Protection — Amerus',
   twitterDescription:

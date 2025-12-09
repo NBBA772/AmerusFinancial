@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Term Life Insurance Plans — Amerus Financial',
   description: 'Affordable term life insurance providing temporary coverage and financial protection for your family with flexible coverage amounts.',
   image: '/images/term-life-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/life/term-life',
+  url: 'https://www.amerusfinancial.com/services/life/term-life/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Term life insurance plans offering affordable temporary coverage and financial protection for your family during specific time periods.',
   ogImage: '/images/term-life-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/life/term-life',
+  ogUrl: 'https://www.amerusfinancial.com/services/life/term-life/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Term Life Insurance Plans — Amerus',
   twitterDescription:

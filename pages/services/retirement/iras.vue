@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'IRA Retirement Planning — Amerus Financial',
   description: 'Comprehensive IRA retirement planning services including Traditional and Roth IRAs. Maximize your retirement savings with expert guidance and tax-advantaged strategies.',
   image: '/images/ira-retirement-planning.jpg',
-  url: 'https://www.amerusfinancial.com/services/retirement/iras',
+  url: 'https://www.amerusfinancial.com/services/retirement/iras/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Build your retirement wealth with Traditional and Roth IRA strategies, contribution limits guidance, and tax-efficient retirement planning solutions.',
   ogImage: '/images/ira-retirement-planning.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/retirement/iras',
+  ogUrl: 'https://www.amerusfinancial.com/services/retirement/iras/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'IRA Investment & Retirement Strategies — Amerus',
   twitterDescription:

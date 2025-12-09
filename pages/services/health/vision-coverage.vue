@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Vision Insurance Coverage — Amerus Financial',
   description: 'Affordable vision insurance plans covering eye exams, glasses, contact lenses, and frames with extensive provider networks.',
   image: '/images/vision-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/health/vision-coverage',
+  url: 'https://www.amerusfinancial.com/services/health/vision-coverage/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Vision insurance coverage providing eye exam benefits, glasses, contact lenses, and frames through quality vision care networks.',
   ogImage: '/images/vision-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/health/vision-coverage',
+  ogUrl: 'https://www.amerusfinancial.com/services/health/vision-coverage/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Vision Insurance Coverage — Amerus',
   twitterDescription:

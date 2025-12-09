@@ -65,7 +65,7 @@ useEnhancedMetaTags({
   title: 'Universal Life Insurance Plans — Amerus Financial',
   description: 'Flexible universal life insurance with investment components and adjustable premiums. Build cash value while protecting your family with customizable coverage.',
   image: '/images/universal-life-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/life/universal-life',
+  url: 'https://www.amerusfinancial.com/services/life/universal-life/',
 })
 
 useSeoMeta({
@@ -76,7 +76,7 @@ useSeoMeta({
   ogDescription:
     'Discover universal life insurance plans with flexible premiums and investment opportunities for long-term financial growth.',
   ogImage: '/images/universal-life-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/life/universal-life',
+  ogUrl: 'https://www.amerusfinancial.com/services/life/universal-life/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Universal Life Insurance with Investment Options — Amerus',
   twitterDescription:

@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Family Health Insurance Plans — Amerus Financial',
   description: 'Protect your entire family with comprehensive health insurance coverage including medical, dental, and vision benefits for all family members.',
   image: '/images/family-health-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/health/family-coverage',
+  url: 'https://www.amerusfinancial.com/services/health/family-coverage/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Family health insurance plans providing comprehensive medical coverage, preventive care, and benefits for parents, children, and dependents.',
   ogImage: '/images/family-health-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/health/family-coverage',
+  ogUrl: 'https://www.amerusfinancial.com/services/health/family-coverage/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Family Health Insurance Plans — Amerus',
   twitterDescription:

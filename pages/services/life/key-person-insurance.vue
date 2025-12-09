@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Key Person Insurance for Businesses — Amerus Financial',
   description: 'Protect your business from the financial impact of losing a key employee or executive with specialized coverage designed for business continuity and stability.',
   image: '/images/key-person-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/life/key-person-insurance',
+  url: 'https://www.amerusfinancial.com/services/life/key-person-insurance/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Secure your business against the loss of key personnel with key person insurance that protects company value, maintains operations, and ensures business continuity.',
   ogImage: '/images/key-person-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/life/key-person-insurance',
+  ogUrl: 'https://www.amerusfinancial.com/services/life/key-person-insurance/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Key Employee Life Insurance Protection — Amerus',
   twitterDescription:

@@ -64,7 +64,7 @@ useSocialMeta({
   title: 'Dental Insurance & Dental Plans — Amerus Financial',
   description: 'Find affordable dental insurance plans for preventive care, fillings, crowns, and orthodontics. Compare options and start a 15-minute consultation with Amerus today.',
   image: '/images/dental-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/health/dental',
+  url: 'https://www.amerusfinancial.com/services/health/dental/',
   type: 'website'
 })
 
@@ -76,7 +76,7 @@ useSeoMeta({
   ogDescription:
     'Explore dental insurance options covering preventive visits, basic and major procedures, and orthodontic care.',
   ogImage: '/images/dental-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/health/dental',
+  ogUrl: 'https://www.amerusfinancial.com/services/health/dental/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Dental Insurance Plans & Coverage — Amerus',
   twitterDescription:

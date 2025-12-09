@@ -80,7 +80,7 @@ useSocialMeta({
   title: 'Retirement Planning Services — Amerus Financial',
   description: 'Comprehensive retirement planning with 401(k), IRAs, annuities, and pension strategies. Build a secure financial future with expert retirement guidance.',
   image: '/images/retirement-planning.jpg',
-  url: 'https://www.amerusfinancial.com/services/retirement',
+  url: 'https://www.amerusfinancial.com/services/retirement/',
   type: 'website'
 })
 
@@ -92,7 +92,7 @@ useSeoMeta({
   ogDescription:
     'Explore retirement planning services including 401(k) management, IRA options, annuities, and comprehensive retirement income strategies.',
   ogImage: '/images/retirement-planning.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/retirement',
+  ogUrl: 'https://www.amerusfinancial.com/services/retirement/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Retirement Planning & Financial Services — Amerus',
   twitterDescription:

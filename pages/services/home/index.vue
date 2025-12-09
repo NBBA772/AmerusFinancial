@@ -86,7 +86,7 @@ useSocialMeta({
   title: 'Home Insurance Solutions & Coverage — Amerus Financial',
   description: 'Comprehensive home insurance solutions including homeowners, property protection, flood insurance, and liability coverage. Protect your most valuable asset.',
   image: '/images/home-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/home',
+  url: 'https://www.amerusfinancial.com/services/home/',
   type: 'website'
 })
 
@@ -98,7 +98,7 @@ useSeoMeta({
   ogDescription:
     'Explore home insurance options including homeowners insurance, property protection, flood coverage, liability protection, and valuable items coverage.',
   ogImage: '/images/home-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/home',
+  ogUrl: 'https://www.amerusfinancial.com/services/home/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Home Insurance Solutions — Amerus',
   twitterDescription:

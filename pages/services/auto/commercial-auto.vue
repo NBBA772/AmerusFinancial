@@ -63,7 +63,7 @@ useSocialMeta({
   title: 'Commercial Auto Insurance for Business',
   description: 'Comprehensive commercial auto insurance for business vehicles, fleets, and company cars. Protect your business with competitive rates from Amerus.',
   image: '/images/commercial-auto-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto/commercial-auto',
+  url: 'https://www.amerusfinancial.com/services/auto/commercial-auto/',
   type: 'website'
 })
 
@@ -75,7 +75,7 @@ useSeoMeta({
   ogDescription:
     'Commercial auto insurance covering business vehicles, fleet coverage, and company car protection with liability and comprehensive options.',
   ogImage: '/images/commercial-auto-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto/commercial-auto',
+  ogUrl: 'https://www.amerusfinancial.com/services/auto/commercial-auto/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Commercial Auto Insurance — Amerus',
   twitterDescription:

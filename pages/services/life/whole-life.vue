@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Whole Life Insurance Plans — Amerus Financial',
   description: 'Permanent whole life insurance with guaranteed cash value growth, lifetime coverage, and stable premiums for long-term financial security.',
   image: '/images/whole-life-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/life/whole-life',
+  url: 'https://www.amerusfinancial.com/services/life/whole-life/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Whole life insurance plans providing permanent coverage, guaranteed cash value growth, and lifetime financial protection for your family.',
   ogImage: '/images/whole-life-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/life/whole-life',
+  ogUrl: 'https://www.amerusfinancial.com/services/life/whole-life/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Whole Life Insurance Plans — Amerus',
   twitterDescription:

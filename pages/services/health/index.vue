@@ -124,7 +124,7 @@ useSocialMeta({
   title: 'Health Insurance Plans & Coverage — Amerus Financial',
   description: 'Comprehensive health insurance solutions including individual, family, group, Medicare, dental and vision coverage. Find the right health plan for your needs.',
   image: '/images/health-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/health',
+  url: 'https://www.amerusfinancial.com/services/health/',
   type: 'website'
 })
 
@@ -136,7 +136,7 @@ useSeoMeta({
   ogDescription:
     'Explore health insurance options including individual plans, family coverage, group health, Medicare supplements, dental and vision insurance.',
   ogImage: '/images/health-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/health',
+  ogUrl: 'https://www.amerusfinancial.com/services/health/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Health Insurance Solutions — Amerus',
   twitterDescription:

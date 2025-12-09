@@ -64,7 +64,7 @@ useSocialMeta({
   title: 'Group Health Insurance Plans — Amerus Financial',
   description: 'Affordable group health insurance for businesses and organizations. Comprehensive employee health benefits with competitive rates.',
   image: '/images/group-health-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/health/group-health',
+  url: 'https://www.amerusfinancial.com/services/health/group-health/',
   type: 'website'
 })
 
@@ -76,7 +76,7 @@ useSeoMeta({
   ogDescription:
     'Group health insurance plans for businesses providing comprehensive employee health benefits, medical coverage, and wellness programs.',
   ogImage: '/images/group-health-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/health/group-health',
+  ogUrl: 'https://www.amerusfinancial.com/services/health/group-health/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Group Health Insurance Plans — Amerus',
   twitterDescription:

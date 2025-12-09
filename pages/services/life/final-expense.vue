@@ -65,7 +65,7 @@ useEnhancedMetaTags({
   title: 'Final Expense Life Insurance — Amerus Financial',
   description: 'Affordable final expense life insurance to cover funeral costs and end-of-life expenses. Guaranteed approval options available for seniors with simplified underwriting.',
   image: '/images/final-expense-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/life/final-expense',
+  url: 'https://www.amerusfinancial.com/services/life/final-expense/',
 })
 
 useSeoMeta({
@@ -76,7 +76,7 @@ useSeoMeta({
   ogDescription:
     'Secure final expense insurance to ease the financial burden on your family with affordable coverage for funeral and burial costs.',
   ogImage: '/images/final-expense-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/life/final-expense',
+  ogUrl: 'https://www.amerusfinancial.com/services/life/final-expense/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Final Expense Insurance for End-of-Life Costs — Amerus',
   twitterDescription:

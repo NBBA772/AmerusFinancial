@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Discover 401(k) retirement plans with employer matching, tax-deferred growth, and professional investment guidance.',
   ogImage: '/images/401k-retirement-planning.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/retirement/401k',
+  ogUrl: 'https://www.amerusfinancial.com/services/retirement/401k/',
   twitterCard: 'summary_large_image',
   twitterTitle: '401(k) Retirement Plans & Investment Options — Amerus',
   twitterDescription:

@@ -54,7 +54,7 @@ useSeoMeta({
   ogDescription:
     'Complete insurance portfolio including health, life, auto, home, business insurance, and retirement planning services for all your protection needs.',
   ogImage: '/images/insurance-services.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services',
+  ogUrl: 'https://www.amerusfinancial.com/services/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Complete Insurance Solutions — Amerus',
   twitterDescription:

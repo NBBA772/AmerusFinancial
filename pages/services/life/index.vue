@@ -92,7 +92,7 @@ useSocialMeta({
   title: 'Life Insurance Solutions — Amerus Financial',
   description: 'Secure your family\'s financial future with comprehensive life insurance coverage. From term to permanent life insurance, find the protection that fits your needs.',
   image: '/images/life-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/life',
+  url: 'https://www.amerusfinancial.com/services/life/',
   type: 'website'
 })
 
@@ -104,7 +104,7 @@ useSeoMeta({
   ogDescription:
     'Explore comprehensive life insurance options including term life, whole life, universal life, and final expense coverage to protect your family\'s financial future.',
   ogImage: '/images/life-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/life',
+  ogUrl: 'https://www.amerusfinancial.com/services/life/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Life Insurance Coverage & Protection — Amerus',
   twitterDescription:

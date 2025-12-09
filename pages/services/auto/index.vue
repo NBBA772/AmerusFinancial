@@ -74,7 +74,7 @@ useSocialMeta({
   title: 'Auto Insurance Coverage & Protection',
   description: 'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
   image: '/images/insured-cars-in-traffic.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto',
+  url: 'https://www.amerusfinancial.com/services/auto/',
   type: 'website'
 })
 
@@ -86,7 +86,7 @@ useSeoMeta({
   ogDescription:
     'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
   ogImage: '/images/insured-cars-in-traffic.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto',
+  ogUrl: 'https://www.amerusfinancial.com/services/auto/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Auto Insurance Coverage — Amerus',
   twitterDescription:

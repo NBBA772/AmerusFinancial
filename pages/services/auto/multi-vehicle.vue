@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Multi-Vehicle Auto Insurance Discounts',
   description: 'Save money with multi-vehicle auto insurance discounts. Insure multiple cars, trucks, and motorcycles under one policy with Amerus.',
   image: '/images/multi-vehicle-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto/multi-vehicle',
+  url: 'https://www.amerusfinancial.com/services/auto/multi-vehicle/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Multi-vehicle auto insurance with significant discounts for insuring multiple vehicles under one policy for families and businesses.',
   ogImage: '/images/multi-vehicle-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto/multi-vehicle',
+  ogUrl: 'https://www.amerusfinancial.com/services/auto/multi-vehicle/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Multi-Vehicle Auto Insurance — Amerus',
   twitterDescription:

@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Flood Insurance Coverage — Amerus Financial',
   description: 'Comprehensive flood insurance protection for your home and belongings. Protect against flood damage with affordable NFIP and private flood coverage.',
   image: '/images/flood-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/home/flood-insurance',
+  url: 'https://www.amerusfinancial.com/services/home/flood-insurance/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Get essential flood insurance coverage to protect your home from water damage with comprehensive NFIP and private flood insurance options.',
   ogImage: '/images/flood-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/home/flood-insurance',
+  ogUrl: 'https://www.amerusfinancial.com/services/home/flood-insurance/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Flood Insurance Protection — Amerus',
   twitterDescription:

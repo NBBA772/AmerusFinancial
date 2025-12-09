@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Private Health Insurance Plans — Amerus Financial',
   description: 'Secure private health insurance with flexible coverage options, premium networks, and comprehensive medical benefits.',
   image: '/images/private-health-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/health/private-health',
+  url: 'https://www.amerusfinancial.com/services/health/private-health/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Private health insurance plans offering flexible coverage, premium provider networks, and comprehensive medical benefits for individuals and families.',
   ogImage: '/images/private-health-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/health/private-health',
+  ogUrl: 'https://www.amerusfinancial.com/services/health/private-health/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Private Health Insurance Plans — Amerus',
   twitterDescription:

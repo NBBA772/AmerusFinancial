@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Additional Living Expenses Coverage — Amerus Financial',
   description: 'Financial protection for temporary housing and extra costs when your home becomes uninhabitable. Get coverage for hotel costs, meals, and displacement expenses.',
   image: '/images/additional-living-expenses.jpg',
-  url: 'https://www.amerusfinancial.com/services/home/living-expenses',
+  url: 'https://www.amerusfinancial.com/services/home/living-expenses/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Additional living expenses coverage provides financial protection for temporary housing, meals, and other costs when your home is uninhabitable.',
   ogImage: '/images/additional-living-expenses.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/home/living-expenses',
+  ogUrl: 'https://www.amerusfinancial.com/services/home/living-expenses/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Additional Living Expenses Coverage — Amerus',
   twitterDescription:

@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Personal Injury Protection (PIP) Insurance — Amerus Financial',
   description: 'Personal injury protection insurance covers medical expenses and lost wages after auto accidents, regardless of fault. Get PIP coverage from Amerus.',
   image: '/images/personal-injury-protection.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto/personal-injury-protection',
+  url: 'https://www.amerusfinancial.com/services/auto/personal-injury-protection/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'PIP insurance providing no-fault medical coverage, lost wage compensation, and essential services after auto accidents.',
   ogImage: '/images/personal-injury-protection.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto/personal-injury-protection',
+  ogUrl: 'https://www.amerusfinancial.com/services/auto/personal-injury-protection/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Personal Injury Protection Insurance — Amerus',
   twitterDescription:

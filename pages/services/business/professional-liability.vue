@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Professional Liability Insurance (E&O) — Amerus Financial',
   description: 'Protect your professional practice from errors and omissions claims with comprehensive professional liability insurance coverage.',
   image: '/images/professional-liability-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/business/professional-liability',
+  url: 'https://www.amerusfinancial.com/services/business/professional-liability/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Professional liability (E&O) insurance protecting professionals from claims of negligence, errors, and omissions in their services.',
   ogImage: '/images/professional-liability-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/business/professional-liability',
+  ogUrl: 'https://www.amerusfinancial.com/services/business/professional-liability/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Professional Liability Insurance — Amerus',
   twitterDescription:

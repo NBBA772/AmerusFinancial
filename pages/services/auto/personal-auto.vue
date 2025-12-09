@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Personal Auto Insurance Coverage — Amerus Financial',
   description: 'Comprehensive personal auto insurance with liability, collision, and comprehensive coverage. Get competitive rates and protect your vehicle with Amerus.',
   image: '/images/personal-auto-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto/personal-auto',
+  url: 'https://www.amerusfinancial.com/services/auto/personal-auto/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Personal auto insurance with full coverage options including liability, collision, comprehensive, and uninsured motorist protection.',
   ogImage: '/images/personal-auto-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto/personal-auto',
+  ogUrl: 'https://www.amerusfinancial.com/services/auto/personal-auto/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Personal Auto Insurance — Amerus',
   twitterDescription:

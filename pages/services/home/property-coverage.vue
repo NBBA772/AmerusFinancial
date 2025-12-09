@@ -65,7 +65,7 @@ useEnhancedMetaTags({
   title: 'Property Coverage Insurance — Amerus Financial',
   description: 'Comprehensive property coverage insurance protecting your home structure and belongings from fire, theft, vandalism, and natural disasters.',
   image: '/images/property-coverage-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/home/property-coverage',
+  url: 'https://www.amerusfinancial.com/services/home/property-coverage/',
 })
 
 useSeoMeta({
@@ -76,7 +76,7 @@ useSeoMeta({
   ogDescription:
     'Secure property coverage insurance for your home and belongings with comprehensive protection against damage and loss.',
   ogImage: '/images/property-coverage-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/home/property-coverage',
+  ogUrl: 'https://www.amerusfinancial.com/services/home/property-coverage/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Property Coverage & Protection — Amerus',
   twitterDescription:

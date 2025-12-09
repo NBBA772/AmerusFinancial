@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Discover pension planning strategies for defined benefit plans, pension rollovers, and retirement income optimization with professional guidance.',
   ogImage: '/images/pension-planning.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/retirement/pension-planning',
+  ogUrl: 'https://www.amerusfinancial.com/services/retirement/pension-planning/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Pension Planning & Benefit Optimization — Amerus',
   twitterDescription:

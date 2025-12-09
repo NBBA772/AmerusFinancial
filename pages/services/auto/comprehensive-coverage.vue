@@ -66,7 +66,7 @@ useSocialMeta({
   title: 'Comprehensive Auto Insurance Coverage — Amerus Financial',
   description: 'Protect your vehicle from theft, vandalism, and weather damage with comprehensive auto insurance coverage. Get competitive rates from Amerus.',
   image: '/images/comprehensive-auto-coverage.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage',
+  url: 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage/',
   type: 'website'
 })
 
@@ -78,7 +78,7 @@ useSeoMeta({
   ogDescription:
     'Comprehensive auto insurance covering theft, vandalism, weather damage, and other non-collision incidents for complete vehicle protection.',
   ogImage: '/images/comprehensive-auto-coverage.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage',
+  ogUrl: 'https://www.amerusfinancial.com/services/auto/comprehensive-coverage/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Comprehensive Auto Coverage — Amerus',
   twitterDescription:

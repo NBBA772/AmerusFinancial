@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Property Protection Insurance — Amerus Financial',
   description: 'Comprehensive property protection insurance safeguarding your home and assets from unexpected events. Get complete coverage for your property investment.',
   image: '/images/property-protection-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/home/property-protection',
+  url: 'https://www.amerusfinancial.com/services/home/property-protection/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Secure your property investment with comprehensive protection insurance covering your home and assets against various risks and damages.',
   ogImage: '/images/property-protection-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/home/property-protection',
+  ogUrl: 'https://www.amerusfinancial.com/services/home/property-protection/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Property Protection & Security — Amerus',
   twitterDescription:

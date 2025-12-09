@@ -64,7 +64,7 @@ useSocialMeta({
   title: 'Valuable Items Insurance — Amerus Financial',
   description: 'Specialized valuable items insurance protecting jewelry, art, collectibles, and high-value personal property with comprehensive coverage and appraisal support.',
   image: '/images/valuable-items-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/home/valuable-items',
+  url: 'https://www.amerusfinancial.com/services/home/valuable-items/',
   type: 'website'
 })
 
@@ -76,7 +76,7 @@ useSeoMeta({
   ogDescription:
     'Protect your valuable possessions with specialized insurance coverage for jewelry, art, collectibles, and high-value items that exceed standard homeowners limits.',
   ogImage: '/images/valuable-items-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/home/valuable-items',
+  ogUrl: 'https://www.amerusfinancial.com/services/home/valuable-items/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Valuable Items & Personal Property Coverage — Amerus',
   twitterDescription:

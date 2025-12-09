@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Uninsured Motorist Coverage — Amerus Financial',
   description: 'Protect yourself from uninsured and underinsured drivers with comprehensive uninsured motorist coverage. Get protection from Amerus.',
   image: '/images/uninsured-motorist-coverage.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto/uninsured-motorist',
+  url: 'https://www.amerusfinancial.com/services/auto/uninsured-motorist/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Uninsured motorist coverage protecting you when hit by drivers without insurance or insufficient coverage limits.',
   ogImage: '/images/uninsured-motorist-coverage.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto/uninsured-motorist',
+  ogUrl: 'https://www.amerusfinancial.com/services/auto/uninsured-motorist/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Uninsured Motorist Coverage — Amerus',
   twitterDescription:

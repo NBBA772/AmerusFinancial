@@ -63,7 +63,7 @@ useSocialMeta({
   title: 'Individual Health Insurance Plans — Amerus Financial',
   description: 'Find affordable individual health insurance plans with comprehensive medical coverage, preventive care, and prescription drug benefits.',
   image: '/images/individual-health-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/health/individual-health',
+  url: 'https://www.amerusfinancial.com/services/health/individual-health/',
   type: 'website'
 })
 
@@ -75,7 +75,7 @@ useSeoMeta({
   ogDescription:
     'Individual health insurance plans providing comprehensive medical coverage, preventive care, and prescription drug benefits for individuals and families.',
   ogImage: '/images/individual-health-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/health/individual-health',
+  ogUrl: 'https://www.amerusfinancial.com/services/health/individual-health/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Individual Health Insurance Plans — Amerus',
   twitterDescription:

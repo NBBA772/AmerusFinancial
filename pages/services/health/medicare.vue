@@ -65,7 +65,7 @@ useSocialMeta({
   title: 'Medicare Insurance Plans & Supplements — Amerus Financial',
   description: 'Navigate Medicare with confidence. Find Medicare Advantage, Supplement, and Part D prescription drug plans with expert guidance.',
   image: '/images/medicare-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/health/medicare',
+  url: 'https://www.amerusfinancial.com/services/health/medicare/',
   type: 'website'
 })
 
@@ -77,7 +77,7 @@ useSeoMeta({
   ogDescription:
     'Medicare insurance plans including Medicare Advantage, Medicare Supplement (Medigap), and Part D prescription drug coverage for seniors.',
   ogImage: '/images/medicare-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/health/medicare',
+  ogUrl: 'https://www.amerusfinancial.com/services/health/medicare/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Medicare Insurance Plans & Supplements — Amerus',
   twitterDescription:

@@ -237,28 +237,28 @@ usePerformanceMonitoring()
 
 // Enhanced social sharing
 useSocialMeta({
-  title: 'Auto Insurance Coverage & Protection',
-  description: 'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
-  image: '/images/insured-cars-in-traffic.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto',
+  title: 'Fixed & Indexed Annuities for Retirement',
+  description: 'Secure guaranteed retirement income with fixed and indexed annuities from Amerus Financial. Explore lifetime income options, MYGAs, and fixed annuities to protect your savings.',
+  image: '/images/european-woman-resting-rejoicing.png',
+  url: 'https://www.amerusfinancial.com/services/retirement/annuity/',
   type: 'website'
 })
 
 useSeoMeta({
-  title: 'Auto Insurance Coverage & Protection',
-  ogTitle: 'Auto Insurance Coverage — Amerus',
+  title: 'Fixed & Indexed Annuities — Retirement Income Solutions',
+  ogTitle: 'Annuities for Retirement — Amerus Financial',
   description:
-    'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
+    'Secure guaranteed retirement income with fixed and indexed annuities from Amerus Financial. Learn about Fixed Index Annuities (FIAs), MYGAs, and lifetime income riders to protect your savings and provide predictable income.',
   ogDescription:
-    'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
-  ogImage: '/images/insured-cars-in-traffic.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto',
+    'Secure guaranteed retirement income with fixed and indexed annuities from Amerus Financial. Learn about Fixed Index Annuities (FIAs), MYGAs, and lifetime income riders to protect your savings and provide predictable income.',
+  ogImage: '/images/european-woman-resting-rejoicing.png',
+  ogUrl: 'https://www.amerusfinancial.com/services/retirement/annuity/',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Auto Insurance Coverage — Amerus',
+  twitterTitle: 'Annuities for Retirement — Amerus Financial',
   twitterDescription:
-    'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
-  twitterImage: '/images/insured-cars-in-traffic.jpg',
-  keywords: 'auto insurance, car insurance, vehicle insurance, liability coverage, collision coverage, comprehensive coverage, auto insurance quotes, vehicle protection, auto insurance rates'
+    'Secure guaranteed retirement income with fixed and indexed annuities. Explore annuity options, lifetime income riders, and how annuities can protect your retirement savings.',
+  twitterImage: '/images/european-woman-resting-rejoicing.png',
+  keywords: 'annuities, fixed annuities, fixed index annuities, MYGA, lifetime income, retirement income, annuity quotes, retirement planning'
 })
 
 // optional — add canonical link and enhanced meta tags

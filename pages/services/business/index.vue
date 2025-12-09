@@ -74,7 +74,7 @@ useSocialMeta({
   title: 'Business Insurance Solutions — Amerus Financial',
   description: 'Comprehensive business insurance including general liability, workers comp, commercial property, and professional liability. Protect your business with Amerus.',
   image: '/images/business-insurance.jpg',
-  url: 'https://www.amerusfinancial.com/services/business',
+  url: 'https://www.amerusfinancial.com/services/business/',
   type: 'website'
 })
 
@@ -86,7 +86,7 @@ useSeoMeta({
   ogDescription:
     'Complete business insurance solutions including liability protection, workers compensation, commercial property, and professional liability coverage.',
   ogImage: '/images/business-insurance.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/business',
+  ogUrl: 'https://www.amerusfinancial.com/services/business/',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Business Insurance Solutions — Amerus',
   twitterDescription:
