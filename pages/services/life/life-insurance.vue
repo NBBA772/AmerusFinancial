@@ -97,7 +97,7 @@ useHead({
     { name: 'theme-color', content: '#30BCFE' }
   ],
   link: [
-    { rel: 'canonical', href: pageUrl },
+    { rel: 'canonical', href: pageUrl + '/' },
     // Performance optimizations
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
     { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
