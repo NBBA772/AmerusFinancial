@@ -46,21 +46,21 @@
       </div>
 
       <!-- Resources -->
-      <nuxt-link to="/resources">
+      <nuxt-link to="/resources/">
         <span class="text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300">
           Resources
         </span>
       </nuxt-link>
 
       <!-- About -->
-      <nuxt-link to="/about-us">
+      <nuxt-link to="/about-us/">
         <span class="text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300">
           About Us
         </span>
       </nuxt-link>
 
       <!-- Contact -->
-      <nuxt-link to="/contact">
+      <nuxt-link to="/contact/">
         <span class="text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300">
           Contact
         </span>
