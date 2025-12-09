@@ -16,7 +16,7 @@ useResourceHints(['/images/contact-og.jpg'])
 usePerformanceMonitoring()
 
 // Consolidated SEO + Social Meta for About Us page
-const pageUrl = 'https://www.amerusfinancial.com/about-us'
+const pageUrl = 'https://www.amerusfinancial.com/about-us/'
 const pageTitle = 'About Amerus Financial'
 const pageDescription = 'Learn about Amerus Financial—our mission, values, and team helping clients make confident insurance and financial decisions.'
 const pageImage = '/images/amerus-og-default.jpg'
