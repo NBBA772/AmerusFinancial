@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Commercial Property Insurance"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 

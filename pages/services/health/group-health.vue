@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Group Health Insurance"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
             <Hero :hero="hero" />

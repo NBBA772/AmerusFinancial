@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Comprehensive Auto Coverage"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 

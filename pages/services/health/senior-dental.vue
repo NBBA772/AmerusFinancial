@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Senior Dental Solutions"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 

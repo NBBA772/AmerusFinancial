@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Final Expense Insurance"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 

@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Additional Living Expenses Coverage"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 

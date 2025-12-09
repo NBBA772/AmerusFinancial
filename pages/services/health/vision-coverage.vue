@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Vision Coverage"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 

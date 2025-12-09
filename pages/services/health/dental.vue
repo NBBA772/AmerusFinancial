@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Dental Solutions"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
             <Hero :hero="hero" />

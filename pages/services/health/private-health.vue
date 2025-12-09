@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Private Health Insurance"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 

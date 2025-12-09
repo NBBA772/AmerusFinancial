@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Life Insurance"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 

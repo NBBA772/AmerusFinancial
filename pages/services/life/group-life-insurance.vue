@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Group Life Insurance"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 

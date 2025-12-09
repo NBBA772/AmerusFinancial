@@ -6,7 +6,7 @@
         <Breadcrumbs
           currentPageTitle="Personal Auto Insurance"
           parentTitle="Services"
-          parentUrl="/services"
+          parentUrl="/services/"
         />
 
 

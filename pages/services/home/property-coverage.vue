@@ -6,7 +6,7 @@
                   <Breadcrumbs
               currentPageTitle="Property Coverage"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 

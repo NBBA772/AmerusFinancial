@@ -31,7 +31,7 @@
           <Breadcrumbs
               currentPageTitle="Homeowners Insurance"
               parentTitle="Services"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
 
