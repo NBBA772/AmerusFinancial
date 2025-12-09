@@ -4,7 +4,7 @@
         <div class="container mx-auto py-12 px-4">
             <Breadcrumbs
               currentPageTitle="Resources"
-              parentUrl="/services"
+              parentUrl="/services/"
             />
 
             <div class="text-center mb-10">
@@ -17,21 +17,21 @@
                 <ResourceCard
                 title="Medicare Guide"
                 description="A comprehensive guide to understanding Medicare and its different parts."
-                link="/resources/medicare-guide"
+                link="/resources/medicare-guide/"
                 icon="lucide:file-text"
                 image="/images/medicare-insurance.jpg"
                 />
                 <ResourceCard
                 title="Life Insurance Buyer's Guide"
                 description="Learn about different types of life insurance and how to choose the right policy."
-                link="/resources/life-insurance-buyers-guide"
+                link="/resources/life-insurance-buyers-guide/"
                 icon="lucide:book"
                 image="/images/happy-family-at-home.jpg"
                 />
                 <ResourceCard
                 title="Health Insurance Glossary"
                 description="A complete glossary of health insurance terms and definitions."
-                link="/resources/health-insurance-glossary"
+                link="/resources/health-insurance-glossary/"
                 icon="lucide:book"
                 image="/images/man-on-phone-looking-at-insurance-terms.jpg"
                 />
@@ -47,7 +47,7 @@
                 <ResourceCard
                 title="Auto Insurance Guide"
                 description="A comprehensive guide to auto insurance coverage, rates, claims, and money-saving tips."
-                link="/resources/auto-insurance-guide"
+                link="/resources/auto-insurance-guide/"
                 icon="lucide:car"
                 :features="['Coverage Options','Premium Factors','Claims Process','Money-Saving Tips']"
                 isNew
@@ -56,7 +56,7 @@
                 <ResourceCard
                 title="Retirement Planning Checklist"
                 description="An interactive checklist to track your retirement planning progress through every life stage."
-                link="/resources/retirement-planning-checklist"
+                link="/resources/retirement-planning-checklist/"
                 icon="lucide:calendar"
                 :features="['Interactive Tracking','Age-Based Guidance','Expert Tips','Progress Tracking']"
                 isNew
@@ -125,7 +125,7 @@ useHead({
     { name: 'googlebot', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' }
   ],
   link: [
-    { rel: 'canonical', href: pageUrl },
+    { rel: 'canonical', href: pageUrl + '/' },
     // Performance optimizations
     { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
     { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
