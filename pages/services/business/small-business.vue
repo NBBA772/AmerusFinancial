@@ -67,28 +67,28 @@ usePerformanceMonitoring()
 
 // Enhanced social sharing
 useSocialMeta({
-  title: 'Auto Insurance Coverage & Protection',
-  description: 'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
-  image: '/images/insured-cars-in-traffic.jpg',
-  url: 'https://www.amerusfinancial.com/services/auto/',
+  title: 'Small Business Insurance & Group Benefits',
+  description: 'Small business insurance and group benefits for employers with 2+ employees — health, dental, vision, life, and disability plans with personalized support from Amerus.',
+  image: '/images/small-business.png',
+  url: 'https://www.amerusfinancial.com/services/business/small-business/',
   type: 'website'
 })
 
 useSeoMeta({
-  title: 'Auto Insurance Coverage & Protection',
-  ogTitle: 'Auto Insurance Coverage — Amerus',
+  title: 'Small Business Insurance & Group Benefits — Amerus',
+  ogTitle: 'Small Business Insurance & Group Benefits — Amerus',
   description:
-    'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
+    'Affordable small business insurance and group benefits for employers with 2+ employees. Access health, dental, vision, and life plans from top carriers with dedicated support from Amerus.',
   ogDescription:
-    'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
-  ogImage: '/images/insured-cars-in-traffic.jpg',
-  ogUrl: 'https://www.amerusfinancial.com/services/auto/',
+    'Affordable small business insurance and group benefits for employers with 2+ employees. Access health, dental, vision, and life plans from top carriers with dedicated support from Amerus.',
+  ogImage: '/images/small-business.png',
+  ogUrl: 'https://www.amerusfinancial.com/services/business/small-business/',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Auto Insurance Coverage — Amerus',
+  twitterTitle: 'Small Business Insurance & Group Benefits — Amerus',
   twitterDescription:
-    'Auto insurance with liability, collision, comprehensive, and uninsured motorist coverage. Get competitive rates and protect your vehicle with Amerus.',
-  twitterImage: '/images/insured-cars-in-traffic.jpg',
-  keywords: 'auto insurance, car insurance, vehicle insurance, liability coverage, collision coverage, comprehensive coverage, auto insurance quotes, vehicle protection, auto insurance rates'
+    'Affordable small business insurance and group benefits for employers with 2+ employees. Get tailored plans for health, dental, vision, and life with Amerus.',
+  twitterImage: '/images/small-business.png',
+  keywords: 'small business insurance, group benefits, employer benefits, small business health plans, dental vision life insurance'
 })
 
 // optional — add canonical link and enhanced meta tags
