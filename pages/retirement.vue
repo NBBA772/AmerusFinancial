@@ -13,7 +13,7 @@ useResourceHints(['/images/seniors-planning-retirement.jpg'])
 usePerformanceMonitoring()
 
 // Consolidated SEO + Social Meta for Retirement page
-const pageUrl = 'https://www.amerusfinancial.com/retirement'
+const pageUrl = 'https://www.amerusfinancial.com/retirement/'
 const pageTitle = 'Retirement Planning'
 const pageDescription = 'Plan for retirement with savings milestones, Social Security and Medicare timing, tax strategies, risk protection, and lifetime income planning.'
 const pageImage = '/images/seniors-planning-retirement.jpg'
