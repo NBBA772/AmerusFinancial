@@ -1,4 +1,5 @@
 import rehypeExternalLinks from 'rehype-external-links'
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   app: {
@@ -35,6 +36,11 @@ export default defineNuxtConfig({
     classSuffix: ''
   },
   content: {
+    markdown: {
+      rehypePlugins: [
+        [rehypeExternalLinks, { target: '_blank', rel: ['noopener','noreferrer'] }]
+      ]
+    },
     highlight: {
       theme: 'github-dark',
       preload: [
