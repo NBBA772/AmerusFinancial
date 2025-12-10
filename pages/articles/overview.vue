@@ -33,7 +33,7 @@
               </div>
             </GridTwoColumns>
           </NuxtLink>
-          <NuxtLink :to="article._path + '/'" v-else class="h-full">
+          <NuxtLink :to="article._path" v-else class="h-full">
             <div class="p-4">
               <div class="font-bold text-xl mb-2 dark:text-white">
                 {{ article.title }}
