@@ -5,7 +5,7 @@ export const remarkPlugins = {
 }
 
 export const rehypePlugins = {
-  'rehype-external-links': { instance: _RehypeExternalLinks },
+  'rehype-external-links': { instance: _RehypeExternalLinks, options: {"rel":["nofollow"]} },
   'highlight': { instance: _Highlight, options: {} },
 }
 

@@ -1365,9 +1365,6 @@ const _inlineRuntimeConfig = {
           "md",
           "mdc",
           "yaml",
-          "vue",
-          "vue",
-          "vue",
           "vue"
         ]
       },
@@ -1407,7 +1404,7 @@ const _inlineRuntimeConfig = {
   },
   "content": {
     "cacheVersion": 2,
-    "cacheIntegrity": "kyA814cuE5",
+    "cacheIntegrity": "JdM0uUKHNA",
     "transformers": [],
     "base": "",
     "api": {
@@ -1450,9 +1447,6 @@ const _inlineRuntimeConfig = {
         "md",
         "mdc",
         "yaml",
-        "vue",
-        "vue",
-        "vue",
         "vue"
       ]
     },
@@ -1490,7 +1484,11 @@ const _inlineRuntimeConfig = {
         ]
       },
       "rehypePlugins": {
-        "rehype-external-links": false
+        "rehype-external-links": {
+          "rel": [
+            "nofollow"
+          ]
+        }
       },
       "remarkPlugins": {}
     },
@@ -8656,7 +8654,7 @@ const remarkPlugins = {
 };
 
 const rehypePlugins = {
-  'rehype-external-links': { instance: rehypeExternalLinks },
+  'rehype-external-links': { instance: rehypeExternalLinks, options: {"rel":["nofollow"]} },
   'highlight': { instance: rehypeHighlight, options: {} },
 };
 

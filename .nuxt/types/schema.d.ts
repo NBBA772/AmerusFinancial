@@ -140,7 +140,9 @@ declare module 'nuxt/schema' {
          },
 
          rehypePlugins: {
-            "rehype-external-links": boolean,
+            "rehype-external-links": {
+               rel: Array<string>,
+            },
          },
 
          remarkPlugins: any,
