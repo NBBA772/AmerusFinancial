@@ -37,8 +37,8 @@ export default defineNuxtConfig({
   },
   content: {
     markdown: {
-      rehypePlugins: [
-        [rehypeExternalLinks, { target: '_blank', rel: ['noopener','noreferrer'] }]
+        rehypePlugins: [
+          ['rehype-external-links', false],
       ]
     },
     highlight: {

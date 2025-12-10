@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import fs, { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
 import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery as getQuery$1, getRequestHost, getRequestProtocol, createError, getCookie, getRequestHeaders, setCookie, sendError, setHeader, getHeader, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, deleteCookie, readBody, getResponseStatusText, H3Error } from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/h3/dist/index.mjs';
+import rehypeExternalLinks from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/rehype-external-links/index.js';
 import { visit } from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/unist-util-visit/index.js';
 import { toString } from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/hast-util-to-string/index.js';
 import defu, { defuFn, defu as defu$1, createDefu } from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/defu/dist/defu.mjs';
@@ -56,7 +57,6 @@ import Slugger from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/n
 import { detab } from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/detab/index.js';
 import remarkEmoji from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/remark-emoji/index.js';
 import remarkGFM from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/remark-gfm/index.js';
-import rehypeExternalLinks from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/rehype-external-links/index.js';
 import rehypeSortAttributeValues from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/rehype-sort-attribute-values/index.js';
 import rehypeSortAttributes from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/rehype-sort-attributes/index.js';
 import rehypeRaw from 'file:///Users/amerusfinancial/Desktop/projects/Amerus/app/node_modules/rehype-raw/index.js';
@@ -1365,6 +1365,9 @@ const _inlineRuntimeConfig = {
           "md",
           "mdc",
           "yaml",
+          "vue",
+          "vue",
+          "vue",
           "vue"
         ]
       },
@@ -1404,7 +1407,7 @@ const _inlineRuntimeConfig = {
   },
   "content": {
     "cacheVersion": 2,
-    "cacheIntegrity": "ke9fBtHxkZ",
+    "cacheIntegrity": "kyA814cuE5",
     "transformers": [],
     "base": "",
     "api": {
@@ -1447,6 +1450,9 @@ const _inlineRuntimeConfig = {
         "md",
         "mdc",
         "yaml",
+        "vue",
+        "vue",
+        "vue",
         "vue"
       ]
     },
@@ -1483,8 +1489,10 @@ const _inlineRuntimeConfig = {
           1
         ]
       },
-      "remarkPlugins": {},
-      "rehypePlugins": {}
+      "rehypePlugins": {
+        "rehype-external-links": false
+      },
+      "remarkPlugins": {}
     },
     "yaml": {},
     "csv": {
@@ -8648,6 +8656,7 @@ const remarkPlugins = {
 };
 
 const rehypePlugins = {
+  'rehype-external-links': { instance: rehypeExternalLinks },
   'highlight': { instance: rehypeHighlight, options: {} },
 };
 
