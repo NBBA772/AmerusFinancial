@@ -79,6 +79,11 @@ useHead({
    Back
  </nuxt-link>
  <ContentDoc v-slot="{ doc }">
+   <Breadcrumbs
+     :currentPageTitle="doc.title"
+     parentTitle="Articles"
+     parentUrl="/articles/overview/"
+   />
    <h1 class="text-4xl font-semibold text-black dark:text-white">{{ doc.title }}</h1>
    <p class="text-gray-500 dark:text-white">
      by {{ doc.author }}, {{ doc.date }}
