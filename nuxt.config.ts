@@ -275,6 +275,8 @@ export default defineNuxtConfig({
     '/amerus-financial-blog/page/2/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/category/medicare/page/2' : { redirect: '/articles/overview/', statusCode: 301 },
 
+    '/articles/lower-taxes-and-increase-income-life-insurance-strategies/' : { redirect: '/articles/lower-your-taxes-and-increase-your-income-using-life-insurance-strategies', statusCode: 301 },
+
   
     '/annuities/pros-and-cons-of-a-fixed-annuity/1000' : { redirect: '/articles/pros-and-cons-if-a-fixed-annuity', statusCode: 301 },
 
