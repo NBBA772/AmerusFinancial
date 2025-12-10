@@ -220,11 +220,12 @@ const toggleFaq = (index: number) => {
 
 :deep(li) {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 0.75rem;
   margin-bottom: 0.75rem;
   padding-left: 0.25rem;
 }
+
 
 :deep(li::before) {
   content: '✓';
