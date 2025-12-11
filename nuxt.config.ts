@@ -275,7 +275,7 @@ export default defineNuxtConfig({
     '/amerus-financial-blog/page/2/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/category/medicare/page/2' : { redirect: '/articles/overview/', statusCode: 301 },
 
-    '/articles/lower-taxes-and-increase-income-life-insurance-strategies/' : { redirect: '/articles/lower-your-taxes-and-increase-your-income-using-life-insurance-strategies', statusCode: 301 },
+    '/articles/lower-taxes-and-increase-income-life-insurance-strategies/' : { redirect: '/articles/lower-your-taxes-and-increase-your-income-using-life-insurance-strategies/', statusCode: 301, },
 
   
     '/annuities/pros-and-cons-of-a-fixed-annuity/1000' : { redirect: '/articles/pros-and-cons-if-a-fixed-annuity', statusCode: 301 },
@@ -291,7 +291,7 @@ export default defineNuxtConfig({
     '/understanding-the-taxation-advantages-of-fixed-annuities' : { redirect: '/articles/understanding-the-taxation-advantages-of-fixed-annuities', statusCode: 301 },
     '/health-insurance/advantages-of-an-index-universal-life-insurance-policy/' : { redirect: '/articles/life-insurance-advantages-of-an-index-universal-life-insurance-policy', statusCode: 301 },
 
-    '/category/medicare/page/2' : { redirect: '/articles/overview/', statusCode: 301 },
+ 
     '/category/life-insurance/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/login/' : { redirect: '/', statusCode: 301 },
     '/terms-of-service' : { redirect: '/', statusCode: 301 },
