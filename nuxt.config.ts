@@ -295,6 +295,7 @@ export default defineNuxtConfig({
     '/category/life-insurance/' : { redirect: '/articles/overview/', statusCode: 301 },
     '/login/' : { redirect: '/', statusCode: 301 },
     '/terms-of-service' : { redirect: '/', statusCode: 301 },
+    '/retirement-planning-checklist/' : { redirect: '/resources/retirement-planning-checklist/', statusCode: 301 },
   
     
 
