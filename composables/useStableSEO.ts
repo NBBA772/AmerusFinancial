@@ -44,9 +44,9 @@ export const useEnhancedMetaTags = () => {
  * Creates priority hints for critical resources
  */
 export const useResourceHints = (criticalImages: string[] = []) => {
-  const links: any[] = [
-    // Preload critical fonts
-    { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/inter-var.woff2', crossorigin: '' }
+    const links: any[] = [
+    // Preload critical font (local Inter installation)
+    { rel: 'preload', as: 'font', type: 'font/ttf', href: '/fonts/Inter/Inter-VariableFont_opsz,wght.ttf', crossorigin: '' }
   ]
   
   // Add critical images
@@ -213,8 +213,8 @@ export const useStableSEO = () => {
   // Creates priority hints for critical resources
   const resourceHints = (criticalImages: string[] = []) => {
     const links: any[] = [
-      // Preload critical fonts
-      { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/inter-var.woff2', crossorigin: '' }
+      // Preload critical font (local Inter installation)
+      { rel: 'preload', as: 'font', type: 'font/ttf', href: '/fonts/Inter/Inter-VariableFont_opsz,wght.ttf', crossorigin: '' }
     ]
     
     // Add critical images

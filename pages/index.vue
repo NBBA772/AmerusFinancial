@@ -27,7 +27,7 @@
 <script setup>
 // Enhanced SEO using stable composables
 useEnhancedMetaTags()
-useResourceHints(['/images/contact-og.jpg'])
+//useResourceHints(['/images/contact-og.jpg'])
 usePerformanceMonitoring()
 
 // Consolidated SEO + Social Meta for Home page

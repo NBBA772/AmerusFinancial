@@ -1,7 +1,21 @@
 /* /assets/css/tailwind.css */
+/* Local Inter font (served from /fonts/Inter/) */
+@font-face {
+  font-family: 'InterLocal';
+  src: url('/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Make InterLocal the default sans font for the site */
+html {
+  font-family: 'InterLocal', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
 @layer utilities {
     .patternLight {
