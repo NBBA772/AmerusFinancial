@@ -22,10 +22,10 @@ export const useEnhancedMetaTags = () => {
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'theme-color', content: '#30BCFE' },
       
-      // Security headers
-      { 'http-equiv': 'X-Content-Type-Options', content: 'nosniff' },
-      { 'http-equiv': 'X-Frame-Options', content: 'SAMEORIGIN' },
-      { 'http-equiv': 'X-XSS-Protection', content: '1; mode=block' }
+  // NOTE: X-Frame-Options and similar security headers must be sent as HTTP response
+  // headers. Leaving security directives here as meta http-equiv was causing browser
+  // warnings because browsers ignore those particular directives when set via <meta>.
+  // Set these headers on the server or CDN instead (see README or nuxt.config routeRules).
     ],
     
     link: [
@@ -193,10 +193,10 @@ export const useStableSEO = () => {
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'theme-color', content: '#30BCFE' },
       
-      // Security headers
-      { 'http-equiv': 'X-Content-Type-Options', content: 'nosniff' },
-      { 'http-equiv': 'X-Frame-Options', content: 'SAMEORIGIN' },
-      { 'http-equiv': 'X-XSS-Protection', content: '1; mode=block' }
+  // NOTE: X-Frame-Options and similar security headers must be sent as HTTP response
+  // headers. Leaving security directives here as meta http-equiv was causing browser
+  // warnings because browsers ignore those particular directives when set via <meta>.
+  // Set these headers on the server or CDN instead (see README or nuxt.config routeRules).
     ],
     
     link: [
