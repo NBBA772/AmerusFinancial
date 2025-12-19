@@ -79,11 +79,22 @@ function startScrolling() {
   logoListWidth = logoList.value.scrollWidth;
 
   function scroll() {
+    // Defensive: stop if the element is not present anymore
+    if (!logoList.value) {
+      // leave animationFrameId as-is (caller may cancel), but don't schedule further frames
+      return;
+    }
+
     scrollPosition -= 1;
     if (scrollPosition < -logoListWidth / 2) {
       scrollPosition = 0;
     }
-    logoList.value.style.transform = `translateX(${scrollPosition}px)`;
+
+    const el = logoList.value;
+    if (el && el.style) {
+      el.style.transform = `translateX(${scrollPosition}px)`;
+    }
+
     animationFrameId = requestAnimationFrame(scroll);
   }
 

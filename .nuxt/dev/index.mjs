@@ -884,6 +884,13 @@ const _inlineRuntimeConfig = {
         },
         "statusCode": 301
       },
+      "/articles/lower-taxes-and-increase-income-life-insurance-strategies/": {
+        "redirect": {
+          "to": "/articles/lower-your-taxes-and-increase-your-income-using-life-insurance-strategies/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
       "/annuities/pros-and-cons-of-a-fixed-annuity/1000": {
         "redirect": {
           "to": "/articles/pros-and-cons-if-a-fixed-annuity",
@@ -978,6 +985,13 @@ const _inlineRuntimeConfig = {
       "/terms-of-service": {
         "redirect": {
           "to": "/",
+          "statusCode": 307
+        },
+        "statusCode": 301
+      },
+      "/retirement-planning-checklist/": {
+        "redirect": {
+          "to": "/resources/retirement-planning-checklist/",
           "statusCode": 307
         },
         "statusCode": 301
@@ -1554,7 +1568,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-12-10"
+          "lastmod": "2025-12-19"
         },
         "include": [],
         "exclude": [
@@ -1606,7 +1620,7 @@ const _inlineRuntimeConfig = {
         "defaults": {
           "changefreq": "daily",
           "priority": 0.5,
-          "lastmod": "2025-12-10"
+          "lastmod": "2025-12-19"
         },
         "include": [],
         "exclude": [
@@ -13364,6 +13378,9 @@ const sources$3 = [
                 "loc": "/category/medicare/page/2"
             },
             {
+                "loc": "/articles/lower-taxes-and-increase-income-life-insurance-strategies/"
+            },
+            {
                 "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/1000"
             },
             {
@@ -13404,6 +13421,9 @@ const sources$3 = [
             },
             {
                 "loc": "/terms-of-service"
+            },
+            {
+                "loc": "/retirement-planning-checklist/"
             },
             {
                 "loc": "/insurance-services/"
@@ -14100,6 +14120,9 @@ const sources$1 = [
                 "loc": "/category/medicare/page/2"
             },
             {
+                "loc": "/articles/lower-taxes-and-increase-income-life-insurance-strategies/"
+            },
+            {
                 "loc": "/annuities/pros-and-cons-of-a-fixed-annuity/1000"
             },
             {
@@ -14140,6 +14163,9 @@ const sources$1 = [
             },
             {
                 "loc": "/terms-of-service"
+            },
+            {
+                "loc": "/retirement-planning-checklist/"
             },
             {
                 "loc": "/insurance-services/"
