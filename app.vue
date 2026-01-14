@@ -9,6 +9,9 @@ nuxtApp.hook("page:finish", () => {
 
 useHead({
   link: [{ rel: "icon", type: "image/x-icon", href: "/img/favicon.ico" }],
+  meta: [
+    { name: "ahrefs-site-verification", content: "917bb1e7103b0ce155a6b101e778e9b7a6f4b62d69edb34ff6e9b7603c00a104" }
+  ],
   script: [
     {
       src: "https://www.googletagmanager.com/gtag/js?id=G-YKGNXPKXG8",
